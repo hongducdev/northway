@@ -436,111 +436,26 @@
         }
     }
     .pxl-item--subtitle {
-        &.px-sub-title-default {
+        &.pxl-sub-title-default {
             display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 9px;
-            svg {
-                width: 14px;
-                height: 21px;
-                color: $primary_color;
-            }
-            .pxl-item--subtext {
-                color: $secondary_color;
-                font-family: "Dancing Script";
-                font-size: 22px;
-                line-height: 1.18;
-                font-weight: 600;
-            }
-        }
-        &.pxl-sub-title-style-2 {
-            display: inline-flex;
-            align-items: center;
-            flex-direction: column;
-            gap: 15px;
-            margin-bottom: 12px;
-            svg {
-                width: 14px;
-                height: 21px;
-                color: $primary_color;
-            }
-            .pxl-item--subtext {
-                color: $secondary_color;
-                font-family: "Dancing Script";
-                font-size: 22px;
-                font-weight: 600;
-            }
-        }
-        &.pxl-sub-title-style-3 {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 12px;
-            svg {
-                width: 25px;
-                height: 19px;
-                color: $primary_color;
-            }
-            .pxl-item--subtext {
-                color: $secondary_color;
-                font-family: "Dancing Script";
-                font-size: 22px;
-                font-weight: 600;
-            }
-        }
-        &.pxl-sub-title-style-4 {
-            display: inline-flex;
-            flex-direction: row;
             align-items: center;
             gap: 15px;
-            margin-bottom: 30px;
+            height: 45px;
+            padding: 0 35px;
+            margin-bottom: 20px;
+            border: 1px solid $four_color;
+            background-color: $body_bg_color;
+            @include border-radius(45px);
+            svg {
+                width: 10px;
+                height: 10px;
+                color: $primary_color;
+                animation: spin 3s linear infinite;
+            }
             .pxl-item--subtext {
-                color: #fff;
-                font-family: "Dancing Script";
-                font-size: 35px;
+                color: $secondary_color;
+                font-size: 16px;
                 font-weight: 500;
-                svg {
-                    color: $primary_color;
-                }
-            }
-        }
-        &.pxl-sub-title-style-5 {
-            &.top {
-                flex-direction: column;
-                gap: 12px;
-            }
-            display: inline-flex;
-            align-items: center;
-            flex-direction: row;
-            gap: 10px;
-            margin-bottom: 12px;
-            svg {
-                width: 25px;
-                height: 19px;
-                color: $primary_color;
-            }
-            .pxl-item--subtext {
-                color: $secondary_color;
-                font-family: "Dancing Script";
-                font-size: 22px;
-                font-weight: 600;
-            }
-        }
-        &.pxl-sub-title-style-6 {
-            display: inline-flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 30px;
-            .pxl-item--subtext {
-                color: #fff;
-                font-family: "Dancing Script";
-                font-size: 35px;
-                font-weight: 500;
-                svg {
-                    color: $primary_color;
-                }
             }
         }
     }

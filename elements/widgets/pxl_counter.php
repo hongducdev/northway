@@ -30,30 +30,6 @@ pxl_add_custom_widget(
                                     'label' => esc_html__('Layout 1', 'northway'),
                                     'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_counter/layout1.jpg'
                                 ],
-                                '2' => [
-                                    'label' => esc_html__('Layout 2', 'northway'),
-                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_counter/layout2.jpg'
-                                ],
-                                '3' => [
-                                    'label' => esc_html__('Layout 3', 'northway'),
-                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_counter/layout3.jpg'
-                                ],
-                                '4' => [
-                                    'label' => esc_html__('Layout 4', 'northway'),
-                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_counter/layout4.jpg'
-                                ],
-                                '5' => [
-                                    'label' => esc_html__('Layout 5', 'northway'),
-                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_counter/layout5.jpg'
-                                ],
-                                '6' => [
-                                    'label' => esc_html__('Layout 6', 'northway'),
-                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_counter/layout6.jpg'
-                                ],
-                                '7' => [
-                                    'label' => esc_html__('Layout 7', 'northway'),
-                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_counter/layout7.jpg'
-                                ],
                             ],
                         ),
                     ),

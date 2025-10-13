@@ -68,11 +68,11 @@ function northway_fonts_url()
     $subsets   = 'latin,latin-ext';
 
     if ('off' !== _x('on', 'DM Sans font: on or off', 'northway')) {
-        $fonts[] = 'DM Sans:ital,wght@0,300..900;1,300..900&display=swap';
+        $fonts[] = 'DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap';
     }
 
     if ('off' !== _x('on', 'Cormorant Garamond font: on or off', 'northway')) {
-        $fonts[] = 'Cormorant Garamond:ital,wght@0,300..900;1,300..900&display=swap';
+        $fonts[] = 'Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap';
     }
 
     if ('off' !== _x('on', 'Inter font: on or off', 'northway')) {
