@@ -371,8 +371,8 @@ $mm-xl2: "(min-width: 1025px) and (max-width: 1400px)";
 
 /* Set Font Default */
 @mixin ft_theme_default($ft_theme_default) {
-  @if ($ft_theme_default == 'Satoshi') {
-    font-family: "Satoshi", sans-serif;
+  @if ($ft_theme_default == 'Inter') {
+    font-family: "Inter", sans-serif;
 } @else {
     font-family: $ft_theme_google, sans-serif;
 }

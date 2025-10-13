@@ -67,8 +67,12 @@ function northway_fonts_url()
     $fonts     = array();
     $subsets   = 'latin,latin-ext';
 
-    if ('off' !== _x('on', 'Rubik font: on or off', 'northway')) {
-        $fonts[] = 'Rubik:ital,wght@0,300..900;1,300..900&display=swap';
+    if ('off' !== _x('on', 'DM Sans font: on or off', 'northway')) {
+        $fonts[] = 'DM Sans:ital,wght@0,300..900;1,300..900&display=swap';
+    }
+
+    if ('off' !== _x('on', 'Cormorant Garamond font: on or off', 'northway')) {
+        $fonts[] = 'Cormorant Garamond:ital,wght@0,300..900;1,300..900&display=swap';
     }
 
     if ('off' !== _x('on', 'Inter font: on or off', 'northway')) {

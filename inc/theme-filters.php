@@ -519,10 +519,10 @@ function northway_update_elementor_font_groups_control($font_groups)
 	return array_merge($pxlfonts_group, $font_groups);
 }
 
-add_filter('elementor/fonts/additional_fonts', 'northway_update_elementor_font_control');
-function northway_update_elementor_font_control($additional_fonts)
-{
-	$additional_fonts['General Sans'] = 'pxlfonts';
-	$additional_fonts['Satoshi'] = 'pxlfonts';
-	return $additional_fonts;
-}
+// add_filter('elementor/fonts/additional_fonts', 'northway_update_elementor_font_control');
+// function northway_update_elementor_font_control($additional_fonts)
+// {
+// 	$additional_fonts['General Sans'] = 'pxlfonts';
+// 	$additional_fonts['Satoshi'] = 'pxlfonts';
+// 	return $additional_fonts;
+// }

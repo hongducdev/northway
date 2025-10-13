@@ -545,8 +545,9 @@
         }
     }
     .pxl-title--highlight {
-        @extend .text-gradient;
-        // display: inline-flex;
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 700;
+        font-style: italic;
         div {
             position: static !important;
         }

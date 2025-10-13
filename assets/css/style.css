@@ -1344,7 +1344,7 @@ body {
   background-color: var(--body_bg-color);
   font-size: 16px;
   line-height: 1.5;
-  color: var(--secondary-color);
+  color: rgba(4, 20, 39, 0.7);
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -4402,7 +4402,7 @@ body.rtl .pxl-box-hover1 .pxl-item--inner:hover:before {
   color: var(--secondary-color);
   fill: var(--secondary-color);
 }
-.text-gradient, .pxl-link .pxl-type-gradient i, .pxl-heading .pxl-title--highlight, .pxl-heading .highlight-text-gradient .pxl-title--highlight, .btn--readmore .btn--backdrop .btn--text, .pxl-contact-info-widget .pxl-item--icon i {
+.text-gradient, .pxl-link .pxl-type-gradient i, .pxl-heading .highlight-text-gradient .pxl-title--highlight, .btn--readmore .btn--backdrop .btn--text, .pxl-contact-info-widget .pxl-item--icon i {
   background-image: -webkit-linear-gradient(325deg, var(--gradient-color-from) 21.57%, var(--gradient-color-to) 63.2%);
   background-image: -moz-linear-gradient(325deg, var(--gradient-color-from) 21.57%, var(--gradient-color-to) 63.2%);
   background-image: -ms-linear-gradient(325deg, var(--gradient-color-from) 21.57%, var(--gradient-color-to) 63.2%);
@@ -5361,6 +5361,11 @@ body.rtl .pxl-box-hover1 .pxl-item--inner:hover:before {
 }
 .pxl-heading .pxl-item--subtitle.pxl-sub-title-style-6 .pxl-item--subtext svg {
   color: var(--primary-color);
+}
+.pxl-heading .pxl-title--highlight {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-style: italic;
 }
 .pxl-heading .pxl-title--highlight div {
   position: static !important;
@@ -14595,132 +14600,6 @@ body.rtl .widget .widget-title:before {
 .pxl-container-header-home-2 .section-mega-active {
   border-bottom-right-radius: 10px !important;
   border-bottom-left-radius: 10px !important;
-}
-.pxl-slider-heading {
-  font-family: "General Sans" !important;
-}
-.pxl-slider-desc {
-  font-family: Satoshi !important;
-}
-@media screen and (max-width: 767px) {
-  #pxl-slider-home-1 .pxl-slider-sub-title svg {
-    height: 20px !important;
-  }
-}
-@media screen and (max-width: 479px) {
-  #pxl-slider-home-1 .pxl-slider-sub-title svg {
-    display: none !important;
-  }
-}
-#pxl-slider-home-1 .pxl-slider-sub-title-center {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 23px !important;
-}
-@media screen and (max-width: 767px) {
-  #pxl-slider-home-1 .pxl-slider-sub-title-center {
-    gap: 10px !important;
-  }
-}
-#pxl-slider-home-1 .pxl-slider-button {
-  font-family: "General Sans" !important;
-}
-#pxl-slider-home-1 .pxl-slider-call-btn {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  border-radius: 50% !important;
-}
-#pxl-slider-home-1 .pxl-slider-call-text {
-  font-family: Satoshi !important;
-}
-#pxl-slider-home-1 .sr7-arrows {
-  width: 78px !important;
-  height: 78px !important;
-  border-radius: 50% !important;
-  background-color: rgba(255, 255, 255, 0.2) !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
-  -khtml-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
-  -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
-  -ms-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
-  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
-}
-@media screen and (max-width: 1400px) {
-  #pxl-slider-home-1 .sr7-arrows {
-    display: none !important;
-  }
-}
-#pxl-slider-home-1 .sr7-arrows:before {
-  font-size: 24px !important;
-}
-#pxl-slider-home-1 .sr7-arrows:hover {
-  background-color: rgba(255, 255, 255, 0.3) !important;
-}
-#pxl-slider-home-2 .pxl-slider-button {
-  font-family: "General Sans" !important;
-}
-#pxl-slider-home-2 .pxl-slider-button-2 {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-#pxl-slider-home-2 .pxl-slider-button-2 svg {
-  margin-left: 10px !important;
-}
-#pxl-slider-home-2 sr7-bullets {
-  display: flex !important;
-  align-items: center !important;
-  z-index: 99 !important;
-}
-@media screen and (max-width: 1280px) {
-  #pxl-slider-home-2 sr7-bullets {
-    display: none !important;
-  }
-}
-#pxl-slider-home-2 sr7-bullets sr7-bullet {
-  background-color: rgba(255, 255, 255, 0.5) !important;
-  width: 8px !important;
-  height: 8px !important;
-  border-radius: 50% !important;
-  position: relative !important;
-  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
-  -khtml-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
-  -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
-  -ms-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
-  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
-}
-#pxl-slider-home-2 sr7-bullets sr7-bullet:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  width: 18px;
-  height: 18px;
-  background-color: transparent;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  opacity: 0;
-  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
-  -khtml-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
-  -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
-  -ms-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
-  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
-}
-#pxl-slider-home-2 sr7-bullets sr7-bullet.selected, #pxl-slider-home-2 sr7-bullets sr7-bullet:hover {
-  background-color: #fff !important;
-}
-#pxl-slider-home-2 sr7-bullets sr7-bullet.selected:before, #pxl-slider-home-2 sr7-bullets sr7-bullet:hover:before {
-  transform: translate(-50%, -50%) scale(1);
-  opacity: 1;
 }
 .pxl-project-home-3 {
   background: linear-gradient(to bottom, #e2dcd0 0%, #fff 100%);
@@ -28727,7 +28606,7 @@ body .woosw-popup-content-mid .added_to_cart {
   animation-fill-mode: forwards;
 }
 .pxl-service-carousel2 .pxl-post--readmore-divider {
-  border-top: 1px dashed rgba(149, 136, 248, 0.5);
+  border-top: 1px dashed rgba(223, 176, 196, 0.5);
   flex: 1;
   width: 100%;
   height: 1px;

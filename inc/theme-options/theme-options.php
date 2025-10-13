@@ -231,7 +231,7 @@ function casethemes_setup_option()
                 'type'     => 'media',
                 'title'    => esc_html__('Logo Search Popup', 'northway'),
                 'default' => array(
-                    'url' => get_template_directory_uri() . '/assets/img/logo.png'
+                    'url' => get_template_directory_uri() . '/assets/img/logo.svg'
                 ),
             ),
             array(
@@ -357,7 +357,7 @@ function casethemes_setup_option()
                     'type'     => 'media',
                     'title'    => esc_html__('Logo Search Popup', 'northway'),
                     'default' => array(
-                        'url' => get_template_directory_uri() . '/assets/img/logo.png'
+                        'url' => get_template_directory_uri() . '/assets/img/logo.svg'
                     ),
                     'url'      => false,
                     'required' => array(0 => 'mobile_display', 1 => 'equals', 2 => 'show'),
@@ -406,7 +406,7 @@ function casethemes_setup_option()
                     'type'     => 'media',
                     'title'    => esc_html__('Logo', 'northway'),
                     'default' => array(
-                        'url' => get_template_directory_uri() . '/assets/img/logo.png'
+                        'url' => get_template_directory_uri() . '/assets/img/logo.svg'
                     ),
                     'url'      => false,
                     'required' => array(0 => 'mobile_display', 1 => 'equals', 2 => 'show'),

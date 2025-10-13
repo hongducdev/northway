@@ -5,7 +5,7 @@ body {
     background-color: $body_bg_color;
     font-size: 16px;
     line-height: 1.5;
-    color: $secondary_color;
+    color: rgba($secondary_color_hex, 0.7);
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
