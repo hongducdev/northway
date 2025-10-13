@@ -196,20 +196,7 @@ pxl_add_custom_widget(
                                 'options' => [
                                     'pxl-sub-title-default' => 'Default',
                                 ],
-                                'default' => 'px-sub-title-default',
-                            ),
-                            array(
-                                'name' => 'icon_position',
-                                'label' => esc_html__('Icon Position', 'northway'),
-                                'type' => \Elementor\Controls_Manager::SELECT,
-                                'options' => [
-                                    'left' => 'Left',
-                                    'top' => 'Top',
-                                ],
-                                'default' => 'left',
-                                'condition' => [
-                                    'sub_title_style' => ['pxl-sub-title-style-5'],
-                                ],
+                                'default' => 'pxl-sub-title-default',
                             ),
                             array(
                                 'name' => 'sub_title_padding',
@@ -220,6 +207,17 @@ pxl_add_custom_widget(
                                     '{{WRAPPER}} .pxl-heading .pxl-item--subtitle .pxl-item--subtext' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                                 ],
                                 'control_type' => 'responsive',
+                            ),
+                            array(
+                                'name' => 'sub_title_background_color',
+                                'label' => esc_html__('Background Color', 'northway'),
+                                'type' => \Elementor\Controls_Manager::COLOR,
+                                'selectors' => [
+                                    '{{WRAPPER}} .pxl-heading .pxl-item--subtitle' => 'background-color: {{VALUE}};',
+                                ],
+                                'condition' => [
+                                    'sub_title_style' => ['pxl-sub-title-default'],
+                                ],
                             ),
                             array(
                                 'name' => 'sub_title_color',
@@ -253,49 +251,19 @@ pxl_add_custom_widget(
                                 ],
                             ),
                             array(
-                                'name' => 'sub_title_icon_width',
-                                'label' => esc_html__('Icon Width', 'northway'),
-                                'type' => \Elementor\Controls_Manager::SLIDER,
-                                'control_type' => 'responsive',
-                                'size_units' => ['px'],
-                                'range' => [
-                                    'px' => [
-                                        'min' => 0,
-                                        'max' => 300,
-                                    ],
-                                ],
-                                'selectors' => [
-                                    '{{WRAPPER}} .pxl-heading .pxl-item--subtitle svg' => 'width: {{SIZE}}{{UNIT}};',
-                                ],
-                                'condition' => [
-                                    'sub_title_style' => ['pxl-sub-title-style-4'],
-                                ],
-                            ),
-                            array(
-                                'name' => 'sub_title_icon_height',
-                                'label' => esc_html__('Icon Height', 'northway'),
-                                'type' => \Elementor\Controls_Manager::SLIDER,
-                                'control_type' => 'responsive',
-                                'size_units' => ['px'],
-                                'range' => [
-                                    'px' => [
-                                        'min' => 0,
-                                        'max' => 300,
-                                    ],
-                                ],
-                                'selectors' => [
-                                    '{{WRAPPER}} .pxl-heading .pxl-item--subtitle svg' => 'height: {{SIZE}}{{UNIT}};',
-                                ],
-                                'condition' => [
-                                    'sub_title_style' => ['pxl-sub-title-style-4'],
-                                ],
-                            ),
-                            array(
                                 'name' => 'sub_title_icon_color',
                                 'label' => esc_html__('Icon Color', 'northway'),
                                 'type' => \Elementor\Controls_Manager::COLOR,
                                 'selectors' => [
                                     '{{WRAPPER}} .pxl-heading .pxl-item--subtitle svg' => 'color: {{VALUE}};',
+                                ],
+                            ),
+                            array(
+                                'name' => 'sub_title_border_color',
+                                'label' => esc_html__('Border Color', 'northway'),
+                                'type' => \Elementor\Controls_Manager::COLOR,
+                                'selectors' => [
+                                    '{{WRAPPER}} .pxl-heading .pxl-item--subtitle' => 'border-color: {{VALUE}};',
                                 ],
                             ),
                             array(

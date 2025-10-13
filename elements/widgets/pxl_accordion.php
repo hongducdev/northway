@@ -27,18 +27,6 @@ pxl_add_custom_widget(
                                     'label' => esc_html__('Layout 1', 'northway' ),
                                     'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_accordion/layout1.jpg'
                                 ],
-                                '2' => [
-                                    'label' => esc_html__('Layout 2', 'northway' ),
-                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_accordion/layout2.jpg'
-                                ],
-                                '3' => [
-                                    'label' => esc_html__('Layout 3', 'northway' ),
-                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_accordion/layout3.jpg'
-                                ],
-                                '4' => [
-                                    'label' => esc_html__('Layout 4', 'northway' ),
-                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_accordion/layout4.jpg'
-                                ],
                             ],
                         ),
                     ),
@@ -55,7 +43,6 @@ pxl_add_custom_widget(
                             'options' => [
                                 'style1' => 'Style 1',
                                 'style2' => 'Style 2',
-                                'style3' => 'Style 3 (From Service Posts)',
                             ],
                             'default' => 'style1',
                         ),
@@ -67,65 +54,10 @@ pxl_add_custom_widget(
                             'default' => '1',
                         ),
                         array(
-                            'name' => 'service_limit',
-                            'label' => esc_html__('Number of Services', 'northway'),
-                            'type' => \Elementor\Controls_Manager::NUMBER,
-                            'default' => 4,
-                            'condition' => [
-                                'layout' => '2'
-                            ],
-                        ),
-                        array(
-                            'name' => 'service_orderby',
-                            'label' => esc_html__('Order By', 'northway'),
-                            'type' => \Elementor\Controls_Manager::SELECT,
-                            'options' => [
-                                'date' => esc_html__('Date', 'northway'),
-                                'title' => esc_html__('Title', 'northway'),
-                                'menu_order' => esc_html__('Menu Order', 'northway'),
-                                'rand' => esc_html__('Random', 'northway'),
-                            ],
-                            'default' => 'menu_order',
-                            'condition' => [
-                                'layout' => '2'
-                            ],
-                        ),
-                        array(
-                            'name' => 'service_order',
-                            'label' => esc_html__('Order', 'northway'),
-                            'type' => \Elementor\Controls_Manager::SELECT,
-                            'options' => [
-                                'ASC' => esc_html__('Ascending', 'northway'),
-                                'DESC' => esc_html__('Descending', 'northway'),
-                            ],
-                            'default' => 'ASC',
-                            'condition' => [
-                                'layout' => '2'
-                            ],
-                        ),
-                        array(
-                            'name' => 'readmore_text',
-                            'label' => esc_html__('Read More Text', 'northway'),
-                            'type' => \Elementor\Controls_Manager::TEXT,
-                            'default' => 'Read More',
-                            'condition' => [
-                                'layout' => '2'
-                            ],
-                        ),
-                        array(
                             'name' => 'accordion',
                             'label' => esc_html__('Accordion', 'northway'),
                             'type' => \Elementor\Controls_Manager::REPEATER,
-                            'condition' => [
-                                'layout' => ['1', '3']
-                            ],
                             'controls' => array(
-                                array(
-                                    'name' => 'number',
-                                    'label' => esc_html__('Number', 'northway'),
-                                    'type' => \Elementor\Controls_Manager::TEXT,
-                                    'label_block' => true,
-                                ),
                                 array(
                                     'name' => 'title',
                                     'label' => esc_html__('Title', 'northway'),
@@ -143,6 +75,27 @@ pxl_add_custom_widget(
                                     'label' => esc_html__('Icon', 'northway'),
                                     'type' => \Elementor\Controls_Manager::ICONS,
                                     'fa4compatibility' => 'icon',
+                                ),
+                                array(
+                                    'name' => 'avatar',
+                                    'label' => esc_html__('Avatar', 'northway'),
+                                    'type' => \Elementor\Controls_Manager::MEDIA,
+                                ),
+                                array(
+                                    'name' => 'name',
+                                    'label' => esc_html__('Name', 'northway'),
+                                    'type' => \Elementor\Controls_Manager::TEXT,
+                                    'label_block' => true,
+                                ),
+                                array(
+                                    'name' => 'position',
+                                    'label' => esc_html__('Position', 'northway'),
+                                    'type' => \Elementor\Controls_Manager::TEXT,
+                                ),
+                                array(
+                                    'name' => 'signature',
+                                    'label' => esc_html__('Signature', 'northway'),
+                                    'type' => \Elementor\Controls_Manager::MEDIA,
                                 ),
                             ),
                             'title_field' => '{{{ title }}}',

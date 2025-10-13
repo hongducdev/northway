@@ -13,47 +13,9 @@ pxl_add_custom_widget(
                     'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
                     'controls' => array(
                         array(
-                            'name' => 'project_info',
-                            'label' => esc_html__('Project Info', 'northway'),
-                            'type' => \Elementor\Controls_Manager::SWITCHER,
-                        ),
-                        array(
-                            'name' => 'project_lists',
-                            'label' => esc_html__('Content', 'northway'),
-                            'type' => \Elementor\Controls_Manager::REPEATER,
-                            'condition' => [
-                                'project_info' => 'true',
-                            ],
-                            'controls' => array(
-                                array(
-                                    'name' => 'project_icon',
-                                    'label' => esc_html__('Icon', 'northway'),
-                                    'type' => \Elementor\Controls_Manager::ICONS,
-                                    'fa4compatibility' => 'icon',
-                                ),
-                                array(
-                                    'name' => 'project_label',
-                                    'label' => esc_html__('Label', 'northway'),
-                                    'type' => \Elementor\Controls_Manager::TEXT,
-                                    'rows' => 10,
-                                    'show_label' => false,
-                                ),
-                                array(
-                                    'name' => 'project_content',
-                                    'label' => esc_html__('Content', 'northway'),
-                                    'type' => \Elementor\Controls_Manager::TEXT,
-                                    'show_label' => false,
-                                ),
-                            ),
-                            'title_field' => '{{{ project_content }}}',
-                        ),
-                        array(
                             'name' => 'lists',
                             'label' => esc_html__('Content', 'northway'),
                             'type' => \Elementor\Controls_Manager::REPEATER,
-                            'condition' => [
-                                'project_info' => '',
-                            ],
                             'controls' => array(
                                 array(
                                     'name' => 'label',
@@ -78,7 +40,6 @@ pxl_add_custom_widget(
                             'fa4compatibility' => 'icon',
                             'condition' => [
                                 'style' => 'default',
-                                'project_info' => '',
                             ],
                         ),
                     ),
@@ -123,7 +84,7 @@ pxl_add_custom_widget(
                             'label' => esc_html__('Content Color', 'northway'),
                             'type' => \Elementor\Controls_Manager::COLOR,
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-list .pxl-item-content' => 'color: {{VALUE}};',
+                                '{{WRAPPER}} .pxl-list .pxl-item--content' => 'color: {{VALUE}};',
                             ],
                         ),
                         array(
@@ -131,7 +92,7 @@ pxl_add_custom_widget(
                             'label' => esc_html__('Content Typography', 'northway'),
                             'type' => \Elementor\Group_Control_Typography::get_type(),
                             'control_type' => 'group',
-                            'selector' => '{{WRAPPER}} .pxl-list .pxl-item-content, {{WRAPPER}} .pxl-list p',
+                            'selector' => '{{WRAPPER}} .pxl-list .pxl-item--content, {{WRAPPER}} .pxl-list p',
                         ),
                         array(
                             'name' => 'icon_color',
@@ -220,7 +181,7 @@ pxl_add_custom_widget(
                                 ],
                             ],
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-list .pxl--item + .pxl--item' => 'margin-top: {{SIZE}}{{UNIT}};',
+                                '{{WRAPPER}} .pxl-list .pxl-item + .pxl-item' => 'margin-top: {{SIZE}}{{UNIT}};',
                             ],
                             'condition' => [
                                 'hozirontal_alignment' => '',
@@ -239,7 +200,7 @@ pxl_add_custom_widget(
                                 ],
                             ],
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-list.pxl-list-hozirontal .pxl--item + .pxl--item' => 'margin-left: {{SIZE}}{{UNIT}};',
+                                '{{WRAPPER}} .pxl-list.pxl-list-hozirontal .pxl-item + .pxl-item' => 'margin-left: {{SIZE}}{{UNIT}};',
                             ],
                             'condition' => [
                                 'hozirontal_alignment' => 'true',

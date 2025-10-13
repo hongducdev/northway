@@ -449,7 +449,7 @@
             svg {
                 width: 10px;
                 height: 10px;
-                color: $primary_color;
+                color: $secondary-color;
                 animation: spin 3s linear infinite;
             }
             .pxl-item--subtext {
@@ -1333,44 +1333,40 @@
             }
         }
     }
-    .pxl-item--icon {
-        color: $primary_color;
-        font-size: 20px;
-        line-height: 1;
-        min-width: 28px;
-        display: flex;
-    }
-
-    svg {
-        width: 18px;
-        height: auto;
-    }
-    .pxl-item-content {
-        a {
-            color: inherit;
-            &:hover {
-                color: $primary_color;
+    &.default {
+        .pxl-item {
+            display: flex;
+            align-items: center;
+            + .pxl-item {
+                margin-top: 20px;
+            }
+            &--icon {
+                width: 35px;
+                height: 35px;
+                @include border-radius(5px);
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $primary_color;
+                font-size: 12px;
+                color: #f8f8f2;
+                margin-right: 15px;
+                svg {
+                    path {
+                        fill: #f8f8f2;
+                    }
+                }
+            }
+            &--content {
+                color: $secondary_color;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 1.625;
+                p {
+                    margin: 0;
+                }
             }
         }
-    }
-    label {
-        font-weight: 600;
-        color: #0a1320;
-        display: inline-flex;
-        @extend .ft-theme-default;
-    }
-    .pxl--item {
-        display: flex;
-        flex-wrap: nowrap;
-        + .pxl--item {
-            margin-top: 20px;
-        }
-    }
-    p {
-        margin-bottom: 0;
-    }
-    strong {
-        font-weight: 500;
     }
     &.numbered {
         .pxl-item--numbered {
@@ -1378,48 +1374,6 @@
             font-weight: 500;
             color: $secondary_color;
             margin-right: 3px;
-        }
-    }
-    &.pxl-project-info {
-        .pxl--item {
-            + .pxl--item {
-                margin-top: 0;
-                border-top: none;
-            }
-            &:last-child {
-                border-radius: 0 0 20px 20px;
-            }
-            min-height: 60px;
-            height: 100%;
-            padding: 0 30px;
-            border: 1px solid rgba($primary_color_hex, 0.3);
-            display: flex;
-            align-items: center;
-            justify-content: start;
-            gap: 10px;
-            font-size: 15px;
-            font-weight: 400;
-            color: $secondary_color;
-            @media #{$max-xsx} {
-                padding: 0 15px;
-            }
-            &--meta {
-                gap: 3px;
-            }
-            i {
-                font-size: 12px;
-                color: $secondary_color;
-            }
-            svg {
-                width: 12px;
-                path {
-                    fill: $secondary_color;
-                }
-            }
-            label {
-                font-weight: 500;
-                color: #0a250e;
-            }
         }
     }
 }

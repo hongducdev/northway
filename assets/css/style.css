@@ -4519,7 +4519,7 @@ body.rtl .pxl-box-hover1 .pxl-item--inner:hover:before {
   background-image: linear-gradient(to bottom, var(--gradient-color-from), var(--gradient-color-to));
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='var(--gradient-color-from)', endColorStr='var(--gradient-color-to)');
 }
-.ft-theme-default, .pxl-swiper-pagination .pxl-swiper-current-slide, .pxl-swiper-pagination .pxl-swiper-total-slides, .pxl-text-effect1, .pxl-heading .pxl-item--title, .pxl-heading .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-heading -title.pxl-item, #pxl-search-popup .pxl-item--content form .search-field, .pxl-search-popup-button .pxl_cart_counter, .pxl-list1 label, .pxl-language-switch .language, .pxl-icon-postformat .link-icon a span, .pxl-banner .pxl-banner-inner .hover-content .subtitle-phone, .pxl-banner .pxl-banner-inner .hover-content .phone-number, .pxl-banner .pxl-banner-inner .hover-content .btn, .pxl-post-share a, .pxl-logo-marquee1 .pxl-item--text, .pxl-menu-primary li a, .pxl-menu-primary > li > a, .pxl--post-footer label, .pxl-post--navigation, .pxl-post--author-info .pxl-user--name, .btn--readmore, .page-links .post-page-numbers, .comments-title, .widget_rss .rsswidget, .widget_block .wp-block-search__label, .widget_block .wp-block-group__inner-container > h2, .widget_block .wp-block-archives-list, .widget_block .wp-block-categories-list, .pxl-wg-categories .pxl-category--inner span, .pxl-contact-info-widget .pxl-phone--number, .ft-gt, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label, .woocommerce #pxl-sidebar-area .widget_products ul a, .single-product .woocommerce-social-share label, .single-product section.related .woocommerce-product-content .price, .single-product #pxl-content-area div.product .wooc-product-meta button, .single-product > div.product .wooc-product-meta button, .woosw-popup .woosw-item--actions a.button, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward, .archive section.related .woocommerce-product-content .price, .archive .woocommerce-product-content .price, .woocommerce.archive .products.shop-view-list li .add_to_cart_button, .woocommerce.archive .products.shop-view-list li .added_to_cart, .ft-gt p, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label p, .woocommerce #pxl-sidebar-area .widget_products ul a p, .single-product .woocommerce-social-share label p, .single-product section.related .woocommerce-product-content .price p, .single-product #pxl-content-area div.product .wooc-product-meta button p, .single-product > div.product .wooc-product-meta button p, .woosw-popup .woosw-item--actions a.button p, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button p, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward p, .archive section.related .woocommerce-product-content .price p, .archive .woocommerce-product-content .price p, .woocommerce.archive .products.shop-view-list li .add_to_cart_button p, .woocommerce.archive .products.shop-view-list li .added_to_cart p, .ft-gt h1, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h1, .woocommerce #pxl-sidebar-area .widget_products ul a h1, .single-product .woocommerce-social-share label h1, .single-product section.related .woocommerce-product-content .price h1, .single-product #pxl-content-area div.product .wooc-product-meta button h1, .single-product > div.product .wooc-product-meta button h1, .woosw-popup .woosw-item--actions a.button h1, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h1, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h1, .archive section.related .woocommerce-product-content .price h1, .archive .woocommerce-product-content .price h1, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h1, .woocommerce.archive .products.shop-view-list li .added_to_cart h1, .ft-gt h2, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h2, .woocommerce #pxl-sidebar-area .widget_products ul a h2, .single-product .woocommerce-social-share label h2, .single-product section.related .woocommerce-product-content .price h2, .single-product #pxl-content-area div.product .wooc-product-meta button h2, .single-product > div.product .wooc-product-meta button h2, .woosw-popup .woosw-item--actions a.button h2, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h2, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h2, .archive section.related .woocommerce-product-content .price h2, .archive .woocommerce-product-content .price h2, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h2, .woocommerce.archive .products.shop-view-list li .added_to_cart h2, .ft-gt h3, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h3, .woocommerce #pxl-sidebar-area .widget_products ul a h3, .single-product .woocommerce-social-share label h3, .single-product section.related .woocommerce-product-content .price h3, .single-product #pxl-content-area div.product .wooc-product-meta button h3, .single-product > div.product .wooc-product-meta button h3, .woosw-popup .woosw-item--actions a.button h3, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h3, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h3, .archive section.related .woocommerce-product-content .price h3, .archive .woocommerce-product-content .price h3, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h3, .woocommerce.archive .products.shop-view-list li .added_to_cart h3, .ft-gt h4, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h4, .woocommerce #pxl-sidebar-area .widget_products ul a h4, .single-product .woocommerce-social-share label h4, .single-product section.related .woocommerce-product-content .price h4, .single-product #pxl-content-area div.product .wooc-product-meta button h4, .single-product > div.product .wooc-product-meta button h4, .woosw-popup .woosw-item--actions a.button h4, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h4, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h4, .archive section.related .woocommerce-product-content .price h4, .archive .woocommerce-product-content .price h4, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h4, .woocommerce.archive .products.shop-view-list li .added_to_cart h4, .ft-gt h5, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h5, .woocommerce #pxl-sidebar-area .widget_products ul a h5, .single-product .woocommerce-social-share label h5, .single-product section.related .woocommerce-product-content .price h5, .single-product #pxl-content-area div.product .wooc-product-meta button h5, .single-product > div.product .wooc-product-meta button h5, .woosw-popup .woosw-item--actions a.button h5, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h5, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h5, .archive section.related .woocommerce-product-content .price h5, .archive .woocommerce-product-content .price h5, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h5, .woocommerce.archive .products.shop-view-list li .added_to_cart h5, .ft-gt h6, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h6, .woocommerce #pxl-sidebar-area .widget_products ul a h6, .single-product .woocommerce-social-share label h6, .single-product section.related .woocommerce-product-content .price h6, .single-product #pxl-content-area div.product .wooc-product-meta button h6, .single-product > div.product .wooc-product-meta button h6, .woosw-popup .woosw-item--actions a.button h6, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h6, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h6, .archive section.related .woocommerce-product-content .price h6, .archive .woocommerce-product-content .price h6, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h6, .woocommerce.archive .products.shop-view-list li .added_to_cart h6, .ft-gt div, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label div, .woocommerce #pxl-sidebar-area .widget_products ul a div, .single-product .woocommerce-social-share label div, .single-product section.related .woocommerce-product-content .price div, .single-product #pxl-content-area div.product .wooc-product-meta button div, .single-product > div.product .wooc-product-meta button div, .woosw-popup .woosw-item--actions a.button div, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button div, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward div, .archive section.related .woocommerce-product-content .price div, .archive .woocommerce-product-content .price div, .woocommerce.archive .products.shop-view-list li .add_to_cart_button div, .woocommerce.archive .products.shop-view-list li .added_to_cart div, .ft-gt span, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label span, .woocommerce #pxl-sidebar-area .widget_products ul a span, .single-product .woocommerce-social-share label span, .single-product section.related .woocommerce-product-content .price span, .single-product #pxl-content-area div.product .wooc-product-meta button span, .single-product > div.product .wooc-product-meta button span, .woosw-popup .woosw-item--actions a.button span, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button span, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward span, .archive section.related .woocommerce-product-content .price span, .archive .woocommerce-product-content .price span, .woocommerce.archive .products.shop-view-list li .add_to_cart_button span, .woocommerce.archive .products.shop-view-list li .added_to_cart span, input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="tel"], input[type="number"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea, select, .pxl-select-higthlight, .nice-select, .single-post .comment-form input[type="text"], .single-post .comment-form textarea, .comment-form-cookies-consent, .nice-select ul.list, .wrap-ctf-bill button, .wrap-ctf3 button, .wrap-ctf-page.single-sv button, .form-contact-qrcode .first p, .form-contact-qrcode button, .form-contact-qrcode.online-appointment label, .widget_shopping_cart .total strong, #pxl-cart-sidebar .pxl-widget-cart-sidebar .widget_shopping_title, .woocommerce .woocommerce-error, .woocommerce .woocommerce-info, .woocommerce .woocommerce-message, .woocommerce .button.add_to_cart_button, .woocommerce-page .button.add_to_cart_button, .woocommerce button.single_add_to_cart_button, .woocommerce-page button.single_add_to_cart_button, .woocommerce #respond input#submit, .woocommerce-page #respond input#submit, .woocommerce a.added_to_cart.wc-forward, .woocommerce-page a.added_to_cart.wc-forward, .woocommerce .button:not(.add_to_cart_button):not(.single_add_to_cart_button):not(.added_to_cart), .woocommerce-page .button:not(.add_to_cart_button):not(.single_add_to_cart_button):not(.added_to_cart), .single-product .meta .woocommerce-review__author, .single-product #pxl-content-area div.product form.cart label, .single-product > div.product form.cart label, .single-product #pxl-content-area div.product .woocommerce-tabs .woocommerce-tabs-panel--reviews .comment-reply-title, .single-product > div.product .woocommerce-tabs .woocommerce-tabs-panel--reviews .comment-reply-title, body.woocommerce-cart .woocommerce-cart-form .shop_table thead th, .pxl-shop-topbar-wrap .woocommerce-result-count, .woocommerce.archive .products.shop-view-list li .woocommerce-wishlist button, .pxl-grid-filter .filter-item, .btn-readmore-1, .pxl-related-post .pxl-swiper-slide .pxl-post--inner .pxl-post--title, .pxl-related-post .pxl-swiper-slide .pxl-post--inner .btn--readmore, input[type="submit"], .btn:not(.btn-stroke), .pxl-icon-box6 .pxl-item--title, .pxl-icon-box6 .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-icon-box6 -title.pxl-item, .tt_navigation_cell .tt_tabs_navigation li a, .tt_timetable thead tr th, .tt_timetable .tt_hours_column, body .tt_timetable .event .event_header {
+.ft-theme-default, .pxl-swiper-pagination .pxl-swiper-current-slide, .pxl-swiper-pagination .pxl-swiper-total-slides, .pxl-text-effect1, .pxl-heading .pxl-item--title, .pxl-heading .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-heading -title.pxl-item, #pxl-search-popup .pxl-item--content form .search-field, .pxl-search-popup-button .pxl_cart_counter, .pxl-language-switch .language, .pxl-icon-postformat .link-icon a span, .pxl-banner .pxl-banner-inner .hover-content .subtitle-phone, .pxl-banner .pxl-banner-inner .hover-content .phone-number, .pxl-banner .pxl-banner-inner .hover-content .btn, .pxl-post-share a, .pxl-logo-marquee1 .pxl-item--text, .pxl-menu-primary li a, .pxl-menu-primary > li > a, .pxl--post-footer label, .pxl-post--navigation, .pxl-post--author-info .pxl-user--name, .btn--readmore, .page-links .post-page-numbers, .comments-title, .widget_rss .rsswidget, .widget_block .wp-block-search__label, .widget_block .wp-block-group__inner-container > h2, .widget_block .wp-block-archives-list, .widget_block .wp-block-categories-list, .pxl-wg-categories .pxl-category--inner span, .pxl-contact-info-widget .pxl-phone--number, .ft-gt, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label, .woocommerce #pxl-sidebar-area .widget_products ul a, .single-product .woocommerce-social-share label, .single-product section.related .woocommerce-product-content .price, .single-product #pxl-content-area div.product .wooc-product-meta button, .single-product > div.product .wooc-product-meta button, .woosw-popup .woosw-item--actions a.button, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward, .archive section.related .woocommerce-product-content .price, .archive .woocommerce-product-content .price, .woocommerce.archive .products.shop-view-list li .add_to_cart_button, .woocommerce.archive .products.shop-view-list li .added_to_cart, .ft-gt p, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label p, .woocommerce #pxl-sidebar-area .widget_products ul a p, .single-product .woocommerce-social-share label p, .single-product section.related .woocommerce-product-content .price p, .single-product #pxl-content-area div.product .wooc-product-meta button p, .single-product > div.product .wooc-product-meta button p, .woosw-popup .woosw-item--actions a.button p, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button p, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward p, .archive section.related .woocommerce-product-content .price p, .archive .woocommerce-product-content .price p, .woocommerce.archive .products.shop-view-list li .add_to_cart_button p, .woocommerce.archive .products.shop-view-list li .added_to_cart p, .ft-gt h1, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h1, .woocommerce #pxl-sidebar-area .widget_products ul a h1, .single-product .woocommerce-social-share label h1, .single-product section.related .woocommerce-product-content .price h1, .single-product #pxl-content-area div.product .wooc-product-meta button h1, .single-product > div.product .wooc-product-meta button h1, .woosw-popup .woosw-item--actions a.button h1, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h1, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h1, .archive section.related .woocommerce-product-content .price h1, .archive .woocommerce-product-content .price h1, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h1, .woocommerce.archive .products.shop-view-list li .added_to_cart h1, .ft-gt h2, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h2, .woocommerce #pxl-sidebar-area .widget_products ul a h2, .single-product .woocommerce-social-share label h2, .single-product section.related .woocommerce-product-content .price h2, .single-product #pxl-content-area div.product .wooc-product-meta button h2, .single-product > div.product .wooc-product-meta button h2, .woosw-popup .woosw-item--actions a.button h2, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h2, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h2, .archive section.related .woocommerce-product-content .price h2, .archive .woocommerce-product-content .price h2, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h2, .woocommerce.archive .products.shop-view-list li .added_to_cart h2, .ft-gt h3, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h3, .woocommerce #pxl-sidebar-area .widget_products ul a h3, .single-product .woocommerce-social-share label h3, .single-product section.related .woocommerce-product-content .price h3, .single-product #pxl-content-area div.product .wooc-product-meta button h3, .single-product > div.product .wooc-product-meta button h3, .woosw-popup .woosw-item--actions a.button h3, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h3, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h3, .archive section.related .woocommerce-product-content .price h3, .archive .woocommerce-product-content .price h3, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h3, .woocommerce.archive .products.shop-view-list li .added_to_cart h3, .ft-gt h4, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h4, .woocommerce #pxl-sidebar-area .widget_products ul a h4, .single-product .woocommerce-social-share label h4, .single-product section.related .woocommerce-product-content .price h4, .single-product #pxl-content-area div.product .wooc-product-meta button h4, .single-product > div.product .wooc-product-meta button h4, .woosw-popup .woosw-item--actions a.button h4, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h4, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h4, .archive section.related .woocommerce-product-content .price h4, .archive .woocommerce-product-content .price h4, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h4, .woocommerce.archive .products.shop-view-list li .added_to_cart h4, .ft-gt h5, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h5, .woocommerce #pxl-sidebar-area .widget_products ul a h5, .single-product .woocommerce-social-share label h5, .single-product section.related .woocommerce-product-content .price h5, .single-product #pxl-content-area div.product .wooc-product-meta button h5, .single-product > div.product .wooc-product-meta button h5, .woosw-popup .woosw-item--actions a.button h5, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h5, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h5, .archive section.related .woocommerce-product-content .price h5, .archive .woocommerce-product-content .price h5, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h5, .woocommerce.archive .products.shop-view-list li .added_to_cart h5, .ft-gt h6, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h6, .woocommerce #pxl-sidebar-area .widget_products ul a h6, .single-product .woocommerce-social-share label h6, .single-product section.related .woocommerce-product-content .price h6, .single-product #pxl-content-area div.product .wooc-product-meta button h6, .single-product > div.product .wooc-product-meta button h6, .woosw-popup .woosw-item--actions a.button h6, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h6, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h6, .archive section.related .woocommerce-product-content .price h6, .archive .woocommerce-product-content .price h6, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h6, .woocommerce.archive .products.shop-view-list li .added_to_cart h6, .ft-gt div, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label div, .woocommerce #pxl-sidebar-area .widget_products ul a div, .single-product .woocommerce-social-share label div, .single-product section.related .woocommerce-product-content .price div, .single-product #pxl-content-area div.product .wooc-product-meta button div, .single-product > div.product .wooc-product-meta button div, .woosw-popup .woosw-item--actions a.button div, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button div, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward div, .archive section.related .woocommerce-product-content .price div, .archive .woocommerce-product-content .price div, .woocommerce.archive .products.shop-view-list li .add_to_cart_button div, .woocommerce.archive .products.shop-view-list li .added_to_cart div, .ft-gt span, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label span, .woocommerce #pxl-sidebar-area .widget_products ul a span, .single-product .woocommerce-social-share label span, .single-product section.related .woocommerce-product-content .price span, .single-product #pxl-content-area div.product .wooc-product-meta button span, .single-product > div.product .wooc-product-meta button span, .woosw-popup .woosw-item--actions a.button span, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button span, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward span, .archive section.related .woocommerce-product-content .price span, .archive .woocommerce-product-content .price span, .woocommerce.archive .products.shop-view-list li .add_to_cart_button span, .woocommerce.archive .products.shop-view-list li .added_to_cart span, input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="tel"], input[type="number"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea, select, .pxl-select-higthlight, .nice-select, .single-post .comment-form input[type="text"], .single-post .comment-form textarea, .comment-form-cookies-consent, .nice-select ul.list, .wrap-ctf-bill button, .wrap-ctf3 button, .wrap-ctf-page.single-sv button, .form-contact-qrcode .first p, .form-contact-qrcode button, .form-contact-qrcode.online-appointment label, .widget_shopping_cart .total strong, #pxl-cart-sidebar .pxl-widget-cart-sidebar .widget_shopping_title, .woocommerce .woocommerce-error, .woocommerce .woocommerce-info, .woocommerce .woocommerce-message, .woocommerce .button.add_to_cart_button, .woocommerce-page .button.add_to_cart_button, .woocommerce button.single_add_to_cart_button, .woocommerce-page button.single_add_to_cart_button, .woocommerce #respond input#submit, .woocommerce-page #respond input#submit, .woocommerce a.added_to_cart.wc-forward, .woocommerce-page a.added_to_cart.wc-forward, .woocommerce .button:not(.add_to_cart_button):not(.single_add_to_cart_button):not(.added_to_cart), .woocommerce-page .button:not(.add_to_cart_button):not(.single_add_to_cart_button):not(.added_to_cart), .single-product .meta .woocommerce-review__author, .single-product #pxl-content-area div.product form.cart label, .single-product > div.product form.cart label, .single-product #pxl-content-area div.product .woocommerce-tabs .woocommerce-tabs-panel--reviews .comment-reply-title, .single-product > div.product .woocommerce-tabs .woocommerce-tabs-panel--reviews .comment-reply-title, body.woocommerce-cart .woocommerce-cart-form .shop_table thead th, .pxl-shop-topbar-wrap .woocommerce-result-count, .woocommerce.archive .products.shop-view-list li .woocommerce-wishlist button, .pxl-grid-filter .filter-item, .btn-readmore-1, .pxl-related-post .pxl-swiper-slide .pxl-post--inner .pxl-post--title, .pxl-related-post .pxl-swiper-slide .pxl-post--inner .btn--readmore, input[type="submit"], .pxl-icon-box6 .pxl-item--title, .pxl-icon-box6 .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-icon-box6 -title.pxl-item, .tt_navigation_cell .tt_tabs_navigation li a, .tt_timetable thead tr th, .tt_timetable .tt_hours_column, body .tt_timetable .event .event_header {
   font-family: , sans-serif;
 }
 .pxl-wobble span {
@@ -5274,7 +5274,7 @@ body.rtl .pxl-box-hover1 .pxl-item--inner:hover:before {
 .pxl-heading .pxl-item--subtitle.pxl-sub-title-default svg {
   width: 10px;
   height: 10px;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   animation: spin 3s linear infinite;
 }
 .pxl-heading .pxl-item--subtitle.pxl-sub-title-default .pxl-item--subtext {
@@ -6252,88 +6252,47 @@ body.rtl .pxl-box-hover1 .pxl-item--inner:hover:before {
 .pxl-list1.pxl-list-hozirontal .pxl--item + .pxl--item {
   margin-top: 0;
 }
-.pxl-list1 .pxl-item--icon {
-  color: var(--primary-color);
-  font-size: 20px;
-  line-height: 1;
-  min-width: 28px;
+.pxl-list1.default .pxl-item {
   display: flex;
+  align-items: center;
 }
-.pxl-list1 svg {
-  width: 18px;
-  height: auto;
-}
-.pxl-list1 .pxl-item-content a {
-  color: inherit;
-}
-.pxl-list1 .pxl-item-content a:hover {
-  color: var(--primary-color);
-}
-.pxl-list1 label {
-  font-weight: 600;
-  color: #0a1320;
-  display: inline-flex;
-}
-.pxl-list1 .pxl--item {
-  display: flex;
-  flex-wrap: nowrap;
-}
-.pxl-list1 .pxl--item + .pxl--item {
+.pxl-list1.default .pxl-item + .pxl-item {
   margin-top: 20px;
 }
-.pxl-list1 p {
-  margin-bottom: 0;
+.pxl-list1.default .pxl-item--icon {
+  width: 35px;
+  height: 35px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  font-size: 12px;
+  color: #f8f8f2;
+  margin-right: 15px;
 }
-.pxl-list1 strong {
+.pxl-list1.default .pxl-item--icon svg path {
+  fill: #f8f8f2;
+}
+.pxl-list1.default .pxl-item--content {
+  color: var(--secondary-color);
+  font-size: 16px;
   font-weight: 500;
+  line-height: 1.625;
+}
+.pxl-list1.default .pxl-item--content p {
+  margin: 0;
 }
 .pxl-list1.numbered .pxl-item--numbered {
   font-size: 15px;
   font-weight: 500;
   color: var(--secondary-color);
   margin-right: 3px;
-}
-.pxl-list1.pxl-project-info .pxl--item {
-  min-height: 60px;
-  height: 100%;
-  padding: 0 30px;
-  border: 1px solid rgba(149, 136, 248, 0.3);
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  gap: 10px;
-  font-size: 15px;
-  font-weight: 400;
-  color: var(--secondary-color);
-}
-.pxl-list1.pxl-project-info .pxl--item + .pxl--item {
-  margin-top: 0;
-  border-top: none;
-}
-.pxl-list1.pxl-project-info .pxl--item:last-child {
-  border-radius: 0 0 20px 20px;
-}
-@media screen and (max-width: 479px) {
-  .pxl-list1.pxl-project-info .pxl--item {
-    padding: 0 15px;
-  }
-}
-.pxl-list1.pxl-project-info .pxl--item--meta {
-  gap: 3px;
-}
-.pxl-list1.pxl-project-info .pxl--item i {
-  font-size: 12px;
-  color: var(--secondary-color);
-}
-.pxl-list1.pxl-project-info .pxl--item svg {
-  width: 12px;
-}
-.pxl-list1.pxl-project-info .pxl--item svg path {
-  fill: var(--secondary-color);
-}
-.pxl-list1.pxl-project-info .pxl--item label {
-  font-weight: 500;
-  color: #0a250e;
 }
 .pxl-search-form1 .pxl-searchform-wrap {
   height: 50px;
@@ -28487,51 +28446,45 @@ input[type="submit"]:hover {
   justify-content: space-between !important;
 }
 .btn:not(.btn-stroke) {
-  font-size: 15px;
-  font-weight: 500;
-  color: #fff;
-  padding: 0 30px;
-  line-height: 50px;
-  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -khtml-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -ms-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  position: relative;
   cursor: pointer;
   border: none;
+  line-height: 52px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "DM Sans", sans-serif;
+  color: #f8f8f2;
+}
+.btn:not(.btn-stroke) span {
+  -webkit-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
   border-radius: 8px;
-  height: auto;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
+  padding: 0 30px;
+}
+.btn:not(.btn-stroke) .pxl-button--icon {
+  height: 52px;
+  width: 52px;
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
-  overflow: hidden;
-  z-index: 1;
+  -webkit-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  background-color: var(--secondary-color);
 }
-@media (max-width: 767px) {
-  .btn:not(.btn-stroke) {
-    line-height: 42px;
-    font-size: 14px;
-  }
-}
-.btn:not(.btn-stroke) i {
-  text-align: center;
-  display: block;
-}
-.btn:not(.btn-stroke) i:before {
-  display: block;
-}
-.btn:not(.btn-stroke).btn-default:not(.no-ef):hover i, .btn:not(.btn-stroke).btn-glossy:hover i, .btn:not(.btn-stroke).btn-default:not(.no-ef):hover svg, .btn:not(.btn-stroke).btn-glossy:hover svg {
-  -webkit-animation: hide_hover_icon 0.5s forwards;
-  animation: hide_hover_icon 0.5s forwards;
-  -webkit-animation-delay: 0.1s;
-  animation-delay: 0.1s;
+.btn:not(.btn-stroke) .pxl-button--icon svg {
+  margin: 0 !important;
 }
 .btn:not(.btn-stroke):hover {
   outline: medium none;
   text-decoration: none;
   color: #fff;
-  background-color: var(--secondary-color);
 }
 .btn:not(.btn-stroke).pxl-icon--right {
   flex-direction: row-reverse;

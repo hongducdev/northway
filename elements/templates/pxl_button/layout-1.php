@@ -23,7 +23,9 @@ if($template > 0 ){
 <div id="pxl-<?php echo esc_attr($html_id) ?>" class="pxl-button <?php echo esc_attr($settings['btn_action'].' '.$settings['pxl_animate']); ?>" data-wow-delay="<?php echo esc_attr($settings['pxl_animate_delay']); ?>ms">
     <a <?php pxl_print_html($widget->get_render_attribute_string( 'button' )); ?> class="btn <?php if(!empty($settings['btn_icon_2'])) { echo 'pxl-icon-active'; } ?> <?php echo esc_attr($settings['btn_text_effect'].' '.$settings['btn_style'].' '.$settings['pxl_animate'].' '.$settings['btn_w'].' pxl-icon--'.$settings['icon_align']); ?>" data-wow-delay="<?php echo esc_attr($settings['pxl_animate_delay']); ?>ms" data-target=".pxl-page-popup-template-<?php echo esc_attr($template); ?>">
         <?php if ($settings['btn_text_effect'] != 'btn-text-applied' && $settings['btn_style'] != 'btn-divide'): ?>
-            <?php if(!empty($settings['btn_icon'])) { \Elementor\Icons_Manager::render_icon( $settings['btn_icon'], [ 'aria-hidden' => 'true', 'class' => '' ], 'i' ); } ?>
+            <div class="pxl-button--icon">
+                <?php if(!empty($settings['btn_icon'])) { \Elementor\Icons_Manager::render_icon( $settings['btn_icon'], [ 'aria-hidden' => 'true', 'class' => '' ], 'i' ); } ?>
+            </div>
         <?php endif ?>
         <?php if ($settings['btn_style'] == 'btn-divide'): ?>
             <span class="btn-icon">
