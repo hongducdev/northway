@@ -1,0 +1,7290 @@
+# Copyright (C) 2025 Case-Themes
+# This file is distributed under the GPL-2.0+.
+msgid ""
+msgstr ""
+"Project-Id-Version: Northway 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/northway\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-10-01T17:17:41+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: northway\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Northway"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "http://demo.casethemes.net/northway"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "Northway is a stunning gardening and landscaping WordPress theme. The theme has a light, fresh and modern design for landscape service agency, gardener, landscaping company, tree planting business, eco-friendly business, arborist business, architecture landscape master, design planning bureau and other gardening service related business sites."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Case-Themes"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://casethemes.net/"
+msgstr ""
+
+#: 404.php:40
+msgid "Oops! Something's Missing in the Flowerbed"
+msgstr ""
+
+#: 404.php:51
+msgid "We're sorry, but the page you're looking for doesn't exist. It might have been moved or mistyped. Please check the URL or return to our homepage. If you need assistance, our support team is here to help."
+msgstr ""
+
+#: 404.php:59
+msgid "Back to Home"
+msgstr ""
+
+#: comments.php:20
+msgid "1 Comment"
+msgstr ""
+
+#: comments.php:22
+#: template-parts/widgets/recent-posts.php:115
+#: template-parts/widgets/recent-posts.php:119
+msgid "Comments"
+msgstr ""
+
+#: comments.php:43
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:53
+msgid "Post a Comment"
+msgstr ""
+
+#: comments.php:54
+msgid "Post a Comment To "
+msgstr ""
+
+#: comments.php:55
+msgid "Cancel Comment"
+msgstr ""
+
+#: comments.php:60
+msgid "Name*"
+msgstr ""
+
+#: comments.php:64
+msgid "Email*"
+msgstr ""
+
+#: comments.php:68
+msgid "Your Comment Here..."
+msgstr ""
+
+#: comments.php:69
+msgid "Save my details in this browser for the next time I comment"
+msgstr ""
+
+#: elements/element-custom.php:39
+msgid "Sticky <span style=\"font-size: 1.5em; vertical-align:middle; margin-inline-start:0.35em;\">📌<span>"
+msgstr ""
+
+#: elements/element-custom.php:47
+msgid "Border Animated"
+msgstr ""
+
+#: elements/element-custom.php:49
+#: elements/element-custom.php:65
+#: elements/element-custom.php:79
+msgid "Yes"
+msgstr ""
+
+#: elements/element-custom.php:50
+#: elements/element-custom.php:64
+#: elements/element-custom.php:78
+msgid "No"
+msgstr ""
+
+#: elements/element-custom.php:60
+msgid "Column Fixed"
+msgstr ""
+
+#: elements/element-custom.php:62
+msgid "Only applies to the original container."
+msgstr ""
+
+#: elements/element-custom.php:75
+msgid "Column Sticky"
+msgstr ""
+
+#: elements/element-custom.php:89
+msgid "Sticky Offset Top"
+msgstr ""
+
+#: elements/element-custom.php:91
+#: elements/widgets/pxl_image.php:96
+#: elements/widgets/pxl_image.php:140
+#: elements/widgets/pxl_image.php:262
+#: elements/widgets/pxl_image.php:272
+#: elements/widgets/pxl_image.php:282
+#: elements/widgets/pxl_image.php:292
+#: elements/widgets/pxl_image.php:302
+#: elements/widgets/pxl_logo.php:60
+#: elements/widgets/pxl_logo_marquee.php:179
+#: elements/widgets/pxl_team_grid.php:248
+#: elements/widgets/pxl_video_player.php:84
+#: elements/widgets/pxl_video_player.php:246
+#: elements/widgets/pxl_video_player.php:308
+#: inc/theme-options/page-options.php:1106
+msgid "Enter number."
+msgstr ""
+
+#: elements/element-custom.php:105
+msgid "Full Content with space from?"
+msgstr ""
+
+#: elements/element-custom.php:109
+#: elements/element-custom.php:537
+#: elements/element-custom.php:749
+#: elements/widgets/pxl_accordion.php:2
+#: elements/widgets/pxl_anchor.php:2
+#: elements/widgets/pxl_button.php:2
+#: elements/widgets/pxl_button.php:226
+#: elements/widgets/pxl_close_popup.php:2
+#: elements/widgets/pxl_contact_form.php:96
+#: elements/widgets/pxl_contact_form.php:190
+#: elements/widgets/pxl_contact_form.php:319
+#: elements/widgets/pxl_contact_form.php:454
+#: elements/widgets/pxl_grass.php:44
+#: elements/widgets/pxl_icon.php:281
+#: elements/widgets/pxl_iconbox_carousel.php:142
+#: elements/widgets/pxl_icon_box.php:325
+#: elements/widgets/pxl_image.php:170
+#: elements/widgets/pxl_mailchimp.php:92
+#: elements/widgets/pxl_showcase.php:138
+#: elements/widgets/pxl_team_carousel.php:4
+#: elements/widgets/pxl_team_grid.php:2
+#: inc/theme-options/option-functions.php:27
+msgid "None"
+msgstr ""
+
+#: elements/element-custom.php:110
+#: inc/admin/libs/merlin/merlin-config.php:48
+msgid "Start"
+msgstr ""
+
+#: elements/element-custom.php:111
+msgid "End"
+msgstr ""
+
+#: elements/element-custom.php:120
+msgid "Container Width"
+msgstr ""
+
+#: elements/element-custom.php:144
+msgid "Background <span style=\"font-size: 1.5em; vertical-align:middle; margin-inline-start:0.35em;\">🖼️<span>"
+msgstr ""
+
+#: elements/element-custom.php:152
+msgid "Parallax Background Image"
+msgstr ""
+
+#: elements/element-custom.php:163
+msgid "Background Position"
+msgstr ""
+
+#: elements/element-custom.php:167
+#: elements/element-custom.php:273
+#: elements/element-custom.php:327
+#: elements/element-custom.php:399
+#: elements/element-custom.php:662
+#: elements/element-custom.php:674
+#: elements/widgets/pxl_button.php:23
+#: elements/widgets/pxl_button.php:298
+#: elements/widgets/pxl_divider.php:21
+#: elements/widgets/pxl_gallery_grid.php:270
+#: elements/widgets/pxl_heading.php:426
+#: elements/widgets/pxl_heading.php:452
+#: elements/widgets/pxl_image_carousel.php:160
+#: elements/widgets/pxl_image_carousel.php:239
+#: elements/widgets/pxl_menu.php:4
+#: elements/widgets/pxl_post_carousel.php:419
+#: elements/widgets/pxl_slider_carousel.php:52
+#: elements/widgets/pxl_tabs.php:169
+#: elements/widgets/pxl_testimonial_grid.php:45
+#: elements/widgets/pxl_text_carousel.php:104
+#: elements/widgets/pxl_text_editor.php:127
+#: inc/theme-options/option-functions.php:158
+#: inc/theme-options/page-options.php:243
+#: inc/theme-options/page-options.php:513
+#: inc/theme-options/page-options.php:832
+#: inc/theme-options/page-options.php:1022
+#: inc/theme-options/page-options.php:1069
+#: inc/theme-options/page-options.php:1083
+#: inc/theme-options/theme-options.php:613
+#: inc/theme-options/theme-options.php:813
+#: inc/theme-options/theme-options.php:978
+#: inc/theme-options/theme-options.php:1062
+#: inc/theme-options/theme-options.php:1125
+msgid "Default"
+msgstr ""
+
+#: elements/element-custom.php:168
+#: elements/widgets/pxl_heading.php:427
+msgid "Center Center"
+msgstr ""
+
+#: elements/element-custom.php:169
+#: elements/widgets/pxl_heading.php:428
+msgid "Center Left"
+msgstr ""
+
+#: elements/element-custom.php:170
+#: elements/widgets/pxl_heading.php:429
+msgid "Center Right"
+msgstr ""
+
+#: elements/element-custom.php:171
+#: elements/widgets/pxl_heading.php:430
+msgid "Top Center"
+msgstr ""
+
+#: elements/element-custom.php:172
+#: elements/widgets/pxl_heading.php:431
+msgid "Top Left"
+msgstr ""
+
+#: elements/element-custom.php:173
+#: elements/widgets/pxl_heading.php:432
+msgid "Top Right"
+msgstr ""
+
+#: elements/element-custom.php:174
+#: elements/widgets/pxl_heading.php:433
+msgid "Bottom Center"
+msgstr ""
+
+#: elements/element-custom.php:175
+#: elements/widgets/pxl_heading.php:434
+msgid "Bottom Left"
+msgstr ""
+
+#: elements/element-custom.php:176
+#: elements/widgets/pxl_heading.php:435
+msgid "Bottom Right"
+msgstr ""
+
+#: elements/element-custom.php:177
+#: elements/element-custom.php:277
+#: elements/element-custom.php:328
+#: elements/element-custom.php:400
+#: elements/element-custom.php:663
+#: elements/widgets/pxl_heading.php:436
+#: elements/widgets/pxl_heading.php:456
+msgid "Custom"
+msgstr ""
+
+#: elements/element-custom.php:192
+msgid "X Position"
+msgstr ""
+
+#: elements/element-custom.php:230
+msgid "Y Position"
+msgstr ""
+
+#: elements/element-custom.php:269
+msgid "Background Size"
+msgstr ""
+
+#: elements/element-custom.php:274
+#: elements/widgets/pxl_heading.php:453
+#: elements/widgets/pxl_image.php:120
+#: elements/widgets/pxl_logo_marquee.php:197
+msgid "Auto"
+msgstr ""
+
+#: elements/element-custom.php:275
+#: elements/widgets/pxl_heading.php:454
+msgid "Cover"
+msgstr ""
+
+#: elements/element-custom.php:276
+#: elements/widgets/pxl_heading.php:455
+msgid "Contain"
+msgstr ""
+
+#: elements/element-custom.php:291
+msgid "Background Width"
+msgstr ""
+
+#: elements/element-custom.php:325
+msgid "Parallax Background Position"
+msgstr ""
+
+#: elements/element-custom.php:339
+#: elements/element-custom.php:688
+#: elements/widgets/pxl_button.php:86
+#: elements/widgets/pxl_countdown.php:99
+#: elements/widgets/pxl_counter.php:175
+#: elements/widgets/pxl_heading.php:55
+#: elements/widgets/pxl_icon.php:72
+#: elements/widgets/pxl_image.php:68
+#: elements/widgets/pxl_link.php:110
+#: elements/widgets/pxl_logo.php:40
+#: elements/widgets/pxl_menu.php:59
+#: elements/widgets/pxl_menu.php:85
+#: elements/widgets/pxl_post_carousel.php:442
+#: elements/widgets/pxl_slider_carousel.php:599
+#: elements/widgets/pxl_tabs.php:330
+#: elements/widgets/pxl_text_carousel.php:203
+#: elements/widgets/pxl_text_carousel.php:295
+#: elements/widgets/pxl_text_carousel.php:466
+#: elements/widgets/pxl_text_editor.php:32
+#: inc/theme-options/option-functions.php:231
+#: inc/theme-options/option-functions.php:238
+msgid "Left"
+msgstr ""
+
+#: elements/element-custom.php:353
+#: elements/element-custom.php:702
+#: inc/theme-options/page-options.php:1096
+msgid "Top"
+msgstr ""
+
+#: elements/element-custom.php:367
+#: elements/element-custom.php:716
+#: elements/widgets/pxl_button.php:94
+#: elements/widgets/pxl_countdown.php:107
+#: elements/widgets/pxl_counter.php:183
+#: elements/widgets/pxl_heading.php:63
+#: elements/widgets/pxl_icon.php:80
+#: elements/widgets/pxl_image.php:76
+#: elements/widgets/pxl_link.php:118
+#: elements/widgets/pxl_logo.php:48
+#: elements/widgets/pxl_menu.php:67
+#: elements/widgets/pxl_menu.php:93
+#: elements/widgets/pxl_post_carousel.php:450
+#: elements/widgets/pxl_slider_carousel.php:579
+#: elements/widgets/pxl_tabs.php:338
+#: elements/widgets/pxl_text_carousel.php:211
+#: elements/widgets/pxl_text_carousel.php:303
+#: elements/widgets/pxl_text_carousel.php:474
+#: elements/widgets/pxl_text_editor.php:40
+#: inc/theme-options/option-functions.php:232
+#: inc/theme-options/option-functions.php:239
+#: inc/theme-options/page-options.php:1097
+msgid "Right"
+msgstr ""
+
+#: elements/element-custom.php:381
+#: elements/element-custom.php:730
+msgid "Bottom"
+msgstr ""
+
+#: elements/element-custom.php:397
+msgid "Parallax Background Effect"
+msgstr ""
+
+#: elements/element-custom.php:411
+msgid "TranslateX"
+msgstr ""
+
+#: elements/element-custom.php:422
+msgid "TranslateY"
+msgstr ""
+
+#: elements/element-custom.php:433
+msgid "TranslateZ"
+msgstr ""
+
+#: elements/element-custom.php:444
+msgid "Rotate X"
+msgstr ""
+
+#: elements/element-custom.php:455
+msgid "Rotate Y"
+msgstr ""
+
+#: elements/element-custom.php:466
+msgid "Rotate Z"
+msgstr ""
+
+#: elements/element-custom.php:477
+msgid "Scale X"
+msgstr ""
+
+#: elements/element-custom.php:488
+msgid "Scale Y"
+msgstr ""
+
+#: elements/element-custom.php:499
+msgid "Scale Z"
+msgstr ""
+
+#: elements/element-custom.php:510
+#: elements/widgets/pxl_icon_box.php:565
+msgid "Scale"
+msgstr ""
+
+#: elements/element-custom.php:521
+msgid "Scroll From (px)"
+msgstr ""
+
+#: elements/element-custom.php:533
+msgid "Background Effect Other"
+msgstr ""
+
+#: elements/element-custom.php:538
+msgid "Pinned Zoom Clipped"
+msgstr ""
+
+#: elements/element-custom.php:539
+msgid "Pinned Circle Zoom Clipped"
+msgstr ""
+
+#: elements/element-custom.php:540
+msgid "Mask Parallax "
+msgstr ""
+
+#: elements/element-custom.php:541
+msgid "Mask Parallax - Light Content"
+msgstr ""
+
+#: elements/element-custom.php:554
+msgid "Circle Zoom Clipped Mask Background Color"
+msgstr ""
+
+#: elements/element-custom.php:570
+msgid "Circle Zoom Inner Background Color"
+msgstr ""
+
+#: elements/element-custom.php:596
+msgid "Parallax Opacity (0 - 100)"
+msgstr ""
+
+#: elements/element-custom.php:652
+msgid "Effect Images 🖊"
+msgstr ""
+
+#: elements/element-custom.php:660
+#: elements/element-custom.php:671
+#: elements/widgets/pxl_team_carousel.php:60
+#: elements/widgets/pxl_team_grid.php:63
+#: elements/widgets/pxl_testimonial_carousel.php:75
+#: elements/widgets/pxl_testimonial_carousel.php:187
+#: elements/widgets/pxl_testimonial_grid.php:71
+#: elements/widgets/pxl_text_carousel.php:263
+msgid "Position"
+msgstr ""
+
+#: elements/element-custom.php:675
+msgid "Absolute"
+msgstr ""
+
+#: elements/element-custom.php:676
+msgid "Relative"
+msgstr ""
+
+#: elements/element-custom.php:677
+msgid "Fixed"
+msgstr ""
+
+#: elements/element-custom.php:746
+msgid "Pxl Parallax Effect"
+msgstr ""
+
+#: elements/element-custom.php:750
+msgid "PXLfadeInUp"
+msgstr ""
+
+#: elements/element-custom.php:751
+msgid "PXLZoom"
+msgstr ""
+
+#: elements/element-custom.php:752
+msgid "Mouse Move Scope Class (mouse-move-scope)"
+msgstr ""
+
+#: elements/element-custom.php:1058
+msgid "Northway Custom CSS 🖊"
+msgstr ""
+
+#: elements/element-custom.php:1076
+#, php-format
+msgid "Use \"selector\" to target wrapper element.%1$sselector {your css code}"
+msgstr ""
+
+#: elements/element-functions.php:46
+msgid "Bootstrap Icons"
+msgstr ""
+
+#: elements/element-functions.php:58
+msgid "Flaticon"
+msgstr ""
+
+#: elements/element-functions.php:145
+#: elements/element-functions.php:377
+#: elements/element-functions.php:450
+#: elements/element-functions.php:522
+#: elements/element-functions.php:566
+#, php-format
+msgid "Select Template of %s"
+msgstr ""
+
+#: elements/element-functions.php:164
+#: elements/element-functions.php:181
+#: elements/element-functions.php:194
+#: elements/element-functions.php:396
+#: elements/element-functions.php:413
+#: elements/element-functions.php:426
+#: elements/element-functions.php:469
+#: elements/element-functions.php:542
+#: elements/element-functions.php:586
+#: elements/widgets/pxl_accordion.php:27
+#: elements/widgets/pxl_banner_box.php:30
+#: elements/widgets/pxl_counter.php:30
+#: elements/widgets/pxl_iconbox_carousel.php:28
+#: elements/widgets/pxl_icon_box.php:23
+#: elements/widgets/pxl_image_carousel.php:32
+#: elements/widgets/pxl_pie_chart.php:30
+#: elements/widgets/pxl_pricing.php:22
+#: elements/widgets/pxl_process.php:23
+#: elements/widgets/pxl_process_carousel.php:29
+#: elements/widgets/pxl_product_carousel.php:27
+#: elements/widgets/pxl_progressbar.php:26
+#: elements/widgets/pxl_slider.php:31
+#: elements/widgets/pxl_slider_carousel.php:30
+#: elements/widgets/pxl_tabs.php:26
+#: elements/widgets/pxl_team_carousel.php:30
+#: elements/widgets/pxl_team_grid.php:29
+#: elements/widgets/pxl_testimonial_carousel.php:29
+#: elements/widgets/pxl_testimonial_grid.php:27
+#: elements/widgets/pxl_text_carousel.php:29
+msgid "Layout 1"
+msgstr ""
+
+#: elements/element-functions.php:168
+#: elements/element-functions.php:185
+#: elements/element-functions.php:198
+#: elements/element-functions.php:400
+#: elements/element-functions.php:417
+#: elements/element-functions.php:430
+#: elements/widgets/pxl_accordion.php:31
+#: elements/widgets/pxl_banner_box.php:34
+#: elements/widgets/pxl_counter.php:34
+#: elements/widgets/pxl_iconbox_carousel.php:32
+#: elements/widgets/pxl_icon_box.php:27
+#: elements/widgets/pxl_image_carousel.php:36
+#: elements/widgets/pxl_pie_chart.php:34
+#: elements/widgets/pxl_pricing.php:26
+#: elements/widgets/pxl_process_carousel.php:33
+#: elements/widgets/pxl_slider.php:35
+#: elements/widgets/pxl_slider_carousel.php:34
+#: elements/widgets/pxl_tabs.php:30
+#: elements/widgets/pxl_testimonial_carousel.php:33
+#: elements/widgets/pxl_text_carousel.php:33
+msgid "Layout 2"
+msgstr ""
+
+#: elements/element-functions.php:172
+#: elements/element-functions.php:202
+#: elements/element-functions.php:404
+#: elements/widgets/pxl_accordion.php:35
+#: elements/widgets/pxl_counter.php:38
+#: elements/widgets/pxl_icon_box.php:31
+#: elements/widgets/pxl_image_carousel.php:40
+#: elements/widgets/pxl_testimonial_carousel.php:37
+#: elements/widgets/pxl_text_carousel.php:37
+msgid "Layout 3"
+msgstr ""
+
+#: elements/element-functions.php:229
+msgid "Select Term"
+msgstr ""
+
+#: elements/element-functions.php:230
+msgid "Get all when no term selected"
+msgstr ""
+
+#: elements/element-functions.php:260
+#: elements/element-functions.php:492
+#, php-format
+msgid "Select Term of %s"
+msgstr ""
+
+#: elements/element-functions.php:288
+#: elements/element-functions.php:345
+msgid "Select posts"
+msgstr ""
+
+#: elements/element-functions.php:316
+msgid "Unselected posts"
+msgstr ""
+
+#: elements/element-functions.php:830
+msgid "Animation"
+msgstr ""
+
+#: elements/element-functions.php:837
+#: elements/widgets/pxl_heading.php:172
+#: elements/widgets/pxl_heading.php:341
+#: elements/widgets/pxl_post_grid.php:112
+#: elements/widgets/pxl_testimonial_grid.php:115
+msgid "Case  Animate"
+msgstr ""
+
+#: elements/element-functions.php:844
+#: elements/widgets/pxl_heading.php:179
+#: elements/widgets/pxl_heading.php:348
+msgid "Animate Delay"
+msgstr ""
+
+#: elements/element-functions.php:868
+msgid "Color Type"
+msgstr ""
+
+#: elements/element-functions.php:879
+msgid "Normal Color"
+msgstr ""
+
+#: elements/element-functions.php:891
+#: elements/element-functions.php:951
+#: elements/element-functions.php:1009
+msgid "Gradient Color"
+msgstr ""
+
+#: elements/element-functions.php:901
+#: elements/element-functions.php:959
+#: elements/element-functions.php:1017
+msgid "Start Popover"
+msgstr ""
+
+#: elements/element-functions.php:907
+#: elements/element-functions.php:965
+#: elements/element-functions.php:1023
+msgid "From"
+msgstr ""
+
+#: elements/element-functions.php:918
+#: elements/element-functions.php:976
+#: elements/element-functions.php:1034
+msgid "To"
+msgstr ""
+
+#: elements/element-functions.php:929
+#: elements/element-functions.php:987
+#: elements/element-functions.php:1058
+msgid "End Popover"
+msgstr ""
+
+#: elements/element-functions.php:1045
+msgid "Angle"
+msgstr ""
+
+#: elements/element-templates.php:111
+#: elements/element-templates.php:167
+#: elements/element-templates.php:275
+#: elements/element-templates.php:394
+#: elements/templates/pxl_post_carousel/layout-post-1.php:158
+#: elements/templates/pxl_post_carousel/layout-post-2.php:125
+#: inc/classes/class-blog.php:22
+#: inc/classes/class-blog.php:64
+#: inc/classes/class-blog.php:102
+msgid "By: "
+msgstr ""
+
+#: elements/element-templates.php:123
+#: elements/element-templates.php:179
+#: elements/element-templates.php:287
+#: inc/classes/class-blog.php:32
+#: inc/classes/class-blog.php:72
+#: inc/classes/class-blog.php:110
+#: inc/classes/class-blog.php:195
+msgid "No Comments"
+msgstr ""
+
+#: elements/element-templates.php:123
+#: elements/element-templates.php:179
+#: elements/element-templates.php:287
+#: elements/element-templates.php:406
+#: elements/templates/pxl_post_carousel/layout-post-1.php:170
+#: elements/templates/pxl_post_carousel/layout-post-2.php:137
+#: inc/classes/class-blog.php:32
+#: inc/classes/class-blog.php:72
+#: inc/classes/class-blog.php:110
+#: inc/classes/class-blog.php:195
+msgid " 1 Comment"
+msgstr ""
+
+#: elements/element-templates.php:123
+#: elements/element-templates.php:179
+#: elements/element-templates.php:287
+#: elements/element-templates.php:406
+#: elements/templates/pxl_post_carousel/layout-post-1.php:170
+#: elements/templates/pxl_post_carousel/layout-post-2.php:137
+#: inc/classes/class-blog.php:32
+#: inc/classes/class-blog.php:72
+#: inc/classes/class-blog.php:110
+#: inc/classes/class-blog.php:195
+msgid "%  Comments"
+msgstr ""
+
+#: elements/element-templates.php:193
+#: elements/element-templates.php:310
+#: template-parts/content/archive/standard.php:7
+#: template-parts/content/archive/standard.php:51
+#: template-parts/content/archive/standard.php:94
+#: template-parts/content/archive/standard.php:174
+#: template-parts/content/content-search.php:7
+#: template-parts/content/content-search.php:51
+#: template-parts/content/content-search.php:94
+#: template-parts/content/content-search.php:174
+msgid "Read More"
+msgstr ""
+
+#: elements/element-templates.php:406
+#: elements/templates/pxl_post_carousel/layout-post-1.php:170
+#: elements/templates/pxl_post_carousel/layout-post-2.php:137
+msgid "0 Comments"
+msgstr ""
+
+#: elements/element-templates.php:438
+#: elements/element-templates.php:1535
+#: elements/templates/pxl_post_carousel/layout-post-2.php:169
+#: elements/templates/pxl_post_carousel/layout-service-1.php:170
+#: elements/templates/pxl_post_carousel/layout-service-2.php:164
+msgid "Read more"
+msgstr ""
+
+#: elements/element-templates.php:552
+#: elements/element-templates.php:592
+msgid "Learn More"
+msgstr ""
+
+#: elements/element-templates.php:1572
+msgid "Something went wrong while requesting. Please try again!"
+msgstr ""
+
+#: elements/element-templates.php:1635
+#: elements/element-templates.php:1644
+msgid "Showing"
+msgstr ""
+
+#: elements/element-templates.php:1637
+#: elements/element-templates.php:1646
+msgid "of"
+msgstr ""
+
+#: elements/element-templates.php:1639
+#: elements/element-templates.php:1648
+msgid "results"
+msgstr ""
+
+#: elements/element-templates.php:1658
+msgid "Load Successfully!"
+msgstr ""
+
+#: elements/templates/pxl_accordion/layout-4.php:56
+msgid "Job Description:"
+msgstr ""
+
+#: elements/templates/pxl_accordion/layout-4.php:67
+msgid "Request:"
+msgstr ""
+
+#: elements/templates/pxl_accordion/layout-4.php:78
+msgid "Salary Receive:"
+msgstr ""
+
+#: elements/templates/pxl_countdown/layout-1.php:12
+msgid "Month"
+msgstr ""
+
+#: elements/templates/pxl_countdown/layout-1.php:13
+msgid "Months"
+msgstr ""
+
+#: elements/templates/pxl_countdown/layout-1.php:14
+#: elements/widgets/pxl_countdown.php:44
+msgid "Day"
+msgstr ""
+
+#: elements/templates/pxl_countdown/layout-1.php:15
+msgid "Days"
+msgstr ""
+
+#: elements/templates/pxl_countdown/layout-1.php:16
+#: elements/templates/pxl_countdown/layout-1.php:23
+#: elements/templates/pxl_countdown/layout-1.php:24
+#: elements/widgets/pxl_countdown.php:54
+msgid "Hour"
+msgstr ""
+
+#: elements/templates/pxl_countdown/layout-1.php:17
+msgid "Hours"
+msgstr ""
+
+#: elements/templates/pxl_countdown/layout-1.php:18
+#: elements/widgets/pxl_countdown.php:64
+msgid "Minute"
+msgstr ""
+
+#: elements/templates/pxl_countdown/layout-1.php:19
+msgid "Minutes"
+msgstr ""
+
+#: elements/templates/pxl_countdown/layout-1.php:20
+#: elements/widgets/pxl_countdown.php:74
+msgid "Second"
+msgstr ""
+
+#: elements/templates/pxl_countdown/layout-1.php:21
+msgid "Seconds"
+msgstr ""
+
+#: elements/templates/pxl_countdown/layout-1.php:25
+#: elements/templates/pxl_countdown/layout-1.php:26
+msgid "Min"
+msgstr ""
+
+#: elements/templates/pxl_countdown/layout-1.php:27
+#: elements/templates/pxl_countdown/layout-1.php:28
+msgid "Sec"
+msgstr ""
+
+#: elements/templates/pxl_icon_cart/layout-1.php:19
+#: woocommerce/wc-function.php:566
+#, php-format
+msgid "%d"
+msgid_plural "%d"
+msgstr[0] ""
+msgstr[1] ""
+
+#: elements/templates/pxl_icon_cart/layout-1.php:21
+#: elements/widgets/pxl_testimonial_carousel.php:95
+msgid "0"
+msgstr ""
+
+#: elements/templates/pxl_icon_search/layout-1.php:29
+#: inc/theme-functions.php:352
+msgid "Search..."
+msgstr ""
+
+#: elements/templates/pxl_image_carousel/layout-1.php:87
+#: elements/templates/pxl_image_carousel/layout-4.php:78
+#: elements/widgets/pxl_button.php:121
+msgid "Before"
+msgstr ""
+
+#: elements/templates/pxl_image_carousel/layout-1.php:93
+#: elements/templates/pxl_image_carousel/layout-4.php:79
+#: elements/widgets/pxl_button.php:122
+msgid "After"
+msgstr ""
+
+#: elements/templates/pxl_post_carousel/layout-portfolio-1.php:135
+#: elements/templates/pxl_post_carousel/layout-portfolio-1.php:326
+#: elements/templates/pxl_post_carousel/layout-portfolio-2.php:135
+#: elements/templates/pxl_post_carousel/layout-portfolio-3.php:135
+msgid "View All Projects"
+msgstr ""
+
+#: elements/templates/pxl_post_grid/layout-portfolio-1.php:109
+#: elements/templates/pxl_post_grid/layout-portfolio-2.php:106
+#: elements/templates/pxl_post_grid/layout-portfolio-3.php:106
+#: elements/templates/pxl_post_grid/layout-post-1.php:104
+#: elements/templates/pxl_post_grid/layout-post-2.php:104
+#: elements/templates/pxl_post_grid/layout-post-3.php:108
+#: elements/templates/pxl_post_grid/layout-service-1.php:88
+#: elements/templates/pxl_post_grid/layout-service-2.php:101
+msgid "No Post Found"
+msgstr ""
+
+#: elements/templates/pxl_post_grid/layout-portfolio-1.php:144
+#: elements/templates/pxl_post_grid/layout-portfolio-2.php:140
+#: elements/templates/pxl_post_grid/layout-portfolio-3.php:140
+msgid "Load More Projects"
+msgstr ""
+
+#: elements/templates/pxl_post_grid/layout-post-1.php:137
+#: elements/templates/pxl_post_grid/layout-post-2.php:137
+#: elements/templates/pxl_post_grid/layout-post-3.php:143
+#: elements/templates/pxl_post_grid/layout-service-1.php:104
+#: elements/templates/pxl_post_grid/layout-service-2.php:133
+msgid "Load More"
+msgstr ""
+
+#: elements/templates/pxl_post_navigation/layout-1.php:31
+msgid "Previous Project"
+msgstr ""
+
+#: elements/templates/pxl_post_navigation/layout-1.php:44
+msgid "Next Project"
+msgstr ""
+
+#: elements/templates/pxl_pricing/layout-2.php:40
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2368
+msgid "Recommended"
+msgstr ""
+
+#: elements/templates/pxl_product_carousel/layout-1.php:140
+msgid "Out of Stock"
+msgstr ""
+
+#: elements/templates/pxl_product_carousel/layout-1.php:201
+msgid "No products found."
+msgstr ""
+
+#: elements/templates/pxl_search_form/layout-1.php:6
+msgid "Type Words Then Enter"
+msgstr ""
+
+#: elements/templates/pxl_slider_carousel/layout-1.php:55
+#: elements/templates/pxl_slider_carousel/layout-2.php:56
+msgid "pxl-show-arrow"
+msgstr ""
+
+#: elements/templates/pxl_slider_carousel/layout-1.php:97
+#: elements/templates/pxl_slider_carousel/layout-2.php:125
+msgid "Our Services"
+msgstr ""
+
+#: elements/templates/pxl_slider_carousel/layout-2.php:141
+msgid "Get a Quote"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:7
+msgid "Case Accordion"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:17
+#: elements/widgets/pxl_banner_box.php:20
+#: elements/widgets/pxl_countdown.php:20
+#: elements/widgets/pxl_counter.php:20
+#: elements/widgets/pxl_iconbox_carousel.php:18
+#: elements/widgets/pxl_icon_box.php:13
+#: elements/widgets/pxl_image_carousel.php:22
+#: elements/widgets/pxl_pie_chart.php:20
+#: elements/widgets/pxl_post_carousel.php:18
+#: elements/widgets/pxl_post_grid.php:18
+#: elements/widgets/pxl_pricing.php:12
+#: elements/widgets/pxl_process.php:13
+#: elements/widgets/pxl_process_carousel.php:19
+#: elements/widgets/pxl_product_carousel.php:17
+#: elements/widgets/pxl_progressbar.php:16
+#: elements/widgets/pxl_showcase.php:17
+#: elements/widgets/pxl_slider.php:21
+#: elements/widgets/pxl_slider_carousel.php:20
+#: elements/widgets/pxl_tabs.php:16
+#: elements/widgets/pxl_team_carousel.php:20
+#: elements/widgets/pxl_team_grid.php:19
+#: elements/widgets/pxl_testimonial_carousel.php:19
+#: elements/widgets/pxl_testimonial_grid.php:17
+#: elements/widgets/pxl_text_carousel.php:19
+msgid "Layout"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:22
+#: elements/widgets/pxl_banner_box.php:25
+#: elements/widgets/pxl_counter.php:25
+#: elements/widgets/pxl_iconbox_carousel.php:23
+#: elements/widgets/pxl_icon_box.php:18
+#: elements/widgets/pxl_image_carousel.php:27
+#: elements/widgets/pxl_pie_chart.php:25
+#: elements/widgets/pxl_pricing.php:17
+#: elements/widgets/pxl_process.php:18
+#: elements/widgets/pxl_process_carousel.php:24
+#: elements/widgets/pxl_product_carousel.php:22
+#: elements/widgets/pxl_progressbar.php:21
+#: elements/widgets/pxl_slider.php:26
+#: elements/widgets/pxl_slider_carousel.php:25
+#: elements/widgets/pxl_tabs.php:21
+#: elements/widgets/pxl_team_carousel.php:25
+#: elements/widgets/pxl_team_grid.php:24
+#: elements/widgets/pxl_testimonial_carousel.php:24
+#: elements/widgets/pxl_testimonial_grid.php:22
+#: elements/widgets/pxl_text_carousel.php:24
+#: inc/admin/admin-templates.php:15
+#: inc/admin/admin-templates.php:16
+msgid "Templates"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:39
+#: elements/widgets/pxl_counter.php:42
+#: elements/widgets/pxl_icon_box.php:35
+#: elements/widgets/pxl_image_carousel.php:44
+#: elements/widgets/pxl_testimonial_carousel.php:41
+msgid "Layout 4"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:48
+#: elements/widgets/pxl_accordion.php:137
+#: elements/widgets/pxl_accordion.php:391
+#: elements/widgets/pxl_anchor.php:15
+#: elements/widgets/pxl_banner_box.php:43
+#: elements/widgets/pxl_banner_box.php:83
+#: elements/widgets/pxl_button.php:14
+#: elements/widgets/pxl_close_popup.php:14
+#: elements/widgets/pxl_contact_form.php:24
+#: elements/widgets/pxl_contact_info.php:12
+#: elements/widgets/pxl_countdown.php:15
+#: elements/widgets/pxl_counter.php:63
+#: elements/widgets/pxl_divider.php:12
+#: elements/widgets/pxl_gallery_grid.php:17
+#: elements/widgets/pxl_grass.php:15
+#: elements/widgets/pxl_heading.php:19
+#: elements/widgets/pxl_icon.php:12
+#: elements/widgets/pxl_iconbox_carousel.php:41
+#: elements/widgets/pxl_icon_box.php:76
+#: elements/widgets/pxl_icon_search.php:12
+#: elements/widgets/pxl_image.php:16
+#: elements/widgets/pxl_image_carousel.php:53
+#: elements/widgets/pxl_image_carousel.php:82
+#: elements/widgets/pxl_image_carousel.php:110
+#: elements/widgets/pxl_image_comparison.php:16
+#: elements/widgets/pxl_info_box.php:12
+#: elements/widgets/pxl_info_card.php:12
+#: elements/widgets/pxl_link.php:12
+#: elements/widgets/pxl_list.php:12
+#: elements/widgets/pxl_list.php:22
+#: elements/widgets/pxl_list.php:43
+#: elements/widgets/pxl_list.php:52
+#: elements/widgets/pxl_list.php:67
+#: elements/widgets/pxl_logo.php:13
+#: elements/widgets/pxl_logo_marquee.php:15
+#: elements/widgets/pxl_menu.php:25
+#: elements/widgets/pxl_pie_chart.php:43
+#: elements/widgets/pxl_post_navigation.php:12
+#: elements/widgets/pxl_pricing.php:35
+#: elements/widgets/pxl_process.php:32
+#: elements/widgets/pxl_progressbar.php:35
+#: elements/widgets/pxl_project_info.php:12
+#: elements/widgets/pxl_project_info.php:17
+#: elements/widgets/pxl_project_info.php:34
+#: elements/widgets/pxl_search_form.php:12
+#: elements/widgets/pxl_showcase.php:12
+#: elements/widgets/pxl_slider.php:44
+#: elements/widgets/pxl_slider.php:110
+#: elements/widgets/pxl_slider_carousel.php:43
+#: elements/widgets/pxl_social_share.php:12
+#: elements/widgets/pxl_tabs.php:146
+#: elements/widgets/pxl_tabs.php:176
+#: elements/widgets/pxl_team_carousel.php:39
+#: elements/widgets/pxl_team_carousel.php:44
+#: elements/widgets/pxl_team_grid.php:38
+#: elements/widgets/pxl_testimonial_carousel.php:50
+#: elements/widgets/pxl_testimonial_grid.php:36
+#: elements/widgets/pxl_text_carousel.php:46
+#: elements/widgets/pxl_video_player.php:16
+#: inc/admin/libs/merlin/class-merlin.php:569
+#: inc/admin/views/admin-demos.php:113
+#: inc/theme-options/page-options.php:173
+#: inc/theme-options/page-options.php:448
+#: inc/theme-options/page-options.php:604
+#: inc/theme-options/page-options.php:767
+#: inc/theme-options/page-options.php:963
+msgid "Content"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:53
+#: elements/widgets/pxl_anchor.php:100
+#: elements/widgets/pxl_anchor.php:105
+#: elements/widgets/pxl_contact_info.php:17
+#: elements/widgets/pxl_contact_info.php:50
+#: elements/widgets/pxl_countdown.php:84
+#: elements/widgets/pxl_counter.php:202
+#: elements/widgets/pxl_gallery_grid.php:261
+#: elements/widgets/pxl_heading.php:161
+#: elements/widgets/pxl_heading.php:194
+#: elements/widgets/pxl_heading.php:364
+#: elements/widgets/pxl_icon.php:92
+#: elements/widgets/pxl_icon.php:97
+#: elements/widgets/pxl_icon.php:380
+#: elements/widgets/pxl_icon_box.php:365
+#: elements/widgets/pxl_icon_cart.php:18
+#: elements/widgets/pxl_icon_search.php:122
+#: elements/widgets/pxl_image_carousel.php:235
+#: elements/widgets/pxl_image_carousel.php:249
+#: elements/widgets/pxl_link.php:82
+#: elements/widgets/pxl_list.php:88
+#: elements/widgets/pxl_list.php:98
+#: elements/widgets/pxl_logo.php:30
+#: elements/widgets/pxl_logo_marquee.php:147
+#: elements/widgets/pxl_mailchimp.php:17
+#: elements/widgets/pxl_menu.php:131
+#: elements/widgets/pxl_post_carousel.php:555
+#: elements/widgets/pxl_progressbar.php:88
+#: elements/widgets/pxl_search_form.php:31
+#: elements/widgets/pxl_showcase.php:129
+#: elements/widgets/pxl_slider.php:251
+#: elements/widgets/pxl_slider_carousel.php:48
+#: elements/widgets/pxl_tabs.php:202
+#: elements/widgets/pxl_team_carousel.php:88
+#: elements/widgets/pxl_team_grid.php:215
+#: elements/widgets/pxl_testimonial_grid.php:41
+#: elements/widgets/pxl_testimonial_grid.php:190
+#: elements/widgets/pxl_text_carousel.php:100
+#: inc/theme-options/theme-options.php:396
+msgid "Style"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:64
+#: elements/widgets/pxl_pricing.php:106
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2413
+msgid "Active"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:71
+msgid "Number of Services"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:80
+#: elements/widgets/pxl_post_carousel.php:57
+#: elements/widgets/pxl_post_grid.php:58
+msgid "Order By"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:83
+#: elements/widgets/pxl_countdown.php:37
+#: elements/widgets/pxl_post_carousel.php:61
+#: elements/widgets/pxl_post_grid.php:62
+#: inc/theme-options/theme-options.php:513
+#: inc/theme-options/theme-options.php:641
+msgid "Date"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:84
+#: elements/widgets/pxl_accordion.php:131
+#: elements/widgets/pxl_accordion.php:161
+#: elements/widgets/pxl_accordion.php:322
+#: elements/widgets/pxl_contact_info.php:32
+#: elements/widgets/pxl_counter.php:68
+#: elements/widgets/pxl_counter.php:286
+#: elements/widgets/pxl_gallery_grid.php:28
+#: elements/widgets/pxl_gallery_grid.php:59
+#: elements/widgets/pxl_heading.php:40
+#: elements/widgets/pxl_heading.php:95
+#: elements/widgets/pxl_icon.php:375
+#: elements/widgets/pxl_iconbox_carousel.php:57
+#: elements/widgets/pxl_iconbox_carousel.php:197
+#: elements/widgets/pxl_icon_box.php:90
+#: elements/widgets/pxl_icon_box.php:406
+#: elements/widgets/pxl_info_box.php:17
+#: elements/widgets/pxl_info_box.php:105
+#: elements/widgets/pxl_info_card.php:23
+#: elements/widgets/pxl_info_card.php:109
+#: elements/widgets/pxl_pie_chart.php:48
+#: elements/widgets/pxl_pie_chart.php:104
+#: elements/widgets/pxl_post_carousel.php:64
+#: elements/widgets/pxl_post_carousel.php:985
+#: elements/widgets/pxl_post_grid.php:65
+#: elements/widgets/pxl_post_grid.php:759
+#: elements/widgets/pxl_pricing.php:170
+#: elements/widgets/pxl_process.php:55
+#: elements/widgets/pxl_process.php:89
+#: elements/widgets/pxl_process_carousel.php:60
+#: elements/widgets/pxl_process_carousel.php:92
+#: elements/widgets/pxl_product_carousel.php:340
+#: elements/widgets/pxl_progressbar.php:45
+#: elements/widgets/pxl_progressbar.php:104
+#: elements/widgets/pxl_showcase.php:41
+#: elements/widgets/pxl_slider.php:68
+#: elements/widgets/pxl_slider.php:134
+#: elements/widgets/pxl_slider_carousel.php:71
+#: elements/widgets/pxl_slider_carousel.php:253
+#: elements/widgets/pxl_tabs.php:123
+#: elements/widgets/pxl_tabs.php:160
+#: elements/widgets/pxl_team_carousel.php:54
+#: elements/widgets/pxl_testimonial_carousel.php:69
+#: elements/widgets/pxl_testimonial_carousel.php:165
+#: elements/widgets/pxl_testimonial_grid.php:65
+#: elements/widgets/pxl_text_carousel.php:63
+#: elements/widgets/pxl_text_carousel.php:193
+#: inc/theme-options/theme-options.php:634
+#: inc/theme-options/theme-options.php:1216
+msgid "Title"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:85
+msgid "Menu Order"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:86
+#: elements/widgets/pxl_post_carousel.php:65
+#: elements/widgets/pxl_post_grid.php:66
+msgid "Random"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:95
+msgid "Order"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:98
+#: elements/widgets/pxl_post_carousel.php:75
+#: elements/widgets/pxl_post_grid.php:76
+msgid "Ascending"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:99
+#: elements/widgets/pxl_post_carousel.php:74
+#: elements/widgets/pxl_post_grid.php:75
+msgid "Descending"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:108
+#: inc/theme-options/theme-options.php:570
+msgid "Read More Text"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:117
+#: elements/widgets/pxl_accordion.php:153
+msgid "Accordion"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:125
+#: elements/widgets/pxl_accordion.php:369
+#: elements/widgets/pxl_counter.php:472
+#: elements/widgets/pxl_text_carousel.php:81
+#: elements/widgets/pxl_text_carousel.php:144
+msgid "Number"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:143
+#: elements/widgets/pxl_accordion.php:180
+#: elements/widgets/pxl_button.php:110
+#: elements/widgets/pxl_button.php:371
+#: elements/widgets/pxl_contact_info.php:27
+#: elements/widgets/pxl_counter.php:135
+#: elements/widgets/pxl_counter.php:336
+#: elements/widgets/pxl_icon.php:22
+#: elements/widgets/pxl_iconbox_carousel.php:85
+#: elements/widgets/pxl_iconbox_carousel.php:290
+#: elements/widgets/pxl_icon_box.php:121
+#: elements/widgets/pxl_icon_box.php:580
+#: elements/widgets/pxl_icon_cart.php:38
+#: elements/widgets/pxl_icon_search.php:46
+#: elements/widgets/pxl_info_box.php:46
+#: elements/widgets/pxl_info_card.php:17
+#: elements/widgets/pxl_link.php:34
+#: elements/widgets/pxl_link.php:255
+#: elements/widgets/pxl_list.php:30
+#: elements/widgets/pxl_list.php:76
+#: elements/widgets/pxl_logo_marquee.php:30
+#: elements/widgets/pxl_post_grid.php:507
+#: elements/widgets/pxl_pricing.php:50
+#: elements/widgets/pxl_process.php:49
+#: elements/widgets/pxl_project_info.php:22
+#: elements/widgets/pxl_tabs.php:117
+#: elements/widgets/pxl_tabs.php:154
+#: elements/widgets/pxl_text_carousel.php:56
+#: inc/theme-options/page-options.php:351
+#: inc/theme-options/page-options.php:359
+#: inc/theme-options/page-options.php:664
+#: inc/theme-options/page-options.php:672
+#: inc/theme-options/page-options.php:866
+#: inc/theme-options/page-options.php:874
+msgid "Icon"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:167
+#: elements/widgets/pxl_post_carousel.php:821
+#: elements/widgets/pxl_post_grid.php:672
+#: elements/widgets/pxl_pricing.php:78
+#: elements/widgets/pxl_showcase.php:76
+#: elements/widgets/pxl_slider.php:82
+#: elements/widgets/pxl_slider.php:148
+#: elements/widgets/pxl_slider.php:160
+#: elements/widgets/pxl_slider_carousel.php:85
+#: elements/widgets/pxl_testimonial_carousel.php:430
+#: inc/theme-options/theme-options.php:315
+#: inc/theme-options/theme-options.php:1226
+msgid "Button Text"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:169
+msgid "Apply Job Now"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:174
+#: elements/widgets/pxl_pricing.php:84
+#: elements/widgets/pxl_showcase.php:84
+#: elements/widgets/pxl_slider.php:88
+#: elements/widgets/pxl_slider.php:154
+#: elements/widgets/pxl_slider.php:166
+#: elements/widgets/pxl_slider_carousel.php:108
+#: inc/theme-options/theme-options.php:322
+msgid "Button Link"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:186
+msgid "Job Description"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:192
+msgid "Request"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:194
+#: elements/widgets/pxl_text_editor.php:22
+msgid "Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:198
+msgid "Salary Receive"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:209
+#: elements/widgets/pxl_counter.php:155
+#: elements/widgets/pxl_iconbox_carousel.php:106
+#: elements/widgets/pxl_icon_box.php:180
+#: elements/widgets/pxl_image_carousel.php:138
+#: elements/widgets/pxl_info_box.php:62
+#: elements/widgets/pxl_info_card.php:51
+#: elements/widgets/pxl_mailchimp.php:12
+#: elements/widgets/pxl_post_carousel.php:898
+#: elements/widgets/pxl_process.php:74
+#: elements/widgets/pxl_process_carousel.php:42
+#: elements/widgets/pxl_process_carousel.php:74
+#: elements/widgets/pxl_product_carousel.php:285
+#: elements/widgets/pxl_progressbar.php:83
+#: elements/widgets/pxl_slider.php:176
+#: elements/widgets/pxl_slider_carousel.php:130
+#: elements/widgets/pxl_testimonial_carousel.php:140
+#: elements/widgets/pxl_text_carousel.php:92
+#: elements/widgets/pxl_video_player.php:238
+#: inc/theme-options/page-options.php:330
+#: inc/theme-options/page-options.php:648
+#: inc/theme-options/page-options.php:850
+#: inc/theme-options/page-options.php:1041
+#: inc/theme-options/theme-options.php:128
+msgid "General"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:214
+#: elements/widgets/pxl_gallery_grid.php:97
+#: elements/widgets/pxl_gallery_grid.php:251
+#: elements/widgets/pxl_image.php:54
+#: elements/widgets/pxl_image_carousel.php:229
+#: elements/widgets/pxl_post_carousel.php:589
+#: elements/widgets/pxl_post_grid.php:105
+#: elements/widgets/pxl_post_grid.php:492
+#: elements/widgets/pxl_process_carousel.php:112
+#: elements/widgets/pxl_product_carousel.php:125
+#: elements/widgets/pxl_slider.php:243
+#: elements/widgets/pxl_team_carousel.php:146
+#: elements/widgets/pxl_team_grid.php:96
+#: elements/widgets/pxl_video_player.php:61
+#: inc/theme-options/theme-options.php:805
+msgid "Image Size"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:220
+msgid "Item Padding "
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:230
+msgid "Item Padding Active"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:240
+msgid "Item Space Bottom"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:256
+msgid "Item Space Top"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:272
+#: elements/widgets/pxl_anchor.php:64
+#: elements/widgets/pxl_button.php:174
+#: elements/widgets/pxl_button.php:349
+#: elements/widgets/pxl_contact_form.php:58
+#: elements/widgets/pxl_contact_form.php:298
+#: elements/widgets/pxl_contact_form.php:541
+#: elements/widgets/pxl_contact_form.php:677
+#: elements/widgets/pxl_counter.php:389
+#: elements/widgets/pxl_divider.php:27
+#: elements/widgets/pxl_divider.php:36
+#: elements/widgets/pxl_icon_box.php:516
+#: elements/widgets/pxl_info_box.php:253
+#: elements/widgets/pxl_info_card.php:79
+#: elements/widgets/pxl_info_card.php:195
+#: elements/widgets/pxl_mailchimp.php:48
+#: elements/widgets/pxl_mailchimp.php:152
+#: elements/widgets/pxl_post_carousel.php:924
+#: elements/widgets/pxl_pricing.php:294
+#: elements/widgets/pxl_slider_carousel.php:412
+msgid "Background Color"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:280
+msgid "Background Color/Actvie"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:288
+msgid "Color Icon"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:296
+msgid "Color Icon/Actvie"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:304
+msgid "Color Border"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:312
+msgid "Color Border/Actvie"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:327
+#: elements/widgets/pxl_accordion.php:374
+#: elements/widgets/pxl_accordion.php:396
+#: elements/widgets/pxl_button.php:166
+#: elements/widgets/pxl_button.php:376
+#: elements/widgets/pxl_contact_form.php:49
+#: elements/widgets/pxl_contact_form.php:287
+#: elements/widgets/pxl_counter.php:291
+#: elements/widgets/pxl_counter.php:380
+#: elements/widgets/pxl_counter.php:488
+#: elements/widgets/pxl_counter.php:592
+#: elements/widgets/pxl_counter.php:645
+#: elements/widgets/pxl_heading.php:232
+#: elements/widgets/pxl_heading.php:374
+#: elements/widgets/pxl_heading.php:478
+#: elements/widgets/pxl_icon.php:46
+#: elements/widgets/pxl_icon.php:129
+#: elements/widgets/pxl_icon.php:390
+#: elements/widgets/pxl_iconbox_carousel.php:219
+#: elements/widgets/pxl_iconbox_carousel.php:273
+#: elements/widgets/pxl_iconbox_carousel.php:322
+#: elements/widgets/pxl_icon_box.php:428
+#: elements/widgets/pxl_icon_box.php:501
+#: elements/widgets/pxl_icon_box.php:677
+#: elements/widgets/pxl_icon_box.php:701
+#: elements/widgets/pxl_icon_box.php:727
+#: elements/widgets/pxl_info_box.php:127
+#: elements/widgets/pxl_info_box.php:167
+#: elements/widgets/pxl_info_box.php:229
+#: elements/widgets/pxl_info_box.php:237
+#: elements/widgets/pxl_info_box.php:245
+#: elements/widgets/pxl_info_card.php:131
+#: elements/widgets/pxl_info_card.php:163
+#: elements/widgets/pxl_link.php:132
+#: elements/widgets/pxl_mailchimp.php:40
+#: elements/widgets/pxl_mailchimp.php:143
+#: elements/widgets/pxl_menu.php:145
+#: elements/widgets/pxl_menu.php:364
+#: elements/widgets/pxl_pie_chart.php:109
+#: elements/widgets/pxl_pie_chart.php:182
+#: elements/widgets/pxl_post_carousel.php:1011
+#: elements/widgets/pxl_post_carousel.php:1050
+#: elements/widgets/pxl_post_carousel.php:1072
+#: elements/widgets/pxl_post_grid.php:785
+#: elements/widgets/pxl_process.php:121
+#: elements/widgets/pxl_process.php:175
+#: elements/widgets/pxl_process.php:197
+#: elements/widgets/pxl_product_carousel.php:314
+#: elements/widgets/pxl_slider_carousel.php:396
+#: elements/widgets/pxl_testimonial_carousel.php:170
+#: elements/widgets/pxl_testimonial_carousel.php:192
+#: elements/widgets/pxl_testimonial_carousel.php:214
+#: elements/widgets/pxl_text_carousel.php:168
+#: elements/widgets/pxl_text_carousel.php:221
+#: elements/widgets/pxl_text_carousel.php:268
+#: elements/widgets/pxl_text_carousel.php:313
+#: elements/widgets/pxl_text_editor.php:77
+#: elements/widgets/pxl_text_editor.php:100
+#: elements/widgets/pxl_text_editor.php:133
+#: elements/widgets/pxl_text_editor.php:166
+#: elements/widgets/pxl_video_player.php:272
+#: elements/widgets/pxl_video_player.php:352
+msgid "Color"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:335
+#: elements/widgets/pxl_accordion.php:404
+msgid "Color/Active"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:343
+#: elements/widgets/pxl_accordion.php:382
+#: elements/widgets/pxl_accordion.php:412
+#: elements/widgets/pxl_button.php:209
+#: elements/widgets/pxl_contact_form.php:42
+#: elements/widgets/pxl_countdown.php:29
+#: elements/widgets/pxl_heading.php:127
+#: elements/widgets/pxl_heading.php:240
+#: elements/widgets/pxl_heading.php:407
+#: elements/widgets/pxl_heading.php:486
+#: elements/widgets/pxl_icon.php:406
+#: elements/widgets/pxl_iconbox_carousel.php:227
+#: elements/widgets/pxl_iconbox_carousel.php:281
+#: elements/widgets/pxl_icon_box.php:436
+#: elements/widgets/pxl_icon_box.php:509
+#: elements/widgets/pxl_info_box.php:135
+#: elements/widgets/pxl_info_box.php:175
+#: elements/widgets/pxl_info_box.php:207
+#: elements/widgets/pxl_info_box.php:261
+#: elements/widgets/pxl_info_card.php:139
+#: elements/widgets/pxl_info_card.php:171
+#: elements/widgets/pxl_info_card.php:221
+#: elements/widgets/pxl_link.php:159
+#: elements/widgets/pxl_mailchimp.php:33
+#: elements/widgets/pxl_mailchimp.php:136
+#: elements/widgets/pxl_menu.php:193
+#: elements/widgets/pxl_menu.php:392
+#: elements/widgets/pxl_pie_chart.php:118
+#: elements/widgets/pxl_pie_chart.php:190
+#: elements/widgets/pxl_post_carousel.php:1019
+#: elements/widgets/pxl_post_carousel.php:1058
+#: elements/widgets/pxl_post_grid.php:793
+#: elements/widgets/pxl_pricing.php:175
+#: elements/widgets/pxl_process.php:129
+#: elements/widgets/pxl_process.php:183
+#: elements/widgets/pxl_process.php:205
+#: elements/widgets/pxl_product_carousel.php:354
+#: elements/widgets/pxl_product_carousel.php:376
+#: elements/widgets/pxl_slider_carousel.php:428
+#: elements/widgets/pxl_testimonial_carousel.php:178
+#: elements/widgets/pxl_testimonial_carousel.php:200
+#: elements/widgets/pxl_testimonial_carousel.php:222
+#: elements/widgets/pxl_text_carousel.php:184
+#: elements/widgets/pxl_text_carousel.php:230
+#: elements/widgets/pxl_text_carousel.php:276
+#: elements/widgets/pxl_text_carousel.php:321
+#: elements/widgets/pxl_text_editor.php:87
+#: elements/widgets/pxl_text_editor.php:110
+#: elements/widgets/pxl_text_editor.php:153
+#: elements/widgets/pxl_text_editor.php:182
+#: elements/widgets/pxl_video_player.php:345
+#: inc/theme-options/theme-options.php:871
+msgid "Typography"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:350
+#: elements/widgets/pxl_heading.php:100
+#: elements/widgets/pxl_iconbox_carousel.php:202
+#: elements/widgets/pxl_icon_box.php:411
+#: elements/widgets/pxl_info_box.php:110
+#: elements/widgets/pxl_info_card.php:114
+#: elements/widgets/pxl_process.php:104
+msgid "HTML Tag"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:419
+msgid "Space Top"
+msgstr ""
+
+#: elements/widgets/pxl_accordion.php:435
+#: elements/widgets/pxl_icon.php:141
+msgid "Space Bottom"
+msgstr ""
+
+#: elements/widgets/pxl_anchor.php:3
+msgid "Hidden Panel Mobile"
+msgstr ""
+
+#: elements/widgets/pxl_anchor.php:8
+msgid "Case Anchor"
+msgstr ""
+
+#: elements/widgets/pxl_anchor.php:20
+msgid "Select Template"
+msgstr ""
+
+#: elements/widgets/pxl_anchor.php:28
+#: elements/widgets/pxl_counter.php:122
+#: elements/widgets/pxl_iconbox_carousel.php:75
+#: elements/widgets/pxl_icon_box.php:111
+#: inc/theme-options/page-options.php:349
+#: inc/theme-options/page-options.php:662
+#: inc/theme-options/page-options.php:864
+msgid "Icon Type"
+msgstr ""
+
+#: elements/widgets/pxl_anchor.php:38
+msgid "Select Icon"
+msgstr ""
+
+#: elements/widgets/pxl_anchor.php:47
+#: elements/widgets/pxl_close_popup.php:35
+#: elements/widgets/pxl_contact_form.php:621
+#: elements/widgets/pxl_contact_info.php:55
+#: elements/widgets/pxl_heading.php:301
+#: elements/widgets/pxl_icon_cart.php:55
+#: elements/widgets/pxl_icon_search.php:65
+#: elements/widgets/pxl_info_box.php:152
+#: elements/widgets/pxl_info_box.php:214
+#: elements/widgets/pxl_info_card.php:246
+#: elements/widgets/pxl_list.php:138
+#: elements/widgets/pxl_team_grid.php:384
+msgid "Icon Color"
+msgstr ""
+
+#: elements/widgets/pxl_anchor.php:56
+#: elements/widgets/pxl_button.php:251
+#: elements/widgets/pxl_contact_form.php:121
+#: elements/widgets/pxl_contact_form.php:344
+#: elements/widgets/pxl_contact_form.php:479
+#: elements/widgets/pxl_icon.php:117
+#: elements/widgets/pxl_icon.php:306
+#: elements/widgets/pxl_iconbox_carousel.php:167
+#: elements/widgets/pxl_icon_box.php:226
+#: elements/widgets/pxl_icon_box.php:353
+#: elements/widgets/pxl_icon_cart.php:65
+#: elements/widgets/pxl_icon_search.php:91
+#: elements/widgets/pxl_image.php:195
+#: elements/widgets/pxl_info_card.php:238
+#: elements/widgets/pxl_mailchimp.php:117
+#: elements/widgets/pxl_showcase.php:163
+msgid "Border Color"
+msgstr ""
+
+#: elements/widgets/pxl_anchor.php:72
+#: elements/widgets/pxl_close_popup.php:19
+#: elements/widgets/pxl_counter.php:417
+#: elements/widgets/pxl_icon_search.php:102
+#: elements/widgets/pxl_list.php:163
+#: elements/widgets/pxl_video_player.php:306
+msgid "Icon Font Size"
+msgstr ""
+
+#: elements/widgets/pxl_anchor.php:91
+msgid "Close Popup - Animation Delay"
+msgstr ""
+
+#: elements/widgets/pxl_anchor.php:115
+#: elements/widgets/pxl_button.php:434
+#: elements/widgets/pxl_counter.php:227
+#: elements/widgets/pxl_icon.php:194
+#: elements/widgets/pxl_icon_cart.php:134
+#: elements/widgets/pxl_icon_search.php:181
+#: elements/widgets/pxl_link.php:358
+msgid "Box Width"
+msgstr ""
+
+#: elements/widgets/pxl_anchor.php:130
+#: elements/widgets/pxl_button.php:450
+#: elements/widgets/pxl_counter.php:246
+#: elements/widgets/pxl_icon.php:213
+#: elements/widgets/pxl_icon_cart.php:115
+#: elements/widgets/pxl_icon_search.php:160
+#: elements/widgets/pxl_link.php:374
+msgid "Box Height"
+msgstr ""
+
+#: elements/widgets/pxl_anchor.php:145
+#: elements/widgets/pxl_button.php:266
+#: elements/widgets/pxl_contact_form.php:76
+#: elements/widgets/pxl_contact_form.php:434
+#: elements/widgets/pxl_contact_form.php:658
+#: elements/widgets/pxl_icon.php:331
+#: elements/widgets/pxl_icon.php:343
+#: elements/widgets/pxl_icon_box.php:553
+#: elements/widgets/pxl_icon_box.php:624
+#: elements/widgets/pxl_icon_search.php:202
+#: elements/widgets/pxl_image.php:157
+#: elements/widgets/pxl_image_carousel.php:169
+#: elements/widgets/pxl_info_box.php:77
+#: elements/widgets/pxl_info_card.php:97
+#: elements/widgets/pxl_info_card.php:203
+#: elements/widgets/pxl_mailchimp.php:168
+#: elements/widgets/pxl_menu.php:471
+#: elements/widgets/pxl_slider.php:181
+msgid "Border Radius"
+msgstr ""
+
+#: elements/widgets/pxl_anchor.php:154
+#: elements/widgets/pxl_button.php:466
+#: elements/widgets/pxl_counter.php:194
+#: elements/widgets/pxl_icon.php:169
+#: elements/widgets/pxl_iconbox_carousel.php:131
+#: elements/widgets/pxl_icon_box.php:237
+#: elements/widgets/pxl_icon_box.php:833
+#: elements/widgets/pxl_icon_cart.php:99
+#: elements/widgets/pxl_icon_search.php:135
+#: elements/widgets/pxl_link.php:94
+#: elements/widgets/pxl_link.php:283
+#: elements/widgets/pxl_testimonial_carousel.php:145
+#: elements/widgets/pxl_text_editor.php:174
+#: inc/theme-options/page-options.php:1115
+msgid "Box Color"
+msgstr ""
+
+#: elements/widgets/pxl_anchor.php:163
+#: elements/widgets/pxl_button.php:474
+#: elements/widgets/pxl_icon.php:178
+#: elements/widgets/pxl_icon_cart.php:107
+#: elements/widgets/pxl_icon_search.php:148
+msgid "Box Color Hover"
+msgstr ""
+
+#: elements/widgets/pxl_banner_box.php:6
+msgid "Case Banner Box"
+msgstr ""
+
+#: elements/widgets/pxl_banner_box.php:51
+#: elements/widgets/pxl_banner_box.php:91
+#: elements/widgets/pxl_gallery_grid.php:48
+#: elements/widgets/pxl_image.php:88
+#: elements/widgets/pxl_image_carousel.php:67
+#: elements/widgets/pxl_image_carousel.php:95
+#: elements/widgets/pxl_image_carousel.php:147
+#: elements/widgets/pxl_process_carousel.php:55
+#: elements/widgets/pxl_showcase.php:36
+#: elements/widgets/pxl_slider.php:57
+#: elements/widgets/pxl_slider.php:123
+#: elements/widgets/pxl_slider_carousel.php:200
+#: elements/widgets/pxl_tabs.php:182
+#: elements/widgets/pxl_team_carousel.php:49
+#: elements/widgets/pxl_team_grid.php:52
+#: elements/widgets/pxl_testimonial_carousel.php:59
+#: elements/widgets/pxl_testimonial_grid.php:60
+#: elements/widgets/pxl_video_player.php:53
+#: inc/theme-options/page-options.php:352
+#: inc/theme-options/page-options.php:665
+#: inc/theme-options/page-options.php:867
+msgid "Image"
+msgstr ""
+
+#: elements/widgets/pxl_banner_box.php:56
+#: elements/widgets/pxl_banner_box.php:96
+#: elements/widgets/pxl_image_carousel.php:72
+msgid "Image 2"
+msgstr ""
+
+#: elements/widgets/pxl_banner_box.php:61
+#: elements/widgets/pxl_banner_box.php:111
+#: elements/widgets/pxl_pie_chart.php:84
+msgid "Counter Number"
+msgstr ""
+
+#: elements/widgets/pxl_banner_box.php:68
+#: elements/widgets/pxl_banner_box.php:118
+#: elements/widgets/pxl_pie_chart.php:93
+msgid "Counter Suffix"
+msgstr ""
+
+#: elements/widgets/pxl_banner_box.php:75
+#: elements/widgets/pxl_banner_box.php:125
+msgid "Counter Title"
+msgstr ""
+
+#: elements/widgets/pxl_banner_box.php:101
+msgid "Image 3"
+msgstr ""
+
+#: elements/widgets/pxl_banner_box.php:106
+msgid "Image 4"
+msgstr ""
+
+#: elements/widgets/pxl_banner_box.php:133
+#: elements/widgets/pxl_pie_chart.php:177
+msgid "Counter"
+msgstr ""
+
+#: elements/widgets/pxl_banner_box.php:138
+#: elements/widgets/pxl_icon_cart.php:200
+msgid "Counter Color"
+msgstr ""
+
+#: elements/widgets/pxl_banner_box.php:146
+#: elements/widgets/pxl_icon_cart.php:193
+msgid "Counter Typography"
+msgstr ""
+
+#: elements/widgets/pxl_banner_box.php:153
+msgid "Counter Suffix Color"
+msgstr ""
+
+#: elements/widgets/pxl_banner_box.php:161
+msgid "Counter Suffix Typography"
+msgstr ""
+
+#: elements/widgets/pxl_banner_box.php:168
+msgid "Counter Title Color"
+msgstr ""
+
+#: elements/widgets/pxl_banner_box.php:176
+msgid "Counter Title Typography"
+msgstr ""
+
+#: elements/widgets/pxl_banner_box.php:183
+msgid "Counter Box Color"
+msgstr ""
+
+#: elements/widgets/pxl_banner_box.php:195
+msgid "Border Counter Color"
+msgstr ""
+
+#: elements/widgets/pxl_banner_box.php:206
+msgid "Border Counter Width"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:7
+msgid "Case Button"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:19
+#: elements/widgets/pxl_divider.php:17
+#: elements/widgets/pxl_gallery_grid.php:266
+#: elements/widgets/pxl_image_carousel.php:143
+#: elements/widgets/pxl_link.php:72
+#: elements/widgets/pxl_post_navigation.php:17
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2640
+#: inc/theme-options/page-options.php:1047
+msgid "Type"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:24
+#: elements/widgets/pxl_divider.php:22
+msgid "Gradient"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:25
+msgid "Divide"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:30
+#: elements/widgets/pxl_counter.php:477
+msgid "Background Type"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:41
+#: elements/widgets/pxl_info_box.php:52
+#: elements/widgets/pxl_info_card.php:40
+#: elements/widgets/pxl_link.php:22
+#: elements/widgets/pxl_logo_marquee.php:35
+#: elements/widgets/pxl_pricing.php:100
+#: elements/widgets/pxl_text_editor.php:72
+msgid "Text"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:43
+msgid "Click Here"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:47
+msgid "Action"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:51
+#: elements/widgets/pxl_button.php:57
+#: elements/widgets/pxl_contact_info.php:43
+#: elements/widgets/pxl_gallery_grid.php:65
+#: elements/widgets/pxl_icon.php:28
+#: elements/widgets/pxl_image.php:39
+#: elements/widgets/pxl_info_box.php:29
+#: elements/widgets/pxl_info_box.php:224
+#: elements/widgets/pxl_link.php:17
+#: elements/widgets/pxl_link.php:28
+#: elements/widgets/pxl_link.php:67
+#: elements/widgets/pxl_logo.php:23
+#: elements/widgets/pxl_logo_marquee.php:40
+#: elements/widgets/pxl_testimonial_carousel.php:113
+#: elements/widgets/pxl_text_carousel.php:75
+#: elements/widgets/pxl_text_editor.php:118
+#: elements/widgets/pxl_video_player.php:21
+msgid "Link"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:52
+#: inc/theme-filters.php:471
+#: inc/theme-options/page-options.php:1057
+msgid "Popup"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:69
+#: elements/widgets/pxl_team_carousel.php:75
+#: elements/widgets/pxl_team_grid.php:78
+msgid "Select Popup Template"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:81
+#: elements/widgets/pxl_countdown.php:94
+#: elements/widgets/pxl_counter.php:170
+#: elements/widgets/pxl_heading.php:50
+#: elements/widgets/pxl_icon.php:67
+#: elements/widgets/pxl_link.php:105
+#: elements/widgets/pxl_menu.php:55
+#: elements/widgets/pxl_tabs.php:325
+#: elements/widgets/pxl_text_carousel.php:198
+#: elements/widgets/pxl_text_carousel.php:290
+#: elements/widgets/pxl_text_editor.php:27
+msgid "Alignment"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:90
+#: elements/widgets/pxl_countdown.php:103
+#: elements/widgets/pxl_counter.php:179
+#: elements/widgets/pxl_heading.php:59
+#: elements/widgets/pxl_icon.php:76
+#: elements/widgets/pxl_image.php:72
+#: elements/widgets/pxl_link.php:114
+#: elements/widgets/pxl_link.php:239
+#: elements/widgets/pxl_logo.php:44
+#: elements/widgets/pxl_menu.php:63
+#: elements/widgets/pxl_menu.php:89
+#: elements/widgets/pxl_post_carousel.php:348
+#: elements/widgets/pxl_post_carousel.php:446
+#: elements/widgets/pxl_slider_carousel.php:715
+#: elements/widgets/pxl_tabs.php:334
+#: elements/widgets/pxl_text_carousel.php:207
+#: elements/widgets/pxl_text_carousel.php:299
+#: elements/widgets/pxl_text_carousel.php:470
+#: elements/widgets/pxl_text_editor.php:36
+msgid "Center"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:98
+#: elements/widgets/pxl_heading.php:67
+#: elements/widgets/pxl_link.php:122
+#: elements/widgets/pxl_text_editor.php:44
+msgid "Justified"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:117
+#: elements/widgets/pxl_heading.php:209
+msgid "Icon Position"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:130
+msgid "Button Normal"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:136
+#: elements/widgets/pxl_contact_form.php:491
+#: elements/widgets/pxl_counter.php:305
+#: elements/widgets/pxl_divider.php:60
+msgid "Width"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:140
+msgid "Inline"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:141
+msgid "Full Width"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:142
+msgid "Full Width Space Between"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:147
+msgid "Button Width/Height"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:185
+msgid "Background Color Gradient From"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:197
+msgid "Background Color Gradient To"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:216
+#: elements/widgets/pxl_button.php:361
+#: elements/widgets/pxl_contact_form.php:86
+#: elements/widgets/pxl_contact_form.php:309
+#: elements/widgets/pxl_contact_form.php:444
+#: elements/widgets/pxl_contact_form.php:685
+#: elements/widgets/pxl_icon.php:187
+#: elements/widgets/pxl_image.php:207
+#: elements/widgets/pxl_mailchimp.php:72
+#: elements/widgets/pxl_pricing.php:161
+msgid "Box Shadow"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:223
+#: elements/widgets/pxl_contact_form.php:93
+#: elements/widgets/pxl_contact_form.php:316
+#: elements/widgets/pxl_contact_form.php:451
+#: elements/widgets/pxl_icon.php:278
+#: elements/widgets/pxl_iconbox_carousel.php:139
+#: elements/widgets/pxl_icon_box.php:322
+#: elements/widgets/pxl_image.php:167
+#: elements/widgets/pxl_mailchimp.php:89
+#: elements/widgets/pxl_showcase.php:135
+msgid "Border Type"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:227
+#: elements/widgets/pxl_contact_form.php:97
+#: elements/widgets/pxl_contact_form.php:191
+#: elements/widgets/pxl_contact_form.php:320
+#: elements/widgets/pxl_contact_form.php:455
+#: elements/widgets/pxl_icon.php:282
+#: elements/widgets/pxl_iconbox_carousel.php:143
+#: elements/widgets/pxl_icon_box.php:326
+#: elements/widgets/pxl_image.php:171
+#: elements/widgets/pxl_mailchimp.php:93
+#: elements/widgets/pxl_showcase.php:139
+msgid "Solid"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:228
+#: elements/widgets/pxl_contact_form.php:98
+#: elements/widgets/pxl_contact_form.php:192
+#: elements/widgets/pxl_contact_form.php:321
+#: elements/widgets/pxl_contact_form.php:456
+#: elements/widgets/pxl_icon.php:283
+#: elements/widgets/pxl_iconbox_carousel.php:144
+#: elements/widgets/pxl_icon_box.php:327
+#: elements/widgets/pxl_image.php:172
+#: elements/widgets/pxl_mailchimp.php:94
+#: elements/widgets/pxl_showcase.php:140
+msgid "Double"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:229
+#: elements/widgets/pxl_contact_form.php:99
+#: elements/widgets/pxl_contact_form.php:193
+#: elements/widgets/pxl_contact_form.php:322
+#: elements/widgets/pxl_contact_form.php:457
+#: elements/widgets/pxl_icon.php:284
+#: elements/widgets/pxl_iconbox_carousel.php:145
+#: elements/widgets/pxl_icon_box.php:328
+#: elements/widgets/pxl_image.php:173
+#: elements/widgets/pxl_mailchimp.php:95
+#: elements/widgets/pxl_showcase.php:141
+msgid "Dotted"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:230
+#: elements/widgets/pxl_contact_form.php:100
+#: elements/widgets/pxl_contact_form.php:194
+#: elements/widgets/pxl_contact_form.php:323
+#: elements/widgets/pxl_contact_form.php:458
+#: elements/widgets/pxl_icon.php:285
+#: elements/widgets/pxl_iconbox_carousel.php:146
+#: elements/widgets/pxl_icon_box.php:329
+#: elements/widgets/pxl_image.php:174
+#: elements/widgets/pxl_mailchimp.php:96
+#: elements/widgets/pxl_showcase.php:142
+msgid "Dashed"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:231
+#: elements/widgets/pxl_contact_form.php:101
+#: elements/widgets/pxl_contact_form.php:195
+#: elements/widgets/pxl_contact_form.php:324
+#: elements/widgets/pxl_contact_form.php:459
+#: elements/widgets/pxl_icon.php:286
+#: elements/widgets/pxl_iconbox_carousel.php:147
+#: elements/widgets/pxl_icon_box.php:330
+#: elements/widgets/pxl_image.php:175
+#: elements/widgets/pxl_mailchimp.php:97
+#: elements/widgets/pxl_showcase.php:143
+msgid "Groove"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:239
+#: elements/widgets/pxl_contact_form.php:109
+#: elements/widgets/pxl_contact_form.php:332
+#: elements/widgets/pxl_contact_form.php:467
+#: elements/widgets/pxl_icon.php:294
+#: elements/widgets/pxl_iconbox_carousel.php:155
+#: elements/widgets/pxl_icon_box.php:341
+#: elements/widgets/pxl_image.php:183
+#: elements/widgets/pxl_mailchimp.php:105
+#: elements/widgets/pxl_showcase.php:151
+msgid "Border Width"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:275
+#: elements/widgets/pxl_contact_form.php:414
+#: elements/widgets/pxl_heading.php:222
+#: elements/widgets/pxl_icon.php:363
+#: elements/widgets/pxl_icon_box.php:540
+#: elements/widgets/pxl_info_box.php:67
+#: elements/widgets/pxl_info_card.php:87
+#: elements/widgets/pxl_mailchimp.php:79
+msgid "Padding"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:289
+msgid "Button Hover"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:294
+msgid "Text Effect"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:299
+msgid "No Effect"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:300
+msgid "Nina"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:301
+msgid "Nanuk"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:302
+msgid "Smoke"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:303
+msgid "Reverse"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:304
+msgid "Text Parallax"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:305
+msgid "Hide Icon"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:306
+msgid "Glossy"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:307
+#: elements/widgets/pxl_text_editor.php:128
+msgid "Underline"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:308
+msgid "Applied"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:313
+msgid "Transition Duration"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:332
+#: elements/widgets/pxl_button.php:385
+#: elements/widgets/pxl_counter.php:397
+#: elements/widgets/pxl_icon.php:55
+#: elements/widgets/pxl_icon.php:398
+#: elements/widgets/pxl_iconbox_carousel.php:330
+#: elements/widgets/pxl_icon_box.php:689
+#: elements/widgets/pxl_icon_box.php:714
+#: elements/widgets/pxl_icon_box.php:739
+#: elements/widgets/pxl_link.php:140
+#: elements/widgets/pxl_link.php:274
+#: elements/widgets/pxl_menu.php:153
+#: elements/widgets/pxl_text_carousel.php:176
+#: elements/widgets/pxl_text_editor.php:142
+msgid "Color Hover"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:341
+#: elements/widgets/pxl_icon.php:319
+msgid "Border Color Hover"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:394
+#: elements/widgets/pxl_icon.php:261
+#: elements/widgets/pxl_link.php:340
+msgid "Font Size"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:412
+msgid "Font Size Icon 2"
+msgstr ""
+
+#: elements/widgets/pxl_button.php:482
+#: elements/widgets/pxl_button.php:505
+msgid "Icon Spacer"
+msgstr ""
+
+#: elements/widgets/pxl_close_popup.php:7
+msgid "Case Close Popup"
+msgstr ""
+
+#: elements/widgets/pxl_close_popup.php:43
+#: elements/widgets/pxl_icon.php:159
+#: elements/widgets/pxl_icon_cart.php:73
+#: elements/widgets/pxl_icon_search.php:78
+#: elements/widgets/pxl_team_grid.php:392
+msgid "Icon Color Hover"
+msgstr ""
+
+#: elements/widgets/pxl_close_popup.php:51
+msgid "Background Color "
+msgstr ""
+
+#: elements/widgets/pxl_close_popup.php:59
+#: elements/widgets/pxl_counter.php:408
+msgid "Background Color Hover"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:11
+msgid "No contact forms found"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:17
+msgid "Case Contact Form"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:29
+msgid "Select Form"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:37
+msgid "Input"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:66
+#: elements/widgets/pxl_showcase.php:66
+msgid "Padding Input"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:133
+msgid "Border Color Focus"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:145
+msgid "Input Height"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:161
+msgid "Textarea Height"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:177
+msgid "Padding Textarea"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:187
+msgid "Textarea Border Type"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:203
+msgid "Textarea Border Width"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:215
+msgid "Textarea Typography"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:222
+msgid "Textarea Color"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:230
+msgid "Spacer Bottom"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:246
+msgid "Spacer Left"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:263
+msgid "Spacer right"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:282
+msgid "Input Hover"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:358
+#: elements/widgets/pxl_mailchimp.php:131
+#: elements/widgets/pxl_pricing.php:281
+#: elements/widgets/pxl_slider_carousel.php:391
+msgid "Button"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:364
+#: elements/widgets/pxl_image_carousel.php:292
+#: elements/widgets/pxl_showcase.php:59
+#: elements/widgets/pxl_slider.php:294
+msgid "Button Typography"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:371
+#: elements/widgets/pxl_image_carousel.php:284
+#: elements/widgets/pxl_slider.php:286
+msgid "Button Color"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:381
+msgid "Button Color Hover"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:391
+msgid "Button Background Color"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:399
+msgid "Button Background Color Hover"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:424
+#: elements/widgets/pxl_icon.php:352
+#: elements/widgets/pxl_info_box.php:142
+#: elements/widgets/pxl_info_box.php:182
+#: elements/widgets/pxl_info_card.php:146
+#: elements/widgets/pxl_info_card.php:178
+msgid "Margin"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:501
+msgid "Spacer Top"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:520
+#: inc/theme-options/page-options.php:308
+msgid "Extra"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:525
+#: elements/widgets/pxl_tabs.php:267
+msgid "Title Box Color"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:533
+msgid "Description Box Color"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:549
+#: elements/widgets/pxl_contact_form.php:667
+#: elements/widgets/pxl_counter.php:215
+#: elements/widgets/pxl_iconbox_carousel.php:111
+#: elements/widgets/pxl_icon_box.php:280
+#: elements/widgets/pxl_showcase.php:26
+#: elements/widgets/pxl_testimonial_carousel.php:153
+msgid "Box Padding"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:559
+msgid "Notice Margin"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:569
+#: elements/widgets/pxl_gallery_grid.php:277
+#: elements/widgets/pxl_info_card.php:228
+#: elements/widgets/pxl_post_carousel.php:140
+#: elements/widgets/pxl_post_carousel.php:990
+#: elements/widgets/pxl_post_grid.php:398
+#: elements/widgets/pxl_product_carousel.php:227
+#: elements/widgets/pxl_team_grid.php:185
+#: elements/widgets/pxl_testimonial_carousel.php:236
+#: elements/widgets/pxl_text_carousel.php:335
+msgid "Item Padding"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:580
+msgid "Notification Color"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:588
+#: elements/widgets/pxl_list.php:108
+msgid "Label Color"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:597
+#: elements/widgets/pxl_list.php:116
+#: elements/widgets/pxl_showcase.php:120
+#: elements/widgets/pxl_tabs.php:289
+msgid "Label Typography"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:604
+msgid "Label Spacer Bottom"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:631
+#: elements/widgets/pxl_pricing.php:122
+msgid "Box"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:636
+#: elements/widgets/pxl_contact_info.php:38
+#: elements/widgets/pxl_counter.php:77
+#: elements/widgets/pxl_iconbox_carousel.php:63
+#: elements/widgets/pxl_iconbox_carousel.php:268
+#: elements/widgets/pxl_icon_box.php:96
+#: elements/widgets/pxl_icon_box.php:496
+#: elements/widgets/pxl_info_box.php:23
+#: elements/widgets/pxl_info_box.php:162
+#: elements/widgets/pxl_info_card.php:29
+#: elements/widgets/pxl_info_card.php:158
+#: elements/widgets/pxl_pie_chart.php:54
+#: elements/widgets/pxl_process.php:61
+#: elements/widgets/pxl_process.php:170
+#: elements/widgets/pxl_process_carousel.php:97
+#: elements/widgets/pxl_slider.php:75
+#: elements/widgets/pxl_slider.php:141
+#: elements/widgets/pxl_slider_carousel.php:78
+#: elements/widgets/pxl_slider_carousel.php:322
+#: elements/widgets/pxl_testimonial_carousel.php:80
+#: elements/widgets/pxl_testimonial_carousel.php:209
+#: elements/widgets/pxl_testimonial_grid.php:76
+#: elements/widgets/pxl_text_carousel.php:69
+#: elements/widgets/pxl_text_carousel.php:285
+#: inc/theme-options/theme-options.php:293
+#: inc/theme-options/theme-options.php:1221
+#: template-parts/widgets/contact-info.php:109
+msgid "Description"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:643
+#: elements/widgets/pxl_contact_info.php:107
+#: elements/widgets/pxl_gallery_grid.php:332
+#: elements/widgets/pxl_slider_carousel.php:336
+#: elements/widgets/pxl_team_carousel.php:132
+#: elements/widgets/pxl_testimonial_grid.php:233
+msgid "Description Typography"
+msgstr ""
+
+#: elements/widgets/pxl_contact_form.php:650
+#: elements/widgets/pxl_contact_info.php:99
+#: elements/widgets/pxl_gallery_grid.php:324
+#: elements/widgets/pxl_slider_carousel.php:327
+#: elements/widgets/pxl_team_carousel.php:124
+#: elements/widgets/pxl_testimonial_grid.php:225
+msgid "Description Color"
+msgstr ""
+
+#: elements/widgets/pxl_contact_info.php:5
+msgid "Case Contact Info"
+msgstr ""
+
+#: elements/widgets/pxl_contact_info.php:20
+#: elements/widgets/pxl_grass.php:32
+#: elements/widgets/pxl_icon.php:111
+#: elements/widgets/pxl_icon_box.php:188
+#: elements/widgets/pxl_icon_box.php:216
+#: elements/widgets/pxl_icon_box.php:589
+#: elements/widgets/pxl_list.php:102
+msgid "Style 1"
+msgstr ""
+
+#: elements/widgets/pxl_contact_info.php:21
+#: elements/widgets/pxl_gallery_grid.php:271
+#: elements/widgets/pxl_grass.php:33
+#: elements/widgets/pxl_icon.php:112
+#: elements/widgets/pxl_icon_box.php:189
+#: elements/widgets/pxl_icon_box.php:217
+#: elements/widgets/pxl_icon_box.php:590
+#: elements/widgets/pxl_image_carousel.php:240
+#: elements/widgets/pxl_post_carousel.php:420
+#: elements/widgets/pxl_slider_carousel.php:53
+#: elements/widgets/pxl_testimonial_grid.php:46
+#: elements/widgets/pxl_text_carousel.php:105
+msgid "Style 2"
+msgstr ""
+
+#: elements/widgets/pxl_contact_info.php:64
+#: elements/widgets/pxl_team_grid.php:400
+msgid "Icon Background Color"
+msgstr ""
+
+#: elements/widgets/pxl_contact_info.php:72
+msgid "Spacing Icon Meta"
+msgstr ""
+
+#: elements/widgets/pxl_contact_info.php:84
+#: elements/widgets/pxl_gallery_grid.php:294
+#: elements/widgets/pxl_heading.php:118
+#: elements/widgets/pxl_image_carousel.php:254
+#: elements/widgets/pxl_pricing.php:182
+#: elements/widgets/pxl_pricing.php:240
+#: elements/widgets/pxl_product_carousel.php:346
+#: elements/widgets/pxl_product_carousel.php:385
+#: elements/widgets/pxl_progressbar.php:109
+#: elements/widgets/pxl_slider.php:256
+#: elements/widgets/pxl_slider_carousel.php:258
+#: elements/widgets/pxl_tabs.php:249
+#: elements/widgets/pxl_team_carousel.php:93
+#: elements/widgets/pxl_team_grid.php:263
+#: elements/widgets/pxl_testimonial_grid.php:195
+msgid "Title Color"
+msgstr ""
+
+#: elements/widgets/pxl_contact_info.php:92
+#: elements/widgets/pxl_gallery_grid.php:302
+#: elements/widgets/pxl_image_carousel.php:262
+#: elements/widgets/pxl_pricing.php:233
+#: elements/widgets/pxl_progressbar.php:117
+#: elements/widgets/pxl_showcase.php:49
+#: elements/widgets/pxl_slider.php:264
+#: elements/widgets/pxl_slider_carousel.php:267
+#: elements/widgets/pxl_tabs.php:299
+#: elements/widgets/pxl_team_carousel.php:102
+#: elements/widgets/pxl_team_grid.php:279
+#: elements/widgets/pxl_testimonial_grid.php:203
+msgid "Title Typography"
+msgstr ""
+
+#: elements/widgets/pxl_countdown.php:5
+msgid "Case Countdown"
+msgstr ""
+
+#: elements/widgets/pxl_countdown.php:40
+msgid "Set date count down (Date format: yy/mm/dd)"
+msgstr ""
+
+#: elements/widgets/pxl_counter.php:6
+msgid "Case Counter"
+msgstr ""
+
+#: elements/widgets/pxl_counter.php:46
+#: elements/widgets/pxl_icon_box.php:39
+msgid "Layout 5"
+msgstr ""
+
+#: elements/widgets/pxl_counter.php:50
+#: elements/widgets/pxl_icon_box.php:43
+msgid "Layout 6"
+msgstr ""
+
+#: elements/widgets/pxl_counter.php:54
+#: elements/widgets/pxl_icon_box.php:47
+msgid "Layout 7"
+msgstr ""
+
+#: elements/widgets/pxl_counter.php:86
+msgid "Starting Number"
+msgstr ""
+
+#: elements/widgets/pxl_counter.php:92
+msgid "Ending Number"
+msgstr ""
+
+#: elements/widgets/pxl_counter.php:98
+msgid "Number Prefix"
+msgstr ""
+
+#: elements/widgets/pxl_counter.php:104
+msgid "Number Suffix"
+msgstr ""
+
+#: elements/widgets/pxl_counter.php:110
+msgid "Number Separator"
+msgstr ""
+
+#: elements/widgets/pxl_counter.php:144
+#: elements/widgets/pxl_iconbox_carousel.php:94
+#: elements/widgets/pxl_icon_box.php:130
+#: elements/widgets/pxl_icon_cart.php:47
+#: elements/widgets/pxl_icon_search.php:56
+#: elements/widgets/pxl_team_carousel.php:65
+#: elements/widgets/pxl_team_grid.php:73
+#: inc/theme-options/page-options.php:366
+#: inc/theme-options/page-options.php:679
+#: inc/theme-options/page-options.php:881
+msgid "Icon Image"
+msgstr ""
+
+#: elements/widgets/pxl_counter.php:146
+msgid "Select image icon."
+msgstr ""
+
+#: elements/widgets/pxl_counter.php:160
+#: elements/widgets/pxl_iconbox_carousel.php:378
+#: elements/widgets/pxl_image_carousel.php:306
+#: elements/widgets/pxl_slider.php:308
+#: elements/widgets/pxl_slider_carousel.php:459
+#: elements/widgets/pxl_tabs.php:239
+msgid "Effect"
+msgstr ""
+
+#: elements/widgets/pxl_counter.php:265
+msgid "Box Radius"
+msgstr ""
+
+#: elements/widgets/pxl_counter.php:315
+#: elements/widgets/pxl_heading.php:247
+msgid "Spacer"
+msgstr ""
+
+#: elements/widgets/pxl_counter.php:341
+msgid "Box Icon Size"
+msgstr ""
+
+#: elements/widgets/pxl_counter.php:360
+msgid "SVG Width"
+msgstr ""
+
+#: elements/widgets/pxl_counter.php:437
+#: elements/widgets/pxl_counter.php:521
+#: elements/widgets/pxl_heading.php:309
+#: elements/widgets/pxl_iconbox_carousel.php:234
+#: elements/widgets/pxl_icon_box.php:443
+#: elements/widgets/pxl_link.php:292
+#: elements/widgets/pxl_process.php:136
+msgid "Top Spacer"
+msgstr ""
+
+#: elements/widgets/pxl_counter.php:453
+#: elements/widgets/pxl_counter.php:569
+#: elements/widgets/pxl_heading.php:141
+#: elements/widgets/pxl_heading.php:325
+#: elements/widgets/pxl_iconbox_carousel.php:250
+#: elements/widgets/pxl_icon_box.php:459
+#: elements/widgets/pxl_process.php:152
+msgid "Bottom Spacer"
+msgstr ""
+
+#: elements/widgets/pxl_counter.php:502
+msgid "Prefix/Suffix Color"
+msgstr ""
+
+#: elements/widgets/pxl_counter.php:513
+msgid "Animation Duration"
+msgstr ""
+
+#: elements/widgets/pxl_counter.php:537
+#: elements/widgets/pxl_link.php:308
+msgid "Left Spacer"
+msgstr ""
+
+#: elements/widgets/pxl_counter.php:553
+#: elements/widgets/pxl_link.php:324
+#: elements/widgets/pxl_list.php:193
+msgid "Right Spacer"
+msgstr ""
+
+#: elements/widgets/pxl_counter.php:587
+msgid "Suffix"
+msgstr ""
+
+#: elements/widgets/pxl_counter.php:606
+#: elements/widgets/pxl_counter.php:659
+msgid "Transform Y"
+msgstr ""
+
+#: elements/widgets/pxl_counter.php:622
+#: elements/widgets/pxl_counter.php:675
+msgid "Padding Left/Right"
+msgstr ""
+
+#: elements/widgets/pxl_counter.php:640
+msgid "Prefix"
+msgstr ""
+
+#: elements/widgets/pxl_divider.php:5
+msgid "Case Divider"
+msgstr ""
+
+#: elements/widgets/pxl_divider.php:45
+msgid "Show dots"
+msgstr ""
+
+#: elements/widgets/pxl_divider.php:51
+msgid "column Hover Background Color"
+msgstr ""
+
+#: elements/widgets/pxl_divider.php:80
+#: elements/widgets/pxl_image_carousel.php:178
+#: elements/widgets/pxl_mailchimp.php:56
+#: elements/widgets/pxl_slider.php:192
+msgid "Height"
+msgstr ""
+
+#: elements/widgets/pxl_gallery_grid.php:5
+msgid "Case Gallery Grid"
+msgstr ""
+
+#: elements/widgets/pxl_gallery_grid.php:22
+msgid "List Name Fillter"
+msgstr ""
+
+#: elements/widgets/pxl_gallery_grid.php:37
+#: elements/widgets/pxl_image_carousel.php:61
+#: elements/widgets/pxl_image_carousel.php:90
+#: elements/widgets/pxl_image_carousel.php:118
+#: elements/widgets/pxl_info_box.php:41
+#: elements/widgets/pxl_info_box.php:194
+#: elements/widgets/pxl_info_card.php:190
+#: elements/widgets/pxl_process.php:37
+#: elements/widgets/pxl_process.php:192
+#: elements/widgets/pxl_slider.php:52
+#: elements/widgets/pxl_slider.php:118
+#: elements/widgets/pxl_text_carousel.php:51
+msgid "List"
+msgstr ""
+
+#: elements/widgets/pxl_gallery_grid.php:43
+msgid "Categories Fillter"
+msgstr ""
+
+#: elements/widgets/pxl_gallery_grid.php:53
+#: elements/widgets/pxl_heading.php:34
+#: elements/widgets/pxl_heading.php:188
+#: elements/widgets/pxl_slider.php:62
+#: elements/widgets/pxl_slider.php:128
+msgid "Sub Title"
+msgstr ""
+
+#: elements/widgets/pxl_gallery_grid.php:76
+#: elements/widgets/pxl_post_grid.php:90
+#: elements/widgets/pxl_team_grid.php:91
+#: elements/widgets/pxl_testimonial_grid.php:100
+msgid "Grid"
+msgstr ""
+
+#: elements/widgets/pxl_gallery_grid.php:81
+#: elements/widgets/pxl_post_grid.php:95
+#: elements/widgets/pxl_team_grid.php:102
+#: elements/widgets/pxl_testimonial_grid.php:105
+msgid "Layout Mode"
+msgstr ""
+
+#: elements/widgets/pxl_gallery_grid.php:85
+#: elements/widgets/pxl_post_grid.php:99
+#: elements/widgets/pxl_team_grid.php:106
+#: elements/widgets/pxl_testimonial_grid.php:109
+msgid "Masonry"
+msgstr ""
+
+#: elements/widgets/pxl_gallery_grid.php:86
+#: elements/widgets/pxl_post_grid.php:100
+#: elements/widgets/pxl_team_grid.php:107
+#: elements/widgets/pxl_testimonial_grid.php:110
+msgid "Fit Rows"
+msgstr ""
+
+#: elements/widgets/pxl_gallery_grid.php:91
+msgid "Show Fillter"
+msgstr ""
+
+#: elements/widgets/pxl_gallery_grid.php:103
+msgid "Case Animate"
+msgstr ""
+
+#: elements/widgets/pxl_gallery_grid.php:110
+#: elements/widgets/pxl_gallery_grid.php:181
+#: elements/widgets/pxl_iconbox_carousel.php:388
+#: elements/widgets/pxl_image_carousel.php:316
+#: elements/widgets/pxl_logo_marquee.php:72
+#: elements/widgets/pxl_post_grid.php:185
+#: elements/widgets/pxl_process_carousel.php:118
+#: elements/widgets/pxl_product_carousel.php:131
+#: elements/widgets/pxl_slider.php:318
+#: elements/widgets/pxl_slider_carousel.php:473
+#: elements/widgets/pxl_team_carousel.php:152
+#: elements/widgets/pxl_team_grid.php:119
+#: elements/widgets/pxl_testimonial_carousel.php:253
+#: elements/widgets/pxl_testimonial_grid.php:122
+#: elements/widgets/pxl_text_carousel.php:352
+msgid "Columns XS Devices"
+msgstr ""
+
+#: elements/widgets/pxl_gallery_grid.php:123
+#: elements/widgets/pxl_gallery_grid.php:195
+#: elements/widgets/pxl_iconbox_carousel.php:402
+#: elements/widgets/pxl_image_carousel.php:330
+#: elements/widgets/pxl_logo_marquee.php:86
+#: elements/widgets/pxl_post_grid.php:221
+#: elements/widgets/pxl_process_carousel.php:131
+#: elements/widgets/pxl_product_carousel.php:144
+#: elements/widgets/pxl_slider.php:332
+#: elements/widgets/pxl_slider_carousel.php:487
+#: elements/widgets/pxl_team_carousel.php:165
+#: elements/widgets/pxl_team_grid.php:132
+#: elements/widgets/pxl_testimonial_carousel.php:267
+#: elements/widgets/pxl_testimonial_grid.php:135
+#: elements/widgets/pxl_text_carousel.php:366
+msgid "Columns SM Devices"
+msgstr ""
+
+#: elements/widgets/pxl_gallery_grid.php:136
+#: elements/widgets/pxl_gallery_grid.php:209
+#: elements/widgets/pxl_iconbox_carousel.php:416
+#: elements/widgets/pxl_image_carousel.php:344
+#: elements/widgets/pxl_logo_marquee.php:100
+#: elements/widgets/pxl_post_grid.php:257
+#: elements/widgets/pxl_process_carousel.php:144
+#: elements/widgets/pxl_product_carousel.php:157
+#: elements/widgets/pxl_slider.php:346
+#: elements/widgets/pxl_slider_carousel.php:501
+#: elements/widgets/pxl_team_carousel.php:178
+#: elements/widgets/pxl_team_grid.php:145
+#: elements/widgets/pxl_testimonial_carousel.php:281
+#: elements/widgets/pxl_testimonial_grid.php:148
+#: elements/widgets/pxl_text_carousel.php:380
+msgid "Columns MD Devices"
+msgstr ""
+
+#: elements/widgets/pxl_gallery_grid.php:149
+#: elements/widgets/pxl_gallery_grid.php:223
+#: elements/widgets/pxl_iconbox_carousel.php:430
+#: elements/widgets/pxl_image_carousel.php:358
+#: elements/widgets/pxl_logo_marquee.php:114
+#: elements/widgets/pxl_post_grid.php:293
+#: elements/widgets/pxl_process_carousel.php:157
+#: elements/widgets/pxl_product_carousel.php:170
+#: elements/widgets/pxl_slider.php:360
+#: elements/widgets/pxl_slider_carousel.php:515
+#: elements/widgets/pxl_team_carousel.php:191
+#: elements/widgets/pxl_team_grid.php:158
+#: elements/widgets/pxl_testimonial_carousel.php:295
+#: elements/widgets/pxl_testimonial_grid.php:161
+#: elements/widgets/pxl_text_carousel.php:394
+msgid "Columns LG Devices"
+msgstr ""
+
+#: elements/widgets/pxl_gallery_grid.php:162
+#: elements/widgets/pxl_gallery_grid.php:237
+#: elements/widgets/pxl_iconbox_carousel.php:444
+#: elements/widgets/pxl_image_carousel.php:372
+#: elements/widgets/pxl_logo_marquee.php:129
+#: elements/widgets/pxl_post_grid.php:323
+#: elements/widgets/pxl_process_carousel.php:170
+#: elements/widgets/pxl_product_carousel.php:184
+#: elements/widgets/pxl_slider.php:374
+#: elements/widgets/pxl_slider_carousel.php:529
+#: elements/widgets/pxl_team_carousel.php:204
+#: elements/widgets/pxl_team_grid.php:171
+#: elements/widgets/pxl_testimonial_carousel.php:309
+#: elements/widgets/pxl_testimonial_grid.php:174
+#: elements/widgets/pxl_text_carousel.php:408
+msgid "Columns XL Devices"
+msgstr ""
+
+#: elements/widgets/pxl_gallery_grid.php:176
+#: elements/widgets/pxl_post_grid.php:415
+msgid "Grid Masonry"
+msgstr ""
+
+#: elements/widgets/pxl_gallery_grid.php:272
+#: elements/widgets/pxl_grass.php:34
+#: elements/widgets/pxl_icon_box.php:185
+#: elements/widgets/pxl_image_carousel.php:241
+msgid "Style 3"
+msgstr ""
+
+#: elements/widgets/pxl_gallery_grid.php:309
+#: elements/widgets/pxl_image_carousel.php:269
+#: elements/widgets/pxl_slider.php:271
+#: elements/widgets/pxl_team_carousel.php:109
+#: elements/widgets/pxl_team_grid.php:297
+#: elements/widgets/pxl_testimonial_grid.php:210
+msgid "Position Color"
+msgstr ""
+
+#: elements/widgets/pxl_gallery_grid.php:317
+#: elements/widgets/pxl_image_carousel.php:277
+#: elements/widgets/pxl_slider.php:279
+#: elements/widgets/pxl_team_carousel.php:117
+#: elements/widgets/pxl_team_grid.php:305
+#: elements/widgets/pxl_testimonial_grid.php:218
+msgid "Position Typography"
+msgstr ""
+
+#: elements/widgets/pxl_grass.php:5
+msgid "Case Grass"
+msgstr ""
+
+#: elements/widgets/pxl_grass.php:20
+msgid "Grass Color"
+msgstr ""
+
+#: elements/widgets/pxl_grass.php:29
+msgid "Grass Style"
+msgstr ""
+
+#: elements/widgets/pxl_grass.php:35
+msgid "Paper"
+msgstr ""
+
+#: elements/widgets/pxl_grass.php:41
+msgid "Scroll Effect"
+msgstr ""
+
+#: elements/widgets/pxl_grass.php:45
+msgid "X"
+msgstr ""
+
+#: elements/widgets/pxl_grass.php:46
+msgid "Parallax"
+msgstr ""
+
+#: elements/widgets/pxl_grass.php:52
+#: elements/widgets/pxl_image.php:242
+msgid "Parallax Scroll Type"
+msgstr ""
+
+#: elements/widgets/pxl_grass.php:55
+msgid "Effect Y"
+msgstr ""
+
+#: elements/widgets/pxl_grass.php:56
+msgid "Effect X"
+msgstr ""
+
+#: elements/widgets/pxl_grass.php:57
+msgid "EffectZ"
+msgstr ""
+
+#: elements/widgets/pxl_grass.php:66
+msgid "Parallax Scroll Value"
+msgstr ""
+
+#: elements/widgets/pxl_heading.php:7
+msgid "Case Heading"
+msgstr ""
+
+#: elements/widgets/pxl_heading.php:24
+#: elements/widgets/pxl_image.php:21
+msgid "Source Type"
+msgstr ""
+
+#: elements/widgets/pxl_heading.php:77
+#: elements/widgets/pxl_icon_box.php:475
+#: elements/widgets/pxl_icon_box.php:526
+#: elements/widgets/pxl_info_card.php:56
+#: elements/widgets/pxl_link.php:43
+#: elements/widgets/pxl_text_editor.php:54
+#: elements/widgets/pxl_video_player.php:322
+msgid "Max Width"
+msgstr ""
+
+#: elements/widgets/pxl_heading.php:134
+msgid "Title Shadow"
+msgstr ""
+
+#: elements/widgets/pxl_heading.php:263
+#: elements/widgets/pxl_team_grid.php:368
+msgid "Icon Width"
+msgstr ""
+
+#: elements/widgets/pxl_heading.php:282
+msgid "Icon Height"
+msgstr ""
+
+#: elements/widgets/pxl_heading.php:358
+#: elements/widgets/pxl_text_editor.php:161
+msgid "Highlight"
+msgstr ""
+
+#: elements/widgets/pxl_heading.php:385
+msgid "Color From"
+msgstr ""
+
+#: elements/widgets/pxl_heading.php:396
+msgid "Color To"
+msgstr ""
+
+#: elements/widgets/pxl_heading.php:414
+msgid "Text Image"
+msgstr ""
+
+#: elements/widgets/pxl_heading.php:423
+msgid "Text Image Position"
+msgstr ""
+
+#: elements/widgets/pxl_heading.php:448
+msgid "Text Image Size"
+msgstr ""
+
+#: elements/widgets/pxl_heading.php:472
+msgid "Typewriter"
+msgstr ""
+
+#: elements/widgets/pxl_icon.php:5
+msgid "Case Icons"
+msgstr ""
+
+#: elements/widgets/pxl_icon.php:17
+msgid "Icons"
+msgstr ""
+
+#: elements/widgets/pxl_icon.php:34
+#: elements/widgets/pxl_list.php:36
+#: elements/widgets/pxl_list.php:60
+#: elements/widgets/pxl_project_info.php:28
+#: elements/widgets/pxl_video_player.php:33
+#: elements/widgets/pxl_video_player.php:35
+#: elements/widgets/pxl_video_player.php:340
+msgid "Label"
+msgstr ""
+
+#: elements/widgets/pxl_icon.php:40
+msgid "Label Link"
+msgstr ""
+
+#: elements/widgets/pxl_icon.php:107
+msgid "Animation Hover"
+msgstr ""
+
+#: elements/widgets/pxl_icon.php:229
+msgid "Icon SVG Width"
+msgstr ""
+
+#: elements/widgets/pxl_icon.php:245
+msgid "Icon SVG Height"
+msgstr ""
+
+#: elements/widgets/pxl_iconbox_carousel.php:6
+msgid "Case Icon Box Carousel"
+msgstr ""
+
+#: elements/widgets/pxl_iconbox_carousel.php:46
+msgid "Icon Box List"
+msgstr ""
+
+#: elements/widgets/pxl_iconbox_carousel.php:51
+#: elements/widgets/pxl_icon_box.php:81
+#: elements/widgets/pxl_process.php:43
+msgid "Step"
+msgstr ""
+
+#: elements/widgets/pxl_iconbox_carousel.php:70
+#: elements/widgets/pxl_icon_box.php:103
+msgid "Item Link"
+msgstr ""
+
+#: elements/widgets/pxl_iconbox_carousel.php:121
+#: elements/widgets/pxl_icon_box.php:309
+#: elements/widgets/pxl_link.php:390
+msgid "Box Border Radius"
+msgstr ""
+
+#: elements/widgets/pxl_iconbox_carousel.php:179
+#: elements/widgets/pxl_image_carousel.php:213
+#: elements/widgets/pxl_slider.php:227
+msgid "Gap"
+msgstr ""
+
+#: elements/widgets/pxl_iconbox_carousel.php:295
+#: elements/widgets/pxl_icon_box.php:614
+msgid "Icon Space"
+msgstr ""
+
+#: elements/widgets/pxl_iconbox_carousel.php:305
+#: elements/widgets/pxl_icon_box.php:660
+#: elements/widgets/pxl_video_player.php:289
+msgid "Background Icon Color"
+msgstr ""
+
+#: elements/widgets/pxl_iconbox_carousel.php:314
+#: elements/widgets/pxl_icon_box.php:669
+msgid "Background Icon Color (Hover)"
+msgstr ""
+
+#: elements/widgets/pxl_iconbox_carousel.php:338
+#: elements/widgets/pxl_icon_box.php:751
+msgid "Size"
+msgstr ""
+
+#: elements/widgets/pxl_iconbox_carousel.php:355
+#: elements/widgets/pxl_icon_box.php:813
+msgid "Box Width/Height"
+msgstr ""
+
+#: elements/widgets/pxl_iconbox_carousel.php:373
+#: elements/widgets/pxl_image_carousel.php:301
+#: elements/widgets/pxl_logo_marquee.php:51
+#: elements/widgets/pxl_slider.php:303
+#: elements/widgets/pxl_slider_carousel.php:454
+#: elements/widgets/pxl_testimonial_carousel.php:231
+#: elements/widgets/pxl_text_carousel.php:330
+#: inc/admin/views/admin-demos.php:143
+msgid "Settings"
+msgstr ""
+
+#: elements/widgets/pxl_iconbox_carousel.php:381
+#: elements/widgets/pxl_image_carousel.php:309
+#: elements/widgets/pxl_slider.php:311
+#: elements/widgets/pxl_slider_carousel.php:462
+msgid "Slide"
+msgstr ""
+
+#: elements/widgets/pxl_iconbox_carousel.php:382
+#: elements/widgets/pxl_image_carousel.php:310
+#: elements/widgets/pxl_slider.php:312
+#: elements/widgets/pxl_slider_carousel.php:464
+msgid "Gl"
+msgstr ""
+
+#: elements/widgets/pxl_iconbox_carousel.php:459
+#: elements/widgets/pxl_image_carousel.php:387
+#: elements/widgets/pxl_post_grid.php:360
+#: elements/widgets/pxl_process_carousel.php:184
+#: elements/widgets/pxl_product_carousel.php:198
+#: elements/widgets/pxl_slider.php:389
+#: elements/widgets/pxl_slider_carousel.php:544
+#: elements/widgets/pxl_team_carousel.php:218
+#: elements/widgets/pxl_testimonial_carousel.php:324
+#: elements/widgets/pxl_text_carousel.php:423
+msgid "Columns XXL Devices"
+msgstr ""
+
+#: elements/widgets/pxl_iconbox_carousel.php:473
+#: elements/widgets/pxl_image_carousel.php:402
+#: elements/widgets/pxl_process_carousel.php:199
+#: elements/widgets/pxl_product_carousel.php:213
+#: elements/widgets/pxl_slider.php:404
+#: elements/widgets/pxl_slider_carousel.php:559
+#: elements/widgets/pxl_team_carousel.php:233
+#: elements/widgets/pxl_testimonial_carousel.php:339
+#: elements/widgets/pxl_text_carousel.php:438
+msgid "Slides to scroll"
+msgstr ""
+
+#: elements/widgets/pxl_iconbox_carousel.php:487
+#: elements/widgets/pxl_image_carousel.php:416
+#: elements/widgets/pxl_post_carousel.php:259
+#: elements/widgets/pxl_process_carousel.php:213
+#: elements/widgets/pxl_product_carousel.php:244
+#: elements/widgets/pxl_slider.php:418
+#: elements/widgets/pxl_slider_carousel.php:573
+#: elements/widgets/pxl_team_carousel.php:247
+#: elements/widgets/pxl_text_carousel.php:452
+msgid "Show Arrows"
+msgstr ""
+
+#: elements/widgets/pxl_iconbox_carousel.php:492
+#: elements/widgets/pxl_image_carousel.php:421
+#: elements/widgets/pxl_slider.php:423
+msgid "Size Button"
+msgstr ""
+
+#: elements/widgets/pxl_iconbox_carousel.php:511
+#: elements/widgets/pxl_image_carousel.php:440
+#: elements/widgets/pxl_slider.php:442
+msgid "Size Icon"
+msgstr ""
+
+#: elements/widgets/pxl_iconbox_carousel.php:530
+#: elements/widgets/pxl_image_carousel.php:459
+#: elements/widgets/pxl_post_carousel.php:265
+#: elements/widgets/pxl_process_carousel.php:218
+#: elements/widgets/pxl_slider.php:461
+#: elements/widgets/pxl_slider_carousel.php:619
+#: elements/widgets/pxl_team_carousel.php:252
+#: elements/widgets/pxl_testimonial_carousel.php:353
+#: elements/widgets/pxl_text_carousel.php:484
+msgid "Show Pagination"
+msgstr ""
+
+#: elements/widgets/pxl_iconbox_carousel.php:536
+#: elements/widgets/pxl_image_carousel.php:465
+#: elements/widgets/pxl_post_carousel.php:271
+#: elements/widgets/pxl_post_grid.php:166
+#: elements/widgets/pxl_process_carousel.php:224
+#: elements/widgets/pxl_slider.php:467
+#: elements/widgets/pxl_slider_carousel.php:625
+#: elements/widgets/pxl_team_carousel.php:258
+#: elements/widgets/pxl_testimonial_carousel.php:359
+#: elements/widgets/pxl_text_carousel.php:490
+msgid "Pagination Type"
+msgstr ""
+
+#: elements/widgets/pxl_iconbox_carousel.php:550
+#: elements/widgets/pxl_image_carousel.php:480
+#: elements/widgets/pxl_slider.php:482
+#: elements/widgets/pxl_testimonial_carousel.php:374
+#: elements/widgets/pxl_text_carousel.php:505
+msgid "Progressbar Color"
+msgstr ""
+
+#: elements/widgets/pxl_iconbox_carousel.php:561
+#: elements/widgets/pxl_image_carousel.php:492
+#: elements/widgets/pxl_post_carousel.php:315
+#: elements/widgets/pxl_process_carousel.php:237
+#: elements/widgets/pxl_product_carousel.php:250
+#: elements/widgets/pxl_slider.php:494
+#: elements/widgets/pxl_slider_carousel.php:690
+#: elements/widgets/pxl_team_carousel.php:294
+#: elements/widgets/pxl_testimonial_carousel.php:386
+#: elements/widgets/pxl_text_carousel.php:517
+msgid "Pause on Hover"
+msgstr ""
+
+#: elements/widgets/pxl_iconbox_carousel.php:566
+#: elements/widgets/pxl_image_carousel.php:497
+#: elements/widgets/pxl_post_carousel.php:321
+#: elements/widgets/pxl_process_carousel.php:243
+#: elements/widgets/pxl_product_carousel.php:256
+#: elements/widgets/pxl_slider.php:499
+#: elements/widgets/pxl_slider_carousel.php:696
+#: elements/widgets/pxl_team_carousel.php:299
+#: elements/widgets/pxl_testimonial_carousel.php:391
+#: elements/widgets/pxl_text_carousel.php:522
+msgid "Autoplay"
+msgstr ""
+
+#: elements/widgets/pxl_iconbox_carousel.php:571
+#: elements/widgets/pxl_image_carousel.php:502
+#: elements/widgets/pxl_post_carousel.php:327
+#: elements/widgets/pxl_slider.php:504
+#: elements/widgets/pxl_team_carousel.php:304
+#: elements/widgets/pxl_testimonial_carousel.php:396
+#: elements/widgets/pxl_text_carousel.php:527
+msgid "Autoplay Delay"
+msgstr ""
+
+#: elements/widgets/pxl_iconbox_carousel.php:580
+#: elements/widgets/pxl_image_carousel.php:511
+#: elements/widgets/pxl_post_carousel.php:336
+#: elements/widgets/pxl_process_carousel.php:258
+#: elements/widgets/pxl_product_carousel.php:271
+#: elements/widgets/pxl_slider.php:513
+#: elements/widgets/pxl_slider_carousel.php:710
+#: elements/widgets/pxl_team_carousel.php:313
+#: elements/widgets/pxl_testimonial_carousel.php:405
+#: elements/widgets/pxl_text_carousel.php:536
+msgid "Infinite Loop"
+msgstr ""
+
+#: elements/widgets/pxl_iconbox_carousel.php:585
+#: elements/widgets/pxl_image_carousel.php:516
+#: elements/widgets/pxl_post_carousel.php:342
+#: elements/widgets/pxl_process_carousel.php:264
+#: elements/widgets/pxl_product_carousel.php:277
+#: elements/widgets/pxl_slider.php:518
+#: elements/widgets/pxl_slider_carousel.php:720
+#: elements/widgets/pxl_team_carousel.php:318
+#: elements/widgets/pxl_testimonial_carousel.php:410
+#: elements/widgets/pxl_text_carousel.php:541
+msgid "Animation Speed"
+msgstr ""
+
+#: elements/widgets/pxl_iconbox_carousel.php:591
+#: elements/widgets/pxl_image_carousel.php:522
+#: elements/widgets/pxl_post_carousel.php:354
+#: elements/widgets/pxl_slider.php:524
+#: elements/widgets/pxl_team_carousel.php:324
+#: elements/widgets/pxl_testimonial_carousel.php:416
+#: elements/widgets/pxl_text_carousel.php:547
+msgid "Show Scroll Drap"
+msgstr ""
+
+#: elements/widgets/pxl_icon_box.php:6
+msgid "Case Icon Box"
+msgstr ""
+
+#: elements/widgets/pxl_icon_box.php:51
+msgid "Layout 8"
+msgstr ""
+
+#: elements/widgets/pxl_icon_box.php:55
+msgid "Layout 9"
+msgstr ""
+
+#: elements/widgets/pxl_icon_box.php:59
+msgid "Layout 10"
+msgstr ""
+
+#: elements/widgets/pxl_icon_box.php:63
+msgid "Layout 11"
+msgstr ""
+
+#: elements/widgets/pxl_icon_box.php:67
+msgid "Layout 12"
+msgstr ""
+
+#: elements/widgets/pxl_icon_box.php:138
+msgid "Image Background"
+msgstr ""
+
+#: elements/widgets/pxl_icon_box.php:146
+msgid "Widget Max Width"
+msgstr ""
+
+#: elements/widgets/pxl_icon_box.php:162
+msgid "Widget Max Height"
+msgstr ""
+
+#: elements/widgets/pxl_icon_box.php:198
+msgid "Item Position"
+msgstr ""
+
+#: elements/widgets/pxl_icon_box.php:201
+msgid "Position 1"
+msgstr ""
+
+#: elements/widgets/pxl_icon_box.php:202
+msgid "Position 2"
+msgstr ""
+
+#: elements/widgets/pxl_icon_box.php:203
+msgid "Position 3"
+msgstr ""
+
+#: elements/widgets/pxl_icon_box.php:204
+msgid "Position 4"
+msgstr ""
+
+#: elements/widgets/pxl_icon_box.php:213
+msgid "Item Style"
+msgstr ""
+
+#: elements/widgets/pxl_icon_box.php:248
+msgid "Widget Height"
+msgstr ""
+
+#: elements/widgets/pxl_icon_box.php:264
+msgid "Widget Min Height"
+msgstr ""
+
+#: elements/widgets/pxl_icon_box.php:290
+#: elements/widgets/pxl_icon_box.php:300
+msgid "Box Divider"
+msgstr ""
+
+#: elements/widgets/pxl_icon_box.php:380
+msgid "Box Color/Hover"
+msgstr ""
+
+#: elements/widgets/pxl_icon_box.php:391
+msgid "Style 4"
+msgstr ""
+
+#: elements/widgets/pxl_icon_box.php:585
+msgid "Animation Icon"
+msgstr ""
+
+#: elements/widgets/pxl_icon_box.php:591
+#: inc/theme-options/page-options.php:223
+#: inc/theme-options/page-options.php:504
+#: inc/theme-options/page-options.php:823
+#: inc/theme-options/page-options.php:1013
+#: inc/theme-options/theme-options.php:485
+#: woocommerce/bought-together.php:220
+#: woocommerce/bought-together.php:278
+msgid "Off"
+msgstr ""
+
+#: elements/widgets/pxl_icon_box.php:599
+msgid "Icon Rotate"
+msgstr ""
+
+#: elements/widgets/pxl_icon_box.php:638
+msgid "Style Icon"
+msgstr ""
+
+#: elements/widgets/pxl_icon_box.php:648
+msgid "Style SVG"
+msgstr ""
+
+#: elements/widgets/pxl_icon_box.php:772
+msgid "Space Right "
+msgstr ""
+
+#: elements/widgets/pxl_icon_box.php:793
+msgid "Space Top "
+msgstr ""
+
+#: elements/widgets/pxl_icon_box.php:844
+msgid "Box Min Width"
+msgstr ""
+
+#: elements/widgets/pxl_icon_box.php:863
+#: elements/widgets/pxl_image.php:94
+msgid "Image Max Height"
+msgstr ""
+
+#: elements/widgets/pxl_icon_cart.php:6
+msgid "Case Shop Cart"
+msgstr ""
+
+#: elements/widgets/pxl_icon_cart.php:13
+msgid "Source Settings"
+msgstr ""
+
+#: elements/widgets/pxl_icon_cart.php:28
+#: elements/widgets/pxl_icon_search.php:36
+msgid "Icon Image Type"
+msgstr ""
+
+#: elements/widgets/pxl_icon_cart.php:82
+#: elements/widgets/pxl_team_grid.php:352
+msgid "Icon Size"
+msgstr ""
+
+#: elements/widgets/pxl_icon_cart.php:153
+msgid "Counter Width"
+msgstr ""
+
+#: elements/widgets/pxl_icon_cart.php:169
+msgid "Counter Height"
+msgstr ""
+
+#: elements/widgets/pxl_icon_cart.php:185
+msgid "Counter Border Radius"
+msgstr ""
+
+#: elements/widgets/pxl_icon_cart.php:208
+msgid "Counter Border Color"
+msgstr ""
+
+#: elements/widgets/pxl_icon_search.php:5
+msgid "Case Search"
+msgstr ""
+
+#: elements/widgets/pxl_icon_search.php:17
+msgid "Search Type"
+msgstr ""
+
+#: elements/widgets/pxl_icon_search.php:27
+msgid "Email Placefolder"
+msgstr ""
+
+#: elements/widgets/pxl_image.php:5
+msgid "Case Image"
+msgstr ""
+
+#: elements/widgets/pxl_image.php:31
+msgid "Choose Image"
+msgstr ""
+
+#: elements/widgets/pxl_image.php:44
+#: elements/widgets/pxl_video_player.php:39
+msgid "Image Type"
+msgstr ""
+
+#: elements/widgets/pxl_image.php:63
+#: elements/widgets/pxl_logo.php:35
+msgid "Image Alignment"
+msgstr ""
+
+#: elements/widgets/pxl_image.php:116
+#: elements/widgets/pxl_slider_carousel.php:228
+msgid "Image Width"
+msgstr ""
+
+#: elements/widgets/pxl_image.php:124
+#: elements/widgets/pxl_logo_marquee.php:201
+#: elements/widgets/pxl_menu.php:277
+msgid "Full"
+msgstr ""
+
+#: elements/widgets/pxl_image.php:138
+#: elements/widgets/pxl_logo.php:58
+#: elements/widgets/pxl_post_carousel.php:367
+#: elements/widgets/pxl_slider_carousel.php:205
+#: elements/widgets/pxl_video_player.php:82
+msgid "Image Height"
+msgstr ""
+
+#: elements/widgets/pxl_image.php:214
+msgid "Image Effect"
+msgstr ""
+
+#: elements/widgets/pxl_image.php:256
+#: elements/widgets/pxl_image.php:266
+msgid "Parallax Value"
+msgstr ""
+
+#: elements/widgets/pxl_image.php:276
+msgid "Max Tilt"
+msgstr ""
+
+#: elements/widgets/pxl_image.php:286
+msgid "Speed Tilt"
+msgstr ""
+
+#: elements/widgets/pxl_image.php:296
+msgid "Perspective Tilt"
+msgstr ""
+
+#: elements/widgets/pxl_image.php:306
+msgid "Speed"
+msgstr ""
+
+#: elements/widgets/pxl_image.php:326
+msgid "Hide on Screen <= 1400px"
+msgstr ""
+
+#: elements/widgets/pxl_image.php:332
+msgid "Disable Parallax on Mobile <= 767px"
+msgstr ""
+
+#: elements/widgets/pxl_image_carousel.php:8
+msgid "Case Image Carousel"
+msgstr ""
+
+#: elements/widgets/pxl_image_carousel.php:100
+msgid "Url Video"
+msgstr ""
+
+#: elements/widgets/pxl_image_carousel.php:123
+#: elements/widgets/pxl_image_comparison.php:21
+msgid "Image Before"
+msgstr ""
+
+#: elements/widgets/pxl_image_carousel.php:128
+#: elements/widgets/pxl_image_comparison.php:26
+msgid "Image After"
+msgstr ""
+
+#: elements/widgets/pxl_image_carousel.php:148
+msgid "Background"
+msgstr ""
+
+#: elements/widgets/pxl_image_carousel.php:156
+msgid "Scroll"
+msgstr ""
+
+#: elements/widgets/pxl_image_carousel.php:161
+msgid " Left To Right"
+msgstr ""
+
+#: elements/widgets/pxl_image_carousel.php:197
+#: elements/widgets/pxl_menu.php:106
+#: elements/widgets/pxl_product_carousel.php:82
+#: elements/widgets/pxl_slider.php:211
+msgid "Max Height"
+msgstr ""
+
+#: elements/widgets/pxl_image_comparison.php:5
+msgid "Case Image Comparison"
+msgstr ""
+
+#: elements/widgets/pxl_image_comparison.php:31
+msgid "Before Label"
+msgstr ""
+
+#: elements/widgets/pxl_image_comparison.php:40
+msgid "After Label"
+msgstr ""
+
+#: elements/widgets/pxl_info_box.php:5
+msgid "Case Info Box"
+msgstr ""
+
+#: elements/widgets/pxl_info_box.php:35
+msgid "Link Text"
+msgstr ""
+
+#: elements/widgets/pxl_info_box.php:87
+msgid "Background Gradient Color From"
+msgstr ""
+
+#: elements/widgets/pxl_info_box.php:95
+msgid "Background Gradient Color To"
+msgstr ""
+
+#: elements/widgets/pxl_info_box.php:199
+#: elements/widgets/pxl_info_card.php:213
+#: elements/widgets/pxl_logo_marquee.php:152
+msgid "Text Color"
+msgstr ""
+
+#: elements/widgets/pxl_info_card.php:5
+msgid "Case Info Card"
+msgstr ""
+
+#: elements/widgets/pxl_info_card.php:35
+msgid "List Items"
+msgstr ""
+
+#: elements/widgets/pxl_info_card.php:74
+#: inc/theme-options/page-options.php:93
+#: inc/theme-options/page-options.php:375
+#: inc/theme-options/page-options.php:531
+#: inc/theme-options/page-options.php:694
+#: inc/theme-options/page-options.php:890
+#: inc/theme-options/theme-options.php:340
+msgid "Header"
+msgstr ""
+
+#: elements/widgets/pxl_link.php:5
+msgid "Case Links"
+msgstr ""
+
+#: elements/widgets/pxl_link.php:59
+#: elements/widgets/pxl_search_form.php:17
+msgid "Widget Title"
+msgstr ""
+
+#: elements/widgets/pxl_link.php:148
+msgid "Color Divider"
+msgstr ""
+
+#: elements/widgets/pxl_link.php:166
+msgid "Typography Hover"
+msgstr ""
+
+#: elements/widgets/pxl_link.php:173
+msgid "Vertical Spacer"
+msgstr ""
+
+#: elements/widgets/pxl_link.php:192
+msgid "Horizontal Spacer Left"
+msgstr ""
+
+#: elements/widgets/pxl_link.php:211
+msgid "Horizontal Spacer Right"
+msgstr ""
+
+#: elements/widgets/pxl_link.php:230
+msgid "Align Items"
+msgstr ""
+
+#: elements/widgets/pxl_link.php:235
+msgid "Flex Start"
+msgstr ""
+
+#: elements/widgets/pxl_link.php:243
+msgid "Flex End"
+msgstr ""
+
+#: elements/widgets/pxl_link.php:265
+msgid "Color SVG"
+msgstr ""
+
+#: elements/widgets/pxl_list.php:5
+msgid "Case List"
+msgstr ""
+
+#: elements/widgets/pxl_list.php:17
+msgid "Project Info"
+msgstr ""
+
+#: elements/widgets/pxl_list.php:93
+msgid "Hozirontal"
+msgstr ""
+
+#: elements/widgets/pxl_list.php:103
+msgid "Numbered"
+msgstr ""
+
+#: elements/widgets/pxl_list.php:123
+#: elements/widgets/pxl_tabs.php:310
+msgid "Content Color"
+msgstr ""
+
+#: elements/widgets/pxl_list.php:131
+#: elements/widgets/pxl_pricing.php:256
+#: elements/widgets/pxl_tabs.php:318
+msgid "Content Typography"
+msgstr ""
+
+#: elements/widgets/pxl_list.php:150
+msgid "Icon Margin"
+msgstr ""
+
+#: elements/widgets/pxl_list.php:183
+msgid "Numbered Typography"
+msgstr ""
+
+#: elements/widgets/pxl_list.php:212
+#: elements/widgets/pxl_menu.php:218
+#: elements/widgets/pxl_menu.php:250
+#: elements/widgets/pxl_menu.php:399
+#: elements/widgets/pxl_progressbar.php:64
+msgid "Item Spacer"
+msgstr ""
+
+#: elements/widgets/pxl_list.php:231
+msgid "Item Spacer Hozirontal"
+msgstr ""
+
+#: elements/widgets/pxl_list.php:250
+msgid "Icon Min Width"
+msgstr ""
+
+#: elements/widgets/pxl_logo.php:6
+msgid "Case Logo"
+msgstr ""
+
+#: elements/widgets/pxl_logo.php:18
+#: elements/widgets/pxl_logo_marquee.php:25
+#: inc/theme-options/theme-options.php:259
+#: inc/theme-options/theme-options.php:407
+msgid "Logo"
+msgstr ""
+
+#: elements/widgets/pxl_logo_marquee.php:5
+msgid "Case Logo Marquee"
+msgstr ""
+
+#: elements/widgets/pxl_logo_marquee.php:20
+msgid "Logo Marquee"
+msgstr ""
+
+#: elements/widgets/pxl_logo_marquee.php:56
+msgid "Slip Type"
+msgstr ""
+
+#: elements/widgets/pxl_logo_marquee.php:66
+msgid "Slip Duration"
+msgstr ""
+
+#: elements/widgets/pxl_logo_marquee.php:160
+msgid "Text Typography"
+msgstr ""
+
+#: elements/widgets/pxl_logo_marquee.php:167
+msgid "Logo Margin"
+msgstr ""
+
+#: elements/widgets/pxl_logo_marquee.php:177
+msgid "Logo Box Width"
+msgstr ""
+
+#: elements/widgets/pxl_logo_marquee.php:193
+msgid "Logo Image Width"
+msgstr ""
+
+#: elements/widgets/pxl_logo_marquee.php:212
+msgid "Logo Color"
+msgstr ""
+
+#: elements/widgets/pxl_logo_marquee.php:220
+msgid "Logo Color Hover"
+msgstr ""
+
+#: elements/widgets/pxl_mailchimp.php:5
+msgid "Case Mailchimp"
+msgstr ""
+
+#: elements/widgets/pxl_mailchimp.php:28
+#: woocommerce/checkout/pxl-thankyou.php:137
+msgid "Email"
+msgstr ""
+
+#: elements/widgets/pxl_mailchimp.php:160
+msgid "Background Color/Hover"
+msgstr ""
+
+#: elements/widgets/pxl_menu.php:18
+msgid "Case Nav Menu"
+msgstr ""
+
+#: elements/widgets/pxl_menu.php:30
+msgid "Select Menu"
+msgstr ""
+
+#: elements/widgets/pxl_menu.php:36
+msgid "Menu Type"
+msgstr ""
+
+#: elements/widgets/pxl_menu.php:46
+msgid "Menu Style"
+msgstr ""
+
+#: elements/widgets/pxl_menu.php:81
+msgid "Text Alignment"
+msgstr ""
+
+#: elements/widgets/pxl_menu.php:126
+msgid "First Level"
+msgstr ""
+
+#: elements/widgets/pxl_menu.php:161
+msgid "Color Active"
+msgstr ""
+
+#: elements/widgets/pxl_menu.php:169
+msgid "Transform Active"
+msgstr ""
+
+#: elements/widgets/pxl_menu.php:181
+msgid "Arrow Color"
+msgstr ""
+
+#: elements/widgets/pxl_menu.php:200
+msgid "Arrow Has Children - Font Size"
+msgstr ""
+
+#: elements/widgets/pxl_menu.php:231
+msgid "Extra Space Bottom"
+msgstr ""
+
+#: elements/widgets/pxl_menu.php:269
+msgid "Flex Grow"
+msgstr ""
+
+#: elements/widgets/pxl_menu.php:273
+#: inc/theme-options/option-functions.php:10
+#: inc/theme-options/option-functions.php:23
+#: inc/theme-options/option-functions.php:151
+#: inc/theme-options/option-functions.php:230
+#: inc/theme-options/option-functions.php:273
+#: inc/theme-options/page-options.php:129
+#: inc/theme-options/page-options.php:221
+#: inc/theme-options/page-options.php:411
+#: inc/theme-options/page-options.php:502
+#: inc/theme-options/page-options.php:567
+#: inc/theme-options/page-options.php:730
+#: inc/theme-options/page-options.php:821
+#: inc/theme-options/page-options.php:926
+#: inc/theme-options/page-options.php:1011
+msgid "Inherit"
+msgstr ""
+
+#: elements/widgets/pxl_menu.php:290
+msgid "Menu Mega Type"
+msgstr ""
+
+#: elements/widgets/pxl_menu.php:300
+msgid "Mega Menu Spacer Left"
+msgstr ""
+
+#: elements/widgets/pxl_menu.php:319
+msgid "Mega Menu Spacer Right"
+msgstr ""
+
+#: elements/widgets/pxl_menu.php:338
+msgid "Mega Menu Container Max Width"
+msgstr ""
+
+#: elements/widgets/pxl_menu.php:359
+msgid "Sub Level"
+msgstr ""
+
+#: elements/widgets/pxl_menu.php:372
+msgid "Color Hover/Actvie"
+msgstr ""
+
+#: elements/widgets/pxl_menu.php:381
+msgid "Box Background Color"
+msgstr ""
+
+#: elements/widgets/pxl_menu.php:414
+msgid "Hover/Active Style"
+msgstr ""
+
+#: elements/widgets/pxl_menu.php:426
+msgid "Show Effect"
+msgstr ""
+
+#: elements/widgets/pxl_menu.php:441
+msgid "Box Spacer Top"
+msgstr ""
+
+#: elements/widgets/pxl_menu.php:456
+msgid "Box Spacer Top - Mega"
+msgstr ""
+
+#: elements/widgets/pxl_pie_chart.php:5
+msgid "Case Pie Chart"
+msgstr ""
+
+#: elements/widgets/pxl_pie_chart.php:60
+msgid "Percentage Value"
+msgstr ""
+
+#: elements/widgets/pxl_pie_chart.php:69
+msgid "Chart Size"
+msgstr ""
+
+#: elements/widgets/pxl_pie_chart.php:127
+#: elements/widgets/pxl_progressbar.php:51
+#: elements/widgets/pxl_progressbar.php:126
+msgid "Percentage"
+msgstr ""
+
+#: elements/widgets/pxl_pie_chart.php:132
+msgid "Bar Color From"
+msgstr ""
+
+#: elements/widgets/pxl_pie_chart.php:137
+msgid "Bar Color To"
+msgstr ""
+
+#: elements/widgets/pxl_pie_chart.php:142
+msgid "Track Color"
+msgstr ""
+
+#: elements/widgets/pxl_pie_chart.php:150
+msgid "Chart Line Width"
+msgstr ""
+
+#: elements/widgets/pxl_pie_chart.php:165
+msgid "Chart Line Cap"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:6
+msgid "Case Post Carousel"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:24
+#: elements/widgets/pxl_post_grid.php:24
+msgid "Select Post Type"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:36
+#: elements/widgets/pxl_post_grid.php:37
+#: elements/widgets/pxl_product_carousel.php:36
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2639
+msgid "Source"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:42
+#: elements/widgets/pxl_post_grid.php:43
+msgid "Select posts by"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:46
+#: elements/widgets/pxl_post_grid.php:47
+msgid "Terms selected"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:47
+#: elements/widgets/pxl_post_grid.php:48
+msgid "Posts selected "
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:62
+#: elements/widgets/pxl_post_grid.php:63
+msgid "ID"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:63
+#: elements/widgets/pxl_post_grid.php:64
+#: inc/theme-options/theme-options.php:534
+#: inc/theme-options/theme-options.php:648
+msgid "Author"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:70
+#: elements/widgets/pxl_post_grid.php:71
+msgid "Sort Order"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:80
+#: elements/widgets/pxl_post_grid.php:81
+#: elements/widgets/pxl_product_carousel.php:76
+msgid "Total items"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:89
+#: elements/widgets/pxl_product_carousel.php:120
+msgid "Carousel"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:94
+msgid "Northway Animate"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:101
+msgid "Post Number"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:118
+msgid "Slide Direction"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:121
+msgid "Vertical"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:122
+msgid "Horizontal"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:157
+#: elements/widgets/pxl_post_grid.php:420
+msgid "Columns: Screen <= 575"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:171
+#: elements/widgets/pxl_post_grid.php:434
+msgid "Columns: Screen <= 767"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:185
+#: elements/widgets/pxl_post_grid.php:448
+msgid "Columns: Screen <= 991"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:199
+#: elements/widgets/pxl_post_grid.php:462
+msgid "Columns: Screen <= 1199"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:214
+#: elements/widgets/pxl_post_grid.php:477
+msgid "Columns: Screen => 1200"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:229
+msgid "Columns: Screen => 1600"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:245
+msgid "Slides Scroll"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:285
+msgid "Alignment Bullets"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:362
+#: elements/widgets/pxl_post_grid.php:502
+#: elements/widgets/pxl_product_carousel.php:101
+#: inc/theme-options/theme-options.php:379
+msgid "Display"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:394
+msgid "Term Filter"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:398
+#: elements/widgets/pxl_post_grid.php:123
+#: elements/widgets/pxl_post_grid.php:133
+msgid "Enable"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:399
+#: elements/widgets/pxl_post_grid.php:124
+#: elements/widgets/pxl_post_grid.php:134
+#: elements/widgets/pxl_post_grid.php:172
+#: inc/theme-options/option-functions.php:153
+#: inc/theme-options/option-functions.php:160
+#: inc/theme-options/option-functions.php:233
+#: inc/theme-options/option-functions.php:240
+msgid "Disable"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:415
+#: elements/widgets/pxl_post_grid.php:142
+msgid "Filter Type"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:428
+#: elements/widgets/pxl_post_grid.php:156
+msgid "Filter Default Title"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:430
+#: elements/widgets/pxl_post_grid.php:158
+msgid "All"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:437
+msgid "Alignment Filter"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:463
+msgid "Width Feature"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:483
+msgid "Typography Filter"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:493
+msgid "Filter Color"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:504
+msgid "Filter Under Line Color"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:515
+msgid "Filter Active Color"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:527
+msgid "Widget Padding Right"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:624
+#: elements/widgets/pxl_post_grid.php:524
+msgid "Show Date"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:641
+#: elements/widgets/pxl_post_grid.php:558
+msgid "Show Number"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:658
+msgid "Show Title"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:675
+#: elements/widgets/pxl_post_grid.php:626
+#: elements/widgets/pxl_product_carousel.php:106
+msgid "Show Category"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:698
+#: elements/widgets/pxl_post_grid.php:575
+msgid "Show Author"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:715
+#: elements/widgets/pxl_post_grid.php:541
+msgid "Show Comment"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:732
+#: elements/widgets/pxl_post_grid.php:696
+msgid "Show Excerpt"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:761
+#: elements/widgets/pxl_post_grid.php:726
+msgid "Number of Words"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:792
+#: elements/widgets/pxl_post_grid.php:643
+msgid "Show Button Readmore"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:843
+#: elements/widgets/pxl_testimonial_carousel.php:439
+msgid "Button URL"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:862
+#: elements/widgets/pxl_post_grid.php:592
+msgid "Show Client"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:879
+#: elements/widgets/pxl_post_grid.php:609
+msgid "Show Address"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:903
+msgid "Portfolio Style"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:944
+msgid "Bullet Color"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:963
+msgid "Bullet Color Active"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:1001
+#: elements/widgets/pxl_slider_carousel.php:297
+#: elements/widgets/pxl_team_grid.php:286
+#: elements/widgets/pxl_text_carousel.php:237
+msgid "Title Margin"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:1028
+msgid "Excerpt"
+msgstr ""
+
+#: elements/widgets/pxl_post_carousel.php:1067
+msgid "Meta"
+msgstr ""
+
+#: elements/widgets/pxl_post_grid.php:6
+msgid "Case Post Grid"
+msgstr ""
+
+#: elements/widgets/pxl_post_grid.php:119
+msgid "Filter on Masonry"
+msgstr ""
+
+#: elements/widgets/pxl_post_grid.php:129
+#: searchform.php:9
+msgid "Search"
+msgstr ""
+
+#: elements/widgets/pxl_post_grid.php:146
+msgid "Normal"
+msgstr ""
+
+#: elements/widgets/pxl_post_grid.php:147
+msgid "Ajax"
+msgstr ""
+
+#: elements/widgets/pxl_post_grid.php:170
+msgid "Pagination"
+msgstr ""
+
+#: elements/widgets/pxl_post_grid.php:171
+msgid "Loadmore"
+msgstr ""
+
+#: elements/widgets/pxl_post_grid.php:177
+msgid "Button Loadmore"
+msgstr ""
+
+#: elements/widgets/pxl_post_grid.php:764
+msgid "Custom Box"
+msgstr ""
+
+#: elements/widgets/pxl_post_navigation.php:5
+msgid "Case  Post Navigation"
+msgstr ""
+
+#: elements/widgets/pxl_post_navigation.php:21
+#: inc/theme-options/theme-options.php:655
+msgid "Navigation"
+msgstr ""
+
+#: elements/widgets/pxl_post_navigation.php:26
+msgid "Link Gird Page"
+msgstr ""
+
+#: elements/widgets/pxl_post_navigation.php:28
+msgid "#"
+msgstr ""
+
+#: elements/widgets/pxl_pricing.php:5
+msgid "Case Pricing"
+msgstr ""
+
+#: elements/widgets/pxl_pricing.php:40
+msgid "Popular"
+msgstr ""
+
+#: elements/widgets/pxl_pricing.php:56
+msgid "Box Title "
+msgstr ""
+
+#: elements/widgets/pxl_pricing.php:62
+#: elements/widgets/pxl_tabs.php:44
+msgid "Currency"
+msgstr ""
+
+#: elements/widgets/pxl_pricing.php:68
+#: elements/widgets/pxl_pricing.php:192
+#: elements/widgets/pxl_product_carousel.php:363
+#: elements/widgets/pxl_tabs.php:129
+#: woocommerce/cart/pxl-cart-content.php:30
+#: woocommerce/cart/pxl-cart-content.php:108
+msgid "Price"
+msgstr ""
+
+#: elements/widgets/pxl_pricing.php:73
+#: elements/widgets/pxl_tabs.php:53
+msgid "Time"
+msgstr ""
+
+#: elements/widgets/pxl_pricing.php:89
+msgid "Feature Title "
+msgstr ""
+
+#: elements/widgets/pxl_pricing.php:95
+msgid "List Feature"
+msgstr ""
+
+#: elements/widgets/pxl_pricing.php:127
+#: elements/widgets/pxl_slider_carousel.php:158
+#: elements/widgets/pxl_text_carousel.php:118
+msgid "Content Padding"
+msgstr ""
+
+#: elements/widgets/pxl_pricing.php:137
+msgid "Box Gradient Color From"
+msgstr ""
+
+#: elements/widgets/pxl_pricing.php:145
+msgid "Box Gradient Color To"
+msgstr ""
+
+#: elements/widgets/pxl_pricing.php:153
+msgid "Box Color Popular"
+msgstr ""
+
+#: elements/widgets/pxl_pricing.php:197
+msgid "Currency Typography"
+msgstr ""
+
+#: elements/widgets/pxl_pricing.php:204
+msgid "Value Typography"
+msgstr ""
+
+#: elements/widgets/pxl_pricing.php:211
+msgid "Time Typography"
+msgstr ""
+
+#: elements/widgets/pxl_pricing.php:218
+#: elements/widgets/pxl_product_carousel.php:368
+msgid "Price Color"
+msgstr ""
+
+#: elements/widgets/pxl_pricing.php:228
+#: inc/theme-options/page-options.php:687
+msgid "Feature"
+msgstr ""
+
+#: elements/widgets/pxl_pricing.php:248
+msgid "Title Color Border"
+msgstr ""
+
+#: elements/widgets/pxl_pricing.php:263
+msgid "Feature Color"
+msgstr ""
+
+#: elements/widgets/pxl_pricing.php:271
+msgid "Feature Color Icon"
+msgstr ""
+
+#: elements/widgets/pxl_pricing.php:286
+msgid " Color"
+msgstr ""
+
+#: elements/widgets/pxl_pricing.php:302
+msgid "Button Color Popular"
+msgstr ""
+
+#: elements/widgets/pxl_pricing.php:310
+msgid "Button Background Color Popular"
+msgstr ""
+
+#: elements/widgets/pxl_process.php:6
+msgid "Case Process"
+msgstr ""
+
+#: elements/widgets/pxl_process.php:79
+msgid "Border Bottom Color"
+msgstr ""
+
+#: elements/widgets/pxl_process.php:94
+msgid "Padding Box"
+msgstr ""
+
+#: elements/widgets/pxl_process_carousel.php:8
+msgid "Case Process Carousel"
+msgstr ""
+
+#: elements/widgets/pxl_process_carousel.php:50
+#: elements/widgets/pxl_process_carousel.php:82
+msgid "List Process"
+msgstr ""
+
+#: elements/widgets/pxl_process_carousel.php:65
+#: elements/widgets/pxl_process_carousel.php:87
+msgid "Year"
+msgstr ""
+
+#: elements/widgets/pxl_process_carousel.php:107
+#: elements/widgets/pxl_team_carousel.php:141
+msgid "Carousel Settings"
+msgstr ""
+
+#: elements/widgets/pxl_process_carousel.php:249
+#: elements/widgets/pxl_product_carousel.php:262
+#: elements/widgets/pxl_slider_carousel.php:701
+msgid "Autoplay Speed"
+msgstr ""
+
+#: elements/widgets/pxl_product_carousel.php:6
+msgid "Case Product Carousel"
+msgstr ""
+
+#: elements/widgets/pxl_product_carousel.php:41
+msgid "Heading"
+msgstr ""
+
+#: elements/widgets/pxl_product_carousel.php:47
+msgid "Select Query Type"
+msgstr ""
+
+#: elements/widgets/pxl_product_carousel.php:51
+msgid "Recent Products"
+msgstr ""
+
+#: elements/widgets/pxl_product_carousel.php:52
+msgid "Best Selling"
+msgstr ""
+
+#: elements/widgets/pxl_product_carousel.php:53
+msgid "Featured Products"
+msgstr ""
+
+#: elements/widgets/pxl_product_carousel.php:54
+msgid "High Rate"
+msgstr ""
+
+#: elements/widgets/pxl_product_carousel.php:55
+msgid "On Sale"
+msgstr ""
+
+#: elements/widgets/pxl_product_carousel.php:56
+msgid "Recent Review"
+msgstr ""
+
+#: elements/widgets/pxl_product_carousel.php:57
+msgid "Product Deals"
+msgstr ""
+
+#: elements/widgets/pxl_product_carousel.php:58
+msgid "Product separate"
+msgstr ""
+
+#: elements/widgets/pxl_product_carousel.php:63
+msgid "Post per page"
+msgstr ""
+
+#: elements/widgets/pxl_product_carousel.php:69
+msgid "Select Categories"
+msgstr ""
+
+#: elements/widgets/pxl_product_carousel.php:112
+msgid "Show Rating"
+msgstr ""
+
+#: elements/widgets/pxl_product_carousel.php:290
+msgid "Heading Color"
+msgstr ""
+
+#: elements/widgets/pxl_product_carousel.php:298
+msgid "Heading Typography"
+msgstr ""
+
+#: elements/widgets/pxl_product_carousel.php:305
+msgid "Arrows"
+msgstr ""
+
+#: elements/widgets/pxl_product_carousel.php:327
+#: woocommerce/cart/pxl-cart-content.php:29
+#: woocommerce/cart/pxl-cart-content.php:69
+msgid "Product"
+msgstr ""
+
+#: elements/widgets/pxl_product_carousel.php:332
+msgid "Background Color Image"
+msgstr ""
+
+#: elements/widgets/pxl_progressbar.php:5
+msgid "Case Progress Bar"
+msgstr ""
+
+#: elements/widgets/pxl_progressbar.php:40
+msgid "Progress Bar"
+msgstr ""
+
+#: elements/widgets/pxl_progressbar.php:131
+msgid "Percentage Color"
+msgstr ""
+
+#: elements/widgets/pxl_progressbar.php:139
+msgid "Percentage Typography"
+msgstr ""
+
+#: elements/widgets/pxl_progressbar.php:148
+msgid "Bar"
+msgstr ""
+
+#: elements/widgets/pxl_progressbar.php:153
+msgid "Bar Color"
+msgstr ""
+
+#: elements/widgets/pxl_progressbar.php:161
+msgid "Bar Background Color"
+msgstr ""
+
+#: elements/widgets/pxl_project_info.php:5
+msgid "Case Project Info"
+msgstr ""
+
+#: elements/widgets/pxl_search_form.php:5
+msgid "Case Search Form"
+msgstr ""
+
+#: elements/widgets/pxl_search_form.php:23
+msgid "Placefolder"
+msgstr ""
+
+#: elements/widgets/pxl_search_form.php:36
+msgid "Background Color Input"
+msgstr ""
+
+#: elements/widgets/pxl_showcase.php:5
+msgid "Case Showcase"
+msgstr ""
+
+#: elements/widgets/pxl_showcase.php:93
+#: elements/widgets/pxl_slider_carousel.php:91
+msgid "Button Text 2"
+msgstr ""
+
+#: elements/widgets/pxl_showcase.php:101
+#: elements/widgets/pxl_slider_carousel.php:116
+msgid "Button Link 2"
+msgstr ""
+
+#: elements/widgets/pxl_showcase.php:110
+msgid "Coming Soon"
+msgstr ""
+
+#: elements/widgets/pxl_slider.php:8
+msgid "Case Slider"
+msgstr ""
+
+#: elements/widgets/pxl_slider.php:94
+msgid "Phone Text"
+msgstr ""
+
+#: elements/widgets/pxl_slider.php:100
+#: template-parts/widgets/contact-info.php:105
+msgid "Phone Link"
+msgstr ""
+
+#: elements/widgets/pxl_slider_carousel.php:8
+msgid "Case Slider Carousel"
+msgstr ""
+
+#: elements/widgets/pxl_slider_carousel.php:61
+#: inc/theme-filters.php:473
+#: inc/theme-options/page-options.php:1060
+msgid "Slider"
+msgstr ""
+
+#: elements/widgets/pxl_slider_carousel.php:66
+msgid "Image "
+msgstr ""
+
+#: elements/widgets/pxl_slider_carousel.php:87
+msgid "VIEW DETAILS"
+msgstr ""
+
+#: elements/widgets/pxl_slider_carousel.php:93
+msgid "VIEW DETAILS 2"
+msgstr ""
+
+#: elements/widgets/pxl_slider_carousel.php:97
+msgid "Image Position"
+msgstr ""
+
+#: elements/widgets/pxl_slider_carousel.php:102
+msgid "Position Text"
+msgstr ""
+
+#: elements/widgets/pxl_slider_carousel.php:104
+msgid "Over 3k happy customers"
+msgstr ""
+
+#: elements/widgets/pxl_slider_carousel.php:135
+msgid "Content Max Width"
+msgstr ""
+
+#: elements/widgets/pxl_slider_carousel.php:182
+msgid "Content Column Gap"
+msgstr ""
+
+#: elements/widgets/pxl_slider_carousel.php:274
+msgid "Title Max Width"
+msgstr ""
+
+#: elements/widgets/pxl_slider_carousel.php:343
+msgid "Description Max Width"
+msgstr ""
+
+#: elements/widgets/pxl_slider_carousel.php:366
+msgid "Description Margin"
+msgstr ""
+
+#: elements/widgets/pxl_slider_carousel.php:404
+#: elements/widgets/pxl_video_player.php:281
+msgid "Hover Color"
+msgstr ""
+
+#: elements/widgets/pxl_slider_carousel.php:420
+msgid "Background Hover Color"
+msgstr ""
+
+#: elements/widgets/pxl_slider_carousel.php:435
+msgid "Button Text Margin"
+msgstr ""
+
+#: elements/widgets/pxl_slider_carousel.php:463
+msgid "Fade"
+msgstr ""
+
+#: elements/widgets/pxl_slider_carousel.php:638
+msgid "Pagination Margin"
+msgstr ""
+
+#: elements/widgets/pxl_slider_carousel.php:654
+msgid "Bullets Color"
+msgstr ""
+
+#: elements/widgets/pxl_slider_carousel.php:666
+msgid "Bullets Color Active"
+msgstr ""
+
+#: elements/widgets/pxl_slider_carousel.php:678
+msgid "Fraction Color"
+msgstr ""
+
+#: elements/widgets/pxl_social_share.php:5
+msgid "Case Social Share"
+msgstr ""
+
+#: elements/widgets/pxl_social_share.php:17
+msgid "Icon Share"
+msgstr ""
+
+#: elements/widgets/pxl_social_share.php:22
+msgid "Social Share List"
+msgstr ""
+
+#: elements/widgets/pxl_social_share.php:27
+msgid "Social Share Icon"
+msgstr ""
+
+#: elements/widgets/pxl_social_share.php:32
+msgid "Social Share Link"
+msgstr ""
+
+#: elements/widgets/pxl_tabs.php:6
+msgid "Case Tabs"
+msgstr ""
+
+#: elements/widgets/pxl_tabs.php:39
+msgid "Tabs"
+msgstr ""
+
+#: elements/widgets/pxl_tabs.php:46
+msgid "$"
+msgstr ""
+
+#: elements/widgets/pxl_tabs.php:55
+#: elements/widgets/pxl_tabs.php:71
+msgid "Monthly"
+msgstr ""
+
+#: elements/widgets/pxl_tabs.php:62
+msgid "Active Tab"
+msgstr ""
+
+#: elements/widgets/pxl_tabs.php:69
+msgid "Tabs 1 Layout 1"
+msgstr ""
+
+#: elements/widgets/pxl_tabs.php:78
+msgid "Content 1 Layout 1"
+msgstr ""
+
+#: elements/widgets/pxl_tabs.php:89
+msgid "Tabs 2 Layout 1"
+msgstr ""
+
+#: elements/widgets/pxl_tabs.php:91
+msgid "Yearly"
+msgstr ""
+
+#: elements/widgets/pxl_tabs.php:98
+msgid "Content 2 Layout 1"
+msgstr ""
+
+#: elements/widgets/pxl_tabs.php:109
+msgid "Tab for Price Table"
+msgstr ""
+
+#: elements/widgets/pxl_tabs.php:135
+#: elements/widgets/pxl_tabs.php:188
+msgid "Select Templates"
+msgstr ""
+
+#: elements/widgets/pxl_tabs.php:166
+msgid "Content Type"
+msgstr ""
+
+#: elements/widgets/pxl_tabs.php:170
+msgid "From Template Builder"
+msgstr ""
+
+#: elements/widgets/pxl_tabs.php:207
+msgid "Space Right Content"
+msgstr ""
+
+#: elements/widgets/pxl_tabs.php:223
+msgid "Space Top Content"
+msgstr ""
+
+#: elements/widgets/pxl_tabs.php:258
+msgid "Title Active Color"
+msgstr ""
+
+#: elements/widgets/pxl_tabs.php:278
+msgid "Background Button Color Active"
+msgstr ""
+
+#: elements/widgets/pxl_team_carousel.php:9
+msgid "Case Team Carousel"
+msgstr ""
+
+#: elements/widgets/pxl_team_carousel.php:70
+#: elements/widgets/pxl_team_grid.php:68
+#: inc/theme-options/theme-options.php:527
+#: inc/theme-options/theme-options.php:682
+#: inc/theme-options/theme-options.php:689
+#: template-parts/widgets/widget-elementor.php:27
+msgid "Social"
+msgstr ""
+
+#: elements/widgets/pxl_team_carousel.php:272
+msgid "Color Dot"
+msgstr ""
+
+#: elements/widgets/pxl_team_carousel.php:283
+msgid "Color Dot Active"
+msgstr ""
+
+#: elements/widgets/pxl_team_grid.php:7
+msgid "Case Team Grid"
+msgstr ""
+
+#: elements/widgets/pxl_team_grid.php:46
+msgid "Team"
+msgstr ""
+
+#: elements/widgets/pxl_team_grid.php:57
+#: woocommerce/checkout/pxl-thankyou.php:136
+msgid "Name"
+msgstr ""
+
+#: elements/widgets/pxl_team_grid.php:112
+msgid "Pxl Animate"
+msgstr ""
+
+#: elements/widgets/pxl_team_grid.php:202
+msgid "Item Gap Bottom"
+msgstr ""
+
+#: elements/widgets/pxl_team_grid.php:203
+msgid "Add extra space at bottom of each items"
+msgstr ""
+
+#: elements/widgets/pxl_team_grid.php:225
+msgid "Hover Image Effect"
+msgstr ""
+
+#: elements/widgets/pxl_team_grid.php:236
+msgid "Image Margin"
+msgstr ""
+
+#: elements/widgets/pxl_team_grid.php:246
+msgid "Image Min Height (px)"
+msgstr ""
+
+#: elements/widgets/pxl_team_grid.php:271
+msgid "Hover Link Color"
+msgstr ""
+
+#: elements/widgets/pxl_team_grid.php:312
+msgid "Line Width"
+msgstr ""
+
+#: elements/widgets/pxl_team_grid.php:328
+msgid "Line Height"
+msgstr ""
+
+#: elements/widgets/pxl_team_grid.php:344
+#: elements/widgets/pxl_text_carousel.php:110
+msgid "Line Color"
+msgstr ""
+
+#: elements/widgets/pxl_team_grid.php:408
+msgid "Icon Background Color Hover"
+msgstr ""
+
+#: elements/widgets/pxl_team_grid.php:416
+msgid "Box Content Background Color"
+msgstr ""
+
+#: elements/widgets/pxl_team_grid.php:424
+msgid "Box Content Padding"
+msgstr ""
+
+#: elements/widgets/pxl_team_grid.php:434
+msgid "Box Content Min Width"
+msgstr ""
+
+#: elements/widgets/pxl_testimonial_carousel.php:8
+msgid "Case Testimonial Carousel"
+msgstr ""
+
+#: elements/widgets/pxl_testimonial_carousel.php:64
+#: elements/widgets/pxl_testimonial_carousel.php:129
+msgid "Avatar"
+msgstr ""
+
+#: elements/widgets/pxl_testimonial_carousel.php:86
+#: elements/widgets/pxl_testimonial_grid.php:82
+msgid "Star"
+msgstr ""
+
+#: elements/widgets/pxl_testimonial_carousel.php:90
+#: elements/widgets/pxl_testimonial_grid.php:86
+msgid "1"
+msgstr ""
+
+#: elements/widgets/pxl_testimonial_carousel.php:91
+#: elements/widgets/pxl_testimonial_grid.php:87
+msgid "2"
+msgstr ""
+
+#: elements/widgets/pxl_testimonial_carousel.php:92
+#: elements/widgets/pxl_testimonial_grid.php:88
+msgid "3"
+msgstr ""
+
+#: elements/widgets/pxl_testimonial_carousel.php:93
+#: elements/widgets/pxl_testimonial_grid.php:89
+msgid "4"
+msgstr ""
+
+#: elements/widgets/pxl_testimonial_carousel.php:94
+#: elements/widgets/pxl_testimonial_grid.php:90
+msgid "5"
+msgstr ""
+
+#: elements/widgets/pxl_testimonial_carousel.php:104
+msgid "Client Title"
+msgstr ""
+
+#: elements/widgets/pxl_testimonial_carousel.php:422
+msgid "Show Button"
+msgstr ""
+
+#: elements/widgets/pxl_testimonial_carousel.php:432
+msgid "View All Testimonials"
+msgstr ""
+
+#: elements/widgets/pxl_testimonial_grid.php:5
+msgid "Case Testimonial Grid"
+msgstr ""
+
+#: elements/widgets/pxl_testimonial_grid.php:54
+msgid "Testimonial"
+msgstr ""
+
+#: elements/widgets/pxl_text_carousel.php:8
+msgid "Case Text Carousel"
+msgstr ""
+
+#: elements/widgets/pxl_text_carousel.php:59
+msgid "Active only on layout 1."
+msgstr ""
+
+#: elements/widgets/pxl_text_carousel.php:152
+msgid "Backkground Color"
+msgstr ""
+
+#: elements/widgets/pxl_text_carousel.php:160
+msgid "Backkground Color Hover"
+msgstr ""
+
+#: elements/widgets/pxl_text_carousel.php:457
+msgid "Arrows Alignment"
+msgstr ""
+
+#: elements/widgets/pxl_text_editor.php:8
+msgid "Case Text Editor"
+msgstr ""
+
+#: elements/widgets/pxl_text_editor.php:15
+msgid "Text Editor"
+msgstr ""
+
+#: elements/widgets/pxl_text_editor.php:95
+msgid "Block Quote"
+msgstr ""
+
+#: elements/widgets/pxl_text_editor.php:123
+msgid "Style Hover"
+msgstr ""
+
+#: elements/widgets/pxl_video_player.php:6
+msgid "Case Video Button"
+msgstr ""
+
+#: elements/widgets/pxl_video_player.php:27
+msgid "Video Icon"
+msgstr ""
+
+#: elements/widgets/pxl_video_player.php:70
+msgid "Image Border Radius"
+msgstr ""
+
+#: elements/widgets/pxl_video_player.php:101
+msgid "Background Effect"
+msgstr ""
+
+#: elements/widgets/pxl_video_player.php:114
+msgid "Button Video Style"
+msgstr ""
+
+#: elements/widgets/pxl_video_player.php:127
+msgid "Button Video Position"
+msgstr ""
+
+#: elements/widgets/pxl_video_player.php:143
+msgid "Top Position"
+msgstr ""
+
+#: elements/widgets/pxl_video_player.php:166
+msgid "Right Position"
+msgstr ""
+
+#: elements/widgets/pxl_video_player.php:189
+msgid "Bottom Position"
+msgstr ""
+
+#: elements/widgets/pxl_video_player.php:212
+msgid "Left Position"
+msgstr ""
+
+#: elements/widgets/pxl_video_player.php:244
+msgid "Button Size"
+msgstr ""
+
+#: elements/widgets/pxl_video_player.php:262
+msgid "Icon Border Radius"
+msgstr ""
+
+#: elements/widgets/pxl_video_player.php:298
+msgid "Background Icon Hover Color"
+msgstr ""
+
+#: inc/admin/admin-import.php:17
+#: inc/admin/admin-import.php:18
+msgid "Import Demos"
+msgstr ""
+
+#: inc/admin/admin-init.php:104
+#: inc/admin/views/admin-tabs.php:34
+msgid "Dashboard"
+msgstr ""
+
+#: inc/admin/admin-plugins.php:17
+#: inc/admin/admin-plugins.php:18
+#: inc/admin/libs/merlin/merlin-config.php:83
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:335
+#: inc/admin/views/admin-plugins.php:51
+#: inc/admin/views/admin-tabs.php:39
+msgid "Install Plugins"
+msgstr ""
+
+#: inc/admin/admin-plugins.php:37
+msgctxt "Plugin installation page."
+msgid "Install"
+msgstr ""
+
+#: inc/admin/admin-plugins.php:56
+msgctxt "Plugin installation page."
+msgid "Activate"
+msgstr ""
+
+#: inc/admin/admin-plugins.php:74
+#: inc/admin/admin-plugins.php:102
+msgctxt "Plugin installation page."
+msgid "Deactivate"
+msgstr ""
+
+#: inc/admin/admin-require-plugins.php:16
+msgid "Redux Framework"
+msgstr ""
+
+#: inc/admin/admin-require-plugins.php:20
+msgid "Build theme options and post, page options for WordPress Theme."
+msgstr ""
+
+#: inc/admin/admin-require-plugins.php:24
+msgid "Elementor"
+msgstr ""
+
+#: inc/admin/admin-require-plugins.php:28
+msgid "Introducing a WordPress website builder, with no limits of design. A website builder that delivers high-end page designs and advanced capabilities"
+msgstr ""
+
+#: inc/admin/admin-require-plugins.php:32
+msgid "Case Addons"
+msgstr ""
+
+#: inc/admin/admin-require-plugins.php:37
+msgid "Main process and Powerful Elements Plugin, exclusively for Farmas WordPress Theme."
+msgstr ""
+
+#: inc/admin/admin-require-plugins.php:40
+msgid "Contact Form 7"
+msgstr ""
+
+#: inc/admin/admin-require-plugins.php:44
+msgid "Contact Form 7 can manage multiple contact forms, you can customize the form and the mail contents flexibly with simple markup"
+msgstr ""
+
+#: inc/admin/admin-require-plugins.php:47
+msgid "Revolution Slider"
+msgstr ""
+
+#: inc/admin/admin-require-plugins.php:52
+msgid "Revolution Slider helps beginner-and mid-level designers WOW their clients with pro-level visuals."
+msgstr ""
+
+#: inc/admin/admin-require-plugins.php:55
+msgid "Plugin WooCommerce"
+msgstr ""
+
+#: inc/admin/admin-require-plugins.php:59
+msgid "WooCommerce is the world’s most popular open-source eCommerce solution."
+msgstr ""
+
+#: inc/admin/admin-require-plugins.php:63
+msgid "WPC Compare"
+msgstr ""
+
+#: inc/admin/admin-require-plugins.php:67
+msgid "WPC Smart Compare allows users to get a quick look of products without opening the product page."
+msgstr ""
+
+#: inc/admin/admin-require-plugins.php:70
+msgid "Wishlist"
+msgstr ""
+
+#: inc/admin/admin-require-plugins.php:74
+msgid "WPC Smart Wishlist is a simple but powerful tool that can help your customer save products for buying later."
+msgstr ""
+
+#: inc/admin/admin-require-plugins.php:78
+msgid "Mailchimp"
+msgstr ""
+
+#: inc/admin/admin-require-plugins.php:82
+msgid "Allowing your visitors to subscribe to your newsletter should be easy. With this plugin, it finally is."
+msgstr ""
+
+#: inc/admin/libs/merlin/class-merlin.php:417
+msgid "Something went wrong. Please refresh the page and try again!"
+msgstr ""
+
+#: inc/admin/libs/merlin/class-merlin.php:545
+msgid "Welcome"
+msgstr ""
+
+#: inc/admin/libs/merlin/class-merlin.php:553
+msgid "License"
+msgstr ""
+
+#: inc/admin/libs/merlin/class-merlin.php:561
+msgid "Plugins"
+msgstr ""
+
+#: inc/admin/libs/merlin/class-merlin.php:574
+msgid "Ready"
+msgstr ""
+
+#: inc/admin/libs/merlin/class-merlin.php:874
+#: inc/admin/libs/merlin/class-merlin.php:875
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2365
+msgid "Required"
+msgstr ""
+
+#: inc/admin/libs/merlin/class-merlin.php:1088
+msgid "Activating"
+msgstr ""
+
+#: inc/admin/libs/merlin/class-merlin.php:1104
+msgid "Updating"
+msgstr ""
+
+#: inc/admin/libs/merlin/class-merlin.php:1120
+#: inc/admin/libs/merlin/class-merlin.php:1128
+msgid "Installing"
+msgstr ""
+
+#: inc/admin/libs/merlin/class-merlin.php:1134
+msgid "Success"
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:39
+msgid "Setup Wizard"
+msgstr ""
+
+#. translators: 1: Title Tag 2: Theme Name 3: Closing Title Tag
+#: inc/admin/libs/merlin/merlin-config.php:42
+#, php-format
+msgid "%1$s%2$s Themes &lsaquo; Theme Setup: %3$s%4$s"
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:43
+msgid "Return to the dashboard"
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:44
+msgid "Disable this wizard"
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:46
+msgid "Skip"
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:47
+msgid "Next"
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:49
+msgid "Cancel"
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:50
+#: inc/admin/libs/merlin/merlin-config.php:51
+#: inc/admin/libs/merlin/merlin-config.php:52
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2808
+msgid "Install"
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:53
+msgid "Import"
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:54
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2817
+msgid "Activate"
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:55
+msgid "Later"
+msgstr ""
+
+#. translators: Theme Name
+#: inc/admin/libs/merlin/merlin-config.php:58
+msgid "Activate Theme"
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:59
+msgid "Activate Your Theme"
+msgstr ""
+
+#. translators: Theme Name
+#: inc/admin/libs/merlin/merlin-config.php:61
+#, php-format
+msgid "%s is Activated"
+msgstr ""
+
+#. translators: Theme Name
+#: inc/admin/libs/merlin/merlin-config.php:63
+msgid "Please add your Envato purchase code to confirm the purchase."
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:64
+msgid "License key"
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:65
+msgid "The theme is already registered, so you can go to the next step!"
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:66
+msgid "Your theme is activated! Remote updates and theme support are enabled."
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:67
+msgid "Need help?"
+msgstr ""
+
+#. translators: Theme Name
+#: inc/admin/libs/merlin/merlin-config.php:70
+msgid "Let's Get You Started"
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:71
+msgid "Hi. Welcome back"
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:72
+msgid "Thanks for purchasing theme! You can now register your product to install plugins, import demos and unlock exlusive features."
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:73
+msgid "You may have already run this theme setup wizard. If you would like to proceed anyway, click on the \"Start\" button below."
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:75
+msgid "Install Child Theme"
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:76
+msgid "You're good to go!"
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:77
+msgid "Let's build & activate a child theme so you may easily make theme changes."
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:78
+msgid "Your child theme has already been installed and is now activated, if it wasn't already."
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:79
+msgid "Learn about child themes"
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:80
+msgid "Awesome. Your child theme has already been installed and is now activated."
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:81
+msgid "Awesome. Your child theme has been created and is now activated."
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:84
+msgid "Plugins are all installed"
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:85
+msgid "Let's install some essential WordPress plugins to get you started."
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:86
+msgid "The required WordPress plugins are all installed and up to date. Press \"Next\" to continue the setup wizard."
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:87
+msgid "View Plugins"
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:89
+#: inc/admin/views/admin-demos.php:41
+msgid "Import a Demo"
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:90
+msgid "Choose a demo for importing to your website"
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:91
+msgid "Advanced"
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:93
+msgid "You're Ready!"
+msgstr ""
+
+#. translators: Theme Author
+#: inc/admin/libs/merlin/merlin-config.php:96
+#, php-format
+msgid "Your theme has been all set up. Enjoy your new theme by %s."
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:97
+msgid "Extras"
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:98
+msgid "View your website"
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:99
+msgid "Help center"
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:100
+msgid "Get Theme Support"
+msgstr ""
+
+#: inc/admin/libs/merlin/merlin-config.php:101
+#: inc/admin/views/admin-demos.php:120
+#: inc/theme-options/theme-options.php:24
+#: inc/theme-options/theme-options.php:25
+msgid "Theme Options"
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:337
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:339
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#. translators: 1: plugin name(s).
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:341
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:347
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:353
+#, php-format
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:359
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:365
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:371
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:377
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:382
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:387
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:393
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:920
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2625
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:3670
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:394
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:3250
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:395
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:3043
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name.
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:397
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:399
+#, php-format
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr ""
+
+#. translators: 1: dashboard link.
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:403
+msgid "There are one or more required or recommended plugins to install, update or activate."
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:607
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:608
+msgid "Update Required"
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:725
+msgid "Set the parent_slug config variable instead."
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:1026
+msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:1026
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:1029
+msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:1029
+msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:1213
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:3039
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#. translators: %s: version number
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2074
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2384
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2387
+msgid "External Source"
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2390
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2407
+msgid "Not Installed"
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2411
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2419
+msgid "Required Update not Available"
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2422
+msgid "Requires Update"
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2425
+msgid "Update recommended"
+msgstr ""
+
+#. translators: 1: install status, 2: update status
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2434
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2480
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2484
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2488
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2492
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2574
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2582
+msgid "Installed version:"
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2590
+msgid "Minimum required version:"
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2602
+msgid "Available version:"
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2625
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2638
+msgid "Plugin"
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2644
+#: inc/admin/views/admin-tabs.php:27
+msgid "Version"
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2645
+msgid "Status"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2694
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2699
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2705
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2775
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2814
+msgid "Update"
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2848
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2850
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2891
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2893
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:2999
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:3025
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:3249
+msgid "Plugin activation failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:3589
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:3592
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:3594
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:3598
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:3601
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:3603
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:3606
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:3609
+msgid "All installations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/admin/libs/tgmpa/class-tgm-plugin-activation.php:3611
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/admin/updater/register-admin.php:114
+#: inc/admin/views/admin-demos.php:25
+#: inc/admin/views/admin-plugins.php:45
+#, php-format
+msgid "The %s theme needs to be registered. %sRegister Now%s"
+msgstr ""
+
+#: inc/admin/updater/register-admin.php:118
+msgid "Purchase code is invalid. Need a license for activation"
+msgstr ""
+
+#: inc/admin/updater/register-admin.php:127
+msgid "Register License"
+msgstr ""
+
+#: inc/admin/updater/register-admin.php:133
+#: inc/admin/updater/register-admin.php:175
+msgid "Can’t find your purchase code?"
+msgstr ""
+
+#: inc/admin/updater/register-admin.php:156
+msgid "This appears to be an invalid license key. Please try again or contact support."
+msgstr ""
+
+#: inc/admin/updater/register-admin.php:159
+#, php-format
+msgid "This appears to be an invalid license key for %s."
+msgstr ""
+
+#: inc/admin/updater/register-admin.php:162
+msgid "Your license is not active for this URL."
+msgstr ""
+
+#: inc/admin/updater/register-admin.php:165
+msgid "An error occurred, please try again."
+msgstr ""
+
+#: inc/admin/updater/register-admin.php:170
+#: inc/admin/updater/register-admin.php:202
+msgid "Active false"
+msgstr ""
+
+#: inc/admin/updater/register-admin.php:171
+#: inc/admin/updater/register-admin.php:203
+msgid "our help center"
+msgstr ""
+
+#: inc/admin/updater/register-admin.php:171
+#: inc/admin/updater/register-admin.php:185
+#: inc/admin/updater/register-admin.php:203
+#: inc/admin/views/admin-registration.php:17
+msgid "submit a ticket"
+msgstr ""
+
+#: inc/admin/updater/register-admin.php:184
+#: inc/admin/views/admin-registration.php:16
+msgid "Thanks for the verification!"
+msgstr ""
+
+#: inc/admin/updater/register-admin.php:185
+#: inc/admin/views/admin-registration.php:17
+msgid "You can now enjoy and build great websites. Looking for help? Visit"
+msgstr ""
+
+#: inc/admin/updater/register-admin.php:191
+#: inc/admin/views/admin-registration.php:23
+msgid "Remove Purchase Code"
+msgstr ""
+
+#: inc/admin/updater/register-admin.php:200
+msgid "Response return null."
+msgstr ""
+
+#: inc/admin/updater/register-admin.php:226
+msgid "Enter your purchase code"
+msgstr ""
+
+#: inc/admin/updater/register-admin.php:227
+msgid "Register your purchase code"
+msgstr ""
+
+#: inc/admin/updater/updater-class.php:72
+#, php-format
+msgid "<strong>%1$s %2$s</strong> is available. <a href=\"%3$s\" class=\"thickbox\" title=\"%4s\">Check out what's new</a> or <a href=\"%5$s\"%6$s>update now</a>."
+msgstr ""
+
+#: inc/admin/views/admin-dashboard.php:10
+msgid "Unlock Premium Features"
+msgstr ""
+
+#: inc/admin/views/admin-dashboard.php:16
+msgid "Theme Activation"
+msgstr ""
+
+#: inc/admin/views/admin-dashboard.php:22
+msgid "System status"
+msgstr ""
+
+#: inc/admin/views/admin-demos.php:29
+#: inc/admin/views/admin-demos.php:45
+#: inc/admin/views/admin-plugins.php:58
+msgid "Make sure to activate required plugins prior to import a demo."
+msgstr ""
+
+#: inc/admin/views/admin-demos.php:42
+msgid "Choose a pre-built website for starting a quick design process."
+msgstr ""
+
+#: inc/admin/views/admin-demos.php:45
+msgid "Note:"
+msgstr ""
+
+#: inc/admin/views/admin-demos.php:78
+#: inc/admin/views/admin-demos.php:164
+#: inc/admin/views/admin-tabs.php:44
+msgid "Import Demo"
+msgstr ""
+
+#: inc/admin/views/admin-demos.php:81
+msgid "Preview Demo"
+msgstr ""
+
+#: inc/admin/views/admin-demos.php:100
+msgid "Select all or a few"
+msgstr ""
+
+#: inc/admin/views/admin-demos.php:106
+msgid "Media Attachments"
+msgstr ""
+
+#: inc/admin/views/admin-demos.php:127
+msgid "Widgets"
+msgstr ""
+
+#: inc/admin/views/admin-demos.php:135
+msgid "Revslider"
+msgstr ""
+
+#: inc/admin/views/admin-demos.php:153
+msgid "Skip the posts existen, ( Default clear all content )."
+msgstr ""
+
+#: inc/admin/views/admin-demos.php:160
+msgid "Crop Image after import finish?"
+msgstr ""
+
+#: inc/admin/views/admin-demos.php:174
+msgid "Importing..."
+msgstr ""
+
+#: inc/admin/views/admin-demos.php:175
+msgid "Working"
+msgstr ""
+
+#: inc/admin/views/admin-demos.php:178
+msgid "0%"
+msgstr ""
+
+#: inc/admin/views/admin-featured.php:3
+#: inc/admin/views/admin-featured.php:13
+#: inc/admin/views/admin-featured.php:23
+#: inc/admin/views/admin-system-info.php:88
+msgid "Check"
+msgstr ""
+
+#: inc/admin/views/admin-featured.php:6
+msgid "Enable Auto Updates"
+msgstr ""
+
+#: inc/admin/views/admin-featured.php:7
+msgid "Smart Dashboard keeps your site up-to-date. Free for lifetime."
+msgstr ""
+
+#: inc/admin/views/admin-featured.php:16
+msgid "Exclusive and Premium Plugins"
+msgstr ""
+
+#: inc/admin/views/admin-featured.php:17
+msgid "Get access to premium and exclusive plugins for free."
+msgstr ""
+
+#: inc/admin/views/admin-featured.php:26
+msgid "Premium Support"
+msgstr ""
+
+#: inc/admin/views/admin-featured.php:27
+msgid "Get access to top-notch support."
+msgstr ""
+
+#: inc/admin/views/admin-plugins.php:7
+#: inc/admin/views/admin-plugins.php:28
+msgid "Install All"
+msgstr ""
+
+#: inc/admin/views/admin-plugins.php:26
+msgid "Install & Active All"
+msgstr ""
+
+#: inc/admin/views/admin-plugins.php:30
+msgid "Active All"
+msgstr ""
+
+#: inc/admin/views/admin-plugins.php:81
+msgid "Active:"
+msgstr ""
+
+#: inc/admin/views/admin-system-info.php:30
+msgid "Upload max file size (64MB)"
+msgstr ""
+
+#: inc/admin/views/admin-system-info.php:43
+msgid "Memory limit (256MB)"
+msgstr ""
+
+#: inc/admin/views/admin-system-info.php:56
+msgid "Post max size (64MB)"
+msgstr ""
+
+#: inc/admin/views/admin-system-info.php:65
+msgid "Max Execution Time (6s)"
+msgstr ""
+
+#: inc/admin/views/admin-system-info.php:74
+msgid "Max input vars (3000)"
+msgstr ""
+
+#: inc/admin/views/admin-system-info.php:90
+msgid "Un Check"
+msgstr ""
+
+#: inc/admin/views/admin-tabs.php:26
+msgid "Welcome to"
+msgstr ""
+
+#: inc/admin/views/admin-tabs.php:51
+msgid "Videos tutorial"
+msgstr ""
+
+#: inc/admin/views/admin-tabs.php:56
+msgid "Support system"
+msgstr ""
+
+#: inc/admin/views/admin-tabs.php:61
+msgid "Live Demo"
+msgstr ""
+
+#: inc/admin/views/admin-tabs.php:68
+msgid "Documentations"
+msgstr ""
+
+#: inc/classes/class-blog.php:161
+msgid "Post password required."
+msgstr ""
+
+#: inc/classes/class-blog.php:188
+msgid "Post by"
+msgstr ""
+
+#: inc/classes/class-blog.php:262
+#: inc/theme-functions.php:935
+#: inc/theme-options/theme-options.php:696
+msgid "Facebook"
+msgstr ""
+
+#: inc/classes/class-blog.php:267
+#: inc/theme-functions.php:947
+#: inc/theme-options/theme-options.php:712
+msgid "Instagram"
+msgstr ""
+
+#: inc/classes/class-blog.php:275
+#: inc/theme-functions.php:941
+#: inc/theme-options/theme-options.php:704
+msgid "Twitter"
+msgstr ""
+
+#: inc/classes/class-blog.php:280
+#: inc/theme-functions.php:953
+msgid "Linkedin"
+msgstr ""
+
+#: inc/classes/class-blog.php:285
+msgid "Share"
+msgstr ""
+
+#: inc/classes/class-blog.php:320
+msgid "Previous Post"
+msgstr ""
+
+#: inc/classes/class-blog.php:343
+msgid "Newer Post"
+msgstr ""
+
+#: inc/classes/class-breadcrumb.php:52
+msgid "Home"
+msgstr ""
+
+#: inc/classes/class-breadcrumb.php:56
+msgid "Not Found"
+msgstr ""
+
+#: inc/classes/class-breadcrumb.php:57
+msgid "Search Results"
+msgstr ""
+
+#: inc/classes/class-breadcrumb.php:328
+msgid "Tag:"
+msgstr ""
+
+#: inc/classes/class-breadcrumb.php:344
+msgid "Author:"
+msgstr ""
+
+#: inc/classes/class-page.php:145
+#: inc/theme-options/theme-options.php:499
+msgid "Blog"
+msgstr ""
+
+#: inc/classes/class-page.php:154
+msgid "404 Error"
+msgstr ""
+
+#: inc/classes/class-page.php:156
+msgid "Search results"
+msgstr ""
+
+#: inc/classes/class-page.php:158
+msgid "Course"
+msgstr ""
+
+#: inc/theme-actions.php:32
+#: inc/theme-config.php:6
+msgid "Primary"
+msgstr ""
+
+#: inc/theme-actions.php:74
+msgid "Blog Sidebar"
+msgstr ""
+
+#: inc/theme-actions.php:84
+msgid "Page Sidebar"
+msgstr ""
+
+#: inc/theme-actions.php:95
+msgid "Shop Sidebar"
+msgstr ""
+
+#: inc/theme-actions.php:375
+#: woocommerce/wc-function.php:422
+msgid "Cart"
+msgstr ""
+
+#: inc/theme-actions.php:375
+#: woocommerce/wc-function.php:422
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/theme-actions.php:409
+#: woocommerce/cart/mini-cart.php:64
+#: woocommerce/wc-function.php:458
+msgid "Remove this item"
+msgstr ""
+
+#: inc/theme-actions.php:426
+#: woocommerce/wc-function.php:475
+msgid "Your cart is empty"
+msgstr ""
+
+#: inc/theme-actions.php:427
+#: woocommerce/wc-function.php:476
+msgid "Browse Shop"
+msgstr ""
+
+#: inc/theme-actions.php:436
+#: woocommerce/cart/mini-cart.php:82
+#: woocommerce/cart/pxl-cart-content.php:140
+#: woocommerce/cart/pxl-cart-totals.php:17
+#: woocommerce/wc-function.php:485
+msgid "Subtotal"
+msgstr ""
+
+#: inc/theme-actions.php:441
+#: woocommerce/cart/mini-cart.php:87
+#: woocommerce/wc-function.php:490
+msgid "View Cart"
+msgstr ""
+
+#: inc/theme-actions.php:442
+#: woocommerce/cart/mini-cart.php:88
+#: woocommerce/checkout/form-checkout.php:32
+#: woocommerce/wc-function.php:491
+msgid "Checkout"
+msgstr ""
+
+#: inc/theme-config.php:10
+msgid "Secondary"
+msgstr ""
+
+#: inc/theme-config.php:14
+msgid "Third"
+msgstr ""
+
+#: inc/theme-config.php:18
+msgid "Four"
+msgstr ""
+
+#: inc/theme-config.php:22
+#: inc/theme-options/page-options.php:259
+#: inc/theme-options/theme-options.php:169
+msgid "Body Background Color"
+msgstr ""
+
+#: inc/theme-filters.php:114
+#: inc/theme-options/theme-options.php:957
+#: inc/theme-options/theme-options.php:970
+msgid "Portfolio"
+msgstr ""
+
+#: inc/theme-filters.php:118
+#: inc/theme-options/theme-options.php:1046
+#: inc/theme-options/theme-options.php:1054
+msgid "Service"
+msgstr ""
+
+#: inc/theme-filters.php:122
+#: inc/theme-options/theme-options.php:1109
+#: inc/theme-options/theme-options.php:1117
+msgid "Industries"
+msgstr ""
+
+#: inc/theme-filters.php:374
+msgid "Reply"
+msgstr ""
+
+#: inc/theme-filters.php:463
+#: inc/theme-options/page-options.php:1050
+msgid "Header Desktop"
+msgstr ""
+
+#: inc/theme-filters.php:464
+#: inc/theme-options/page-options.php:1051
+msgid "Header Mobile"
+msgstr ""
+
+#: inc/theme-filters.php:465
+#: inc/theme-options/page-options.php:1058
+msgid "Widget Sidebar"
+msgstr ""
+
+#: inc/theme-filters.php:466
+#: inc/theme-options/page-options.php:198
+#: inc/theme-options/page-options.php:479
+#: inc/theme-options/page-options.php:629
+#: inc/theme-options/page-options.php:798
+#: inc/theme-options/page-options.php:988
+#: inc/theme-options/page-options.php:1052
+#: inc/theme-options/theme-options.php:468
+msgid "Footer"
+msgstr ""
+
+#: inc/theme-filters.php:467
+#: inc/theme-options/page-options.php:1053
+msgid "Mega Menu"
+msgstr ""
+
+#: inc/theme-filters.php:468
+#: inc/theme-options/option-functions.php:168
+#: inc/theme-options/page-options.php:140
+#: inc/theme-options/page-options.php:422
+#: inc/theme-options/page-options.php:578
+#: inc/theme-options/page-options.php:741
+#: inc/theme-options/page-options.php:937
+#: inc/theme-options/page-options.php:1054
+#: inc/theme-options/theme-options.php:447
+msgid "Page Title"
+msgstr ""
+
+#: inc/theme-filters.php:469
+#: inc/theme-options/page-options.php:1056
+msgid "Hidden Panel"
+msgstr ""
+
+#: inc/theme-filters.php:470
+#: inc/theme-options/page-options.php:1055
+msgid "Tab"
+msgstr ""
+
+#: inc/theme-filters.php:472
+#: inc/theme-options/page-options.php:1059
+msgid "Page"
+msgstr ""
+
+#: inc/theme-filters.php:486
+#: inc/theme-filters.php:490
+msgid "Northway Settings"
+msgstr ""
+
+#: inc/theme-filters.php:496
+msgid "Select Banner"
+msgstr ""
+
+#: inc/theme-filters.php:532
+msgid "Northway Fonts"
+msgstr ""
+
+#: inc/theme-functions.php:24
+msgctxt "Rubik font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/theme-functions.php:28
+msgctxt "Inter font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/theme-functions.php:32
+msgctxt "Dancing Script font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/theme-functions.php:918
+msgid "Theme Custom"
+msgstr ""
+
+#: inc/theme-functions.php:921
+msgid "Author Name"
+msgstr ""
+
+#: inc/theme-functions.php:928
+msgid "Author Position"
+msgstr ""
+
+#: inc/theme-functions.php:959
+msgid "Youtube"
+msgstr ""
+
+#: inc/theme-options/option-functions.php:102
+msgid "Main Header Layout"
+msgstr ""
+
+#: inc/theme-options/option-functions.php:103
+#: inc/theme-options/option-functions.php:111
+#: inc/theme-options/option-functions.php:133
+#: inc/theme-options/option-functions.php:176
+#: inc/theme-options/option-functions.php:210
+#, php-format
+msgid "Please create your layout before choosing. %sClick Here%s"
+msgstr ""
+
+#: inc/theme-options/option-functions.php:110
+msgid "Sticky Header Layout"
+msgstr ""
+
+#: inc/theme-options/option-functions.php:132
+msgid "Mobile Header Layout"
+msgstr ""
+
+#: inc/theme-options/option-functions.php:152
+#: inc/theme-options/option-functions.php:159
+msgid "Builder"
+msgstr ""
+
+#: inc/theme-options/option-functions.php:175
+msgid "Page Title Layout"
+msgstr ""
+
+#: inc/theme-options/option-functions.php:184
+msgid "Select Background Page Title for General Pages"
+msgstr ""
+
+#: inc/theme-options/option-functions.php:209
+msgid "Footer Layout"
+msgstr ""
+
+#: inc/theme-options/option-functions.php:247
+msgid "Sidebar Position"
+msgstr ""
+
+#: inc/theme-options/option-functions.php:248
+msgid "Select a sidebar position is displayed."
+msgstr ""
+
+#: inc/theme-options/option-functions.php:255
+msgid "Sidebar Layout"
+msgstr ""
+
+#: inc/theme-options/page-options.php:10
+#: inc/theme-options/page-options.php:16
+msgid "Post Settings"
+msgstr ""
+
+#: inc/theme-options/page-options.php:28
+#: inc/theme-options/page-options.php:158
+#: inc/theme-options/page-options.php:433
+#: inc/theme-options/page-options.php:589
+#: inc/theme-options/page-options.php:752
+#: inc/theme-options/page-options.php:948
+msgid "Custom Main Title"
+msgstr ""
+
+#: inc/theme-options/page-options.php:29
+#: inc/theme-options/page-options.php:159
+#: inc/theme-options/page-options.php:434
+#: inc/theme-options/page-options.php:590
+#: inc/theme-options/page-options.php:753
+#: inc/theme-options/page-options.php:949
+msgid "Custom heading text title"
+msgstr ""
+
+#: inc/theme-options/page-options.php:35
+#: inc/theme-options/page-options.php:165
+#: inc/theme-options/page-options.php:440
+#: inc/theme-options/page-options.php:596
+#: inc/theme-options/page-options.php:759
+#: inc/theme-options/page-options.php:955
+#: inc/theme-options/theme-options.php:846
+msgid "Page Title Description"
+msgstr ""
+
+#: inc/theme-options/page-options.php:44
+msgid "Video URL"
+msgstr ""
+
+#: inc/theme-options/page-options.php:45
+msgid "Video will show when set post format is video"
+msgstr ""
+
+#: inc/theme-options/page-options.php:52
+msgid "Audio URL"
+msgstr ""
+
+#: inc/theme-options/page-options.php:53
+msgid "Audio that will show when set post format is audio"
+msgstr ""
+
+#: inc/theme-options/page-options.php:60
+msgid "Quote Text"
+msgstr ""
+
+#: inc/theme-options/page-options.php:66
+msgid "Quote Cite"
+msgstr ""
+
+#: inc/theme-options/page-options.php:67
+msgid "Quote will show when set post format is quote"
+msgstr ""
+
+#: inc/theme-options/page-options.php:72
+msgid "Format Link URL"
+msgstr ""
+
+#: inc/theme-options/page-options.php:73
+msgid "Link will show when set post format is link"
+msgstr ""
+
+#: inc/theme-options/page-options.php:78
+msgid "Format Link Text"
+msgstr ""
+
+#: inc/theme-options/page-options.php:87
+msgid "Page Options"
+msgstr ""
+
+#: inc/theme-options/page-options.php:108
+#: inc/theme-options/page-options.php:390
+#: inc/theme-options/page-options.php:546
+#: inc/theme-options/page-options.php:709
+#: inc/theme-options/page-options.php:905
+msgid "Header Display"
+msgstr ""
+
+#: inc/theme-options/page-options.php:110
+#: inc/theme-options/page-options.php:211
+#: inc/theme-options/page-options.php:392
+#: inc/theme-options/page-options.php:492
+#: inc/theme-options/page-options.php:548
+#: inc/theme-options/page-options.php:711
+#: inc/theme-options/page-options.php:811
+#: inc/theme-options/page-options.php:907
+#: inc/theme-options/page-options.php:1001
+#: inc/theme-options/theme-options.php:285
+#: inc/theme-options/theme-options.php:381
+#: inc/theme-options/theme-options.php:592
+msgid "Show"
+msgstr ""
+
+#: inc/theme-options/page-options.php:111
+#: inc/theme-options/page-options.php:212
+#: inc/theme-options/page-options.php:393
+#: inc/theme-options/page-options.php:493
+#: inc/theme-options/page-options.php:549
+#: inc/theme-options/page-options.php:712
+#: inc/theme-options/page-options.php:812
+#: inc/theme-options/page-options.php:908
+#: inc/theme-options/page-options.php:1002
+#: inc/theme-options/theme-options.php:286
+#: inc/theme-options/theme-options.php:382
+#: inc/theme-options/theme-options.php:591
+msgid "Hide"
+msgstr ""
+
+#: inc/theme-options/page-options.php:118
+#: inc/theme-options/page-options.php:400
+#: inc/theme-options/page-options.php:556
+#: inc/theme-options/page-options.php:719
+#: inc/theme-options/page-options.php:915
+msgid "Menu"
+msgstr ""
+
+#: inc/theme-options/page-options.php:127
+#: inc/theme-options/page-options.php:409
+#: inc/theme-options/page-options.php:565
+#: inc/theme-options/page-options.php:728
+#: inc/theme-options/page-options.php:924
+#: inc/theme-options/theme-options.php:348
+msgid "Sticky Scroll"
+msgstr ""
+
+#: inc/theme-options/page-options.php:130
+#: inc/theme-options/page-options.php:412
+#: inc/theme-options/page-options.php:568
+#: inc/theme-options/page-options.php:731
+#: inc/theme-options/page-options.php:927
+#: inc/theme-options/theme-options.php:350
+msgid "Scroll To Top"
+msgstr ""
+
+#: inc/theme-options/page-options.php:131
+#: inc/theme-options/page-options.php:413
+#: inc/theme-options/page-options.php:569
+#: inc/theme-options/page-options.php:732
+#: inc/theme-options/page-options.php:928
+#: inc/theme-options/theme-options.php:351
+msgid "Scroll To Bottom"
+msgstr ""
+
+#: inc/theme-options/page-options.php:151
+msgid "Custom Sub Title"
+msgstr ""
+
+#: inc/theme-options/page-options.php:187
+#: inc/theme-options/page-options.php:462
+#: inc/theme-options/page-options.php:618
+#: inc/theme-options/page-options.php:781
+#: inc/theme-options/page-options.php:977
+msgid "Spacing Top/Bottom"
+msgstr ""
+
+#: inc/theme-options/page-options.php:209
+#: inc/theme-options/page-options.php:490
+#: inc/theme-options/page-options.php:809
+#: inc/theme-options/page-options.php:999
+msgid "Footer Display"
+msgstr ""
+
+#: inc/theme-options/page-options.php:219
+#: inc/theme-options/page-options.php:500
+#: inc/theme-options/page-options.php:819
+#: inc/theme-options/page-options.php:1009
+#: inc/theme-options/theme-options.php:482
+msgid "Footer Fixed"
+msgstr ""
+
+#: inc/theme-options/page-options.php:222
+#: inc/theme-options/page-options.php:503
+#: inc/theme-options/page-options.php:822
+#: inc/theme-options/page-options.php:1012
+#: inc/theme-options/theme-options.php:484
+msgid "On"
+msgstr ""
+
+#: inc/theme-options/page-options.php:230
+msgid "Body Background Color Custom"
+msgstr ""
+
+#: inc/theme-options/page-options.php:241
+#: inc/theme-options/page-options.php:511
+#: inc/theme-options/page-options.php:830
+#: inc/theme-options/page-options.php:1020
+msgid "Back to Top Style"
+msgstr ""
+
+#: inc/theme-options/page-options.php:244
+#: inc/theme-options/page-options.php:514
+#: inc/theme-options/page-options.php:833
+#: inc/theme-options/page-options.php:1023
+msgid "Round"
+msgstr ""
+
+#: inc/theme-options/page-options.php:252
+#: inc/theme-options/theme-options.php:134
+msgid "Colors"
+msgstr ""
+
+#: inc/theme-options/page-options.php:266
+#: inc/theme-options/theme-options.php:141
+msgid "Primary Color"
+msgstr ""
+
+#: inc/theme-options/page-options.php:273
+#: inc/theme-options/theme-options.php:155
+msgid "Third Color"
+msgstr ""
+
+#: inc/theme-options/page-options.php:280
+#: inc/theme-options/theme-options.php:162
+msgid "Four Color"
+msgstr ""
+
+#: inc/theme-options/page-options.php:287
+#: inc/theme-options/theme-options.php:176
+msgid "Gradient Color One"
+msgstr ""
+
+#: inc/theme-options/page-options.php:297
+#: inc/theme-options/theme-options.php:186
+msgid "Gradient Color Two"
+msgstr ""
+
+#: inc/theme-options/page-options.php:315
+msgid "Body Custom Class"
+msgstr ""
+
+#: inc/theme-options/page-options.php:324
+msgid "Product Options"
+msgstr ""
+
+#: inc/theme-options/page-options.php:337
+msgid "Portfolio Client"
+msgstr ""
+
+#: inc/theme-options/page-options.php:343
+msgid "Portfolio Address"
+msgstr ""
+
+#: inc/theme-options/page-options.php:525
+msgid "Portfolio Options"
+msgstr ""
+
+#: inc/theme-options/page-options.php:642
+msgid "Service Options"
+msgstr ""
+
+#: inc/theme-options/page-options.php:655
+#: inc/theme-options/page-options.php:857
+msgid "External Link"
+msgstr ""
+
+#: inc/theme-options/page-options.php:844
+msgid "Industries Options"
+msgstr ""
+
+#: inc/theme-options/page-options.php:1035
+msgid "Template Options"
+msgstr ""
+
+#: inc/theme-options/page-options.php:1049
+msgid "Select Type"
+msgstr ""
+
+#: inc/theme-options/page-options.php:1067
+#: inc/theme-options/page-options.php:1081
+msgid "Header Type"
+msgstr ""
+
+#: inc/theme-options/page-options.php:1070
+#: inc/theme-options/page-options.php:1084
+msgid "Transparent"
+msgstr ""
+
+#: inc/theme-options/page-options.php:1071
+msgid "Left Sidebar"
+msgstr ""
+
+#: inc/theme-options/page-options.php:1094
+msgid "Hidden Panel Position"
+msgstr ""
+
+#: inc/theme-options/page-options.php:1105
+msgid "Hidden Panel Height"
+msgstr ""
+
+#: inc/theme-options/page-options.php:1124
+msgid "Header Sidebar Width"
+msgstr ""
+
+#: inc/theme-options/page-options.php:1136
+msgid "Header Sidebar Border"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:148
+msgid "Secondary Color"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:197
+#: inc/theme-options/theme-options.php:204
+msgid "Favicon"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:212
+msgid "Mouse"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:219
+msgid "Mouse Move Animation"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:225
+msgid "Search Popup"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:232
+#: inc/theme-options/theme-options.php:358
+msgid "Logo Search Popup"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:240
+msgid "Placeholder"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:246
+#: inc/theme-options/theme-options.php:253
+msgid "Loader"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:266
+#: inc/theme-options/theme-options.php:417
+msgid "Logo Height"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:276
+#: inc/theme-options/theme-options.php:283
+msgid "Cookie Policy"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:300
+msgid "Description Font"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:370
+msgid "Mobile"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:389
+msgid "Select Menu Mobile"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:398
+msgid "Light"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:399
+msgid "Dark"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:426
+msgid "Search Form"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:433
+msgid "Search Text Placeholder"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:435
+msgid "Default: Search..."
+msgstr ""
+
+#: inc/theme-options/theme-options.php:454
+msgid "Scroll Opacity"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:476
+msgid "Button Back to Top"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:505
+msgid "Blog Archive"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:514
+msgid "Display the Date for each blog post."
+msgstr ""
+
+#: inc/theme-options/theme-options.php:520
+msgid "Categorie List"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:521
+msgid "Display the Categorie List for each blog post."
+msgstr ""
+
+#: inc/theme-options/theme-options.php:528
+msgid "Display the Social for each blog post."
+msgstr ""
+
+#: inc/theme-options/theme-options.php:535
+msgid "Display the Author for each blog post."
+msgstr ""
+
+#: inc/theme-options/theme-options.php:541
+msgid "Categorie"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:542
+msgid "Display the Categorie for each blog post."
+msgstr ""
+
+#: inc/theme-options/theme-options.php:548
+#: template-parts/widgets/recent-posts.php:117
+msgid "Comment"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:549
+msgid "Display the Comment for each blog post."
+msgstr ""
+
+#: inc/theme-options/theme-options.php:556
+#: inc/theme-options/theme-options.php:628
+#: inc/theme-options/theme-options.php:752
+msgid "Featured Image Size"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:563
+msgid "Excerpt Length"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:565
+msgid "Default: 50"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:572
+msgid "Default: Read more"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:579
+msgid "Single Post"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:588
+msgid "Feature Image"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:589
+msgid "Display Feature Image"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:599
+#: inc/theme-options/theme-options.php:821
+msgid "Select Background Page Title"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:611
+#: inc/theme-options/theme-options.php:811
+#: inc/theme-options/theme-options.php:976
+#: inc/theme-options/theme-options.php:1060
+#: inc/theme-options/theme-options.php:1123
+msgid "Page Title Type"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:614
+#: inc/theme-options/theme-options.php:814
+#: inc/theme-options/theme-options.php:979
+#: inc/theme-options/theme-options.php:1063
+#: inc/theme-options/theme-options.php:1126
+msgid "Custom Text"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:621
+#: inc/theme-options/theme-options.php:833
+#: inc/theme-options/theme-options.php:988
+#: inc/theme-options/theme-options.php:1072
+#: inc/theme-options/theme-options.php:1135
+msgid "Page Title Text"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:635
+msgid "Display the Title for blog post."
+msgstr ""
+
+#: inc/theme-options/theme-options.php:642
+msgid "Display the Date for blog post."
+msgstr ""
+
+#: inc/theme-options/theme-options.php:649
+msgid "Display the Author for blog post."
+msgstr ""
+
+#: inc/theme-options/theme-options.php:656
+msgid "Display Navigation for blog post."
+msgstr ""
+
+#: inc/theme-options/theme-options.php:662
+#: inc/theme-options/theme-options.php:669
+msgid "Tags"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:663
+msgid "Display the Tags for blog post."
+msgstr ""
+
+#: inc/theme-options/theme-options.php:670
+msgid "Display the Tag for blog post."
+msgstr ""
+
+#: inc/theme-options/theme-options.php:676
+msgid "Related Post"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:677
+msgid "Display the related post for blog post."
+msgstr ""
+
+#: inc/theme-options/theme-options.php:690
+msgid "Display the Social Share for blog post."
+msgstr ""
+
+#: inc/theme-options/theme-options.php:720
+msgid "LinkedIn"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:735
+msgid "Shop"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:743
+msgid "Product Archive"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:757
+msgid "Products displayed per row"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:760
+msgid "Number product to show per row"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:768
+msgid "Products displayed per page"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:771
+msgid "Number product to show"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:781
+msgid "Payment Methods Text"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:787
+msgid "Payment Methods Logo"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:797
+msgid "Single Product"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:840
+msgid "Page Title Sub Text"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:852
+msgid "Product Title"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:858
+msgid "Social Share"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:877
+msgid "Body Font Type"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:879
+#: inc/theme-options/theme-options.php:906
+msgid "Default Font"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:880
+#: inc/theme-options/theme-options.php:907
+msgid "Google Font"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:888
+msgid "Body Google Font"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:904
+msgid "Heading Font Type"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:915
+msgid "Heading Google Font"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:933
+msgid "Theme Default"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:952
+msgid "Extra Post Type"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:965
+msgid "Grid Page Link At A Project Page"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:995
+msgid "Portfolio Slug"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:1004
+msgid "Portfolio Name"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:1014
+msgid "Portfolio Categorie Slug"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:1024
+msgid "Portfolio Categorie Name"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:1034
+#: inc/theme-options/theme-options.php:1097
+#: inc/theme-options/theme-options.php:1180
+msgid "Custom Archive Page Link"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:1079
+msgid "Service Slug"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:1088
+msgid "Service Name"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:1142
+msgid "Industries Slug"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:1151
+msgid "Industries Name"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:1160
+msgid "Industries Categorie Slug"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:1170
+msgid "Industries Categorie Name"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:1194
+msgid "404 Page"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:1200
+msgid "Image 404"
+msgstr ""
+
+#: inc/theme-options/theme-options.php:1208
+msgid "Image For 0"
+msgstr ""
+
+#: searchform.php:8
+msgid "Search post..."
+msgstr ""
+
+#: template-parts/content/content-none.php:8
+msgid "Nothing here"
+msgstr ""
+
+#: template-parts/content/content-none.php:15
+msgid "Ready to publish your first post?"
+msgstr ""
+
+#: template-parts/content/content-none.php:16
+msgid "Get started here"
+msgstr ""
+
+#: template-parts/content/content-none.php:20
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content/content-none.php:26
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#. Template Name of the theme
+msgid "Blog Classic"
+msgstr ""
+
+#: template-parts/header/default.php:70
+msgid "Create New Menu"
+msgstr ""
+
+#: template-parts/widgets/contact-info.php:20
+msgid "Northway Contact Info"
+msgstr ""
+
+#: template-parts/widgets/contact-info.php:21
+msgid "Show Author Information"
+msgstr ""
+
+#: template-parts/widgets/contact-info.php:71
+msgid "Author Image"
+msgstr ""
+
+#: template-parts/widgets/contact-info.php:88
+#: template-parts/widgets/contact-info.php:93
+msgid "Select Image"
+msgstr ""
+
+#: template-parts/widgets/contact-info.php:89
+#: template-parts/widgets/contact-info.php:94
+msgid "Remove Image"
+msgstr ""
+
+#: template-parts/widgets/contact-info.php:101
+msgid "Phone Number"
+msgstr ""
+
+#: template-parts/widgets/recent-posts.php:13
+msgid "Northway Recent Posts"
+msgstr ""
+
+#: template-parts/widgets/recent-posts.php:15
+msgid "Your site’s most recent Posts."
+msgstr ""
+
+#: template-parts/widgets/recent-posts.php:106
+msgid "By:"
+msgstr ""
+
+#: template-parts/widgets/recent-posts.php:149
+msgid "Recent Posts"
+msgstr ""
+
+#: template-parts/widgets/recent-posts.php:159
+msgid "Title:"
+msgstr ""
+
+#: template-parts/widgets/recent-posts.php:163
+msgid "Post in"
+msgstr ""
+
+#: template-parts/widgets/recent-posts.php:165
+msgid "Recent"
+msgstr ""
+
+#: template-parts/widgets/recent-posts.php:166
+msgid "Featured"
+msgstr ""
+
+#: template-parts/widgets/recent-posts.php:171
+msgid "Number of posts to show:"
+msgstr ""
+
+#: template-parts/widgets/widget-elementor.php:13
+msgid "* Northway Elementor Box"
+msgstr ""
+
+#: template-parts/widgets/widget-elementor.php:15
+msgid "Widget Builder"
+msgstr ""
+
+#: template-parts/widgets/widget-elementor.php:57
+msgid "Templates :"
+msgstr ""
+
+#: woocommerce/bought-together.php:216
+#: woocommerce/bought-together.php:274
+msgid "Sold out"
+msgstr ""
+
+#: woocommerce/bought-together.php:247
+#: woocommerce/bought-together.php:250
+#: woocommerce/bought-together.php:314
+#: woocommerce/bought-together.php:317
+#, php-format
+msgid "%s Review"
+msgid_plural "%s Reviews"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/bought-together.php:287
+msgid "Add to wishlist"
+msgstr ""
+
+#: woocommerce/bought-together.php:416
+msgid "Add all to cart"
+msgstr ""
+
+#: woocommerce/bought-together.php:457
+msgid "Frequently Bought Together"
+msgstr ""
+
+#: woocommerce/bought-together.php:634
+#, php-format
+msgid "Choose %s"
+msgstr ""
+
+#: woocommerce/bought-together.php:641
+msgid "Clear"
+msgstr ""
+
+#: woocommerce/bought-together.php:736
+#: woocommerce/wc-function.php:642
+msgid "Add to Cart"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:95
+msgid "No products in the cart."
+msgstr ""
+
+#: woocommerce/cart/pxl-cart-content.php:28
+msgid "Thumbnail image"
+msgstr ""
+
+#: woocommerce/cart/pxl-cart-content.php:31
+#: woocommerce/cart/pxl-cart-content.php:114
+#: woocommerce/wc-function.php:271
+msgid "Quantity"
+msgstr ""
+
+#: woocommerce/cart/pxl-cart-content.php:32
+#: woocommerce/cart/pxl-cart-totals.php:84
+msgid "Total"
+msgstr ""
+
+#: woocommerce/cart/pxl-cart-content.php:89
+msgid "Available on backorder"
+msgstr ""
+
+#. translators: %s is the product name
+#: woocommerce/cart/pxl-cart-content.php:99
+#, php-format
+msgid "Remove %s from cart"
+msgstr ""
+
+#: woocommerce/cart/pxl-cart-content.php:158
+msgid "Coupon:"
+msgstr ""
+
+#: woocommerce/cart/pxl-cart-content.php:158
+msgid "Discount code"
+msgstr ""
+
+#: woocommerce/cart/pxl-cart-content.php:158
+msgid "Apply coupon"
+msgstr ""
+
+#: woocommerce/cart/pxl-cart-content.php:158
+msgid "Apply"
+msgstr ""
+
+#: woocommerce/cart/pxl-cart-content.php:163
+msgid "Update cart"
+msgstr ""
+
+#: woocommerce/cart/pxl-cart-shipping.php:37
+msgid "Shipping costs are calculated during checkout."
+msgstr ""
+
+#: woocommerce/cart/pxl-cart-shipping.php:39
+msgid "Enter your address to view shipping options."
+msgstr ""
+
+#: woocommerce/cart/pxl-cart-shipping.php:42
+msgid "There are no shipping options available. Please ensure that your address has been entered correctly, or contact us if you need any help."
+msgstr ""
+
+#: woocommerce/cart/pxl-cart-shipping.php:48
+#, php-format
+msgid "No shipping options were found for %s."
+msgstr ""
+
+#: woocommerce/cart/pxl-cart-shipping.php:52
+msgid "Enter a different address"
+msgstr ""
+
+#: woocommerce/cart/pxl-cart-totals.php:13
+msgid "Cart Totals"
+msgstr ""
+
+#: woocommerce/cart/pxl-cart-totals.php:39
+msgid "Shipping"
+msgstr ""
+
+#: woocommerce/cart/pxl-cart-totals.php:58
+#, php-format
+msgid "(estimated for %s)"
+msgstr ""
+
+#: woocommerce/cart/pxl-cart-totals.php:87
+msgid "Taxes and shipping calculated at checkout"
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:26
+msgid "You must be logged in to checkout."
+msgstr ""
+
+#: woocommerce/checkout/form-shipping.php:10
+msgid "Ship to a different address?"
+msgstr ""
+
+#: woocommerce/checkout/form-shipping.php:41
+msgid "Additional information"
+msgstr ""
+
+#: woocommerce/checkout/pxl-thankyou.php:13
+msgid "Order number:"
+msgstr ""
+
+#: woocommerce/checkout/pxl-thankyou.php:14
+msgid "Order date:"
+msgstr ""
+
+#: woocommerce/checkout/pxl-thankyou.php:15
+msgid "Order total:"
+msgstr ""
+
+#: woocommerce/checkout/pxl-thankyou.php:16
+msgid "Payment method:"
+msgstr ""
+
+#: woocommerce/checkout/pxl-thankyou.php:27
+msgid "Confirmed"
+msgstr ""
+
+#: woocommerce/checkout/pxl-thankyou.php:42
+msgid "Shipped"
+msgstr ""
+
+#: woocommerce/checkout/pxl-thankyou.php:58
+msgid "Delivered"
+msgstr ""
+
+#: woocommerce/checkout/pxl-thankyou.php:77
+msgid "Shipping address"
+msgstr ""
+
+#: woocommerce/checkout/pxl-thankyou.php:81
+msgid "Billing address"
+msgstr ""
+
+#: woocommerce/checkout/pxl-thankyou.php:89
+msgid "Order Details"
+msgstr ""
+
+#: woocommerce/checkout/pxl-thankyou.php:109
+#: woocommerce/checkout/pxl-thankyou.php:122
+msgid "Subtotal:"
+msgstr ""
+
+#: woocommerce/checkout/pxl-thankyou.php:112
+msgid "Discount:"
+msgstr ""
+
+#: woocommerce/checkout/pxl-thankyou.php:115
+msgid "Shipping:"
+msgstr ""
+
+#: woocommerce/checkout/pxl-thankyou.php:118
+msgid "Tax:"
+msgstr ""
+
+#: woocommerce/checkout/pxl-thankyou.php:132
+msgid "Give us a feedback"
+msgstr ""
+
+#: woocommerce/checkout/pxl-thankyou.php:133
+msgid "Let us know what you think about the shopping experience, and get a gift coupon for the next shopping."
+msgstr ""
+
+#: woocommerce/checkout/pxl-thankyou.php:138
+msgid "How was your experience?"
+msgstr ""
+
+#: woocommerce/checkout/pxl-thankyou.php:146
+msgid "Share your exprience..."
+msgstr ""
+
+#: woocommerce/checkout/pxl-thankyou.php:147
+msgid "Send"
+msgstr ""
+
+#: woocommerce/checkout/pxl-thankyou.php:150
+msgid "Share the love"
+msgstr ""
+
+#: woocommerce/global/pxl-quantity-input.php:15
+msgid "Qty"
+msgstr ""
+
+#: woocommerce/global/pxl-quantity-input.php:27
+msgctxt "Product quantity input tooltip"
+msgid "Qty"
+msgstr ""
+
+#: woocommerce/wc-function.php:120
+msgid "I agree with term and conditions"
+msgstr ""
+
+#: woocommerce/wc-function.php:122
+msgid "You must agree to the terms and conditions before proceeding."
+msgstr ""
+
+#: woocommerce/wc-function.php:255
+msgid "Sale!"
+msgstr ""
+
+#: woocommerce/wc-function.php:372
+msgid "Share:"
+msgstr ""
+
+#: woocommerce/wc-function.php:512
+msgid "Recently Products"
+msgstr ""
+
+#: woocommerce/wc-function.php:584
+msgid "Related Products"
+msgstr ""

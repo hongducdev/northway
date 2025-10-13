@@ -1,0 +1,278 @@
+.pxl-image-carousel1 {
+    .pxl-item--image {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        @media #{$max-xs} {
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+    }
+    .pxl-item--image-1,
+    .pxl-item--image-2 {
+        position: relative;
+        height: 395px;
+        overflow: hidden;
+        @include border-radius(25px);
+        @include transition(all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94));
+        &:hover {
+            img {
+                transform: scale(1.05) rotate(2deg);
+            }
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scale(1) rotate(0deg);
+            @include transition(all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94));
+            @include border-radius(25px);
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: -150px;
+            background-image: url(../img/blur-before-after.png);
+            background-size: contain;
+            width: 400px;
+            height: 400px;
+            z-index: 5;
+        }
+    }
+    .pxl-item--image-1 {
+        label.pxl-item--image-label {
+            right: 30px;
+        }
+        &:before {
+            right: -150px;
+        }
+    }
+    .pxl-item--image-2 {
+        label.pxl-item--image-label {
+            left: 30px;
+        }
+        &:before {
+            left: -150px;
+        }
+    }
+    .pxl-item--image-1-inner,
+    .pxl-item--image-2-inner {
+        height: 395px;
+        @include border-radius(25px);
+        position: relative;
+        overflow: hidden;
+    }
+    label.pxl-item--image-label {
+        position: absolute;
+        bottom: 30px;
+        z-index: 5;
+        font-family: "Dancing Script";
+        font-weight: 500;
+        font-size: 25px;
+        color: $secondary_color;
+        @include transition(all 0.3s linear 0ms);
+    }
+    .pxl-swiper-bottom {
+        justify-content: center;
+    }
+}
+
+.pxl-image-carousel2 {
+    .pxl-item {
+        &--inner {
+            margin-top: 10px;
+        }
+        &--image {
+            max-height: 262px;
+            border-radius: 25px;
+            overflow: hidden;
+            transform: translateY(0px);
+            @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.15);
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .pxl-btn-video {
+                width: 68px;
+                height: 68px;
+                background-color: rgba(#fff, 0.25);
+                backdrop-filter: blur(2.5px);
+                @include border-radius(50%);
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                font-size: 24px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    .pxl-swiper-arrow-wrap {
+        width: calc(100% + 133px + 133px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @media #{$max-xxl} {
+            width: 100%;
+            transform: none;
+        }
+        .pxl-swiper-arrow {
+            width: 78px;
+            height: 78px;
+            line-height: 78px;
+            background-color: rgba($primary_color_hex, 0.25);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+            @media #{$max-xs} {
+                width: 50px;
+                height: 50px;
+            }
+            &:hover {
+                background-color: $primary_color;
+                color: #fff;
+            }
+            &.pxl-swiper-arrow-prev {
+                i {
+                    transform: scalex(-1);
+                }
+            }
+        }
+    }
+}
+
+.pxl-image-carousel3 {
+    --height-image: 371px;
+    --height-image-hover: 405px;
+    .pxl-item {
+        &--inner {
+            margin: calc((var(--height-image-hover) - var(--height-image)) / 2)
+                0;
+            @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+            &:hover {
+                margin: 0;
+                .pxl-item--image {
+                    height: var(--height-image-hover);
+                }
+                .pxl-item--overlay {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                .pxl-item--button {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translate(-50%, -50%) scale(1);
+                }
+            }
+        }
+        &--image {
+            height: var(--height-image);
+            margin-top: 0;
+            border-radius: 25px;
+            overflow: hidden;
+            position: relative;
+            transform: scale(1);
+            @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &--overlay {
+            position: absolute;
+            inset: 0;
+            background-color: rgba($four_color_hex, 0.4);
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            visibility: hidden;
+            @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+        }
+        &--button {
+            position: absolute;
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background-color: rgba(#fff, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.5);
+            z-index: 5;
+            backdrop-filter: blur(5px);
+            opacity: 0;
+            @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+            span {
+                width: 14px;
+                height: 14px;
+                position: relative;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background-color: #fff;
+                    border-radius: 4px;
+                    width: 2px;
+                    height: 100%;
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background-color: #fff;
+                    border-radius: 4px;
+                    width: 100%;
+                    height: 2px;
+                }
+            }
+        }
+    }
+}
+
+.pxl-image-carousel4 {
+    .pxl-swiper-arrow-wrap {
+        width: calc(100% + 163px + 163px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @media #{$max-xl} {
+            width: 100%;
+            transform: none;
+        }
+        .pxl-swiper-arrow {
+            width: 78px;
+            height: 78px;
+            line-height: 78px;
+            background-color: #eaf0da;
+            color: $secondary_color;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+            @media #{$max-xs} {
+                width: 50px;
+                height: 50px;
+            }
+            &:hover {
+                background-color: $primary_color;
+                color: #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+/* =======================================================
+    Service List
+======================================================= */
+.pxl-service-list {
+    &.layout-1 {
+        .pxl-service-item {
+            a {
+                position: relative;
+                svg {
+                    color: $third_color;
+                    position: absolute;
+                    top: 50%;
+                    transform: translatey(-50%) scale(0);
+                    left: 0;
+                    transform-origin: left;
+                    @include transition(all 220ms linear 0ms);
+                }
+                span {
+                    color: #fff;
+                    font-family: Satoshi;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 35px; /* 233.333% */
+                }
+            }
+            &:hover,
+            &.active {
+                a {
+                    padding-left: 20px;
+                    svg {
+                        transform: translatey(-50%) scale(1);
+                    }
+                }
+            }
+        }
+
+        &.no-services {
+            text-align: center;
+            padding: 40px 20px;
+            color: #666;
+        }
+    }
+}

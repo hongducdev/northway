@@ -1,0 +1,25 @@
+{
+    "icons": [
+        "cart",
+        "clock",
+        "comment",
+        "user",
+        "cart-2",
+        "mail",
+        "leaf3",
+        "leaf1",
+        "leaf2",
+        "icon23",
+        "icon33",
+        "icon24",
+        "vector1",
+        "vector",
+        "vector2",
+        "union3",
+        "leaf-header",
+        "arrow",
+        "map-checked",
+        "clock-2",
+        "envelope"
+    ]
+}

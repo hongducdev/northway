@@ -1,0 +1,198 @@
+/*--------------------------------------------------------------
+TEAM Carousel
+----------------------------------------------------------------
+# Team Carousel
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+TEAM GRID
+----------------------------------------------------------------
+# Team Grid
+--------------------------------------------------------------*/
+.pxl-team-grid1,
+.pxl-team-carousel1 {
+    .pxl-item {
+        &--inner {
+            border-radius: 25px;
+            background: #fff;
+            padding: 20px 20px 28px 20px;
+            &:hover {
+                .pxl-item--overlay {
+                    opacity: 1;
+                    &-button {
+                        opacity: 1;
+                        transform: scale(1);
+                    }
+                }
+                .pxl-item--social {
+                    &-list {
+                        a {
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
+                    }
+                }
+            }
+        }
+        &--image {
+            border-radius: 18px 18px 0 0;
+            height: 278px;
+            position: relative;
+            img {
+                border-radius: 18px 18px 0 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            &:before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background-image: url(../img/grass4.svg);
+                width: 100%;
+                height: 19px;
+                background-position: bottom;
+                background-size: contain;
+                background-repeat: repeat-x;
+                z-index: 3;
+            }
+        }
+        &--overlay {
+            border-radius: 18px 18px 0 0;
+            background: rgba($four-color-hex, 0.4);
+            backdrop-filter: blur(5px);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            @include transition(all 0.3s linear 0ms);
+            &-button {
+                width: 66px;
+                height: 66px;
+                @include border-radius(50%);
+                background-color: rgba(#fff, 0.4);
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                opacity: 0;
+                transform: scale(0);
+                @include transition(all 0.3s linear 0ms);
+                span {
+                    width: 13px;
+                    height: 13px;
+                    position: relative;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        width: 2px;
+                        height: 100%;
+                        background-color: #fff;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        @include border-radius(2px);
+                        @include transition(all 0.3s linear 0ms);
+                    }
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 2px;
+                        background-color: #fff;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        @include border-radius(2px);
+                        @include transition(all 0.3s linear 0ms);
+                    }
+                }
+            }
+        }
+        &--social {
+            position: absolute;
+            right: 20px;
+            bottom: -14px;
+            z-index: 4;
+            &-inner {
+                position: relative;
+            }
+            &-share {
+                width: 47px;
+                height: 47px;
+                border-radius: 50%;
+                border: 5px solid #fff;
+                background-color: $four-color;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                svg {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+            &-list {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: calc(100% + 5px);
+                a {
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    color: $four-color;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 12px;
+                    opacity: 0;
+                    transform: translateY(10px);
+                    @include transition(all 0.3s linear 0ms);
+                    &:hover {
+                        background-color: $four-color;
+                        color: #fff;
+                    }
+                    @for $i from 1 through 4 {
+                        &:nth-child(#{$i}) {
+                            transition-delay: #{(5 - $i) * 0.1}s;
+                        }
+                    }
+                }
+            }
+        }
+        &--holder {
+            margin-top: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &--title {
+            color: $secondary-color;
+            font-size: 21px;
+            font-weight: 600;
+            line-height: 1.47;
+            margin-bottom: 0;
+        }
+        &--position {
+            color: rgba($secondary-color-hex, 0.8);
+            font-size: 15px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 1.67;
+        }
+        &--icon {
+            padding-right: 10px;
+        }
+    }
+}
