@@ -27,7 +27,6 @@ if(!function_exists('northway_elements_scripts')){
         wp_register_script('northway-countdown', get_template_directory_uri() . '/elements/widgets/js/countdown.js', [ 'jquery' ], $theme->get( 'Version' ), true);
         wp_register_script('pxl-pie-chart', get_template_directory_uri() . '/assets/js/libs/pie-chart.min.js', [ 'jquery' ], $theme->get( 'Version' ), true);
         wp_register_script('northway-pie-chart', get_template_directory_uri() . '/elements/widgets/js/pie-chart.js', [ 'jquery' ], $theme->get( 'Version' ), true);
-        wp_enqueue_script('northway-service-hover', get_template_directory_uri() . '/assets/js/service-hover.js', [ 'jquery' ], $theme->get( 'Version' ), true);
         wp_enqueue_script('northway-elementor', get_template_directory_uri() . '/elements/widgets/js/elementor.js', [ 'jquery' ], $theme->get( 'Version' ), true);
         wp_enqueue_script('pxl-grass', get_template_directory_uri() . '/elements/widgets/js/grass.js', [ 'jquery' ], $theme->get( 'Version' ), true);
         wp_register_script('pxl-image-comparison', get_template_directory_uri() . '/elements/widgets/js/image_comparison.js', [ 'jquery' ], $theme->get( 'Version' ), true);
@@ -164,14 +163,6 @@ function northway_get_grid_layout_options($post_type_name){
                 'label' => esc_html__( 'Layout 1', 'northway' ),
                 'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_post_grid/portfolio-layout1.jpg'
             ],
-            'portfolio-2' => [
-                'label' => esc_html__( 'Layout 2', 'northway' ),
-                'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_post_grid/portfolio-layout2.jpg'
-            ],
-            'portfolio-3' => [
-                'label' => esc_html__( 'Layout 3', 'northway' ),
-                'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_post_grid/portfolio-layout3.jpg'
-            ],
         ];
         break;
 
@@ -181,10 +172,6 @@ function northway_get_grid_layout_options($post_type_name){
                 'label' => esc_html__( 'Layout 1', 'northway' ),
                 'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_post_grid/service-layout1.jpg'
             ],
-            'service-2' => [
-                'label' => esc_html__( 'Layout 2', 'northway' ),
-                'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_post_grid/service-layout2.jpg'
-            ],
         ];
         break;
 
@@ -193,14 +180,6 @@ function northway_get_grid_layout_options($post_type_name){
             'post-1' => [
                 'label' => esc_html__( 'Layout 1', 'northway' ),
                 'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_post_grid/post-layout1.jpg'
-            ],
-            'post-2' => [
-                'label' => esc_html__( 'Layout 2', 'northway' ),
-                'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_post_grid/post-layout2.jpg'
-            ],
-            'post-3' => [
-                'label' => esc_html__( 'Layout 3', 'northway' ),
-                'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_post_grid/post-layout3.jpg'
             ],
         ];
         break;

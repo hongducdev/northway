@@ -681,12 +681,6 @@ function northway_page_options_register($metabox)
 								'required' => array(0 => 'service_icon_type', 1 => 'equals', 2 => 'image'),
 								'force_output' => true
 							),
-							array(
-								'id'       => 'service_feature',
-								'type'     => 'multi_text',
-								'title'    => esc_html__('Feature', 'northway'),
-								'validate' => 'html',
-							),
 						)
 					)
 				],
