@@ -692,6 +692,7 @@ function northway_widget_animate() {
         'wow rotateOutUpRight' => 'rotateOutUpRight',
         'wow hinge' => 'hinge',
         'wow rollIn' => 'rollIn',
+        'wow rollInRight' => 'rollInRight',
         'wow rollOut' => 'rollOut',
         'wow zoomInSmall' => 'zoomInSmall',
         'wow zoomIn' => 'zoomInBig',
@@ -768,6 +769,7 @@ function northway_widget_animate_v2() {
         'wow rotateOutUpRight' => 'rotateOutUpRight',
         'wow hinge' => 'hinge',
         'wow rollIn' => 'rollIn',
+        'wow rollInRight' => 'rollInRight',
         'wow rollOut' => 'rollOut',
         'wow zoomInSmall' => 'zoomInSmall',
         'wow zoomIn' => 'zoomInBig',
@@ -789,7 +791,6 @@ function northway_widget_animate_v2() {
         'wow PXLZoom' => 'PXLZoom',
         'wow PXLfadeInUp' => 'PXLfadeInUp',
         'wow PXLZoom2' => 'PXLZoom2',
-
     );
     return $northway_animate_v2;
 }
