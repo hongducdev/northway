@@ -3306,15 +3306,6 @@ posts
                         top: 0;
                     }
                 }
-                .pxl-post--title {
-                    a {
-                        &:before {
-                            width: 100%;
-                            right: auto;
-                            left: 0;
-                        }
-                    }
-                }
             }
         }
         &--icon {
@@ -3360,20 +3351,6 @@ posts
             line-height: 1.43;
             margin-bottom: 25px;
             transition: all 0.3s ease;
-            a {
-                position: relative;
-                &:before {
-                    content: "";
-                    position: absolute;
-                    bottom: 0;
-                    right: 0;
-                    left: auto;
-                    width: 0;
-                    height: 1px;
-                    background-color: $body_bg_color;
-                    @include transition(all 0.3s ease);
-                }
-            }
         }
         &--content {
             color: rgba($body_bg_color_hex, 0.7);

@@ -430,6 +430,33 @@
     }
 }
 
+.pxl-bg-pattern-caro-2 {
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+
+        background-image: repeating-linear-gradient(
+                to right,
+                #EEEEEA 0 1px,
+                transparent 1px 50px
+            ),
+            repeating-linear-gradient(
+                to bottom,
+                #EEEEEA 0 1px,
+                transparent 1px 50px
+            );
+        background-position: center center;
+        background-size: 50px 50px;
+        background-repeat: repeat;
+        transform: translateZ(0);
+    }
+}
+
 .pxl-container-border-counter-1 {
     position: relative;
     &:before {
@@ -449,41 +476,26 @@
     }
 }
 
+.pxl-container-fold-1 {
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 80px solid transparent;
+        border-right: 80px solid $secondary_color;
+    }
+}
+
 @keyframes pxl-draws-svg {
     0% {
         stroke-dashoffset: 100%;
     }
     100% {
         stroke-dashoffset: 0;
-    }
-}
-
-.pxl-container-gradient-faq {
-    position: relative;
-    &:after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 730px;
-        background: linear-gradient(
-            0deg,
-            #eaf0da 0%,
-            rgba(255, 255, 255, 0) 100%
-        );
-        bottom: 0;
-        left: 0;
-    }
-}
-
-.pxl-container-header-home-2 {
-    .pxl-showcase {
-        .pxl-item--inner {
-            padding: 15px 15px 36px 15px;
-        }
-    }
-    .section-mega-active {
-        border-bottom-right-radius: 10px !important;
-        border-bottom-left-radius: 10px !important;
     }
 }
 
