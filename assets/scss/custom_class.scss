@@ -527,6 +527,24 @@
     }
 }
 
+.pxl-container-question-1 {
+    position: relative;
+    z-index: 5;
+    background-color: $body_bg_color;
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        left: 0px;
+        background-color: $body_bg_color;
+        border: 1px solid rgba(102, 111, 120, 0.50);
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+}
+
 @keyframes pxl-draws-svg {
     0% {
         stroke-dashoffset: 100%;

@@ -27,6 +27,10 @@ pxl_add_custom_widget(
                                     'label' => esc_html__('Layout 1', 'northway' ),
                                     'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_accordion/layout1.jpg'
                                 ],
+                                '2' => [
+                                    'label' => esc_html__('Layout 2', 'northway' ),
+                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_accordion/layout2.jpg'
+                                ],
                             ],
                         ),
                     ),
@@ -57,6 +61,9 @@ pxl_add_custom_widget(
                             'name' => 'accordion',
                             'label' => esc_html__('Accordion', 'northway'),
                             'type' => \Elementor\Controls_Manager::REPEATER,
+                            'condition' => [
+                                'layout' => ['1'],
+                            ],
                             'controls' => array(
                                 array(
                                     'name' => 'title',
@@ -105,59 +112,29 @@ pxl_add_custom_widget(
                             'separator' => 'after',
                         ),
                         array(
-                            'name' => 'accordion_4',
+                            'name' => 'accordion_2',
                             'label' => esc_html__('Accordion', 'northway'),
                             'type' => \Elementor\Controls_Manager::REPEATER,
                             'condition' => [
-                                'layout' => '4'
+                                'layout' => ['2'],
                             ],
                             'controls' => array(
                                 array(
-                                    'name' => 'title_4',
+                                    'name' => 'title_2',
                                     'label' => esc_html__('Title', 'northway'),
                                     'type' => \Elementor\Controls_Manager::TEXT,
                                     'label_block' => true,
                                 ),
                                 array(
-                                    'name' => 'button_text_4',
-                                    'label' => esc_html__('Button Text', 'northway'),
-                                    'type' => \Elementor\Controls_Manager::TEXT,
-                                    'default' => esc_html__('Apply Job Now', 'northway'),
-                                    'label_block' => true,
-                                ),
-                                array(
-                                    'name' => 'button_link_4',
-                                    'label' => esc_html__('Button Link', 'northway'),
-                                    'type' => \Elementor\Controls_Manager::URL,
-                                    'label_block' => true,
-                                ),
-                                array(
-                                    'name' => 'icon_4',
-                                    'label' => esc_html__('Icon', 'northway'),
-                                    'type' => \Elementor\Controls_Manager::ICONS,
-                                    'fa4compatibility' => 'icon',
-                                ),
-                                array(
-                                    'name' => 'job_desc_4',
-                                    'label' => esc_html__('Job Description', 'northway'),
+                                    'name' => 'desc_2',
+                                    'label' => esc_html__('Content', 'northway'),
                                     'type' => \Elementor\Controls_Manager::TEXTAREA,
                                     'rows' => 10,
                                 ),
-                                array(
-                                    'name' => 'request_4',
-                                    'label' => esc_html__('Request', 'northway'),
-                                    'type' => \Elementor\Controls_Manager::WYSIWYG,
-                                    'default' => esc_html__( 'Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'northway' ),
-                                ),
-                                array(
-                                    'name' => 'salary_receive_4',
-                                    'label' => esc_html__('Salary Receive', 'northway'),
-                                    'type' => \Elementor\Controls_Manager::TEXT,
-                                ),
                             ),
-                            'title_field' => '{{{ title_4 }}}',
+                            'title_field' => '{{{ title_2 }}}',
                             'separator' => 'after',
-                        )
+                        ),
                     ),
                 ),
                 array(
@@ -165,12 +142,6 @@ pxl_add_custom_widget(
                     'label' => esc_html__('General', 'northway'),
                     'tab' => \Elementor\Controls_Manager::TAB_STYLE,
                     'controls' => array(
-                        array(
-                            'name' => 'img_size',
-                            'label' => esc_html__('Image Size', 'northway'),
-                            'type' => \Elementor\Controls_Manager::TEXT,
-                            'description' => 'Enter image size (Example: "thumbnail", "medium", "large", "full" or other sizes defined by theme). Alternatively enter size in pixels (Example: 200x100 (Width x Height).',
-                        ),
                         array(
                             'name' => 'item_padding',
                             'label' => esc_html__('Item Padding ', 'northway'),
@@ -193,23 +164,7 @@ pxl_add_custom_widget(
                         ),
                         array(
                             'name' => 'item_space',
-                            'label' => esc_html__('Item Space Bottom', 'northway'),
-                            'type' => \Elementor\Controls_Manager::SLIDER,
-                            'control_type' => 'responsive',
-                            'size_units' => ['px'],
-                            'range' => [
-                                'px' => [
-                                    'min' => 0,
-                                    'max' => 300,
-                                ],
-                            ],
-                            'selectors' => [
-                                '{{WRAPPER}} .pxl-accordion1 .pxl--item' => 'padding-bottom: {{SIZE}}{{UNIT}};',
-                            ],
-                        ),
-                        array(
-                            'name' => 'item_space_top',
-                            'label' => esc_html__('Item Space Top', 'northway'),
+                            'label' => esc_html__('Item Space', 'northway'),
                             'type' => \Elementor\Controls_Manager::SLIDER,
                             'control_type' => 'responsive',
                             'size_units' => ['px'],
@@ -227,48 +182,44 @@ pxl_add_custom_widget(
                             'name' => 'item_color',
                             'label' => esc_html__('Background Color', 'northway'),
                             'type' => \Elementor\Controls_Manager::COLOR,
+                            'condition' => [
+                                'layout' => ['1'],
+                            ],
                             'selectors' => [
                                 '{{WRAPPER}} .pxl--item ' => 'background-color: {{VALUE}};',
                             ],
                         ),
                         array(
-                            'name' => 'item_color_active',
-                            'label' => esc_html__('Background Color/Actvie', 'northway'),
+                            'name' => 'bg_color_title_2',
+                            'label' => esc_html__('Background Color Title', 'northway'),
                             'type' => \Elementor\Controls_Manager::COLOR,
+                            'condition' => [
+                                'layout' => ['2'],
+                            ],
                             'selectors' => [
-                                '{{WRAPPER}} .pxl--item.active' => 'background-color: {{VALUE}};',
+                                '{{WRAPPER}} .pxl-accordion2 .pxl-accordion--title' => 'background-color: {{VALUE}};',
                             ],
                         ),
                         array(
                             'name' => 'color_i',
                             'label' => esc_html__('Color Icon', 'northway'),
                             'type' => \Elementor\Controls_Manager::COLOR,
+                            'condition' => [
+                                'layout' => ['2'],
+                            ],
                             'selectors' => [
-                                '{{WRAPPER}}  .pxl-icon--plus path' => 'fill: {{VALUE}};',
+                                '{{WRAPPER}} .pxl-accordion1 .pxl-title--icon span:before, {{WRAPPER}} .pxl-accordion2 .pxl-title--icon span:after' => 'background-color: {{VALUE}};',
                             ],
                         ),
                         array(
-                            'name' => 'color_i_a',
-                            'label' => esc_html__('Color Icon/Actvie', 'northway'),
+                            'name' => 'color_bd_desc',
+                            'label' => esc_html__('Color Border Desc', 'northway'),
                             'type' => \Elementor\Controls_Manager::COLOR,
-                            'selectors' => [
-                                '{{WRAPPER}} .pxl--item.active .pxl-icon--plus path' => 'fill: {{VALUE}};',
+                            'condition' => [
+                                'layout' => ['2'],
                             ],
-                        ),
-                        array(
-                            'name' => 'color_bd',
-                            'label' => esc_html__('Color Border', 'northway'),
-                            'type' => \Elementor\Controls_Manager::COLOR,
                             'selectors' => [
-                                '{{WRAPPER}} .pxl--item' => 'border-color: {{VALUE}};',
-                            ],
-                        ),
-                        array(
-                            'name' => 'color_bd_a',
-                            'label' => esc_html__('Color Border/Actvie', 'northway'),
-                            'type' => \Elementor\Controls_Manager::COLOR,
-                            'selectors' => [
-                                '{{WRAPPER}} .pxl--item.active' => 'border-color: {{VALUE}};',
+                                '{{WRAPPER}} .pxl-accordion2 .pxl-accordion--content' => 'border-color: {{VALUE}};',
                             ],
                         ),
                     ),
@@ -290,6 +241,9 @@ pxl_add_custom_widget(
                             'name' => 'title_color_a',
                             'label' => esc_html__('Color/Active', 'northway'),
                             'type' => \Elementor\Controls_Manager::COLOR,
+                            'condition' => [
+                                'layout' => ['1'],
+                            ],
                             'selectors' => [
                                 '{{WRAPPER}} .pxl-accordion .pxl--item.active .pxl-accordion--title' => 'color: {{VALUE}};',
                             ],
@@ -317,28 +271,6 @@ pxl_add_custom_widget(
                                 'p' => 'p',
                             ],
                             'default' => 'h5',
-                        ),
-                    ),
-                ),
-                array(
-                    'name' => 'section_style_number',
-                    'label' => esc_html__('Number', 'northway'),
-                    'tab' => \Elementor\Controls_Manager::TAB_STYLE,
-                    'controls' => array(
-                        array(
-                            'name' => 'number_color',
-                            'label' => esc_html__('Color', 'northway'),
-                            'type' => \Elementor\Controls_Manager::COLOR,
-                            'selectors' => [
-                                '{{WRAPPER}} .pxl-accordion.pxl-accordion1 .pxl--item .pxl-accordion--title .pxl-title--number' => 'color: {{VALUE}};',
-                            ],
-                        ),
-                        array(
-                            'name' => 'number_typography',
-                            'label' => esc_html__('Typography', 'northway'),
-                            'type' => \Elementor\Group_Control_Typography::get_type(),
-                            'control_type' => 'group',
-                            'selector' => '{{WRAPPER}} .pxl-accordion.pxl-accordion1 .pxl--item .pxl-accordion--title .pxl-title--number',
                         ),
                     ),
                 ),
@@ -371,35 +303,13 @@ pxl_add_custom_widget(
                             'selector' => '{{WRAPPER}} .pxl-accordion .pxl-accordion--content',
                         ),
                         array(
-                            'name' => 'ct_space_top',
-                            'label' => esc_html__('Space Top', 'northway'),
-                            'type' => \Elementor\Controls_Manager::SLIDER,
+                            'name' => 'content_padding',
+                            'label' => esc_html__('Padding', 'northway'),
+                            'type' => \Elementor\Controls_Manager::DIMENSIONS,
                             'control_type' => 'responsive',
                             'size_units' => ['px'],
-                            'range' => [
-                                'px' => [
-                                    'min' => 0,
-                                    'max' => 300,
-                                ],
-                            ],
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-accordion .pxl-accordion--content' => 'margin-top: {{SIZE}}{{UNIT}};',
-                            ],
-                        ),
-                        array(
-                            'name' => 'ct_space_bottom',
-                            'label' => esc_html__('Space Bottom', 'northway'),
-                            'type' => \Elementor\Controls_Manager::SLIDER,
-                            'control_type' => 'responsive',
-                            'size_units' => ['px'],
-                            'range' => [
-                                'px' => [
-                                    'min' => 0,
-                                    'max' => 300,
-                                ],
-                            ],
-                            'selectors' => [
-                                '{{WRAPPER}} .pxl-accordion .pxl-accordion--content' => 'padding-bottom: {{SIZE}}{{UNIT}};',
+                                '{{WRAPPER}} .pxl-accordion .pxl-accordion--content' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                             ],
                         ),
                     ),

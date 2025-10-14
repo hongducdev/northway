@@ -250,6 +250,88 @@
     }
 }
 
+.pxl-accordion2 {
+    .pxl--item {
+        + .pxl--item {
+            margin-top: 10px;
+        }
+    }
+    .pxl-title {
+        &--wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &--text {
+            color: $body_bg_color;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.56;
+            margin-bottom: 0;
+        }
+        &--icon {
+            padding-left: 25px;
+            position: relative;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                background-color: rgba(102, 111, 120, 0.5);
+                height: 30px;
+                width: 1px;
+            }
+            span {
+                width: 12px;
+                height: 12px;
+                display: inline-block;
+                position: relative;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) rotate(0deg);
+                    background-color: $body_bg_color;
+                    width: 100%;
+                    height: 2px;
+                    @include transition(all 0.3s linear 0ms);
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) rotate(0deg);
+                    background-color: $body_bg_color;
+                    width: 2px;
+                    height: 100%;
+                    @include transition(all 0.3s linear 0ms);
+                }
+            }
+        }
+    }
+    .pxl-accordion {
+        &--title {
+            padding: 25px;
+            background-color: $secondary_color;
+            @include border-radius(10px);
+            padding-left: 25px;
+        }
+        &--content {
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid rgba(102, 111, 120, 0.5);
+            background: $body_bg_color;
+            color: rgba($secondary_color_hex, 0.7);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.625;
+        }
+    }
+}
+
 // Organic floating animation
 @keyframes organicFloat {
     0%,
