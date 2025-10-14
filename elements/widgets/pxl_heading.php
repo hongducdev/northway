@@ -195,6 +195,7 @@ pxl_add_custom_widget(
                                 'type' => \Elementor\Controls_Manager::SELECT,
                                 'options' => [
                                     'pxl-sub-title-default' => 'Default',
+                                    'pxl-sub-title-2' => 'Sub Title 2',
                                 ],
                                 'default' => 'pxl-sub-title-default',
                             ),
