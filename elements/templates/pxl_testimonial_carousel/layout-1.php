@@ -60,46 +60,40 @@ if (isset($settings['testimonial']) && !empty($settings['testimonial']) && count
                     ?>
                         <div class="pxl-swiper-slide">
                             <div class="pxl-item--inner <?php echo esc_attr($settings['pxl_animate']); ?>" data-wow-delay="<?php echo esc_attr($settings['pxl_animate_delay']); ?>ms">
-                                <?php if (!empty($avatar['id'])) {
-                                    $img = pxl_get_image_by_size(array(
-                                        'attach_id'  => $avatar['id'],
-                                        'thumb_size' => '500x500',
-                                        'class' => 'no-lazyload',
-                                    ));
-                                    $thumbnail = $img['thumbnail']; ?>
-                                    <div class="pxl-item--avatar ">
-                                        <?php echo wp_kses_post($thumbnail); ?>
-                                    </div>
-                                <?php } ?>
                                 <div class="pxl-item--header">
+                                    <?php if (!empty($avatar['id'])) {
+                                        $img = pxl_get_image_by_size(array(
+                                            'attach_id'  => $avatar['id'],
+                                            'thumb_size' => '210x210',
+                                            'class' => 'no-lazyload',
+                                        ));
+                                        $thumbnail = $img['thumbnail']; ?>
+                                        <div class="pxl-item--avatar ">
+                                            <?php echo wp_kses_post($thumbnail); ?>
+                                        </div>
+                                    <?php } ?>
                                     <div class="pxl-item--meta">
-                                        <h3 class="pxl-item--title el-empty"><?php echo pxl_print_html($title); ?></h3>
+                                        <h6 class="pxl-item--title el-empty"><?php echo pxl_print_html($title); ?></h6>
                                         <div class="pxl-item--position el-empty"><?php echo pxl_print_html($position); ?></div>
                                     </div>
-                                    <div class="pxl-item--star pxl-item--<?php echo esc_attr($star); ?>">
-                                        <?php for ($i = 1; $i <= 5; $i++): ?>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                <path d="M15.5613 6.81642L12.2138 9.97746L13.0043 14.4421C13.0387 14.6373 12.956 14.8346 12.7904 14.9512C12.6969 15.0173 12.5857 15.0506 12.4745 15.0506C12.389 15.0506 12.303 15.0308 12.2246 14.9908L8.08541 12.8829L3.9468 14.9902C3.76623 15.0829 3.54642 15.0678 3.3809 14.9507C3.21538 14.8341 3.13262 14.6368 3.16701 14.4415L3.95754 9.97694L0.609468 6.81642C0.463291 6.67795 0.410088 6.47075 0.473502 6.28282C0.536917 6.09488 0.705127 5.95692 0.907731 5.92829L5.53431 5.27755L7.60335 1.21589C7.78446 0.860328 8.38636 0.860328 8.56747 1.21589L10.6365 5.27755L15.2631 5.92829C15.4657 5.95692 15.6339 6.09436 15.6973 6.28282C15.7607 6.47127 15.7075 6.67742 15.5613 6.81642Z" fill="currentColor" />
-                                            </svg>
-                                        <?php endfor; ?>
-                                    </div>
                                 </div>
-                                <div class="pxl-item--desc"><?php echo pxl_print_html($desc); ?></div>
-                                <div class="pxl-item--qoute">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="109" height="77" viewBox="0 0 109 77" fill="none">
-                                        <path d="M41.6057 14.1842C28.1956 16.886 18.5678 25.6667 18.5678 36.4737C20.9748 35.1228 24.0694 34.1096 28.1956 34.1096C38.8549 34.1096 47.4511 41.5395 47.4511 54.7105C47.4511 67.5439 38.511 77 24.7571 77C11.0032 77 2.13816e-06 65.8552 0 47.6184C0 22.9649 17.5363 3.37719 41.6057 0V14.1842Z" fill="url(#paint0_linear_283_58)" />
-                                        <path d="M103.155 14.1842C89.7445 16.886 80.1167 25.6667 80.1167 36.136C82.5237 34.7851 85.6183 34.1096 89.4006 34.1096C100.06 34.1096 109 41.5395 109 54.7105C109 67.5439 99.7161 77 86.306 77C72.2082 77 61.2051 65.8552 61.205 47.6184C61.205 22.9649 79.0852 3.37719 103.155 0V14.1842Z" fill="url(#paint1_linear_283_58)" />
-                                        <defs>
-                                            <linearGradient id="paint0_linear_283_58" x1="54.5" y1="54.9043" x2="54.5" y2="6.36087" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="currentColor" />
-                                                <stop offset="1" stop-color="white" />
-                                            </linearGradient>
-                                            <linearGradient id="paint1_linear_283_58" x1="54.5" y1="54.9043" x2="54.5" y2="6.36087" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="currentColor" />
-                                                <stop offset="1" stop-color="white" />
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
+                                <div class="pxl-item--body">
+                                    <div class="pxl-item--body-meta">
+                                        <div class="pxl-item--star pxl-item--<?php echo esc_attr($star); ?>">
+                                            <?php for ($i = 1; $i <= 5; $i++): ?>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M7.55163 0.908492C7.73504 0.536869 8.26496 0.53687 8.44837 0.908493L10.2348 4.52821C10.3076 4.67578 10.4484 4.77807 10.6113 4.80173L14.6059 5.38218C15.016 5.44177 15.1797 5.94576 14.883 6.23503L11.9925 9.05258C11.8746 9.16745 11.8208 9.33295 11.8487 9.49515L12.531 13.4736C12.6011 13.8821 12.1724 14.1935 11.8055 14.0007L8.23267 12.1223C8.08701 12.0457 7.91299 12.0457 7.76733 12.1223L4.19445 14.0007C3.82764 14.1935 3.39893 13.8821 3.46898 13.4736L4.15134 9.49515C4.17916 9.33295 4.12538 9.16745 4.00754 9.05258L1.11702 6.23503C0.820264 5.94576 0.98402 5.44177 1.39413 5.38218L5.38873 4.80173C5.55158 4.77807 5.69236 4.67578 5.7652 4.52821L7.55163 0.908492Z" fill="currentColor"/>
+                                                </svg>
+                                            <?php endfor; ?>
+                                        </div>
+                                        <div class="pxl-item--qoute">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24" fill="none">
+                                                <path d="M7.9727 0C12.2572 0 15.6096 3.15468 15.9444 7.50098C16.5155 14.9041 12.569 20.9461 9.01568 23.8701C8.90978 23.9568 8.77816 24 8.64654 24C8.51116 24 8.37647 23.9539 8.26958 23.8623C7.9542 23.5915 7.7379 23.384 7.26567 22.9297C6.90477 22.5821 6.38902 22.0849 5.55472 21.2959C5.36327 21.1148 5.33514 20.8293 5.48929 20.6182C7.52828 17.8189 7.58319 15.8067 7.51079 15.0674C3.32892 14.8401 0.000201802 11.5507 0 7.54004C0 3.38243 3.57628 6.43138e-05 7.9727 0Z" fill="currentColor"/>
+                                                <path d="M26.9728 0C31.2573 0 34.6098 3.15468 34.9445 7.50098C35.5156 14.9041 31.5691 20.9461 28.0158 23.8701C27.9099 23.9568 27.7783 24 27.6466 24C27.5113 24 27.3766 23.9539 27.2697 23.8623C26.9543 23.5915 26.738 23.384 26.2658 22.9297C25.9049 22.5821 25.3891 22.0849 24.5548 21.2959C24.3634 21.1148 24.3353 20.8293 24.4894 20.6182C26.5284 17.8189 26.5833 15.8067 26.5109 15.0674C22.329 14.8401 19.0003 11.5507 19.0001 7.54004C19.0001 3.38243 22.5764 6.43138e-05 26.9728 0Z" fill="currentColor"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="pxl-item--desc"><?php echo pxl_print_html($desc); ?></div>
                                 </div>
                             </div>
                         </div>
@@ -107,11 +101,21 @@ if (isset($settings['testimonial']) && !empty($settings['testimonial']) && count
                 </div>
             </div>
         </div>
-    <?php if ($pagination !== false || $arrows !== false): ?>
+    <?php if ($pagination !== false): ?>
         <div class="pxl-swiper-bottom ">
             <?php if ($pagination !== false): ?>
                 <div class="pxl-swiper-dots style-1"></div>
             <?php endif; ?>
+        </div>
+    <?php endif; ?>
+    <?php if ($arrows !== false): ?>
+        <div class="pxl-swiper-arrow-wrap style-2">
+            <div class="pxl-swiper-arrow pxl-swiper-arrow-prev" tabindex="0" role="button" aria-label="previous slide" aria-controls="swiper-wrapper-5f10c24cfcd53105d">
+                <i class="bi-arrow-left-short"></i>
+            </div>
+            <div class="pxl-swiper-arrow pxl-swiper-arrow-next" tabindex="0" role="button" aria-label="next slide" aria-controls="swiper-wrapper-5f10c24cfcd53105d">
+                <i class="bi-arrow-right-short"></i>
+            </div>
         </div>
     <?php endif; ?>
     </div>

@@ -61,7 +61,7 @@ body:not(.elementor-editor-active) .pxl-swiper-slider {
     transition-property: -webkit-transform;
     -o-transition-property: transform;
     transition-property: transform;
-    transition-property: transform,-webkit-transform;
+    transition-property: transform, -webkit-transform;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
 }
@@ -79,7 +79,8 @@ body:not(.elementor-editor-active) .pxl-swiper-slider {
     margin: 0 -10px;
 }
 
-.pxl-swiper-arrow, .pxl-navigation-arrow {
+.pxl-swiper-arrow,
+.pxl-navigation-arrow {
     cursor: pointer;
     @include transition(all 300ms linear 0ms);
     &.style-1 {
@@ -91,7 +92,7 @@ body:not(.elementor-editor-active) .pxl-swiper-slider {
         display: block;
         z-index: 2;
         text-align: center;
-        cursor: pointer;  
+        cursor: pointer;
         background-color: rgba(#f8f8f8, 0.58);
         @include border-radius(47px);
         margin: 0 10px;
@@ -111,7 +112,8 @@ body:not(.elementor-editor-active) .pxl-swiper-slider {
         color: #fff;
         cursor: pointer;
         font-size: 25px;
-        &:hover, &.active {
+        &:hover,
+        &.active {
             background-color: $primary_color;
             color: $secondary_color;
         }
@@ -157,29 +159,26 @@ body:not(.elementor-editor-active) .pxl-swiper-slider {
     align-items: center;
     justify-content: center;
     margin-top: 30px;
-    .style-round {
-        display: flex;
-        flex-wrap: wrap;
-        width: 78px;
-        height: 78px;
-        background-color: rgba(#fff, 0.3);
-        backdrop-filter: blur(3.5px);
-        border-radius: 78px;
+    &.style-1 {
         .pxl-swiper-arrow {
-            height: 78px;
-            width: 36px;
+            width: 70px;
+            height: 70px;
+            @include border-radius(50%);
+            background-color: $body_bg_color;
+            border: 1px solid rgba(#666f78, 0.5);
+            font-size: 14px;
+            color: $secondary_color;
             display: inline-flex;
             align-items: center;
-            color: rgba(#fff, 0.7);
-            font-size: 16px;
-            padding: 0 6px;
-            &.pxl-swiper-arrow-prev {
-                justify-content: flex-end;
-            }
+            justify-content: center;
+            @include transition(all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1));
             &:hover {
-                color: #fff;
+                background-color: $primary_color;
+                color: $body_bg_color;
             }
         }
+    }
+    &.style-2 {
     }
 }
 
@@ -189,14 +188,15 @@ body:not(.elementor-editor-active) .pxl-swiper-slider {
     align-items: center;
     flex-wrap: wrap;
     margin-top: 30px;
-    .pxl-swiper-current-slide, .pxl-swiper-total-slides {
+    .pxl-swiper-current-slide,
+    .pxl-swiper-total-slides {
         font-size: 18px;
         font-weight: 700;
         color: #cccabf;
         @extend .ft-theme-default;
         margin: 0 14px;
         &:before {
-            content: '0';
+            content: "0";
         }
     }
     .pxl-swiper-current-slide {
@@ -212,7 +212,7 @@ body:not(.elementor-editor-active) .pxl-swiper-slider {
         }
     }
     .pxl-swiper-slide {
-        @include transition(opacity .25s cubic-bezier(.645,.045,.355,1));
+        @include transition(opacity 0.25s cubic-bezier(0.645, 0.045, 0.355, 1));
     }
     .pxl-swiper-slide:not(.swiper-slide-visible) {
         opacity: 0;
@@ -250,10 +250,12 @@ body:not(.elementor-editor-active) .pxl-swiper-slider {
 }
 .swiper-container-vertical {
     height: 300px;
-    .pxl-swiper-wrapper, .swiper-wrapper {
+    .pxl-swiper-wrapper,
+    .swiper-wrapper {
         flex-direction: column;
     }
-    .pxl-swiper-slide, .swiper-slide {
+    .pxl-swiper-slide,
+    .swiper-slide {
         transform: translateZ(0);
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
@@ -291,5 +293,4 @@ body:not(.elementor-editor-active) .pxl-swiper-slider {
 }
 
 body.rtl {
-
 }

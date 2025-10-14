@@ -174,7 +174,7 @@ pxl_add_custom_widget(
                                 'label' => esc_html__('Background Color', 'northway'),
                                 'type' => \Elementor\Controls_Manager::COLOR,
                                 'selectors' => [
-                                    '{{WRAPPER}} .pxl-button .btn' => 'background-color: {{VALUE}};',
+                                    '{{WRAPPER}} .pxl-button .btn .pxl-button--icon, {{WRAPPER}} .pxl-button .btn span' => 'background-color: {{VALUE}} !important;',
                                 ],
                                 'condition' => [
                                     'btn_style' => ['btn-default'],

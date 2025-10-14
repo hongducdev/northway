@@ -29,18 +29,6 @@ pxl_add_custom_widget(
                                     'label' => esc_html__('Layout 1', 'northway'),
                                     'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_testimonial_carousel/layout1.jpg'
                                 ],
-                                '2' => [
-                                    'label' => esc_html__('Layout 2', 'northway'),
-                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_testimonial_carousel/layout2.jpg'
-                                ],
-                                '3' => [
-                                    'label' => esc_html__('Layout 3', 'northway'),
-                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_testimonial_carousel/layout3.jpg'
-                                ],
-                                '4' => [
-                                    'label' => esc_html__('Layout 4', 'northway'),
-                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_testimonial_carousel/layout4.jpg'
-                                ],
                             ],
                         ),
                     ),
@@ -54,11 +42,6 @@ pxl_add_custom_widget(
                             'name' => 'testimonial',
                             'type' => \Elementor\Controls_Manager::REPEATER,
                             'controls' => array(
-                                array(
-                                    'name' => 'image',
-                                    'label' => esc_html__('Image', 'northway'),
-                                    'type' => \Elementor\Controls_Manager::MEDIA,
-                                ),
                                 array(
                                     'name' => 'avatar',
                                     'label' => esc_html__('Avatar', 'northway'),
@@ -347,6 +330,11 @@ pxl_add_custom_widget(
                                 '5' => '5',
                                 '6' => '6',
                             ],
+                        ),
+                        array(
+                            'name' => 'arrows',
+                            'label' => esc_html__('Show Arrows', 'northway'),
+                            'type' => \Elementor\Controls_Manager::SWITCHER,
                         ),
                         array(
                             'name' => 'pagination',

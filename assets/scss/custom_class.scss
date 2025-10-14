@@ -504,6 +504,29 @@
     }
 }
 
+.pxl-container-gradient-logo-1 {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 80px;
+        height: 80px;
+        background-image: linear-gradient(to right, $secondary-color, transparent);
+        z-index: 1;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 80px;
+        height: 80px;
+        background-image: linear-gradient(to left, $secondary-color, transparent);
+    }
+}
+
 @keyframes pxl-draws-svg {
     0% {
         stroke-dashoffset: 100%;

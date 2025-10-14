@@ -223,7 +223,9 @@ pxl_add_custom_widget(
                             'label' => esc_html__('Logo Color', 'northway'),
                             'type' => \Elementor\Controls_Manager::COLOR,
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-logo-marquee1 .pxl-item--logo' => 'color: {{VALUE}};',
+                                '{{WRAPPER}} .pxl-logo-marquee1 .pxl-item--logo' => 'color: {{VALUE}} !important;',
+                                '{{WRAPPER}} .pxl-logo-marquee1 .pxl-item--logo svg path' => 'fill: {{VALUE}} !important;',
+                                '{{WRAPPER}} .pxl-logo-marquee1 .pxl-item--logo a' => 'color: {{VALUE}} !important;',
                             ],
                         ),
                         array(
@@ -231,7 +233,9 @@ pxl_add_custom_widget(
                             'label' => esc_html__('Logo Color Hover', 'northway'),
                             'type' => \Elementor\Controls_Manager::COLOR,
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-logo-marquee1 .pxl-item--logo:hover' => 'color: {{VALUE}};',
+                                '{{WRAPPER}} .pxl-logo-marquee1 .pxl-item--logo:hover' => 'color: {{VALUE}} !important;',
+                                '{{WRAPPER}} .pxl-logo-marquee1 .pxl-item--logo:hover svg path' => 'fill: {{VALUE}} !important;',
+                                '{{WRAPPER}} .pxl-logo-marquee1 .pxl-item--logo:hover a' => 'color: {{VALUE}} !important;',
                             ],
                         ),
                     ),
