@@ -77,9 +77,17 @@ pxl_add_custom_widget(
                                     'fa4compatibility' => 'icon',
                                 ),
                                 array(
+                                    'name' => 'show_info',
+                                    'label' => esc_html__('Show Info', 'northway'),
+                                    'type' => \Elementor\Controls_Manager::SWITCHER,
+                                ),
+                                array(
                                     'name' => 'avatar',
                                     'label' => esc_html__('Avatar', 'northway'),
                                     'type' => \Elementor\Controls_Manager::MEDIA,
+                                    'condition' => [
+                                        'show_info' => 'true',
+                                    ],
                                 ),
                                 array(
                                     'name' => 'name',
@@ -91,11 +99,6 @@ pxl_add_custom_widget(
                                     'name' => 'position',
                                     'label' => esc_html__('Position', 'northway'),
                                     'type' => \Elementor\Controls_Manager::TEXT,
-                                ),
-                                array(
-                                    'name' => 'signature',
-                                    'label' => esc_html__('Signature', 'northway'),
-                                    'type' => \Elementor\Controls_Manager::MEDIA,
                                 ),
                             ),
                             'title_field' => '{{{ title }}}',

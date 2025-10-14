@@ -79,8 +79,8 @@ function northway_fonts_url()
         $fonts[] = 'Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap';
     }
 
-    if ('off' !== _x('on', 'Dancing Script font: on or off', 'northway')) {
-        $fonts[] = 'Dancing Script:wght@400..700&display=swap';
+    if ('off' !== _x('on', 'Mr De Haviland font: on or off', 'northway')) {
+        $fonts[] = 'Mr+De+Haviland&display=swap';
     }
 
     if ($fonts) {
