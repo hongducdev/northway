@@ -23,54 +23,6 @@ pxl_add_custom_widget(
                                     'label' => esc_html__('Layout 1', 'northway' ),
                                     'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_icon_box/layout1.jpg'
                                 ],
-                                '2' => [
-                                    'label' => esc_html__('Layout 2', 'northway' ),
-                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_icon_box/layout2.jpg'
-                                ],
-                                '3' => [
-                                    'label' => esc_html__('Layout 3', 'northway' ),
-                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_icon_box/layout3.jpg'
-                                ],
-                                '4' => [
-                                    'label' => esc_html__('Layout 4', 'northway' ),
-                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_icon_box/layout4.jpg'
-                                ],
-                                '5' => [
-                                    'label' => esc_html__('Layout 5', 'northway' ),
-                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_icon_box/layout5.jpg'
-                                ],
-                                '6' => [
-                                    'label' => esc_html__('Layout 6', 'northway' ),
-                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_icon_box/layout6.jpg'
-                                ],
-                                '7' => [
-                                    'label' => esc_html__('Layout 7', 'northway' ),
-                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_icon_box/layout7.jpg'
-                                ],
-                                '8' => [
-                                    'label' => esc_html__('Layout 8', 'northway' ),
-                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_icon_box/layout8.jpg'
-                                ],
-                                '9' => [
-                                    'label' => esc_html__('Layout 9', 'northway' ),
-                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_icon_box/layout9.jpg'
-                                ],
-                                '10' => [
-                                    'label' => esc_html__('Layout 10', 'northway' ),
-                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_icon_box/layout10.jpg'
-                                ],
-                                '11' => [
-                                    'label' => esc_html__('Layout 11', 'northway' ),
-                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_icon_box/layout11.jpg'
-                                ],
-                                '12' => [
-                                    'label' => esc_html__('Layout 12', 'northway' ),
-                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_icon_box/layout12.jpg'
-                                ],
-                                '13' => [
-                                    'label' => esc_html__('Layout 13', 'northway' ),
-                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_icon_box/layout13.jpg'
-                                ],
                             ],
                         ),
                     ),
@@ -80,15 +32,6 @@ pxl_add_custom_widget(
                     'label' => esc_html__('Content', 'northway' ),
                     'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
                     'controls' => array(
-                        array(
-                            'name' => 'step',
-                            'label' => esc_html__('Step', 'northway' ),
-                            'type' => \Elementor\Controls_Manager::TEXT,
-                            'label_block' => true,
-                            'condition' => [
-                                'layout' => ['9'],
-                            ],
-                        ),
                         array(
                             'name' => 'title',
                             'label' => esc_html__('Title', 'northway' ),
@@ -102,15 +45,7 @@ pxl_add_custom_widget(
                             'rows' => 10,
                             'show_label' => false,
                             'condition' => [
-                                'layout!' => ['13'],
-                            ]
-                        ),
-                        array(
-                            'name' => 'memorized_desc',
-                            'label' => esc_html__('Memorized Description', 'northway' ),
-                            'type' => \Elementor\Controls_Manager::TEXT,
-                            'condition' => [
-                                'layout' => ['13'],
+                                'follow_social' => '',
                             ]
                         ),
                         array(
@@ -118,8 +53,29 @@ pxl_add_custom_widget(
                             'label' => esc_html__('Item Link', 'northway' ),
                             'type' => \Elementor\Controls_Manager::URL,
                             'condition' => [
-                                'layout' => ['2','1', '6', '7', '13'],
-                            ],
+                                'follow_social' => '',
+                            ]
+                        ),
+                        array(
+                            'name' => 'link_list',
+                            'label' => esc_html__('Link List', 'northway' ),
+                            'type' => \Elementor\Controls_Manager::REPEATER,
+                            'controls' => array(
+                                array(
+                                    'name' => 'link',
+                                    'label' => esc_html__('Link', 'northway' ),
+                                    'type' => \Elementor\Controls_Manager::URL,
+                                ),
+                                array(
+                                    'name' => 'text',
+                                    'label' => esc_html__('Text', 'northway' ),
+                                    'type' => \Elementor\Controls_Manager::TEXT,
+                                ),
+                            ),
+                            'title_field' => '{{{ text }}}',
+                            'condition' => [
+                                'follow_social' => '',
+                            ]
                         ),
                         array(
                             'name' => 'icon_type',
@@ -149,12 +105,32 @@ pxl_add_custom_widget(
                             ],
                         ),
                         array(
-                            'name' => 'image_bg',
-                            'label' => esc_html__( 'Image Background', 'northway' ),
-                            'type' => \Elementor\Controls_Manager::MEDIA,
+                            'name' => 'follow_social',
+                            'label' => esc_html__('Follow Social', 'northway' ),
+                            'type' => \Elementor\Controls_Manager::SWITCHER,
                             'condition' => [
-                                'layout' => ['9'],
+                                'layout' => ['1'],
                             ],
+                        ),
+                        array(
+                            'name' => 'follow_social_list',
+                            'label' => esc_html__('Follow Social List', 'northway' ),
+                            'type' => \Elementor\Controls_Manager::REPEATER,
+                            'condition' => [
+                                'follow_social' => 'true',
+                            ],
+                            'controls' => array(
+                                array(
+                                    'name' => 'follow_social_icon',
+                                    'label' => esc_html__('Follow Social Icon', 'northway' ),
+                                    'type' => \Elementor\Controls_Manager::ICONS,
+                                ),
+                                array(
+                                    'name' => 'follow_social_link',
+                                    'label' => esc_html__('Follow Social Link', 'northway' ),
+                                    'type' => \Elementor\Controls_Manager::URL,
+                                ),
+                            ),
                         ),
                         array(
                             'name' => 'wg_max_width',
@@ -209,53 +185,11 @@ pxl_add_custom_widget(
                             ],
                         ),
                         array(
-                            'name' => 'item_position',
-                            'label' => esc_html__('Item Position', 'northway' ),
-                            'type' => \Elementor\Controls_Manager::SELECT,
-                            'options' => [
-                                'position-1' => esc_html__('Position 1', 'northway' ),
-                                'position-2' => esc_html__('Position 2', 'northway' ),
-                                'position-3' => esc_html__('Position 3', 'northway' ),
-                                'position-4' => esc_html__('Position 4', 'northway' ),
-                            ],
-                            'default' => 'position-1',
-                            'condition' => [
-                                'layout' => ['4', '8'],
-                            ],
-                        ),
-                        array(
-                            'name' => 'item_style_9',
-                            'label' => esc_html__('Item Style', 'northway' ),
-                            'type' => \Elementor\Controls_Manager::SELECT,
-                            'options' => [
-                                'style-1' => esc_html__('Style 1', 'northway' ),
-                                'style-2' => esc_html__('Style 2', 'northway' ),
-                            ],
-                            'default' => 'style-1',
-                            'condition' => [
-                                'layout' => ['9'],
-                            ],
-                        ),
-                        array(
-                            'name' => 'border_color_4_8',
-                            'label' => esc_html__('Border Color', 'northway' ),
-                            'type' => \Elementor\Controls_Manager::COLOR,
-                            'selectors' => [
-                                '{{WRAPPER}} .pxl-icon-box .pxl-item--inner:before' => 'border-color: {{VALUE}};',
-                            ],
-                            'condition' => [
-                                'layout' => ['4', '8'],
-                            ],
-                        ),
-                        array(
                             'name' => 'bg_color',
                             'label' => esc_html__('Box Color', 'northway' ),
                             'type' => \Elementor\Controls_Manager::COLOR,
                             'selectors' => [
                                 '{{WRAPPER}} .pxl-icon-box .pxl-item--inner' => 'background-color: {{VALUE}};',
-                            ],
-                            'condition' => [
-                                'layout' => ['2','5','6','7','13'],
                             ],
                         ),
                         array(

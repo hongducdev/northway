@@ -545,6 +545,17 @@
     }
 }
 
+.pxl-height-100 {
+    height: 100%;
+}
+
+.pxl-container-contact-1 {
+    max-width: calc(100% - 120px);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @keyframes pxl-draws-svg {
     0% {
         stroke-dashoffset: 100%;

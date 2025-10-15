@@ -4299,7 +4299,7 @@ body.rtl .pxl-box-hover1 .pxl-item--inner:hover:before {
   flex-wrap: wrap;
   align-items: flex-end;
 }
-.pxl-flex-center, .pxl-swiper-arrow.style-2, .pxl-navigation-arrow.style-2, .pxl-swiper-arrow.style-3, .pxl-navigation-arrow.style-3, .pxl-breadcrumb, .pxl-icon1 a, .pxl-navigation-carousel .pxl-navigation-arrow, .pxl-icon-postformat .link-icon a, .pxl-anchor-button.style-2, .pxl-contact-info-widget .pxl-item--icon, .bt-bl-landing a, .single-product .woocommerce-social-share a, .single-product #pxl-content-area div.product .entry-summary .woocommerce-sg-product-button .woosw-btn, .single-product > div.product .entry-summary .woocommerce-sg-product-button .woosw-btn, .woocommerce-account #pxl-main #pxl-content-area .woocommerce-form .password-input .show-password-input, .thankyou-page .social-links a, .btn-readmore-1 i, .pxl-service-grid-layout1 --icon.pxl-post, .pxl-industries-grid-layout1 .pxl-grid-item .pxl-post--icon, .btn:not(.btn-stroke), .pxl-nav-menu.pxl-nav-vertical .pxl-arrow-toggle, .pxl-icon-box1 .pxl-item--icon, .pxl-contact-info1 --icon.pxl-item, .pxl-btn-video.style1, .pxl-btn-video.style2, .pxl-btn-video.style-blur, .pxl-btn-video.style-outline, .pxl-btn-video.style-outline-2, .pxl-btn-video.style-icon {
+.pxl-flex-center, .pxl-swiper-arrow.style-2, .pxl-navigation-arrow.style-2, .pxl-swiper-arrow.style-3, .pxl-navigation-arrow.style-3, .pxl-breadcrumb, .pxl-icon1 a, .pxl-navigation-carousel .pxl-navigation-arrow, .pxl-icon-postformat .link-icon a, .pxl-anchor-button.style-2, .pxl-contact-info-widget .pxl-item--icon, .bt-bl-landing a, .single-product .woocommerce-social-share a, .single-product #pxl-content-area div.product .entry-summary .woocommerce-sg-product-button .woosw-btn, .single-product > div.product .entry-summary .woocommerce-sg-product-button .woosw-btn, .woocommerce-account #pxl-main #pxl-content-area .woocommerce-form .password-input .show-password-input, .thankyou-page .social-links a, .btn-readmore-1 i, .pxl-service-grid-layout1 --icon.pxl-post, .pxl-industries-grid-layout1 .pxl-grid-item .pxl-post--icon, .btn:not(.btn-stroke), .pxl-nav-menu.pxl-nav-vertical .pxl-arrow-toggle, .pxl-contact-info1 --icon.pxl-item, .pxl-btn-video.style1, .pxl-btn-video.style2, .pxl-btn-video.style-blur, .pxl-btn-video.style-outline, .pxl-btn-video.style-outline-2, .pxl-btn-video.style-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -4522,7 +4522,7 @@ body.rtl .pxl-box-hover1 .pxl-item--inner:hover:before {
   background-image: linear-gradient(to bottom, var(--gradient-color-from), var(--gradient-color-to));
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='var(--gradient-color-from)', endColorStr='var(--gradient-color-to)');
 }
-.ft-theme-default, .pxl-swiper-pagination .pxl-swiper-current-slide, .pxl-swiper-pagination .pxl-swiper-total-slides, .pxl-text-effect1, .pxl-heading .pxl-item--title, .pxl-heading .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-heading -title.pxl-item, #pxl-search-popup .pxl-item--content form .search-field, .pxl-search-popup-button .pxl_cart_counter, .pxl-language-switch .language, .pxl-icon-postformat .link-icon a span, .pxl-banner .pxl-banner-inner .hover-content .subtitle-phone, .pxl-banner .pxl-banner-inner .hover-content .phone-number, .pxl-banner .pxl-banner-inner .hover-content .btn, .pxl-post-share a, .pxl-logo-marquee1 .pxl-item--text, .pxl-menu-primary li a, .pxl-menu-primary > li > a, .pxl--post-footer label, .pxl-post--navigation, .pxl-post--author-info .pxl-user--name, .btn--readmore, .page-links .post-page-numbers, .comments-title, .widget_rss .rsswidget, .widget_block .wp-block-search__label, .widget_block .wp-block-group__inner-container > h2, .widget_block .wp-block-archives-list, .widget_block .wp-block-categories-list, .pxl-wg-categories .pxl-category--inner span, .pxl-contact-info-widget .pxl-phone--number, .ft-gt, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label, .woocommerce #pxl-sidebar-area .widget_products ul a, .single-product .woocommerce-social-share label, .single-product section.related .woocommerce-product-content .price, .single-product #pxl-content-area div.product .wooc-product-meta button, .single-product > div.product .wooc-product-meta button, .woosw-popup .woosw-item--actions a.button, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward, .archive section.related .woocommerce-product-content .price, .archive .woocommerce-product-content .price, .woocommerce.archive .products.shop-view-list li .add_to_cart_button, .woocommerce.archive .products.shop-view-list li .added_to_cart, .ft-gt p, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label p, .woocommerce #pxl-sidebar-area .widget_products ul a p, .single-product .woocommerce-social-share label p, .single-product section.related .woocommerce-product-content .price p, .single-product #pxl-content-area div.product .wooc-product-meta button p, .single-product > div.product .wooc-product-meta button p, .woosw-popup .woosw-item--actions a.button p, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button p, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward p, .archive section.related .woocommerce-product-content .price p, .archive .woocommerce-product-content .price p, .woocommerce.archive .products.shop-view-list li .add_to_cart_button p, .woocommerce.archive .products.shop-view-list li .added_to_cart p, .ft-gt h1, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h1, .woocommerce #pxl-sidebar-area .widget_products ul a h1, .single-product .woocommerce-social-share label h1, .single-product section.related .woocommerce-product-content .price h1, .single-product #pxl-content-area div.product .wooc-product-meta button h1, .single-product > div.product .wooc-product-meta button h1, .woosw-popup .woosw-item--actions a.button h1, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h1, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h1, .archive section.related .woocommerce-product-content .price h1, .archive .woocommerce-product-content .price h1, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h1, .woocommerce.archive .products.shop-view-list li .added_to_cart h1, .ft-gt h2, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h2, .woocommerce #pxl-sidebar-area .widget_products ul a h2, .single-product .woocommerce-social-share label h2, .single-product section.related .woocommerce-product-content .price h2, .single-product #pxl-content-area div.product .wooc-product-meta button h2, .single-product > div.product .wooc-product-meta button h2, .woosw-popup .woosw-item--actions a.button h2, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h2, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h2, .archive section.related .woocommerce-product-content .price h2, .archive .woocommerce-product-content .price h2, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h2, .woocommerce.archive .products.shop-view-list li .added_to_cart h2, .ft-gt h3, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h3, .woocommerce #pxl-sidebar-area .widget_products ul a h3, .single-product .woocommerce-social-share label h3, .single-product section.related .woocommerce-product-content .price h3, .single-product #pxl-content-area div.product .wooc-product-meta button h3, .single-product > div.product .wooc-product-meta button h3, .woosw-popup .woosw-item--actions a.button h3, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h3, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h3, .archive section.related .woocommerce-product-content .price h3, .archive .woocommerce-product-content .price h3, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h3, .woocommerce.archive .products.shop-view-list li .added_to_cart h3, .ft-gt h4, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h4, .woocommerce #pxl-sidebar-area .widget_products ul a h4, .single-product .woocommerce-social-share label h4, .single-product section.related .woocommerce-product-content .price h4, .single-product #pxl-content-area div.product .wooc-product-meta button h4, .single-product > div.product .wooc-product-meta button h4, .woosw-popup .woosw-item--actions a.button h4, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h4, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h4, .archive section.related .woocommerce-product-content .price h4, .archive .woocommerce-product-content .price h4, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h4, .woocommerce.archive .products.shop-view-list li .added_to_cart h4, .ft-gt h5, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h5, .woocommerce #pxl-sidebar-area .widget_products ul a h5, .single-product .woocommerce-social-share label h5, .single-product section.related .woocommerce-product-content .price h5, .single-product #pxl-content-area div.product .wooc-product-meta button h5, .single-product > div.product .wooc-product-meta button h5, .woosw-popup .woosw-item--actions a.button h5, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h5, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h5, .archive section.related .woocommerce-product-content .price h5, .archive .woocommerce-product-content .price h5, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h5, .woocommerce.archive .products.shop-view-list li .added_to_cart h5, .ft-gt h6, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h6, .woocommerce #pxl-sidebar-area .widget_products ul a h6, .single-product .woocommerce-social-share label h6, .single-product section.related .woocommerce-product-content .price h6, .single-product #pxl-content-area div.product .wooc-product-meta button h6, .single-product > div.product .wooc-product-meta button h6, .woosw-popup .woosw-item--actions a.button h6, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h6, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h6, .archive section.related .woocommerce-product-content .price h6, .archive .woocommerce-product-content .price h6, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h6, .woocommerce.archive .products.shop-view-list li .added_to_cart h6, .ft-gt div, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label div, .woocommerce #pxl-sidebar-area .widget_products ul a div, .single-product .woocommerce-social-share label div, .single-product section.related .woocommerce-product-content .price div, .single-product #pxl-content-area div.product .wooc-product-meta button div, .single-product > div.product .wooc-product-meta button div, .woosw-popup .woosw-item--actions a.button div, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button div, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward div, .archive section.related .woocommerce-product-content .price div, .archive .woocommerce-product-content .price div, .woocommerce.archive .products.shop-view-list li .add_to_cart_button div, .woocommerce.archive .products.shop-view-list li .added_to_cart div, .ft-gt span, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label span, .woocommerce #pxl-sidebar-area .widget_products ul a span, .single-product .woocommerce-social-share label span, .single-product section.related .woocommerce-product-content .price span, .single-product #pxl-content-area div.product .wooc-product-meta button span, .single-product > div.product .wooc-product-meta button span, .woosw-popup .woosw-item--actions a.button span, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button span, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward span, .archive section.related .woocommerce-product-content .price span, .archive .woocommerce-product-content .price span, .woocommerce.archive .products.shop-view-list li .add_to_cart_button span, .woocommerce.archive .products.shop-view-list li .added_to_cart span, input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="tel"], input[type="number"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea, select, .pxl-select-higthlight, .nice-select, .single-post .comment-form input[type="text"], .single-post .comment-form textarea, .comment-form-cookies-consent, .nice-select ul.list, .wrap-ctf-bill button, .wrap-ctf3 button, .wrap-ctf-page.single-sv button, .form-contact-qrcode .first p, .form-contact-qrcode button, .form-contact-qrcode.online-appointment label, .widget_shopping_cart .total strong, #pxl-cart-sidebar .pxl-widget-cart-sidebar .widget_shopping_title, .woocommerce .woocommerce-error, .woocommerce .woocommerce-info, .woocommerce .woocommerce-message, .woocommerce .button.add_to_cart_button, .woocommerce-page .button.add_to_cart_button, .woocommerce button.single_add_to_cart_button, .woocommerce-page button.single_add_to_cart_button, .woocommerce #respond input#submit, .woocommerce-page #respond input#submit, .woocommerce a.added_to_cart.wc-forward, .woocommerce-page a.added_to_cart.wc-forward, .woocommerce .button:not(.add_to_cart_button):not(.single_add_to_cart_button):not(.added_to_cart), .woocommerce-page .button:not(.add_to_cart_button):not(.single_add_to_cart_button):not(.added_to_cart), .single-product .meta .woocommerce-review__author, .single-product #pxl-content-area div.product form.cart label, .single-product > div.product form.cart label, .single-product #pxl-content-area div.product .woocommerce-tabs .woocommerce-tabs-panel--reviews .comment-reply-title, .single-product > div.product .woocommerce-tabs .woocommerce-tabs-panel--reviews .comment-reply-title, body.woocommerce-cart .woocommerce-cart-form .shop_table thead th, .pxl-shop-topbar-wrap .woocommerce-result-count, .woocommerce.archive .products.shop-view-list li .woocommerce-wishlist button, .pxl-grid-filter .filter-item, .btn-readmore-1, .pxl-related-post .pxl-swiper-slide .pxl-post--inner .pxl-post--title, .pxl-related-post .pxl-swiper-slide .pxl-post--inner .btn--readmore, input[type="submit"], .pxl-icon-box6 .pxl-item--title, .pxl-icon-box6 .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-icon-box6 -title.pxl-item, .tt_navigation_cell .tt_tabs_navigation li a, .tt_timetable thead tr th, .tt_timetable .tt_hours_column, body .tt_timetable .event .event_header {
+.ft-theme-default, .pxl-swiper-pagination .pxl-swiper-current-slide, .pxl-swiper-pagination .pxl-swiper-total-slides, .pxl-text-effect1, .pxl-heading .pxl-item--title, .pxl-heading .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-heading -title.pxl-item, #pxl-search-popup .pxl-item--content form .search-field, .pxl-search-popup-button .pxl_cart_counter, .pxl-language-switch .language, .pxl-icon-postformat .link-icon a span, .pxl-banner .pxl-banner-inner .hover-content .subtitle-phone, .pxl-banner .pxl-banner-inner .hover-content .phone-number, .pxl-banner .pxl-banner-inner .hover-content .btn, .pxl-post-share a, .pxl-logo-marquee1 .pxl-item--text, .pxl-menu-primary li a, .pxl-menu-primary > li > a, .pxl--post-footer label, .pxl-post--navigation, .pxl-post--author-info .pxl-user--name, .btn--readmore, .page-links .post-page-numbers, .comments-title, .widget_rss .rsswidget, .widget_block .wp-block-search__label, .widget_block .wp-block-group__inner-container > h2, .widget_block .wp-block-archives-list, .widget_block .wp-block-categories-list, .pxl-wg-categories .pxl-category--inner span, .pxl-contact-info-widget .pxl-phone--number, .ft-gt, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label, .woocommerce #pxl-sidebar-area .widget_products ul a, .single-product .woocommerce-social-share label, .single-product section.related .woocommerce-product-content .price, .single-product #pxl-content-area div.product .wooc-product-meta button, .single-product > div.product .wooc-product-meta button, .woosw-popup .woosw-item--actions a.button, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward, .archive section.related .woocommerce-product-content .price, .archive .woocommerce-product-content .price, .woocommerce.archive .products.shop-view-list li .add_to_cart_button, .woocommerce.archive .products.shop-view-list li .added_to_cart, .ft-gt p, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label p, .woocommerce #pxl-sidebar-area .widget_products ul a p, .single-product .woocommerce-social-share label p, .single-product section.related .woocommerce-product-content .price p, .single-product #pxl-content-area div.product .wooc-product-meta button p, .single-product > div.product .wooc-product-meta button p, .woosw-popup .woosw-item--actions a.button p, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button p, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward p, .archive section.related .woocommerce-product-content .price p, .archive .woocommerce-product-content .price p, .woocommerce.archive .products.shop-view-list li .add_to_cart_button p, .woocommerce.archive .products.shop-view-list li .added_to_cart p, .ft-gt h1, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h1, .woocommerce #pxl-sidebar-area .widget_products ul a h1, .single-product .woocommerce-social-share label h1, .single-product section.related .woocommerce-product-content .price h1, .single-product #pxl-content-area div.product .wooc-product-meta button h1, .single-product > div.product .wooc-product-meta button h1, .woosw-popup .woosw-item--actions a.button h1, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h1, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h1, .archive section.related .woocommerce-product-content .price h1, .archive .woocommerce-product-content .price h1, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h1, .woocommerce.archive .products.shop-view-list li .added_to_cart h1, .ft-gt h2, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h2, .woocommerce #pxl-sidebar-area .widget_products ul a h2, .single-product .woocommerce-social-share label h2, .single-product section.related .woocommerce-product-content .price h2, .single-product #pxl-content-area div.product .wooc-product-meta button h2, .single-product > div.product .wooc-product-meta button h2, .woosw-popup .woosw-item--actions a.button h2, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h2, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h2, .archive section.related .woocommerce-product-content .price h2, .archive .woocommerce-product-content .price h2, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h2, .woocommerce.archive .products.shop-view-list li .added_to_cart h2, .ft-gt h3, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h3, .woocommerce #pxl-sidebar-area .widget_products ul a h3, .single-product .woocommerce-social-share label h3, .single-product section.related .woocommerce-product-content .price h3, .single-product #pxl-content-area div.product .wooc-product-meta button h3, .single-product > div.product .wooc-product-meta button h3, .woosw-popup .woosw-item--actions a.button h3, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h3, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h3, .archive section.related .woocommerce-product-content .price h3, .archive .woocommerce-product-content .price h3, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h3, .woocommerce.archive .products.shop-view-list li .added_to_cart h3, .ft-gt h4, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h4, .woocommerce #pxl-sidebar-area .widget_products ul a h4, .single-product .woocommerce-social-share label h4, .single-product section.related .woocommerce-product-content .price h4, .single-product #pxl-content-area div.product .wooc-product-meta button h4, .single-product > div.product .wooc-product-meta button h4, .woosw-popup .woosw-item--actions a.button h4, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h4, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h4, .archive section.related .woocommerce-product-content .price h4, .archive .woocommerce-product-content .price h4, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h4, .woocommerce.archive .products.shop-view-list li .added_to_cart h4, .ft-gt h5, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h5, .woocommerce #pxl-sidebar-area .widget_products ul a h5, .single-product .woocommerce-social-share label h5, .single-product section.related .woocommerce-product-content .price h5, .single-product #pxl-content-area div.product .wooc-product-meta button h5, .single-product > div.product .wooc-product-meta button h5, .woosw-popup .woosw-item--actions a.button h5, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h5, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h5, .archive section.related .woocommerce-product-content .price h5, .archive .woocommerce-product-content .price h5, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h5, .woocommerce.archive .products.shop-view-list li .added_to_cart h5, .ft-gt h6, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h6, .woocommerce #pxl-sidebar-area .widget_products ul a h6, .single-product .woocommerce-social-share label h6, .single-product section.related .woocommerce-product-content .price h6, .single-product #pxl-content-area div.product .wooc-product-meta button h6, .single-product > div.product .wooc-product-meta button h6, .woosw-popup .woosw-item--actions a.button h6, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h6, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h6, .archive section.related .woocommerce-product-content .price h6, .archive .woocommerce-product-content .price h6, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h6, .woocommerce.archive .products.shop-view-list li .added_to_cart h6, .ft-gt div, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label div, .woocommerce #pxl-sidebar-area .widget_products ul a div, .single-product .woocommerce-social-share label div, .single-product section.related .woocommerce-product-content .price div, .single-product #pxl-content-area div.product .wooc-product-meta button div, .single-product > div.product .wooc-product-meta button div, .woosw-popup .woosw-item--actions a.button div, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button div, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward div, .archive section.related .woocommerce-product-content .price div, .archive .woocommerce-product-content .price div, .woocommerce.archive .products.shop-view-list li .add_to_cart_button div, .woocommerce.archive .products.shop-view-list li .added_to_cart div, .ft-gt span, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label span, .woocommerce #pxl-sidebar-area .widget_products ul a span, .single-product .woocommerce-social-share label span, .single-product section.related .woocommerce-product-content .price span, .single-product #pxl-content-area div.product .wooc-product-meta button span, .single-product > div.product .wooc-product-meta button span, .woosw-popup .woosw-item--actions a.button span, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button span, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward span, .archive section.related .woocommerce-product-content .price span, .archive .woocommerce-product-content .price span, .woocommerce.archive .products.shop-view-list li .add_to_cart_button span, .woocommerce.archive .products.shop-view-list li .added_to_cart span, input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="tel"], input[type="number"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea, select, .pxl-select-higthlight, .nice-select, .single-post .comment-form input[type="text"], .single-post .comment-form textarea, .comment-form-cookies-consent, .nice-select ul.list, .wrap-ctf-bill button, .wrap-ctf3 button, .wrap-ctf-page.single-sv button, .form-contact-qrcode .first p, .form-contact-qrcode button, .form-contact-qrcode.online-appointment label, .widget_shopping_cart .total strong, #pxl-cart-sidebar .pxl-widget-cart-sidebar .widget_shopping_title, .woocommerce .woocommerce-error, .woocommerce .woocommerce-info, .woocommerce .woocommerce-message, .woocommerce .button.add_to_cart_button, .woocommerce-page .button.add_to_cart_button, .woocommerce button.single_add_to_cart_button, .woocommerce-page button.single_add_to_cart_button, .woocommerce #respond input#submit, .woocommerce-page #respond input#submit, .woocommerce a.added_to_cart.wc-forward, .woocommerce-page a.added_to_cart.wc-forward, .woocommerce .button:not(.add_to_cart_button):not(.single_add_to_cart_button):not(.added_to_cart), .woocommerce-page .button:not(.add_to_cart_button):not(.single_add_to_cart_button):not(.added_to_cart), .single-product .meta .woocommerce-review__author, .single-product #pxl-content-area div.product form.cart label, .single-product > div.product form.cart label, .single-product #pxl-content-area div.product .woocommerce-tabs .woocommerce-tabs-panel--reviews .comment-reply-title, .single-product > div.product .woocommerce-tabs .woocommerce-tabs-panel--reviews .comment-reply-title, body.woocommerce-cart .woocommerce-cart-form .shop_table thead th, .pxl-shop-topbar-wrap .woocommerce-result-count, .woocommerce.archive .products.shop-view-list li .woocommerce-wishlist button, .pxl-grid-filter .filter-item, .btn-readmore-1, .pxl-related-post .pxl-swiper-slide .pxl-post--inner .pxl-post--title, .pxl-related-post .pxl-swiper-slide .pxl-post--inner .btn--readmore, input[type="submit"], .tt_navigation_cell .tt_tabs_navigation li a, .tt_timetable thead tr th, .tt_timetable .tt_hours_column, body .tt_timetable .event .event_header {
   font-family: , sans-serif;
 }
 .pxl-wobble span {
@@ -14022,6 +14022,15 @@ body.rtl .widget .widget-title:before {
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+.pxl-height-100 {
+  height: 100%;
+}
+.pxl-container-contact-1 {
+  max-width: calc(100% - 120px);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 @keyframes pxl-draws-svg {
   0% {
@@ -28167,329 +28176,75 @@ input[type="submit"]:hover {
 .pxl-item--description {
   word-break: break-all;
 }
-.pxl-icon-box1 .pxl-item--icon {
-  width: 50px;
-  height: 50px;
-  border-radius: 1000px;
-  background-color: var(--primary-color);
-  z-index: 3;
-}
-.pxl-icon-box1 .pxl-item--icon i, .pxl-icon-box1 .pxl-item--icon svg, .pxl-icon-box1 .pxl-item--icon img {
-  color: #fff;
-}
 .pxl-icon-box1 .pxl-item--inner {
-  display: flex;
-  align-items: center;
+  padding: 30px;
+  -webkit-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(102, 111, 120, 0.5);
+  background: var(--body_bg-color);
+  min-height: 190px;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-.pxl-icon-box1 .pxl-item--meta {
-  height: 50px;
-  display: flex;
-  flex: 1;
-  width: 100%;
-  align-items: center;
-  justify-content: start;
-  padding: 0 33px;
-  background-color: #fff;
-  border-radius: 25px;
-  margin-left: -17px;
+.pxl-icon-box1 .pxl-item--inner:hover {
+  border-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
-.pxl-icon-box1.ani1:hover i, .pxl-icon-box1.ani1:hover svg, .pxl-icon-box1.ani1:hover img {
-  animation-name: scale;
-  animation-duration: 0.7s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+.pxl-icon-box1 .pxl-item--inner:hover .pxl-item--icon {
+  background-color: var(--body_bg-color);
 }
-.pxl-icon-box1.ani2 i, .pxl-icon-box1.ani2 svg, .pxl-icon-box1.ani2 img {
-  transform-origin: top;
-  animation: ring 1.8s ease-out infinite;
+.pxl-icon-box1 .pxl-item--inner:hover .pxl-item--icon svg path {
+  fill: var(--secondary-color);
 }
-.pxl-icon-box2 .pxl-item--inner {
-  display: inline-flex;
-  align-items: center;
-  gap: 15px;
-  height: 66px;
-  padding: 0 26px 0 7px;
-  border-radius: 60px;
-  background: #fff;
-}
-.pxl-icon-box2 .pxl-item--icon {
-  width: 53px;
-  height: 53px;
-  border-radius: 1000px;
-  background-color: var(--primary-color);
-  z-index: 3;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-.pxl-icon-box2 .pxl-item--icon a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.pxl-icon-box2 .pxl-item--icon i, .pxl-icon-box2 .pxl-item--icon svg, .pxl-icon-box2 .pxl-item--icon img {
-  color: #fff;
-}
-.pxl-icon-box2 .pxl-item--title, .pxl-icon-box2 .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-icon-box2 -title.pxl-item {
-  color: rgba(15, 55, 20, 0.7);
-  text-align: center;
-  font-family: "General Sans";
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.91;
-}
-.pxl-icon-box2 .pxl-item--description {
+.pxl-icon-box1 .pxl-item--inner:hover .pxl-item--icon i {
   color: var(--secondary-color);
-  font-family: Satoshi;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 23px;
 }
-.pxl-icon-box3.style-2.pxl-border-right .pxl-item--inner:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 0;
-  width: 1px;
-  height: 100px;
-  border-left: 1px dashed rgba(149, 136, 248, 0.5);
-  transform: translateY(-50%);
+.pxl-icon-box1 .pxl-item--inner:hover .pxl-item--icon:before {
+  border-color: rgba(102, 111, 120, 0.5);
 }
-.pxl-icon-box3.style-2 .pxl-item--inner {
-  padding-top: 99px;
-  padding-bottom: 24px;
-  background-color: #fff;
-  text-align: center;
-  position: relative;
+.pxl-icon-box1 .pxl-item--inner:hover .pxl-item--title {
+  color: var(--body_bg-color);
 }
-.pxl-icon-box3.style-2 .pxl-item--icon {
-  top: -26px;
-  width: 101px;
-  height: 101px;
+.pxl-icon-box1 .pxl-item--inner:hover .pxl-item--description {
+  color: var(--body_bg-color);
 }
-.pxl-icon-box3.style-2 .pxl-item--icon svg {
+.pxl-icon-box1 .pxl-item--inner:hover .pxl-item--link-list a {
+  color: var(--body_bg-color);
+}
+.pxl-icon-box1 .pxl-item--inner:hover .pxl-item--follow-social {
+  color: var(--body_bg-color);
+}
+.pxl-icon-box1 .pxl-item--inner:hover .pxl-item--follow-social-list a {
+  color: var(--body_bg-color);
+}
+.pxl-icon-box1 .pxl-item--header {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  margin-bottom: 26px;
+}
+.pxl-icon-box1 .pxl-item--icon {
   width: 51px;
   height: 51px;
-}
-.pxl-icon-box3.style-2 .pxl-item--icon svg path {
-  fill: #fff;
-}
-.pxl-icon-box3.style-2 .pxl-item--title {
-  color: var(--secondary-color);
-  text-align: center;
-  font-family: "General Sans";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 1.5;
-  padding-bottom: 0;
-  max-width: 145px;
-  margin: 0 auto;
-}
-.pxl-icon-box3.style-2 .pxl-item--title:after {
-  display: none;
-}
-.pxl-icon-box3.style-2 .pxl-item--content {
-  background-color: #6d9622;
-  box-shadow: 0px 5px 0px 0px #588010;
-  padding: 30px;
-}
-.pxl-icon-box3.style-2 .pxl-item--content .pxl-item--title, .pxl-icon-box3.style-2 .pxl-item--content .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-icon-box3.style-2 .pxl-item--content -title.pxl-item {
-  line-height: 1.5;
-  padding-bottom: 31px;
-}
-.pxl-icon-box3.style-2 .pxl-item--content .pxl-item--title:before, .pxl-icon-box3.style-2 .pxl-item--content .pxl-text-carousel1 -title.pxl-item:before, .pxl-text-carousel1 .pxl-icon-box3.style-2 .pxl-item--content -title.pxl-item:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 56px;
-  height: 2px;
-  background-color: #f2e458;
-  -webkit-border-radius: 4px;
-  -khtml-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-}
-.pxl-icon-box3.style-2 .pxl-item--content .pxl-item--description {
-  margin-top: 31px;
-}
-.pxl-icon-box3 .pxl-item--inner {
-  background-color: #eaf0da;
-  position: relative;
-  padding-top: 85px;
-  padding-bottom: 36px;
-  text-align: center;
-  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-.pxl-icon-box3 .pxl-item--inner:hover .pxl-item--content {
-  opacity: 1;
-  visibility: visible;
-  transform: translate(-50%, -50%) scale(1);
-}
-.pxl-icon-box3 .pxl-item--inner:hover .pxl-item--content .pxl-item--title, .pxl-icon-box3 .pxl-item--inner:hover .pxl-item--content .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-icon-box3 .pxl-item--inner:hover .pxl-item--content -title.pxl-item {
-  transform: translateY(0);
-}
-.pxl-icon-box3 .pxl-item--inner:hover .pxl-item--content .pxl-item--description {
-  transform: translateY(0);
-}
-.pxl-icon-box3 .pxl-item--icon {
-  position: absolute;
-  width: 78px;
-  height: 78px;
-  background-color: var(--primary-color);
+  -webkit-border-radius: 51px;
+  -khtml-border-radius: 51px;
+  -moz-border-radius: 51px;
+  -ms-border-radius: 51px;
+  -o-border-radius: 51px;
+  border-radius: 51px;
+  background-color: var(--secondary-color);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  left: 50%;
-  top: -16px;
-  transform: translateX(-50%);
-  -webkit-border-radius: 8px;
-  -khtml-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;
-}
-.pxl-icon-box3 .pxl-item--title, .pxl-icon-box3 .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-icon-box3 -title.pxl-item {
-  color: var(--secondary-color);
-  font-family: "General Sans";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  padding-bottom: 23px;
-  line-height: 1.45;
   position: relative;
-}
-.pxl-icon-box3 .pxl-item--title:after, .pxl-icon-box3 .pxl-text-carousel1 -title.pxl-item:after, .pxl-text-carousel1 .pxl-icon-box3 -title.pxl-item:after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 0;
-  height: 2px;
-  width: 55px;
-  -webkit-border-radius: 4px;
-  -khtml-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-  background-color: var(--primary-color);
-}
-.pxl-icon-box3 .pxl-item--content {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) scale(0.8);
-  background-color: var(--primary-color);
-  -webkit-border-radius: 10px;
-  -khtml-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
-  width: 100%;
-  opacity: 0;
-  text-align: center;
-  padding: 50px 30px;
-  box-shadow: 0px 6px 0px 0px #6d9622;
-  backdrop-filter: blur(5px);
-  -webkit-transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-  -khtml-transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-  -moz-transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-  -ms-transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-  -o-transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-  visibility: hidden;
-}
-.pxl-icon-box3 .pxl-item--content .pxl-item--title, .pxl-icon-box3 .pxl-item--content .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-icon-box3 .pxl-item--content -title.pxl-item {
-  color: #fff;
-  font-family: "General Sans";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  margin-bottom: 28px;
-  padding-bottom: 0;
-  line-height: 1.35;
-  transform: translateY(10px);
-  -webkit-transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) 0.1s;
-  -khtml-transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) 0.1s;
-  -moz-transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) 0.1s;
-  -ms-transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) 0.1s;
-  -o-transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) 0.1s;
-  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) 0.1s;
-}
-.pxl-icon-box3 .pxl-item--content .pxl-item--description {
-  color: #fff;
-  font-family: Satoshi;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 1.667;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  word-break: break-word;
-  overflow-wrap: break-word;
-  transform: translateY(15px);
-  -webkit-transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s;
-  -khtml-transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s;
-  -moz-transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s;
-  -ms-transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s;
-  -o-transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s;
-  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s;
-}
-.pxl-icon-box4 {
-  position: relative;
-}
-.pxl-icon-box4.style-2:before, .pxl-icon-box4.style-2:after {
-  display: none;
-}
-.pxl-icon-box4.style-2 .pxl-item--inner {
-  padding: 30px;
-  background-color: #eaf0da;
-  border-radius: 20px;
-}
-.pxl-icon-box4.style-2 .pxl-item--inner:before {
-  display: none;
-}
-.pxl-icon-box4.style-2 .pxl-item--header {
-  margin-bottom: 17px;
-}
-.pxl-icon-box4.style-2 .pxl-item--icon {
-  width: 65px;
-  height: 65px;
-  -webkit-border-radius: 8px;
-  -khtml-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;
-}
-.pxl-icon-box4.style-2 .pxl-item--title {
-  color: var(--secondary-color);
-  font-size: 17px;
-  font-weight: 600;
-  line-height: 1.41;
-  margin-top: 0;
-  padding-bottom: 17px;
-}
-.pxl-icon-box4:before, .pxl-icon-box4:after {
-  content: "";
-  position: absolute;
-  background-color: rgba(226, 220, 208, 0.5);
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -28497,130 +28252,46 @@ input[type="submit"]:hover {
   -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-@media screen and (max-width: 767px) {
-  .pxl-icon-box4:before, .pxl-icon-box4:after {
-    display: none;
-  }
-}
-.pxl-icon-box4.position-1:before {
-  right: 0;
-  bottom: 0;
-  width: 0.5px;
-  height: calc(100% - 25px);
-}
-.pxl-icon-box4.position-1:after {
-  right: 0;
-  bottom: 0;
-  width: calc(100% - 25px);
-  height: 0.5px;
-}
-.pxl-icon-box4.position-1 .pxl-item--inner:before {
-  transform-origin: bottom right;
-  border-radius: 25px 25px 0 25px;
-}
-@media screen and (max-width: 767px) {
-  .pxl-icon-box4.position-1 .pxl-item--inner:before {
-    border-radius: 25px;
-  }
-}
-.pxl-icon-box4.position-2:before {
-  left: 0;
-  bottom: 0;
-  width: 0.5px;
-  height: calc(100% - 25px);
-}
-.pxl-icon-box4.position-2:after {
-  left: 0;
-  bottom: 0;
-  width: calc(100% - 25px);
-  height: 0.5px;
-}
-.pxl-icon-box4.position-2 .pxl-item--inner:before {
-  transform-origin: bottom left;
-  border-radius: 25px 25px 25px 0;
-}
-@media screen and (max-width: 767px) {
-  .pxl-icon-box4.position-2 .pxl-item--inner:before {
-    border-radius: 25px;
-  }
-}
-.pxl-icon-box4.position-3:before {
-  right: 0;
-  top: 0;
-  width: 0.5px;
-  height: calc(100% - 25px);
-}
-.pxl-icon-box4.position-3:after {
-  right: 0;
-  top: 0;
-  width: calc(100% - 25px);
-  height: 0.5px;
-}
-.pxl-icon-box4.position-3 .pxl-item--inner:before {
-  transform-origin: top right;
-  border-radius: 25px 0 25px 25px;
-}
-@media screen and (max-width: 767px) {
-  .pxl-icon-box4.position-3 .pxl-item--inner:before {
-    border-radius: 25px;
-  }
-}
-.pxl-icon-box4.position-4:before {
-  left: 0;
-  top: 0;
-  width: 0.5px;
-  height: calc(100% - 25px);
-}
-.pxl-icon-box4.position-4:after {
-  left: 0;
-  top: 0;
-  width: calc(100% - 25px);
-  height: 0.5px;
-}
-.pxl-icon-box4.position-4 .pxl-item--inner:before {
-  transform-origin: top left;
-  border-radius: 0px 25px 25px 25px;
-}
-@media screen and (max-width: 767px) {
-  .pxl-icon-box4.position-4 .pxl-item--inner:before {
-    border-radius: 25px;
-  }
-}
-.pxl-icon-box4:hover:before, .pxl-icon-box4:hover:after {
-  width: 0;
-  height: 0;
-}
-.pxl-icon-box4:hover .pxl-item--inner:before {
-  transform: scale(1);
-  opacity: 1;
-}
-.pxl-icon-box4:hover .pxl-item--icon {
-  background-color: var(--secondary-color);
-}
-.pxl-icon-box4:hover .pxl-item--icon i, .pxl-icon-box4:hover .pxl-item--icon svg, .pxl-icon-box4:hover .pxl-item--icon img {
-  transform: rotateY(360deg);
-}
-.pxl-icon-box4 .pxl-item--inner {
-  padding: 37px 36px 40px 49px;
+.pxl-icon-box1 .pxl-item--icon svg, .pxl-icon-box1 .pxl-item--icon i {
   position: relative;
   z-index: 5;
 }
-@media screen and (max-width: 767px) {
-  .pxl-icon-box4 .pxl-item--inner {
-    padding: 15px;
-  }
+.pxl-icon-box1 .pxl-item--icon svg {
+  height: 19px;
 }
-.pxl-icon-box4 .pxl-item--inner:before {
+.pxl-icon-box1 .pxl-item--icon svg path {
+  fill: var(--body_bg-color);
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.pxl-icon-box1 .pxl-item--icon i {
+  color: var(--body_bg-color);
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.pxl-icon-box1 .pxl-item--icon:before {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(226, 220, 208, 0.3);
-  transform: scale(0);
-  opacity: 0;
-  transform-origin: bottom right;
+  -webkit-border-radius: 51px;
+  -khtml-border-radius: 51px;
+  -moz-border-radius: 51px;
+  -ms-border-radius: 51px;
+  -o-border-radius: 51px;
+  border-radius: 51px;
+  background-color: transparent;
+  border: 1px solid rgba(102, 111, 120, 0.5);
+  top: 0;
+  left: 10px;
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -28628,34 +28299,12 @@ input[type="submit"]:hover {
   -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-.pxl-icon-box4 .pxl-item--header {
-  display: flex;
-  gap: 20px;
-  margin-bottom: 20px;
-  z-index: 5;
-  position: relative;
-}
-@media screen and (max-width: 767px) {
-  .pxl-icon-box4 .pxl-item--header {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    text-align: center;
-  }
-}
-.pxl-icon-box4 .pxl-item--icon {
-  width: 78px;
-  height: 78px;
-  -webkit-border-radius: 8px;
-  -khtml-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;
-  background-color: var(--primary-color);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+.pxl-icon-box1 .pxl-item--title {
+  color: var(--secondary-color);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.556;
+  margin-bottom: 0;
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -28663,394 +28312,29 @@ input[type="submit"]:hover {
   -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-.pxl-icon-box4 .pxl-item--icon i, .pxl-icon-box4 .pxl-item--icon svg, .pxl-icon-box4 .pxl-item--icon img {
-  color: #fff;
-  transform: rotateY(0deg);
-  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-.pxl-icon-box4 .pxl-item--title {
-  margin-top: 10px;
-  color: #0a250e;
-  font-family: "General Sans";
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.35;
-  flex: 1;
-  position: relative;
-}
-.pxl-icon-box4 .pxl-item--title:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 10px;
-  height: 2px;
-  width: 84px;
-  background-color: var(--third-color);
-  -webkit-border-radius: 4px;
-  -khtml-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-}
-@media screen and (max-width: 767px) {
-  .pxl-icon-box4 .pxl-item--title:after {
-    width: 55px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-@media screen and (max-width: 767px) {
-  .pxl-icon-box4 .pxl-item--title {
-    padding-bottom: 30px;
-  }
-}
-.pxl-icon-box4 .pxl-item--description {
-  color: rgba(4, 20, 39, 0.7);
-  font-family: "General Sans";
-  font-size: 15px;
-  font-style: normal;
+.pxl-icon-box1 .pxl-item--description {
+  color: var(--secondary-color);
+  font-size: 16px;
   font-weight: 400;
-  line-height: 1.67;
-  z-index: 5;
-  position: relative;
-  max-width: 279px;
-  word-break: normal;
+  line-height: 1.625;
+  word-break: break-word;
   overflow-wrap: break-word;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-@media screen and (max-width: 767px) {
-  .pxl-icon-box4 .pxl-item--description {
-    max-width: 100%;
-    text-align: center;
-  }
-}
-.pxl-icon-box5 .pxl-item--inner {
-  padding: 42px 42px 40px 42px;
-  background-color: var(--secondary-color);
-  position: relative;
+.pxl-icon-box1 .pxl-item--link-list {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 425px;
 }
-.pxl-icon-box5 .pxl-item--inner:hover .pxl-item--icon-big svg path {
-  fill: rgba(255, 255, 255, 0.1);
-}
-.pxl-icon-box5 .pxl-item--inner:hover .pxl-item--icon svg {
-  animation: pxl_right_from_left 0.3s ease-in-out;
-  animation-fill-mode: forwards;
-}
-.pxl-icon-box5 .pxl-item--icon-big {
-  position: absolute;
-  top: 46px;
-  right: 48px;
-}
-.pxl-icon-box5 .pxl-item--icon-big svg {
-  width: 167px;
-  height: 167px;
-}
-.pxl-icon-box5 .pxl-item--icon-big svg path {
-  fill: rgba(255, 255, 255, 0.05);
-  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-.pxl-icon-box5 .pxl-item--icon {
-  width: 95px;
-  height: 95px;
-  -webkit-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  overflow: hidden;
+.pxl-icon-box1 .pxl-item--link-list a {
   color: var(--secondary-color);
-}
-.pxl-icon-box5 .pxl-item--icon svg path {
-  fill: var(--secondary-color);
-}
-.pxl-icon-box5 .pxl-item--title, .pxl-icon-box5 .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-icon-box5 -title.pxl-item {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: normal;
-  padding-bottom: 25px;
-  margin-bottom: 25px;
-  position: relative;
-}
-.pxl-icon-box5 .pxl-item--title:before, .pxl-icon-box5 .pxl-text-carousel1 -title.pxl-item:before, .pxl-text-carousel1 .pxl-icon-box5 -title.pxl-item:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 50px;
-  background-color: var(--third-color);
-  -webkit-border-radius: 4px;
-  -khtml-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-}
-.pxl-icon-box5 .pxl-item--description {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 17px;
-  font-style: normal;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 1.53;
-  word-break: normal;
-  overflow-wrap: break-word;
-}
-.pxl-icon-box6 .pxl-item--inner {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-}
-.pxl-icon-box6 .pxl-item--icon {
-  width: 50px;
-  height: 50px;
-  -webkit-border-radius: 50px;
-  -khtml-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  border-radius: 50px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, 0.3);
-  color: #fff;
-}
-.pxl-icon-box6 .pxl-item--icon a {
-  color: inherit;
-}
-.pxl-icon-box6 .pxl-item--body {
-  flex: 1;
-}
-.pxl-icon-box6 .pxl-item--title, .pxl-icon-box6 .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-icon-box6 -title.pxl-item {
-  margin-bottom: 0;
-  color: var(--third-color);
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.47;
-  margin-bottom: 0;
-}
-.pxl-icon-box6 .pxl-item--description {
-  color: #fff;
-  margin-bottom: 0;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 25px;
-  word-break: normal;
-  overflow-wrap: break-word;
-}
-.pxl-icon-box7 {
-  --icon-size: 96px;
-}
-.pxl-icon-box7 .pxl-item--inner {
-  position: relative;
-  padding: 75px 27px 29px 27px;
-  background-color: #6d9622;
-  border-radius: 0px 50px;
-  margin-top: calc(var(--icon-size) / 2);
-  text-align: center;
-}
-.pxl-icon-box7 .pxl-item--icon {
-  width: var(--icon-size);
-  height: var(--icon-size);
-  -webkit-border-radius: 50%;
-  -khtml-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  background-color: #fff;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: calc(var(--icon-size) / 2 * -1);
-  left: 50%;
-  transform: translateX(-50%);
-}
-.pxl-icon-box7 .pxl-item--title, .pxl-icon-box7 .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-icon-box7 -title.pxl-item {
-  color: rgba(255, 255, 255, 0.6);
-  font-family: "General Sans";
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 2.13;
-  margin-bottom: 0;
-}
-.pxl-icon-box7 .pxl-item--description {
-  color: #fff;
-  font-family: Satoshi;
-  font-size: 23px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 32px;
-  margin-bottom: 0;
-}
-.pxl-icon-box8:hover .pxl-item--header {
-  opacity: 0;
-}
-@media screen and (max-width: 767px) {
-  .pxl-icon-box8:hover .pxl-item--header {
-    opacity: 1;
-  }
-}
-.pxl-icon-box8:hover .pxl-item--description {
-  transform: scale(1.12);
-  opacity: 1;
-}
-@media screen and (max-width: 767px) {
-  .pxl-icon-box8:hover .pxl-item--description {
-    margin-top: 20px;
-    transform: none;
-    opacity: 1;
-  }
-}
-@media screen and (max-width: 767px) {
-  .pxl-icon-box8.position-1 .pxl-item--inner:before, .pxl-icon-box8.position-2 .pxl-item--inner:before, .pxl-icon-box8.position-3 .pxl-item--inner:before, .pxl-icon-box8.position-4 .pxl-item--inner:before {
-    display: none;
-  }
-}
-.pxl-icon-box8.position-1:hover .pxl-item--inner:before {
-  border-right-width: 0px;
-  border-top-width: 0px;
-}
-.pxl-icon-box8.position-1:hover ~ .position-2 .pxl-item--inner:before {
-  border-right-width: 0px;
-}
-.pxl-icon-box8.position-1:hover ~ .position-3 .pxl-item--inner:before {
-  border-top-width: 0px;
-}
-.pxl-icon-box8.position-1 .pxl-item--description {
-  transform-origin: bottom right;
-  border-radius: 25px 25px 0 25px;
-}
-@media screen and (max-width: 767px) {
-  .pxl-icon-box8.position-1 .pxl-item--description {
-    border-radius: 0;
-  }
-}
-.pxl-icon-box8.position-1 .pxl-item--inner:before {
-  border-right-width: 0.5px;
-  border-bottom-width: 0.5px;
-}
-.pxl-icon-box8.position-2:hover .pxl-item--inner:before {
-  border-right-width: 0px;
-  border-top-width: 0px;
-}
-.pxl-icon-box8.position-2:hover ~ .position-1 .pxl-item--inner:before {
-  border-right-width: 0px;
-}
-.pxl-icon-box8.position-2:hover ~ .position-4 .pxl-item--inner:before {
-  border-left-width: 0px;
-}
-.pxl-icon-box8.position-2 .pxl-item--description {
-  transform-origin: bottom left;
-  border-radius: 25px 25px 25px 0;
-}
-@media screen and (max-width: 767px) {
-  .pxl-icon-box8.position-2 .pxl-item--description {
-    border-radius: 0;
-  }
-}
-.pxl-icon-box8.position-2 .pxl-item--inner:before {
-  border-left-width: 0.5px;
-  border-bottom-width: 0.5px;
-}
-.pxl-icon-box8.position-3:hover .pxl-item--inner:before {
-  border-left-width: 0px;
-  border-top-width: 0px;
-}
-.pxl-icon-box8.position-3:hover ~ .position-1 .pxl-item--inner:before {
-  border-bottom-width: 0px;
-}
-.pxl-icon-box8.position-3:hover ~ .position-4 .pxl-item--inner:before {
-  border-left-width: 0px;
-}
-.pxl-icon-box8.position-3 .pxl-item--icon {
-  margin-top: 0;
-}
-.pxl-icon-box8.position-3 .pxl-item--description {
-  transform-origin: top right;
-  border-radius: 25px 0 25px 25px;
-}
-@media screen and (max-width: 767px) {
-  .pxl-icon-box8.position-3 .pxl-item--description {
-    border-radius: 0;
-  }
-}
-.pxl-icon-box8.position-3 .pxl-item--inner {
-  padding-top: 43px;
-  padding-bottom: 0;
-}
-.pxl-icon-box8.position-3 .pxl-item--inner:before {
-  border-right-width: 0.5px;
-  border-top-width: 0.5px;
-}
-.pxl-icon-box8.position-4:hover .pxl-item--inner:before {
-  border-left-width: 0px;
-  border-top-width: 0px;
-}
-.pxl-icon-box8.position-4:hover ~ .position-2 .pxl-item--inner:before {
-  border-bottom-width: 0px;
-}
-.pxl-icon-box8.position-4:hover ~ .position-3 .pxl-item--inner:before {
-  border-right-width: 0px;
-}
-.pxl-icon-box8.position-4 .pxl-item--icon {
-  margin-top: 0;
-}
-.pxl-icon-box8.position-4 .pxl-item--description {
-  transform-origin: top left;
-  border-radius: 0 25px 25px 25px;
-}
-@media screen and (max-width: 767px) {
-  .pxl-icon-box8.position-4 .pxl-item--description {
-    border-radius: 0;
-  }
-}
-.pxl-icon-box8.position-4 .pxl-item--inner {
-  padding-top: 43px;
-  padding-bottom: 0;
-}
-.pxl-icon-box8.position-4 .pxl-item--inner:before {
-  border-left-width: 0.5px;
-  border-top-width: 0.5px;
-}
-.pxl-icon-box8 .pxl-item--inner {
-  position: relative;
-  padding-bottom: 43px;
-}
-.pxl-icon-box8 .pxl-item--inner:before {
-  content: "";
-  position: absolute;
-  border-style: dashed;
-  border-color: rgba(226, 220, 208, 0.5);
-  border-width: 0px;
-  inset: 0;
-  opacity: 1;
+  line-height: 1.625;
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -29058,202 +28342,11 @@ input[type="submit"]:hover {
   -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-.pxl-icon-box8 .pxl-item--header {
-  text-align: center;
-  opacity: 1;
-  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-.pxl-icon-box8 .pxl-item--icon {
-  margin-top: 15px;
-}
-.pxl-icon-box8 .pxl-item--icon svg {
-  width: 58px;
-  height: 58px;
-}
-.pxl-icon-box8 .pxl-item--icon svg path {
-  fill: var(--primary-color);
-}
-.pxl-icon-box8 .pxl-item--icon i {
-  font-size: 58px;
-  color: var(--primary-color);
-}
-.pxl-icon-box8 .pxl-item--title {
-  color: #0a250e;
-  font-family: "General Sans";
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.58;
-  max-width: 220px;
-  margin: 0 auto;
-}
-.pxl-icon-box8 .pxl-item--description {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: scale(0);
-  opacity: 0;
-  transform-origin: bottom right;
-  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  background-color: rgba(226, 220, 208, 0.35);
+.pxl-icon-box1 .pxl-item--follow-social {
   color: var(--secondary-color);
-  text-align: center;
-  font-size: 15px;
-  font-style: normal;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 1.67;
-  padding: 20px;
-  border-radius: 25px 25px 0 25px;
-  word-break: normal;
-  overflow-wrap: break-word;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-@media screen and (max-width: 767px) {
-  .pxl-icon-box8 .pxl-item--description {
-    margin-top: 20px;
-    position: relative;
-    background-color: transparent !important;
-    color: var(--secondary-color);
-    transform: none;
-    opacity: 1;
-    -webkit-line-clamp: 5;
-    line-clamp: 5;
-    max-width: 100%;
-    height: auto;
-    padding: 0;
-    border-radius: 0;
-    text-align: center;
-  }
-}
-.pxl-icon-box9.style-2 .pxl-item--inner {
-  flex-direction: row-reverse;
-}
-@media screen and (max-width: 767px) {
-  .pxl-icon-box9.style-2 .pxl-item--inner {
-    flex-direction: column;
-  }
-}
-.pxl-icon-box9.style-2 .pxl-item--right {
-  padding-left: 0;
-  padding-right: 50px;
-}
-@media screen and (max-width: 767px) {
-  .pxl-icon-box9.style-2 .pxl-item--right {
-    padding-right: 0;
-  }
-}
-.pxl-icon-box9.style-2 .pxl-item--left:before {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 50px;
-  display: inline-block;
-  border-bottom: 1px dashed rgba(149, 136, 248, 0.5);
-  bottom: 0;
-  left: 0;
-}
-@media screen and (max-width: 767px) {
-  .pxl-icon-box9.style-2 .pxl-item--left:before {
-    display: none;
-  }
-}
-.pxl-icon-box9 .pxl-item--inner {
-  display: flex;
-}
-@media screen and (max-width: 767px) {
-  .pxl-icon-box9 .pxl-item--inner {
-    flex-direction: column;
-  }
-}
-.pxl-icon-box9 .pxl-item--left {
-  width: 620px;
-  height: 466px;
-  overflow: hidden;
-  position: relative;
-}
-.pxl-icon-box9 .pxl-item--left img {
-  border-radius: 3px 100px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-@media screen and (max-width: 1280px) {
-  .pxl-icon-box9 .pxl-item--left {
-    min-height: 466px;
-    height: auto;
-  }
-}
-@media screen and (max-width: 767px) {
-  .pxl-icon-box9 .pxl-item--left {
-    width: 100%;
-  }
-}
-.pxl-icon-box9 .pxl-item--right {
-  flex: 1;
-  border-bottom: 1px dashed rgba(149, 136, 248, 0.5);
-  padding: 50px;
-  padding-right: 0;
-}
-@media screen and (max-width: 767px) {
-  .pxl-icon-box9 .pxl-item--right {
-    padding: 40px 0;
-  }
-}
-.pxl-icon-box9 .pxl-item--header {
-  margin-bottom: 56px;
-  display: flex;
-  justify-content: space-between;
-}
-.pxl-icon-box9 .pxl-item--step {
-  font-size: 140px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 110px;
-  background: linear-gradient(180deg, var(--primary-color) 0%, rgba(149, 136, 248, 0.5) 55%, rgba(149, 136, 248, 0) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-@media screen and (max-width: 360px) {
-  .pxl-icon-box9 .pxl-item--step {
-    font-size: 100px;
-  }
-}
-.pxl-icon-box9 .pxl-item--title {
-  color: var(--secondary-color);
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 0.96;
-  margin-bottom: 19px;
-}
-.pxl-icon-box9 .pxl-item--icon svg {
-  height: 122px;
-  width: auto;
-}
-.pxl-icon-box9 .pxl-item--icon svg path {
-  fill: #eaf0da;
+  line-height: 1;
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -29261,259 +28354,21 @@ input[type="submit"]:hover {
   -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-@media screen and (max-width: 360px) {
-  .pxl-icon-box9 .pxl-item--icon svg {
-    height: 100px;
-  }
-}
-.pxl-icon-box9 .pxl-item--icon i {
-  font-size: 132px;
-  color: #eaf0da;
-  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-@media screen and (max-width: 360px) {
-  .pxl-icon-box9 .pxl-item--icon i {
-    font-size: 100px;
-  }
-}
-.pxl-icon-box9 .pxl-item--description {
-  color: rgba(4, 20, 39, 0.7);
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 1.6;
-  word-break: break-word;
-  word-wrap: break-word;
-}
-.pxl-icon-box10 .pxl-item--inner {
+.pxl-icon-box1 .pxl-item--follow-social-list {
+  margin-top: 6px;
   display: flex;
   align-items: center;
   gap: 20px;
-  background-color: var(--primary-color);
-  border-radius: 20px;
-  padding: 38px 30px;
+}
+.pxl-icon-box1 .pxl-item--follow-social-list a {
+  font-size: 14px;
+  color: var(--secondary-color);
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-.pxl-icon-box10 .pxl-item--inner:hover {
-  background-color: var(--secondary-color);
-}
-.pxl-icon-box10 .pxl-item--inner:hover .pxl-item--icon svg, .pxl-icon-box10 .pxl-item--inner:hover .pxl-item--icon i {
-  animation-name: wobble_vertical;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
-}
-.pxl-icon-box10 .pxl-item--icon svg {
-  height: 61px;
-  width: auto;
-}
-.pxl-icon-box10 .pxl-item--icon svg path {
-  fill: #fff;
-}
-.pxl-icon-box10 .pxl-item--icon i {
-  font-size: 61px;
-  color: #fff;
-}
-.pxl-icon-box10 .pxl-item--title {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.5;
-  margin-bottom: 0;
-}
-.pxl-icon-box11 .pxl-item--inner {
-  border-radius: 25px;
-  padding: 45px;
-  background: linear-gradient(157deg, var(--four-color) 50.84%, var(--primary-color) 165.3%);
-}
-.pxl-icon-box11 .pxl-item--inner:hover .pxl-item--icon svg, .pxl-icon-box11 .pxl-item--inner:hover .pxl-item--icon i {
-  animation-name: wobble_vertical;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
-}
-.pxl-icon-box11 .pxl-item--header {
-  display: flex;
-  gap: 20px;
-  position: relative;
-}
-.pxl-icon-box11 .pxl-item--header:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 105px;
-  width: 50px;
-  height: 2px;
-  background-color: var(--third-color);
-  -webkit-border-radius: 4px;
-  -khtml-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-}
-@media screen and (max-width: 575px) {
-  .pxl-icon-box11 .pxl-item--header {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding-bottom: 20px;
-  }
-  .pxl-icon-box11 .pxl-item--header:before {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-.pxl-icon-box11 .pxl-item--icon {
-  width: 85px;
-  height: 85px;
-  background-color: #fff;
-  border-radius: 8px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-.pxl-icon-box11 .pxl-item--icon svg {
-  height: 45px;
-  width: auto;
-}
-.pxl-icon-box11 .pxl-item--icon svg path {
-  fill: var(--secondary-color);
-}
-.pxl-icon-box11 .pxl-item--icon i {
-  font-size: 45px;
-  color: var(--secondary-color);
-}
-.pxl-icon-box11 .pxl-item--title {
-  color: #fff;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 1.5;
-  max-width: 160px;
-}
-@media screen and (max-width: 575px) {
-  .pxl-icon-box11 .pxl-item--title {
-    max-width: 100%;
-    text-align: center;
-  }
-}
-.pxl-icon-box11 .pxl-item--description {
-  margin-top: 22px;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 1.67;
-  word-break: break-word;
-  overflow-wrap: break-word;
-}
-@media screen and (max-width: 575px) {
-  .pxl-icon-box11 .pxl-item--description {
-    text-align: center;
-  }
-}
-.pxl-icon-box12.pxl-border-right .pxl-item--inner:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 0;
-  width: 1px;
-  height: calc(100% - 110px);
-  border-right: 1px dashed rgba(149, 136, 248, 0.7);
-  transform: translateY(-50%);
-}
-.pxl-icon-box12 .pxl-item--inner {
-  background-color: #eaf0da;
-  padding: 91px 30px 30px 30px;
-  position: relative;
-}
-.pxl-icon-box12 .pxl-item--inner:hover .pxl-item--icon {
-  background-color: var(--secondary-color);
-}
-.pxl-icon-box12 .pxl-item--inner:hover .pxl-item--icon svg {
-  animation: pxl_right_from_left 0.3s ease-in-out;
-  animation-fill-mode: forwards;
-}
-.pxl-icon-box12 .pxl-item--icon {
-  width: 86px;
-  height: 86px;
-  border-radius: 8px;
-  background-color: var(--primary-color);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: -20px;
-  left: 50%;
-  overflow: hidden;
-  transform: translateX(-50%);
-  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-.pxl-icon-box12 .pxl-item--icon svg {
-  height: 42px;
-  width: auto;
-}
-.pxl-icon-box12 .pxl-item--icon svg path {
-  fill: #fff;
-}
-.pxl-icon-box12 .pxl-item--title {
-  color: var(--secondary-color);
-  text-align: center;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.4;
-  margin-bottom: 15px;
-}
-.pxl-icon-box12 .pxl-item--description {
-  color: rgba(4, 20, 39, 0.7);
-  text-align: center;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 1.667;
-  word-break: break-word;
-  overflow-wrap: break-word;
-}
-.pxl-icon-box13 .pxl-item--inner {
-  background-color: var(--four-color);
-  height: 50px;
-  padding: 0 20px;
-  border-radius: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.pxl-icon-box13 .pxl-item--meta {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-}
-.pxl-icon-box13 .pxl-item--title {
-  color: #fff;
-  font-size: 13px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 0;
-}
-.pxl-icon-box13 .pxl-item--description {
-  color: #fff;
-  font-size: 13px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 0;
 }
 @keyframes wobble_vertical {
   16.65% {
