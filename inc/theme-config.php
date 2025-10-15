@@ -16,7 +16,7 @@
                 ],
                 'four'   => [
                     'title' => esc_html__('Four', 'northway'), 
-                    'value' => northway()->get_opt('four_color', '#AFB4B5')
+                    'value' => northway()->get_opt('four_color', '#666F78')
                 ],
                 'body_bg'   => [
                     'title' => esc_html__('Body Background Color', 'northway'), 

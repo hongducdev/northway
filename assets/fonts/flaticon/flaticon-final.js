@@ -12,6 +12,8 @@
         "facebook",
         "instagram",
         "search-1",
-        "shopping-cart"
+        "shopping-cart",
+        "user",
+        "comment"
     ]
 }

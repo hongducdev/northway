@@ -76,3 +76,9 @@
 .flaticon-shopping-cart:before {
     content: "\f10d";
 }
+.flaticon-user:before {
+    content: "\f10e";
+}
+.flaticon-comment:before {
+    content: "\f10f";
+}
