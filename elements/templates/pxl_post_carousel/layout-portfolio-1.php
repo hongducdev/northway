@@ -7,12 +7,12 @@ $source = $post_ids = [];
 if ($select_post_by === 'post_selected') {
     $post_ids = $widget->get_setting('source_' . $settings['post_type'] . '_post_ids', '');
 } else {
-    $source  = $widget->get_setting('source_' . $settings['post_type'], '');
+    $source = $widget->get_setting('source_' . $settings['post_type'], '');
 }
 $orderby = $widget->get_setting('orderby', 'date');
 $order = $widget->get_setting('order', 'desc');
 $limit = $widget->get_setting('limit', 6);
-$settings['layout']    = $settings['layout_' . $settings['post_type']];
+$settings['layout'] = $settings['layout_' . $settings['post_type']];
 extract(pxl_get_posts_of_grid('portfolio', [
     'source' => $source,
     'orderby' => $orderby,
@@ -55,31 +55,30 @@ $show_button = $widget->get_setting('show_button');
 $button_text = $widget->get_setting('button_text');
 $button_url = $widget->get_setting('button_url');
 $show_client = $widget->get_setting('show_client');
-$show_address = $widget->get_setting('show_address');
 
 $opts = [
-    'slide_direction'               => 'horizontal',
-    'slide_percolumn'               => 1,
-    'slide_percolumnfill'           => 1,
-    'center_slide'                  => false,
-    'slides_to_show'                => (int)$col_xl,
-    'slides_to_show_xxl'            => (int)$col_xxl,
-    'slides_to_show_lg'             => (int)$col_lg,
-    'slides_to_show_md'             => (int)$col_md,
-    'slides_to_show_sm'             => (int)$col_sm,
-    'slides_to_show_xs'             => (int)$col_xs,
-    'slides_to_scroll'              => (int)$slides_to_scroll,
-    'slides_gutter'                 => 30,
-    'arrow'                         => (bool)$arrows,
-    'pagination'                    => (bool)$pagination,
-    'pagination_type'               => $pagination_type,
-    'autoplay'                      => (bool)$autoplay,
-    'pause_on_hover'                => (bool)$pause_on_hover,
-    'pause_on_interaction'          => true,
-    'delay'                         => (int)$autoplay_speed,
-    'loop'                          => $infinite,
-    'speed'                         => (int)$speed,
-    'center'                        => (bool)$center,
+    'slide_direction' => 'horizontal',
+    'slide_percolumn' => 1,
+    'slide_percolumnfill' => 1,
+    'center_slide' => false,
+    'slides_to_show' => (int)$col_xl,
+    'slides_to_show_xxl' => (int)$col_xxl,
+    'slides_to_show_lg' => (int)$col_lg,
+    'slides_to_show_md' => (int)$col_md,
+    'slides_to_show_sm' => (int)$col_sm,
+    'slides_to_show_xs' => (int)$col_xs,
+    'slides_to_scroll' => (int)$slides_to_scroll,
+    'slides_gutter' => 30,
+    'arrow' => (bool)$arrows,
+    'pagination' => (bool)$pagination,
+    'pagination_type' => $pagination_type,
+    'autoplay' => (bool)$autoplay,
+    'pause_on_hover' => (bool)$pause_on_hover,
+    'pause_on_interaction' => true,
+    'delay' => (int)$autoplay_speed,
+    'loop' => $infinite,
+    'speed' => (int)$speed,
+    'center' => (bool)$center,
 ];
 
 $class = 'pxl-swiper-container';
@@ -88,8 +87,8 @@ if ($settings['filter_type'] == 'style-2') {
 }
 
 $widget->add_render_attribute('carousel', [
-    'class'         => $class,
-    'dir'           => is_rtl() ? 'rtl' : 'ltr',
+    'class' => $class,
+    'dir' => is_rtl() ? 'rtl' : 'ltr',
     'data-settings' => wp_json_encode($opts)
 ]); ?>
 
@@ -139,7 +138,7 @@ $widget->add_render_attribute('carousel', [
                     <?php endif; ?>
                 </div>
             </div>
-        <?php  } ?>
+        <?php } ?>
         <div class="pxl-carousel-inner <?php if ($settings['filter_type'] == 'style-2') {
                                             echo 'overflow-visible relative';
                                         } ?>">
@@ -175,7 +174,8 @@ $widget->add_render_attribute('carousel', [
                                                     $tax_count++;
                                             }
                                             if ($tax_count > 0): ?>
-                                                <span class="filter-item" data-filter-target="<?php echo esc_attr($term->slug); ?>">
+                                                <span class="filter-item"
+                                                    data-filter-target="<?php echo esc_attr($term->slug); ?>">
                                                     <span class="cat-name"><?php echo esc_html($term->name); ?>
                                                         <span class="filter-item-count">
                                                             <?php
@@ -191,108 +191,90 @@ $widget->add_render_attribute('carousel', [
                             </div>
                         </div>
                     </div>
-                <?php  } ?>
+                <?php } ?>
                 <?php if ($settings['filter'] == 'true' && $settings['filter_type'] == 'style-2') { ?>
                     <div class="col-md-10 col-xs-12 carousel-nav-appended">
-                    <?php  } else { ?>
+                    <?php } else { ?>
                         <div class="col-md-12 col-xs-12 carousel-no-appended">
-                        <?php  } ?>
+                        <?php } ?>
                         <div <?php pxl_print_html($widget->get_render_attribute_string('carousel')); ?>>
                             <div class="pxl-swiper-wrapper">
                                 <?php
                                 foreach ($posts as $post):
                                     $image_size = !empty($img_size) ? $img_size : 'full';
-                                    $client = get_post_meta($post->ID, 'portfolio_client', true);
-                                    $address = get_post_meta($post->ID, 'portfolio_address', true);
                                     if (has_post_thumbnail($post->ID) && wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), false)) {
-                                        $img_id       = get_post_thumbnail_id($post->ID);
-                                        $img          = pxl_get_image_by_size(array(
-                                            'attach_id'  => $img_id,
+                                        $img_id = get_post_thumbnail_id($post->ID);
+                                        $img = pxl_get_image_by_size(array(
+                                            'attach_id' => $img_id,
                                             'thumb_size' => $image_size
                                         ));
-                                        $thumbnail    = $img['thumbnail'];
-                                        $thumbnail_url    = $img['url'];
+                                        $thumbnail = $img['thumbnail'];
+                                        $thumbnail_url = $img['url'];
                                     }
                                     $filter_class = '';
                                     if ($select_post_by === 'term_selected')
                                         $filter_class = pxl_get_term_of_post_to_class($post->ID, array_unique($tax));
                                 ?>
-                                    <div class="pxl-swiper-slide visible" data-filter="<?php echo esc_attr($filter_class); ?>" <?php if ($drap !== false): ?>data-cursor-drap="<?php echo esc_html('Drag.', 'northway'); ?>" <?php endif; ?>>
-                                        <div class="pxl-post--inner <?php echo esc_attr($pxl_animate); ?> wow" data-wow-duration="1.2s">
-                                            <div class="pxl-post--featured " style="background-image:url(<?php echo esc_url($thumbnail_url); ?>);">
-                                                <a href="<?php echo esc_url(get_permalink($post->ID)); ?>">
+                                    <div class="pxl-swiper-slide visible"
+                                        data-filter="<?php echo esc_attr($filter_class); ?>"
+                                        <?php if ($drap !== false): ?>data-cursor-drap="<?php echo esc_html('Drag.', 'northway'); ?>" <?php endif; ?>>
+                                        <div class="pxl-post--wrapper">
+                                            <div class="pxl-post--inner <?php echo esc_attr($pxl_animate); ?> wow"
+                                            data-wow-duration="1.2s">
+                                                <div class="pxl-post--featured">
                                                     <?php echo wp_kses_post($thumbnail); ?>
-                                                </a>
-                                            </div>
-                                            <div class="pxl-post--holder">
-                                                <?php if ($show_button == 'true'): ?>
-                                                    <a class="pxl-post--button" href="<?php echo esc_url(get_permalink($post->ID)); ?>">
-                                                        <span class="button-arrow-hover">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.17427 1.61558C2.1395 1.10784 2.52294 0.668017 3.03065 0.633256L10.4921 0.122165C10.7577 0.104007 11.0183 0.20166 11.2066 0.389926C11.3949 0.57828 11.4925 0.838829 11.4743 1.10442L10.9632 8.56584C10.9285 9.07356 10.4887 9.45705 9.98099 9.4223C9.47318 9.38746 9.08987 8.94768 9.12462 8.43996L9.46762 3.43208L1.6499 11.2498C1.29004 11.6097 0.706571 11.6096 0.346719 11.2498C-0.0131339 10.8899 -0.0131425 10.3065 0.346719 9.94661L8.16443 2.1289L3.15659 2.47193C2.64888 2.50669 2.20904 2.12332 2.17427 1.61558Z" fill="currentColor" />
-                                                            </svg>
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.17427 1.61558C2.1395 1.10784 2.52294 0.668017 3.03065 0.633256L10.4921 0.122165C10.7577 0.104007 11.0183 0.20166 11.2066 0.389926C11.3949 0.57828 11.4925 0.838829 11.4743 1.10442L10.9632 8.56584C10.9285 9.07356 10.4887 9.45705 9.98099 9.4223C9.47318 9.38746 9.08987 8.94768 9.12462 8.43996L9.46762 3.43208L1.6499 11.2498C1.29004 11.6097 0.706571 11.6096 0.346719 11.2498C-0.0131339 10.8899 -0.0131425 10.3065 0.346719 9.94661L8.16443 2.1289L3.15659 2.47193C2.64888 2.50669 2.20904 2.12332 2.17427 1.61558Z" fill="currentColor" />
-                                                            </svg>
-                                                        </span>
-                                                    </a>
-                                                <?php endif; ?>
-                                                <div class="pxl-post--body">
-                                                    <?php if ($show_category == 'true'): ?>
-                                                        <div class="pxl-post--category">
-                                                            <?php
-                                                            $terms = get_the_terms($post->ID, 'portfolio-category');
-                                                            if ($terms && !is_wp_error($terms)) {
-                                                                $term_links = array();
-                                                                foreach ($terms as $term) {
-                                                                    $term_links[] = '<a href="' . esc_url(get_term_link($term)) . '">' . esc_html($term->name) . '</a>';
-                                                                }
-                                                                $separator = '<svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
-                                  <path d="M1.98476 9.5164L0.103296 11.3978C-0.034432 11.5356 -0.034432 11.7589 0.103296 11.8967C0.172195 11.9656 0.262446 12 0.352721 12C0.442972 12 0.53327 11.9656 0.602122 11.8967L2.4806 10.0182C2.39938 9.94732 2.32007 9.87357 2.2431 9.79661C2.15276 9.70624 2.06676 9.61265 1.98476 9.5164Z" fill="currentColor"/>
-                                  <path d="M11.2709 0C10.5568 0 9.14401 0.0577531 7.53638 0.433501V3.96486L11.4991 0.00218691C11.4364 0.000940605 11.3602 0 11.2709 0Z" fill="currentColor"/>
-                                  <path d="M12.0359 0.46306L8.03523 4.46366H11.6152C11.6693 4.22933 11.7189 3.9912 11.7632 3.74911C12.0567 2.14439 12.0475 0.855692 12.0359 0.46306Z" fill="currentColor"/>
-                                  <path d="M5.20862 7.29025H10.6296C10.7043 7.1386 10.7763 6.98406 10.8454 6.82613C11.0726 6.30614 11.2695 5.75208 11.4346 5.16912H7.32975L5.20862 7.29025Z" fill="currentColor"/>
-                                  <path d="M6.8309 0.616566C6.06631 0.835092 5.3585 1.10606 4.70981 1.42826L4.70974 6.79145L6.8309 4.67031V0.616566Z" fill="currentColor"/>
-                                  <path d="M2.4806 10.0182C3.33298 10.762 4.41254 11.1683 5.55466 11.1683C6.8056 11.1683 7.98166 10.6812 8.8662 9.79661C9.38629 9.2765 9.84855 8.67334 10.2487 7.9957H4.50314L2.4806 10.0182Z" fill="currentColor"/>
-                                  <path d="M4.00436 1.81222C3.34446 2.20602 2.75634 2.66034 2.24315 3.17355C1.3586 4.05807 0.871441 5.23414 0.871441 6.48507C0.871441 7.60817 1.26433 8.6708 1.98476 9.5164L4.00429 7.4969L4.00436 1.81222Z" fill="currentColor"/>
-                                </svg>';
-                                                                echo implode($separator, $term_links);
-                                                            }
-                                                            ?>
-                                                        </div>
-                                                    <?php endif; ?>
-                                                    <h5 class="pxl-post--title">
-                                                        <a href="<?php echo esc_url(get_permalink($post->ID)); ?>"><?php echo esc_html(get_the_title($post->ID)); ?></a>
-                                                    </h5>
-                                                    <?php if ($show_excerpt == 'true'): ?>
-                                                        <div class="pxl-post--content">
-                                                            <?php if ($show_excerpt == 'true'): ?>
+                                                </div>
+                                                <div class="pxl-post--holder">
+                                                    <div class="pxl-post--meta">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11" fill="none" class="pxl-post--meta-star">
+                                                            <path d="M6.1289 0.222672C6.2556 -0.074224 6.74448 -0.074224 6.87119 0.222672C6.95138 0.410547 7.04052 0.594799 7.13943 0.774832C7.4414 1.32435 7.77711 1.81559 8.14649 2.25392C8.26959 2.4 8.39638 2.54026 8.52689 2.67491C8.72247 2.87669 8.92641 3.06591 9.13852 3.24331C9.28006 3.36169 9.42556 3.47501 9.57441 3.5831C10.2443 4.06954 10.9878 4.45482 11.8036 4.75863C12.1093 4.87247 12.4258 4.97499 12.7517 5.06719C13.0827 5.1611 13.0828 5.84037 12.7517 5.93415C12.3025 6.06137 11.8722 6.20739 11.4614 6.37638C11.2325 6.4705 11.0099 6.5727 10.7931 6.6812C10.6144 6.7706 10.4386 6.86374 10.2681 6.96352C10.0287 7.10374 9.79756 7.25496 9.57441 7.41699C9.42556 7.52509 9.28006 7.63841 9.13852 7.75678C8.9264 7.93419 8.72248 8.1234 8.52689 8.32518C8.39641 8.4598 8.26957 8.60013 8.14649 8.74617C7.77712 9.18449 7.44139 9.67577 7.13943 10.2253C7.04052 10.4053 6.9514 10.5896 6.87119 10.7774C6.74444 11.0742 6.25573 11.0742 6.1289 10.7774C6.0487 10.5896 5.95955 10.4053 5.86066 10.2253C4.9482 8.56482 3.72518 7.44107 2.20702 6.6812C1.98992 6.57254 1.76672 6.47063 1.53758 6.37638C1.12705 6.20755 0.697169 6.06134 0.248398 5.93415C-0.0827832 5.84031 -0.0828154 5.1609 0.248398 5.06719C0.574114 4.97502 0.88976 4.87241 1.19534 4.75863C1.67052 4.58169 2.12101 4.37619 2.54695 4.14026C3.90841 3.38599 5.01742 2.30931 5.86066 0.774832C5.95956 0.594807 6.04872 0.410538 6.1289 0.222672Z" fill="currentColor" />
+                                                        </svg>
+                                                        <?php if ($show_category == 'true'): ?>
+                                                            <div class="pxl-post--category pxl-post--meta-item">
+                                                                <i class="flaticon-box"></i>
+                                                                <?php the_terms($post->ID, 'portfolio-category', '', ' '); ?>
+                                                            </div>
+                                                        <?php endif; ?>
+                                                        <?php if ($show_client == 'true'): ?>
+                                                            <div class="pxl-post--client pxl-post--meta-item">
+                                                                <i class="flaticon-user"></i>
                                                                 <?php
-                                                                echo wp_trim_words($post->post_excerpt, $num_words, null);
+                                                                $client = get_post_meta($post->ID, 'portfolio_client', true);
+                                                                if (!empty($client)) {
+                                                                    echo esc_html($client);
+                                                                }
                                                                 ?>
-                                                            <?php endif; ?>
-                                                        </div>
-                                                    <?php endif; ?>
-                                                    <?php if ($show_client == 'true' || $show_address == 'true'): ?>
-                                                        <div class="pxl-post--meta">
-                                                            <?php if ($show_client == 'true'): ?>
-                                                                <div class="pxl-post--client">
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
-                                                                        <path d="M2.04083 3C2.04083 2.40666 2.21678 1.82664 2.54642 1.33329C2.87606 0.839943 3.3446 0.455425 3.89278 0.228363C4.44096 0.00129985 5.04416 -0.0581101 5.6261 0.0576455C6.20804 0.173401 6.74259 0.459123 7.16215 0.878681C7.5817 1.29824 7.86743 1.83279 7.98318 2.41473C8.09894 2.99667 8.03953 3.59987 7.81247 4.14805C7.5854 4.69623 7.20088 5.16476 6.70754 5.49441C6.21419 5.82405 5.63417 6 5.04083 6C4.24546 5.99909 3.48292 5.68273 2.92051 5.12032C2.3581 4.5579 2.04174 3.79537 2.04083 3ZM10.0551 10.4421C9.99395 10.1827 9.90931 9.92938 9.80225 9.68528C9.03811 7.941 7.21411 6.85714 5.04083 6.85714C2.57354 6.85714 0.563115 8.28171 0.0376868 10.4014C-0.00923371 10.5912 -0.0123843 10.7891 0.0284734 10.9803C0.0693312 11.1715 0.153127 11.3508 0.273523 11.5048C0.393918 11.6588 0.54776 11.7834 0.723411 11.8692C0.899062 11.955 1.09192 11.9997 1.2874 12H8.79597C8.99232 12.0004 9.1862 11.9561 9.36286 11.8704C9.53953 11.7847 9.69434 11.6599 9.81554 11.5054C9.93349 11.358 10.0164 11.1856 10.0579 11.0014C10.0994 10.8172 10.0984 10.6259 10.0551 10.4421Z" fill="currentColor" />
-                                                                    </svg>
-                                                                    <span><?php echo esc_html($client); ?></span>
-                                                                </div>
-                                                            <?php endif; ?>
-                                                            <?php if ($show_address == 'true'): ?>
-                                                                <div class="pxl-post--address">
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" viewBox="0 0 10 12" fill="none">
-                                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.83871 0C7.50939 0 9.67742 2.17629 9.67742 4.85714C9.67742 6.25314 8.98349 7.69 8.11224 8.89657C6.89573 10.5817 5.37438 11.8103 5.37438 11.8103V11.8106C5.06157 12.0631 4.61585 12.0631 4.30304 11.8106V11.8103C4.30304 11.8103 2.78169 10.5817 1.56518 8.89657C0.693926 7.69 0 6.25314 0 4.85714C0 2.17629 2.16803 0 4.83871 0ZM4.83871 2.85714C5.93824 2.85714 6.83112 3.75343 6.83112 4.85714C6.83112 5.96086 5.93824 6.85714 4.83871 6.85714C3.73918 6.85714 2.8463 5.96086 2.8463 4.85714C2.8463 3.75343 3.73918 2.85714 4.83871 2.85714Z" fill="currentColor" />
-                                                                    </svg>
-                                                                    <span><?php echo esc_html($address); ?></span>
-                                                                </div>
-                                                            <?php endif; ?>
-                                                        </div>
-                                                    <?php endif; ?>
+                                                            </div>
+                                                        <?php endif; ?>
+                                                    </div>
+                                                    <div class="pxl-post--body">
+                                                        <h5 class="pxl-post--title">
+                                                            <a href="<?php echo esc_url(get_permalink($post->ID)); ?>"><?php echo esc_html(get_the_title($post->ID)); ?></a>
+                                                        </h5>
+                                                        <?php if ($show_excerpt == 'true'): ?>
+                                                            <div class="pxl-post--content">
+                                                                <?php if ($show_excerpt == 'true'): ?>
+                                                                    <?php
+                                                                    echo wp_trim_words($post->post_excerpt, $num_words, null);
+                                                                    ?>
+                                                                <?php endif; ?>
+                                                            </div>
+                                                        <?php endif; ?>
+                                                        <?php if ($show_button == 'true'): ?>
+                                                            <div class="pxl-post--button">
+                                                                <div class="pxl-post--divider"></div>
+                                                                <a class="btn pxl-button-style-2-default btn-default inline pxl-icon--right" href="<?php echo esc_url(get_permalink($post->ID)); ?>">
+                                                                    <div class="pxl-button--icon pxl-button--icon-left">
+                                                                        <i class="flaticon-arrow"></i>
+                                                                    </div>
+                                                                    <span class="pxl--btn-text"><?php echo esc_html($button_text); ?></span>
+                                                                    <div class="pxl-button--icon pxl-button--icon-right">
+                                                                        <i class="flaticon-arrow"></i>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        <?php endif; ?>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

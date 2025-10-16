@@ -16,6 +16,8 @@
         "user",
         "comment",
         "arrow",
-        "lock"
+        "lock",
+        "box",
+        "star"
     ]
 }

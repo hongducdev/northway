@@ -79,6 +79,14 @@
                         }
                         setBoxHeight();
 
+                        // GSAP slide state animation for portfolio carousel 2
+                        if (
+                            $this.hasClass("pxl-portfolio-carousel2") &&
+                            typeof gsap !== "undefined"
+                        ) {
+                            animateSlidesState(swiper, $this);
+                        }
+
                         if (
                             $this.hasClass("pxl-testimonial-carousel2") ||
                             $this.hasClass("pxl-testimonial-carousel3")
@@ -98,11 +106,13 @@
                             animateFilterWhileDragging(progress);
                         }
 
+
+
                         if (
-                            $this.hasClass("pxl-testimonial-carousel2") ||
-                            $this.hasClass("pxl-testimonial-carousel3")
+                            $this.hasClass("pxl-portfolio-carousel2") &&
+                            typeof gsap !== "undefined"
                         ) {
-                            updateTestimonialAvatars(swiper, $this);
+                            animateSlidesState(swiper, $this);
                         }
                     },
                 },
@@ -384,7 +394,7 @@
                     );
                 });
         });
-
+        
         function northway_svg_color() {
             $(".pxl-service-carousel .pxl-post--icon img").each(function () {
                 var $img = jQuery(this);
@@ -511,232 +521,6 @@
                     opacity: 1,
                     ease: "power3.out",
                 });
-            });
-        }
-
-        function initTestimonialAvatars(swiper, $container) {
-            const $avatars = $container.find(
-                ".pxl-testimonial-avatars .pxl-avatar-item"
-            );
-            $avatars.on("click", function () {
-                const slideIndex = $(this).data("slide-index");
-
-                $avatars.removeClass("active");
-
-                $(this).addClass("active");
-
-                swiper.slideTo(slideIndex);
-            });
-
-            initAvatarDrag($container);
-        }
-
-        function updateTestimonialAvatars(swiper, $container) {
-            const $avatars = $container.find(
-                ".pxl-testimonial-avatars .pxl-avatar-item"
-            );
-            const activeIndex = swiper.activeIndex;
-
-            $avatars.removeClass("active");
-
-            $avatars.eq(activeIndex).addClass("active");
-
-            autoScrollToActiveAvatar($container, activeIndex);
-        }
-
-        function autoScrollToActiveAvatar($container, activeIndex) {
-            const $wrapper = $container.find(".pxl-avatar-wrapper");
-            const $avatars = $wrapper.find(".pxl-avatar-item");
-
-            if ($avatars.length <= 5) return;
-
-            const avatarWidth = $avatars.first().outerWidth(true);
-            const containerWidth = $container
-                .find(".pxl-avatar-container")
-                .width();
-            const maxVisibleAvatars = Math.floor(containerWidth / avatarWidth);
-
-            let scrollPosition = 0;
-
-            if (activeIndex >= Math.floor(maxVisibleAvatars / 2)) {
-                scrollPosition =
-                    (activeIndex - Math.floor(maxVisibleAvatars / 2)) *
-                    avatarWidth;
-
-                const maxScroll =
-                    ($avatars.length - maxVisibleAvatars) * avatarWidth;
-                scrollPosition = Math.min(scrollPosition, maxScroll);
-            }
-
-            if (typeof gsap !== "undefined") {
-                gsap.to($wrapper[0], {
-                    x: -scrollPosition,
-                    duration: 0.5,
-                    ease: "power2.out",
-                });
-            } else {
-                $wrapper.css(
-                    "transform",
-                    "translateX(" + -scrollPosition + "px)"
-                );
-            }
-        }
-
-        function initAvatarDrag($container) {
-            const $wrapper = $container.find(".pxl-avatar-wrapper");
-            const $avatars = $wrapper.find(".pxl-avatar-item");
-            const $avatarContainer = $container.find(".pxl-avatar-container");
-
-            if ($avatars.length <= 5) return;
-
-            let startX = 0;
-            let currentX = 0;
-            let isDragging = false;
-            let startOffset = 0;
-            let currentOffset = 0;
-            let velocity = 0;
-            let lastX = 0;
-            let lastTime = 0;
-
-            const avatarWidth = $avatars.first().outerWidth(true);
-            const containerWidth = $avatarContainer.width();
-            const maxVisibleAvatars = Math.floor(containerWidth / avatarWidth);
-            const maxOffset = Math.max(
-                0,
-                ($avatars.length - maxVisibleAvatars) * avatarWidth
-            );
-
-            function clampOffset(offset) {
-                return Math.max(0, Math.min(maxOffset, offset));
-            }
-
-            function updateTransform(offset, animate = false) {
-                const clampedOffset = clampOffset(offset);
-
-                if (typeof gsap !== "undefined") {
-                    if (animate) {
-                        gsap.to($wrapper[0], {
-                            x: -clampedOffset,
-                            duration: 0.5,
-                            ease: "power2.out",
-                        });
-                    } else {
-                        gsap.set($wrapper[0], { x: -clampedOffset });
-                    }
-                } else {
-                    $wrapper.css(
-                        "transform",
-                        "translateX(" + -clampedOffset + "px)"
-                    );
-                }
-
-                currentOffset = clampedOffset;
-            }
-
-            $avatarContainer.on("mousedown", function (e) {
-                isDragging = true;
-                startX = e.clientX;
-                startOffset = currentOffset;
-                lastX = e.clientX;
-                lastTime = Date.now();
-                velocity = 0;
-
-                $avatarContainer.addClass("dragging");
-                $wrapper.css("transition", "none");
-            });
-
-            $(document).on("mousemove", function (e) {
-                if (!isDragging) return;
-
-                e.preventDefault();
-                currentX = e.clientX;
-                const deltaX = startX - currentX;
-                const newOffset = startOffset + deltaX;
-
-                const currentTime = Date.now();
-                const deltaTime = currentTime - lastTime;
-                if (deltaTime > 0) {
-                    velocity = (currentX - lastX) / deltaTime;
-                }
-                lastX = currentX;
-                lastTime = currentTime;
-
-                updateTransform(newOffset);
-            });
-
-            $(document).on("mouseup", function () {
-                if (!isDragging) return;
-
-                isDragging = false;
-                $avatarContainer.removeClass("dragging");
-                $wrapper.css("transition", "");
-
-                let finalOffset = currentOffset;
-                const momentum = velocity * 200;
-                finalOffset = clampOffset(currentOffset - momentum);
-
-                updateTransform(finalOffset, true);
-            });
-
-            $avatarContainer.on("touchstart", function (e) {
-                isDragging = true;
-                startX = e.originalEvent.touches[0].clientX;
-                startOffset = currentOffset;
-                lastX = startX;
-                lastTime = Date.now();
-                velocity = 0;
-
-                $avatarContainer.addClass("dragging");
-                $wrapper.css("transition", "none");
-            });
-
-            $avatarContainer.on("touchmove", function (e) {
-                if (!isDragging) return;
-
-                e.preventDefault();
-                currentX = e.originalEvent.touches[0].clientX;
-                const deltaX = startX - currentX;
-                const newOffset = startOffset + deltaX;
-
-                const currentTime = Date.now();
-                const deltaTime = currentTime - lastTime;
-                if (deltaTime > 0) {
-                    velocity = (currentX - lastX) / deltaTime;
-                }
-                lastX = currentX;
-                lastTime = currentTime;
-
-                updateTransform(newOffset);
-            });
-
-            $avatarContainer.on("touchend", function () {
-                if (!isDragging) return;
-
-                isDragging = false;
-                $avatarContainer.removeClass("dragging");
-                $wrapper.css("transition", "");
-
-                let finalOffset = currentOffset;
-                const momentum = velocity * 200;
-                finalOffset = clampOffset(currentOffset - momentum);
-
-                updateTransform(finalOffset, true);
-            });
-
-            $(window).on("resize", function () {
-                const newContainerWidth = $avatarContainer.width();
-                const newMaxVisibleAvatars = Math.floor(
-                    newContainerWidth / avatarWidth
-                );
-                const newMaxOffset = Math.max(
-                    0,
-                    ($avatars.length - newMaxVisibleAvatars) * avatarWidth
-                );
-
-                if (currentOffset > newMaxOffset) {
-                    currentOffset = newMaxOffset;
-                    updateTransform(currentOffset, true);
-                }
             });
         }
     }

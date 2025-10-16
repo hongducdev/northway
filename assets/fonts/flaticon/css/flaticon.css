@@ -76,10 +76,10 @@
 .flaticon-shopping-cart:before {
     content: "\f10d";
 }
-.flaticon-user:before {
+.flaticon-comment:before {
     content: "\f10e";
 }
-.flaticon-comment:before {
+.flaticon-user:before {
     content: "\f10f";
 }
 .flaticon-arrow:before {
@@ -87,4 +87,10 @@
 }
 .flaticon-lock:before {
     content: "\f111";
+}
+.flaticon-box:before {
+    content: "\f112";
+}
+.flaticon-star:before {
+    content: "\f113";
 }

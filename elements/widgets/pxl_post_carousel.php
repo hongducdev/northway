@@ -874,23 +874,6 @@ pxl_add_custom_widget(
                                 ],
                             ]
                         ),
-                        array(
-                            'name' => 'show_address',
-                            'label' => esc_html__('Show Address', 'northway'),
-                            'type' => \Elementor\Controls_Manager::SWITCHER,
-                            'default' => 'true',
-                            'conditions' => [
-                                'relation' => 'or',
-                                'terms' => [
-                                    [
-                                        'terms' => [
-                                            ['name' => 'post_type', 'operator' => '==', 'value' => 'portfolio'],
-                                            ['name' => 'layout_portfolio', 'operator' => 'in', 'value' => ['portfolio-1']]
-                                        ]
-                                    ]
-                                ],
-                            ]
-                        ),
                     ),
                 ),
                 array(

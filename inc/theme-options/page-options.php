@@ -338,12 +338,6 @@ function northway_page_options_register($metabox)
 								'default'  => '',
 							),
 							array(
-								'id'       => 'portfolio_address',
-								'type'     => 'text',
-								'title'    => esc_html__('Portfolio Address', 'northway'),
-								'default'  => '',
-							),
-							array(
 								'id'       => 'portfolio_icon_type',
 								'type'     => 'button_set',
 								'title'    => esc_html__('Icon Type', 'northway'),
