@@ -26,6 +26,19 @@ pxl_add_custom_widget(
                             ],
                         ),
                         array(
+                            'name' => 'btn_style_for_default',
+                            'label' => esc_html__('Button Style for Default', 'northway'),
+                            'type' => \Elementor\Controls_Manager::SELECT,
+                            'condition' => [
+                                'btn_style' => ['btn-default'],
+                            ],
+                            'default' => 'style-1-default',
+                            'options' => [
+                                'style-1-default' => esc_html__('Style 1', 'northway'),
+                                'style-2-default' => esc_html__('Style 2', 'northway'),
+                            ],
+                        ),
+                        array(
                             'name'         => 'title_gradient',
                             'label' => esc_html__('Background Type', 'northway'),
                             'type'         => \Elementor\Group_Control_Background::get_type(),

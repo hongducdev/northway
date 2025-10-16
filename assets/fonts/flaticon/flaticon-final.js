@@ -14,6 +14,8 @@
         "search-1",
         "shopping-cart",
         "user",
-        "comment"
+        "comment",
+        "arrow",
+        "lock"
     ]
 }

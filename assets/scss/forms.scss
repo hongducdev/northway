@@ -49,24 +49,20 @@ select,
 .pxl-select-higthlight,
 .nice-select {
     @extend .ft-theme-default;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.7);
-    background-color: #fff;
-    padding: 0 20px;
+    height: 52px;
+    border: 1px solid rgba($four_color_hex, 0.5);
+    background-color: $body_bg_color;
+    padding: 0 30px;
     color: $secondary_color;
-    font-size: 15px;
+    font-size: 16px;
     outline: none;
-    box-shadow: 0px 3px 0px 0px #e2dcd0;
     @include transition(all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1));
-    @include border-radius(8px);
+    @include border-radius(10px);
     width: 100%;
     outline: none;
     font-family: inherit;
-    @media (max-width: 1024px) {
-        padding: 6px 15px;
-    }
     &::placeholder {
-        color: $secondary_color;
+        color: rgba($four_color_hex, 0.5);
         font-style: italic;
     }
 }
@@ -80,17 +76,17 @@ input[type="range"] {
     border: none;
 }
 select {
-    height: 49px;
+    height: 52px;
 }
 textarea {
     resize: none;
-    height: 150px;
-    padding: 20px;
+    height: 105px;
+    padding: 30px;
     line-height: 1.8;
     margin: 0;
-    @include border-radius(8px);
+    @include border-radius(10px);
     &::placeholder {
-        color: $secondary_color;
+        color: rgba($four_color_hex, 0.5);
     }
 }
 
@@ -484,10 +480,10 @@ textarea {
         list-style: none;
         margin: 10px 0 0;
         padding: 12px 18px;
-        background-color: #fff;
+        background-color: #fefff8;
         z-index: 900;
         font-size: 16px;
-        color: #666;
+        color: rgba($secondary_color_hex, 0.7);
         font-family: inherit;
         box-shadow: 0 3px 65px rgba(1, 1, 1, 0.08);
         @include border-radius(0px);
@@ -506,8 +502,8 @@ textarea {
                 display: none;
             }
             &:hover {
-                color: #0a1320;
-                background-color: rgba(#0a1320, 0.04);
+                color: $secondary_color;
+                background-color: rgba($secondary_color_hex, 0.04);
             }
         }
     }

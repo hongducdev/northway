@@ -526,3 +526,6 @@ function northway_update_elementor_font_groups_control($font_groups)
 // 	$additional_fonts['Satoshi'] = 'pxlfonts';
 // 	return $additional_fonts;
 // }
+
+// Remove p tag in Contact Form 7
+add_filter('wpcf7_autop_or_not', '__return_false');

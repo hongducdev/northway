@@ -82,3 +82,9 @@
 .flaticon-comment:before {
     content: "\f10f";
 }
+.flaticon-arrow:before {
+    content: "\f110";
+}
+.flaticon-lock:before {
+    content: "\f111";
+}

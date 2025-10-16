@@ -4299,7 +4299,7 @@ body.rtl .pxl-box-hover1 .pxl-item--inner:hover:before {
   flex-wrap: wrap;
   align-items: flex-end;
 }
-.pxl-flex-center, .pxl-swiper-arrow.style-2, .pxl-navigation-arrow.style-2, .pxl-swiper-arrow.style-3, .pxl-navigation-arrow.style-3, .pxl-breadcrumb, .pxl-icon1 a, .pxl-navigation-carousel .pxl-navigation-arrow, .pxl-icon-postformat .link-icon a, .pxl-anchor-button.style-2, .pxl-contact-info-widget .pxl-item--icon, .bt-bl-landing a, .single-product .woocommerce-social-share a, .single-product #pxl-content-area div.product .entry-summary .woocommerce-sg-product-button .woosw-btn, .single-product > div.product .entry-summary .woocommerce-sg-product-button .woosw-btn, .woocommerce-account #pxl-main #pxl-content-area .woocommerce-form .password-input .show-password-input, .thankyou-page .social-links a, .btn-readmore-1 i, .pxl-service-grid-layout1 --icon.pxl-post, .pxl-industries-grid-layout1 .pxl-grid-item .pxl-post--icon, .btn:not(.btn-stroke), .pxl-nav-menu.pxl-nav-vertical .pxl-arrow-toggle, .pxl-contact-info1 --icon.pxl-item, .pxl-btn-video.style1, .pxl-btn-video.style2, .pxl-btn-video.style-blur, .pxl-btn-video.style-outline, .pxl-btn-video.style-outline-2, .pxl-btn-video.style-icon {
+.pxl-flex-center, .pxl-swiper-arrow.style-2, .pxl-navigation-arrow.style-2, .pxl-swiper-arrow.style-3, .pxl-navigation-arrow.style-3, .pxl-breadcrumb, .pxl-icon1 a, .pxl-navigation-carousel .pxl-navigation-arrow, .pxl-icon-postformat .link-icon a, .pxl-anchor-button.style-2, .pxl-contact-info-widget .pxl-item--icon, .bt-bl-landing a, .single-product .woocommerce-social-share a, .single-product #pxl-content-area div.product .entry-summary .woocommerce-sg-product-button .woosw-btn, .single-product > div.product .entry-summary .woocommerce-sg-product-button .woosw-btn, .woocommerce-account #pxl-main #pxl-content-area .woocommerce-form .password-input .show-password-input, .thankyou-page .social-links a, .btn-readmore-1 i, .pxl-service-grid-layout1 --icon.pxl-post, .pxl-industries-grid-layout1 .pxl-grid-item .pxl-post--icon, .btn:not(.btn-stroke), button:not(.btn-stroke), .button:not(.btn-stroke), .pxl-nav-menu.pxl-nav-vertical .pxl-arrow-toggle, .pxl-contact-info1 --icon.pxl-item, .pxl-btn-video.style1, .pxl-btn-video.style2, .pxl-btn-video.style-blur, .pxl-btn-video.style-outline, .pxl-btn-video.style-outline-2, .pxl-btn-video.style-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -4360,7 +4360,7 @@ body.rtl .pxl-box-hover1 .pxl-item--inner:hover:before {
   width: 100%;
   height: 100%;
 }
-.pxl-full-w .btn {
+.pxl-full-w .btn, .pxl-full-w button, .pxl-full-w .button {
   width: 100%;
   height: 100% !important;
   background-color: transparent !important;
@@ -4522,7 +4522,7 @@ body.rtl .pxl-box-hover1 .pxl-item--inner:hover:before {
   background-image: linear-gradient(to bottom, var(--gradient-color-from), var(--gradient-color-to));
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='var(--gradient-color-from)', endColorStr='var(--gradient-color-to)');
 }
-.ft-theme-default, .pxl-swiper-pagination .pxl-swiper-current-slide, .pxl-swiper-pagination .pxl-swiper-total-slides, .pxl-text-effect1, .pxl-heading .pxl-item--title, .pxl-heading .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-heading -title.pxl-item, #pxl-search-popup .pxl-item--content form .search-field, .pxl-search-popup-button .pxl_cart_counter, .pxl-language-switch .language, .pxl-icon-postformat .link-icon a span, .pxl-banner .pxl-banner-inner .hover-content .subtitle-phone, .pxl-banner .pxl-banner-inner .hover-content .phone-number, .pxl-banner .pxl-banner-inner .hover-content .btn, .pxl-post-share a, .pxl-logo-marquee1 .pxl-item--text, .pxl-menu-primary li a, .pxl-menu-primary > li > a, .pxl--post-footer label, .pxl-post--navigation, .pxl-post--author-info .pxl-user--name, .btn--readmore, .page-links .post-page-numbers, .comments-title, .widget_rss .rsswidget, .widget_block .wp-block-search__label, .widget_block .wp-block-group__inner-container > h2, .widget_block .wp-block-archives-list, .widget_block .wp-block-categories-list, .pxl-wg-categories .pxl-category--inner span, .pxl-contact-info-widget .pxl-phone--number, .ft-gt, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label, .woocommerce #pxl-sidebar-area .widget_products ul a, .single-product .woocommerce-social-share label, .single-product section.related .woocommerce-product-content .price, .single-product #pxl-content-area div.product .wooc-product-meta button, .single-product > div.product .wooc-product-meta button, .woosw-popup .woosw-item--actions a.button, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward, .archive section.related .woocommerce-product-content .price, .archive .woocommerce-product-content .price, .woocommerce.archive .products.shop-view-list li .add_to_cart_button, .woocommerce.archive .products.shop-view-list li .added_to_cart, .ft-gt p, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label p, .woocommerce #pxl-sidebar-area .widget_products ul a p, .single-product .woocommerce-social-share label p, .single-product section.related .woocommerce-product-content .price p, .single-product #pxl-content-area div.product .wooc-product-meta button p, .single-product > div.product .wooc-product-meta button p, .woosw-popup .woosw-item--actions a.button p, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button p, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward p, .archive section.related .woocommerce-product-content .price p, .archive .woocommerce-product-content .price p, .woocommerce.archive .products.shop-view-list li .add_to_cart_button p, .woocommerce.archive .products.shop-view-list li .added_to_cart p, .ft-gt h1, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h1, .woocommerce #pxl-sidebar-area .widget_products ul a h1, .single-product .woocommerce-social-share label h1, .single-product section.related .woocommerce-product-content .price h1, .single-product #pxl-content-area div.product .wooc-product-meta button h1, .single-product > div.product .wooc-product-meta button h1, .woosw-popup .woosw-item--actions a.button h1, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h1, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h1, .archive section.related .woocommerce-product-content .price h1, .archive .woocommerce-product-content .price h1, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h1, .woocommerce.archive .products.shop-view-list li .added_to_cart h1, .ft-gt h2, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h2, .woocommerce #pxl-sidebar-area .widget_products ul a h2, .single-product .woocommerce-social-share label h2, .single-product section.related .woocommerce-product-content .price h2, .single-product #pxl-content-area div.product .wooc-product-meta button h2, .single-product > div.product .wooc-product-meta button h2, .woosw-popup .woosw-item--actions a.button h2, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h2, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h2, .archive section.related .woocommerce-product-content .price h2, .archive .woocommerce-product-content .price h2, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h2, .woocommerce.archive .products.shop-view-list li .added_to_cart h2, .ft-gt h3, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h3, .woocommerce #pxl-sidebar-area .widget_products ul a h3, .single-product .woocommerce-social-share label h3, .single-product section.related .woocommerce-product-content .price h3, .single-product #pxl-content-area div.product .wooc-product-meta button h3, .single-product > div.product .wooc-product-meta button h3, .woosw-popup .woosw-item--actions a.button h3, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h3, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h3, .archive section.related .woocommerce-product-content .price h3, .archive .woocommerce-product-content .price h3, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h3, .woocommerce.archive .products.shop-view-list li .added_to_cart h3, .ft-gt h4, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h4, .woocommerce #pxl-sidebar-area .widget_products ul a h4, .single-product .woocommerce-social-share label h4, .single-product section.related .woocommerce-product-content .price h4, .single-product #pxl-content-area div.product .wooc-product-meta button h4, .single-product > div.product .wooc-product-meta button h4, .woosw-popup .woosw-item--actions a.button h4, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h4, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h4, .archive section.related .woocommerce-product-content .price h4, .archive .woocommerce-product-content .price h4, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h4, .woocommerce.archive .products.shop-view-list li .added_to_cart h4, .ft-gt h5, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h5, .woocommerce #pxl-sidebar-area .widget_products ul a h5, .single-product .woocommerce-social-share label h5, .single-product section.related .woocommerce-product-content .price h5, .single-product #pxl-content-area div.product .wooc-product-meta button h5, .single-product > div.product .wooc-product-meta button h5, .woosw-popup .woosw-item--actions a.button h5, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h5, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h5, .archive section.related .woocommerce-product-content .price h5, .archive .woocommerce-product-content .price h5, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h5, .woocommerce.archive .products.shop-view-list li .added_to_cart h5, .ft-gt h6, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h6, .woocommerce #pxl-sidebar-area .widget_products ul a h6, .single-product .woocommerce-social-share label h6, .single-product section.related .woocommerce-product-content .price h6, .single-product #pxl-content-area div.product .wooc-product-meta button h6, .single-product > div.product .wooc-product-meta button h6, .woosw-popup .woosw-item--actions a.button h6, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h6, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h6, .archive section.related .woocommerce-product-content .price h6, .archive .woocommerce-product-content .price h6, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h6, .woocommerce.archive .products.shop-view-list li .added_to_cart h6, .ft-gt div, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label div, .woocommerce #pxl-sidebar-area .widget_products ul a div, .single-product .woocommerce-social-share label div, .single-product section.related .woocommerce-product-content .price div, .single-product #pxl-content-area div.product .wooc-product-meta button div, .single-product > div.product .wooc-product-meta button div, .woosw-popup .woosw-item--actions a.button div, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button div, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward div, .archive section.related .woocommerce-product-content .price div, .archive .woocommerce-product-content .price div, .woocommerce.archive .products.shop-view-list li .add_to_cart_button div, .woocommerce.archive .products.shop-view-list li .added_to_cart div, .ft-gt span, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label span, .woocommerce #pxl-sidebar-area .widget_products ul a span, .single-product .woocommerce-social-share label span, .single-product section.related .woocommerce-product-content .price span, .single-product #pxl-content-area div.product .wooc-product-meta button span, .single-product > div.product .wooc-product-meta button span, .woosw-popup .woosw-item--actions a.button span, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button span, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward span, .archive section.related .woocommerce-product-content .price span, .archive .woocommerce-product-content .price span, .woocommerce.archive .products.shop-view-list li .add_to_cart_button span, .woocommerce.archive .products.shop-view-list li .added_to_cart span, input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="tel"], input[type="number"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea, select, .pxl-select-higthlight, .nice-select, .single-post .comment-form input[type="text"], .single-post .comment-form textarea, .comment-form-cookies-consent, .nice-select ul.list, .wrap-ctf-bill button, .wrap-ctf3 button, .wrap-ctf-page.single-sv button, .form-contact-qrcode .first p, .form-contact-qrcode button, .form-contact-qrcode.online-appointment label, .widget_shopping_cart .total strong, #pxl-cart-sidebar .pxl-widget-cart-sidebar .widget_shopping_title, .woocommerce .woocommerce-error, .woocommerce .woocommerce-info, .woocommerce .woocommerce-message, .woocommerce .button.add_to_cart_button, .woocommerce-page .button.add_to_cart_button, .woocommerce button.single_add_to_cart_button, .woocommerce-page button.single_add_to_cart_button, .woocommerce #respond input#submit, .woocommerce-page #respond input#submit, .woocommerce a.added_to_cart.wc-forward, .woocommerce-page a.added_to_cart.wc-forward, .woocommerce .button:not(.add_to_cart_button):not(.single_add_to_cart_button):not(.added_to_cart), .woocommerce-page .button:not(.add_to_cart_button):not(.single_add_to_cart_button):not(.added_to_cart), .single-product .meta .woocommerce-review__author, .single-product #pxl-content-area div.product form.cart label, .single-product > div.product form.cart label, .single-product #pxl-content-area div.product .woocommerce-tabs .woocommerce-tabs-panel--reviews .comment-reply-title, .single-product > div.product .woocommerce-tabs .woocommerce-tabs-panel--reviews .comment-reply-title, body.woocommerce-cart .woocommerce-cart-form .shop_table thead th, .pxl-shop-topbar-wrap .woocommerce-result-count, .woocommerce.archive .products.shop-view-list li .woocommerce-wishlist button, .pxl-grid-filter .filter-item, .btn-readmore-1, .pxl-related-post .pxl-swiper-slide .pxl-post--inner .pxl-post--title, .pxl-related-post .pxl-swiper-slide .pxl-post--inner .btn--readmore, input[type="submit"], .tt_navigation_cell .tt_tabs_navigation li a, .tt_timetable thead tr th, .tt_timetable .tt_hours_column, body .tt_timetable .event .event_header {
+.ft-theme-default, .pxl-swiper-pagination .pxl-swiper-current-slide, .pxl-swiper-pagination .pxl-swiper-total-slides, .pxl-text-effect1, .pxl-heading .pxl-item--title, .pxl-heading .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-heading -title.pxl-item, #pxl-search-popup .pxl-item--content form .search-field, .pxl-search-popup-button .pxl_cart_counter, .pxl-language-switch .language, .pxl-icon-postformat .link-icon a span, .pxl-banner .pxl-banner-inner .hover-content .subtitle-phone, .pxl-banner .pxl-banner-inner .hover-content .phone-number, .pxl-banner .pxl-banner-inner .hover-content .btn, .pxl-banner .pxl-banner-inner .hover-content button, .pxl-banner .pxl-banner-inner .hover-content .button, .pxl-post-share a, .pxl-logo-marquee1 .pxl-item--text, .pxl-menu-primary li a, .pxl-menu-primary > li > a, .pxl--post-footer label, .pxl-post--navigation, .pxl-post--author-info .pxl-user--name, .btn--readmore, .page-links .post-page-numbers, .comments-title, .widget_rss .rsswidget, .widget_block .wp-block-search__label, .widget_block .wp-block-group__inner-container > h2, .widget_block .wp-block-archives-list, .widget_block .wp-block-categories-list, .pxl-wg-categories .pxl-category--inner span, .pxl-contact-info-widget .pxl-phone--number, .ft-gt, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label, .woocommerce #pxl-sidebar-area .widget_products ul a, .single-product .woocommerce-social-share label, .single-product section.related .woocommerce-product-content .price, .single-product #pxl-content-area div.product .wooc-product-meta button, .single-product > div.product .wooc-product-meta button, .woosw-popup .woosw-item--actions a.button, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward, .archive section.related .woocommerce-product-content .price, .archive .woocommerce-product-content .price, .woocommerce.archive .products.shop-view-list li .add_to_cart_button, .woocommerce.archive .products.shop-view-list li .added_to_cart, .ft-gt p, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label p, .woocommerce #pxl-sidebar-area .widget_products ul a p, .single-product .woocommerce-social-share label p, .single-product section.related .woocommerce-product-content .price p, .single-product #pxl-content-area div.product .wooc-product-meta button p, .single-product > div.product .wooc-product-meta button p, .woosw-popup .woosw-item--actions a.button p, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button p, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward p, .archive section.related .woocommerce-product-content .price p, .archive .woocommerce-product-content .price p, .woocommerce.archive .products.shop-view-list li .add_to_cart_button p, .woocommerce.archive .products.shop-view-list li .added_to_cart p, .ft-gt h1, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h1, .woocommerce #pxl-sidebar-area .widget_products ul a h1, .single-product .woocommerce-social-share label h1, .single-product section.related .woocommerce-product-content .price h1, .single-product #pxl-content-area div.product .wooc-product-meta button h1, .single-product > div.product .wooc-product-meta button h1, .woosw-popup .woosw-item--actions a.button h1, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h1, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h1, .archive section.related .woocommerce-product-content .price h1, .archive .woocommerce-product-content .price h1, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h1, .woocommerce.archive .products.shop-view-list li .added_to_cart h1, .ft-gt h2, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h2, .woocommerce #pxl-sidebar-area .widget_products ul a h2, .single-product .woocommerce-social-share label h2, .single-product section.related .woocommerce-product-content .price h2, .single-product #pxl-content-area div.product .wooc-product-meta button h2, .single-product > div.product .wooc-product-meta button h2, .woosw-popup .woosw-item--actions a.button h2, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h2, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h2, .archive section.related .woocommerce-product-content .price h2, .archive .woocommerce-product-content .price h2, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h2, .woocommerce.archive .products.shop-view-list li .added_to_cart h2, .ft-gt h3, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h3, .woocommerce #pxl-sidebar-area .widget_products ul a h3, .single-product .woocommerce-social-share label h3, .single-product section.related .woocommerce-product-content .price h3, .single-product #pxl-content-area div.product .wooc-product-meta button h3, .single-product > div.product .wooc-product-meta button h3, .woosw-popup .woosw-item--actions a.button h3, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h3, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h3, .archive section.related .woocommerce-product-content .price h3, .archive .woocommerce-product-content .price h3, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h3, .woocommerce.archive .products.shop-view-list li .added_to_cart h3, .ft-gt h4, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h4, .woocommerce #pxl-sidebar-area .widget_products ul a h4, .single-product .woocommerce-social-share label h4, .single-product section.related .woocommerce-product-content .price h4, .single-product #pxl-content-area div.product .wooc-product-meta button h4, .single-product > div.product .wooc-product-meta button h4, .woosw-popup .woosw-item--actions a.button h4, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h4, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h4, .archive section.related .woocommerce-product-content .price h4, .archive .woocommerce-product-content .price h4, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h4, .woocommerce.archive .products.shop-view-list li .added_to_cart h4, .ft-gt h5, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h5, .woocommerce #pxl-sidebar-area .widget_products ul a h5, .single-product .woocommerce-social-share label h5, .single-product section.related .woocommerce-product-content .price h5, .single-product #pxl-content-area div.product .wooc-product-meta button h5, .single-product > div.product .wooc-product-meta button h5, .woosw-popup .woosw-item--actions a.button h5, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h5, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h5, .archive section.related .woocommerce-product-content .price h5, .archive .woocommerce-product-content .price h5, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h5, .woocommerce.archive .products.shop-view-list li .added_to_cart h5, .ft-gt h6, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h6, .woocommerce #pxl-sidebar-area .widget_products ul a h6, .single-product .woocommerce-social-share label h6, .single-product section.related .woocommerce-product-content .price h6, .single-product #pxl-content-area div.product .wooc-product-meta button h6, .single-product > div.product .wooc-product-meta button h6, .woosw-popup .woosw-item--actions a.button h6, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h6, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h6, .archive section.related .woocommerce-product-content .price h6, .archive .woocommerce-product-content .price h6, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h6, .woocommerce.archive .products.shop-view-list li .added_to_cart h6, .ft-gt div, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label div, .woocommerce #pxl-sidebar-area .widget_products ul a div, .single-product .woocommerce-social-share label div, .single-product section.related .woocommerce-product-content .price div, .single-product #pxl-content-area div.product .wooc-product-meta button div, .single-product > div.product .wooc-product-meta button div, .woosw-popup .woosw-item--actions a.button div, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button div, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward div, .archive section.related .woocommerce-product-content .price div, .archive .woocommerce-product-content .price div, .woocommerce.archive .products.shop-view-list li .add_to_cart_button div, .woocommerce.archive .products.shop-view-list li .added_to_cart div, .ft-gt span, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label span, .woocommerce #pxl-sidebar-area .widget_products ul a span, .single-product .woocommerce-social-share label span, .single-product section.related .woocommerce-product-content .price span, .single-product #pxl-content-area div.product .wooc-product-meta button span, .single-product > div.product .wooc-product-meta button span, .woosw-popup .woosw-item--actions a.button span, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button span, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward span, .archive section.related .woocommerce-product-content .price span, .archive .woocommerce-product-content .price span, .woocommerce.archive .products.shop-view-list li .add_to_cart_button span, .woocommerce.archive .products.shop-view-list li .added_to_cart span, input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="tel"], input[type="number"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea, select, .pxl-select-higthlight, .nice-select, .single-post .comment-form input[type="text"], .single-post .comment-form textarea, .comment-form-cookies-consent, .nice-select ul.list, .wrap-ctf-bill button, .wrap-ctf3 button, .wrap-ctf-page.single-sv button, .form-contact-qrcode .first p, .form-contact-qrcode button, .form-contact-qrcode.online-appointment label, .widget_shopping_cart .total strong, #pxl-cart-sidebar .pxl-widget-cart-sidebar .widget_shopping_title, .woocommerce .woocommerce-error, .woocommerce .woocommerce-info, .woocommerce .woocommerce-message, .woocommerce .button.add_to_cart_button, .woocommerce-page .button.add_to_cart_button, .woocommerce button.single_add_to_cart_button, .woocommerce-page button.single_add_to_cart_button, .woocommerce #respond input#submit, .woocommerce-page #respond input#submit, .woocommerce a.added_to_cart.wc-forward, .woocommerce-page a.added_to_cart.wc-forward, .woocommerce .button:not(.add_to_cart_button):not(.single_add_to_cart_button):not(.added_to_cart), .woocommerce-page .button:not(.add_to_cart_button):not(.single_add_to_cart_button):not(.added_to_cart), .single-product .meta .woocommerce-review__author, .single-product #pxl-content-area div.product form.cart label, .single-product > div.product form.cart label, .single-product #pxl-content-area div.product .woocommerce-tabs .woocommerce-tabs-panel--reviews .comment-reply-title, .single-product > div.product .woocommerce-tabs .woocommerce-tabs-panel--reviews .comment-reply-title, body.woocommerce-cart .woocommerce-cart-form .shop_table thead th, .pxl-shop-topbar-wrap .woocommerce-result-count, .woocommerce.archive .products.shop-view-list li .woocommerce-wishlist button, .pxl-grid-filter .filter-item, .btn-readmore-1, .pxl-related-post .pxl-swiper-slide .pxl-post--inner .pxl-post--title, .pxl-related-post .pxl-swiper-slide .pxl-post--inner .btn--readmore, input[type="submit"], .tt_navigation_cell .tt_tabs_navigation li a, .tt_timetable thead tr th, .tt_timetable .tt_hours_column, body .tt_timetable .event .event_header {
   font-family: , sans-serif;
 }
 .pxl-wobble span {
@@ -8003,7 +8003,7 @@ body.rtl .pxl-post-list1 li:before {
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   z-index: 5;
 }
-.pxl-showcase .pxl-item--buttons .btn {
+.pxl-showcase .pxl-item--buttons .btn, .pxl-showcase .pxl-item--buttons button, .pxl-showcase .pxl-item--buttons .button {
   height: 40px;
   line-height: 40px;
   padding: 0 30px;
@@ -8027,10 +8027,10 @@ body.rtl .pxl-post-list1 li:before {
   font-size: 13px;
   font-weight: 500;
 }
-.pxl-showcase .pxl-item--buttons .btn:first-child {
+.pxl-showcase .pxl-item--buttons .btn:first-child, .pxl-showcase .pxl-item--buttons button:first-child, .pxl-showcase .pxl-item--buttons .button:first-child {
   background-color: #eaf0da;
 }
-.pxl-showcase .pxl-item--buttons .btn:hover {
+.pxl-showcase .pxl-item--buttons .btn:hover, .pxl-showcase .pxl-item--buttons button:hover, .pxl-showcase .pxl-item--buttons .button:hover {
   background-color: var(--secondary-color);
   color: #fff;
 }
@@ -8241,7 +8241,7 @@ body.rtl .pxl-post-list1 li:before {
   border-bottom: 1px solid #f5c5cc;
   padding-bottom: 23px;
 }
-.pxl-banner .pxl-banner-inner .hover-content .btn {
+.pxl-banner .pxl-banner-inner .hover-content .btn, .pxl-banner .pxl-banner-inner .hover-content button, .pxl-banner .pxl-banner-inner .hover-content .button {
   letter-spacing: 0.32px;
   padding: 0 24px;
   border-radius: 10px;
@@ -8251,7 +8251,7 @@ body.rtl .pxl-post-list1 li:before {
   font-size: 15px;
   font-weight: 400;
 }
-.pxl-banner .pxl-banner-inner .hover-content .btn:hover {
+.pxl-banner .pxl-banner-inner .hover-content .btn:hover, .pxl-banner .pxl-banner-inner .hover-content button:hover, .pxl-banner .pxl-banner-inner .hover-content .button:hover {
   background-color: var(--secondary-color);
 }
 .pxl-banner .pxl-banner-inner:hover .hover-content {
@@ -8471,7 +8471,7 @@ body.rtl .pxl-post-list1 li:before {
   list-style: none;
   margin: 0;
 }
-.pxl-info-box1 .btn.pxl-info-box-link {
+.pxl-info-box1 .btn.pxl-info-box-link, .pxl-info-box1 button.pxl-info-box-link, .pxl-info-box1 .button.pxl-info-box-link {
   max-width: 454px;
   width: 100%;
   height: 50px;
@@ -8486,11 +8486,11 @@ body.rtl .pxl-post-list1 li:before {
   display: inline-flex;
   gap: 10px;
 }
-.pxl-info-box1 .btn.pxl-info-box-link i {
+.pxl-info-box1 .btn.pxl-info-box-link i, .pxl-info-box1 button.pxl-info-box-link i, .pxl-info-box1 .button.pxl-info-box-link i {
   font-size: 22px;
 }
 @media screen and (max-width: 575px) {
-  .pxl-info-box1 .btn.pxl-info-box-link {
+  .pxl-info-box1 .btn.pxl-info-box-link, .pxl-info-box1 button.pxl-info-box-link, .pxl-info-box1 .button.pxl-info-box-link {
     max-width: 100%;
     font-size: 15px;
   }
@@ -14032,6 +14032,12 @@ body.rtl .widget .widget-title:before {
   margin-left: auto;
   margin-right: auto;
 }
+.pxl-img-multiple {
+  mix-blend-mode: multiply;
+}
+.pxl-img-multiple img {
+  mix-blend-mode: multiply;
+}
 @keyframes pxl-draws-svg {
   0% {
     stroke-dashoffset: 100%;
@@ -14039,6 +14045,78 @@ body.rtl .widget .widget-title:before {
   100% {
     stroke-dashoffset: 0;
   }
+}
+.pxl-contact-form p {
+  margin-bottom: 0;
+}
+.ctf7-input-row {
+  display: flex;
+  align-self: center;
+  gap: 30px;
+}
+.ctf7-contact-home-1 input[type="text"], .ctf7-contact-home-1 input[type="email"], .ctf7-contact-home-1 .pxl-select-higthlight, .ctf7-contact-home-1 textarea {
+  height: 66px;
+  -webkit-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  padding: 0;
+  padding-bottom: 38px;
+  border: none;
+  border-bottom: 1px solid rgba(102, 111, 120, 0.5);
+  color: var(--secondary-color);
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 600;
+}
+.ctf7-contact-home-1 input[type="text"]:focus, .ctf7-contact-home-1 input[type="email"]:focus, .ctf7-contact-home-1 .pxl-select-higthlight:focus, .ctf7-contact-home-1 textarea:focus, .ctf7-contact-home-1 input[type="text"]:active, .ctf7-contact-home-1 input[type="email"]:active, .ctf7-contact-home-1 .pxl-select-higthlight:active, .ctf7-contact-home-1 textarea:active {
+  border-color: var(--secondary-color);
+}
+.ctf7-contact-home-1 input[type="text"]::placeholder, .ctf7-contact-home-1 input[type="email"]::placeholder, .ctf7-contact-home-1 .pxl-select-higthlight::placeholder, .ctf7-contact-home-1 textarea::placeholder {
+  color: var(--secondary-color);
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.75;
+  font-style: normal;
+}
+.ctf7-contact-home-1 .pxl-select .pxl-select-higthlight.active:before {
+  transform: translate(0, 0%) scaleY(1);
+}
+.ctf7-contact-home-1 .pxl-select .pxl-select-higthlight:before {
+  top: 0;
+  right: 0;
+  height: 4px;
+  width: auto;
+  color: var(--secondary-color);
+  content: "\F282";
+  font-family: "bootstrap-icons";
+}
+.ctf7-contact-home-1 textarea {
+  height: 105px;
+  padding: 0;
+}
+.ctf7-contact-home-1-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ctf7-contact-home-1-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(4, 20, 39, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.625;
+}
+.ctf7-contact-home-1 .btn, .ctf7-contact-home-1 button, .ctf7-contact-home-1 .button {
+  padding: 0;
+}
+.ctf7-contact-home-1 .btn i, .ctf7-contact-home-1 button i, .ctf7-contact-home-1 .button i {
+  font-size: 10px;
 }
 @keyframes spin {
   0% {
@@ -14105,37 +14183,31 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   margin: 0;
 }
 input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="tel"], input[type="number"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea, select, .pxl-select-higthlight, .nice-select {
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  background-color: #fff;
-  padding: 0 20px;
+  height: 52px;
+  border: 1px solid rgba(102, 111, 120, 0.5);
+  background-color: var(--body_bg-color);
+  padding: 0 30px;
   color: var(--secondary-color);
-  font-size: 15px;
+  font-size: 16px;
   outline: none;
-  box-shadow: 0px 3px 0px 0px #e2dcd0;
   -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   -khtml-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   -ms-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-border-radius: 8px;
-  -khtml-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
   width: 100%;
   outline: none;
   font-family: inherit;
 }
-@media (max-width: 1024px) {
-  input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="tel"], input[type="number"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea, select, .pxl-select-higthlight, .nice-select {
-    padding: 6px 15px;
-  }
-}
 input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="url"]::placeholder, input[type="password"]::placeholder, input[type="search"]::placeholder, input[type="tel"]::placeholder, input[type="number"]::placeholder, input[type="range"]::placeholder, input[type="date"]::placeholder, input[type="month"]::placeholder, input[type="week"]::placeholder, input[type="time"]::placeholder, input[type="datetime"]::placeholder, input[type="datetime-local"]::placeholder, input[type="color"]::placeholder, textarea::placeholder, select::placeholder, .pxl-select-higthlight::placeholder, .nice-select::placeholder {
-  color: var(--secondary-color);
+  color: rgba(102, 111, 120, 0.5);
   font-style: italic;
 }
 .nice-select {
@@ -14153,23 +14225,23 @@ input[type="range"] {
   border: none;
 }
 select {
-  height: 49px;
+  height: 52px;
 }
 textarea {
   resize: none;
-  height: 150px;
-  padding: 20px;
+  height: 105px;
+  padding: 30px;
   line-height: 1.8;
   margin: 0;
-  -webkit-border-radius: 8px;
-  -khtml-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
 }
 textarea::placeholder {
-  color: var(--secondary-color);
+  color: rgba(102, 111, 120, 0.5);
 }
 .comments-area .comment-respond .logged-in-as {
   margin-top: 15px;
@@ -14534,10 +14606,10 @@ textarea::placeholder {
   list-style: none;
   margin: 10px 0 0;
   padding: 12px 18px;
-  background-color: #fff;
+  background-color: #fefff8;
   z-index: 900;
   font-size: 16px;
-  color: #666;
+  color: rgba(4, 20, 39, 0.7);
   font-family: inherit;
   box-shadow: 0 3px 65px rgba(1, 1, 1, 0.08);
   -webkit-border-radius: 0px;
@@ -14573,8 +14645,8 @@ textarea::placeholder {
   display: none;
 }
 .pxl-select .pxl-select-options li:hover {
-  color: #0a1320;
-  background-color: rgba(10, 19, 32, 0.04);
+  color: var(--secondary-color);
+  background-color: rgba(4, 20, 39, 0.04);
 }
 .pxl-select .pxl-select-higthlight {
   display: flex;
@@ -17932,7 +18004,7 @@ body.rtl .widget_search .search-submit {
   transform: translatex(15px);
   opacity: 0;
 }
-.btn.wc-forward, .btn.btn-shop {
+.btn.wc-forward, button.wc-forward, .button.wc-forward, .btn.btn-shop, button.btn-shop, .button.btn-shop {
   color: #fff;
   line-height: 51px;
   font-size: 16px;
@@ -18058,7 +18130,7 @@ body.rtl .widget_search .search-submit {
   line-height: 1;
   color: rgba(0, 0, 0, 0.2);
 }
-#pxl-cart-sidebar .pxl-widget-cart-sidebar .widget_shopping_cart .widget_shopping_cart_content ul.cart_list li.empty .btn {
+#pxl-cart-sidebar .pxl-widget-cart-sidebar .widget_shopping_cart .widget_shopping_cart_content ul.cart_list li.empty .btn, #pxl-cart-sidebar .pxl-widget-cart-sidebar .widget_shopping_cart .widget_shopping_cart_content ul.cart_list li.empty button, #pxl-cart-sidebar .pxl-widget-cart-sidebar .widget_shopping_cart .widget_shopping_cart_content ul.cart_list li.empty .button {
   width: 100%;
 }
 #pxl-cart-sidebar .pxl-widget-cart-sidebar .widget_shopping_cart .widget_shopping_cart_content ul.cart_list .cart-product-image {
@@ -18155,7 +18227,7 @@ body.rtl .widget_search .search-submit {
   display: flex;
   flex-wrap: wrap;
 }
-#pxl-cart-sidebar .pxl-widget-cart-sidebar .widget_shopping_cart .widget_shopping_cart_footer p.buttons .btn {
+#pxl-cart-sidebar .pxl-widget-cart-sidebar .widget_shopping_cart .widget_shopping_cart_footer p.buttons .btn, #pxl-cart-sidebar .pxl-widget-cart-sidebar .widget_shopping_cart .widget_shopping_cart_footer p.buttons button, #pxl-cart-sidebar .pxl-widget-cart-sidebar .widget_shopping_cart .widget_shopping_cart_footer p.buttons .button {
   width: 100%;
   margin-right: 0;
   margin-bottom: 10px;
@@ -18166,10 +18238,10 @@ body.rtl .widget_search .search-submit {
   -o-border-radius: 0px;
   border-radius: 0px;
 }
-#pxl-cart-sidebar .pxl-widget-cart-sidebar .widget_shopping_cart .widget_shopping_cart_footer p.buttons .btn.checkout {
+#pxl-cart-sidebar .pxl-widget-cart-sidebar .widget_shopping_cart .widget_shopping_cart_footer p.buttons .btn.checkout, #pxl-cart-sidebar .pxl-widget-cart-sidebar .widget_shopping_cart .widget_shopping_cart_footer p.buttons button.checkout, #pxl-cart-sidebar .pxl-widget-cart-sidebar .widget_shopping_cart .widget_shopping_cart_footer p.buttons .button.checkout {
   background: var(--secondary-color);
 }
-#pxl-cart-sidebar .pxl-widget-cart-sidebar .widget_shopping_cart .widget_shopping_cart_footer p.buttons .btn.checkout:hover, #pxl-cart-sidebar .pxl-widget-cart-sidebar .widget_shopping_cart .widget_shopping_cart_footer p.buttons .btn.checkout:focus {
+#pxl-cart-sidebar .pxl-widget-cart-sidebar .widget_shopping_cart .widget_shopping_cart_footer p.buttons .btn.checkout:hover, #pxl-cart-sidebar .pxl-widget-cart-sidebar .widget_shopping_cart .widget_shopping_cart_footer p.buttons button.checkout:hover, #pxl-cart-sidebar .pxl-widget-cart-sidebar .widget_shopping_cart .widget_shopping_cart_footer p.buttons .button.checkout:hover, #pxl-cart-sidebar .pxl-widget-cart-sidebar .widget_shopping_cart .widget_shopping_cart_footer p.buttons .btn.checkout:focus, #pxl-cart-sidebar .pxl-widget-cart-sidebar .widget_shopping_cart .widget_shopping_cart_footer p.buttons button.checkout:focus, #pxl-cart-sidebar .pxl-widget-cart-sidebar .widget_shopping_cart .widget_shopping_cart_footer p.buttons .button.checkout:focus {
   background: var(--primary-color);
 }
 #pxl-cart-sidebar.active {
@@ -18316,7 +18388,7 @@ body.rtl .widget_search .search-submit {
   line-height: 1;
   color: rgba(0, 0, 0, 0.2);
 }
-.widget_shopping_cart .widget_shopping_cart_content ul li.empty .btn {
+.widget_shopping_cart .widget_shopping_cart_content ul li.empty .btn, .widget_shopping_cart .widget_shopping_cart_content ul li.empty button, .widget_shopping_cart .widget_shopping_cart_content ul li.empty .button {
   width: 100%;
 }
 .widget_shopping_cart .widget_shopping_cart_content ul .cart-product-image {
@@ -22047,7 +22119,7 @@ body.woocommerce-cart .cart-collaterals .cart_totals .cart_totals.processing:aft
 .hidden-title-form input + input {
   margin-top: 15px;
 }
-.hidden-title-form .btn {
+.hidden-title-form .btn, .hidden-title-form button, .hidden-title-form .button {
   line-height: 51px !important;
 }
 .shop_table.cart.wishlist_table {
@@ -23497,10 +23569,10 @@ body .woosw-popup-content-mid .added_to_cart {
 .pxl-load-more.loading .pxl-loadmore-text {
   opacity: 0;
 }
-.pxl-load-more-style1 .btn {
+.pxl-load-more-style1 .btn, .pxl-load-more-style1 button, .pxl-load-more-style1 .button {
   padding: 0 38px;
 }
-.pxl-load-more-style2 .btn.btn-morden {
+.pxl-load-more-style2 .btn.btn-morden, .pxl-load-more-style2 button.btn-morden, .pxl-load-more-style2 .button.btn-morden {
   line-height: 46px;
   font-size: 15px;
 }
@@ -27104,32 +27176,6 @@ body .woosw-popup-content-mid .added_to_cart {
   background-color: var(--primary-color);
   color: #fff;
 }
-button, .button {
-  color: #fff;
-  -webkit-transition: all 200ms linear 0ms;
-  -khtml-transition: all 200ms linear 0ms;
-  -moz-transition: all 200ms linear 0ms;
-  -ms-transition: all 200ms linear 0ms;
-  -o-transition: all 200ms linear 0ms;
-  transition: all 200ms linear 0ms;
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  color: #fff;
-  border: none;
-  height: auto;
-  text-align: center;
-  justify-content: center;
-  text-transform: uppercase;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  font-family: "General Sans", sans-serif;
-}
-button:hover, .button:hover, button:focus, .button:focus, button:active, .button:active {
-  background-position: right center;
-  color: #fff;
-}
 .fa-classic, .fa-regular, .fa-solid, .far, .fas {
   font-family: "Font Awesome 5 Free" !important;
 }
@@ -27199,7 +27245,7 @@ input[type="submit"]:hover {
 .justify-sb {
   justify-content: space-between !important;
 }
-.btn:not(.btn-stroke) {
+.btn:not(.btn-stroke), button:not(.btn-stroke), .button:not(.btn-stroke) {
   cursor: pointer;
   border: none;
   line-height: 52px;
@@ -27208,7 +27254,7 @@ input[type="submit"]:hover {
   font-family: "DM Sans", sans-serif;
   color: #f8f8f2;
 }
-.btn:not(.btn-stroke) span {
+.btn:not(.btn-stroke) span, button:not(.btn-stroke) span, .button:not(.btn-stroke) span {
   -webkit-border-radius: 8px;
   -khtml-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -27218,7 +27264,7 @@ input[type="submit"]:hover {
   background-color: var(--secondary-color);
   padding: 0 30px;
 }
-.btn:not(.btn-stroke) .pxl-button--icon {
+.btn:not(.btn-stroke) .pxl-button--icon, button:not(.btn-stroke) .pxl-button--icon, .button:not(.btn-stroke) .pxl-button--icon {
   height: 52px;
   width: 52px;
   display: inline-flex;
@@ -27231,22 +27277,118 @@ input[type="submit"]:hover {
   -o-border-radius: 8px;
   border-radius: 8px;
   background-color: var(--secondary-color);
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
 }
-.btn:not(.btn-stroke) .pxl-button--icon svg {
+.btn:not(.btn-stroke) .pxl-button--icon svg, button:not(.btn-stroke) .pxl-button--icon svg, .button:not(.btn-stroke) .pxl-button--icon svg, .btn:not(.btn-stroke) .pxl-button--icon i, button:not(.btn-stroke) .pxl-button--icon i, .button:not(.btn-stroke) .pxl-button--icon i {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-in-out;
   margin: 0 !important;
 }
-.btn:not(.btn-stroke):hover {
-  outline: medium none;
-  text-decoration: none;
-  color: #fff;
+.btn:not(.btn-stroke).pxl-button-style-1-default:hover .pxl-button--icon, button:not(.btn-stroke).pxl-button-style-1-default:hover .pxl-button--icon, .button:not(.btn-stroke).pxl-button-style-1-default:hover .pxl-button--icon {
+  transform: translateX(10px);
 }
-.btn:not(.btn-stroke).pxl-icon--right {
+.btn:not(.btn-stroke).pxl-button-style-1-default:hover .pxl-button--icon svg, button:not(.btn-stroke).pxl-button-style-1-default:hover .pxl-button--icon svg, .button:not(.btn-stroke).pxl-button-style-1-default:hover .pxl-button--icon svg, .btn:not(.btn-stroke).pxl-button-style-1-default:hover .pxl-button--icon i, button:not(.btn-stroke).pxl-button-style-1-default:hover .pxl-button--icon i, .button:not(.btn-stroke).pxl-button-style-1-default:hover .pxl-button--icon i {
+  transform: rotate(45deg);
+}
+.btn:not(.btn-stroke).pxl-button-style-2-default, button:not(.btn-stroke).pxl-button-style-2-default, .button:not(.btn-stroke).pxl-button-style-2-default {
+  position: relative;
+}
+.btn:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--right span, button:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--right span, .button:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--right span {
+  margin-right: 52px;
+  margin-left: 0;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.btn:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--right .pxl-button--icon-right, button:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--right .pxl-button--icon-right, .button:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--right .pxl-button--icon-right {
+  scale: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.btn:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--right .pxl-button--icon-left, button:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--right .pxl-button--icon-left, .button:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--right .pxl-button--icon-left {
+  scale: 1;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.btn:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--right:hover span, button:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--right:hover span, .button:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--right:hover span {
+  margin-right: 0;
+  margin-left: 52px;
+}
+.btn:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--right:hover .pxl-button--icon-right, button:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--right:hover .pxl-button--icon-right, .button:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--right:hover .pxl-button--icon-right {
+  scale: 1;
+}
+.btn:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--right:hover .pxl-button--icon-left, button:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--right:hover .pxl-button--icon-left, .button:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--right:hover .pxl-button--icon-left {
+  scale: 0;
+}
+.btn:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--left span, button:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--left span, .button:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--left span {
+  margin-left: 52px;
+  margin-right: 0;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.btn:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--left .pxl-button--icon-left, button:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--left .pxl-button--icon-left, .button:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--left .pxl-button--icon-left {
+  scale: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.btn:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--left .pxl-button--icon-right, button:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--left .pxl-button--icon-right, .button:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--left .pxl-button--icon-right {
+  scale: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.btn:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--left:hover span, button:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--left:hover span, .button:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--left:hover span {
+  margin-left: 0;
+  margin-right: 52px;
+}
+.btn:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--left:hover .pxl-button--icon-right, button:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--left:hover .pxl-button--icon-right, .button:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--left:hover .pxl-button--icon-right {
+  scale: 1;
+}
+.btn:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--left:hover .pxl-button--icon-left, button:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--left:hover .pxl-button--icon-left, .button:not(.btn-stroke).pxl-button-style-2-default.pxl-icon--left:hover .pxl-button--icon-left {
+  scale: 0;
+}
+.btn:not(.btn-stroke).pxl-icon--right, button:not(.btn-stroke).pxl-icon--right, .button:not(.btn-stroke).pxl-icon--right {
   flex-direction: row-reverse;
 }
-.btn:not(.btn-stroke).full {
+.btn:not(.btn-stroke).full, button:not(.btn-stroke).full, .button:not(.btn-stroke).full {
   width: 100%;
 }
-.btn:not(.btn-stroke) svg {
+.btn:not(.btn-stroke) svg, button:not(.btn-stroke) svg, .button:not(.btn-stroke) svg {
   height: auto;
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -27255,7 +27397,7 @@ input[type="submit"]:hover {
   -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-.btn:not(.btn-stroke) svg path {
+.btn:not(.btn-stroke) svg path, button:not(.btn-stroke) svg path, .button:not(.btn-stroke) svg path {
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -27263,17 +27405,17 @@ input[type="submit"]:hover {
   -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-.btn:not(.btn-stroke).btn-text-applied {
+.btn:not(.btn-stroke).btn-text-applied, button:not(.btn-stroke).btn-text-applied, .button:not(.btn-stroke).btn-text-applied {
   padding: 0 34px 0 2px;
 }
-.btn:not(.btn-stroke).btn-text-applied .btn-icon-left, .btn:not(.btn-stroke).btn-text-applied .btn-icon-right {
+.btn:not(.btn-stroke).btn-text-applied .btn-icon-left, button:not(.btn-stroke).btn-text-applied .btn-icon-left, .button:not(.btn-stroke).btn-text-applied .btn-icon-left, .btn:not(.btn-stroke).btn-text-applied .btn-icon-right, button:not(.btn-stroke).btn-text-applied .btn-icon-right, .button:not(.btn-stroke).btn-text-applied .btn-icon-right {
   line-height: 0;
   transition: opacity 0.4s 0.25s, transform 0.6s 0.25s, margin 0.6s 0.25s;
   transition-timing-function: cubic-bezier(0.1, 0.75, 0.25, 1);
   margin-inline-start: 16px;
   margin-inline-end: 0px;
 }
-.btn:not(.btn-stroke).btn-text-applied .btn-icon-left {
+.btn:not(.btn-stroke).btn-text-applied .btn-icon-left, button:not(.btn-stroke).btn-text-applied .btn-icon-left, .button:not(.btn-stroke).btn-text-applied .btn-icon-left {
   display: inline-flex;
   opacity: 0;
   transform: translateX(-1em);
@@ -27281,35 +27423,35 @@ input[type="submit"]:hover {
   margin-inline-start: 0;
   margin-inline-end: 0;
 }
-.btn:not(.btn-stroke).btn-text-applied .chars {
+.btn:not(.btn-stroke).btn-text-applied .chars, button:not(.btn-stroke).btn-text-applied .chars, .button:not(.btn-stroke).btn-text-applied .chars {
   display: block;
   transition: transform 0.6s 0.125s cubic-bezier(0.1, 0.75, 0.25, 1);
 }
-.btn:not(.btn-stroke).btn-text-applied .chars span {
+.btn:not(.btn-stroke).btn-text-applied .chars span, button:not(.btn-stroke).btn-text-applied .chars span, .button:not(.btn-stroke).btn-text-applied .chars span {
   position: relative;
   display: inline-block;
 }
-.btn:not(.btn-stroke).btn-text-applied svg {
+.btn:not(.btn-stroke).btn-text-applied svg, button:not(.btn-stroke).btn-text-applied svg, .button:not(.btn-stroke).btn-text-applied svg {
   margin: 0;
 }
-.btn:not(.btn-stroke).btn-text-applied:hover .btn-icon-right {
+.btn:not(.btn-stroke).btn-text-applied:hover .btn-icon-right, button:not(.btn-stroke).btn-text-applied:hover .btn-icon-right, .button:not(.btn-stroke).btn-text-applied:hover .btn-icon-right {
   opacity: 0;
   transition-delay: 0s;
   transform: translateX(1em);
 }
-.btn:not(.btn-stroke).btn-text-applied:hover .btn-icon-left {
+.btn:not(.btn-stroke).btn-text-applied:hover .btn-icon-left, button:not(.btn-stroke).btn-text-applied:hover .btn-icon-left, .button:not(.btn-stroke).btn-text-applied:hover .btn-icon-left {
   opacity: 1;
   transform: translateX(25px);
   transition-delay: 0.225s;
 }
-.btn:not(.btn-stroke).btn-text-applied:hover .chars {
+.btn:not(.btn-stroke).btn-text-applied:hover .chars, button:not(.btn-stroke).btn-text-applied:hover .chars, .button:not(.btn-stroke).btn-text-applied:hover .chars {
   transition-delay: 0.1s;
   transform: translateX(39px);
 }
-.btn:not(.btn-stroke).btn-text-applied:hover .chars span {
+.btn:not(.btn-stroke).btn-text-applied:hover .chars span, button:not(.btn-stroke).btn-text-applied:hover .chars span, .button:not(.btn-stroke).btn-text-applied:hover .chars span {
   animation: btnHoverTxtLiquidXAlt 0.6s calc(var(--chars-last-index, 0s) * 0.03s) cubic-bezier(0.23, 1, 0.32, 1) both alternate;
 }
-.btn:not(.btn-stroke).btn-gradient {
+.btn:not(.btn-stroke).btn-gradient, button:not(.btn-stroke).btn-gradient, .button:not(.btn-stroke).btn-gradient {
   --gradient-from: var(--gradient-color-from);
   --gradient-to: var(--gradient-color-to);
   color: var(--secondary-color);
@@ -27323,7 +27465,7 @@ input[type="submit"]:hover {
   -o-transition: color 0.4s ease-in-out;
   transition: color 0.4s ease-in-out;
 }
-.btn:not(.btn-stroke).btn-gradient:before {
+.btn:not(.btn-stroke).btn-gradient:before, button:not(.btn-stroke).btn-gradient:before, .button:not(.btn-stroke).btn-gradient:before {
   content: "";
   position: absolute;
   top: 0;
@@ -27341,13 +27483,13 @@ input[type="submit"]:hover {
   transition: opacity 0.4s ease-in-out;
   z-index: -1;
 }
-.btn:not(.btn-stroke).btn-gradient:hover {
+.btn:not(.btn-stroke).btn-gradient:hover, button:not(.btn-stroke).btn-gradient:hover, .button:not(.btn-stroke).btn-gradient:hover {
   color: var(--secondary-color);
 }
-.btn:not(.btn-stroke).btn-gradient:hover:before {
+.btn:not(.btn-stroke).btn-gradient:hover:before, button:not(.btn-stroke).btn-gradient:hover:before, .button:not(.btn-stroke).btn-gradient:hover:before {
   opacity: 1;
 }
-.btn:not(.btn-stroke).btn-divide {
+.btn:not(.btn-stroke).btn-divide, button:not(.btn-stroke).btn-divide, .button:not(.btn-stroke).btn-divide {
   background-color: transparent;
   padding: 0;
   line-height: normal;
@@ -27356,14 +27498,14 @@ input[type="submit"]:hover {
   align-items: center;
   gap: 10px;
 }
-.btn:not(.btn-stroke).btn-divide:hover .btn-icon i {
+.btn:not(.btn-stroke).btn-divide:hover .btn-icon i, button:not(.btn-stroke).btn-divide:hover .btn-icon i, .button:not(.btn-stroke).btn-divide:hover .btn-icon i {
   animation: pxl_right_from_left 0.3s ease-in-out;
   animation-fill-mode: forwards;
 }
-.btn:not(.btn-stroke).btn-divide .pxl--btn-text {
+.btn:not(.btn-stroke).btn-divide .pxl--btn-text, button:not(.btn-stroke).btn-divide .pxl--btn-text, .button:not(.btn-stroke).btn-divide .pxl--btn-text {
   position: relative;
 }
-.btn:not(.btn-stroke).btn-divide .pxl--btn-text:before {
+.btn:not(.btn-stroke).btn-divide .pxl--btn-text:before, button:not(.btn-stroke).btn-divide .pxl--btn-text:before, .button:not(.btn-stroke).btn-divide .pxl--btn-text:before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -27378,7 +27520,7 @@ input[type="submit"]:hover {
   -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-.btn:not(.btn-stroke).btn-divide .btn-icon {
+.btn:not(.btn-stroke).btn-divide .btn-icon, button:not(.btn-stroke).btn-divide .btn-icon, .button:not(.btn-stroke).btn-divide .btn-icon {
   margin: 0;
   width: 30px;
   height: 30px;
@@ -27391,14 +27533,14 @@ input[type="submit"]:hover {
   overflow: hidden;
   color: var(--secondary-color);
 }
-.btn:not(.btn-stroke).btn-divide .btn-icon i {
+.btn:not(.btn-stroke).btn-divide .btn-icon i, button:not(.btn-stroke).btn-divide .btn-icon i, .button:not(.btn-stroke).btn-divide .btn-icon i {
   margin: 0 !important;
 }
-.btn:not(.btn-stroke).btn-text-nina .pxl--btn-text {
+.btn:not(.btn-stroke).btn-text-nina .pxl--btn-text, button:not(.btn-stroke).btn-text-nina .pxl--btn-text, .button:not(.btn-stroke).btn-text-nina .pxl--btn-text {
   position: relative;
   direction: ltr;
 }
-.btn:not(.btn-stroke).btn-text-nina .pxl--btn-text:before {
+.btn:not(.btn-stroke).btn-text-nina .pxl--btn-text:before, button:not(.btn-stroke).btn-text-nina .pxl--btn-text:before, .button:not(.btn-stroke).btn-text-nina .pxl--btn-text:before {
   content: attr(data-text);
   position: absolute;
   top: 0;
@@ -27413,7 +27555,7 @@ input[type="submit"]:hover {
   transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
   white-space: nowrap;
 }
-.btn:not(.btn-stroke).btn-text-nina .pxl--btn-text > span {
+.btn:not(.btn-stroke).btn-text-nina .pxl--btn-text > span, button:not(.btn-stroke).btn-text-nina .pxl--btn-text > span, .button:not(.btn-stroke).btn-text-nina .pxl--btn-text > span {
   white-space: nowrap;
   display: inline-block;
   padding: 0;
@@ -27427,7 +27569,7 @@ input[type="submit"]:hover {
   transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
   line-height: normal;
 }
-.btn:not(.btn-stroke).btn-text-nina:hover {
+.btn:not(.btn-stroke).btn-text-nina:hover, button:not(.btn-stroke).btn-text-nina:hover, .button:not(.btn-stroke).btn-text-nina:hover {
   -webkit-transform: translateY(0px);
   -khtml-transform: translateY(0px);
   -moz-transform: translateY(0px);
@@ -27435,29 +27577,29 @@ input[type="submit"]:hover {
   -o-transform: translateY(0px);
   transform: translateY(0px);
 }
-.btn:not(.btn-stroke).btn-text-nina:hover .pxl--btn-text:before {
+.btn:not(.btn-stroke).btn-text-nina:hover .pxl--btn-text:before, button:not(.btn-stroke).btn-text-nina:hover .pxl--btn-text:before, .button:not(.btn-stroke).btn-text-nina:hover .pxl--btn-text:before {
   opacity: 0;
   -webkit-transform: translate3d(0, 100%, 0);
   transform: translate3d(0, 100%, 0);
 }
-.btn:not(.btn-stroke).btn-text-nina:hover .pxl--btn-text span {
+.btn:not(.btn-stroke).btn-text-nina:hover .pxl--btn-text span, button:not(.btn-stroke).btn-text-nina:hover .pxl--btn-text span, .button:not(.btn-stroke).btn-text-nina:hover .pxl--btn-text span {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-.btn:not(.btn-stroke).btn-text-nina:not(:hover) .pxl--btn-text > span {
+.btn:not(.btn-stroke).btn-text-nina:not(:hover) .pxl--btn-text > span, button:not(.btn-stroke).btn-text-nina:not(:hover) .pxl--btn-text > span, .button:not(.btn-stroke).btn-text-nina:not(:hover) .pxl--btn-text > span {
   transition-delay: 0s !important;
 }
-.btn:not(.btn-stroke).btn-text-nina.btn-outline-gradient:hover .pxl--btn-text:before {
+.btn:not(.btn-stroke).btn-text-nina.btn-outline-gradient:hover .pxl--btn-text:before, button:not(.btn-stroke).btn-text-nina.btn-outline-gradient:hover .pxl--btn-text:before, .button:not(.btn-stroke).btn-text-nina.btn-outline-gradient:hover .pxl--btn-text:before {
   -webkit-transform: translate3d(0, 30px, 0);
   transform: translate3d(0, 30px, 0);
 }
-.btn:not(.btn-stroke).btn-underline {
+.btn:not(.btn-stroke).btn-underline, button:not(.btn-stroke).btn-underline, .button:not(.btn-stroke).btn-underline {
   position: relative;
   overflow: visible;
   justify-content: start;
 }
-.btn:not(.btn-stroke).btn-underline:before {
+.btn:not(.btn-stroke).btn-underline:before, button:not(.btn-stroke).btn-underline:before, .button:not(.btn-stroke).btn-underline:before {
   position: absolute;
   content: "";
   left: 0;
@@ -27472,13 +27614,13 @@ input[type="submit"]:hover {
   -o-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-.btn:not(.btn-stroke).btn-underline:hover:before {
+.btn:not(.btn-stroke).btn-underline:hover:before, button:not(.btn-stroke).btn-underline:hover:before, .button:not(.btn-stroke).btn-underline:hover:before {
   width: 100%;
 }
-.btn:not(.btn-stroke).btn-glossy {
+.btn:not(.btn-stroke).btn-glossy, button:not(.btn-stroke).btn-glossy, .button:not(.btn-stroke).btn-glossy {
   position: relative;
 }
-.btn:not(.btn-stroke).btn-glossy:before {
+.btn:not(.btn-stroke).btn-glossy:before, button:not(.btn-stroke).btn-glossy:before, .button:not(.btn-stroke).btn-glossy:before {
   content: "";
   position: absolute;
   top: 0;
@@ -27495,20 +27637,20 @@ input[type="submit"]:hover {
   background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.35), transparent);
   z-index: -1;
 }
-.btn:not(.btn-stroke).btn-glossy:hover:before {
+.btn:not(.btn-stroke).btn-glossy:hover:before, button:not(.btn-stroke).btn-glossy:hover:before, .button:not(.btn-stroke).btn-glossy:hover:before {
   -webkit-animation: pxl_btn_shine 1.4s ease;
   animation: pxl_btn_shine 1.4s ease;
   -webkit-animation-delay: 0.1s;
   animation-delay: 0.1s;
 }
-.btn:not(.btn-stroke).btn-hide-icon {
+.btn:not(.btn-stroke).btn-hide-icon, button:not(.btn-stroke).btn-hide-icon, .button:not(.btn-stroke).btn-hide-icon {
   overflow: visible;
   line-height: 1;
 }
-.btn:not(.btn-stroke).btn-hide-icon .pxl--btn-text {
+.btn:not(.btn-stroke).btn-hide-icon .pxl--btn-text, button:not(.btn-stroke).btn-hide-icon .pxl--btn-text, .button:not(.btn-stroke).btn-hide-icon .pxl--btn-text {
   position: relative;
 }
-.btn:not(.btn-stroke).btn-hide-icon .pxl--btn-text:before {
+.btn:not(.btn-stroke).btn-hide-icon .pxl--btn-text:before, button:not(.btn-stroke).btn-hide-icon .pxl--btn-text:before, .button:not(.btn-stroke).btn-hide-icon .pxl--btn-text:before {
   position: absolute;
   content: "";
   left: 0;
@@ -27523,14 +27665,14 @@ input[type="submit"]:hover {
   -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-.btn:not(.btn-stroke).btn-hide-icon:hover i {
+.btn:not(.btn-stroke).btn-hide-icon:hover i, button:not(.btn-stroke).btn-hide-icon:hover i, .button:not(.btn-stroke).btn-hide-icon:hover i {
   -webkit-animation: hide_hover_icon 500ms linear;
   animation: hide_hover_icon 500ms linear;
 }
-.btn:not(.btn-stroke).btn-hide-icon:hover .pxl--btn-text:before {
+.btn:not(.btn-stroke).btn-hide-icon:hover .pxl--btn-text:before, button:not(.btn-stroke).btn-hide-icon:hover .pxl--btn-text:before, .button:not(.btn-stroke).btn-hide-icon:hover .pxl--btn-text:before {
   width: 100%;
 }
-.btn:not(.btn-stroke).btn-text-parallax .pxl--btn-text {
+.btn:not(.btn-stroke).btn-text-parallax .pxl--btn-text, button:not(.btn-stroke).btn-text-parallax .pxl--btn-text, .button:not(.btn-stroke).btn-text-parallax .pxl--btn-text {
   -webkit-transition: all 120ms linear 0ms;
   -khtml-transition: all 120ms linear 0ms;
   -moz-transition: all 120ms linear 0ms;
@@ -27538,33 +27680,33 @@ input[type="submit"]:hover {
   -o-transition: all 120ms linear 0ms;
   transition: all 120ms linear 0ms;
 }
-.btn:not(.btn-stroke).btn-text-parallax:not(.hovered) .pxl--btn-text {
+.btn:not(.btn-stroke).btn-text-parallax:not(.hovered) .pxl--btn-text, button:not(.btn-stroke).btn-text-parallax:not(.hovered) .pxl--btn-text, .button:not(.btn-stroke).btn-text-parallax:not(.hovered) .pxl--btn-text {
   transform: translate3d(0px, 0px, 0px) !important;
 }
-.btn:not(.btn-stroke).btn-text-nanuk .pxl--btn-text span {
+.btn:not(.btn-stroke).btn-text-nanuk .pxl--btn-text span, button:not(.btn-stroke).btn-text-nanuk .pxl--btn-text span, .button:not(.btn-stroke).btn-text-nanuk .pxl--btn-text span {
   display: inline-block;
 }
-.btn:not(.btn-stroke).btn-text-nanuk:hover, .btn:not(.btn-stroke).btn-text-nanuk:active, .btn:not(.btn-stroke).btn-text-nanuk:not([disabled]):not(.disabled).active, .btn:not(.btn-stroke).btn-text-nanuk:not([disabled]):not(.disabled):active {
+.btn:not(.btn-stroke).btn-text-nanuk:hover, button:not(.btn-stroke).btn-text-nanuk:hover, .button:not(.btn-stroke).btn-text-nanuk:hover, .btn:not(.btn-stroke).btn-text-nanuk:active, button:not(.btn-stroke).btn-text-nanuk:active, .button:not(.btn-stroke).btn-text-nanuk:active, .btn:not(.btn-stroke).btn-text-nanuk:not([disabled]):not(.disabled).active, button:not(.btn-stroke).btn-text-nanuk:not([disabled]):not(.disabled).active, .button:not(.btn-stroke).btn-text-nanuk:not([disabled]):not(.disabled).active, .btn:not(.btn-stroke).btn-text-nanuk:not([disabled]):not(.disabled):active, button:not(.btn-stroke).btn-text-nanuk:not([disabled]):not(.disabled):active, .button:not(.btn-stroke).btn-text-nanuk:not([disabled]):not(.disabled):active {
   background-color: var(--secondary-color);
 }
-.btn:not(.btn-stroke).btn-text-nanuk:hover .pxl--btn-text span:nth-child(2n + 1), .btn:not(.btn-stroke).btn-text-nanuk:hover .pxl--btn-text span:nth-child(2n) {
+.btn:not(.btn-stroke).btn-text-nanuk:hover .pxl--btn-text span:nth-child(2n + 1), button:not(.btn-stroke).btn-text-nanuk:hover .pxl--btn-text span:nth-child(2n + 1), .button:not(.btn-stroke).btn-text-nanuk:hover .pxl--btn-text span:nth-child(2n + 1), .btn:not(.btn-stroke).btn-text-nanuk:hover .pxl--btn-text span:nth-child(2n), button:not(.btn-stroke).btn-text-nanuk:hover .pxl--btn-text span:nth-child(2n), .button:not(.btn-stroke).btn-text-nanuk:hover .pxl--btn-text span:nth-child(2n) {
   -webkit-animation-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
   transition-animation-function: cubic-bezier(0.75, 0, 0.125, 1);
 }
-.btn:not(.btn-stroke).btn-text-nanuk:hover .pxl--btn-text span:nth-child(2n + 1) {
+.btn:not(.btn-stroke).btn-text-nanuk:hover .pxl--btn-text span:nth-child(2n + 1), button:not(.btn-stroke).btn-text-nanuk:hover .pxl--btn-text span:nth-child(2n + 1), .button:not(.btn-stroke).btn-text-nanuk:hover .pxl--btn-text span:nth-child(2n + 1) {
   -webkit-animation: pxl_nanuk_1 0.5s forwards;
   animation: pxl_nanuk_1 0.5s forwards;
 }
-.btn:not(.btn-stroke).btn-text-nanuk:hover .pxl--btn-text span:nth-child(2n) {
+.btn:not(.btn-stroke).btn-text-nanuk:hover .pxl--btn-text span:nth-child(2n), button:not(.btn-stroke).btn-text-nanuk:hover .pxl--btn-text span:nth-child(2n), .button:not(.btn-stroke).btn-text-nanuk:hover .pxl--btn-text span:nth-child(2n) {
   -webkit-animation: pxl_nanuk_2 0.5s forwards;
   animation: pxl_nanuk_2 0.5s forwards;
 }
-.btn:not(.btn-stroke).btn-text-smoke {
+.btn:not(.btn-stroke).btn-text-smoke, button:not(.btn-stroke).btn-text-smoke, .button:not(.btn-stroke).btn-text-smoke {
   --move: 12px;
   --move-y: -8px;
   --blur: 4px;
 }
-.btn:not(.btn-stroke).btn-text-smoke .pxl-text--front {
+.btn:not(.btn-stroke).btn-text-smoke .pxl-text--front, button:not(.btn-stroke).btn-text-smoke .pxl-text--front, .button:not(.btn-stroke).btn-text-smoke .pxl-text--front {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -27572,22 +27714,22 @@ input[type="submit"]:hover {
   display: block;
   line-height: normal;
 }
-.btn:not(.btn-stroke).btn-text-smoke .pxl-text--front + .pxl-text--back {
+.btn:not(.btn-stroke).btn-text-smoke .pxl-text--front + .pxl-text--back, button:not(.btn-stroke).btn-text-smoke .pxl-text--front + .pxl-text--back, .button:not(.btn-stroke).btn-text-smoke .pxl-text--front + .pxl-text--back {
   opacity: 0;
 }
-.btn:not(.btn-stroke).btn-text-smoke .pxl-text--inner {
+.btn:not(.btn-stroke).btn-text-smoke .pxl-text--inner, button:not(.btn-stroke).btn-text-smoke .pxl-text--inner, .button:not(.btn-stroke).btn-text-smoke .pxl-text--inner {
   display: inline-flex;
   line-height: 1;
 }
-.btn:not(.btn-stroke).btn-text-smoke .pxl-text--inner span {
+.btn:not(.btn-stroke).btn-text-smoke .pxl-text--inner span, button:not(.btn-stroke).btn-text-smoke .pxl-text--inner span, .button:not(.btn-stroke).btn-text-smoke .pxl-text--inner span {
   display: block;
 }
-.btn:not(.btn-stroke).btn-text-smoke:hover .pxl-text--inner span {
+.btn:not(.btn-stroke).btn-text-smoke:hover .pxl-text--inner span, button:not(.btn-stroke).btn-text-smoke:hover .pxl-text--inner span, .button:not(.btn-stroke).btn-text-smoke:hover .pxl-text--inner span {
   --duration: 600ms;
   -webkit-animation: pxl_smoke var(--duration) linear var(--d);
   animation: pxl_smoke var(--duration) linear var(--d);
 }
-.btn:not(.btn-stroke).btn-text-reverse .pxl-text--front {
+.btn:not(.btn-stroke).btn-text-reverse .pxl-text--front, button:not(.btn-stroke).btn-text-reverse .pxl-text--front, .button:not(.btn-stroke).btn-text-reverse .pxl-text--front {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -27595,7 +27737,7 @@ input[type="submit"]:hover {
   display: block;
   line-height: normal;
 }
-.btn:not(.btn-stroke).btn-text-reverse .pxl-text--front .pxl-text--inner span {
+.btn:not(.btn-stroke).btn-text-reverse .pxl-text--front .pxl-text--inner span, button:not(.btn-stroke).btn-text-reverse .pxl-text--front .pxl-text--inner span, .button:not(.btn-stroke).btn-text-reverse .pxl-text--front .pxl-text--inner span {
   -webkit-transform: translateY(-100%);
   -khtml-transform: translateY(-100%);
   -moz-transform: translateY(-100%);
@@ -27603,16 +27745,16 @@ input[type="submit"]:hover {
   -o-transform: translateY(-100%);
   transform: translateY(-100%);
 }
-.btn:not(.btn-stroke).btn-text-reverse .pxl-text--inner {
+.btn:not(.btn-stroke).btn-text-reverse .pxl-text--inner, button:not(.btn-stroke).btn-text-reverse .pxl-text--inner, .button:not(.btn-stroke).btn-text-reverse .pxl-text--inner {
   display: inline-flex;
   line-height: 1;
   overflow: hidden;
 }
-.btn:not(.btn-stroke).btn-text-reverse .pxl-text--inner span {
+.btn:not(.btn-stroke).btn-text-reverse .pxl-text--inner span, button:not(.btn-stroke).btn-text-reverse .pxl-text--inner span, .button:not(.btn-stroke).btn-text-reverse .pxl-text--inner span {
   display: block;
   transition: transform 0.44s ease;
 }
-.btn:not(.btn-stroke).btn-text-reverse:hover {
+.btn:not(.btn-stroke).btn-text-reverse:hover, button:not(.btn-stroke).btn-text-reverse:hover, .button:not(.btn-stroke).btn-text-reverse:hover {
   -webkit-transform: translateY(-4px);
   -khtml-transform: translateY(-4px);
   -moz-transform: translateY(-4px);
@@ -27620,7 +27762,7 @@ input[type="submit"]:hover {
   -o-transform: translateY(-4px);
   transform: translateY(-4px);
 }
-.btn:not(.btn-stroke).btn-text-reverse:hover .pxl-text--front .pxl-text--inner span {
+.btn:not(.btn-stroke).btn-text-reverse:hover .pxl-text--front .pxl-text--inner span, button:not(.btn-stroke).btn-text-reverse:hover .pxl-text--front .pxl-text--inner span, .button:not(.btn-stroke).btn-text-reverse:hover .pxl-text--front .pxl-text--inner span {
   -webkit-transform: translateY(0%);
   -khtml-transform: translateY(0%);
   -moz-transform: translateY(0%);
@@ -27628,7 +27770,7 @@ input[type="submit"]:hover {
   -o-transform: translateY(0%);
   transform: translateY(0%);
 }
-.btn:not(.btn-stroke).btn-text-reverse:hover .pxl-text--back .pxl-text--inner span {
+.btn:not(.btn-stroke).btn-text-reverse:hover .pxl-text--back .pxl-text--inner span, button:not(.btn-stroke).btn-text-reverse:hover .pxl-text--back .pxl-text--inner span, .button:not(.btn-stroke).btn-text-reverse:hover .pxl-text--back .pxl-text--inner span {
   -webkit-transform: translateY(100%);
   -khtml-transform: translateY(100%);
   -moz-transform: translateY(100%);
@@ -30868,11 +31010,11 @@ table.tt_timetable {
     flex-direction: column;
   }
 }
-.pxl-slider1 .pxl-item--meta .btn {
+.pxl-slider1 .pxl-item--meta .btn, .pxl-slider1 .pxl-item--meta button, .pxl-slider1 .pxl-item--meta .button {
   color: var(--secondary-color);
   background: linear-gradient(152deg, #fff48d 30.9%, #f4be29 118.23%);
 }
-.pxl-slider1 .pxl-item--meta .btn::before {
+.pxl-slider1 .pxl-item--meta .btn::before, .pxl-slider1 .pxl-item--meta button::before, .pxl-slider1 .pxl-item--meta .button::before {
   content: "";
   position: absolute;
   top: 0;
@@ -30890,10 +31032,10 @@ table.tt_timetable {
   transition: opacity 0.4s ease-in-out;
   z-index: -1;
 }
-.pxl-slider1 .pxl-item--meta .btn:hover {
+.pxl-slider1 .pxl-item--meta .btn:hover, .pxl-slider1 .pxl-item--meta button:hover, .pxl-slider1 .pxl-item--meta .button:hover {
   color: var(--secondary-color);
 }
-.pxl-slider1 .pxl-item--meta .btn:hover::before {
+.pxl-slider1 .pxl-item--meta .btn:hover::before, .pxl-slider1 .pxl-item--meta button:hover::before, .pxl-slider1 .pxl-item--meta .button:hover::before {
   opacity: 1;
 }
 .pxl-slider1 .pxl-item--meta .pxl-item--phone {
@@ -31213,11 +31355,11 @@ table.tt_timetable {
     flex-direction: column;
   }
 }
-.pxl-slider3 .pxl-item--meta .btn {
+.pxl-slider3 .pxl-item--meta .btn, .pxl-slider3 .pxl-item--meta button, .pxl-slider3 .pxl-item--meta .button {
   color: var(--secondary-color);
   background-color: #fff;
 }
-.pxl-slider3 .pxl-item--meta .btn:hover {
+.pxl-slider3 .pxl-item--meta .btn:hover, .pxl-slider3 .pxl-item--meta button:hover, .pxl-slider3 .pxl-item--meta .button:hover {
   color: #fff;
   background-color: var(--secondary-color);
 }
@@ -31557,20 +31699,20 @@ table.tt_timetable {
     justify-content: center;
   }
 }
-.pxl-slider2 .pxl-item--meta .btn {
+.pxl-slider2 .pxl-item--meta .btn, .pxl-slider2 .pxl-item--meta button, .pxl-slider2 .pxl-item--meta .button {
   display: inline-flex;
   align-items: center;
   gap: 10px;
 }
-.pxl-slider2 .pxl-item--meta .btn:first-child {
+.pxl-slider2 .pxl-item--meta .btn:first-child, .pxl-slider2 .pxl-item--meta button:first-child, .pxl-slider2 .pxl-item--meta .button:first-child {
   background-color: #fff;
   color: var(--secondary-color);
 }
-.pxl-slider2 .pxl-item--meta .btn:first-child:hover {
+.pxl-slider2 .pxl-item--meta .btn:first-child:hover, .pxl-slider2 .pxl-item--meta button:first-child:hover, .pxl-slider2 .pxl-item--meta .button:first-child:hover {
   background-color: var(--primary-color);
   color: #fff;
 }
-.pxl-slider2 .pxl-item--meta .btn i {
+.pxl-slider2 .pxl-item--meta .btn i, .pxl-slider2 .pxl-item--meta button i, .pxl-slider2 .pxl-item--meta .button i {
   font-size: 22px;
 }
 .pxl-slider2 .pxl-swiper-arrow-wrap {
