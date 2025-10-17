@@ -180,6 +180,9 @@
             }
             a {
                 color: inherit;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
             }
         }
         &--title {
@@ -193,6 +196,64 @@
             color: rgba($body_bg_color_hex, 0.7);
             font-size: 16px;
             line-height: 1.625;
+        }
+    }
+}
+
+.pxl-icon-box3 {
+    --gradient-color-1: $secondary_color;
+    --gradient-color-2: #6454bd;
+    --gradient-color-3: $primary_color;
+    --gradient-color-4: $third_color;
+    .pxl-item {
+        &--inner {
+            background: radial-gradient(
+                209.81% 190.64% at 88.43% -59.09%,
+                var(--gradient-color-1) 0%,
+                var(--gradient-color-2) 70.21%,
+                var(--gradient-color-3) 95.63%,
+                var(--gradient-color-4) 99.04%
+            );
+            padding: 50px 30px;
+            @include border-radius(25px);
+        }
+        &--header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &--title {
+            color: $body_bg_color;
+            font-family: "DM Sans";
+            font-size: 23px;
+            font-weight: 600;
+            line-height: 1.43;
+            text-transform: uppercase;
+            max-width: 205px;
+            margin-bottom: 0;
+        }
+        &--icon {
+            svg {
+                height: 60px;
+                path {
+                    fill: $primary_color;
+                }
+            }
+        }
+        &--divider {
+            margin-top: 19px;
+            margin-bottom: 13px;
+            path {
+                fill: rgba($body_bg_color_hex, 0.3);
+            }
+        }
+        &--description {
+            color: rgba($body_bg_color_hex, 0.85);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.635;
+            word-break: break-word;
+            overflow-wrap: break-word;
         }
     }
 }

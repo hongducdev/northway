@@ -45,6 +45,17 @@
                 text-transform: capitalize;
                 margin-bottom: 0;
             }
+            &:has(svg) {
+                svg {
+                    transform: translateX(0);
+                    @include transition(all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1));
+                }
+                &:hover {
+                    svg {
+                        transform: translateX(5px);
+                    }
+                }
+            }
         }
     }
 }

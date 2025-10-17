@@ -27,6 +27,10 @@ pxl_add_custom_widget(
                                     'label' => esc_html__('Layout 2', 'northway' ),
                                     'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_icon_box/layout2.jpg'
                                 ],
+                                '3' => [
+                                    'label' => esc_html__('Layout 3', 'northway' ),
+                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_icon_box/layout3.jpg'
+                                ],
                             ],
                         ),
                     ),
@@ -78,7 +82,7 @@ pxl_add_custom_widget(
                             ),
                             'title_field' => '{{{ text }}}',
                             'condition' => [
-                                'follow_social' => '',
+                                'layout' => ['1'],
                             ]
                         ),
                         array(

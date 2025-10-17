@@ -125,5 +125,59 @@
     }
 }
 
+.pxl-counter2 {
+    .pxl-counter {
+        &--inner {
+            @include border-radius(20px);
+            border: 1px solid rgba($four_color_hex, 0.5);
+            background: $body_bg_color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 28px;
+            padding: 60px 90px 50px 90px;
+            position: relative;
+            &:before {
+                content: "";
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -8px;
+                width: calc(100% + 2px);
+                height: 100%;
+                border: 1px solid rgba($four_color_hex, 0.5);
+                background: $body_bg_color;
+                border-radius: 20px;
+                z-index: -1;
+            }
+        }
+        &--number {
+            color: $secondary_color;
+            text-align: center;
+            font-family: "DM Sans";
+            font-size: 95px;
+            font-weight: 600;
+            line-height: 72px;
+            display: inline-flex;
+            justify-content: center;
+        }
+        &--suffix {
+            color: $secondary_color;
+            font-feature-settings: "sups" on;
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 1;
+        }
+        &--title {
+            color: $secondary_color;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.667;
+            text-align: center;
+        }
+    }
+}
+
 body.rtl {
 }

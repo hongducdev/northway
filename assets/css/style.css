@@ -27940,6 +27940,18 @@ input[type="submit"]:hover {
   text-transform: capitalize;
   margin-bottom: 0;
 }
+.pxl-mailchimp .mc4wp-form-fields button:has(svg) svg {
+  transform: translateX(0);
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.pxl-mailchimp .mc4wp-form-fields button:has(svg):hover svg {
+  transform: translateX(5px);
+}
 .pxl-nav-menu .pxl-menu-primary > li {
   /* Style Level First */
 }
@@ -28539,6 +28551,9 @@ input[type="submit"]:hover {
 }
 .pxl-icon-box2 .pxl-item--icon a {
   color: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .pxl-icon-box2 .pxl-item--title {
   color: var(--body_bg-color);
@@ -28551,6 +28566,58 @@ input[type="submit"]:hover {
   color: rgba(248, 248, 242, 0.7);
   font-size: 16px;
   line-height: 1.625;
+}
+.pxl-icon-box3 {
+  --gradient-color-1: var(--secondary-color);
+  --gradient-color-2: #6454bd;
+  --gradient-color-3: var(--primary-color);
+  --gradient-color-4: var(--third-color);
+}
+.pxl-icon-box3 .pxl-item--inner {
+  background: radial-gradient(209.81% 190.64% at 88.43% -59.09%, var(--gradient-color-1) 0%, var(--gradient-color-2) 70.21%, var(--gradient-color-3) 95.63%, var(--gradient-color-4) 99.04%);
+  padding: 50px 30px;
+  -webkit-border-radius: 25px;
+  -khtml-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+}
+.pxl-icon-box3 .pxl-item--header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pxl-icon-box3 .pxl-item--title {
+  color: var(--body_bg-color);
+  font-family: "DM Sans";
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1.43;
+  text-transform: uppercase;
+  max-width: 205px;
+  margin-bottom: 0;
+}
+.pxl-icon-box3 .pxl-item--icon svg {
+  height: 60px;
+}
+.pxl-icon-box3 .pxl-item--icon svg path {
+  fill: var(--primary-color);
+}
+.pxl-icon-box3 .pxl-item--divider {
+  margin-top: 19px;
+  margin-bottom: 13px;
+}
+.pxl-icon-box3 .pxl-item--divider path {
+  fill: rgba(248, 248, 242, 0.3);
+}
+.pxl-icon-box3 .pxl-item--description {
+  color: rgba(248, 248, 242, 0.85);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.635;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 @keyframes wobble_vertical {
   16.65% {
@@ -29229,6 +29296,60 @@ input[type="submit"]:hover {
   font-weight: 500;
   text-transform: capitalize;
   font-family: "Inter", serif;
+}
+.pxl-counter2 .pxl-counter--inner {
+  -webkit-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(102, 111, 120, 0.5);
+  background: var(--body_bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 28px;
+  padding: 60px 90px 50px 90px;
+  position: relative;
+}
+.pxl-counter2 .pxl-counter--inner:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -8px;
+  width: calc(100% + 2px);
+  height: 100%;
+  border: 1px solid rgba(102, 111, 120, 0.5);
+  background: var(--body_bg-color);
+  border-radius: 20px;
+  z-index: -1;
+}
+.pxl-counter2 .pxl-counter--number {
+  color: var(--secondary-color);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 95px;
+  font-weight: 600;
+  line-height: 72px;
+  display: inline-flex;
+  justify-content: center;
+}
+.pxl-counter2 .pxl-counter--suffix {
+  color: var(--secondary-color);
+  font-feature-settings: "sups" on;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1;
+}
+.pxl-counter2 .pxl-counter--title {
+  color: var(--secondary-color);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.667;
+  text-align: center;
 }
 .pxl-btn-video {
   position: relative;
