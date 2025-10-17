@@ -4902,19 +4902,19 @@ body.rtl .pxl-box-hover1 .pxl-item--inner:hover:before {
   color: #f8f8f2;
 }
 .pxl-link.style-divider li + li {
-  margin-left: 17px;
+  margin-left: 25px;
   position: relative;
-  padding-left: 17px;
+  padding-left: 25px;
 }
 .pxl-link.style-divider li + li:before {
-  content: "";
+  content: "\F113";
   position: absolute;
+  font-family: "Flaticon";
   top: 50%;
-  left: 0;
+  left: -5px;
   transform: translateY(-50%);
-  width: 1px;
-  height: 10px;
-  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 10px;
+  color: rgba(248, 248, 242, 0.3);
 }
 .pxl-link.style-divider li:first-child {
   margin-left: 0;
@@ -4987,9 +4987,6 @@ body.rtl .pxl-box-hover1 .pxl-item--inner:hover:before {
   .pxl-link.type-horizontal {
     row-gap: 15px;
   }
-}
-.pxl-link.type-horizontal li {
-  margin: 0 10px;
 }
 .pxl-link.type-horizontal i {
   margin-top: 0;
@@ -14055,6 +14052,12 @@ body.rtl .widget .widget-title:before {
 }
 .pxl-img-multiple img {
   mix-blend-mode: multiply;
+}
+.pxl-svg-spinner svg {
+  animation: spin 8s linear infinite;
+}
+.pxl-divider-1600 {
+  width: calc((100% - 1600px) / 2);
 }
 @keyframes pxl-draws-svg {
   0% {

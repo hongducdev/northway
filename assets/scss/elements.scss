@@ -87,18 +87,18 @@
     &.style-divider {
         li {
             + li {
-                margin-left: 17px;
+                margin-left: 25px;
                 position: relative;
-                padding-left: 17px;
+                padding-left: 25px;
                 &:before {
-                    content: "";
+                    content: "\F113";
                     position: absolute;
+                    font-family: "Flaticon";
                     top: 50%;
-                    left: 0;
+                    left: -5px;
                     transform: translateY(-50%);
-                    width: 1px;
-                    height: 10px;
-                    background-color: rgba(#fff, 0.2);
+                    font-size: 10px;
+                    color: rgba($body_bg_color_hex, 0.3);
                 }
             }
             &:first-child {
@@ -174,9 +174,6 @@
         flex-wrap: wrap;
         @media (max-width: 1200px) {
             row-gap: 15px;
-        }
-        li {
-            margin: 0 10px;
         }
         i {
             margin-top: 0;

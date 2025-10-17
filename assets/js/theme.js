@@ -33,6 +33,7 @@
         northway_col_offset();
         northway_col_offset_1750();
         northway_text_carousel_flip();
+        northway_divider_width_1600();    
     });
 
     $(window).on("scroll", function () {
@@ -63,6 +64,7 @@
         northway_header_mobile();
         northway_col_offset();
         northway_col_offset_1750();
+        northway_divider_width_1600();
     });
 
     $(document).ready(function () {
@@ -1563,6 +1565,20 @@
             $(".pxl-col-offset-left-1750").css(
                 "padding-left",
                 w_pxl_row_lg + "px"
+            );
+        }
+    }
+
+    // Set width divider left screen width 1600px
+    function northway_divider_width_1600() {
+        if (pxl_window_width > 1600) {
+            $(".pxl-divider-left-1600").css(
+                "width",
+                "calc((100% - 1600px) / 2)",
+            );
+            $(".pxl-divider-right-1600").css(
+                "width",
+                "calc((100% - 1600px) / 2)"
             );
         }
     }

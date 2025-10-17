@@ -571,6 +571,16 @@
     }
 }
 
+.pxl-svg-spinner {
+    svg {
+        animation: spin 8s linear infinite;
+    }
+}
+
+.pxl-divider-1600 {
+    width: calc((100% - 1600px) / 2);
+}
+
 @keyframes pxl-draws-svg {
     0% {
         stroke-dashoffset: 100%;

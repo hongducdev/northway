@@ -88,9 +88,15 @@
 .flaticon-lock:before {
     content: "\f111";
 }
-.flaticon-box:before {
+.flaticon-star:before {
     content: "\f112";
 }
-.flaticon-star:before {
+.flaticon-polygon:before {
     content: "\f113";
+}
+.flaticon-tag:before {
+    content: "\f114";
+}
+.flaticon-mail-1:before {
+    content: "\f115";
 }

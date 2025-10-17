@@ -13,11 +13,13 @@
         "instagram",
         "search-1",
         "shopping-cart",
-        "user",
         "comment",
+        "user",
         "arrow",
         "lock",
-        "box",
-        "star"
+        "star",
+        "polygon",
+        "tag",
+        "mail-1"
     ]
 }
