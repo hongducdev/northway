@@ -4862,9 +4862,12 @@ body.rtl .pxl-box-hover1 .pxl-item--inner:hover:before {
 }
 .pxl-link.style-default a {
   position: relative;
+  display: inline-flex;
+  align-items: center;
 }
-.pxl-link.style-default a svg {
-  color: var(--third-color);
+.pxl-link.style-default a i {
+  color: var(--primary-color);
+  font-size: 10px;
   position: absolute;
   top: 50%;
   transform: translatey(-50%) scale(0);
@@ -4876,12 +4879,27 @@ body.rtl .pxl-box-hover1 .pxl-item--inner:hover:before {
   -ms-transition: all 220ms linear 0ms;
   -o-transition: all 220ms linear 0ms;
   transition: all 220ms linear 0ms;
+  margin-top: 0;
+}
+.pxl-link.style-default a span {
+  color: rgba(248, 248, 242, 0.7);
+  font-size: 16px;
+  line-height: 1.625;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .pxl-link.style-default li:hover a, .pxl-link.style-default li.active a {
   padding-left: 20px;
 }
-.pxl-link.style-default li:hover a svg, .pxl-link.style-default li.active a svg {
+.pxl-link.style-default li:hover a i, .pxl-link.style-default li.active a i {
   transform: translatey(-50%) scale(1);
+}
+.pxl-link.style-default li:hover a span, .pxl-link.style-default li.active a span {
+  color: #f8f8f2;
 }
 .pxl-link.style-divider li + li {
   margin-left: 17px;
@@ -28483,6 +28501,53 @@ input[type="submit"]:hover {
   -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.pxl-icon-box2 .pxl-item--inner {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.pxl-icon-box2 .pxl-item--icon {
+  width: 46px;
+  height: 46px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--body_bg-color);
+  background-color: var(--primary-color);
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.pxl-icon-box2 .pxl-item--icon svg {
+  height: 19px;
+}
+.pxl-icon-box2 .pxl-item--icon svg path {
+  fill: var(--body_bg-color);
+}
+.pxl-icon-box2 .pxl-item--icon a {
+  color: inherit;
+}
+.pxl-icon-box2 .pxl-item--title {
+  color: var(--body_bg-color);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.625;
+  margin-bottom: 0;
+}
+.pxl-icon-box2 .pxl-item--description {
+  color: rgba(248, 248, 242, 0.7);
+  font-size: 16px;
+  line-height: 1.625;
 }
 @keyframes wobble_vertical {
   16.65% {

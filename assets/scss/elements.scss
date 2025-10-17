@@ -47,14 +47,26 @@
     &.style-default {
         a {
             position: relative;
-            svg {
-                color: $third_color;
+            display: inline-flex;
+            align-items: center;
+            i {
+                color: $primary_color;
+                font-size: 10px;
                 position: absolute;
                 top: 50%;
                 transform: translatey(-50%) scale(0);
                 left: 0;
                 transform-origin: left;
                 @include transition(all 220ms linear 0ms);
+                margin-top: 0;
+            }
+            span {
+                color: rgba($body_bg_color_hex, 0.7);
+                font-size: 16px;
+                line-height: 1.625;
+                @include transition(
+                    all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)
+                );
             }
         }
         li {
@@ -62,8 +74,11 @@
             &.active {
                 a {
                     padding-left: 20px;
-                    svg {
+                    i {
                         transform: translatey(-50%) scale(1);
+                    }
+                    span {
+                        color: rgba($body_bg_color_hex, 1);
                     }
                 }
             }

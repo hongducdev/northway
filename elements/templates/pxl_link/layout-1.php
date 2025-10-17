@@ -41,9 +41,7 @@ $html_id = pxl_get_element_id($settings); ?>
                             echo 'pxl-icon-color-gradient';
                         } ?>" <?php echo implode(' ', [$link_attributes]); ?>>
                         <?php if ($settings['style'] == 'style-default') : ?>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="11" viewBox="0 0 9 11" fill="none">
-                                <path d="M8.24988 6.12391C8.91654 5.74182 8.91654 4.7866 8.24988 4.40451L1.49988 0.535845C0.833211 0.153755 -0.000122104 0.631367 -0.00012207 1.39555V9.13287C-0.000122037 9.89705 0.833211 10.3747 1.49988 9.99258L8.24988 6.12391Z" fill="currentColor"/>
-                            </svg>
+                            <i class="flaticon-arrow"></i>
                         <?php else: ?>
                             <?php if (!empty($link['pxl_icon'])) {
                                 \Elementor\Icons_Manager::render_icon($link['pxl_icon'], ['aria-hidden' => 'true'], 'i');
