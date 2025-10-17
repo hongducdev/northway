@@ -21,6 +21,22 @@ pxl_add_custom_widget(
                             ],
                             'default' => 'style-default',
                         ),
+                        array(
+                            'name' => 'max_width',
+                            'label' => esc_html__('Max Width', 'northway'),
+                            'type' => \Elementor\Controls_Manager::SLIDER,
+                            'control_type' => 'responsive',
+                            'size_units' => ['px'],
+                            'range' => [
+                                'px' => [
+                                    'min' => 0,
+                                    'max' => 1000,
+                                ],
+                            ],
+                            'selectors' => [
+                                '{{WRAPPER}} .pxl-mailchimp' => 'max-width: {{SIZE}}{{UNIT}};',
+                            ],
+                        )
                     ),
                 ),
                 array(
