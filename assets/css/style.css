@@ -14042,10 +14042,15 @@ body.rtl .widget .widget-title:before {
   height: 100%;
 }
 .pxl-container-contact-1 {
-  max-width: calc(100% - 120px);
+  max-width: calc(100% - 160px);
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (max-width: 1600px) {
+  .pxl-container-contact-1 {
+    max-width: calc(100% - 120px);
+  }
 }
 .pxl-img-multiple {
   mix-blend-mode: multiply;
