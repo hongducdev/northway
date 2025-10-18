@@ -25562,48 +25562,12 @@ body .woosw-popup-content-mid .added_to_cart {
 .pxl-portfolio-carousel1 .pxl-swiper-slide {
   margin-bottom: 0;
 }
-.pxl-portfolio-carousel1:has(.swiper-filter) .pxl-swiper-arrow-wrap {
-  top: 55%;
-}
 .pxl-portfolio-carousel1 .pxl-swiper-arrow-wrap {
-  width: calc(100vw - 152px - 152px);
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-@media screen and (max-width: 1600px) {
-  .pxl-portfolio-carousel1 .pxl-swiper-arrow-wrap {
-    width: 100%;
-    transform: none;
-  }
-}
-.pxl-portfolio-carousel1 .pxl-portfolio-carousel-button-2 {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-}
-.pxl-portfolio-carousel1 .pxl-portfolio-carousel-button-2 a {
-  position: relative;
-  color: var(--secondary-color);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.pxl-portfolio-carousel1 .pxl-portfolio-carousel-button-2 a i {
-  font-size: 22px;
-}
-.pxl-portfolio-carousel1 .pxl-portfolio-carousel-button-2 a:hover {
-  color: var(--secondary-color);
-}
-.pxl-portfolio-carousel1 .pxl-portfolio-carousel-button-2 a:after {
-  content: "";
+  width: auto;
+  left: 320px;
+  top: -131px;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-  background: linear-gradient(152deg, #fff597 30.33%, #f0c020 124.41%);
-  z-index: -1;
+  transform: none;
 }
 .pxl-portfolio-carousel2 .pxl-filter-container, .pxl-portfolio-grid-layout1 .pxl-filter-container {
   display: flex;
@@ -28691,6 +28655,43 @@ input[type="submit"]:hover {
   color: rgba(248, 248, 242, 0.7);
   font-size: 16px;
   line-height: 1.625;
+}
+.pxl-icon-box2.style-2 .pxl-item--inner {
+  gap: 25px;
+}
+.pxl-icon-box2.style-2 .pxl-item--icon {
+  width: 46px;
+  height: 46px;
+  -webkit-border-radius: 46px;
+  -khtml-border-radius: 46px;
+  -moz-border-radius: 46px;
+  -ms-border-radius: 46px;
+  -o-border-radius: 46px;
+  border-radius: 46px;
+  background-color: var(--body_bg-color);
+  position: relative;
+}
+.pxl-icon-box2.style-2 .pxl-item--icon:before {
+  content: "";
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  -webkit-border-radius: 46px;
+  -khtml-border-radius: 46px;
+  -moz-border-radius: 46px;
+  -ms-border-radius: 46px;
+  -o-border-radius: 46px;
+  border-radius: 46px;
+  background-color: transparent;
+  border: 1px solid rgba(102, 111, 120, 0.5);
+  top: 0;
+  left: 10px;
+}
+.pxl-icon-box2.style-2 .pxl-item--icon svg path {
+  fill: var(--secondary-color);
+}
+.pxl-icon-box2.style-2 .pxl-item--icon a {
+  color: var(--secondary-color);
 }
 .pxl-icon-box3 {
   --gradient-color-1: var(--secondary-color);

@@ -198,6 +198,40 @@
             line-height: 1.625;
         }
     }
+    &.style-2 {
+        .pxl-item {
+            &--inner {
+                gap: 25px;
+            }
+            &--icon {
+                width: 46px;
+                height: 46px;
+                @include border-radius(46px);
+                background-color: $body_bg_color;
+                position: relative;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 46px;
+                    height: 46px;
+                    @include border-radius(46px);
+                    background-color: transparent;
+                    border: 1px solid rgba($four_color_hex, 0.5);
+                    top: 0;
+                    left: 10px;
+                }
+                svg {
+                    path {
+                        fill: $secondary_color;
+                    }
+                }
+                a {
+                    color: $secondary_color;
+                }
+            }
+
+        }
+    }
 }
 
 .pxl-icon-box3 {

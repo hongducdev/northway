@@ -181,8 +181,8 @@ pxl_add_custom_widget(
                     'tab' => \Elementor\Controls_Manager::TAB_STYLE,
                     'controls' => array(
                         array(
-                            'name' => 'style_3',
-                            'label' => esc_html__('Style 3', 'northway' ),
+                            'name' => 'style_2',
+                            'label' => esc_html__('Style', 'northway' ),
                             'type' => \Elementor\Controls_Manager::SELECT,
                             'options' => [
                                 'style-1' => esc_html__('Style 1', 'northway' ),
@@ -190,7 +190,7 @@ pxl_add_custom_widget(
                             ],
                             'default' => 'style-1',
                             'condition' => [
-                                'layout' => ['3'],
+                                'layout' => ['2'],
                             ],
                         ),
                         array(

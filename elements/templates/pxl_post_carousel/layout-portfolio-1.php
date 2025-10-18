@@ -289,28 +289,14 @@ $widget->add_render_attribute('carousel', [
                             <div class="pxl-swiper-dots style-1"></div>
                         <?php endif; ?>
                         <?php if ($arrows !== false): ?>
-                            <div class="pxl-swiper-arrow-wrap style-1">
-                                <div class="pxl-swiper-arrow pxl-swiper-arrow-prev" style="transform: scalex(-1);">
-                                    <i class="bi-play-fill"></i>
+                            <div class="pxl-swiper-arrow-wrap style-2">
+                                <div class="pxl-swiper-arrow pxl-swiper-arrow-prev">
+                                    <i class="bi-arrow-left-short"></i>
                                 </div>
                                 <div class="pxl-swiper-arrow pxl-swiper-arrow-next">
-                                    <i class="bi-play-fill"></i>
+                                    <i class="bi-arrow-right-short"></i>
                                 </div>
                             </div>
-                        <?php endif; ?>
-                        <?php if ($portfolio_style_1 == 'style-2'): ?>
-                            <?php if ($settings['show_button'] == 'true'): ?>
-                                <div class="pxl-portfolio-carousel-button-2">
-                                    <a href="<?php echo esc_url($button_url['url']); ?>" class="btn btn-default">
-                                        <?php if (!empty($button_text)): ?>
-                                            <?php echo esc_html($button_text); ?>
-                                        <?php else: ?>
-                                            <?php esc_html__('View All Projects', 'northway'); ?>
-                                        <?php endif; ?>
-                                        <i class="bi-arrow-right-short"></i>
-                                    </a>
-                                </div>
-                            <?php endif; ?>
                         <?php endif; ?>
                     </div>
             </div>
