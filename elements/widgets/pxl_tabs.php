@@ -40,24 +40,6 @@ pxl_add_custom_widget(
                     'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
                     'controls' => array(
                         array(
-                            'name' => 'currency',
-                            'label' => esc_html__('Currency', 'northway'),
-                            'type' => \Elementor\Controls_Manager::TEXT,
-                            'default' => esc_html__('$', 'northway'),
-                            'condition' => [
-                                'layout' => '2'
-                            ],
-                        ),
-                        array(
-                            'name' => 'time',
-                            'label' => esc_html__('Time', 'northway'),
-                            'type' => \Elementor\Controls_Manager::TEXT,
-                            'default' => esc_html__('Monthly', 'northway'),
-                            'condition' => [
-                                'layout' => '2'
-                            ],
-                        ),
-                        array(
                             'name' => 'tab_active',
                             'label' => esc_html__('Active Tab', 'northway'),
                             'type' => \Elementor\Controls_Manager::NUMBER,

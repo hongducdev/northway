@@ -7,7 +7,7 @@ if(isset($settings['tabs_2']) && !empty($settings['tabs_2']) && count($settings[
     ?>
     <div class="pxl-tabs pxl-tabs2 <?php echo esc_attr($settings['tab_effect'].' '.$settings['pxl_animate']); ?>" data-wow-delay="<?php echo esc_attr($settings['pxl_animate_delay']); ?>ms">
         <div class="pxl-tabs--inner">
-            <div class="pxl-tabs--title">
+            <div class="pxl-tabs--title pxl-bg-pattern-caro-2">
                 <?php foreach ($settings['tabs_2'] as $key => $title) :  
                     $icon_key = $widget->get_repeater_setting_key( 'icon_2', 'icons', $key );
                     $widget->add_render_attribute( $icon_key, [
@@ -18,22 +18,8 @@ if(isset($settings['tabs_2']) && !empty($settings['tabs_2']) && count($settings[
                     ?>
                     <div class="pxl-tab--title pxl-cursor--cta <?php if($settings['tab_active'] == $key + 1) { echo 'active'; } ?>" data-target="#<?php echo esc_attr($html_id.'-'.$title['_id']); ?>">
                         <span class="pxl-title--text">
-                            <?php if ( !empty($title['icon_2']) ) : ?>
-                                <div class="pxl-tab--icon">
-                                    <?php \Elementor\Icons_Manager::render_icon( $title['icon_2'], [ 'aria-hidden' => 'true', 'class' => '' ], 'i' ); ?>
-                                </div>
-                            <?php endif; ?>
-                            <span><?php echo pxl_print_html($title['title_2']); ?></span>
+                            <?php echo pxl_print_html($title['title_2']); ?>
                         </span>
-                        <?php if(!empty($price)) : ?>
-                            <div class="pxl-tab--price-inner">
-                                <span class="pxl-tab--price-currency"><?php echo pxl_print_html($currency); ?></span>
-                                <span class="pxl-tab--price-value"><?php echo pxl_print_html($price); ?></span>
-                                <?php if(!empty($time)) : ?>
-                                    <span class="pxl-tab--price-time">/ <?php echo pxl_print_html($time); ?></span>
-                                <?php endif; ?>
-                            </div>
-                        <?php endif; ?>
                     </div>
                 <?php endforeach; ?>
             </div>

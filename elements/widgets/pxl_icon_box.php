@@ -31,6 +31,10 @@ pxl_add_custom_widget(
                                     'label' => esc_html__('Layout 3', 'northway' ),
                                     'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_icon_box/layout3.jpg'
                                 ],
+                                '4' => [
+                                    'label' => esc_html__('Layout 4', 'northway' ),
+                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_icon_box/layout4.jpg'
+                                ],
                             ],
                         ),
                     ),

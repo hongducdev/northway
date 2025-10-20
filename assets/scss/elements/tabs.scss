@@ -30,138 +30,44 @@
 }
 
 .pxl-tabs2 {
-    .pxl-tabs--inner {
-        display: flex;
-        gap: 30px;
-        @media #{$max-md2} {
-            flex-direction: column;
-        }
-    }
     .pxl-tabs--title {
-        flex: 0 0 40%;
-        @media #{$max-md2} {
-            flex: 0 0 100%;
-            display: flex;
-            flex-direction: row;
-            gap: 15px;
-        }
-        @media #{$max-xs} {
-            flex-direction: column;
-        }
-    }
-    .pxl-tabs--content {
-        flex: 0 0 60%;
-        @media #{$max-md2} {
-            flex: 0 0 100%;
-        }
-        .pxl-tab--content {
-            display: none;
-        }
-    }
-    .pxl-tab {
-        &--title {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: $primary_color;
-            padding: 0 30px;
-            height: 86px;
-            border-radius: 15px;
-            @include transition(all 0.3s linear 0ms);
-            box-shadow: 0px 0px 0px 0px #d3e0b1;
-            cursor: pointer;
-            @media #{$max-md2} {
-                width: 100%;
-                flex-direction: column;
-                height: auto;
-                padding: 15px;
-            }
-            @media #{$max-xs} {
-                flex-direction: row;
-                gap: 15px;
-                justify-content: space-between;
-            }
-            @media #{$max-xsx} {
-                flex-direction: column;
-            }
-            + .pxl-tab--title {
-                margin-top: 27px;
-                @media #{$max-md2} {
-                    margin-top: 0;
-                }
-            }
-            &:not(.active) {
-                .pxl-tab--icon {
-                    i {
-                        color: #fff;
-                    }
-                    svg {
-                        path {
-                            fill: #fff;
-                        }
-                    }
-                }
-            }
-            &.active {
-                background-color: #fff;
-                box-shadow: 0px 6px 0px 0px #d3e0b1;
-                .pxl-title--text {
-                    span {
-                        color: $secondary_color;
-                    }
-                }
-                .pxl-tab--price {
-                    &-inner {
-                        color: $secondary_color;
-                    }
-                }
-            }
-        }
-        &--price {
-            &-inner {
-                color: #fff;
-                font-weight: 500;
-                font-family: "General Sans";
-                @include transition(all 0.3s linear 0ms);
-                display: flex;
-                height: 40px;
-            }
-            &-currency {
-                font-size: 25px;
-                align-items: center;
-                display: flex;
-            }
-            &-value {
-                font-size: 55px;
-                align-items: center;
-                display: flex;
-                @media #{$max-md2} {
-                    font-size: 45px;
-                }
-            }
-            &-time {
-                display: flex;
-                align-items: flex-end;
-                font-size: 17px;
-                text-transform: lowercase;
-            }
-        }
-    }
-    .pxl-title--text {
+        padding: 70px 75px;
+        @include border-radius(20px 0 0 20px);
+        border: 1px solid rgba($four_color_hex, 0.5);
+        position: relative;
+        overflow: hidden;
         display: flex;
-        align-items: center;
-        gap: 15px;
-        .pxl-tab--icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .pxl-tab--title {
+        color: rgba($four_color_hex, 0.5);
+        font-family: "DM Sans";
+        font-size: 23px;
+        font-weight: 600;
+        line-height: 1.43;
+        z-index: 5;
+        position: relative;
+        cursor: pointer;
+        @include transition(all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1));
+        &:before {
+            content: "\F113";
+            font-family: "Flaticon";
+            font-size: 10px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%) scale(0);
+            left: -25px;
+            opacity: 0;
+            color: $secondary_color;
+            @include transition(all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1));
         }
-        span {
-            color: #fff;
-            font-family: "Dancing Script";
-            font-size: 25px;
-            font-weight: 500;
-            line-height: 1.32;
+        &.active, &:hover {
+            color: $secondary_color;
+            &:before {
+                opacity: 1;
+                transform: translateY(-50%) scale(1);
+            }
         }
     }
 }
