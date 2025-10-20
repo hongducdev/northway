@@ -183,50 +183,80 @@ if (!class_exists('Northway_Page')) {
             );
         }
 
-        public function get_breadcrumb()
-        {
+        public function get_breadcrumb(){
 
-            if (! class_exists('CASE_Breadcrumb')) {
+            if ( ! class_exists( 'CASE_Breadcrumb' ) )
+            {
                 return;
             }
 
             $breadcrumb = new CASE_Breadcrumb();
             $entries = $breadcrumb->get_entries();
 
-            if (empty($entries)) {
+            if ( empty( $entries ) )
+            {
                 return;
             }
 
             ob_start();
 
-            foreach ($entries as $entry) {
-                $entry = wp_parse_args($entry, array(
+            foreach ( $entries as $entry )
+            {
+                $entry = wp_parse_args( $entry, array(
                     'label' => '',
                     'url'   => ''
-                ));
+                ) );
 
                 $entry_label = $entry['label'];
 
-                if (empty($entry_label)) {
+                if(!empty($_GET['blog_title'])) {
+                    $blog_title = $_GET['blog_title'];
+                    $custom_title = explode('_', $blog_title);
+                    foreach ($custom_title as $index => $value) {
+                        $arr_str_b[$index] = $value;
+                    }
+                    $str = implode(' ', $arr_str_b);
+                    $entry_label = $str;
+                }
+
+                if ( empty( $entry_label ) )
+                {
                     continue;
                 }
 
                 echo '<li>';
 
-                if (! empty($entry['url'])) {
+                if ( ! empty( $entry['url'] ) )
+                {
                     printf(
                         '<a class="breadcrumb-hidden" href="%1$s">%2$s</a>',
-                        esc_url($entry['url']),
-                        esc_attr($entry_label)
+                        esc_url( $entry['url'] ),
+                        esc_attr( $entry_label )
                     );
                 }
+                else
+                {
+                    $sg_post_title = northway()->get_theme_opt('sg_post_title', 'default');
+                    $sg_post_title_text = northway()->get_theme_opt('sg_post_title_text');
+                    if(is_singular('post') && $sg_post_title == 'custom_text' && !empty($sg_post_title_text)) {
+                        $entry_label = $sg_post_title_text;
+                    }
+                    $sg_product_ptitle = northway()->get_theme_opt('sg_product_ptitle', 'default');
+                    $sg_product_ptitle_text = northway()->get_theme_opt('sg_product_ptitle_text');
+                    if(is_singular('product') && $sg_product_ptitle == 'custom_text' && !empty($sg_product_ptitle_text)) {
+                        $entry_label = $sg_product_ptitle_text;
+                    }
+                    printf( '<span class="breadcrumb-entry" >%s</span>', esc_html( $entry_label ) );
+                }
+
                 echo '</li>';
             }
 
             $output = ob_get_clean();
 
-            if ($output) {
-                printf('<ul class="pxl-breadcrumb">%s</ul>', wp_kses_post($output));
+            if ( $output )
+            {
+                printf( '<ul class="pxl-breadcrumb">%s</ul>', wp_kses_post($output));
             }
         }
 

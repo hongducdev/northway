@@ -389,64 +389,48 @@ body.elementor-editor-active .pxl-column-sticky {
         }
     }
 }
-.pxl-breadcrumb-wrap.style2 {
+
+.pxl-breadcrumb-wrap {
     .pxl-breadcrumb {
-        color: #646464;
-        background-color: transparent;
+        list-style: none;
+        margin: 0;
         padding: 0;
-        a {
-            &:after {
-                background-color: $secondary_color;
+        flex-wrap: wrap;
+        align-items: center;
+        display: inline-flex;
+        height: 40px;
+        padding: 0px 25px;
+        border-radius: 100px;
+        border: 1px solid rgba($body_bg_color_hex, 0.7);
+        > li {
+            > a,
+            > span {
+                color: rgba($body_bg_color_hex, 0.7);
+                font-family: "DM Sans";
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.71;
             }
-        }
-        li {
-            &:last-child {
-                span {
-                    font-weight: 500;
-                    color: $secondary_color;
+            + li {
+                padding-left: 14px;
+                position: relative;
+                &:before {
+                    content: "/";
+                    position: absolute;
+                    left: 5px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: rgba($body_bg_color_hex, 0.7);
+                    font-family: "DM Sans";
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 1.71;
                 }
             }
         }
     }
 }
-.pxl-breadcrumb {
-    @extend .pxl-flex-center;
-    flex-wrap: wrap;
-    column-gap: 13px;
-    margin: 0;
-    list-style: none;
-    color: rgba(221, 221, 221, 1);
-    text-transform: capitalize;
-    background: rgba(255, 255, 255, 0.5);
-    font-size: 14px;
-    line-height: 22.4px;
-    padding: 4px 21px;
-    border-radius: 20px;
-    font-weight: 400;
-    a {
-        display: flex;
-        align-items: center;
-        color: inherit;
-        &:after {
-            content: "";
-            margin-left: 11px;
-            margin-right: -2px;
-            width: 4px;
-            height: 4px;
-            border-radius: 4px;
-            background-color: #fff;
-            display: inline-block;
-        }
-        &:hover {
-            color: $primary_color;
-        }
-    }
-    li:last-child {
-        span {
-            color: #fff;
-        }
-    }
-}
+
 // body.single .pxl-breadcrumb {
 // 	a {
 // 		&:after {
