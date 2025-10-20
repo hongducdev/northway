@@ -222,7 +222,7 @@ pxl_add_custom_widget(
                                 'label' => esc_html__('Typography', 'northway'),
                                 'type' => \Elementor\Group_Control_Typography::get_type(),
                                 'control_type' => 'group',
-                                'selector' => '{{WRAPPER}} .pxl-button .btn',
+                                'selector' => '{{WRAPPER}} .pxl-button .btn span',
                             ),
                             array(
                                 'name'         => 'btn_box_shadow',
@@ -272,7 +272,6 @@ pxl_add_custom_widget(
                                 ],
                             ),
                         ),
-
                         array(
                             array(
                                 'name' => 'btn_border_radius',
@@ -280,7 +279,8 @@ pxl_add_custom_widget(
                                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                                 'size_units' => ['px'],
                                 'selectors' => [
-                                    '{{WRAPPER}} .pxl-button .btn' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                                    '{{WRAPPER}} .pxl-button .btn span' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                                    '{{WRAPPER}} .pxl-button .btn .pxl-button--icon' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                                 ],
                             ),
                             array(
@@ -289,9 +289,47 @@ pxl_add_custom_widget(
                                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                                 'size_units' => ['px', 'vw'],
                                 'selectors' => [
-                                    '{{WRAPPER}} .pxl-button .btn' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                                    '{{WRAPPER}} .pxl-button .btn span' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                                 ],
                                 'control_type' => 'responsive',
+                            ),
+                            array(
+                                'name' => 'btn_margin',
+                                'label' => esc_html__('Margin', 'northway'),
+                                'type' => \Elementor\Controls_Manager::SLIDER,
+                                'size_units' => ['px'],
+                                'range' => [
+                                    'px' => [
+                                        'min' => 0,
+                                        'max' => 100,
+                                    ],
+                                ],
+                                'selectors' => [
+                                    '{{WRAPPER}} .pxl-button .btn.pxl-button-style-2-default.pxl-icon--right span' => 'margin-right: {{SIZE}}px;',
+                                    '{{WRAPPER}} .pxl-button .btn.pxl-button-style-2-default.pxl-icon--left span' => 'margin-left: {{SIZE}}px !important;',
+                                ],
+                                'condition' => [
+                                    'btn_style_for_default' => ['style-2-default'],
+                                ],
+                            ),
+                            array(
+                                'name' => 'btn_margin_hover',
+                                'label' => esc_html__('Margin Hover', 'northway'),
+                                'type' => \Elementor\Controls_Manager::SLIDER,
+                                'size_units' => ['px'],
+                                'range' => [
+                                    'px' => [
+                                        'min' => 0,
+                                        'max' => 100,
+                                    ],
+                                ],
+                                'selectors' => [
+                                    '{{WRAPPER}} .pxl-button .btn.pxl-button-style-2-default.pxl-icon--right:hover span' => 'margin-left: {{SIZE}}px !important;',
+                                    '{{WRAPPER}} .pxl-button .btn.pxl-button-style-2-default.pxl-icon--left:hover span' => 'margin-right: {{SIZE}}px !important;',
+                                ],
+                                'condition' => [
+                                    'btn_style_for_default' => ['style-2-default'],
+                                ],
                             ),
                         )
                     ),
@@ -389,8 +427,8 @@ pxl_add_custom_widget(
                             'label' => esc_html__('Color', 'northway'),
                             'type' => \Elementor\Controls_Manager::COLOR,
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-button .btn i' => 'color: {{VALUE}};',
-                                '{{WRAPPER}} .pxl-button .btn svg path' => 'fill: {{VALUE}};',
+                                '{{WRAPPER}} .pxl-button .btn .pxl-button--icon i' => 'color: {{VALUE}};',
+                                '{{WRAPPER}} .pxl-button .btn .pxl-button--icon svg path' => 'fill: {{VALUE}};',
                             ],
                         ),
                         array(
@@ -398,8 +436,8 @@ pxl_add_custom_widget(
                             'label' => esc_html__('Color Hover', 'northway'),
                             'type' => \Elementor\Controls_Manager::COLOR,
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-button .btn:hover i' => 'color: {{VALUE}};',
-                                '{{WRAPPER}} .pxl-button .btn:hover svg path' => 'fill: {{VALUE}};',
+                                '{{WRAPPER}} .pxl-button .btn:hover .pxl-button--icon i' => 'color: {{VALUE}};',
+                                '{{WRAPPER}} .pxl-button .btn:hover .pxl-button--icon svg path' => 'fill: {{VALUE}};',
                             ],
                         ),
                         array(
@@ -415,8 +453,8 @@ pxl_add_custom_widget(
                                 ],
                             ],
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-button .btn i' => 'font-size: {{SIZE}}{{UNIT}};',
-                                '{{WRAPPER}} .pxl-button .btn svg' => 'width: {{SIZE}}{{UNIT}}; height: auto;',
+                                '{{WRAPPER}} .pxl-button .btn .pxl-button--icon i' => 'font-size: {{SIZE}}{{UNIT}};',
+                                '{{WRAPPER}} .pxl-button .btn .pxl-button--icon svg' => 'width: {{SIZE}}{{UNIT}}; height: auto;',
                                 '{{WRAPPER}} .pxl-button .btn-svg:hover svg' => 'width: {{SIZE}}{{UNIT}};',
                             ],
                         ),
@@ -455,7 +493,7 @@ pxl_add_custom_widget(
                                 ],
                             ],
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-button .btn i' => 'width: {{SIZE}}{{UNIT}};',
+                                '{{WRAPPER}} .pxl-button .btn .pxl-button--icon' => 'width: {{SIZE}}{{UNIT}};',
                             ],
                         ),
                         array(
@@ -471,7 +509,7 @@ pxl_add_custom_widget(
                                 ],
                             ],
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-button .btn i' => 'height: {{SIZE}}{{UNIT}};line-height: {{SIZE}}{{UNIT}};',
+                                '{{WRAPPER}} .pxl-button .btn .pxl-button--icon' => 'height: {{SIZE}}{{UNIT}};line-height: {{SIZE}}{{UNIT}};',
                             ],
                         ),
                         array(

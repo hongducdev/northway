@@ -191,11 +191,13 @@
         }
         li {
             position: relative;
-            color: #5e6e6e;
+            color: $secondary_color;
             a {
-                font-size: 16px;
+                color: inherit;
+                font-size: 17px;
+                font-weight: 600;
+                font-family: "DM Sans", sans-serif;
                 position: relative;
-                @extend .ft-theme-default;
             }
             > a:hover,
             &.current_page_item > a,
@@ -210,11 +212,8 @@
             vertical-align: middle;
             margin: 0 24px;
             > a {
-                line-height: 103px;
-                font-size: 16px;
-                font-weight: 500;
+                line-height: 86px;
                 display: inline-block;
-                @extend .ft-theme-default;
             }
         }
         .sub-menu,

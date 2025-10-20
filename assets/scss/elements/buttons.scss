@@ -133,7 +133,7 @@ input[type="submit"] {
             }
             &:hover {
                 span {
-                    margin-right: 0;
+                    margin-right: 0 !important;
                     margin-left: 52px;
                 }
                 .pxl-button--icon-right {
@@ -166,7 +166,7 @@ input[type="submit"] {
             }
             &:hover {
                 span {
-                    margin-left: 0;
+                    margin-left: 0 !important;
                     margin-right: 52px;
                 }
                 .pxl-button--icon-right {
