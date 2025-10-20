@@ -74,6 +74,12 @@ pxl_add_custom_widget(
                             'default' => 100,
                         ),
                         array(
+                            'name' => 'suffix_end',
+                            'label' => esc_html__('Suffix End', 'sailon'),
+                            'type' => \Elementor\Controls_Manager::TEXT,
+                            'default' => '',
+                        ),
+                        array(
                             'name' => 'prefix',
                             'label' => esc_html__('Number Prefix', 'northway'),
                             'type' => \Elementor\Controls_Manager::TEXT,
@@ -135,6 +141,19 @@ pxl_add_custom_widget(
                     'label' => esc_html__('General', 'northway'),
                     'tab' => \Elementor\Controls_Manager::TAB_STYLE,
                     'controls' => array(
+                        array(
+                            'name' => 'style_layout_1',
+                            'label' => 'Style Layout 1',
+                            'type' => \Elementor\Controls_Manager::SELECT,
+                            'options' => [
+                                'style-1' => 'Style 1',
+                                'style-2' => 'Style 2',
+                            ],
+                            'default' => 'style-1',
+                            'condition' => [
+                                'layout' => ['1'],
+                            ],
+                        ),
                         array(
                             'name' => 'effect',
                             'label' => esc_html__('Effect', 'northway'),

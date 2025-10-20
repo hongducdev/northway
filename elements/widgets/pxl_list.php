@@ -221,6 +221,15 @@ pxl_add_custom_widget(
                             'selectors' => [
                                 '{{WRAPPER}} .pxl-list .pxl-item--icon' => 'min-width: {{SIZE}}{{UNIT}};',
                             ],
+                        ),
+                        array(
+                            'name' => 'border_radius_icon_box',
+                            'label' => esc_html__('Border Radius Icon Box', 'northway'),
+                            'type' => \Elementor\Controls_Manager::DIMENSIONS,
+                            'size_units' => ['px'],
+                            'selectors' => [
+                                '{{WRAPPER}} .pxl-list .pxl-item--icon' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                            ],
                         )
                     ),
                 ),

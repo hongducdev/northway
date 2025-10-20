@@ -91,6 +91,30 @@
 }
 
 .pxl-counter1 {
+    &.style-2 {
+        .pxl-counter {
+            &--inner {
+                display: flex;
+                align-items: center;
+                gap: 25px;
+            }
+            &--suffix {
+                font-size: 25px;
+                line-height: 20px;
+                font-feature-settings: "sups" on;
+            }
+            &--title {
+                padding-top: 0;
+                color: $secondary_color;
+                font-family: Inter;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.5;
+                text-align: left;
+                max-width: 81px;
+            }
+        }
+    }
     .pxl-counter {
         &--inner {
             text-align: center;
