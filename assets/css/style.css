@@ -29716,6 +29716,67 @@ input[type="submit"]:hover {
   line-height: 1.667;
   text-align: center;
 }
+.pxl-counter3 .pxl-counter--inner {
+  width: 430px;
+  height: 430px;
+  -webkit-border-radius: 430px;
+  -khtml-border-radius: 430px;
+  -moz-border-radius: 430px;
+  -ms-border-radius: 430px;
+  -o-border-radius: 430px;
+  border-radius: 430px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: radial-gradient(54.65% 54.65% at 50% 50%, #041427 40%, #082950 80%, #0e488d 100%);
+  position: relative;
+  overflow: hidden;
+}
+.pxl-counter3 .pxl-counter--inner:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.pxl-counter3 .pxl-counter--inner svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.pxl-counter3 .pxl-counter--number {
+  color: var(--body_bg-color);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 95px;
+  font-weight: 400;
+  line-height: 72px;
+  display: inline-flex;
+  justify-content: center;
+  margin-bottom: 25px;
+  z-index: 3;
+}
+.pxl-counter3 .pxl-counter--suffix {
+  color: var(--body_bg-color);
+  font-feature-settings: "sups" on;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1;
+  z-index: 3;
+}
+.pxl-counter3 .pxl-counter--title {
+  color: var(--body_bg-color);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.875;
+  max-width: 230px;
+  z-index: 3;
+}
 .pxl-btn-video {
   position: relative;
   transition: 300ms all ease !important;

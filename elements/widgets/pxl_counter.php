@@ -34,6 +34,10 @@ pxl_add_custom_widget(
                                     'label' => esc_html__('Layout 2', 'northway'),
                                     'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_counter/layout2.jpg'
                                 ],
+                                '3' => [
+                                    'label' => esc_html__('Layout 3', 'northway'),
+                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_counter/layout3.jpg'
+                                ],
                             ],
                         ),
                     ),
@@ -49,7 +53,7 @@ pxl_add_custom_widget(
                             'type' => \Elementor\Controls_Manager::TEXT,
                             'label_block' => true,
                             'condition' => [
-                                'layout' => ['1', '2'],
+                                'layout' => ['1', '2', '3'],
                             ],
                         ),
                         array(
@@ -58,7 +62,7 @@ pxl_add_custom_widget(
                             'type' => \Elementor\Controls_Manager::TEXTAREA,
                             'label_block' => true,
                             'condition' => [
-                                'layout' => ['3'],
+                                'layout' => ['4'],
                             ],
                         ),
                         array(
