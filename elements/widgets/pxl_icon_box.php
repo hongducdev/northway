@@ -198,6 +198,52 @@ pxl_add_custom_widget(
                             ],
                         ),
                         array(
+                            'name' => 'bg_color_style',
+                            'label' => esc_html__('Box Color Style', 'northway' ),
+                            'type' => \Elementor\Controls_Manager::SELECT,
+                            'options' => [
+                                'bg-color' => esc_html__('Background Color', 'northway' ),
+                                'gradient-bg-color' => esc_html__('Gradient Background Color', 'northway' ),
+                            ],
+                            'default' => 'bg-color',
+                            'condition' => [
+                                'style_2' => 'style-2',
+                            ],
+                        ),
+                        array(
+                            'name' => 'gradient_color_2_1',
+                            'label' => esc_html__('Gradient Color 1', 'northway' ),
+                            'type' => \Elementor\Controls_Manager::COLOR,
+                            'selectors' => [
+                                '{{WRAPPER}} .pxl-icon-box .pxl-item--inner' => 'background: linear-gradient(135deg, {{VALUE}} 0%, {{gradient_color_2_2}} 100%);',
+                            ],
+                            'condition' => [
+                                'bg_color_style' => 'gradient-bg-color',
+                            ],
+                        ),
+                        array(
+                            'name' => 'gradient_color_2_2',
+                            'label' => esc_html__('Gradient Color 2', 'northway' ),
+                            'type' => \Elementor\Controls_Manager::COLOR,
+                            'selectors' => [
+                                '{{WRAPPER}} .pxl-icon-box .pxl-item--inner' => 'background: linear-gradient(135deg, {{VALUE}} 0%, {{gradient_color_2_2}} 100%);',
+                            ],
+                            'condition' => [
+                                'bg_color_style' => 'gradient-bg-color',
+                            ],
+                        ),
+                        array(
+                            'name' => 'gradient_color_2_3',
+                            'label' => esc_html__('Gradient Color 3', 'northway' ),
+                            'type' => \Elementor\Controls_Manager::COLOR,
+                            'selectors' => [
+                                '{{WRAPPER}} .pxl-icon-box .pxl-item--inner' => 'background: linear-gradient(135deg, {{VALUE}} 0%, {{gradient_color_2_2}} 100%);',
+                            ],
+                            'condition' => [
+                                'bg_color_style' => 'gradient-bg-color',
+                            ],
+                        ),
+                        array(
                             'name' => 'bg_color',
                             'label' => esc_html__('Box Color', 'northway' ),
                             'type' => \Elementor\Controls_Manager::COLOR,

@@ -1,7 +1,7 @@
 <div class="pxl-icon-box pxl-icon-box2 <?php echo esc_attr($settings['style_2'] . ' ' . $settings['animate_hover'] . ' ' . $settings['pxl_animate']); ?>" data-wow-delay="<?php echo esc_attr($settings['pxl_animate_delay']); ?>ms">
     <div class="pxl-item--inner">
         <?php if ($settings['icon_type'] == 'icon' && !empty($settings['pxl_icon']['value'])) : ?>
-            <div class="pxl-item--icon pxl-flex-center">
+            <div class="pxl-item--icon pxl-flex-center <?php echo esc_attr($settings['bg_color_style']); ?>">
                 <?php if (! empty($settings['item_link']['url'])) {
                     $widget->add_render_attribute('item_link', 'href', $settings['item_link']['url']);
 

@@ -28810,6 +28810,9 @@ input[type="submit"]:hover {
   gap: 15px;
 }
 .pxl-icon-box2 .pxl-item--icon {
+  --gradient-color-1: #585092;
+  --gradient-color-2: var(--primary-color);
+  --gradient-color-3: var(--third-color);
   width: 46px;
   height: 46px;
   -webkit-border-radius: 5px;
@@ -28884,6 +28887,26 @@ input[type="submit"]:hover {
   border: 1px solid rgba(102, 111, 120, 0.5);
   top: 0;
   left: 10px;
+  z-index: 3;
+}
+.pxl-icon-box2.style-2 .pxl-item--icon.gradient-bg-color:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  border-radius: 46px;
+  background: radial-gradient(102.17% 102.17% at 50% 88.04%, var(--gradient-color-1) 0%, var(--gradient-color-2) 65%, var(--gradient-color-3) 100%);
+}
+.pxl-icon-box2.style-2 .pxl-item--icon.gradient-bg-color:before {
+  border-color: rgba(248, 248, 242, 0.4);
+}
+.pxl-icon-box2.style-2 .pxl-item--icon.gradient-bg-color a {
+  z-index: 4;
+  color: var(--body_bg-color);
+}
+.pxl-icon-box2.style-2 .pxl-item--icon.gradient-bg-color svg path {
+  fill: var(--body_bg-color);
 }
 .pxl-icon-box2.style-2 .pxl-item--icon svg path {
   fill: var(--secondary-color);
