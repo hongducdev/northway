@@ -258,16 +258,6 @@ pxl_add_custom_widget(
                             ],
                         ),
                         array(
-                            'name' => 'item_divider_12',
-                            'label' => esc_html__('Box Divider', 'northway' ),
-                            'type' => \Elementor\Controls_Manager::SWITCHER,
-                            'default' => 'true',
-                            'control_type' => 'responsive',
-                            'condition' => [
-                                'layout' => ['12'],
-                            ],
-                        ),
-                        array(
                             'name' => 'item_border_radius',
                             'label' => esc_html__('Box Border Radius', 'northway' ),
                             'type' => \Elementor\Controls_Manager::DIMENSIONS,
@@ -495,7 +485,7 @@ pxl_add_custom_widget(
                                 '{{WRAPPER}} .pxl-icon-box .pxl-item--description' => 'max-width: {{SIZE}}{{UNIT}} !important;',
                             ],
                             'condition' => [
-                                'layout' => ['4', '8'],
+                                'layout' => ['1'],
                             ],
                         ),
                         array(

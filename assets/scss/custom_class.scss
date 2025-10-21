@@ -501,6 +501,14 @@
         height: 0;
         border-bottom: 165px solid transparent;
         border-right: 165px solid $body_bg_color;
+        @media #{$max-sm} {
+            border-bottom: 120px solid transparent;
+            border-right: 120px solid $body_bg_color;
+        }
+        @media #{$max-xs} {
+            border-bottom: 100px solid transparent;
+            border-right: 100px solid $body_bg_color;
+        }
     }
 }
 
@@ -641,6 +649,9 @@
     display: flex;
     align-self: center;
     gap: 30px;
+    @media #{$max-xs} {
+        flex-direction: column;
+    }
 }
 
 // --------------------------
@@ -697,6 +708,11 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @media #{$max-xs} {
+            flex-direction: column;
+            align-items: start;
+            gap: 15px;
+        }
     }
     &-info {
         display: flex;
