@@ -14147,6 +14147,12 @@ body.rtl .widget .widget-title:before {
 .ct-hover-box > .elementor-element-populated:hover .elementor-widget-container {
   border-color: var(--secondary-color) !important;
 }
+.pxl-split-text {
+  text-transform: none !important;
+}
+.pxl-heading .pxl-item--title.pxl-split-text, .pxl-heading .pxl-text-carousel1 -title.pxl-item.pxl-split-text, .pxl-text-carousel1 .pxl-heading -title.pxl-item.pxl-split-text {
+  text-transform: inherit !important;
+}
 .circle-border {
   position: relative;
   aspect-ratio: 1 / 1;

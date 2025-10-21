@@ -396,6 +396,14 @@
     }
 }
 
+.pxl-split-text {
+    text-transform: none !important;
+}
+
+.pxl-heading .pxl-item--title.pxl-split-text {
+    text-transform: inherit !important;
+}
+
 .circle-border {
     position: relative;
     aspect-ratio: 1 / 1;
