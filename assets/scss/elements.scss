@@ -3981,42 +3981,6 @@ body.rtl {
     }
 }
 
-// Case Grass
-.pxl-grass-widget {
-    &.x {
-        .pxl-grass {
-            animation: pxl-grass-scroll-x-widget 30s linear infinite;
-            will-change: transform;
-            width: 200%;
-            // Đảm bảo animation không bị gián đoạn
-            animation-fill-mode: none;
-        }
-    }
-    .pxl-grass {
-        position: relative;
-        overflow: hidden;
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: flex-end;
-
-        svg {
-            width: auto;
-            height: auto;
-            display: inline-block;
-            flex-shrink: 0;
-        }
-    }
-}
-
-@keyframes pxl-grass-scroll-x-widget {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
 // Case Image Comparison
 .pxl-image-comparison {
     display: flex;

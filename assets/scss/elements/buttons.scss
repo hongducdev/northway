@@ -79,6 +79,7 @@ input[type="submit"] {
         @include border-radius(8px);
         background-color: $secondary_color;
         padding: 0 30px;
+        @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
     }
     .pxl-button--icon {
         height: 52px;

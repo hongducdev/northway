@@ -21,8 +21,7 @@ pxl_add_custom_widget(
                             'default' => 'btn-default',
                             'options' => [
                                 'btn-default' => esc_html__('Default', 'northway'),
-                                'btn-gradient' => esc_html__('Gradient', 'northway'),
-                                'btn-divide' => esc_html__('Divide', 'northway'),
+                                'btn-no-icon' => esc_html__('No Icon', 'northway'),
                             ],
                         ),
                         array(
@@ -124,6 +123,9 @@ pxl_add_custom_widget(
                             'type' => \Elementor\Controls_Manager::ICONS,
                             'label_block' => true,
                             'fa4compatibility' => 'icon',
+                            'condition' => [
+                                'btn_style!' => ['btn-no-icon'],
+                            ],
                         ),
                         array(
                             'name' => 'icon_align',
@@ -133,6 +135,9 @@ pxl_add_custom_widget(
                             'options' => [
                                 'left' => esc_html__('Before', 'northway'),
                                 'right' => esc_html__('After', 'northway'),
+                            ],
+                            'condition' => [
+                                'btn_style!' => ['btn-no-icon'],
                             ],
                         ),
                     ),
@@ -191,6 +196,17 @@ pxl_add_custom_widget(
                                 ],
                                 'condition' => [
                                     'btn_style' => ['btn-default'],
+                                ],
+                            ),
+                            array(
+                                'name' => 'btn_bg_color_no_icon',
+                                'label' => esc_html__('Background Color', 'northway'),
+                                'type' => \Elementor\Controls_Manager::COLOR,
+                                'selectors' => [
+                                    '{{WRAPPER}} .pxl-button .btn span' => 'background-color: {{VALUE}} !important;',
+                                ],
+                                'condition' => [
+                                    'btn_style' => ['btn-no-icon'],
                                 ],
                             ),
                             array(
@@ -400,7 +416,7 @@ pxl_add_custom_widget(
                             'label' => esc_html__('Background Color', 'northway'),
                             'type' => \Elementor\Controls_Manager::COLOR,
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-button .btn:hover' => 'background-color: {{VALUE}};',
+                                '{{WRAPPER}} .pxl-button .btn:hover span' => 'background-color: {{VALUE}};',
                             ],
                             'condition' => [
                                 'btn_style!' => [''],

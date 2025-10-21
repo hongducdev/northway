@@ -426,20 +426,6 @@ pxl_add_custom_widget(
                                     'highlight_text_image[url]!' => ''
                                 ]
                             ),
-                            array(
-                                'name' => 'highlight_animate',
-                                'label' => esc_html__('Case Animate', 'northway'),
-                                'type' => \Elementor\Controls_Manager::SELECT,
-                                'options' => northway_widget_animate_v2(),
-                                'default' => '',
-                            ),
-                            array(
-                                'name' => 'highlight_animate_delay',
-                                'label' => esc_html__('Animate Delay', 'northway'),
-                                'type' => \Elementor\Controls_Manager::TEXT,
-                                'default' => '0',
-                                'description' => 'Enter number. Default 0ms',
-                            ),
                         )
                     ),
                 ),

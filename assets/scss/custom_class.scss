@@ -628,6 +628,19 @@
     }
 }
 
+.pxl-image-footer {
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -60px;
+        width: 60px;
+        height: 60px;
+        background: rgba(187, 178, 255, 0.50);
+    }
+}
+
 @keyframes pxl-draws-svg {
     0% {
         stroke-dashoffset: 100%;
