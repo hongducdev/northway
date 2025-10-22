@@ -20,6 +20,7 @@
         "star",
         "polygon",
         "tag",
-        "mail-1"
+        "mail-1",
+        "calendar"
     ]
 }

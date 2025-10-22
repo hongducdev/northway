@@ -43,7 +43,7 @@
 }
 
 #pxl-main {
-    padding: 104px 0;
+    padding: 120px 0;
     min-height: calc(100vh - 606px);
     @media #{$max-lg} {
         overflow-x: clip;
@@ -62,9 +62,34 @@
     }
 }
 
+.blog #pxl-main {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+
+        background-image: repeating-linear-gradient(
+                to right,
+                rgba(#dfdfdf, 0.4) 0 1px,
+                transparent 1px 300px
+            ),
+            repeating-linear-gradient(
+                to bottom,
+                rgba(#dfdfdf, 0.4) 0 1px,
+                transparent 1px 300px
+            );
+        background-position: center center;
+        background-size: 300px 300px;
+        background-repeat: repeat;
+        transform: translateZ(0);
+    }
+}
+
 .single-post {
     #pxl-main {
-        padding: 104px 0;
+        padding: 120px 0;
         @media #{$max-lg} {
             padding: 90px 0px 90px 15px !important;
         }

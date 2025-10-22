@@ -260,80 +260,68 @@ if (!class_exists('Northway_Page')) {
             }
         }
 
-        public function get_pagination($query = null, $ajax = false)
-        {
+        public function get_pagination( $query = null, $ajax = false ){
 
-            if ($ajax) {
+            if($ajax){
                 add_filter('paginate_links', 'northway_ajax_paginate_links');
             }
 
             $classes = array();
 
-            if (empty($query)) {
+            if ( empty( $query ) )
+            {
                 $query = $GLOBALS['wp_query'];
             }
 
-            if (empty($query->max_num_pages) || ! is_numeric($query->max_num_pages) || $query->max_num_pages < 2) {
+            if ( empty( $query->max_num_pages ) || ! is_numeric( $query->max_num_pages ) || $query->max_num_pages < 2 )
+            {
                 return;
             }
 
-            $paged = $query->get('paged', '');
+            $paged = $query->get( 'paged', '' );
 
-            if (! $paged && is_front_page() && ! is_home()) {
-                $paged = $query->get('page', '');
+            if ( ! $paged && is_front_page() && ! is_home() )
+            {
+                $paged = $query->get( 'page', '' );
             }
 
-            $paged = $paged ? intval($paged) : 1;
+            $paged = $paged ? intval( $paged ) : 1;
 
-            $pagenum_link = html_entity_decode(get_pagenum_link());
+            $pagenum_link = html_entity_decode( get_pagenum_link() );
             $query_args   = array();
-            $url_parts    = explode('?', $pagenum_link);
+            $url_parts    = explode( '?', $pagenum_link );
 
-            if (isset($url_parts[1])) {
-                wp_parse_str($url_parts[1], $query_args);
+            if ( isset( $url_parts[1] ) )
+            {
+                wp_parse_str( $url_parts[1], $query_args );
             }
 
-            $pagenum_link = remove_query_arg(array_keys($query_args), $pagenum_link);
-            $pagenum_link = trailingslashit($pagenum_link) . '%_%';
+            $pagenum_link = remove_query_arg( array_keys( $query_args ), $pagenum_link );
+            $pagenum_link = trailingslashit( $pagenum_link ) . '%_%';
             $paginate_links_args = array(
                 'base'     => $pagenum_link,
                 'total'    => $query->max_num_pages,
                 'current'  => $paged,
                 'mid_size' => 1,
-                'add_args' => array_map('urlencode', $query_args),
-                'prev_text' => '<svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 13 10" fill="none"><g transform="translate(13,0) scale(-1,1)"><path d="M6.50358 4.42541L1.65571 0.153365C1.54358 0.0544776 1.3939 0 1.23431 0C1.07471 0 0.925031 0.0544776 0.812906 0.153365L0.455894 0.467899C0.223584 0.672853 0.223584 1.00596 0.455894 1.21061L4.52677 4.79801L0.451377 8.3894C0.339252 8.48828 0.277344 8.62011 0.277344 8.76067C0.277344 8.90139 0.339252 9.03322 0.451377 9.13218L0.808389 9.44664C0.920603 9.54552 1.07019 9.6 1.22979 9.6C1.38939 9.6 1.53906 9.54552 1.65119 9.44664L6.50358 5.17069C6.61597 5.07149 6.6777 4.93904 6.67734 4.79824C6.6777 4.6569 6.61597 4.52453 6.50358 4.42541Z" fill="currentColor"/><path d="M12.7047 4.42541L7.85688 0.153365C7.74475 0.0544776 7.59507 0 7.43548 0C7.27588 0 7.1262 0.0544776 7.01408 0.153365L6.65707 0.467899C6.42476 0.672853 6.42476 1.00596 6.65707 1.21061L10.7279 4.79801L6.65255 8.3894C6.54042 8.48828 6.47852 8.62011 6.47852 8.76067C6.47852 8.90139 6.54042 9.03322 6.65255 9.13218L7.00956 9.44664C7.12178 9.54552 7.27136 9.6 7.43096 9.6C7.59056 9.6 7.74024 9.54552 7.85236 9.44664L12.7047 5.17069C12.8171 5.07149 12.8789 4.93904 12.8785 4.79824C12.8789 4.6569 12.8171 4.52453 12.7047 4.42541Z" fill="currentColor"/></g></svg>',
-                'next_text' => '<svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 13 10" fill="none"><path d="M6.50358 4.42541L1.65571 0.153365C1.54358 0.0544776 1.3939 0 1.23431 0C1.07471 0 0.925031 0.0544776 0.812906 0.153365L0.455894 0.467899C0.223584 0.672853 0.223584 1.00596 0.455894 1.21061L4.52677 4.79801L0.451377 8.3894C0.339252 8.48828 0.277344 8.62011 0.277344 8.76067C0.277344 8.90139 0.339252 9.03322 0.451377 9.13218L0.808389 9.44664C0.920603 9.54552 1.07019 9.6 1.22979 9.6C1.38939 9.6 1.53906 9.54552 1.65119 9.44664L6.50358 5.17069C6.61597 5.07149 6.6777 4.93904 6.67734 4.79824C6.6777 4.6569 6.61597 4.52453 6.50358 4.42541Z" fill="currentColor"/><path d="M12.7047 4.42541L7.85688 0.153365C7.74475 0.0544776 7.59507 0 7.43548 0C7.27588 0 7.1262 0.0544776 7.01408 0.153365L6.65707 0.467899C6.42476 0.672853 6.42476 1.00596 6.65707 1.21061L10.7279 4.79801L6.65255 8.3894C6.54042 8.48828 6.47852 8.62011 6.47852 8.76067C6.47852 8.90139 6.54042 9.03322 6.65255 9.13218L7.00956 9.44664C7.12178 9.54552 7.27136 9.6 7.43096 9.6C7.59056 9.6 7.74024 9.54552 7.85236 9.44664L12.7047 5.17069C12.8171 5.07149 12.8789 4.93904 12.8785 4.79824C12.8789 4.6569 12.8171 4.52453 12.7047 4.42541Z" fill="currentColor"/></svg>',
+                'add_args' => array_map( 'urlencode', $query_args ),
+                'prev_text' => '<i class="bi-arrow-left-short"></i>',
+                'next_text' => '<i class="bi-arrow-right-short"></i>',
+                'before_page_number' => '<span>',
+                'after_page_number' => '</span>',
             );
-            if ($ajax) {
+            if($ajax){
                 $paginate_links_args['format'] = '?page=%#%';
             }
-            $links = paginate_links($paginate_links_args);
-            if ($links) {
-                preg_match('/<a[^>]*class="[^"]*\bprev\b[^"]*"[^>]*>.*?<\/a>/is', $links, $prev_matches);
-                $prev = !empty($prev_matches[0]) ? $prev_matches[0] : '';
-
-                preg_match('/<a[^>]*class="[^"]*\bnext\b[^"]*"[^>]*>.*?<\/a>/is', $links, $next_matches);
-                $next = !empty($next_matches[0]) ? $next_matches[0] : '';
-
-                $numbers = preg_replace(
-                    [
-                        '/<a[^>]*class="[^"]*\bprev\b[^"]*"[^>]*>.*?<\/a>/is',
-                        '/<a[^>]*class="[^"]*\bnext\b[^"]*"[^>]*>.*?<\/a>/is',
-                    ],
-                    '',
-                    $links
-                );
-
-                $numbers = trim($numbers);
-
+            $links = paginate_links( $paginate_links_args );
+            if ( $links ):
             ?>
-                <nav class="pxl-pagination-wrap <?php echo esc_attr($ajax ? 'ajax' : ''); ?>">
-                    <?php if ($prev) echo wp_kses($prev, function_exists('northway_allowed_svg_html') ? northway_allowed_svg_html() : array()); ?>
-                    <span class="pxl-page-number-wrap"><?php echo wp_kses($numbers, function_exists('northway_allowed_svg_html') ? northway_allowed_svg_html() : array()); ?></span>
-                    <?php if ($next) echo wp_kses($next, function_exists('northway_allowed_svg_html') ? northway_allowed_svg_html() : array()); ?>
-                </nav>
-<?php
-            }
+            <nav class="pxl-pagination-wrap <?php echo esc_attr($ajax?'ajax':''); ?>">
+                <div class="pxl-pagination-links">
+                    <?php printf($links); ?>
+                </div>
+            </nav>
+            <?php
+            endif;
         }
     }
 }
