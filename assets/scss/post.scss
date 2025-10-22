@@ -28,6 +28,7 @@
         img {
             @include transition(all 0.8s ease);
             transform: scale(1.01, 1.01);
+            min-height: 200px;
             max-height: 367px;
             width: 100%;
             object-fit: cover;
@@ -91,6 +92,9 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        @media #{$max-sm} {
+            flex-wrap: wrap;
+        }
         .pxl-item--author,
         .pxl-item--comment,
         .pxl-item--category,
@@ -108,9 +112,7 @@
             align-items: center;
             justify-content: center;
             gap: 8px;
-            @include transition(
-                all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)
-            );
+            @include transition(all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1));
             i {
                 color: $secondary-color;
             }
@@ -126,44 +128,49 @@
         }
     }
     .pxl-post-read-more {
-            height: 45px;
-            padding: 0 30px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            background-color: $secondary_color;
-            color: $body_bg_color;
-            font-family: "DM Sans";
-            font-size: 16px;
-            font-weight: 500;
+        height: 45px;
+        padding: 0 30px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: $secondary_color;
+        color: $body_bg_color;
+        font-family: "DM Sans";
+        font-size: 16px;
+        font-weight: 500;
+        @include border-radius(45px);
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
             @include border-radius(45px);
-            position: relative;
-            &:before {
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                @include border-radius(45px);
-                background-color: transparent;
-                border: 1px solid rgba($four_color_hex, 0.5);
-                top: 0;
-                right: 15px;
-                transform: translateX(0);
-                @include transition(
-                    all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)
-                );
+            background-color: transparent;
+            border: 1px solid rgba($four_color_hex, 0.5);
+            top: 0;
+            right: 15px;
+            transform: translateX(0);
+            @include transition(all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1));
+        }
+        &:hover {
+            svg {
+                animation: pxl_right_from_left 0.3s ease-in-out;
+                animation-fill-mode: forwards;
             }
-            &:hover {
-                svg {
-                    animation: pxl_right_from_left 0.3s ease-in-out;
-                    animation-fill-mode: forwards;
-                }
-                &:before {
-                    transform: translateX(15px);
-                }
+            &:before {
+                transform: translateX(15px);
             }
         }
+        @media #{$max-sm} {
+            width: 100%;
+            justify-content: space-between;
+            &:before {
+                display: none;
+            }
+        }
+    }
     .post-content {
         padding-top: 30px;
         .post-title {
@@ -323,7 +330,10 @@
         opacity: 1;
         @include transition(all 0.35s cubic-bezier(0.645, 0.045, 0.355, 1));
         width: 80px;
-
+        @media #{$max-sm} {
+            top: 15px;
+            left: 15px;
+        }
         &-day {
             @include border-radius(7px);
             color: $secondary_color;
@@ -361,6 +371,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media #{$max-md2} {
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+    }
 }
 
 .pxl-post-meta-2 {
@@ -1147,18 +1162,6 @@
         margin-bottom: 30px;
         > p {
             margin-bottom: 0 !important;
-        }
-    }
-}
-.pxl-has-sidebar {
-    .pxl-sidebar-area {
-        @media #{$min-lg} {
-            padding-left: 38px;
-        }
-    }
-    .pxl-content-area {
-        @media #{$min-lg} {
-            padding-right: 23px;
         }
     }
 }
