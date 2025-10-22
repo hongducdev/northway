@@ -10,9 +10,7 @@ $audio_url = get_post_meta(get_the_ID(), 'featured-audio-url', true);
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('pxl-archive-post'); ?>>
     <div class="content-inner-post">
-
         <?php
-        // Special Post Formats: Quote and Link
         if (has_post_format('quote')) {
             $quote_text = get_post_meta(get_the_ID(), 'featured-quote-text', true);
             $quote_cite = get_post_meta(get_the_ID(), 'featured-quote-cite', true);
