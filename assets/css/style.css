@@ -6349,50 +6349,27 @@ body.rtl .pxl-box-hover1 .pxl-item--inner:hover:before {
   margin-right: 3px;
 }
 .pxl-search-form1 .pxl-searchform-wrap {
-  height: 50px;
-  border-radius: 8px;
-  border: 1px solid rgba(149, 136, 248, 0.3);
-  min-width: 350px;
-  padding-left: 43px;
-  position: relative;
-  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -khtml-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -ms-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  display: flex;
+  align-items: center;
 }
-@media screen and (max-width: 479px) {
-  .pxl-search-form1 .pxl-searchform-wrap {
-    min-width: calc(100vw - 30px);
-    width: 100%;
-  }
+.pxl-search-form1 .pxl-search-field:active, .pxl-search-form1 .pxl-search-field:focus {
+  border-color: var(--secondary-color);
 }
-.pxl-search-form1 .pxl-searchform-wrap i {
-  position: absolute;
-  left: 17px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 18px;
-  color: var(--secondary-color);
-}
-.pxl-search-form1 .pxl-searchform-wrap input {
-  width: 100%;
-  box-shadow: none;
-  border: none;
-  outline: none;
-  padding-left: 5px;
-  background-color: transparent;
-  color: var(--secondary-color);
-}
-.pxl-search-form1 .pxl-searchform-wrap input::placeholder {
-  color: rgba(4, 20, 39, 0.5);
-  font-size: 15px;
-  font-weight: 400;
-  font-style: normal;
-}
-.pxl-search-form1 .pxl-searchform-wrap:focus-within {
-  border-color: var(--primary-color);
+.pxl-search-form1 .pxl-search-btn {
+  width: 52px;
+  height: 52px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  color: var(--body_bg-color);
+  font-size: 16px;
 }
 .pxl-section-padding1 > .elementor-container {
   padding-left: 86px;

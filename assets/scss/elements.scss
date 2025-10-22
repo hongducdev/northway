@@ -1417,46 +1417,25 @@
 // search form
 .pxl-search-form1 {
     .pxl-searchform-wrap {
-        height: 50px;
-        border-radius: 8px;
-        border: 1px solid rgba($primary_color_hex, 0.3);
-        min-width: 350px;
-        padding-left: 43px;
-        position: relative;
-        @include transition(all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1));
-        @media #{$max-xsx} {
-            min-width: calc(100vw - 30px);
-            width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .pxl-search-field {
+        &:active,
+        &:focus {
+            border-color: $secondary-color;
         }
-        i {
-            position: absolute;
-            left: 17px;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 18px;
-            color: $secondary_color;
-        }
-
-        input {
-            width: 100%;
-            box-shadow: none;
-            border: none;
-            outline: none;
-            padding-left: 5px;
-            background-color: transparent;
-            color: $secondary_color;
-
-            &::placeholder {
-                color: rgba($secondary_color_hex, 0.5);
-                font-size: 15px;
-                font-weight: 400;
-                font-style: normal;
-            }
-        }
-
-        &:focus-within {
-            border-color: $primary_color;
-        }
+    }
+    .pxl-search-btn {
+        width: 52px;
+        height: 52px;
+        @include border-radius(10px);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $secondary-color;
+        color: $body-bg_color;
+        font-size: 16px;
     }
 }
 

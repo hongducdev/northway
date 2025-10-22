@@ -39,6 +39,22 @@ pxl_add_custom_widget(
                                 '{{WRAPPER}} .pxl-search-form .pxl-searchform-wrap' => 'background-color: {{VALUE}};',
                             ],
                         ),
+                        array(
+                            'name' => 'max_width',
+                            'label' => esc_html__('Max Width', 'northway' ),
+                            'type' => \Elementor\Controls_Manager::SLIDER,
+                            'size_units' => ['px'],
+                            'range' => [
+                                'px' => [
+                                    'min' => 0,
+                                    'max' => 1000,
+                                    'step' => 1,
+                                ],
+                            ],
+                            'selectors' => [
+                                '{{WRAPPER}} .pxl-search-form .pxl-searchform-wrap' => 'max-width: {{SIZE}}{{UNIT}};',
+                            ],
+                        ),
                     ),
                 ),
                 northway_widget_animation_settings(),
