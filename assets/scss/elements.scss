@@ -1425,6 +1425,7 @@
         &:focus {
             border-color: $secondary-color;
         }
+        flex: 1;
     }
     .pxl-search-btn {
         width: 52px;

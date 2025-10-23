@@ -34,7 +34,7 @@ function northway_get_post_grid_layout1($posts = [], $settings = [])
 {
     extract($settings);
 
-    $images_size = !empty($img_size) ? $img_size : '767x550';
+    $images_size = !empty($img_size) ? $img_size : '430x640';
 
     if (is_array($posts)):
         foreach ($posts as $key => $post):
@@ -70,218 +70,24 @@ function northway_get_post_grid_layout1($posts = [], $settings = [])
                 $filter_class = ''; ?>
             <div class="<?php echo esc_attr($item_class . ' ' . $filter_class); ?>">
                 <div class="pxl-post--inner <?php echo esc_attr($pxl_animate); ?>" data-wow-duration="1.2s">
-                    <?php if (has_post_thumbnail($post->ID) && wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), false)):
-                        $img_id = get_post_thumbnail_id($post->ID);
-                        $img = pxl_get_image_by_size(array(
-                            'attach_id' => $img_id,
-                            'thumb_size' => $images_size
-                        ));
-                        $thumbnail = $img['thumbnail'];
-                    ?>
-                        <div class="pxl-post--featured hover-imge-effect3">
-                            <a href="<?php echo esc_url(get_permalink($post->ID)); ?>">
-                                <?php echo wp_kses_post($thumbnail); ?>
-                            </a>
-                            <div class="pxl-post--meta-1">
-                                <?php if ($show_author == 'true'): ?>
-                                    <div class="pxl-post--author">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="13"
-                                            viewBox="0 0 11 13" fill="none">
-                                            <path d="M2.3932 3.14201C2.3932 2.52058 2.57747 1.91311 2.9227 1.39641C3.26794 0.879704 3.75863 0.476984 4.33273 0.239173C4.90684 0.00136138 5.53856 -0.060861 6.14803 0.0603743C6.75749 0.18161 7.31732 0.480857 7.75672 0.920276C8.19612 1.35969 8.49535 1.91955 8.61658 2.52904C8.73781 3.13853 8.67559 3.77028 8.43779 4.34441C8.19999 4.91854 7.79729 5.40925 7.28061 5.7545C6.76393 6.09975 6.15648 6.28403 5.53508 6.28403C4.70209 6.28308 3.9035 5.95174 3.31449 5.3627C2.72548 4.77367 2.39415 3.97504 2.3932 3.14201ZM10.7865 10.9365C10.7224 10.6647 10.6338 10.3994 10.5217 10.1438C9.7214 8.31691 7.81114 7.18175 5.53508 7.18175C2.95111 7.18175 0.845605 8.67375 0.295328 10.8938C0.246189 11.0926 0.242889 11.2999 0.285679 11.5001C0.328469 11.7003 0.416228 11.8882 0.542318 12.0495C0.668407 12.2107 0.829524 12.3413 1.01348 12.4311C1.19744 12.5209 1.39942 12.5678 1.60414 12.5681H9.46781C9.67345 12.5685 9.87649 12.5221 10.0615 12.4324C10.2465 12.3426 10.4087 12.2119 10.5356 12.0501C10.6591 11.8956 10.7459 11.7151 10.7894 11.5222C10.8328 11.3292 10.8319 11.129 10.7865 10.9365Z"
-                                                fill="currentColor" />
-                                        </svg>
-                                        <?php echo esc_html__('By: ', 'northway') ?>
-                                        <span>
-                                            <?php echo esc_html($author->display_name); ?>
-                                            <span>
-                                    </div>
-                                <?php endif; ?>
-                                <?php if ($show_comment == 'true') : ?>
-                                    <div class="pxl-post--comments">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12"
-                                            viewBox="0 0 14 12" fill="none">
-                                            <path d="M6.82486 2.18969e-07C5.65019 -0.000283893 4.49672 0.275914 3.48358 0.800068C2.47045 1.32422 1.63439 2.07733 1.06175 2.98161C0.489113 3.88589 0.200653 4.90855 0.226166 5.94398C0.251679 6.97941 0.59024 7.99007 1.20688 8.87156L0.684446 11.3955C0.669092 11.4714 0.674735 11.5495 0.700899 11.6231C0.727062 11.6967 0.772973 11.7636 0.834736 11.8182C0.884883 11.8613 0.944227 11.8952 1.00933 11.918C1.07444 11.9407 1.14402 11.9519 1.21404 11.9507H1.32139L4.78521 11.3198C5.43932 11.532 6.12816 11.6492 6.82486 11.6668C8.57962 11.6668 10.2625 11.0522 11.5033 9.95824C12.7441 8.86426 13.4412 7.38052 13.4412 5.8334C13.4412 4.28629 12.7441 2.80254 11.5033 1.70856C10.2625 0.614589 8.57962 2.51572e-07 6.82486 2.18969e-07ZM3.42545 5.98799C3.42545 5.832 3.47791 5.6795 3.57621 5.5498C3.67451 5.42009 3.81423 5.319 3.97769 5.25931C4.14115 5.19961 4.32102 5.18399 4.49456 5.21442C4.66809 5.24486 4.82749 5.31997 4.9526 5.43028C5.07771 5.54058 5.16291 5.68112 5.19743 5.83412C5.23194 5.98712 5.21423 6.1457 5.14652 6.28982C5.07881 6.43394 4.96415 6.55713 4.81704 6.64379C4.66992 6.73046 4.49696 6.77671 4.32003 6.77671C4.08277 6.77671 3.85523 6.69362 3.68747 6.5457C3.5197 6.39779 3.42545 6.19717 3.42545 5.98799ZM5.93028 5.98799C5.93028 5.832 5.98275 5.6795 6.08104 5.5498C6.17934 5.42009 6.31906 5.319 6.48252 5.25931C6.64598 5.19961 6.82586 5.18399 6.99939 5.21442C7.17292 5.24486 7.33232 5.31997 7.45743 5.43028C7.58254 5.54058 7.66774 5.68112 7.70226 5.83412C7.73677 5.98712 7.71906 6.1457 7.65135 6.28982C7.58364 6.43394 7.46898 6.55713 7.32187 6.64379C7.17475 6.73046 7.0018 6.77671 6.82486 6.77671C6.5876 6.77671 6.36006 6.69362 6.1923 6.5457C6.02453 6.39779 5.93028 6.19717 5.93028 5.98799ZM9.3297 6.77671C9.15276 6.77671 8.9798 6.73046 8.83269 6.64379C8.68558 6.55713 8.57092 6.43394 8.50321 6.28982C8.4355 6.1457 8.41778 5.98712 8.4523 5.83412C8.48682 5.68112 8.57202 5.54058 8.69713 5.43028C8.82224 5.31997 8.98164 5.24486 9.15517 5.21442C9.3287 5.18399 9.50857 5.19961 9.67204 5.25931C9.8355 5.319 9.97522 5.42009 10.0735 5.5498C10.1718 5.6795 10.2243 5.832 10.2243 5.98799C10.2243 6.19717 10.13 6.39779 9.96226 6.5457C9.7945 6.69362 9.56695 6.77671 9.3297 6.77671Z"
-                                                fill="currentColor" />
-                                        </svg>
-                                        <a href="<?php echo get_comments_link($post->ID); ?>">
-                                            <span><?php comments_number(esc_html__('No Comments', 'northway'), esc_html__(' 1 Comment', 'northway'), esc_html__('%  Comments', 'northway'), $post->ID); ?></span>
-                                        </a>
-                                    </div>
-                                <?php endif; ?>
-                            </div>
-
-                            <?php if ($show_date == 'true'): ?>
-                                <div class="pxl-post--date-1">
-                                    <div class="day">
-                                        <?php echo get_the_date('d', $post->ID) ?>
-                                    </div>
-                                    <div class="month">
-                                        <?php echo get_the_date('M', $post->ID) ?>
-                                    </div>
-                                </div>
-                            <?php endif; ?>
-                        </div>
-                    <?php endif; ?>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="67" height="67" viewBox="0 0 67 67" fill="none" class="pxl-post--fold">
+                        <path d="M1 46V1L66 66H21C9.95431 66 1 57.0457 1 46Z" fill="#F8F8F2"/>
+                        <path d="M0.808594 0.538086C0.995431 0.460695 1.21052 0.503485 1.35352 0.646484L66.3535 65.6465C66.4965 65.7895 66.5393 66.0046 66.4619 66.1914C66.3845 66.3782 66.2022 66.5 66 66.5H21C9.67816 66.5 0.5 57.3218 0.5 46V1C0.5 0.797792 0.621793 0.615492 0.808594 0.538086Z" stroke="#666F78" stroke-linejoin="round"/>
+                    </svg>
                     <div class="pxl-post--holder">
-                        <div class="pxl-post--holder-inner">
-                            <div class="pxl-post--date-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14"
-                                    fill="none">
-                                    <path d="M6.5 0C2.91576 0 0 2.93332 0 6.53916C0 10.145 2.91576 13.0783 6.5 13.0783C10.0842 13.0783 13 10.145 13 6.53916C13 2.93332 10.0842 0 6.5 0ZM9.59131 9.92148C9.48568 10.0278 9.34702 10.0812 9.20837 10.0812C9.06971 10.0812 8.93095 10.0278 8.82542 9.92148L6.11706 7.1969C6.0152 7.09503 5.95837 6.95653 5.95837 6.81165V3.26958C5.95837 2.96824 6.20097 2.72468 6.5 2.72468C6.79903 2.72468 7.04163 2.96824 7.04163 3.26958V6.58605L9.59131 9.15099C9.80306 9.36412 9.80306 9.70846 9.59131 9.92148Z"
-                                        fill="currentColor" />
-                                </svg>
-                                <span>
-                                    <?php echo get_the_date('F d, Y', $post->ID) ?>
-                                </span>
-                            </div>
-                            <h5 class="pxl-post--title title-hover-line"><a
-                                    href="<?php echo esc_url(get_permalink($post->ID)); ?>"><?php echo pxl_print_html(get_the_title($post->ID)); ?></a>
-                            </h5>
-                            <?php if ($show_excerpt == 'true'): ?>
-                                <div class="pxl-post--content">
-                                    <?php if ($show_excerpt == 'true'): ?>
-                                        <?php
-                                        echo wp_trim_words($post->post_excerpt, $num_words, null);
-                                        ?>
-                                    <?php endif; ?>
-                                </div>
-                            <?php endif; ?>
-                            <div class="pxl-post--meta pxl-flex-middle">
-                                <?php if ($show_author == 'true'): ?>
-                                    <div class="pxl-post--author">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="13"
-                                            viewBox="0 0 11 13" fill="none">
-                                            <path d="M2.3932 3.14201C2.3932 2.52058 2.57747 1.91311 2.9227 1.39641C3.26794 0.879704 3.75863 0.476984 4.33273 0.239173C4.90684 0.00136138 5.53856 -0.060861 6.14803 0.0603743C6.75749 0.18161 7.31732 0.480857 7.75672 0.920276C8.19612 1.35969 8.49535 1.91955 8.61658 2.52904C8.73781 3.13853 8.67559 3.77028 8.43779 4.34441C8.19999 4.91854 7.79729 5.40925 7.28061 5.7545C6.76393 6.09975 6.15648 6.28403 5.53508 6.28403C4.70209 6.28308 3.9035 5.95174 3.31449 5.3627C2.72548 4.77367 2.39415 3.97504 2.3932 3.14201ZM10.7865 10.9365C10.7224 10.6647 10.6338 10.3994 10.5217 10.1438C9.7214 8.31691 7.81114 7.18175 5.53508 7.18175C2.95111 7.18175 0.845605 8.67375 0.295328 10.8938C0.246189 11.0926 0.242889 11.2999 0.285679 11.5001C0.328469 11.7003 0.416228 11.8882 0.542318 12.0495C0.668407 12.2107 0.829524 12.3413 1.01348 12.4311C1.19744 12.5209 1.39942 12.5678 1.60414 12.5681H9.46781C9.67345 12.5685 9.87649 12.5221 10.0615 12.4324C10.2465 12.3426 10.4087 12.2119 10.5356 12.0501C10.6591 11.8956 10.7459 11.7151 10.7894 11.5222C10.8328 11.3292 10.8319 11.129 10.7865 10.9365Z"
-                                                fill="currentColor" />
-                                        </svg>
-                                        <?php echo esc_html__('By: ', 'northway') ?>
-                                        <span>
-                                            <?php echo esc_html($author->display_name); ?>
-                                            <span>
-                                    </div>
-                                <?php endif; ?>
-                                <?php if ($show_comment == 'true') : ?>
-                                    <div class="pxl-post--comments">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12"
-                                            viewBox="0 0 14 12" fill="none">
-                                            <path d="M6.82486 2.18969e-07C5.65019 -0.000283893 4.49672 0.275914 3.48358 0.800068C2.47045 1.32422 1.63439 2.07733 1.06175 2.98161C0.489113 3.88589 0.200653 4.90855 0.226166 5.94398C0.251679 6.97941 0.59024 7.99007 1.20688 8.87156L0.684446 11.3955C0.669092 11.4714 0.674735 11.5495 0.700899 11.6231C0.727062 11.6967 0.772973 11.7636 0.834736 11.8182C0.884883 11.8613 0.944227 11.8952 1.00933 11.918C1.07444 11.9407 1.14402 11.9519 1.21404 11.9507H1.32139L4.78521 11.3198C5.43932 11.532 6.12816 11.6492 6.82486 11.6668C8.57962 11.6668 10.2625 11.0522 11.5033 9.95824C12.7441 8.86426 13.4412 7.38052 13.4412 5.8334C13.4412 4.28629 12.7441 2.80254 11.5033 1.70856C10.2625 0.614589 8.57962 2.51572e-07 6.82486 2.18969e-07ZM3.42545 5.98799C3.42545 5.832 3.47791 5.6795 3.57621 5.5498C3.67451 5.42009 3.81423 5.319 3.97769 5.25931C4.14115 5.19961 4.32102 5.18399 4.49456 5.21442C4.66809 5.24486 4.82749 5.31997 4.9526 5.43028C5.07771 5.54058 5.16291 5.68112 5.19743 5.83412C5.23194 5.98712 5.21423 6.1457 5.14652 6.28982C5.07881 6.43394 4.96415 6.55713 4.81704 6.64379C4.66992 6.73046 4.49696 6.77671 4.32003 6.77671C4.08277 6.77671 3.85523 6.69362 3.68747 6.5457C3.5197 6.39779 3.42545 6.19717 3.42545 5.98799ZM5.93028 5.98799C5.93028 5.832 5.98275 5.6795 6.08104 5.5498C6.17934 5.42009 6.31906 5.319 6.48252 5.25931C6.64598 5.19961 6.82586 5.18399 6.99939 5.21442C7.17292 5.24486 7.33232 5.31997 7.45743 5.43028C7.58254 5.54058 7.66774 5.68112 7.70226 5.83412C7.73677 5.98712 7.71906 6.1457 7.65135 6.28982C7.58364 6.43394 7.46898 6.55713 7.32187 6.64379C7.17475 6.73046 7.0018 6.77671 6.82486 6.77671C6.5876 6.77671 6.36006 6.69362 6.1923 6.5457C6.02453 6.39779 5.93028 6.19717 5.93028 5.98799ZM9.3297 6.77671C9.15276 6.77671 8.9798 6.73046 8.83269 6.64379C8.68558 6.55713 8.57092 6.43394 8.50321 6.28982C8.4355 6.1457 8.41778 5.98712 8.4523 5.83412C8.48682 5.68112 8.57202 5.54058 8.69713 5.43028C8.82224 5.31997 8.98164 5.24486 9.15517 5.21442C9.3287 5.18399 9.50857 5.19961 9.67204 5.25931C9.8355 5.319 9.97522 5.42009 10.0735 5.5498C10.1718 5.6795 10.2243 5.832 10.2243 5.98799C10.2243 6.19717 10.13 6.39779 9.96226 6.5457C9.7945 6.69362 9.56695 6.77671 9.3297 6.77671Z"
-                                                fill="currentColor" />
-                                        </svg>
-                                        <a href="<?php echo get_comments_link($post->ID); ?>">
-                                            <span><?php comments_number(esc_html__('0 Comments', 'northway'), esc_html__(' 1 Comment', 'northway'), esc_html__('%  Comments', 'northway'), $post->ID); ?></span>
-                                        </a>
-                                    </div>
-                                <?php endif; ?>
-                            </div>
-                        </div>
-                        <?php if ($show_button == 'true') : ?>
-                            <div class="pxl-post--button">
-                                <div class="pxl-post--button-divider"></div>
-                                <a class="pxl-post--button-link"
-                                    href="<?php echo esc_url(get_permalink($post->ID)); ?>">
-                                    <span class="pxl-post--button-text">
-                                        <?php if (!empty($button_text)) {
-                                            echo esc_attr($button_text);
-                                        } else {
-                                            echo esc_html__('Read More', 'northway');
-                                        } ?>
-                                    </span>
-                                    <div class="pxl-post--button-icon">
-                                        <i class="bi-arrow-right-short"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        <?php endif; ?>
-                    </div>
-                </div>
-            </div>
-        <?php
-        endforeach;
-    endif;
-}
-
-function northway_get_post_grid_layout2($posts = [], $settings = [])
-{
-    extract($settings);
-
-    $images_size = !empty($img_size) ? $img_size : '645x376';
-
-    if (is_array($posts)):
-        foreach ($posts as $key => $post):
-            $item_class = "pxl-grid-item col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12";
-
-            if (isset($grid_masonry) && !empty($grid_masonry[$key]) && (count($grid_masonry) > 1)) {
-                $col_xl_m = 12;
-                $col_lg_m = 12;
-                $col_md_m = 12;
-                $col_sm_m = 12;
-                $col_xs_m = 12;
-                $item_class = "pxl-grid-item col-xl-{$col_xl_m} col-lg-{$col_lg_m} col-md-{$col_md_m} col-sm-{$col_sm_m} col-{$col_xs_m}";
-
-                $img_size_m = $grid_masonry[$key]['img_size_m'];
-                if (!empty($img_size_m)) {
-                    $images_size = $img_size_m;
-                }
-            } elseif (!empty($img_size)) {
-                $images_size = $img_size;
-            }
-            $author_id = $post->post_author;
-            $author = get_user_by('id', $author_id);
-            if (!empty($tax))
-                $filter_class = pxl_get_term_of_post_to_class($post->ID, array_unique($tax));
-            else
-                $filter_class = ''; ?>
-            <div class="<?php echo esc_attr($item_class . ' ' . $filter_class); ?>">
-                <div class="pxl-post--inner <?php echo esc_attr($pxl_animate); ?>" data-wow-duration="1.2s">
-                    <?php if (has_post_thumbnail($post->ID) && wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), false)):
-                        $img_id = get_post_thumbnail_id($post->ID);
-                        $img = pxl_get_image_by_size(array(
-                            'attach_id' => $img_id,
-                            'thumb_size' => $images_size
-                        ));
-                        $thumbnail = $img['thumbnail'];
-                    ?>
-                        <div class="pxl-post--featured hover-imge-effect3">
-                            <a href="<?php echo esc_url(get_permalink($post->ID)); ?>">
-                                <?php echo wp_kses_post($thumbnail); ?>
-                            </a>
-                            <div class="pxl-post--meta-1">
-
-                            </div>
-                        </div>
-                    <?php endif; ?>
-                    <div class="pxl-post--holder">
-                        <div class="pxl-post--meta pxl-flex-middle">
-                            <?php if ($show_date == 'true'): ?>
-                                <div class="pxl-post--date">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                        viewBox="0 0 14 14" fill="none">
-                                        <path d="M7.00422 -0.00427246C3.14194 -0.00427246 0 3.13767 0 6.99995C0 10.8622 3.14194 14.0042 7.00422 14.0042C10.8665 14.0042 14.0084 10.8622 14.0084 6.99995C14.0084 3.13767 10.8665 -0.00427246 7.00422 -0.00427246ZM10.3353 10.6228C10.2215 10.7367 10.0721 10.7939 9.92268 10.7939C9.77327 10.7939 9.62375 10.7367 9.51003 10.6228L6.59157 7.70447C6.48181 7.59535 6.42057 7.44701 6.42057 7.29183V3.49784C6.42057 3.17507 6.68199 2.91419 7.00422 2.91419C7.32645 2.91419 7.58787 3.17507 7.58787 3.49784V7.05018L10.3353 9.79753C10.5635 10.0258 10.5635 10.3946 10.3353 10.6228Z"
-                                            fill="currentColor" />
-                                    </svg>
-                                    <?php echo get_the_date('F d, Y', $post->ID) ?>
-                                </div>
-                            <?php endif; ?>
+                        <div class="pxl-post--meta">
                             <?php if ($show_author == 'true'): ?>
                                 <div class="pxl-post--author">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="13"
-                                        viewBox="0 0 11 13" fill="none">
-                                        <path d="M2.3932 3.14201C2.3932 2.52058 2.57747 1.91311 2.9227 1.39641C3.26794 0.879704 3.75863 0.476984 4.33273 0.239173C4.90684 0.00136138 5.53856 -0.060861 6.14803 0.0603743C6.75749 0.18161 7.31732 0.480857 7.75672 0.920276C8.19612 1.35969 8.49535 1.91955 8.61658 2.52904C8.73781 3.13853 8.67559 3.77028 8.43779 4.34441C8.19999 4.91854 7.79729 5.40925 7.28061 5.7545C6.76393 6.09975 6.15648 6.28403 5.53508 6.28403C4.70209 6.28308 3.9035 5.95174 3.31449 5.3627C2.72548 4.77367 2.39415 3.97504 2.3932 3.14201ZM10.7865 10.9365C10.7224 10.6647 10.6338 10.3994 10.5217 10.1438C9.7214 8.31691 7.81114 7.18175 5.53508 7.18175C2.95111 7.18175 0.845605 8.67375 0.295328 10.8938C0.246189 11.0926 0.242889 11.2999 0.285679 11.5001C0.328469 11.7003 0.416228 11.8882 0.542318 12.0495C0.668407 12.2107 0.829524 12.3413 1.01348 12.4311C1.19744 12.5209 1.39942 12.5678 1.60414 12.5681H9.46781C9.67345 12.5685 9.87649 12.5221 10.0615 12.4324C10.2465 12.3426 10.4087 12.2119 10.5356 12.0501C10.6591 11.8956 10.7459 11.7151 10.7894 11.5222C10.8328 11.3292 10.8319 11.129 10.7865 10.9365Z"
-                                            fill="currentColor" />
-                                    </svg>
-                                    <?php echo esc_html__('By: ', 'northway') ?>
+                                    <i class="flaticon-user"></i>
                                     <span>
+                                        <?php echo esc_html__('By ', 'northway') ?>
                                         <?php echo esc_html($author->display_name); ?>
-                                        <span>
+                                    <span>
                                 </div>
                             <?php endif; ?>
                             <?php if ($show_comment == 'true') : ?>
                                 <div class="pxl-post--comments">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12"
-                                        viewBox="0 0 14 12" fill="none">
-                                        <path d="M6.82486 2.18969e-07C5.65019 -0.000283893 4.49672 0.275914 3.48358 0.800068C2.47045 1.32422 1.63439 2.07733 1.06175 2.98161C0.489113 3.88589 0.200653 4.90855 0.226166 5.94398C0.251679 6.97941 0.59024 7.99007 1.20688 8.87156L0.684446 11.3955C0.669092 11.4714 0.674735 11.5495 0.700899 11.6231C0.727062 11.6967 0.772973 11.7636 0.834736 11.8182C0.884883 11.8613 0.944227 11.8952 1.00933 11.918C1.07444 11.9407 1.14402 11.9519 1.21404 11.9507H1.32139L4.78521 11.3198C5.43932 11.532 6.12816 11.6492 6.82486 11.6668C8.57962 11.6668 10.2625 11.0522 11.5033 9.95824C12.7441 8.86426 13.4412 7.38052 13.4412 5.8334C13.4412 4.28629 12.7441 2.80254 11.5033 1.70856C10.2625 0.614589 8.57962 2.51572e-07 6.82486 2.18969e-07ZM3.42545 5.98799C3.42545 5.832 3.47791 5.6795 3.57621 5.5498C3.67451 5.42009 3.81423 5.319 3.97769 5.25931C4.14115 5.19961 4.32102 5.18399 4.49456 5.21442C4.66809 5.24486 4.82749 5.31997 4.9526 5.43028C5.07771 5.54058 5.16291 5.68112 5.19743 5.83412C5.23194 5.98712 5.21423 6.1457 5.14652 6.28982C5.07881 6.43394 4.96415 6.55713 4.81704 6.64379C4.66992 6.73046 4.49696 6.77671 4.32003 6.77671C4.08277 6.77671 3.85523 6.69362 3.68747 6.5457C3.5197 6.39779 3.42545 6.19717 3.42545 5.98799ZM5.93028 5.98799C5.93028 5.832 5.98275 5.6795 6.08104 5.5498C6.17934 5.42009 6.31906 5.319 6.48252 5.25931C6.64598 5.19961 6.82586 5.18399 6.99939 5.21442C7.17292 5.24486 7.33232 5.31997 7.45743 5.43028C7.58254 5.54058 7.66774 5.68112 7.70226 5.83412C7.73677 5.98712 7.71906 6.1457 7.65135 6.28982C7.58364 6.43394 7.46898 6.55713 7.32187 6.64379C7.17475 6.73046 7.0018 6.77671 6.82486 6.77671C6.5876 6.77671 6.36006 6.69362 6.1923 6.5457C6.02453 6.39779 5.93028 6.19717 5.93028 5.98799ZM9.3297 6.77671C9.15276 6.77671 8.9798 6.73046 8.83269 6.64379C8.68558 6.55713 8.57092 6.43394 8.50321 6.28982C8.4355 6.1457 8.41778 5.98712 8.4523 5.83412C8.48682 5.68112 8.57202 5.54058 8.69713 5.43028C8.82224 5.31997 8.98164 5.24486 9.15517 5.21442C9.3287 5.18399 9.50857 5.19961 9.67204 5.25931C9.8355 5.319 9.97522 5.42009 10.0735 5.5498C10.1718 5.6795 10.2243 5.832 10.2243 5.98799C10.2243 6.19717 10.13 6.39779 9.96226 6.5457C9.7945 6.69362 9.56695 6.77671 9.3297 6.77671Z"
-                                            fill="currentColor" />
-                                    </svg>
+                                    <i class="flaticon-comment"></i>
                                     <a href="<?php echo get_comments_link($post->ID); ?>">
                                         <span><?php comments_number(esc_html__('0 Comments', 'northway'), esc_html__(' 1 Comment', 'northway'), esc_html__('%  Comments', 'northway'), $post->ID); ?></span>
                                     </a>
@@ -301,72 +107,19 @@ function northway_get_post_grid_layout2($posts = [], $settings = [])
                             </div>
                         <?php endif; ?>
                         <?php if ($show_button == 'true') : ?>
-                            <div class="pxl-post--button">
-                                <div class="pxl-post--button-divider"></div>
-                                <a class="pxl-post--button-link"
-                                    href="<?php echo esc_url(get_permalink($post->ID)); ?>">
-                                    <span class="pxl-post--button-text">
-                                        <?php if (!empty($button_text)) {
-                                            echo esc_attr($button_text);
-                                        } else {
-                                            echo esc_html__('Read More', 'northway');
-                                        } ?>
-                                    </span>
-                                    <div class="pxl-post--button-icon">
-                                        <i class="bi-arrow-right-short"></i>
-                                    </div>
-                                </a>
-                            </div>
+                            <a class="pxl-post--button"
+                                href="<?php echo esc_url(get_permalink($post->ID)); ?>">
+                                <span class="pxl-post--button-text">
+                                    <?php if (!empty($button_text)) {
+                                        echo esc_attr($button_text);
+                                    } else {
+                                        echo esc_html__('Continue Reading', 'northway');
+                                    } ?>
+                                </span>
+                                <i class="bi-arrow-right-short"></i>
+                            </a>
                         <?php endif; ?>
                     </div>
-                </div>
-            </div>
-        <?php
-        endforeach;
-    endif;
-}
-
-function northway_get_post_grid_layout3($posts = [], $settings = [])
-{
-    extract($settings);
-
-    $images_size = !empty($img_size) ? $img_size : '767x550';
-
-    if (is_array($posts)):
-        foreach ($posts as $key => $post):
-            $item_class = "pxl-grid-item col-xl-{$col_xl} col-lg-{$col_lg} col-md-{$col_md} col-sm-{$col_sm} col-{$col_xs}";
-            if (isset($grid_masonry) && !empty($grid_masonry[$key]) && (count($grid_masonry) > 1)) {
-                if ($grid_masonry[$key]['col_xl_m'] == 'col-66') {
-                    $col_xl_m = '66-pxl';
-                } else {
-                    $col_xl_m = 12 / $grid_masonry[$key]['col_xl_m'];
-                }
-                if ($grid_masonry[$key]['col_lg_m'] == 'col-66') {
-                    $col_lg_m = '66-pxl';
-                } else {
-                    $col_lg_m = 12 / $grid_masonry[$key]['col_lg_m'];
-                }
-                $col_md_m = 12 / $grid_masonry[$key]['col_md_m'];
-                $col_sm_m = 12 / $grid_masonry[$key]['col_sm_m'];
-                $col_xs_m = 12 / $grid_masonry[$key]['col_xs_m'];
-                $item_class = "pxl-grid-item col-xl-{$col_xl_m} col-lg-{$col_lg_m} col-md-{$col_md_m} col-sm-{$col_sm_m} col-{$col_xs_m}";
-
-                $img_size_m = $grid_masonry[$key]['img_size_m'];
-                if (!empty($img_size_m)) {
-                    $images_size = $img_size_m;
-                }
-            } elseif (!empty($img_size)) {
-                $images_size = $img_size;
-            }
-            $author_id = $post->post_author;
-            $author = get_user_by('id', $author_id);
-            $service_external_link = get_post_meta($post->ID, 'service_external_link', true);
-            if (!empty($tax))
-                $filter_class = pxl_get_term_of_post_to_class($post->ID, array_unique($tax));
-            else
-                $filter_class = ''; ?>
-            <div class="<?php echo esc_attr($item_class . ' ' . $filter_class); ?>">
-                <div class="pxl-post--inner <?php echo esc_attr($pxl_animate); ?> wow" data-wow-duration="1.2s">
                     <?php if (has_post_thumbnail($post->ID) && wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), false)):
                         $img_id = get_post_thumbnail_id($post->ID);
                         $img = pxl_get_image_by_size(array(
@@ -375,83 +128,19 @@ function northway_get_post_grid_layout3($posts = [], $settings = [])
                         ));
                         $thumbnail = $img['thumbnail'];
                     ?>
-                        <div class="pxl-post--featured hover-imge-effect2">
+                        <div class="pxl-post--featured hover-imge-effect3">
                             <a href="<?php echo esc_url(get_permalink($post->ID)); ?>">
                                 <?php echo wp_kses_post($thumbnail); ?>
                             </a>
+
                             <?php if ($show_date == 'true'): ?>
-                                <div class="post-date">
-                                    <span class="day"><?php echo get_the_date('d', $post->ID) ?></span>
-                                    <span class="month"><?php echo get_the_date('M', $post->ID) ?></span>
-                                </div>
-                            <?php endif; ?>
-                            <div class="pxl-post--meta">
-                                <?php if ($show_date == 'true' || $show_author == 'true'): ?>
-                                    <?php if ($show_author == 'true'): ?>
-                                        <div class="pxl-item--meta">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="12"
-                                                viewBox="0 0 10 12" fill="none">
-                                                <path d="M2.16811 2.92717C2.16811 2.37856 2.3308 1.84226 2.63559 1.3861C2.94039 0.929946 3.3736 0.574414 3.88046 0.364468C4.38731 0.154522 4.94504 0.0995907 5.48311 0.20662C6.02119 0.31365 6.51544 0.577833 6.90337 0.965763C7.2913 1.35369 7.55549 1.84795 7.66252 2.38602C7.76954 2.92409 7.71461 3.48182 7.50467 3.98868C7.29472 4.49553 6.93919 4.92875 6.48303 5.23354C6.02687 5.53834 5.49058 5.70102 4.94196 5.70102C4.20655 5.70018 3.5015 5.40767 2.98148 4.88765C2.46147 4.36764 2.16895 3.66258 2.16811 2.92717ZM9.57826 9.8083C9.5217 9.56843 9.44345 9.33419 9.34446 9.1085C8.63792 7.4957 6.95142 6.49355 4.94196 6.49355C2.66067 6.49355 0.801794 7.81073 0.315974 9.77066C0.27259 9.94612 0.269677 10.1291 0.307455 10.3059C0.345233 10.4826 0.422712 10.6485 0.534032 10.7909C0.645352 10.9333 0.787596 11.0485 0.950006 11.1278C1.11242 11.2071 1.29074 11.2485 1.47148 11.2487H8.41403C8.59558 11.2491 8.77484 11.2082 8.93819 11.1289C9.10154 11.0497 9.24468 10.9343 9.35674 10.7914C9.46581 10.6551 9.54243 10.4957 9.5808 10.3254C9.61918 10.1551 9.61831 9.97824 9.57826 9.8083Z"
-                                                    fill="currentColor" />
-                                            </svg>
-                                            <span class="pxl-author--title">
-                                                <?php echo esc_html__('By: ', 'northway'); ?><?php echo esc_html($author->display_name); ?>
-                                            </span>
-                                        </div>
-                                    <?php endif; ?>
-                                <?php endif; ?>
-                                <?php if ($show_comment == 'true'): ?>
-                                    <div class="pxl-item--meta">
-                                        <?php if ($show_comment == 'true'): ?>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11"
-                                                viewBox="0 0 12 11" fill="none">
-                                                <path d="M5.827 0.153321C4.78994 0.15307 3.77161 0.39691 2.87717 0.859657C1.98273 1.3224 1.24462 1.98728 0.739069 2.78562C0.233516 3.58396 -0.0211496 4.48681 0.00137448 5.40094C0.0238986 6.31506 0.322796 7.20731 0.867195 7.98554L0.405965 10.2138C0.392409 10.2808 0.397392 10.3497 0.42049 10.4147C0.443588 10.4797 0.48412 10.5388 0.538648 10.587C0.582919 10.625 0.635311 10.655 0.692791 10.6751C0.75027 10.6951 0.811696 10.705 0.873513 10.704H0.968287L4.02631 10.1469C4.60378 10.3343 5.21192 10.4377 5.827 10.4533C7.37618 10.4533 8.86192 9.91071 9.95735 8.9449C11.0528 7.97909 11.6682 6.66917 11.6682 5.30331C11.6682 3.93745 11.0528 2.62753 9.95735 1.66172C8.86192 0.695907 7.37618 0.153321 5.827 0.153321ZM2.82585 5.43979C2.82585 5.30207 2.87216 5.16744 2.95895 5.05293C3.04573 4.93843 3.16908 4.84918 3.31339 4.79647C3.4577 4.74377 3.6165 4.72998 3.7697 4.75685C3.9229 4.78372 4.06363 4.85003 4.17408 4.94742C4.28453 5.0448 4.35975 5.16887 4.39023 5.30394C4.4207 5.43902 4.40506 5.57902 4.34528 5.70626C4.28551 5.8335 4.18428 5.94225 4.0544 6.01876C3.92452 6.09527 3.77183 6.13611 3.61562 6.13611C3.40616 6.13611 3.20528 6.06275 3.05717 5.93216C2.90905 5.80158 2.82585 5.62447 2.82585 5.43979ZM5.03722 5.43979C5.03722 5.30207 5.08354 5.16744 5.17033 5.05293C5.25711 4.93843 5.38045 4.84918 5.52477 4.79647C5.66908 4.74377 5.82788 4.72998 5.98108 4.75685C6.13428 4.78372 6.27501 4.85003 6.38546 4.94742C6.49591 5.0448 6.57113 5.16887 6.60161 5.30394C6.63208 5.43902 6.61644 5.57902 6.55666 5.70626C6.49689 5.8335 6.39566 5.94225 6.26578 6.01876C6.1359 6.09527 5.98321 6.13611 5.827 6.13611C5.61754 6.13611 5.41666 6.06275 5.26854 5.93216C5.12043 5.80158 5.03722 5.62447 5.03722 5.43979ZM8.03838 6.13611C7.88218 6.13611 7.72948 6.09527 7.5996 6.01876C7.46973 5.94225 7.3685 5.8335 7.30872 5.70626C7.24895 5.57902 7.2333 5.43902 7.26378 5.30394C7.29425 5.16887 7.36947 5.0448 7.47992 4.94742C7.59038 4.85003 7.7311 4.78372 7.8843 4.75685C8.03751 4.72998 8.1963 4.74377 8.34062 4.79647C8.48493 4.84918 8.60828 4.93843 8.69506 5.05293C8.78184 5.16744 8.82816 5.30207 8.82816 5.43979C8.82816 5.62447 8.74495 5.80158 8.59684 5.93216C8.44873 6.06275 8.24784 6.13611 8.03838 6.13611Z"
-                                                    fill="currentColor" />
-                                            </svg>
-                                            <a href="<?php echo get_comments_link($post->ID); ?>">
-                                                <span><?php comments_number(esc_html__('0 Comments', 'northway'), esc_html__(' 1 Comment', 'northway'), esc_html__('%  Comments', 'northway'), $post->ID); ?></span>
-                                            </a>
-                                        <?php endif; ?>
+                                <div class="pxl-post--date">
+                                    <div class="day">
+                                        <?php echo get_the_date('d', $post->ID) ?>
                                     </div>
-                                <?php endif; ?>
-                            </div>
-                        </div>
-                        <div class="pxl-post--holder">
-                            <h5 class="pxl-post--title ">
-                                <a href="<?php echo esc_url(get_permalink($post->ID)); ?>">
-                                    <?php echo pxl_print_html(get_the_title($post->ID)); ?>
-                                </a>
-                            </h5>
-                            <?php if ($show_excerpt == 'true'): ?>
-                                <p class="pxl-post--content">
-                                    <?php
-                                    echo wp_trim_words($post->post_excerpt, $num_words, null);
-                                    ?>
-                                </p>
-                            <?php endif; ?>
-                            <?php if ($show_button == 'true') : ?>
-                                <div class="pxl-post--readmore">
-                                    <div class="pxl-post--readmore-divider"></div>
-                                    <a href="<?php if (!empty($service_external_link)) {
-                                                    echo esc_url($service_external_link);
-                                                } else {
-                                                    echo esc_url(get_permalink($post->ID));
-                                                } ?>" class="btn-readmore">
-                                        <span class="pxl-post--readmore-text">
-                                            <?php if (!empty($button_text)) : ?>
-                                                <?php echo pxl_print_html($button_text); ?>
-                                            <?php else : ?>
-                                                <?php echo esc_html__('Read more', 'northway'); ?>
-                                            <?php endif; ?>
-                                        </span>
-                                        <div class="pxl-post--readmore-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14"
-                                                viewBox="0 0 17 14" fill="none">
-                                                <path d="M10.2 0.199951L9.01 1.38995L13.77 6.14995H0V7.84995H13.77L9.01 12.61L10.2 13.8L17 6.99995L10.2 0.199951Z"
-                                                    fill="currentColor"></path>
-                                            </svg>
-                                        </div>
-                                    </a>
+                                    <div class="month">
+                                        <?php echo get_the_date('M', $post->ID) ?>
+                                    </div>
                                 </div>
                             <?php endif; ?>
                         </div>

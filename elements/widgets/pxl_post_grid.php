@@ -204,7 +204,7 @@ pxl_add_custom_widget(
                                     [
                                         'terms' => [
                                             ['name' => 'post_type', 'operator' => '==', 'value' => 'post'],
-                                            ['name' => 'layout_post', 'operator' => 'in', 'value' => ['post-3']]
+                                            ['name' => 'layout_post', 'operator' => 'in', 'value' => ['post-1']]
                                         ]
                                     ],
                                     [
@@ -240,7 +240,7 @@ pxl_add_custom_widget(
                                     [
                                         'terms' => [
                                             ['name' => 'post_type', 'operator' => '==', 'value' => 'post'],
-                                            ['name' => 'layout_post', 'operator' => 'in', 'value' => ['post-3']]
+                                            ['name' => 'layout_post', 'operator' => 'in', 'value' => ['post-1']]
                                         ]
                                     ],
                                     [
@@ -276,7 +276,7 @@ pxl_add_custom_widget(
                                     [
                                         'terms' => [
                                             ['name' => 'post_type', 'operator' => '==', 'value' => 'post'],
-                                            ['name' => 'layout_post', 'operator' => 'in', 'value' => ['post-3']]
+                                            ['name' => 'layout_post', 'operator' => 'in', 'value' => ['post-1']]
                                         ]
                                     ],
                                     [
@@ -312,7 +312,7 @@ pxl_add_custom_widget(
                                     [
                                         'terms' => [
                                             ['name' => 'post_type', 'operator' => '==', 'value' => 'post'],
-                                            ['name' => 'layout_post', 'operator' => 'in', 'value' => ['post-3']]
+                                            ['name' => 'layout_post', 'operator' => 'in', 'value' => ['post-1']]
                                         ]
                                     ],
                                     [
@@ -349,7 +349,7 @@ pxl_add_custom_widget(
                                     [
                                         'terms' => [
                                             ['name' => 'post_type', 'operator' => '==', 'value' => 'post'],
-                                            ['name' => 'layout_post', 'operator' => 'in', 'value' => ['post-3']]
+                                            ['name' => 'layout_post', 'operator' => 'in', 'value' => ['post-1']]
                                         ]
                                     ],
                                     [
@@ -387,7 +387,7 @@ pxl_add_custom_widget(
                                     [
                                         'terms' => [
                                             ['name' => 'post_type', 'operator' => '==', 'value' => 'post'],
-                                            ['name' => 'layout_post', 'operator' => 'in', 'value' => ['post-3']]
+                                            ['name' => 'layout_post', 'operator' => 'in', 'value' => ['post-1']]
                                         ]
                                     ],
                                     [
