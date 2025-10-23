@@ -10,21 +10,53 @@ button,
     font-family: "Font Awesome 5 Free" !important;
 }
 .btn-submit {
-    font-size: 16px;
-    font-weight: 500;
-    color: #fff;
-    @extend .ft-inter;
-    padding: 0 24px;
-    line-height: 52px;
-    @include transition(all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1));
-    background-color: $primary_color;
-    position: relative;
-    @media (max-width: 767px) {
-        line-height: 42px;
-        font-size: 14px;
+    padding: 0 !important;
+    background-color: transparent !important;
+    &.pxl-icon--right {
+        span {
+            margin-right: 46px !important;
+            margin-left: 0;
+            height: 46px;
+            line-height: 46px;
+        }
+        .pxl-button--icon {
+            width: 46px !important;
+            height: 46px !important;
+        }
+        .pxl-button--icon-right {
+            scale: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 46px;
+            height: 46px;
+            @include border-radius(10px);
+            background-color: $secondary_color;
+            @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+        }
+        .pxl-button--icon-left {
+            scale: 1;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 46px;
+            height: 46px;
+            @include border-radius(10px);
+            background-color: $secondary_color;
+            @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+        }
     }
     &:hover {
-        background-color: $secondary_color;
+        span {
+            margin-right: 0;
+            margin-left: 46px !important;
+        }
+        .pxl-button--icon-right {
+            scale: 1;
+        }
+        .pxl-button--icon-left {
+            scale: 0;
+        }
     }
 }
 
@@ -116,21 +148,27 @@ input[type="submit"] {
             span {
                 margin-right: 52px;
                 margin-left: 0;
-                @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+                @include transition(
+                    all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1)
+                );
             }
             .pxl-button--icon-right {
                 scale: 0;
                 position: absolute;
                 left: 0;
                 top: 0;
-                @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+                @include transition(
+                    all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1)
+                );
             }
             .pxl-button--icon-left {
                 scale: 1;
                 position: absolute;
                 right: 0;
                 top: 0;
-                @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+                @include transition(
+                    all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1)
+                );
             }
             &:hover {
                 span {
@@ -149,21 +187,27 @@ input[type="submit"] {
             span {
                 margin-left: 52px;
                 margin-right: 0;
-                @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+                @include transition(
+                    all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1)
+                );
             }
             .pxl-button--icon-left {
                 scale: 1;
                 position: absolute;
                 left: 0;
                 top: 0;
-                @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+                @include transition(
+                    all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1)
+                );
             }
             .pxl-button--icon-right {
                 scale: 0;
                 position: absolute;
                 right: 0;
                 top: 0;
-                @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+                @include transition(
+                    all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1)
+                );
             }
             &:hover {
                 span {

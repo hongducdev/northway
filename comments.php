@@ -53,7 +53,14 @@ if ( post_password_required() ) {
             'title_reply'       => esc_attr__( 'Post a Comment', 'northway'),
             'title_reply_to'    => esc_attr__( 'Post a Comment To ', 'northway') . '%s',
             'cancel_reply_link' => esc_attr__( 'Cancel Comment', 'northway'),
-            'submit_button'     => '<button name="%1$s" type="submit" id="%2$s" class="%3$s" />%4$s</button>',
+            'submit_button'     => '<button name="%1$s" id="%2$s" type="submit" class="btn pxl-button-style-2-default btn-default inline pxl-icon--right %3$s">
+        <div class="pxl-button--icon pxl-button--icon-left">
+            <i class="flaticon-arrow"></i>
+        </div>
+        <span class="pxl--btn-text" data-text="%4$s">%4$s</span>
+        <div class="pxl-button--icon pxl-button--icon-right">
+            <i class="flaticon-arrow"></i>
+        </div>',
             'comment_notes_before' => '',
             'fields' => apply_filters( 'comment_form_default_fields', array(
                     'author' =>

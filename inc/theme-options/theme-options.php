@@ -701,7 +701,7 @@ function casethemes_setup_option()
                 ),
                 array(
                     'id'       => 'social_twitter',
-                    'title'    => esc_html__('Twitter', 'northway'),
+                    'title'    => esc_html__('Twitter/X', 'northway'),
                     'type'     => 'switch',
                     'default'  => true,
                     'indent' => true,

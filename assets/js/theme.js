@@ -215,10 +215,6 @@
                 }
             }
         );
-
-        $(".comments-area .btn-submit").append(
-            '<i class="fas fa-comment"></i>'
-        );
         /* Mega Menu Max Height */
         var m_h_mega = $(
             "li.pxl-megamenu > .sub-menu > .pxl-mega-menu-elementor"

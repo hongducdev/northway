@@ -7,6 +7,38 @@ if (!empty($editor_title)) {
 $sg_post_title = northway()->get_theme_opt('sg_post_title', 'default');
 $sg_post_title_text = northway()->get_theme_opt('sg_post_title_text');
 
+// Function to highlight last 2 words
+if (!function_exists('highlight_last_words')) {
+	function highlight_last_words($text, $words_count = 2, $highlight_class = 'pxl-title--highlight') {
+		if (empty($text)) {
+			return $text;
+		}
+		
+		// Strip HTML tags for word counting
+		$plain_text = wp_strip_all_tags($text);
+		$words = explode(' ', trim($plain_text));
+		
+		// Remove empty elements from array
+		$words = array_filter($words, function($word) {
+			return !empty(trim($word));
+		});
+		
+		// If we have less words than requested, return original text
+		if (count($words) <= $words_count) {
+			return $text;
+		}
+		
+		// Get last N words
+		$last_words = array_slice($words, -$words_count);
+		$remaining_words = array_slice($words, 0, -$words_count);
+		
+		// Reconstruct the text with highlighting
+		$highlighted_text = implode(' ', $remaining_words) . ' <span class="' . esc_attr($highlight_class) . '">' . implode(' ', $last_words) . '</span>';
+		
+		return $highlighted_text;
+	}
+}
+
 $sg_product_ptitle = northway()->get_theme_opt('sg_product_ptitle', 'default');
 $sg_product_ptitle_text = northway()->get_theme_opt('sg_product_ptitle_text');
 
@@ -15,7 +47,6 @@ $sg_service_title_text = northway()->get_theme_opt('sg_service_title_text');
 
 $sg_portfolio_title = northway()->get_theme_opt('sg_portfolio_title', 'default');
 $sg_portfolio_title_text = northway()->get_theme_opt('sg_portfolio_title_text'); 
-
 ?>
 
 <div id="pxl-<?php echo esc_attr($html_id) ?>" class="pxl-heading <?php echo esc_attr($settings['sub_title_style']); ?>-style <?php if(!empty($settings['highlight_text_image']['id'])) { echo 'highlight-text-image'; } ?>">
@@ -43,7 +74,7 @@ $sg_portfolio_title_text = northway()->get_theme_opt('sg_portfolio_title_text');
 		<?php endif; ?>
 
 		<<?php echo esc_attr($settings['title_tag']); ?> class="pxl-item--title <?php echo esc_attr($settings['h_title_style'].' '.$settings['highlight_style']); ?> <?php if($settings['pxl_animate'] !== 'wow letter') { echo esc_attr($settings['pxl_animate']); } ?>" data-wow-delay="<?php echo esc_attr($settings['pxl_animate_delay']); ?>ms">
-		<?php if(is_singular('post') && $sg_post_title == 'custom_text' && !empty($sg_post_title_text) && $settings['source_type'] == 'title') { ?>
+		<?php if(is_singular('post') && $sg_post_title == 'custom_text' && !empty($sg_post_title_text)) { ?>
 			<?php echo pxl_print_html($sg_post_title_text); ?>
 			
 		<?php } elseif(is_singular('portfolio') && $sg_portfolio_title == 'custom_text' && !empty($sg_portfolio_title_text) && $settings['source_type'] == 'title') { ?>
@@ -74,9 +105,9 @@ $sg_portfolio_title_text = northway()->get_theme_opt('sg_portfolio_title_text');
 						$arr_str_b[$index] = $value;
 					}
 					$str = implode(' ', $arr_str_b);
-					echo wp_kses_post($str);
+					echo wp_kses_post(highlight_last_words($str));
 				} else {
-					pxl_print_html($titles['title']);
+					echo wp_kses_post(highlight_last_words($titles['title']));
 				}
 			}?>	
 		<?php } ?>	

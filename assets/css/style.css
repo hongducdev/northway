@@ -1840,7 +1840,7 @@ blockquote:not(.pxl-blockquote).wp-block-quote.has-text-align-right cite {
 }
 @media screen and (min-width: 1201px) {
   #pxl-wapper .container {
-    max-width: 1310px;
+    max-width: 1320px;
     width: 100%;
   }
 }
@@ -1904,6 +1904,18 @@ blockquote:not(.pxl-blockquote).wp-block-quote.has-text-align-right cite {
 }
 .single-post #pxl-main {
   padding: 120px 0;
+  position: relative;
+}
+.single-post #pxl-main:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: repeating-linear-gradient(to right, rgba(223, 223, 223, 0.4) 0 1px, transparent 1px 300px), repeating-linear-gradient(to bottom, rgba(223, 223, 223, 0.4) 0 1px, transparent 1px 300px);
+  background-position: center center;
+  background-size: 300px 300px;
+  background-repeat: repeat;
+  transform: translateZ(0);
 }
 @media screen and (max-width: 1200px) {
   .single-post #pxl-main {
@@ -1922,18 +1934,6 @@ blockquote:not(.pxl-blockquote).wp-block-quote.has-text-align-right cite {
 }
 .single-post .pxl-post--top {
   text-align: center;
-}
-.single-post .pxl-breadcrumb {
-  background-color: #f2f2f2;
-}
-.single-post .pxl-breadcrumb li:last-child span {
-  color: #000;
-}
-.single-post .pxl-breadcrumb a {
-  color: #a1a1a1;
-}
-.single-post .pxl-breadcrumb a:after {
-  background-color: #000;
 }
 .woocommerce-shop #pxl-main {
   padding: 120px 0;
@@ -2006,7 +2006,7 @@ blockquote:not(.pxl-blockquote).wp-block-quote.has-text-align-right cite {
 body.elementor-editor-active .pxl-column-sticky {
   top: 0 !important;
 }
-.elementor-page:not(.single-product) #pxl-content-area.col-12, .elementor-page:not(.single-product) #pxl-footer-elementor .row > .col-12 {
+.elementor-page:not(.single-post):not(.single-product) #pxl-content-area.col-12, .elementor-page:not(.single-post):not(.single-product) #pxl-footer-elementor .row > .col-12 {
   padding: 0;
   min-height: 0px;
 }
@@ -2253,12 +2253,27 @@ body.elementor-editor-active .pxl-column-sticky {
   border-radius: 100px;
   border: 1px solid rgba(248, 248, 242, 0.7);
 }
+.pxl-breadcrumb-wrap .pxl-breadcrumb > li:has(> a.breadcrumb-hidden) {
+  display: none;
+}
+.pxl-breadcrumb-wrap .pxl-breadcrumb > li:first-child:has(> a.breadcrumb-hidden) {
+  display: block !important;
+}
 .pxl-breadcrumb-wrap .pxl-breadcrumb > li > a, .pxl-breadcrumb-wrap .pxl-breadcrumb > li > span {
   color: rgba(248, 248, 242, 0.7);
   font-family: "DM Sans";
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
+  -webkit-transition: all 0.3s ease;
+  -khtml-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.pxl-breadcrumb-wrap .pxl-breadcrumb > li > a:hover {
+  color: var(--body_bg-color);
 }
 .pxl-breadcrumb-wrap .pxl-breadcrumb > li + li {
   padding-left: 14px;
@@ -4524,7 +4539,7 @@ body.rtl .pxl-box-hover1 .pxl-item--inner:hover:before {
   background-image: linear-gradient(to bottom, var(--gradient-color-from), var(--gradient-color-to));
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='var(--gradient-color-from)', endColorStr='var(--gradient-color-to)');
 }
-.ft-theme-default, .pxl-swiper-pagination .pxl-swiper-current-slide, .pxl-swiper-pagination .pxl-swiper-total-slides, .pxl-text-effect1, .pxl-heading .pxl-item--title, .pxl-heading .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-heading -title.pxl-item, #pxl-search-popup .pxl-item--content form .search-field, .pxl-search-popup-button .pxl_cart_counter, .pxl-language-switch .language, .pxl-icon-postformat .link-icon a span, .pxl-banner .pxl-banner-inner .hover-content .subtitle-phone, .pxl-banner .pxl-banner-inner .hover-content .phone-number, .pxl-banner .pxl-banner-inner .hover-content .btn, .pxl-banner .pxl-banner-inner .hover-content button, .pxl-banner .pxl-banner-inner .hover-content .button, .pxl-post-share a, .pxl-logo-marquee1 .pxl-item--text, .pxl--post-footer label, .pxl-post--navigation, .pxl-post--author-info .pxl-user--name, .btn--readmore, .page-links .post-page-numbers, .comments-title, .widget_rss .rsswidget, .widget_block .wp-block-search__label, .widget_block .wp-block-group__inner-container > h2, .widget_block .wp-block-archives-list, .widget_block .wp-block-categories-list, .pxl-wg-categories .pxl-category--inner span, .pxl-contact-info-widget .pxl-phone--number, .ft-gt, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label, .woocommerce #pxl-sidebar-area .widget_products ul a, .single-product .woocommerce-social-share label, .single-product section.related .woocommerce-product-content .price, .single-product #pxl-content-area div.product .wooc-product-meta button, .single-product > div.product .wooc-product-meta button, .woosw-popup .woosw-item--actions a.button, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward, .archive section.related .woocommerce-product-content .price, .archive .woocommerce-product-content .price, .woocommerce.archive .products.shop-view-list li .add_to_cart_button, .woocommerce.archive .products.shop-view-list li .added_to_cart, .ft-gt p, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label p, .woocommerce #pxl-sidebar-area .widget_products ul a p, .single-product .woocommerce-social-share label p, .single-product section.related .woocommerce-product-content .price p, .single-product #pxl-content-area div.product .wooc-product-meta button p, .single-product > div.product .wooc-product-meta button p, .woosw-popup .woosw-item--actions a.button p, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button p, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward p, .archive section.related .woocommerce-product-content .price p, .archive .woocommerce-product-content .price p, .woocommerce.archive .products.shop-view-list li .add_to_cart_button p, .woocommerce.archive .products.shop-view-list li .added_to_cart p, .ft-gt h1, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h1, .woocommerce #pxl-sidebar-area .widget_products ul a h1, .single-product .woocommerce-social-share label h1, .single-product section.related .woocommerce-product-content .price h1, .single-product #pxl-content-area div.product .wooc-product-meta button h1, .single-product > div.product .wooc-product-meta button h1, .woosw-popup .woosw-item--actions a.button h1, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h1, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h1, .archive section.related .woocommerce-product-content .price h1, .archive .woocommerce-product-content .price h1, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h1, .woocommerce.archive .products.shop-view-list li .added_to_cart h1, .ft-gt h2, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h2, .woocommerce #pxl-sidebar-area .widget_products ul a h2, .single-product .woocommerce-social-share label h2, .single-product section.related .woocommerce-product-content .price h2, .single-product #pxl-content-area div.product .wooc-product-meta button h2, .single-product > div.product .wooc-product-meta button h2, .woosw-popup .woosw-item--actions a.button h2, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h2, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h2, .archive section.related .woocommerce-product-content .price h2, .archive .woocommerce-product-content .price h2, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h2, .woocommerce.archive .products.shop-view-list li .added_to_cart h2, .ft-gt h3, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h3, .woocommerce #pxl-sidebar-area .widget_products ul a h3, .single-product .woocommerce-social-share label h3, .single-product section.related .woocommerce-product-content .price h3, .single-product #pxl-content-area div.product .wooc-product-meta button h3, .single-product > div.product .wooc-product-meta button h3, .woosw-popup .woosw-item--actions a.button h3, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h3, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h3, .archive section.related .woocommerce-product-content .price h3, .archive .woocommerce-product-content .price h3, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h3, .woocommerce.archive .products.shop-view-list li .added_to_cart h3, .ft-gt h4, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h4, .woocommerce #pxl-sidebar-area .widget_products ul a h4, .single-product .woocommerce-social-share label h4, .single-product section.related .woocommerce-product-content .price h4, .single-product #pxl-content-area div.product .wooc-product-meta button h4, .single-product > div.product .wooc-product-meta button h4, .woosw-popup .woosw-item--actions a.button h4, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h4, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h4, .archive section.related .woocommerce-product-content .price h4, .archive .woocommerce-product-content .price h4, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h4, .woocommerce.archive .products.shop-view-list li .added_to_cart h4, .ft-gt h5, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h5, .woocommerce #pxl-sidebar-area .widget_products ul a h5, .single-product .woocommerce-social-share label h5, .single-product section.related .woocommerce-product-content .price h5, .single-product #pxl-content-area div.product .wooc-product-meta button h5, .single-product > div.product .wooc-product-meta button h5, .woosw-popup .woosw-item--actions a.button h5, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h5, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h5, .archive section.related .woocommerce-product-content .price h5, .archive .woocommerce-product-content .price h5, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h5, .woocommerce.archive .products.shop-view-list li .added_to_cart h5, .ft-gt h6, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h6, .woocommerce #pxl-sidebar-area .widget_products ul a h6, .single-product .woocommerce-social-share label h6, .single-product section.related .woocommerce-product-content .price h6, .single-product #pxl-content-area div.product .wooc-product-meta button h6, .single-product > div.product .wooc-product-meta button h6, .woosw-popup .woosw-item--actions a.button h6, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h6, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h6, .archive section.related .woocommerce-product-content .price h6, .archive .woocommerce-product-content .price h6, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h6, .woocommerce.archive .products.shop-view-list li .added_to_cart h6, .ft-gt div, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label div, .woocommerce #pxl-sidebar-area .widget_products ul a div, .single-product .woocommerce-social-share label div, .single-product section.related .woocommerce-product-content .price div, .single-product #pxl-content-area div.product .wooc-product-meta button div, .single-product > div.product .wooc-product-meta button div, .woosw-popup .woosw-item--actions a.button div, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button div, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward div, .archive section.related .woocommerce-product-content .price div, .archive .woocommerce-product-content .price div, .woocommerce.archive .products.shop-view-list li .add_to_cart_button div, .woocommerce.archive .products.shop-view-list li .added_to_cart div, .ft-gt span, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label span, .woocommerce #pxl-sidebar-area .widget_products ul a span, .single-product .woocommerce-social-share label span, .single-product section.related .woocommerce-product-content .price span, .single-product #pxl-content-area div.product .wooc-product-meta button span, .single-product > div.product .wooc-product-meta button span, .woosw-popup .woosw-item--actions a.button span, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button span, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward span, .archive section.related .woocommerce-product-content .price span, .archive .woocommerce-product-content .price span, .woocommerce.archive .products.shop-view-list li .add_to_cart_button span, .woocommerce.archive .products.shop-view-list li .added_to_cart span, input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="tel"], input[type="number"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea, select, .pxl-select-higthlight, .nice-select, .single-post .comment-form input[type="text"], .single-post .comment-form textarea, .comment-form-cookies-consent, .nice-select ul.list, .wrap-ctf-bill button, .wrap-ctf3 button, .wrap-ctf-page.single-sv button, .form-contact-qrcode .first p, .form-contact-qrcode button, .form-contact-qrcode.online-appointment label, .widget_shopping_cart .total strong, #pxl-cart-sidebar .pxl-widget-cart-sidebar .widget_shopping_title, .woocommerce .woocommerce-error, .woocommerce .woocommerce-info, .woocommerce .woocommerce-message, .woocommerce .button.add_to_cart_button, .woocommerce-page .button.add_to_cart_button, .woocommerce button.single_add_to_cart_button, .woocommerce-page button.single_add_to_cart_button, .woocommerce #respond input#submit, .woocommerce-page #respond input#submit, .woocommerce a.added_to_cart.wc-forward, .woocommerce-page a.added_to_cart.wc-forward, .woocommerce .button:not(.add_to_cart_button):not(.single_add_to_cart_button):not(.added_to_cart), .woocommerce-page .button:not(.add_to_cart_button):not(.single_add_to_cart_button):not(.added_to_cart), .single-product .meta .woocommerce-review__author, .single-product #pxl-content-area div.product form.cart label, .single-product > div.product form.cart label, .single-product #pxl-content-area div.product .woocommerce-tabs .woocommerce-tabs-panel--reviews .comment-reply-title, .single-product > div.product .woocommerce-tabs .woocommerce-tabs-panel--reviews .comment-reply-title, body.woocommerce-cart .woocommerce-cart-form .shop_table thead th, .pxl-shop-topbar-wrap .woocommerce-result-count, .woocommerce.archive .products.shop-view-list li .woocommerce-wishlist button, .pxl-grid-filter .filter-item, .btn-readmore-1, .pxl-related-post .pxl-swiper-slide .pxl-post--inner .pxl-post--title, .pxl-related-post .pxl-swiper-slide .pxl-post--inner .btn--readmore, input[type="submit"], .tt_navigation_cell .tt_tabs_navigation li a, .tt_timetable thead tr th, .tt_timetable .tt_hours_column, body .tt_timetable .event .event_header {
+.ft-theme-default, .pxl-swiper-pagination .pxl-swiper-current-slide, .pxl-swiper-pagination .pxl-swiper-total-slides, .pxl-text-effect1, .pxl-heading .pxl-item--title, .pxl-heading .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-heading -title.pxl-item, #pxl-search-popup .pxl-item--content form .search-field, .pxl-search-popup-button .pxl_cart_counter, .pxl-language-switch .language, .pxl-icon-postformat .link-icon a span, .pxl-banner .pxl-banner-inner .hover-content .subtitle-phone, .pxl-banner .pxl-banner-inner .hover-content .phone-number, .pxl-banner .pxl-banner-inner .hover-content .btn, .pxl-banner .pxl-banner-inner .hover-content button, .pxl-banner .pxl-banner-inner .hover-content .button, .pxl-post-share a, .pxl-logo-marquee1 .pxl-item--text, .pxl--post-footer label, .pxl-post--navigation, .pxl-post--author-info .pxl-user--name, .btn--readmore, .page-links .post-page-numbers, .comments-title, .widget_rss .rsswidget, .widget_block .wp-block-search__label, .widget_block .wp-block-group__inner-container > h2, .widget_block .wp-block-archives-list, .widget_block .wp-block-categories-list, .pxl-wg-categories .pxl-category--inner span, .pxl-contact-info-widget .pxl-phone--number, .ft-gt, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label, .woocommerce #pxl-sidebar-area .widget_products ul a, .single-product .woocommerce-social-share label, .single-product section.related .woocommerce-product-content .price, .single-product #pxl-content-area div.product .wooc-product-meta button, .single-product > div.product .wooc-product-meta button, .woosw-popup .woosw-item--actions a.button, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward, .archive section.related .woocommerce-product-content .price, .archive .woocommerce-product-content .price, .woocommerce.archive .products.shop-view-list li .add_to_cart_button, .woocommerce.archive .products.shop-view-list li .added_to_cart, .ft-gt p, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label p, .woocommerce #pxl-sidebar-area .widget_products ul a p, .single-product .woocommerce-social-share label p, .single-product section.related .woocommerce-product-content .price p, .single-product #pxl-content-area div.product .wooc-product-meta button p, .single-product > div.product .wooc-product-meta button p, .woosw-popup .woosw-item--actions a.button p, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button p, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward p, .archive section.related .woocommerce-product-content .price p, .archive .woocommerce-product-content .price p, .woocommerce.archive .products.shop-view-list li .add_to_cart_button p, .woocommerce.archive .products.shop-view-list li .added_to_cart p, .ft-gt h1, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h1, .woocommerce #pxl-sidebar-area .widget_products ul a h1, .single-product .woocommerce-social-share label h1, .single-product section.related .woocommerce-product-content .price h1, .single-product #pxl-content-area div.product .wooc-product-meta button h1, .single-product > div.product .wooc-product-meta button h1, .woosw-popup .woosw-item--actions a.button h1, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h1, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h1, .archive section.related .woocommerce-product-content .price h1, .archive .woocommerce-product-content .price h1, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h1, .woocommerce.archive .products.shop-view-list li .added_to_cart h1, .ft-gt h2, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h2, .woocommerce #pxl-sidebar-area .widget_products ul a h2, .single-product .woocommerce-social-share label h2, .single-product section.related .woocommerce-product-content .price h2, .single-product #pxl-content-area div.product .wooc-product-meta button h2, .single-product > div.product .wooc-product-meta button h2, .woosw-popup .woosw-item--actions a.button h2, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h2, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h2, .archive section.related .woocommerce-product-content .price h2, .archive .woocommerce-product-content .price h2, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h2, .woocommerce.archive .products.shop-view-list li .added_to_cart h2, .ft-gt h3, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h3, .woocommerce #pxl-sidebar-area .widget_products ul a h3, .single-product .woocommerce-social-share label h3, .single-product section.related .woocommerce-product-content .price h3, .single-product #pxl-content-area div.product .wooc-product-meta button h3, .single-product > div.product .wooc-product-meta button h3, .woosw-popup .woosw-item--actions a.button h3, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h3, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h3, .archive section.related .woocommerce-product-content .price h3, .archive .woocommerce-product-content .price h3, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h3, .woocommerce.archive .products.shop-view-list li .added_to_cart h3, .ft-gt h4, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h4, .woocommerce #pxl-sidebar-area .widget_products ul a h4, .single-product .woocommerce-social-share label h4, .single-product section.related .woocommerce-product-content .price h4, .single-product #pxl-content-area div.product .wooc-product-meta button h4, .single-product > div.product .wooc-product-meta button h4, .woosw-popup .woosw-item--actions a.button h4, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h4, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h4, .archive section.related .woocommerce-product-content .price h4, .archive .woocommerce-product-content .price h4, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h4, .woocommerce.archive .products.shop-view-list li .added_to_cart h4, .ft-gt h5, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h5, .woocommerce #pxl-sidebar-area .widget_products ul a h5, .single-product .woocommerce-social-share label h5, .single-product section.related .woocommerce-product-content .price h5, .single-product #pxl-content-area div.product .wooc-product-meta button h5, .single-product > div.product .wooc-product-meta button h5, .woosw-popup .woosw-item--actions a.button h5, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h5, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h5, .archive section.related .woocommerce-product-content .price h5, .archive .woocommerce-product-content .price h5, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h5, .woocommerce.archive .products.shop-view-list li .added_to_cart h5, .ft-gt h6, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h6, .woocommerce #pxl-sidebar-area .widget_products ul a h6, .single-product .woocommerce-social-share label h6, .single-product section.related .woocommerce-product-content .price h6, .single-product #pxl-content-area div.product .wooc-product-meta button h6, .single-product > div.product .wooc-product-meta button h6, .woosw-popup .woosw-item--actions a.button h6, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h6, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h6, .archive section.related .woocommerce-product-content .price h6, .archive .woocommerce-product-content .price h6, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h6, .woocommerce.archive .products.shop-view-list li .added_to_cart h6, .ft-gt div, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label div, .woocommerce #pxl-sidebar-area .widget_products ul a div, .single-product .woocommerce-social-share label div, .single-product section.related .woocommerce-product-content .price div, .single-product #pxl-content-area div.product .wooc-product-meta button div, .single-product > div.product .wooc-product-meta button div, .woosw-popup .woosw-item--actions a.button div, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button div, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward div, .archive section.related .woocommerce-product-content .price div, .archive .woocommerce-product-content .price div, .woocommerce.archive .products.shop-view-list li .add_to_cart_button div, .woocommerce.archive .products.shop-view-list li .added_to_cart div, .ft-gt span, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label span, .woocommerce #pxl-sidebar-area .widget_products ul a span, .single-product .woocommerce-social-share label span, .single-product section.related .woocommerce-product-content .price span, .single-product #pxl-content-area div.product .wooc-product-meta button span, .single-product > div.product .wooc-product-meta button span, .woosw-popup .woosw-item--actions a.button span, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button span, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward span, .archive section.related .woocommerce-product-content .price span, .archive .woocommerce-product-content .price span, .woocommerce.archive .products.shop-view-list li .add_to_cart_button span, .woocommerce.archive .products.shop-view-list li .added_to_cart span, input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="tel"], input[type="number"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea, select, .pxl-select-higthlight, .nice-select, .comment-form-cookies-consent, .nice-select ul.list, .wrap-ctf-bill button, .wrap-ctf3 button, .wrap-ctf-page.single-sv button, .form-contact-qrcode .first p, .form-contact-qrcode button, .form-contact-qrcode.online-appointment label, .widget_shopping_cart .total strong, #pxl-cart-sidebar .pxl-widget-cart-sidebar .widget_shopping_title, .woocommerce .woocommerce-error, .woocommerce .woocommerce-info, .woocommerce .woocommerce-message, .woocommerce .button.add_to_cart_button, .woocommerce-page .button.add_to_cart_button, .woocommerce button.single_add_to_cart_button, .woocommerce-page button.single_add_to_cart_button, .woocommerce #respond input#submit, .woocommerce-page #respond input#submit, .woocommerce a.added_to_cart.wc-forward, .woocommerce-page a.added_to_cart.wc-forward, .woocommerce .button:not(.add_to_cart_button):not(.single_add_to_cart_button):not(.added_to_cart), .woocommerce-page .button:not(.add_to_cart_button):not(.single_add_to_cart_button):not(.added_to_cart), .single-product .meta .woocommerce-review__author, .single-product #pxl-content-area div.product form.cart label, .single-product > div.product form.cart label, .single-product #pxl-content-area div.product .woocommerce-tabs .woocommerce-tabs-panel--reviews .comment-reply-title, .single-product > div.product .woocommerce-tabs .woocommerce-tabs-panel--reviews .comment-reply-title, body.woocommerce-cart .woocommerce-cart-form .shop_table thead th, .pxl-shop-topbar-wrap .woocommerce-result-count, .woocommerce.archive .products.shop-view-list li .woocommerce-wishlist button, .pxl-grid-filter .filter-item, .btn-readmore-1, .pxl-related-post .pxl-swiper-slide .pxl-post--inner .pxl-post--title, .pxl-related-post .pxl-swiper-slide .pxl-post--inner .btn--readmore, input[type="submit"], .tt_navigation_cell .tt_tabs_navigation li a, .tt_timetable thead tr th, .tt_timetable .tt_hours_column, body .tt_timetable .event .event_header {
   font-family: , sans-serif;
 }
 .pxl-wobble span {
@@ -11913,7 +11928,7 @@ body.rtl .pxl-post-list1 li:before {
   flex-wrap: wrap;
 }
 .post-tags-share {
-  margin-top: 38px;
+  margin-top: 35px;
   padding-bottom: 35px;
   display: flex;
   align-items: center;
@@ -11935,14 +11950,13 @@ body.rtl .pxl-post-list1 li:before {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 45px;
-  border: 1px solid rgba(149, 136, 248, 0.3);
+  height: 46px;
+  border: 1px solid rgba(102, 111, 120, 0.5);
   border-radius: 50px;
-  padding: 0 25px;
+  padding: 0 20px;
   color: var(--secondary-color);
-  background-color: transparent;
-  font-size: 13px;
-  font-weight: 500;
+  background-color: var(--body_bg-color);
+  font-size: 16px;
   -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   -khtml-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -11951,9 +11965,9 @@ body.rtl .pxl-post-list1 li:before {
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .post-tags-share .post-tags-wrap .post-tags a:hover {
-  color: #fff;
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
+  color: var(--body_bg-color);
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
 .post-tags-share .post-share-wrap {
   z-index: 1;
@@ -11973,29 +11987,29 @@ body.rtl .pxl-post-list1 li:before {
 }
 .post-tags-share .post-shares .label {
   color: var(--secondary-color);
-  font-size: 15px;
+  font-family: "DM Sans";
+  font-size: 20px;
   font-weight: 500;
-  line-height: 1.67;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
+  line-height: 1.5;
 }
 .post-tags-share .post-shares .social-share {
-  border-radius: 8px;
-  border: 1px solid rgba(149, 136, 248, 0.3);
   display: inline-flex;
   align-items: center;
+  gap: 10px;
 }
 .post-tags-share .post-shares .social-share .social-share-icon {
-  width: 45px;
-  height: 45px;
+  position: relative;
+  height: 46px;
+  width: 46px;
+  -webkit-border-radius: 46px;
+  -khtml-border-radius: 46px;
+  -moz-border-radius: 46px;
+  -ms-border-radius: 46px;
+  -o-border-radius: 46px;
+  border-radius: 46px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
-  color: var(--primary-color);
-  background-color: transparent;
-  position: relative;
   -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   -khtml-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -12003,20 +12017,29 @@ body.rtl .pxl-post-list1 li:before {
   -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-.post-tags-share .post-shares .social-share .social-share-icon:first-child {
-  border-radius: 8px 0 0 8px;
-}
-.post-tags-share .post-shares .social-share .social-share-icon:first-child:before {
-  border-radius: 8px 0 0 8px;
-}
-.post-tags-share .post-shares .social-share .social-share-icon:last-child {
-  border-radius: 0 8px 8px 0;
-}
-.post-tags-share .post-shares .social-share .social-share-icon:last-child:before {
-  border-radius: 0 8px 8px 0;
-}
-.post-tags-share .post-shares .social-share .social-share-icon + .social-share-icon {
-  border-left: 1px solid rgba(149, 136, 248, 0.3);
+.post-tags-share .post-shares .social-share .social-share-icon:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--body_bg-color);
+  border: 1px solid rgba(102, 111, 120, 0.5);
+  -webkit-border-radius: 46px;
+  -khtml-border-radius: 46px;
+  -moz-border-radius: 46px;
+  -ms-border-radius: 46px;
+  -o-border-radius: 46px;
+  border-radius: 46px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  opacity: 0;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .post-tags-share .post-shares .social-share .social-share-icon i, .post-tags-share .post-shares .social-share .social-share-icon svg {
   z-index: 5;
@@ -12026,26 +12049,12 @@ body.rtl .pxl-post-list1 li:before {
   width: 14px;
   height: 14px;
 }
-.post-tags-share .post-shares .social-share .social-share-icon:before {
-  content: "";
-  position: absolute;
-  top: -1px;
-  left: -1px;
-  width: calc(100% + 2px);
-  height: calc(100% + 2px);
-  background-color: transparent;
-  -webkit-transition: inherit;
-  -khtml-transition: inherit;
-  -moz-transition: inherit;
-  -ms-transition: inherit;
-  -o-transition: inherit;
-  transition: inherit;
-}
 .post-tags-share .post-shares .social-share .social-share-icon:hover {
-  color: #fff;
+  color: var(--secondary-color);
 }
 .post-tags-share .post-shares .social-share .social-share-icon:hover:before {
-  background-color: var(--primary-color);
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
 }
 .single-post-inner .post-title {
   margin-bottom: 13px;
@@ -12863,11 +12872,10 @@ body.rtl .pxl-post-list1 li:before {
   margin-bottom: 0;
 }
 .comments-title {
-  margin-top: 66px;
-  font-size: 36px;
+  margin-top: 60px;
+  font-size: 30px;
   font-weight: 500;
-  margin-bottom: 32px;
-  letter-spacing: -0.72px;
+  margin-bottom: 50px;
 }
 @media screen and (max-width: 767px) {
   .comments-title {
@@ -12876,8 +12884,9 @@ body.rtl .pxl-post-list1 li:before {
 }
 .comment-reply-title {
   margin-top: 60px;
-  font-size: 35px;
-  margin-bottom: 16px;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 @media screen and (max-width: 767px) {
   .comment-reply-title {
@@ -14339,7 +14348,8 @@ body.rtl .widget .widget-title:before {
   left: -364px;
   width: 364px;
   height: 100%;
-  background: linear-gradient(90deg, rgba(9, 46, 90, 0.00) 2.4%, rgba(9, 46, 90, 0.83) 51.04%, rgba(9, 46, 90, 0.96) 66.41%, #092e5a 76.65%);
+  background: linear-gradient(90deg, rgba(9, 46, 90, 0) 2.4%, rgba(9, 46, 90, 0.83) 51.04%, rgba(9, 46, 90, 0.96) 66.41%, #092e5a 76.65%);
+  z-index: 5;
 }
 @media screen and (max-width: 767px) {
   .pxl-gradient-page-title-1:before {
@@ -14347,8 +14357,20 @@ body.rtl .widget .widget-title:before {
     width: 100%;
     height: 364px;
     top: -364px;
-    background: linear-gradient(180deg, rgba(9, 46, 90, 0.00) 2.4%, rgba(9, 46, 90, 0.83) 51.04%, rgba(9, 46, 90, 0.96) 66.41%, #092e5a 76.65%);
+    background: linear-gradient(180deg, rgba(9, 46, 90, 0) 2.4%, rgba(9, 46, 90, 0.83) 51.04%, rgba(9, 46, 90, 0.96) 66.41%, #092e5a 76.65%);
   }
+}
+.pxl-overlay-image-page-title {
+  position: relative;
+}
+.pxl-overlay-image-page-title:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(14, 72, 141, 0.3);
+  z-index: 1;
 }
 .pxl-container-counter-about {
   position: relative;
@@ -14380,7 +14402,7 @@ body.rtl .widget .widget-title:before {
   left: -60px;
   width: 60px;
   height: 60px;
-  background: rgba(187, 178, 255, 0.50);
+  background: rgba(187, 178, 255, 0.5);
 }
 @keyframes pxl-draws-svg {
   0% {
@@ -14624,13 +14646,13 @@ textarea::placeholder {
   margin-bottom: 35px;
 }
 .comment-list li:has(.children) .comment-body {
-  padding-bottom: 25px;
-  border-bottom: 1px dashed rgba(149, 136, 248, 0.3);
+  padding-bottom: 35px;
+  border-bottom: 1px solid rgba(102, 111, 120, 0.5);
 }
 .comment-list li .children {
   margin-bottom: 0;
-  margin-left: 50px;
-  margin-top: 25px;
+  padding-left: 70px;
+  padding-top: 35px;
 }
 @media (max-width: 767px) {
   .comment-list li .children {
@@ -14684,8 +14706,7 @@ textarea::placeholder {
   width: 70px;
   min-width: 70px;
   height: 70px;
-  border-radius: 64px;
-  border: 1px solid var(--primary-color);
+  border-radius: 70px;
   overflow: hidden;
 }
 @media screen and (max-width: 575px) {
@@ -14695,12 +14716,11 @@ textarea::placeholder {
 }
 .comment-title {
   color: var(--secondary-color);
-  font-family: "General Sans";
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 600;
-  line-height: 27px;
+  line-height: 1.556;
   text-transform: uppercase;
-  margin-bottom: 3px;
+  margin-bottom: 0;
 }
 .comment-title a {
   color: inherit;
@@ -14716,20 +14736,19 @@ textarea::placeholder {
   width: 20px;
 }
 .comment-date {
-  color: var(--secondary-color);
-  font-family: "General Sans";
+  color: rgba(4, 20, 39, 0.7);
+  font-family: "DM Sans";
   font-size: 15px;
   font-style: italic;
-  font-weight: 400;
-  line-height: 25px;
+  font-weight: 300;
+  line-height: 1.667;
 }
 .comment-text {
-  margin-top: 22px;
+  margin-top: 30px;
   margin-bottom: 0px;
-  color: var(--secondary-color);
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 1.67;
+  color: rgba(4, 20, 39, 0.8);
+  font-size: 16px;
+  line-height: 1.625;
 }
 .comment-text p:last-child {
   margin-bottom: 0;
@@ -14751,32 +14770,25 @@ textarea::placeholder {
 }
 .comment-reply {
   position: absolute;
-  top: 15px;
+  top: 12px;
   right: 0;
-  background-color: var(--primary-color);
-  height: 40px;
-  line-height: 40px;
-  padding: 0 20px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  border-radius: 8px;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 500;
-  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -khtml-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -ms-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-.comment-reply:hover {
-  background-color: var(--secondary-color);
 }
 .comment-reply a {
-  color: inherit;
+  color: var(--body_bg-color);
+}
+.comment-reply .pxl-button--icon {
+  height: 46px !important;
+  width: 46px !important;
+}
+.comment-reply span {
+  height: 46px !important;
+  line-height: 46px !important;
+  margin-right: 46px !important;
+  margin-left: 0;
+}
+.comment-reply .btn:hover span, .comment-reply button:hover span, .comment-reply .button:hover span {
+  margin-right: 0 !important;
+  margin-left: 46px !important;
 }
 .comment-holder {
   margin-bottom: 8px;
@@ -14797,10 +14809,12 @@ textarea::placeholder {
 }
 .notice-f {
   margin-top: 0px !important;
-  margin-bottom: 10px;
-  font-size: 15px;
-  line-height: 25px;
-  color: rgba(var, 1, 0, 0);
+  margin-bottom: 15px;
+  color: rgba(4, 20, 39, 0.7);
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.625;
 }
 .notice-f.save-info {
   display: flex;
@@ -14813,6 +14827,11 @@ textarea::placeholder {
 .notice-f.save-info label {
   cursor: pointer;
   margin-bottom: 0 !important;
+  color: var(--secondary-color);
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.625;
 }
 .comment-form {
   display: flex;
@@ -14848,26 +14867,45 @@ textarea::placeholder {
   margin-top: 35px !important;
 }
 .single-post .comments-area {
-  border-top: 1px solid rgba(149, 136, 248, 0.3);
+  border-top: 1px solid rgba(102, 111, 120, 0.5);
 }
 .single-post .comment-form input[type="text"], .single-post .comment-form textarea {
-  border: 1px solid rgba(149, 136, 248, 0.5);
-  font-size: 15px;
+  border: 1px solid rgba(102, 111, 120, 0.5);
+  font-size: 16px;
   color: var(--secondary-color);
-  padding: 0 20px;
-  background-color: #fff;
-  box-shadow: none;
-  height: 50px;
+  padding: 0 30px;
+  background-color: var(--body_bg-color);
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  height: 52px;
+  position: relative;
 }
-.single-post .comment-form input[type="text"]:focus, .single-post .comment-form textarea:focus {
-  border-color: var(--primary-color);
+.single-post .comment-form input[type="text"]::placeholder, .single-post .comment-form textarea::placeholder {
+  color: rgba(4, 20, 39, 0.7);
 }
-.single-post .comment-form input[type="text"]:focus::placeholder, .single-post .comment-form textarea:focus::placeholder {
-  color: var(--secondary-color);
+.single-post .comment-form input[type="text"]:after, .single-post .comment-form textarea:after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  background-color: var(--secondary-color);
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(102, 111, 120, 0.5);
 }
 .single-post .comment-form textarea {
-  padding: 8px 20px;
-  height: 120px;
+  padding: 13px 30px;
+  height: 144px;
 }
 .single-post .comment-form label {
   display: block;
@@ -15167,7 +15205,7 @@ textarea::placeholder {
   visibility: visible;
 }
 .comment-list-wrap {
-  border-bottom: 1px dashed rgba(149, 136, 248, 0.3);
+  border-bottom: 1px solid rgba(102, 111, 120, 0.5);
 }
 .comment-reply-title small a {
   font-size: 14px;
@@ -15638,25 +15676,6 @@ body .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select > div > .xdsoft_optio
 .comment-form .form-submit {
   width: 100%;
   padding: 0 10px;
-}
-.comment-form .form-submit button {
-  background-color: var(--primary-color);
-  padding: 0 30px;
-  font-size: 15px;
-  font-weight: 500;
-  border-radius: 8px;
-  text-transform: capitalize;
-  height: 50px;
-}
-.comment-form .form-submit button:before {
-  display: none;
-}
-.comment-form .form-submit button:hover {
-  background-color: var(--secondary-color);
-  color: #fff;
-}
-.comment-form .form-submit button i {
-  font-size: 0;
 }
 .ct-widget-google_maps {
   position: relative;
@@ -26936,28 +26955,70 @@ body .woosw-popup-content-mid .added_to_cart {
   font-family: "Font Awesome 5 Free" !important;
 }
 .btn-submit {
-  font-size: 16px;
-  font-weight: 500;
-  color: #fff;
-  padding: 0 24px;
-  line-height: 52px;
-  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -khtml-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -ms-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  background-color: var(--primary-color);
-  position: relative;
+  padding: 0 !important;
+  background-color: transparent !important;
 }
-@media (max-width: 767px) {
-  .btn-submit {
-    line-height: 42px;
-    font-size: 14px;
-  }
+.btn-submit.pxl-icon--right span {
+  margin-right: 46px !important;
+  margin-left: 0;
+  height: 46px;
+  line-height: 46px;
 }
-.btn-submit:hover {
+.btn-submit.pxl-icon--right .pxl-button--icon {
+  width: 46px !important;
+  height: 46px !important;
+}
+.btn-submit.pxl-icon--right .pxl-button--icon-right {
+  scale: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 46px;
+  height: 46px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
   background-color: var(--secondary-color);
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.btn-submit.pxl-icon--right .pxl-button--icon-left {
+  scale: 1;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 46px;
+  height: 46px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.btn-submit:hover span {
+  margin-right: 0;
+  margin-left: 46px !important;
+}
+.btn-submit:hover .pxl-button--icon-right {
+  scale: 1;
+}
+.btn-submit:hover .pxl-button--icon-left {
+  scale: 0;
 }
 @-webkit-keyframes pxl_btn_shine {
   100% {

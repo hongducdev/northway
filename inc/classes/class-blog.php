@@ -246,35 +246,29 @@ if (!class_exists('Northway_Blog')) {
             $post = get_post($post_id);
             ?>
             <div class="post-shares align-items-center">
+                <span class="label"><?php echo esc_html__('Share:', 'northway'); ?></span>
                 <div class="social-share">
                     <?php if ($social_facebook): ?>
                         <a class="social-share-icon " title="<?php echo esc_attr__('Facebook', 'northway'); ?>" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(get_the_permalink($post_id)); ?>">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    <?php endif; ?>
-                    <?php if ($social_instagram): ?>
-                        <a class="social-share-icon " title="<?php echo esc_attr__('Instagram', 'northway'); ?>" target="_blank" href="https://www.instagram.com/sharer/sharer.php?u=<?php echo urlencode(get_the_permalink($post_id)); ?>">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                                <path d="M5.5 3.4826C4.3868 3.4826 3.4826 4.3868 3.4826 5.5C3.4826 6.6132 4.3868 7.5196 5.5 7.5196C6.6132 7.5196 7.5196 6.6132 7.5196 5.5C7.5196 4.3868 6.6132 3.4826 5.5 3.4826Z" fill="currentColor" />
-                                <path d="M8.5448 0H2.4552C1.1022 0 0 1.1022 0 2.4552V8.5448C0 9.9 1.1022 11 2.4552 11H8.5448C9.9 11 11 9.9 11 8.5448V2.4552C11 1.1022 9.9 0 8.5448 0ZM5.5 9.064C3.5354 9.064 1.936 7.4646 1.936 5.5C1.936 3.5354 3.5354 1.9382 5.5 1.9382C7.4646 1.9382 9.064 3.5354 9.064 5.5C9.064 7.4646 7.4646 9.064 5.5 9.064ZM9.1388 2.585C8.723 2.585 8.3842 2.2484 8.3842 1.8326C8.3842 1.4168 8.723 1.078 9.1388 1.078C9.5546 1.078 9.8934 1.4168 9.8934 1.8326C9.8934 2.2484 9.5546 2.585 9.1388 2.585Z" fill="currentColor" />
-                            </svg>
+                            <i class="flaticon-facebook"></i>
                         </a>
                     <?php endif; ?>
                     <?php if ($social_twitter): ?>
-                        <a class="social-share-icon " title="<?php echo esc_attr__('Twitter', 'northway'); ?>" target="_blank" href="https://twitter.com/intent/tweet?original_referer=<?php echo urldecode(home_url('/')); ?>&url=<?php echo urlencode(get_the_permalink($post_id)); ?>&text=<?php the_title(); ?>%20">
-                            <i class="bi-twitter"></i>
+                        <a class="social-share-icon " title="<?php echo esc_attr__('Twitter/X', 'northway'); ?>" target="_blank" href="https://x.com/intent/tweet?original_referer=<?php echo urldecode(home_url('/')); ?>&url=<?php echo urlencode(get_the_permalink($post_id)); ?>&text=<?php the_title(); ?>%20">
+                            <i class="flaticon-search"></i>
                         </a>
                     <?php endif; ?>
                     <?php if ($social_linkedin): ?>
                         <a class="social-share-icon " title="<?php echo esc_attr__('Linkedin', 'northway'); ?>" target="_blank" href="https://www.linkedin.com/cws/share?url=<?php echo urlencode(get_the_permalink($post_id)); ?>">
-                            <i class="bi-linkedin"></i>
+                            <i class="flaticon-linkedin"></i>
+                        </a>
+                    <?php endif; ?>
+                    <?php if ($social_instagram): ?>
+                        <a class="social-share-icon " title="<?php echo esc_attr__('Instagram', 'northway'); ?>" target="_blank" href="https://www.instagram.com/sharer/sharer.php?u=<?php echo urlencode(get_the_permalink($post_id)); ?>">
+                            <i class="flaticon-instagram"></i>
                         </a>
                     <?php endif; ?>
                 </div>
-                <span class="label"><?php echo esc_html__('Share', 'northway'); ?> <svg xmlns="http://www.w3.org/2000/svg" width="23" height="8" viewBox="0 0 23 8" fill="none">
-                        <path d="M19.5215 0.115234C19.5377 0.571204 19.9139 1.05979 20.1484 1.43359C20.3943 1.84817 20.6402 2.26268 20.9268 2.66602C21.4852 3.49876 22.0846 4.3202 22.7393 5.10449C22.7652 5.11925 22.0241 6.48532 21.957 6.48242C20.0104 6.58041 18.0374 6.66374 16.0908 6.76172C16.1983 6.75401 16.4459 6.13756 16.4902 6.05957C16.5499 5.95408 16.822 5.35488 16.8887 5.3584C17.6412 5.30446 18.405 5.29114 19.1836 5.25195C18.4262 4.89062 17.6133 4.56595 16.7969 4.30859C14.0058 3.41134 10.9787 3.17133 8.06152 3.64648C5.18528 4.11041 1.71379 5.19894 0 7.73242C0.203099 7.43518 0.490838 6.80834 0.75293 6.40723C1.74268 4.9064 3.30528 3.97098 4.94629 3.32129C9.80249 1.36883 15.4104 1.6647 20.0703 3.93262C19.847 3.5996 19.6119 3.2262 19.4033 2.86719C19.1835 2.46734 18.6781 1.90478 18.7842 1.41504C18.7582 1.40028 18.7433 1.42615 18.7285 1.45215C18.758 1.40019 18.7869 1.34786 18.8164 1.2959C18.9823 0.943308 19.2222 0.460887 19.5215 0.115234L19.5371 0.0888672C19.5382 0.0869546 19.5395 0.085032 19.541 0.0830078C19.5351 0.092646 19.5283 0.103311 19.5215 0.115234ZM19.4922 0.166992C19.4221 0.230094 19.3922 0.282016 19.3887 0.348633C19.4182 0.296702 19.4627 0.218988 19.4922 0.166992ZM19.6221 0C19.6083 0.0240219 19.5599 0.057572 19.541 0.0830078C19.5608 0.0506155 19.5793 0.0286952 19.6221 0Z" fill="#0F3714" />
-                    </svg>
-                </span>
             </div>
         <?php
         }

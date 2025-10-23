@@ -10,7 +10,7 @@
 #pxl-wapper {
     @media #{$min-xl} {
         .container {
-            max-width: 1310px;
+            max-width: 1320px;
             width: 100%;
         }
     }
@@ -90,6 +90,28 @@
 .single-post {
     #pxl-main {
         padding: 120px 0;
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+
+            background-image: repeating-linear-gradient(
+                    to right,
+                    rgba(#dfdfdf, 0.4) 0 1px,
+                    transparent 1px 300px
+                ),
+                repeating-linear-gradient(
+                    to bottom,
+                    rgba(#dfdfdf, 0.4) 0 1px,
+                    transparent 1px 300px
+                );
+            background-position: center center;
+            background-size: 300px 300px;
+            background-repeat: repeat;
+            transform: translateZ(0);
+        }
         @media #{$max-lg} {
             padding: 90px 0px 90px 15px !important;
         }
@@ -102,22 +124,6 @@
     }
     .pxl-post--top {
         text-align: center;
-    }
-    .pxl-breadcrumb {
-        background-color: #f2f2f2;
-        li {
-            &:last-child {
-                span {
-                    color: #000;
-                }
-            }
-        }
-        a {
-            color: #a1a1a1;
-            &:after {
-                background-color: #000;
-            }
-        }
     }
 }
 .woocommerce-shop #pxl-main {
@@ -185,10 +191,12 @@ body.elementor-editor-active .pxl-column-sticky {
     top: 0 !important;
 }
 
-.elementor-page:not(.single-product) #pxl-content-area.col-12,
-.elementor-page:not(.single-product) #pxl-footer-elementor .row > .col-12 {
-    padding: 0;
-    min-height: 0px;
+.elementor-page:not(.single-post):not(.single-product) {
+    #pxl-content-area.col-12,
+    #pxl-footer-elementor .row > .col-12 {
+        padding: 0;
+        min-height: 0px;
+    }
 }
 
 @media #{$mm-md2} {
@@ -428,6 +436,12 @@ body.elementor-editor-active .pxl-column-sticky {
         border-radius: 100px;
         border: 1px solid rgba($body_bg_color_hex, 0.7);
         > li {
+            &:has(> a.breadcrumb-hidden) {
+                display: none;
+            }
+            &:first-child:has(> a.breadcrumb-hidden) {
+                display: block !important;
+            }
             > a,
             > span {
                 color: rgba($body_bg_color_hex, 0.7);
@@ -435,6 +449,12 @@ body.elementor-editor-active .pxl-column-sticky {
                 font-size: 14px;
                 font-weight: 400;
                 line-height: 1.71;
+                @include transition(all 0.3s ease);
+            }
+            > a {
+                &:hover {
+                    color: $body_bg_color;
+                }
             }
             + li {
                 padding-left: 14px;
