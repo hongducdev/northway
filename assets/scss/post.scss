@@ -402,32 +402,34 @@
 }
 
 .pxl-post-meta-3 {
-    margin-top: 60px;
     &-inner {
-        height: 51px;
-        border-radius: 8px;
-        background: linear-gradient(154deg, #fff274 32.99%, #f0c020 143.4%);
-        padding: 0 25px;
-        display: inline-flex;
+        display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 30px;
-        @media #{$max-sm} {
-            height: auto;
-            flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    &-right {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        @media #{$max-xs} {
             gap: 10px;
-            padding: 10px;
         }
     }
     &-item {
-        display: inline-flex;
+        display: flex;
         align-items: center;
-        gap: 7px;
-        svg {
-            color: $secondary_color;
-        }
-        color: rgba($secondary_color_hex, 0.9);
-        font-size: 15px;
+        gap: 15px;
+        height: 45px;
+        padding: 0 20px;
+        @include border-radius(10px);
+        border: 1px solid rgba($four_color_hex, 0.5);
+        background: $body_bg_color;
+        color: $secondary_color;
+        font-family: "DM Sans";
+        font-size: 14px;
+        font-weight: 400;
     }
 }
 
@@ -534,7 +536,7 @@
     gap: 15px;
     width: 100%;
     @media (max-width: 767px) {
-        display: block !important;
+        flex-wrap: wrap;
     }
     .post-tags-wrap {
         .post-tags {
@@ -607,7 +609,9 @@
                     left: 50%;
                     transform: translate(-50%, -50%) scale(0.5);
                     opacity: 0;
-                    @include transition(all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1));
+                    @include transition(
+                        all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)
+                    );
                 }
                 i,
                 svg {

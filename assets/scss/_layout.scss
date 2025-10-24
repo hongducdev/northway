@@ -435,6 +435,12 @@ body.elementor-editor-active .pxl-column-sticky {
         padding: 0px 25px;
         border-radius: 100px;
         border: 1px solid rgba($body_bg_color_hex, 0.7);
+        @media #{$max-xsx} {
+            height: auto;
+            padding: 0;
+            border: none;
+            border-radius: 0;
+        }
         > li {
             &:has(> a.breadcrumb-hidden) {
                 display: none;
@@ -470,6 +476,12 @@ body.elementor-editor-active .pxl-column-sticky {
                     font-size: 14px;
                     font-weight: 400;
                     line-height: 1.71;
+                }
+                @media #{$max-xsx} {
+                    padding-left: 0;
+                    &:before {
+                        display: none;
+                    }
                 }
             }
         }

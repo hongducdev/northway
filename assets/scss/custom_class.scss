@@ -571,6 +571,19 @@
 
 .pxl-height-100 {
     height: 100%;
+    .pxl-image-single {
+        height: 100%;
+        .pxl-item--inner  {
+            height: 100%;
+            .pxl-item--image {
+                height: 100%;
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
 }
 
 .pxl-container-contact-1 {

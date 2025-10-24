@@ -8,6 +8,9 @@ $northway_sidebar = northway()->get_sidebar_args(['type' => 'post', 'content_col
     <div class="row <?php echo esc_attr($northway_sidebar['wrap_class']) ?>">
         <div id="pxl-content-area" class="<?php echo esc_attr($northway_sidebar['content_class']) ?>">
             <main id="pxl-content-main">
+                <div class="pxl-single-post--meta">
+                    <?php northway()->blog->get_archive_meta_3(); ?>
+                </div>
                 <?php while ( have_posts() ) {
                     the_post();
                     get_template_part( 'template-parts/content/content-single', get_post_format() );
