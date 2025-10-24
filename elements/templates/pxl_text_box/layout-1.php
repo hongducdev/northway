@@ -1,4 +1,4 @@
-<div class="pxl-text-box">
+<div class="pxl-text-box pxl-text-box1">
     <h4 class="pxl-text-box-title">
         <?php echo esc_html($settings['title']); ?>
     </h4>
