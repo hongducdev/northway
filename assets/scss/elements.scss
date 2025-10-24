@@ -4672,8 +4672,8 @@ body.rtl {
         &-inner {
             position: relative;
             overflow: hidden;
-            border-radius: 25px;
-            height: 485px;
+            @include border-radius(20px);
+            height: 462px;
         }
         &-image {
             width: 100%;
@@ -4684,60 +4684,71 @@ body.rtl {
                 object-fit: cover;
             }
         }
-        &-image-2 {
-            position: absolute;
-            top: 26px;
-            right: 34px;
-        }
         &-border1 {
             position: absolute;
             left: 0;
-            bottom: 125px;
-            width: 25px;
-            height: 25px;
-            color: #fff;
+            bottom: 180px;
+            width: 20px;
+            height: 20px;
+            color: $secondary_color;
             transform: rotate(270deg);
         }
         &-border2 {
             position: absolute;
-            left: 180px;
+            left: 230px;
             bottom: 0;
-            width: 25px;
-            height: 25px;
-            color: #fff;
+            width: 20px;
+            height: 20px;
+            color: $secondary_color;
             transform: rotate(270deg);
         }
     }
 
     .pxl-counter {
-        width: 180px;
-        height: 125px;
+        width: 230px;
+        height: 180px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #fff;
-        border-top-right-radius: 25px;
-        border-bottom-left-radius: 25px;
+        background-color: $secondary_color;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
         position: absolute;
         bottom: 0;
         left: 0;
         &--number {
             display: flex;
-            align-items: baseline;
-            color: $secondary_color;
-            font-size: 70px;
+            font-size: 95px;
+            font-style: normal;
             font-weight: 500;
-            line-height: 45px;
+            line-height: 85px;
+        }
+        &--value {
+            background: linear-gradient(
+                180deg,
+                #d9f2ff 34.12%,
+                rgba(184, 214, 236, 0.84) 46.46%,
+                rgba(150, 186, 217, 0.67) 70.88%,
+                rgba(14, 72, 141, 0) 91.18%
+            );
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         &--suffix {
             font-size: 40px;
+            line-height: 60px;
+            color: #d9f2ff;
+            font-feature-settings: "sups" on;
         }
         &--title {
-            font-size: 17px;
-            line-height: 1.52;
-            color: $secondary_color;
+            color: #d9f2ff;
+            text-align: center;
+            font-family: Inter;
+            font-size: 18px;
             font-weight: 500;
+            line-height: 1.667;
         }
     }
 }
