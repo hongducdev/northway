@@ -95,28 +95,29 @@ if (isset($settings['iconbox_list']) && !empty($settings['iconbox_list']) && cou
                                             echo pxl_print_html($thumbnail_icon); ?>
                                         </div>
                                     <?php endif; ?>
-                                    <div class="pxl-item--right">
-                                        <?php if (! empty($title)) : ?>
-                                            <?php if (! empty($item_link['url'])) {
-                                                $item_link_key = $widget->get_repeater_setting_key('item_link', 'iconbox_list', $key);
-                                                $widget->add_render_attribute($item_link_key, 'href', $item_link['url']);
+                                    <?php if (! empty($title)) : ?>
+                                        <?php if (! empty($item_link['url'])) {
+                                            $item_link_key = $widget->get_repeater_setting_key('item_link', 'iconbox_list', $key);
+                                            $widget->add_render_attribute($item_link_key, 'href', $item_link['url']);
 
-                                                if ($item_link['is_external']) {
-                                                    $widget->add_render_attribute($item_link_key, 'target', '_blank');
-                                                }
+                                            if ($item_link['is_external']) {
+                                                $widget->add_render_attribute($item_link_key, 'target', '_blank');
+                                            }
 
-                                                if ($item_link['nofollow']) {
-                                                    $widget->add_render_attribute($item_link_key, 'rel', 'nofollow');
-                                                } ?>
-                                                <a <?php pxl_print_html($widget->get_render_attribute_string($item_link_key)); ?>>
-                                                <?php } ?>
-                                                <<?php echo esc_attr($settings['title_tag']); ?> class="pxl-item--title"><?php echo pxl_print_html($title); ?></<?php echo esc_attr($settings['title_tag']); ?>>
-                                                <?php if (! empty($item_link['url'])) { ?>
-                                                </a>
+                                            if ($item_link['nofollow']) {
+                                                $widget->add_render_attribute($item_link_key, 'rel', 'nofollow');
+                                            } ?>
+                                            <a <?php pxl_print_html($widget->get_render_attribute_string($item_link_key)); ?>>
                                             <?php } ?>
-                                        <?php endif; ?>
-                                    </div>
+                                            <<?php echo esc_attr($settings['title_tag']); ?> class="pxl-item--title"><?php echo pxl_print_html($title); ?></<?php echo esc_attr($settings['title_tag']); ?>>
+                                            <?php if (! empty($item_link['url'])) { ?>
+                                            </a>
+                                        <?php } ?>
+                                    <?php endif; ?>
                                 </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="630" height="26" viewBox="0 0 630 26" fill="none" class="pxl-item--divider">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M117.873 2.7627C117.873 4.45899 118.067 6.13367 118.884 7.50489C120.646 10.461 123.499 11.7483 127.609 12.2842C129.15 12.4851 130.853 12.5787 132.724 12.6172C134.677 12.5771 136.803 12.5965 139.099 12.6172C140.526 12.6044 142.025 12.5918 143.597 12.5918H629.999V13.4082H143.597C142.025 13.4082 140.526 13.3956 139.099 13.3828C136.803 13.4035 134.677 13.4219 132.724 13.3818C130.853 13.4203 129.15 13.5149 127.609 13.7158C123.499 14.2517 120.646 15.539 118.884 18.4951C118.067 19.8663 117.873 21.541 117.873 23.2373V26C117.873 26 117.5 26 117.127 26V23.2373C117.127 21.541 116.934 19.8663 116.116 18.4951C114.354 15.539 111.501 14.2517 107.392 13.7158C105.85 13.5148 104.147 13.4203 102.275 13.3818C102.184 13.3837 0.0921491 13.3834 0 13.385V12.6135C0.0921563 12.6152 84.5924 12.6137 102.275 12.6172C104.147 12.5787 105.85 12.4852 107.392 12.2842C111.501 11.7483 114.354 10.461 116.116 7.50489C116.934 6.13367 117.127 4.45899 117.127 2.7627V2.64338e-06C117.5 -3.30422e-06 117.873 2.64338e-06 117.873 2.64338e-06V2.7627ZM117.5 6.10157C117.331 6.72831 117.091 7.33619 116.752 7.9043C114.868 11.0647 111.853 12.4249 107.801 13C111.853 13.5751 114.868 14.9353 116.752 18.0957C117.091 18.6636 117.331 19.271 117.5 19.8975C117.669 19.271 117.91 18.6636 118.248 18.0957C120.132 14.9355 123.147 13.5751 127.198 13C123.147 12.4249 120.132 11.0645 118.248 7.9043C117.909 7.33619 117.669 6.72831 117.5 6.10157Z" fill="currentColor"/>
+                                </svg>
                                 <?php if (! empty($desc)) : ?>
                                     <div class="pxl-item--description el-empty"><?php echo pxl_print_html($desc); ?></div>
                                 <?php endif; ?>
@@ -133,13 +134,13 @@ if (isset($settings['iconbox_list']) && !empty($settings['iconbox_list']) && cou
                     <div class="pxl-swiper-dots style-1"></div>
                 <?php endif; ?>
                 <?php if ($arrows !== false): ?>
-                    <div class="pxl-swiper-arrow-wrap style-1">
-                        <div class="pxl-swiper-arrow pxl-swiper-arrow-prev"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
-                                <path d="M5.00118 9.64679C4.91344 9.6473 4.82647 9.63048 4.74524 9.5973C4.66402 9.56413 4.59014 9.51524 4.52785 9.45345L0.527846 5.45345C0.403679 5.32855 0.333984 5.15958 0.333984 4.98345C0.333984 4.80733 0.403679 4.63836 0.527846 4.51345L4.52785 0.513454C4.65538 0.404237 4.81943 0.347166 4.98722 0.353647C5.155 0.360127 5.31416 0.429682 5.43289 0.548412C5.55162 0.667141 5.62117 0.826301 5.62765 0.994085C5.63413 1.16187 5.57706 1.32592 5.46785 1.45345L1.94118 4.98012L5.46785 8.50679C5.56146 8.59964 5.62544 8.71816 5.6517 8.84737C5.67795 8.97657 5.66531 9.11067 5.61536 9.23269C5.56541 9.35471 5.4804 9.45918 5.37107 9.53289C5.26175 9.6066 5.13303 9.64624 5.00118 9.64679Z" fill="black" />
-                            </svg></div>
-                        <div class="pxl-swiper-arrow pxl-swiper-arrow-next"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
-                                <path d="M0.99882 9.64679C1.08656 9.6473 1.17353 9.63048 1.25476 9.5973C1.33598 9.56413 1.40986 9.51524 1.47215 9.45345L5.47215 5.45345C5.59632 5.32855 5.66602 5.15958 5.66602 4.98345C5.66602 4.80733 5.59632 4.63836 5.47215 4.51345L1.47215 0.513454C1.34462 0.404237 1.18057 0.347166 1.01278 0.353647C0.845001 0.360127 0.685842 0.429682 0.567112 0.548412C0.448382 0.667141 0.378827 0.826301 0.372346 0.994085C0.365865 1.16187 0.422936 1.32592 0.532154 1.45345L4.05882 4.98012L0.532154 8.50679C0.43854 8.59964 0.374559 8.71816 0.348302 8.84737C0.322045 8.97657 0.334692 9.11067 0.384642 9.23269C0.434593 9.35471 0.519603 9.45918 0.628926 9.53289C0.738248 9.6066 0.866972 9.64624 0.99882 9.64679Z" fill="black" />
-                            </svg></div>
+                    <div class="pxl-swiper-arrow-wrap style-3">
+                        <div class="pxl-swiper-arrow pxl-swiper-arrow-prev">
+                            <i class="bi-arrow-left-short"></i>
+                        </div>
+                        <div class="pxl-swiper-arrow pxl-swiper-arrow-next">
+                            <i class="bi-arrow-right-short"></i>
+                        </div>
                     </div>
                 <?php endif; ?>
             </div>
