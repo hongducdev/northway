@@ -216,9 +216,6 @@ pxl_add_custom_widget(
                                 'selectors' => [
                                     '{{WRAPPER}} .pxl-heading .pxl-item--subtitle' => 'background-color: {{VALUE}};',
                                 ],
-                                'condition' => [
-                                    'sub_title_style' => ['pxl-sub-title-default'],
-                                ],
                             ),
                             array(
                                 'name' => 'sub_title_color',

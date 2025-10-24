@@ -48,11 +48,6 @@ pxl_add_custom_widget(
                             'type' => \Elementor\Controls_Manager::MEDIA,
                         ),
                         array(
-                            'name' => 'image_2',
-                            'label' => esc_html__('Image 2', 'northway'),
-                            'type' => \Elementor\Controls_Manager::MEDIA,
-                        ),
-                        array(
                             'name' => 'counter_number',
                             'label' => esc_html__('Counter Number', 'northway'),
                             'type' => \Elementor\Controls_Manager::NUMBER,

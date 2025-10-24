@@ -21,6 +21,8 @@
         "polygon",
         "tag",
         "mail-1",
-        "calendar"
+        "calendar",
+        "shield",
+        "gear"
     ]
 }
