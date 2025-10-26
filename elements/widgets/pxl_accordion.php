@@ -31,6 +31,10 @@ pxl_add_custom_widget(
                                     'label' => esc_html__('Layout 2', 'northway' ),
                                     'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_accordion/layout2.jpg'
                                 ],
+                                '3' => [
+                                    'label' => esc_html__('Layout 3', 'northway' ),
+                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_accordion/layout3.jpg'
+                                ],
                             ],
                         ),
                     ),
@@ -49,6 +53,9 @@ pxl_add_custom_widget(
                                 'style2' => 'Style 2',
                             ],
                             'default' => 'style1',
+                            'condition' => [
+                                'layout' => '2',
+                            ],
                         ),
                         array(
                             'name' => 'active',
@@ -116,7 +123,7 @@ pxl_add_custom_widget(
                             'label' => esc_html__('Accordion', 'northway'),
                             'type' => \Elementor\Controls_Manager::REPEATER,
                             'condition' => [
-                                'layout' => ['2'],
+                                'layout' => ['2', '3'],
                             ],
                             'controls' => array(
                                 array(
