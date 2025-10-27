@@ -17,7 +17,7 @@
             <div class="pxl-item">
                 <div class="pxl-item--inner">
                     <div class="pxl-item--step">
-                        <span>
+                        <span class="wow zoomIn" data-wow-delay="200ms">
                             <?php if(intval($step) < 10) { ?>
                                 <?php echo '0' . intval($step); ?>
                             <?php } else { ?>

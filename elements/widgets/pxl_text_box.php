@@ -26,6 +26,10 @@ pxl_add_custom_widget(
                                     'label' => esc_html__('Layout 2', 'northway' ),
                                     'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_text_box/layout2.jpg'
                                 ],
+                                '3' => [
+                                    'label' => esc_html__('Layout 3', 'northway' ),
+                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_text_box/layout3.jpg'
+                                ],
                             ],
                         ),
                     ),
@@ -46,6 +50,9 @@ pxl_add_custom_widget(
                             'label' => esc_html__('Description', 'northway' ),
                             'type' => \Elementor\Controls_Manager::TEXTAREA,
                             'label_block' => true,
+                            'condition' => [
+                                'layout' => ['1', '2']
+                            ],
                         ),
                     ),
                 ),
@@ -98,28 +105,11 @@ pxl_add_custom_widget(
                     'tab' => \Elementor\Controls_Manager::TAB_STYLE,
                     'controls' => array(
                         array(
-                            'name' => 'title_tag',
-                            'label' => esc_html__('HTML Tag', 'northway' ),
-                            'type' => \Elementor\Controls_Manager::SELECT,
-                            'options' => [
-                                'h1' => 'H1',
-                                'h2' => 'H2',
-                                'h3' => 'H3',
-                                'h4' => 'H4',
-                                'h5' => 'H5',
-                                'h6' => 'H6',
-                                'div' => 'div',
-                                'span' => 'span',
-                                'p' => 'p',
-                            ],
-                            'default' => 'h3',
-                        ),
-                        array(
                             'name' => 'title_color',
                             'label' => esc_html__('Color', 'northway' ),
                             'type' => \Elementor\Controls_Manager::COLOR,
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-info-box .pxl-info-box-title' => 'color: {{VALUE}};',
+                                '{{WRAPPER}} .pxl-text-box .pxl-text-box--title' => 'color: {{VALUE}};',
                             ],
                         ),
                         array(
@@ -127,7 +117,7 @@ pxl_add_custom_widget(
                             'label' => esc_html__('Typography', 'northway' ),
                             'type' => \Elementor\Group_Control_Typography::get_type(),
                             'control_type' => 'group',
-                            'selector' => '{{WRAPPER}} .pxl-info-box .pxl-info-box-title',
+                            'selector' => '{{WRAPPER}} .pxl-text-box .pxl-text-box--title',
                         ),
                         array(
                             'name' => 'title_margin',
@@ -135,18 +125,29 @@ pxl_add_custom_widget(
                             'type' => \Elementor\Controls_Manager::DIMENSIONS,
                             'size_units' => [ 'px' ],
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-info-box .pxl-info-box-title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                                '{{WRAPPER}} .pxl-text-box .pxl-text-box--title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                             ],
                             'control_type' => 'responsive',
                         ),
                         array(
-                            'name' => 'title_icon_color',
-                            'label' => esc_html__('Icon Color', 'northway' ),
-                            'type' => \Elementor\Controls_Manager::COLOR,
-                            'selectors' => [
-                                '{{WRAPPER}} .pxl-info-box .pxl-info-box-title svg' => 'color: {{VALUE}};',
+                            'name' => 'max_width_title',
+                            'label' => esc_html__('Max Width', 'northway' ),
+                            'type' => \Elementor\Controls_Manager::SLIDER,
+                            'size_units' => [ 'px' ],
+                            'range' => [
+                                'px' => [
+                                    'min' => 0,
+                                    'max' => 100,
+                                ],
                             ],
-                        ),
+                            'selectors' => [
+                                '{{WRAPPER}} .pxl-text-box .pxl-text-box--title' => 'max-width: {{SIZE}}{{UNIT}};',
+                            ],
+                            'control_type' => 'responsive',
+                            'condition' => [
+                                'layout' => ['3'],
+                            ],
+                        )
                     ),
                 ),
                 array(
@@ -178,82 +179,6 @@ pxl_add_custom_widget(
                                 '{{WRAPPER}} .pxl-info-box .pxl-info-box-description' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                             ],
                             'control_type' => 'responsive',
-                        ),
-                    ),
-                ),
-                array(
-                    'name' => 'section_style_list',
-                    'label' => esc_html__('List', 'northway'),
-                    'tab' => \Elementor\Controls_Manager::TAB_STYLE,
-                    'controls' => array(
-                        array(
-                            'name' => 'list_item_color',
-                            'label' => esc_html__('Text Color', 'northway' ),
-                            'type' => \Elementor\Controls_Manager::COLOR,
-                            'selectors' => [
-                                '{{WRAPPER}} .pxl-info-box .pxl-info-box-list-item' => 'color: {{VALUE}};',
-                            ],
-                        ),
-                        array(
-                            'name' => 'list_item_typography',
-                            'label' => esc_html__('Typography', 'northway' ),
-                            'type' => \Elementor\Group_Control_Typography::get_type(),
-                            'control_type' => 'group',
-                            'selector' => '{{WRAPPER}} .pxl-info-box .pxl-info-box-list-item',
-                        ),
-                        array(
-                            'name' => 'icon_color',
-                            'label' => esc_html__('Icon Color', 'northway' ),
-                            'type' => \Elementor\Controls_Manager::COLOR,
-                            'selectors' => [
-                                '{{WRAPPER}} .pxl-info-box .pxl-info-box-list-item svg' => 'fill: {{VALUE}};',
-                            ],
-                        ),
-                    ),
-                ),
-                array(
-                    'name' => 'section_style_link',
-                    'label' => esc_html__('Link', 'northway'),
-                    'tab' => \Elementor\Controls_Manager::TAB_STYLE,
-                    'controls' => array(
-                        array(
-                            'name' => 'link_color',
-                            'label' => esc_html__('Color', 'northway' ),
-                            'type' => \Elementor\Controls_Manager::COLOR,
-                            'selectors' => [
-                                '{{WRAPPER}} .pxl-info-box .pxl-info-box-link' => 'color: {{VALUE}};',
-                            ],
-                        ),
-                        array(
-                            'name' => 'link_color_hover',
-                            'label' => esc_html__('Color', 'northway' ),
-                            'type' => \Elementor\Controls_Manager::COLOR,
-                            'selectors' => [
-                                '{{WRAPPER}} .pxl-info-box .pxl-info-box-link:hover' => 'color: {{VALUE}};',
-                            ],
-                        ),
-                        array(
-                            'name' => 'link_background_color',
-                            'label' => esc_html__('Color', 'northway' ),
-                            'type' => \Elementor\Controls_Manager::COLOR,
-                            'selectors' => [
-                                '{{WRAPPER}} .pxl-info-box .pxl-info-box-link:hover' => 'background-color: {{VALUE}};',
-                            ],
-                        ),
-                        array(
-                            'name' => 'link_background_color_hover',
-                            'label' => esc_html__('Background Color', 'northway' ),
-                            'type' => \Elementor\Controls_Manager::COLOR,
-                            'selectors' => [
-                                '{{WRAPPER}} .pxl-info-box .pxl-info-box-link:hover' => 'background-color: {{VALUE}};',
-                            ],
-                        ),
-                        array(
-                            'name' => 'link_typography',
-                            'label' => esc_html__('Typography', 'northway' ),
-                            'type' => \Elementor\Group_Control_Typography::get_type(),
-                            'control_type' => 'group',
-                            'selector' => '{{WRAPPER}} .pxl-info-box .pxl-info-box-link',
                         ),
                     ),
                 ),

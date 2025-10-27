@@ -2035,6 +2035,20 @@ body.rtl {
 }
 
 .pxl-process2 {
+    position: relative;
+    padding: 120px 0;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 1px;
+        background-color: rgba($four_color_hex, 0.5);
+        left: 61px;
+        @media #{$max-sm} {
+            display: none;
+        }
+    }
     .pxl-process-wrapper {
         display: flex;
         flex-direction: column;
@@ -2043,46 +2057,45 @@ body.rtl {
         &--inner {
             display: flex;
             gap: 50px;
+            @media #{$max-lg3} {
+                gap: 30px;
+            }
+            @media #{$max-sm} {
+                flex-direction: column;
+            }
         }
         &--step {
             --divider-top: 35px;
             --width-step: 122px;
             display: inline-block;
-            padding-top: var(--divider-top);
+            flex: 0 0 var(--width-step);
+            margin-top: var(--divider-top);
             position: relative;
+            z-index: 5;
+            width: var(--width-step);
+            height: var(--width-step);
+            @include border-radius(var(--width-step));
+            background-color: $body_bg_color;
+            border: 1px solid rgba($four_color_hex, 0.5);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             &:before {
                 content: "";
-                width: 1px;
-                height: var(--divider-top);
-                background-color: rgba($four_color_hex, 0.5);
                 position: absolute;
-                top: 0;
+                border: 1px solid rgba($four_color_hex, 0.1);
+                top: 50%;
                 left: 50%;
-                transform: translateX(-50%);
-            }
-            &:after {
-                content: "";
-                width: 1px;
-                height: calc(100% - var(--width-step) - var(--divider-top));
-                background-color: rgba($four_color_hex, 0.5);
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-                transform: translateX(-50%);
+                transform: translate(-50%, -50%);
+                width: calc(var(--width-step) - 16px);
+                height: calc(var(--width-step) - 16px);
+                @include border-radius(50%);
+                background-color: transparent;
             }
             span {
                 --gradient-text-1: $secondary_color;
                 --gradient-text-2: #0e488d;
                 position: relative;
-                z-index: 5;
-                width: var(--width-step);
-                height: var(--width-step);
-                @include border-radius(var(--width-step));
-                background-color: $body_bg_color;
-                border: 1px solid rgba($four_color_hex, 0.5);
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
                 font-size: 52px;
                 font-weight: 500;
                 line-height: 1.2;
@@ -2094,19 +2107,13 @@ body.rtl {
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
-                &:before {
-                    content: "";
-                    position: absolute;
-                    border: 1px solid rgba($four_color_hex, 0.1);
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    width: calc(var(--width-step) - 16px);
-                    height: calc(var(--width-step) - 16px);
-                    @include border-radius(50%);
-                    background-color: transparent;
-                }
             }
+            @media #{$max-sm} {
+                display: none;
+            }
+        }
+        &--content {
+            flex: 1;
         }
         &--thumbnail {
             width: 100%;
@@ -2122,22 +2129,34 @@ body.rtl {
                 height: 100%;
                 object-fit: cover;
             }
+            @media #{$max-3xs} {
+                padding: 15px;
+            }
         }
         &--meta {
             padding: 40px 35px;
             background-color: $body_bg_color;
             @include border-radius(20px);
             border: 1px solid rgba($four_color_hex, 0.5);
+            @media #{$max-3xs} {
+                padding: 30px 15px;
+            }
         }
         &--title {
             margin-bottom: 0;
             font-size: 23px;
             font-weight: 500;
             line-height: 1.43;
+            @media #{$max-3xs} {
+                font-size: 18px;
+            }
         }
         &--divider {
             margin-top: 20px;
             margin-bottom: 14px;
+            @media #{$max-3xs} {
+                width: 100%;
+            }
         }
         &--desc {
             color: rgba($secondary_color_hex, 0.8);
@@ -2145,6 +2164,9 @@ body.rtl {
             font-size: 16px;
             font-weight: 400;
             line-height: 1.625;
+            @media #{$max-3xs} {
+                font-size: 14px;
+            }
         }
     }
 }
@@ -5172,6 +5194,58 @@ body.rtl {
             position: absolute;
             bottom: 0;
             right: 0;
+        }
+    }
+}
+
+.pxl-text-box3 {
+    --space-box: 145px;
+    background-color: $body_bg_color;
+    width: var(--space-box);
+    height: var(--space-box);
+    @include border-radius(var(--space-box));
+    border: 1px solid rgba($four_color_hex, 0.5);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+    &:hover {
+        border-color: $secondary_color;
+        background-color: $secondary_color;
+        .pxl-text-box--title {
+            color: $body_bg_color;
+        }
+    }
+    .pxl-item-parallax {
+        will-change: transform;
+        @include transition(transform 0.1s ease-out);
+    }
+    .pxl-text-box {
+        &--inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 15px;
+        }
+        &--icon {
+            path {
+                fill: $primary_color;
+                @include transition(
+                    all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1)
+                );
+            }
+        }
+        &--title {
+            color: $secondary_color;
+            text-align: center;
+            font-family: "DM Sans";
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.71;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
         }
     }
 }

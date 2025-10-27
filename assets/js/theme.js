@@ -1,5 +1,5 @@
 (function ($) {
-    "use strict";
+    ("use strict");
 
     var pxl_scroll_top;
     var pxl_window_height;
@@ -33,7 +33,7 @@
         northway_col_offset();
         northway_col_offset_1750();
         northway_text_carousel_flip();
-        northway_divider_width_1600();    
+        northway_divider_width_1600();
     });
 
     $(window).on("scroll", function () {
@@ -1211,27 +1211,19 @@
     });
 
     /* Button Parallax */
-    function northway_button_parallax1() {
-        $(".btn-text-parallax, .pxl-blog-style2, .pxl-hover-parallax").on(
-            "mouseenter",
-            function () {
-                $(this).addClass("hovered");
-            }
-        );
-
-        $(".btn-text-parallax, .pxl-blog-style2, .pxl-hover-parallax").on(
-            "mouseleave",
-            function () {
-                $(this).removeClass("hovered");
-            }
-        );
-
+    function northway_el_parallax() {
+        $(".btn-text-parallax").on("mouseenter", function () {
+            $(this).addClass("hovered");
+        });
+        $(".btn-text-parallax").on("mouseleave", function () {
+            $(this).removeClass("hovered");
+        });
         $(".btn-text-parallax").on("mousemove", function (e) {
             const bounds = this.getBoundingClientRect();
             const centerX = bounds.left + bounds.width / 2;
             const centerY = bounds.top + bounds.height;
-            const deltaX = Math.floor(centerX - e.clientX) * 0.222;
-            const deltaY = Math.floor(centerY - e.clientY) * 0.333;
+            const deltaX = Math.floor(centerX - e.clientX) * 0.172;
+            const deltaY = Math.floor(centerY - e.clientY) * 0.273;
             $(this)
                 .find(".pxl--btn-text")
                 .css({
@@ -1242,18 +1234,33 @@
                         deltaY * 0.32 +
                         "px, 0px)",
                 });
+            $(this).css({
+                transform:
+                    "translate3d(" +
+                    deltaX * 0.25 +
+                    "px, " +
+                    deltaY * 0.25 +
+                    "px, 0px)",
+            });
         });
 
-        $(".pxl-blog-style2 .pxl-post--featured, .pxl-hover-parallax").on(
-            "mousemove",
-            function (e) {
+        $(".el-parallax-wrap").each(function () {
+            $(this).on("mouseenter", function () {
+                $(this).addClass("hovered");
+            });
+
+            $(this).on("mouseleave", function () {
+                $(this).removeClass("hovered");
+            });
+
+            $(this).on("mousemove", function (e) {
                 const bounds = this.getBoundingClientRect();
                 const centerX = bounds.left + bounds.width / 2;
                 const centerY = bounds.top + bounds.height;
                 const deltaX = Math.floor(centerX - e.clientX) * 0.222;
                 const deltaY = Math.floor(centerY - e.clientY) * 0.333;
                 $(this)
-                    .find(".pxl-item-parallax, .pxl-post--button")
+                    .find(".el-parallax-item")
                     .css({
                         transform:
                             "translate3d(" +
@@ -1262,8 +1269,26 @@
                             deltaY * 0.32 +
                             "px, 0px)",
                     });
-            }
-        );
+            });
+        });
+
+        $(".pxl-hover-parallax").on("mousemove", function (e) {
+            const bounds = this.getBoundingClientRect();
+            const centerX = bounds.left + bounds.width / 2;
+            const centerY = bounds.top + bounds.height;
+            const deltaX = Math.floor(centerX - e.clientX) * 0.222;
+            const deltaY = Math.floor(centerY - e.clientY) * 0.333;
+            $(this)
+                .find(".pxl-item-parallax")
+                .css({
+                    transform:
+                        "translate3d(" +
+                        deltaX * 0.32 +
+                        "px, " +
+                        deltaY * 0.32 +
+                        "px, 0px)",
+                });
+        });
     }
 
     function northway_bgr_parallax() {
@@ -1280,40 +1305,6 @@
                 }
             });
         }, 300);
-    }
-
-    function northway_el_parallax() {
-        $(".el-parallax-wrap").on({
-            mouseenter: function () {
-                const $this = $(this);
-                $this.addClass("hovered");
-                $this.find(".el-parallax-item").css({
-                    transition: "none",
-                });
-            },
-            mouseleave: function () {
-                const $this = $(this);
-                $this.removeClass("hovered");
-                $this.find(".el-parallax-item").css({
-                    transition: "transform 0.5s ease",
-                    transform: "translate3d(0px, 0px, 0px)",
-                });
-            },
-            mousemove: function (e) {
-                const $this = $(this);
-                const bounds = this.getBoundingClientRect();
-                const centerX = bounds.left + bounds.width / 2;
-                const centerY = bounds.top + bounds.height / 2;
-                const deltaX = (centerX - e.clientX) * 0.07104;
-                const deltaY = (centerY - e.clientY) * 0.10656;
-
-                requestAnimationFrame(() => {
-                    $this.find(".el-parallax-item").css({
-                        transform: `translate3d(${deltaX}px, ${deltaY}px, 0px)`,
-                    });
-                });
-            },
-        });
     }
 
     /* Back To Top Progress Bar */
@@ -1570,7 +1561,7 @@
         if (pxl_window_width > 1600) {
             $(".pxl-divider-left-1600").css(
                 "width",
-                "calc((100% - 1600px) / 2)",
+                "calc((100% - 1600px) / 2)"
             );
             $(".pxl-divider-right-1600").css(
                 "width",
