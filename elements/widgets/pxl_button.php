@@ -22,6 +22,7 @@ pxl_add_custom_widget(
                             'options' => [
                                 'btn-default' => esc_html__('Default', 'northway'),
                                 'btn-no-icon' => esc_html__('No Icon', 'northway'),
+                                'btn-gradient' => esc_html__('Gradient', 'northway'),
                             ],
                         ),
                         array(

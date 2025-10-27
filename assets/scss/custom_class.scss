@@ -573,7 +573,7 @@
     height: 100%;
     .pxl-image-single {
         height: 100%;
-        .pxl-item--inner  {
+        .pxl-item--inner {
             height: 100%;
             .pxl-item--image {
                 height: 100%;
@@ -685,6 +685,38 @@
         width: 60px;
         height: 60px;
         background: rgba(187, 178, 255, 0.5);
+    }
+}
+
+.pxl-container-fold-faq {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        background-color: $body_bg_color;
+        @include border-radius(10px);
+        border: 1px solid rgba($four_color_hex, 0.5);
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+}
+
+.pxl-container-fold-faq-2 {
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        width: 0;
+        height: 0;
+        border-bottom: 55px solid transparent;
+        border-right: 55px solid $secondary_color;
     }
 }
 
