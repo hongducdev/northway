@@ -23,6 +23,10 @@ pxl_add_custom_widget(
                                     'label' => esc_html__('Layout 1', 'northway' ),
                                     'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_process/layout1.jpg'
                                 ],
+                                '2' => [
+                                    'label' => esc_html__('Layout 2', 'northway' ),
+                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_process/layout2.jpg'
+                                ],
                             ],
                         ),
                     ),
@@ -37,6 +41,9 @@ pxl_add_custom_widget(
                             'label' => esc_html__('List', 'northway'),
                             'type' => \Elementor\Controls_Manager::REPEATER,
                             'default' => [],
+                            'condition' => [
+                                'layout' => '1',
+                            ],
                             'controls' => array(
                                 array(
                                     'name' => 'step',
@@ -66,7 +73,43 @@ pxl_add_custom_widget(
                             ),
                             'title_field' => '{{{ title }}}',
                         ),
-                        
+
+                        array(
+                            'name' => 'process_2',
+                            'label' => esc_html__('List', 'northway'),
+                            'type' => \Elementor\Controls_Manager::REPEATER,
+                            'default' => [],
+                            'condition' => [
+                                'layout' => '2',
+                            ],
+                            'controls' => array(
+                                array(
+                                    'name' => 'step_2',
+                                    'label' => esc_html__('Step', 'northway' ),
+                                    'type' => \Elementor\Controls_Manager::TEXT,
+                                    'label_block' => true,
+                                ),
+                                array(
+                                    'name' => 'image_2',
+                                    'label' => esc_html__('Image', 'northway' ),
+                                    'type' => \Elementor\Controls_Manager::MEDIA,
+                                ),
+                                array(
+                                    'name' => 'title_2',
+                                    'label' => esc_html__('Title', 'northway' ),
+                                    'type' => \Elementor\Controls_Manager::TEXT,
+                                    'label_block' => true,
+                                ),
+                                array(
+                                    'name' => 'desc_2',
+                                    'label' => esc_html__('Description', 'northway' ),
+                                    'type' => \Elementor\Controls_Manager::TEXTAREA,
+                                    'rows' => 10,
+                                    'show_label' => false,
+                                ),
+                            ),
+                            'title_field' => '{{{ title_2 }}}',
+                        )
                     ),
                 ),
                 array(
