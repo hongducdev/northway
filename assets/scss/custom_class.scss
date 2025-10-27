@@ -720,6 +720,28 @@
     }
 }
 
+.pxl-container-fold-testimonial {
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        width: 0;
+        height: 0;
+        border-bottom: 130px solid transparent;
+        border-right: 130px solid $body_bg_color;
+        @media #{$max-sm} {
+            border-bottom: 120px solid transparent;
+            border-right: 120px solid $body_bg_color;
+        }
+        @media #{$max-xs} {
+            border-bottom: 100px solid transparent;
+            border-right: 100px solid $body_bg_color;
+        }
+    }
+}
+
 @keyframes pxl-draws-svg {
     0% {
         stroke-dashoffset: 100%;

@@ -14925,6 +14925,31 @@ body.rtl .widget .widget-title:before {
   border-bottom: 55px solid transparent;
   border-right: 55px solid var(--secondary-color);
 }
+.pxl-container-fold-testimonial {
+  position: relative;
+}
+.pxl-container-fold-testimonial:after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 0;
+  height: 0;
+  border-bottom: 130px solid transparent;
+  border-right: 130px solid var(--body_bg-color);
+}
+@media screen and (max-width: 767px) {
+  .pxl-container-fold-testimonial:after {
+    border-bottom: 120px solid transparent;
+    border-right: 120px solid var(--body_bg-color);
+  }
+}
+@media screen and (max-width: 575px) {
+  .pxl-container-fold-testimonial:after {
+    border-bottom: 100px solid transparent;
+    border-right: 100px solid var(--body_bg-color);
+  }
+}
 @keyframes pxl-draws-svg {
   0% {
     stroke-dashoffset: 100%;
