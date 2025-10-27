@@ -10388,6 +10388,97 @@ body.rtl .pxl-post-list1 li:before {
 .pxl-language-switch-item:hover {
   background-color: rgba(4, 20, 39, 0.1);
 }
+.pxl-bolide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+}
+.pxl-bolide.style-1 {
+  justify-content: space-around;
+}
+.pxl-bolide.style-2 {
+  justify-content: space-evenly;
+}
+.pxl-bolide-item {
+  --color-bolide: #bbb2ff;
+  position: relative;
+  height: 100%;
+  min-height: 400px;
+  width: 1px;
+  background-color: rgba(102, 111, 120, 0.3);
+}
+.pxl-bolide-item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 3px;
+  height: 80px;
+  border-radius: 1px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, var(--color-bolide) 100%);
+  animation: pxl-bolide 3s linear infinite;
+}
+.pxl-bolide-item:nth-child(1):before {
+  animation-duration: 2.1s;
+  animation-delay: 0.2random(10) * 0.1s;
+}
+.pxl-bolide-item:nth-child(2):before {
+  animation-duration: 2.2s;
+  animation-delay: 0.4random(10) * 0.1s;
+}
+.pxl-bolide-item:nth-child(3):before {
+  animation-duration: 2.3s;
+  animation-delay: 0.6random(10) * 0.1s;
+}
+.pxl-bolide-item:nth-child(4):before {
+  animation-duration: 2.4s;
+  animation-delay: 0.8random(10) * 0.1s;
+}
+.pxl-bolide-item:nth-child(5):before {
+  animation-duration: 2.5s;
+  animation-delay: 1random(10) * 0.1s;
+}
+.pxl-bolide-item:nth-child(6):before {
+  animation-duration: 2.6s;
+  animation-delay: 1.2random(10) * 0.1s;
+}
+.pxl-bolide-item:nth-child(7):before {
+  animation-duration: 2.7s;
+  animation-delay: 1.4random(10) * 0.1s;
+}
+.pxl-bolide-item:nth-child(8):before {
+  animation-duration: 2.8s;
+  animation-delay: 1.6random(10) * 0.1s;
+}
+.pxl-bolide-item:nth-child(9):before {
+  animation-duration: 2.9s;
+  animation-delay: 1.8random(10) * 0.1s;
+}
+.pxl-bolide-item:nth-child(10):before {
+  animation-duration: 3s;
+  animation-delay: 2random(10) * 0.1s;
+}
+@keyframes pxl-bolide {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    top: calc(100% - 80px);
+    opacity: 0;
+  }
+}
 #pxl-header-default {
   position: relative;
   z-index: 999;
@@ -29860,6 +29951,7 @@ input[type="submit"]:hover {
 }
 .pxl-accordion2.style2 .pxl-accordion--content {
   position: relative;
+  overflow: hidden;
   border: none;
   background: linear-gradient(100deg, #041427 7.59%, #0e488d 120.84%);
   color: rgba(248, 248, 242, 0.8);
