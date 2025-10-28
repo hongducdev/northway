@@ -29141,6 +29141,183 @@ input[type="submit"]:hover {
   word-break: break-word;
   overflow-wrap: break-word;
 }
+.pxl-iconbox-carousel2 .pxl-item--inner {
+  background-color: var(--body_bg-color);
+  -webkit-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  padding: 30px;
+  padding-top: 35px;
+  border: 1px solid rgba(102, 111, 120, 0.5);
+  position: relative;
+  margin-bottom: 8px;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.pxl-iconbox-carousel2 .pxl-item--inner:after {
+  content: "";
+  position: absolute;
+  background-color: var(--body_bg-color);
+  top: 8px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(102, 111, 120, 0.5);
+  z-index: -1;
+}
+.pxl-iconbox-carousel2 .pxl-item--inner:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+.pxl-iconbox-carousel2 .pxl-item--inner:hover .pxl-item--icon:before {
+  border-color: rgba(248, 248, 242, 0.3);
+}
+.pxl-iconbox-carousel2 .pxl-item--inner:hover .pxl-item--icon:after {
+  opacity: 1;
+}
+.pxl-iconbox-carousel2 .pxl-item--inner:hover .pxl-item--title {
+  color: var(--body_bg-color);
+}
+.pxl-iconbox-carousel2 .pxl-item--inner:hover .pxl-item--divider {
+  color: rgba(102, 111, 120, 0.5);
+}
+.pxl-iconbox-carousel2 .pxl-item--inner:hover .pxl-item--description {
+  color: rgba(248, 248, 242, 0.85);
+}
+.pxl-iconbox-carousel2 .pxl-item--header {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.pxl-iconbox-carousel2 .pxl-item--icon {
+  --spacer-icon: 76px;
+  flex: 0 0 var(--spacer-icon);
+  width: var(--spacer-icon);
+  height: var(--spacer-icon);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-border-radius: var(--spacer-icon);
+  -khtml-border-radius: var(--spacer-icon);
+  -moz-border-radius: var(--spacer-icon);
+  -ms-border-radius: var(--spacer-icon);
+  -o-border-radius: var(--spacer-icon);
+  border-radius: var(--spacer-icon);
+  background: var(--secondary-color);
+  position: relative;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.pxl-iconbox-carousel2 .pxl-item--icon:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 15px;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: var(--spacer-icon);
+  -khtml-border-radius: var(--spacer-icon);
+  -moz-border-radius: var(--spacer-icon);
+  -ms-border-radius: var(--spacer-icon);
+  -o-border-radius: var(--spacer-icon);
+  border-radius: var(--spacer-icon);
+  background-color: transparent;
+  border: 1px solid rgba(102, 111, 120, 0.5);
+  z-index: 3;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.pxl-iconbox-carousel2 .pxl-item--icon:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: var(--spacer-icon);
+  -khtml-border-radius: var(--spacer-icon);
+  -moz-border-radius: var(--spacer-icon);
+  -ms-border-radius: var(--spacer-icon);
+  -o-border-radius: var(--spacer-icon);
+  border-radius: var(--spacer-icon);
+  background: radial-gradient(102.94% 102.94% at 50% 91.76%, #45349a 0%, #9588f8 65%, #dfb0c4 100%);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.pxl-iconbox-carousel2 .pxl-item--icon svg {
+  height: 30px;
+  z-index: 2;
+}
+.pxl-iconbox-carousel2 .pxl-item--icon svg path {
+  fill: var(--body_bg-color);
+}
+.pxl-iconbox-carousel2 .pxl-item--icon i {
+  color: var(--body_bg-color);
+  font-size: 30px;
+  z-index: 2;
+}
+.pxl-iconbox-carousel2 .pxl-item--title {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1.43;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  max-width: 205px;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.pxl-iconbox-carousel2 .pxl-item--divider {
+  color: rgba(102, 111, 120, 0.5);
+  margin-top: 19px;
+  margin-bottom: 14px;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.pxl-iconbox-carousel2 .pxl-item--description {
+  color: rgba(4, 20, 39, 0.85);
+  word-break: break-word;
+  overflow-wrap: break-word;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
 .pxl-counter .pxl--counter-number {
   display: inline-flex;
   flex-wrap: wrap;

@@ -670,3 +670,131 @@
         }
     }
 }
+
+.pxl-iconbox-carousel2 {
+    .pxl-item {
+        &--inner {
+            background-color: $body_bg_color;
+            @include border-radius(20px);
+            padding: 30px;
+            padding-top: 35px;
+            border: 1px solid rgba($four_color_hex, 0.5);
+            position: relative;
+            margin-bottom: 8px;
+            @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+            &:after {
+                content: "";
+                position: absolute;
+                background-color: $body_bg_color;
+                top: 8px;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                @include border-radius(20px);
+                border: 1px solid rgba($four_color_hex, 0.5);
+                z-index: -1;
+            }
+            &:hover {
+                background-color: $secondary_color;
+                border-color: $secondary_color;
+                .pxl-item {
+                    &--icon {
+                        &:before {
+                            border-color: rgba($body_bg_color_hex, 0.3);
+                        }
+                        &:after {
+                            opacity: 1;
+                        }
+                    }
+                    &--title {
+                        color: $body_bg_color;
+                    }
+                    &--divider {
+                        color: rgba($four_color_hex, 0.5);
+                    }
+                    &--description {
+                        color: rgba($body_bg_color_hex, 0.85);
+                    }
+                }
+            }
+        }
+        &--header {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+        &--icon {
+            --spacer-icon: 76px;
+            flex: 0 0 var(--spacer-icon);
+            width: var(--spacer-icon);
+            height: var(--spacer-icon);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            @include border-radius(var(--spacer-icon));
+            background: $secondary_color;
+            position: relative;
+            @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 15px;
+                width: 100%;
+                height: 100%;
+                @include border-radius(var(--spacer-icon));
+                background-color: transparent;
+                border: 1px solid rgba($four_color_hex, 0.5);
+                z-index: 3;
+                @include transition(
+                    all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1)
+                );
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                @include border-radius(var(--spacer-icon));
+                background: radial-gradient(102.94% 102.94% at 50% 91.76%, #45349A 0%, #9588F8 65%, #DFB0C4 100%);
+                top: 0;
+                left: 0;
+                opacity: 0;
+                @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+            }
+            svg {
+                height: 30px;
+                path {
+                    fill: $body_bg_color;
+                }
+                z-index: 2;
+            }
+            i {
+                color: $body_bg_color;
+                font-size: 30px;
+                z-index: 2;
+            }
+        }
+        &--title {
+            font-size: 23px;
+            font-weight: 600;
+            line-height: 1.43;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            max-width: 205px;
+            @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+        }
+        &--divider {
+            color: rgba($four_color_hex, 0.5);
+            margin-top: 19px;
+            margin-bottom: 14px;
+            @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+        }
+        &--description {
+            color: rgba($secondary_color_hex, 0.85);
+            word-break: break-word;
+            overflow-wrap: break-word;
+            @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+        }
+    }
+}
