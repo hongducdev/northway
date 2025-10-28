@@ -345,6 +345,43 @@
             }
         }
     }
+    &.style-3 {
+        --gradient-color-1: #dfb0c4;
+        --gradient-color-2: #9588f8;
+        --gradient-color-3: #45349a;
+        position: relative;
+        width: 80px;
+        height: 80px;
+        @include border-radius(50%);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(
+            180deg,
+            var(--gradient-color-1) -13.5%,
+            var(--gradient-color-2) 18.46%,
+            var(--gradient-color-3) 100%
+        );
+        svg {
+            path {
+                fill: $body_bg_color;
+            }
+        }
+        i {
+            color: $body_bg_color;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 15px;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            border: 1px solid rgba($body_bg_color_hex, 0.3);
+            @include border-radius(50%);
+        }
+    }
     &.ani1:hover {
         i,
         svg,

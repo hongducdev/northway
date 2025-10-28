@@ -99,6 +99,7 @@ pxl_add_custom_widget(
                             'options' => [
                                 'style-1' => 'Default',
                                 'style-2' => 'Style Box',
+                                'style-3' => 'Style Box 2',
                             ],
                             'default' => 'style-1',
                         ),
