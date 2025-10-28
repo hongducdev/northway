@@ -10105,6 +10105,11 @@ body.rtl .pxl-post-list1 li:before {
   padding: 49px 50px;
   position: relative;
 }
+@media screen and (max-width: 767px) {
+  .pxl-testimonial-grid1 .pxl-item--inner {
+    padding: 20px;
+  }
+}
 .pxl-testimonial-grid1 .pxl-item--inner:before {
   content: "\F112";
   font-family: "Flaticon";
@@ -10133,20 +10138,48 @@ body.rtl .pxl-post-list1 li:before {
   white-space: pre-wrap;
   word-break: break-word;
 }
+@media screen and (max-width: 767px) {
+  .pxl-testimonial-grid1 .pxl-item--description {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 575px) {
+  .pxl-testimonial-grid1 .pxl-item--description {
+    font-size: 16px;
+  }
+}
 .pxl-testimonial-grid1 .pxl-item--divider {
   margin-top: 39px;
   margin-bottom: 13px;
   color: rgba(102, 111, 120, 0.3);
+}
+@media screen and (max-width: 767px) {
+  .pxl-testimonial-grid1 .pxl-item--divider {
+    width: 100%;
+  }
 }
 .pxl-testimonial-grid1 .pxl-item--footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 767px) {
+  .pxl-testimonial-grid1 .pxl-item--footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
 .pxl-testimonial-grid1 .pxl-item--info {
   display: flex;
   align-items: center;
   gap: 15px;
+}
+@media screen and (max-width: 767px) {
+  .pxl-testimonial-grid1 .pxl-item--info {
+    width: 100%;
+    flex-direction: column;
+  }
 }
 .pxl-testimonial-grid1 .pxl-item--avatar {
   width: 70px;
