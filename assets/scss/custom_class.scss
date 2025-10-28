@@ -551,6 +551,37 @@
     }
 }
 
+.pxl-container-gradient-logo-2 {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 80px;
+        height: 80px;
+        background-image: linear-gradient(
+            to right,
+            $body_bg_color,
+            transparent
+        );
+        z-index: 1;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 80px;
+        height: 80px;
+        background-image: linear-gradient(
+            to left,
+            $body_bg_color,
+            transparent
+        );
+    }
+}
+
 .pxl-container-question-1 {
     position: relative;
     z-index: 5;

@@ -14823,6 +14823,28 @@ body.rtl .widget .widget-title:before {
   height: 80px;
   background-image: linear-gradient(to left, var(--secondary-color), transparent);
 }
+.pxl-container-gradient-logo-2 {
+  position: relative;
+}
+.pxl-container-gradient-logo-2:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 80px;
+  height: 80px;
+  background-image: linear-gradient(to right, var(--body_bg-color), transparent);
+  z-index: 1;
+}
+.pxl-container-gradient-logo-2:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 80px;
+  height: 80px;
+  background-image: linear-gradient(to left, var(--body_bg-color), transparent);
+}
 .pxl-container-question-1 {
   position: relative;
   z-index: 5;
