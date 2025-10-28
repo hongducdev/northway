@@ -32,18 +32,6 @@ pxl_add_custom_widget(
                                     'label' => esc_html__('Layout 1', 'northway'),
                                     'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_image_carousel/layout1.jpg'
                                 ],
-                                '2' => [
-                                    'label' => esc_html__('Layout 2', 'northway'),
-                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_image_carousel/layout2.jpg'
-                                ],
-                                '3' => [
-                                    'label' => esc_html__('Layout 3', 'northway'),
-                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_image_carousel/layout3.jpg'
-                                ],
-                                '4' => [
-                                    'label' => esc_html__('Layout 4', 'northway'),
-                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_image_carousel/layout4.jpg'
-                                ],
                             ],
                         ),
                     ),
@@ -52,15 +40,11 @@ pxl_add_custom_widget(
                     'name' => 'section_content',
                     'label' => esc_html__('Content', 'northway'),
                     'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
-                    'condition' => [
-                        'layout' => '1'
-                    ],
                     'controls' => array(
                         array(
-                            'name' => 'image',
+                            'name' => 'images',
                             'label' => esc_html__('List', 'northway'),
                             'type' => \Elementor\Controls_Manager::REPEATER,
-
                             'controls' => array(
                                 array(
                                     'name' => 'image',
@@ -68,71 +52,16 @@ pxl_add_custom_widget(
                                     'type' => \Elementor\Controls_Manager::MEDIA,
                                 ),
                                 array(
-                                    'name' => 'image_2',
-                                    'label' => esc_html__('Image 2', 'northway'),
-                                    'type' => \Elementor\Controls_Manager::MEDIA,
-                                ),
-                            ),
-                        ),
-                    ),
-                ),
-
-                array(
-                    'name' => 'section_content_2',
-                    'label' => esc_html__('Content', 'northway'),
-                    'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
-                    'condition' => [
-                        'layout' => ['2', '3']
-                    ],
-                    'controls' => array(
-                        array(
-                            'name' => 'images_2',
-                            'label' => esc_html__('List', 'northway'),
-                            'type' => \Elementor\Controls_Manager::REPEATER,
-                            'controls' => array(
-                                array(
-                                    'name' => 'image_2',
-                                    'label' => esc_html__('Image', 'northway'),
-                                    'type' => \Elementor\Controls_Manager::MEDIA,
-                                ),
-                                array(
                                     'name' => 'url_video',
                                     'label' => esc_html__('Url Video', 'northway'),
                                     'type' => \Elementor\Controls_Manager::TEXT,
+                                    'default' => 'https://www.youtube.com/watch?v=SF4aHwxHtZ0',
                                     'label_block' => true,
                                 ),
                             ),
                         ),
                     ),
                 ),
-                array(
-                    'name' => 'section_content_4',
-                    'label' => esc_html__('Content', 'northway'),
-                    'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
-                    'condition' => [
-                        'layout' => ['4'],
-                    ],
-                    'controls' => array(
-                        array(
-                            'name' => 'images_4',
-                            'label' => esc_html__('List', 'northway'),
-                            'type' => \Elementor\Controls_Manager::REPEATER,
-                            'controls' => array(
-                                array(
-                                    'name' => 'image_4_before',
-                                    'label' => esc_html__('Image Before', 'northway'),
-                                    'type' => \Elementor\Controls_Manager::MEDIA,
-                                ),
-                                array(
-                                    'name' => 'image_4_after',
-                                    'label' => esc_html__('Image After', 'northway'),
-                                    'type' => \Elementor\Controls_Manager::MEDIA,
-                                ),
-                            )
-                        ),
-                    )
-                ),
-
                 array(
                     'name' => 'section_style_general',
                     'label' => esc_html__('General', 'northway'),
@@ -242,58 +171,6 @@ pxl_add_custom_widget(
                             ],
                         ),
 
-                    ),
-                ),
-                array(
-                    'name' => 'tab_style',
-                    'label' => esc_html__('Style', 'northway'),
-                    'tab' => \Elementor\Controls_Manager::TAB_STYLE,
-                    'controls' => array(
-                        array(
-                            'name' => 'title_color',
-                            'label' => esc_html__('Title Color', 'northway'),
-                            'type' => \Elementor\Controls_Manager::COLOR,
-                            'selectors' => [
-                                '{{WRAPPER}} .pxl-image-carousel .pxl-item--title' => 'color: {{VALUE}} !important;',
-                            ],
-                        ),
-                        array(
-                            'name' => 'title_typography',
-                            'label' => esc_html__('Title Typography', 'northway'),
-                            'type' => \Elementor\Group_Control_Typography::get_type(),
-                            'control_type' => 'group',
-                            'selector' => '{{WRAPPER}} .pxl-image-carousel .pxl-item--title',
-                        ),
-                        array(
-                            'name' => 'position_color',
-                            'label' => esc_html__('Position Color', 'northway'),
-                            'type' => \Elementor\Controls_Manager::COLOR,
-                            'selectors' => [
-                                '{{WRAPPER}} .pxl-image-carousel .pxl-item--description' => 'color: {{VALUE}} !important;',
-                            ],
-                        ),
-                        array(
-                            'name' => 'position_typography',
-                            'label' => esc_html__('Position Typography', 'northway'),
-                            'type' => \Elementor\Group_Control_Typography::get_type(),
-                            'control_type' => 'group',
-                            'selector' => '{{WRAPPER}} .pxl-image-carousel .pxl-item--description',
-                        ),
-                        array(
-                            'name' => 'btn_color',
-                            'label' => esc_html__('Button Color', 'northway'),
-                            'type' => \Elementor\Controls_Manager::COLOR,
-                            'selectors' => [
-                                '{{WRAPPER}} .pxl-image-carousel .pxl-button' => 'color: {{VALUE}} !important;',
-                            ],
-                        ),
-                        array(
-                            'name' => 'btn_typography',
-                            'label' => esc_html__('Button Typography', 'northway'),
-                            'type' => \Elementor\Group_Control_Typography::get_type(),
-                            'control_type' => 'group',
-                            'selector' => '{{WRAPPER}} .pxl-image-carousel .pxl-button',
-                        ),
                     ),
                 ),
                 array(

@@ -72,7 +72,6 @@
         northway_site_loader();
         northway_backtotop_progess_bar();
         northway_type_file_upload();
-        northway_button_parallax1();
         northway_zoom_point();
         northway_text_carousel_flip();
         if (pxl_window_width > 767) {
