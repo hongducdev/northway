@@ -1,198 +1,147 @@
-/*--------------------------------------------------------------
-TEAM Carousel
-----------------------------------------------------------------
-# Team Carousel
---------------------------------------------------------------*/
+// Case Team Grid
 
-/*--------------------------------------------------------------
-TEAM GRID
-----------------------------------------------------------------
-# Team Grid
---------------------------------------------------------------*/
-.pxl-team-grid1,
-.pxl-team-carousel1 {
+.pxl-team-grid1 {
     .pxl-item {
         &--inner {
-            border-radius: 25px;
-            background: #fff;
-            padding: 20px 20px 28px 20px;
+            @include border-radius(15px);
+            background-color: $body_bg_color;
             &:hover {
-                .pxl-item--overlay {
-                    opacity: 1;
-                    &-button {
+                .pxl-item {
+                    &--overlay {
                         opacity: 1;
-                        transform: scale(1);
-                    }
-                }
-                .pxl-item--social {
-                    &-list {
-                        a {
+                        visibility: visible;
+                        &-button {
                             opacity: 1;
-                            transform: translateY(0);
+                            @include transform(scale(1));
                         }
                     }
                 }
             }
         }
-        &--image {
-            border-radius: 18px 18px 0 0;
-            height: 278px;
+        &--featured {
+            height: 375px;
             position: relative;
+            @include border-radius(15px 15px 0 0);
             img {
-                border-radius: 18px 18px 0 0;
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-            }
-            &:before {
-                content: "";
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                background-image: url(../img/grass4.svg);
-                width: 100%;
-                height: 19px;
-                background-position: bottom;
-                background-size: contain;
-                background-repeat: repeat-x;
-                z-index: 3;
+                @include border-radius(15px 15px 0 0);
             }
         }
         &--overlay {
-            border-radius: 18px 18px 0 0;
-            background: rgba($four-color-hex, 0.4);
-            backdrop-filter: blur(5px);
-            position: absolute;
-            top: 0;
-            left: 0;
+            background: rgba(14, 72, 141, 0.3);
+            backdrop-filter: blur(2.5px);
             width: 100%;
             height: 100%;
-            display: flex;
+            position: absolute;
+            inset: 0;
+            @include border-radius(15px 15px 0 0);
+            display: inline-flex;
             align-items: center;
             justify-content: center;
+            @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
             opacity: 0;
-            @include transition(all 0.3s linear 0ms);
+            visibility: hidden;
+            cursor: pointer;
             &-button {
-                width: 66px;
-                height: 66px;
+                width: 76px;
+                height: 76px;
                 @include border-radius(50%);
-                background-color: rgba(#fff, 0.4);
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
-                cursor: pointer;
+                background-color: rgba($body_bg_color_hex, 0.4);
+                backdrop-filter: blur(3.5px);
                 opacity: 0;
-                transform: scale(0);
-                @include transition(all 0.3s linear 0ms);
+                transform: scale(0.5);
+                @include transition(
+                    all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1)
+                );
                 span {
-                    width: 13px;
-                    height: 13px;
+                    width: 12px;
+                    height: 12px;
                     position: relative;
-                    &:before {
+                    &::before,
+                    &::after {
                         content: "";
                         position: absolute;
-                        width: 2px;
-                        height: 100%;
-                        background-color: #fff;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                        @include border-radius(2px);
-                        @include transition(all 0.3s linear 0ms);
-                    }
-                    &:after {
-                        content: "";
-                        position: absolute;
-                        width: 100%;
+                        width: 12px;
                         height: 2px;
-                        background-color: #fff;
+                        background-color: $body_bg_color;
+                    }
+                    &::before {
+                        transform: rotate(90deg);
                         top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                        @include border-radius(2px);
-                        @include transition(all 0.3s linear 0ms);
+                        left: 0;
                     }
-                }
-            }
-        }
-        &--social {
-            position: absolute;
-            right: 20px;
-            bottom: -14px;
-            z-index: 4;
-            &-inner {
-                position: relative;
-            }
-            &-share {
-                width: 47px;
-                height: 47px;
-                border-radius: 50%;
-                border: 5px solid #fff;
-                background-color: $four-color;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                color: #fff;
-                svg {
-                    width: 16px;
-                    height: 16px;
-                }
-            }
-            &-list {
-                position: absolute;
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-                left: 50%;
-                transform: translateX(-50%);
-                bottom: calc(100% + 5px);
-                a {
-                    width: 36px;
-                    height: 36px;
-                    border-radius: 50%;
-                    background-color: #fff;
-                    color: $four-color;
-                    display: inline-flex;
-                    align-items: center;
-                    justify-content: center;
-                    font-size: 12px;
-                    opacity: 0;
-                    transform: translateY(10px);
-                    @include transition(all 0.3s linear 0ms);
-                    &:hover {
-                        background-color: $four-color;
-                        color: #fff;
-                    }
-                    @for $i from 1 through 4 {
-                        &:nth-child(#{$i}) {
-                            transition-delay: #{(5 - $i) * 0.1}s;
-                        }
+                    &::after {
+                        transform: rotate(0deg);
+                        top: 50%;
                     }
                 }
             }
         }
         &--holder {
-            margin-top: 25px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            border: 1px solid #afb4b5;
+            @include border-radius(0 0 15px 15px);
+            position: relative;
+            text-align: center;
+            padding-top: 45px;
+            padding-bottom: 30px;
         }
         &--title {
-            color: $secondary-color;
-            font-size: 21px;
-            font-weight: 600;
-            line-height: 1.47;
-            margin-bottom: 0;
+            border-radius: 1000px;
+            border: 1px solid #afb4b5;
+            background: $body_bg_color;
+            display: inline-flex;
+            height: 60px;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+            text-align: center;
+            width: calc(100% - 60px);
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -30px;
+            h3 {
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 0;
+            }
         }
         &--position {
-            color: rgba($secondary-color-hex, 0.8);
-            font-size: 15px;
-            font-style: italic;
+            color: rgba($secondary_color_hex, 0.6);
+            font-size: 14px;
             font-weight: 400;
-            line-height: 1.67;
+            line-height: 1.85;
+            letter-spacing: 0.7px;
+            text-transform: uppercase;
+            margin-bottom: 35px;
         }
-        &--icon {
-            padding-right: 10px;
+        &--social {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            a {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 37px;
+                height: 37px;
+                @include border-radius(50%);
+                border: 1px solid rgba($four_color_hex, 0);
+                position: relative;
+                font-size: 13px;
+                color: $secondary_color;
+                @include transition(
+                    all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1)
+                );
+                &:hover {
+                    border-color: rgba($four_color_hex, 0.3);
+                }
+            }
         }
     }
 }

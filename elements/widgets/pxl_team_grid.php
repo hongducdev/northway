@@ -69,11 +69,6 @@ pxl_add_custom_widget(
                                     'type' => 'pxl_icons',
                                 ),
                                 array(
-                                    'name' => 'icon_image',
-                                    'label' => esc_html__('Icon Image', 'northway'),
-                                    'type' => \Elementor\Controls_Manager::MEDIA,
-                                ),
-                                array(
                                     'name' => 'popup_template',
                                     'label' => esc_html__('Select Popup Template', 'northway'),
                                     'type' => 'select',
