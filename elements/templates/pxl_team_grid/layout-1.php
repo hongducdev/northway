@@ -41,16 +41,18 @@ $image_size = !empty($settings['img_size']) ? $settings['img_size'] : 'full';
                                 ));
                                 $thumbnail = $img['thumbnail'];
                             ?>
-                                <div class="pxl-item--featured">
-                                    <?php echo wp_kses_post($thumbnail); ?>
-                                    <div class="pxl-item--overlay" data-target=".pxl-page-popup-template-<?php echo esc_attr($popup_template); ?>">
-                                        <div class="pxl-item--overlay-button">
-                                            <span></span>
-                                        </div>
-                                    </div>
-                                    <!-- <a href="javascript:void(0)">
-                                    </a> -->
-                                </div>
+								<div class="pxl-item--featured">
+									<div class="pxl-item--image">
+										<?php echo wp_kses_post($thumbnail); ?>
+										<a href="javascript:void(0)" data-target=".pxl-page-popup-template-<?php echo esc_attr($popup_template); ?>">
+											<div class="pxl-item--overlay">
+												<div class="pxl-item--overlay-button">
+													<span></span>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
                             <?php } ?>
                             <div class="pxl-item--holder ">
                                 <div class="pxl-item--title">

@@ -722,6 +722,11 @@
             display: flex;
             align-items: center;
             gap: 40px;
+            @media #{$max-xs} {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
         }
         &--icon {
             --spacer-icon: 76px;
@@ -783,11 +788,16 @@
             margin-bottom: 0;
             max-width: 205px;
             @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+            @media #{$max-xs} {
+                max-width: 100%;
+                text-align: center;
+            }
         }
         &--divider {
             color: rgba($four_color_hex, 0.5);
             margin-top: 19px;
             margin-bottom: 14px;
+            width: 100%;
             @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
         }
         &--description {
