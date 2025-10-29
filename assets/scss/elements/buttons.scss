@@ -288,6 +288,30 @@ input[type="submit"] {
             }
         }
     }
+    &.btn-outline {
+        border: 1px solid $secondary_color;
+        @include border-radius(8px);
+        padding: 0 30px;
+        background-color: transparent;
+        position: relative;
+        @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+        span {
+            background-color: transparent;
+            padding: 0;
+            border-radius: 0;
+            color: $secondary_color;
+            font-family: "DM Sans";
+            font-size: 16px;
+            font-weight: 500;
+            @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+        }
+        &:hover {
+            background-color: $secondary_color;
+            span {
+                color: $body_bg_color;
+            }
+        }
+    }
     &.btn-gradient {
         --gradient-1: $third_color;
         --gradient-2: $primary_color;

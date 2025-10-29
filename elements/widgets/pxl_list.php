@@ -39,7 +39,7 @@ pxl_add_custom_widget(
                             'type' => \Elementor\Controls_Manager::ICONS,
                             'fa4compatibility' => 'icon',
                             'condition' => [
-                                'style' => 'default',
+                                'style' => ['default', 'style-2'],
                             ],
                         ),
                     ),
@@ -61,6 +61,7 @@ pxl_add_custom_widget(
                             'default' => 'default',
                             'options' => [
                                 'default' => esc_html__('Style 1', 'northway'),
+                                'style-2' => esc_html__('Style 2', 'northway'),
                                 'numbered' => esc_html__('Numbered', 'northway'),
                             ],
                         ),

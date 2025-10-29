@@ -6403,6 +6403,54 @@ body.rtl .pxl-box-hover1 .pxl-item--inner:hover:before {
 .pxl-list1.default .pxl-item--content p {
   margin: 0;
 }
+.pxl-list1.style-2 .pxl-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-height: 46px;
+  padding: 10px;
+  -webkit-border-radius: 46px;
+  -khtml-border-radius: 46px;
+  -moz-border-radius: 46px;
+  -ms-border-radius: 46px;
+  -o-border-radius: 46px;
+  border-radius: 46px;
+  border: 1px solid rgba(102, 111, 120, 0.5);
+}
+.pxl-list1.style-2 .pxl-item--icon {
+  width: 26px;
+  height: 26px;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.pxl-list1.style-2 .pxl-item--icon svg {
+  height: 8px;
+}
+.pxl-list1.style-2 .pxl-item--icon svg path {
+  fill: var(--body_bg-color);
+}
+.pxl-list1.style-2 .pxl-item--icon i {
+  font-size: 10px;
+  color: var(--body_bg-color);
+}
+.pxl-list1.style-2 .pxl-item--content {
+  color: var(--secondary-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.625;
+}
+.pxl-list1.style-2 .pxl-item--content p {
+  color: inherit;
+  margin-bottom: 0;
+}
 .pxl-list1.numbered .pxl-item--numbered {
   font-size: 15px;
   font-weight: 500;
@@ -27482,6 +27530,45 @@ input[type="submit"]:hover {
 }
 .btn:not(.btn-stroke).btn-text-applied:hover .chars span, button:not(.btn-stroke).btn-text-applied:hover .chars span, .button:not(.btn-stroke).btn-text-applied:hover .chars span {
   animation: btnHoverTxtLiquidXAlt 0.6s calc(var(--chars-last-index, 0s) * 0.03s) cubic-bezier(0.23, 1, 0.32, 1) both alternate;
+}
+.btn:not(.btn-stroke).btn-outline, button:not(.btn-stroke).btn-outline, .button:not(.btn-stroke).btn-outline {
+  border: 1px solid var(--secondary-color);
+  -webkit-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  padding: 0 30px;
+  background-color: transparent;
+  position: relative;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.btn:not(.btn-stroke).btn-outline span, button:not(.btn-stroke).btn-outline span, .button:not(.btn-stroke).btn-outline span {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  color: var(--secondary-color);
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 500;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.btn:not(.btn-stroke).btn-outline:hover, button:not(.btn-stroke).btn-outline:hover, .button:not(.btn-stroke).btn-outline:hover {
+  background-color: var(--secondary-color);
+}
+.btn:not(.btn-stroke).btn-outline:hover span, button:not(.btn-stroke).btn-outline:hover span, .button:not(.btn-stroke).btn-outline:hover span {
+  color: var(--body_bg-color);
 }
 .btn:not(.btn-stroke).btn-gradient, button:not(.btn-stroke).btn-gradient, .button:not(.btn-stroke).btn-gradient {
   --gradient-1: var(--third-color);
