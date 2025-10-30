@@ -50,11 +50,20 @@
             background: transparent;
             padding: 30px;
             padding-bottom: 80px;
+            @media #{$max-xs} {
+                padding: 15px;
+                padding-bottom: 40px;
+            }
         }
         &--meta {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            @media #{$max-xs} {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
         }
         &--icon {
             display: flex;
@@ -80,6 +89,11 @@
             line-height: 1.45;
             text-transform: uppercase;
             margin-bottom: 0;
+            @media #{$max-xs} {
+                padding: 0 20px;
+                height: 40px;
+                font-size: 16px;
+            }
         }
         &--price {
             margin-top: 80px;
@@ -111,6 +125,7 @@
             }
         }
         &--divider {
+            width: 100%;
             margin-top: 10px;
             margin-bottom: 14px;
             color: rgba($four_color_hex, 0.5);

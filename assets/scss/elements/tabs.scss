@@ -181,6 +181,10 @@ table.tt_timetable {
         display: inline-block;
         position: relative;
         z-index: 5;
+        @media #{$max-sm} {
+            margin-left: auto;
+            margin-right: auto;
+        }
         &:before {
             content: "";
             position: absolute;
@@ -202,6 +206,9 @@ table.tt_timetable {
             background: $body_bg_color;
             border: 1px solid rgba($four_color_hex, 0.5);
             position: relative;
+            @media #{$max-xsx} {
+                padding: 10px 15px;
+            }
             .pxl-switch-label {
                 color: $secondary_color;
                 font-family: "DM Sans";

@@ -35,6 +35,10 @@ pxl_add_custom_widget(
                                     'label' => esc_html__('Layout 4', 'northway' ),
                                     'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_icon_box/layout4.jpg'
                                 ],
+                                '5' => [
+                                    'label' => esc_html__('Layout 5', 'northway' ),
+                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_icon_box/layout5.jpg'
+                                ],
                             ],
                         ),
                     ),
@@ -88,6 +92,21 @@ pxl_add_custom_widget(
                             'condition' => [
                                 'layout' => ['1'],
                             ]
+                        ),
+                        array(
+                            'name' => 'feature_list',
+                            'label' => esc_html__('Feature List', 'northway' ),
+                            'type' => \Elementor\Controls_Manager::REPEATER,
+                            'controls' => array(
+                                array(
+                                    'name' => 'feature_text',
+                                    'label' => esc_html__('Feature Text', 'northway' ),
+                                    'type' => \Elementor\Controls_Manager::WYSIWYG,
+                                ),
+                            ),
+                            'condition' => [
+                                'layout' => ['5'],
+                            ],
                         ),
                         array(
                             'name' => 'icon_type',
@@ -194,7 +213,7 @@ pxl_add_custom_widget(
                             ],
                             'default' => 'style-1',
                             'condition' => [
-                                'layout' => ['2'],
+                                'layout' => ['2', '5'],
                             ],
                         ),
                         array(
