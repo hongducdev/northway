@@ -85,9 +85,9 @@ pxl_add_custom_widget(
                             'type' => \Elementor\Controls_Manager::URL,
                         ),
                         array(
-                            'name' => 'feature_title',
-                            'label' => esc_html__('Feature Title ', 'northway'),
-                            'type' => \Elementor\Controls_Manager::TEXT,
+                            'name' => 'description',
+                            'label' => esc_html__('Description ', 'northway'),
+                            'type' => \Elementor\Controls_Manager::TEXTAREA,
                             'label_block' => true,
                         ),
                         array(

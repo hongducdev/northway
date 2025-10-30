@@ -185,8 +185,8 @@ pxl_add_custom_widget(
                     'tab' => \Elementor\Controls_Manager::TAB_STYLE,
                     'controls' => array(
                         array(
-                            'name' => 'right_space',
-                            'label' => esc_html__('Space Right Content', 'northway'),
+                            'name' => 'left_space',
+                            'label' => esc_html__('Space Left Content', 'northway'),
                             'type' => \Elementor\Controls_Manager::SLIDER,
                             'control_type' => 'responsive',
                             'size_units' => ['px', '%'],
@@ -197,7 +197,7 @@ pxl_add_custom_widget(
                                 ],
                             ],
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-tabs--content ' => 'right: {{SIZE}}{{UNIT}} ;',
+                                '{{WRAPPER}} .pxl-tabs--title ' => 'margin-left: {{SIZE}}{{UNIT}} ;',
                             ],
                         ),
                         array(
@@ -213,7 +213,7 @@ pxl_add_custom_widget(
                                 ],
                             ],
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-tabs--content ' => 'top: {{SIZE}}{{UNIT}} ;',
+                                '{{WRAPPER}} .pxl-tabs--content ' => 'margin-top: {{SIZE}}{{UNIT}} ;',
                             ],
                         ),
                         array(

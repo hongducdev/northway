@@ -31095,201 +31095,230 @@ table.tt_timetable {
   border-color: rgba(102, 111, 120, 0.3);
 }
 .pxl-pricing1.is-popular .pxl-item--inner {
-  background: #fff;
-  box-shadow: 0px 7px 25px 0px rgba(15, 55, 20, 0.1);
-  padding-bottom: 58px;
+  background: var(--body_bg-color);
+  border-color: rgba(102, 111, 120, 0.5);
 }
-.pxl-pricing1.is-popular .pxl-item--button a {
-  background-color: var(--primary-color);
+.pxl-pricing1.is-popular .pxl-item--icon svg path {
+  fill: var(--primary-color);
 }
-.pxl-pricing1 .pxl-item--tag {
-  position: absolute;
-  top: -7px;
-  right: 45px;
+.pxl-pricing1.is-popular .pxl-item--title {
+  padding: 0 30px;
+  color: var(--secondary-color);
+  border-color: rgba(102, 111, 120, 0.5);
+}
+.pxl-pricing1.is-popular .pxl-item--price {
+  color: var(--secondary-color);
+}
+.pxl-pricing1.is-popular .pxl-item--price-value {
+  color: var(--secondary-color);
+}
+.pxl-pricing1.is-popular .pxl-item--price-time {
+  color: rgba(4, 20, 39, 0.5);
+}
+.pxl-pricing1.is-popular .pxl-item--divider {
+  color: rgba(102, 111, 120, 0.5);
+}
+.pxl-pricing1.is-popular .pxl-item--description {
+  color: rgba(4, 20, 39, 0.7);
+}
+.pxl-pricing1.is-popular .pxl-item--button {
+  background-color: var(--secondary-color);
+  color: var(--body_bg-color);
+}
+.pxl-pricing1.is-popular .pxl-item--feature div {
+  color: var(--secondary-color);
 }
 .pxl-pricing1 .pxl-item--inner {
-  border-radius: 25px;
-  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0.51) 86.54%, rgba(255, 255, 255, 0) 100%);
-  padding: 41px 39px 6px 39px;
-  position: relative;
-  -webkit-transition: all 0.3s linear 0ms;
-  -khtml-transition: all 0.3s linear 0ms;
-  -moz-transition: all 0.3s linear 0ms;
-  -ms-transition: all 0.3s linear 0ms;
-  -o-transition: all 0.3s linear 0ms;
-  transition: all 0.3s linear 0ms;
-}
-@media screen and (max-width: 575px) {
-  .pxl-pricing1 .pxl-item--inner {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
+  -webkit-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  border: 1px solid var(--four-color);
+  background: transparent;
+  padding: 30px;
+  padding-bottom: 80px;
 }
 .pxl-pricing1 .pxl-item--meta {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 8px;
-  margin-bottom: 30px;
+  justify-content: space-between;
+}
+.pxl-pricing1 .pxl-item--icon {
+  display: flex;
+  align-items: center;
+}
+.pxl-pricing1 .pxl-item--icon svg path {
+  fill: #bbb2ff;
 }
 .pxl-pricing1 .pxl-item--title {
-  color: var(--secondary-color);
-  font-family: "Dancing Script";
-  font-size: 23px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.21;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 46px;
+  height: 52px;
+  -webkit-border-radius: 100px;
+  -khtml-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+  border: 1px solid var(--four-color);
+  color: var(--body_bg-color);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.45;
+  text-transform: uppercase;
   margin-bottom: 0;
 }
 .pxl-pricing1 .pxl-item--price {
-  display: flex;
+  margin-top: 80px;
+  display: inline-flex;
   align-items: center;
-  color: var(--secondary-color);
-  font-family: "General Sans";
-  font-weight: 500;
-  margin-bottom: 40px;
+  color: var(--body_bg-color);
+  font-family: "DM Sans";
+  gap: 5px;
 }
 .pxl-pricing1 .pxl-item--price-currency {
-  font-size: 25px;
+  font-size: 23px;
+  font-weight: 600;
 }
 .pxl-pricing1 .pxl-item--price-inner {
   display: flex;
   align-items: baseline;
 }
 .pxl-pricing1 .pxl-item--price-value {
-  font-size: 70px;
-  line-height: 53px;
-  font-weight: 500;
+  color: var(--body_bg-color);
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.18;
   margin-bottom: 0;
-  color: inherit;
 }
 .pxl-pricing1 .pxl-item--price-time {
-  font-size: 17px;
-  line-height: 1;
-  text-transform: lowercase;
+  color: var(--four-color);
+  font-size: 18px;
+  font-weight: 400;
+}
+.pxl-pricing1 .pxl-item--divider {
+  margin-top: 10px;
+  margin-bottom: 14px;
+  color: rgba(102, 111, 120, 0.5);
+}
+.pxl-pricing1 .pxl-item--description {
+  color: rgba(248, 248, 242, 0.7);
+  margin-bottom: 30px;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 .pxl-pricing1 .pxl-item--button {
   width: 100%;
-  margin-bottom: 28px;
-}
-.pxl-pricing1 .pxl-item--button a {
-  width: 100%;
+  background-color: var(--body_bg-color);
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+  color: var(--secondary-color);
+  font-family: "DM Sans";
+  font-size: 16px;
   font-weight: 500;
-  font-size: 15px;
-  background-color: var(--secondary-color);
-  text-transform: none !important;
-  text-align: center;
+  line-height: 1.625;
+  position: relative;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.pxl-pricing1 .pxl-item--button:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  background: linear-gradient(95deg, #dfb0c4 -17.6%, #9588f8 20.95%, #585092 137.26%);
+  opacity: 0;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.pxl-pricing1 .pxl-item--button span {
+  position: relative;
+  z-index: 2;
+  transform: translateX(0);
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.pxl-pricing1 .pxl-item--button span:before {
+  content: "\F138";
+  font-family: "bootstrap-icons";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.625;
+  color: var(--body_bg-color);
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 2;
+  opacity: 0;
+}
+.pxl-pricing1 .pxl-item--button:hover {
+  color: var(--body_bg-color);
+}
+.pxl-pricing1 .pxl-item--button:hover span {
+  transform: translateX(-17px);
+}
+.pxl-pricing1 .pxl-item--button:hover span:before {
+  transform: translateY(-50%) translateX(35px);
+  opacity: 1;
+}
+.pxl-pricing1 .pxl-item--button:hover:before {
+  opacity: 1;
 }
 .pxl-pricing1 .pxl-item--feature {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 7px;
 }
-.pxl-pricing1 .pxl-item--feature-title {
-  color: inherit;
-  font-size: 20px;
-  line-height: 1.35;
-  padding-bottom: 16px;
-  border-bottom: 1px dashed var(--primary-color);
-  margin-bottom: 22px;
-}
-.pxl-pricing1 .pxl-item--feature-content {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  color: #0a250e;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 1.333;
-}
-.pxl-pricing1 .pxl-item--feature-content.active {
-  font-weight: 500;
-}
-.pxl-pricing2 .pxl-item--inner {
-  padding: 35px;
-  border-radius: 20px;
-  border: 1px solid rgba(149, 136, 248, 0.5);
-  background: #fff;
-  position: relative;
-}
-@media screen and (max-width: 575px) {
-  .pxl-pricing2 .pxl-item--inner {
-    padding: 25px;
-    padding-top: 70px;
-  }
-}
-.pxl-pricing2 .pxl-item--tag {
-  position: absolute;
-  top: 27px;
-  right: -11px;
-  color: var(--third-color);
-}
-@media screen and (max-width: 575px) {
-  .pxl-pricing2 .pxl-item--tag {
-    top: 15px;
-  }
-}
-.pxl-pricing2 .pxl-item--tag-inner {
-  position: absolute;
-  top: 7px;
-  right: 20px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: #fff;
-  font-family: "Dancing Script";
-  font-size: 17px;
-  font-weight: 500;
-  line-height: 1.58;
-}
-.pxl-pricing2 .pxl-item--meta {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  padding-bottom: 25px;
-  border-bottom: 1px dashed rgba(149, 136, 248, 0.5);
-}
-.pxl-pricing2 .pxl-item--title {
-  color: var(--secondary-color);
-  font-family: "Dancing Script";
-  font-size: 23px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.43;
-  margin-bottom: 0;
-}
-.pxl-pricing2 .pxl-item--feature {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 3px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-@media screen and (max-width: 767px) {
-  .pxl-pricing2 .pxl-item--feature {
-    grid-template-columns: 1fr;
-  }
-}
-.pxl-pricing2 .pxl-item--feature-content {
+.pxl-pricing1 .pxl-item--feature div {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: var(--secondary-color);
-  font-size: 15px;
   font-weight: 400;
-  line-height: 1.67;
+  color: var(--body_bg-color);
 }
-.pxl-pricing2 .pxl-item--feature-content.active {
-  font-weight: 500;
-}
-.pxl-pricing2 .pxl-item--feature-content svg {
-  width: 14px;
-  height: 14px;
-}
-.pxl-pricing2 .pxl-item--button {
-  width: 100%;
-}
-.pxl-pricing2 .pxl-item--button a {
-  width: 100%;
+.pxl-pricing1 .pxl-item--feature div.active {
+  font-weight: 600;
 }
 .pxl-service-list.layout-1 .pxl-service-item a {
   position: relative;
