@@ -15147,6 +15147,31 @@ body.rtl .widget .widget-title:before {
     min-height: 600px;
   }
 }
+.pxl-container-fold-pricing {
+  position: relative;
+}
+.pxl-container-fold-pricing:after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 0;
+  height: 0;
+  border-bottom: 165px solid transparent;
+  border-right: 165px solid var(--secondary-color);
+}
+@media screen and (max-width: 767px) {
+  .pxl-container-fold-pricing:after {
+    border-bottom: 120px solid transparent;
+    border-right: 120px solid var(--secondary-color);
+  }
+}
+@media screen and (max-width: 575px) {
+  .pxl-container-fold-pricing:after {
+    border-bottom: 100px solid transparent;
+    border-right: 100px solid var(--secondary-color);
+  }
+}
 @keyframes pxl-draws-svg {
   0% {
     stroke-dashoffset: 100%;
@@ -30697,25 +30722,55 @@ table.tt_timetable {
   border-spacing: 0 !important;
 }
 .pxl-tabs1 .pxl-tabs--switch {
-  padding-right: 15px;
+  display: inline-block;
+  position: relative;
+  z-index: 5;
+}
+.pxl-tabs1 .pxl-tabs--switch:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 100px;
+  -khtml-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+  background: var(--body_bg-color);
+  border: 1px solid rgba(102, 111, 120, 0.5);
 }
 .pxl-tabs1 .pxl-tabs--switch .pxl-switch-container {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: end;
-  gap: 13px;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 30px;
+  -webkit-border-radius: 100px;
+  -khtml-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+  background: var(--body_bg-color);
+  border: 1px solid rgba(102, 111, 120, 0.5);
+  position: relative;
 }
 .pxl-tabs1 .pxl-tabs--switch .pxl-switch-container .pxl-switch-label {
   color: var(--secondary-color);
-  font-size: 17px;
+  font-family: "DM Sans";
+  font-size: 14px;
   font-weight: 600;
+  line-height: 1.71;
   text-transform: uppercase;
   cursor: pointer;
 }
 .pxl-tabs1 .pxl-tabs--switch .pxl-switch-container .pxl-switch-toggle {
   position: relative;
-  height: 30px;
-  width: 50px;
+  height: 52px;
+  width: 92px;
 }
 .pxl-tabs1 .pxl-tabs--switch .pxl-switch-container .pxl-switch-toggle .pxl-switch-input {
   display: none;
@@ -30723,29 +30778,41 @@ table.tt_timetable {
 .pxl-tabs1 .pxl-tabs--switch .pxl-switch-container .pxl-switch-toggle .pxl-switch-slider {
   position: relative;
   display: inline-block;
-  width: 50px;
-  height: 30px;
+  width: 92px;
+  height: 52px;
   background-color: var(--secondary-color);
-  border-radius: 15px;
+  -webkit-border-radius: 100px;
+  -khtml-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 .pxl-tabs1 .pxl-tabs--switch .pxl-switch-container .pxl-switch-toggle .pxl-switch-slider .pxl-switch-button {
   position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 22px;
-  height: 22px;
-  border-radius: 22px;
-  background: linear-gradient(154deg, #fff16e 35.51%, #f4be29 86.53%);
+  top: 6px;
+  left: 6px;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   border-radius: 50%;
+  background: radial-gradient(107.96% 107.96% at 53.75% 102.5%, #585092 0%, #a098e2 41.83%, #bbb2ff 70.67%, #dfb0c4 100%);
   transition: transform 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
-.pxl-tabs1 .pxl-tabs--switch .pxl-switch-container .pxl-switch-toggle .pxl-switch-input:checked + .pxl-switch-slider {
-  background-color: var(--primary-color);
+.pxl-tabs1 .pxl-tabs--switch .pxl-switch-container .pxl-switch-toggle .pxl-switch-slider .pxl-switch-button svg {
+  color: var(--body_bg-color);
 }
 .pxl-tabs1 .pxl-tabs--switch .pxl-switch-container .pxl-switch-toggle .pxl-switch-input:checked + .pxl-switch-slider .pxl-switch-button {
-  transform: translateX(20px);
+  transform: translateX(40px);
 }
 .pxl-tab-carousel1 .pxl-swiper-dots {
   text-align: left;

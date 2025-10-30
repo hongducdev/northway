@@ -812,6 +812,28 @@
     }
 }
 
+.pxl-container-fold-pricing {
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        width: 0;
+        height: 0;
+        border-bottom: 165px solid transparent;
+        border-right: 165px solid $secondary_color;
+        @media #{$max-sm} {
+            border-bottom: 120px solid transparent;
+            border-right: 120px solid $secondary_color;
+        }
+        @media #{$max-xs} {
+            border-bottom: 100px solid transparent;
+            border-right: 100px solid $secondary_color;
+        }
+    }
+}
+
 @keyframes pxl-draws-svg {
     0% {
         stroke-dashoffset: 100%;
