@@ -51,7 +51,7 @@ $show_button = $widget->get_setting('show_button');
 $button_text = $widget->get_setting('button_text');
 $button_url = $widget->get_setting('button_url');
 $show_client = $widget->get_setting('show_client');
-$show_address = $widget->get_setting('show_address');
+$show_category = $widget->get_setting('show_category');
 
 $load_more = array(
     'tax'             => $tax,
@@ -86,7 +86,7 @@ $load_more = array(
     'button_text'     => $button_text,
     'button_url'      => $button_url,
     'show_client'     => $show_client,
-    'show_address'    => $show_address,
+    'show_category'   => $show_category,
 );
 
 $wrap_attrs = [
@@ -114,14 +114,19 @@ if( count($posts) <= 0){
     <?php if ($select_post_by == 'term_selected' && $filter == "true"): ?>
         <div class="pxl-grid-filter <?php echo esc_attr($filter_type) ?> <?php echo esc_attr($filter_style); ?>">
             <div class="pxl--filter-inner">
-                <span class="filter-item active" data-filter="*"><?php echo esc_html($filter_default_title); ?></span>
-                <?php foreach ($categories as $category): ?>
-                    <?php $category_arr = explode('|', $category); ?>
-                    <?php $term = get_term_by('slug',$category_arr[0], $category_arr[1]); ?>
-                    <span class="filter-item" data-filter="<?php echo esc_attr('.' . $term->slug); ?>">
-                        <?php echo esc_html($term->name); ?>
-                    </span>
-                <?php endforeach; ?>
+                <div class="pxl--filter-list">
+                    <span class="filter-item active" data-filter="*"><p><?php echo esc_html($filter_default_title); ?></p></span>
+                    <?php foreach ($categories as $category): ?>
+                        <?php $category_arr = explode('|', $category); ?>
+                        <?php $term = get_term_by('slug',$category_arr[0], $category_arr[1]); ?>
+                        <span class="filter-item" data-filter="<?php echo esc_attr('.' . $term->slug); ?>">
+                            <p><?php echo esc_html($term->name); ?></p>
+                        </span>
+                    <?php endforeach; ?>
+                </div>
+                <div class="pxl--filter-result">
+                    (<span class="pxl--result-count"><?php echo esc_html($total); ?></span>) <?php echo esc_html__('Results', 'northway'); ?>
+                </div>
             </div>
         </div>
     <?php endif; ?>

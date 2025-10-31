@@ -4545,7 +4545,7 @@ body.rtl .pxl-box-hover1 .pxl-item--inner:hover:before {
   background-image: linear-gradient(to bottom, var(--gradient-color-from), var(--gradient-color-to));
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='var(--gradient-color-from)', endColorStr='var(--gradient-color-to)');
 }
-.ft-theme-default, .pxl-swiper-pagination .pxl-swiper-current-slide, .pxl-swiper-pagination .pxl-swiper-total-slides, .pxl-text-effect1, .pxl-heading .pxl-item--title, .pxl-heading .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-heading -title.pxl-item, #pxl-search-popup .pxl-item--content form .search-field, .pxl-search-popup-button .pxl_cart_counter, .pxl-language-switch .language, .pxl-icon-postformat .link-icon a span, .pxl-banner .pxl-banner-inner .hover-content .subtitle-phone, .pxl-banner .pxl-banner-inner .hover-content .phone-number, .pxl-banner .pxl-banner-inner .hover-content .btn, .pxl-banner .pxl-banner-inner .hover-content button, .pxl-banner .pxl-banner-inner .hover-content .button, .pxl-post-share a, .pxl-logo-marquee1 .pxl-item--text, .pxl--post-footer label, .pxl-post--navigation, .pxl-post--author-info .pxl-user--name, .btn--readmore, .page-links .post-page-numbers, .comments-title, .widget_rss .rsswidget, .widget_block .wp-block-search__label, .widget_block .wp-block-group__inner-container > h2, .widget_block .wp-block-archives-list, .widget_block .wp-block-categories-list, .pxl-wg-categories .pxl-category--inner span, .pxl-contact-info-widget .pxl-phone--number, .ft-gt, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label, .woocommerce #pxl-sidebar-area .widget_products ul a, .single-product .woocommerce-social-share label, .single-product section.related .woocommerce-product-content .price, .single-product #pxl-content-area div.product .wooc-product-meta button, .single-product > div.product .wooc-product-meta button, .woosw-popup .woosw-item--actions a.button, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward, .archive section.related .woocommerce-product-content .price, .archive .woocommerce-product-content .price, .woocommerce.archive .products.shop-view-list li .add_to_cart_button, .woocommerce.archive .products.shop-view-list li .added_to_cart, .ft-gt p, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label p, .woocommerce #pxl-sidebar-area .widget_products ul a p, .single-product .woocommerce-social-share label p, .single-product section.related .woocommerce-product-content .price p, .single-product #pxl-content-area div.product .wooc-product-meta button p, .single-product > div.product .wooc-product-meta button p, .woosw-popup .woosw-item--actions a.button p, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button p, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward p, .archive section.related .woocommerce-product-content .price p, .archive .woocommerce-product-content .price p, .woocommerce.archive .products.shop-view-list li .add_to_cart_button p, .woocommerce.archive .products.shop-view-list li .added_to_cart p, .ft-gt h1, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h1, .woocommerce #pxl-sidebar-area .widget_products ul a h1, .single-product .woocommerce-social-share label h1, .single-product section.related .woocommerce-product-content .price h1, .single-product #pxl-content-area div.product .wooc-product-meta button h1, .single-product > div.product .wooc-product-meta button h1, .woosw-popup .woosw-item--actions a.button h1, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h1, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h1, .archive section.related .woocommerce-product-content .price h1, .archive .woocommerce-product-content .price h1, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h1, .woocommerce.archive .products.shop-view-list li .added_to_cart h1, .ft-gt h2, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h2, .woocommerce #pxl-sidebar-area .widget_products ul a h2, .single-product .woocommerce-social-share label h2, .single-product section.related .woocommerce-product-content .price h2, .single-product #pxl-content-area div.product .wooc-product-meta button h2, .single-product > div.product .wooc-product-meta button h2, .woosw-popup .woosw-item--actions a.button h2, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h2, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h2, .archive section.related .woocommerce-product-content .price h2, .archive .woocommerce-product-content .price h2, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h2, .woocommerce.archive .products.shop-view-list li .added_to_cart h2, .ft-gt h3, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h3, .woocommerce #pxl-sidebar-area .widget_products ul a h3, .single-product .woocommerce-social-share label h3, .single-product section.related .woocommerce-product-content .price h3, .single-product #pxl-content-area div.product .wooc-product-meta button h3, .single-product > div.product .wooc-product-meta button h3, .woosw-popup .woosw-item--actions a.button h3, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h3, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h3, .archive section.related .woocommerce-product-content .price h3, .archive .woocommerce-product-content .price h3, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h3, .woocommerce.archive .products.shop-view-list li .added_to_cart h3, .ft-gt h4, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h4, .woocommerce #pxl-sidebar-area .widget_products ul a h4, .single-product .woocommerce-social-share label h4, .single-product section.related .woocommerce-product-content .price h4, .single-product #pxl-content-area div.product .wooc-product-meta button h4, .single-product > div.product .wooc-product-meta button h4, .woosw-popup .woosw-item--actions a.button h4, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h4, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h4, .archive section.related .woocommerce-product-content .price h4, .archive .woocommerce-product-content .price h4, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h4, .woocommerce.archive .products.shop-view-list li .added_to_cart h4, .ft-gt h5, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h5, .woocommerce #pxl-sidebar-area .widget_products ul a h5, .single-product .woocommerce-social-share label h5, .single-product section.related .woocommerce-product-content .price h5, .single-product #pxl-content-area div.product .wooc-product-meta button h5, .single-product > div.product .wooc-product-meta button h5, .woosw-popup .woosw-item--actions a.button h5, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h5, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h5, .archive section.related .woocommerce-product-content .price h5, .archive .woocommerce-product-content .price h5, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h5, .woocommerce.archive .products.shop-view-list li .added_to_cart h5, .ft-gt h6, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h6, .woocommerce #pxl-sidebar-area .widget_products ul a h6, .single-product .woocommerce-social-share label h6, .single-product section.related .woocommerce-product-content .price h6, .single-product #pxl-content-area div.product .wooc-product-meta button h6, .single-product > div.product .wooc-product-meta button h6, .woosw-popup .woosw-item--actions a.button h6, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h6, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h6, .archive section.related .woocommerce-product-content .price h6, .archive .woocommerce-product-content .price h6, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h6, .woocommerce.archive .products.shop-view-list li .added_to_cart h6, .ft-gt div, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label div, .woocommerce #pxl-sidebar-area .widget_products ul a div, .single-product .woocommerce-social-share label div, .single-product section.related .woocommerce-product-content .price div, .single-product #pxl-content-area div.product .wooc-product-meta button div, .single-product > div.product .wooc-product-meta button div, .woosw-popup .woosw-item--actions a.button div, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button div, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward div, .archive section.related .woocommerce-product-content .price div, .archive .woocommerce-product-content .price div, .woocommerce.archive .products.shop-view-list li .add_to_cart_button div, .woocommerce.archive .products.shop-view-list li .added_to_cart div, .ft-gt span, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label span, .woocommerce #pxl-sidebar-area .widget_products ul a span, .single-product .woocommerce-social-share label span, .single-product section.related .woocommerce-product-content .price span, .single-product #pxl-content-area div.product .wooc-product-meta button span, .single-product > div.product .wooc-product-meta button span, .woosw-popup .woosw-item--actions a.button span, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button span, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward span, .archive section.related .woocommerce-product-content .price span, .archive .woocommerce-product-content .price span, .woocommerce.archive .products.shop-view-list li .add_to_cart_button span, .woocommerce.archive .products.shop-view-list li .added_to_cart span, input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="tel"], input[type="number"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea, select, .pxl-select-higthlight, .nice-select, .comment-form-cookies-consent, .nice-select ul.list, .wrap-ctf-bill button, .wrap-ctf3 button, .wrap-ctf-page.single-sv button, .form-contact-qrcode .first p, .form-contact-qrcode button, .form-contact-qrcode.online-appointment label, .widget_shopping_cart .total strong, #pxl-cart-sidebar .pxl-widget-cart-sidebar .widget_shopping_title, .woocommerce .woocommerce-error, .woocommerce .woocommerce-info, .woocommerce .woocommerce-message, .woocommerce .button.add_to_cart_button, .woocommerce-page .button.add_to_cart_button, .woocommerce button.single_add_to_cart_button, .woocommerce-page button.single_add_to_cart_button, .woocommerce #respond input#submit, .woocommerce-page #respond input#submit, .woocommerce a.added_to_cart.wc-forward, .woocommerce-page a.added_to_cart.wc-forward, .woocommerce .button:not(.add_to_cart_button):not(.single_add_to_cart_button):not(.added_to_cart), .woocommerce-page .button:not(.add_to_cart_button):not(.single_add_to_cart_button):not(.added_to_cart), .single-product .meta .woocommerce-review__author, .single-product #pxl-content-area div.product form.cart label, .single-product > div.product form.cart label, .single-product #pxl-content-area div.product .woocommerce-tabs .woocommerce-tabs-panel--reviews .comment-reply-title, .single-product > div.product .woocommerce-tabs .woocommerce-tabs-panel--reviews .comment-reply-title, body.woocommerce-cart .woocommerce-cart-form .shop_table thead th, .pxl-shop-topbar-wrap .woocommerce-result-count, .woocommerce.archive .products.shop-view-list li .woocommerce-wishlist button, .pxl-grid-filter .filter-item, .btn-readmore-1, .pxl-related-post .pxl-swiper-slide .pxl-post--inner .pxl-post--title, .pxl-related-post .pxl-swiper-slide .pxl-post--inner .btn--readmore, input[type="submit"], .tt_navigation_cell .tt_tabs_navigation li a, .tt_timetable thead tr th, .tt_timetable .tt_hours_column, body .tt_timetable .event .event_header {
+.ft-theme-default, .pxl-swiper-pagination .pxl-swiper-current-slide, .pxl-swiper-pagination .pxl-swiper-total-slides, .pxl-text-effect1, .pxl-heading .pxl-item--title, .pxl-heading .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-heading -title.pxl-item, #pxl-search-popup .pxl-item--content form .search-field, .pxl-search-popup-button .pxl_cart_counter, .pxl-language-switch .language, .pxl-icon-postformat .link-icon a span, .pxl-banner .pxl-banner-inner .hover-content .subtitle-phone, .pxl-banner .pxl-banner-inner .hover-content .phone-number, .pxl-banner .pxl-banner-inner .hover-content .btn, .pxl-banner .pxl-banner-inner .hover-content button, .pxl-banner .pxl-banner-inner .hover-content .button, .pxl-post-share a, .pxl-logo-marquee1 .pxl-item--text, .pxl--post-footer label, .pxl-post--navigation, .pxl-post--author-info .pxl-user--name, .btn--readmore, .page-links .post-page-numbers, .comments-title, .widget_rss .rsswidget, .widget_block .wp-block-search__label, .widget_block .wp-block-group__inner-container > h2, .widget_block .wp-block-archives-list, .widget_block .wp-block-categories-list, .pxl-wg-categories .pxl-category--inner span, .pxl-contact-info-widget .pxl-phone--number, .ft-gt, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label, .woocommerce #pxl-sidebar-area .widget_products ul a, .single-product .woocommerce-social-share label, .single-product section.related .woocommerce-product-content .price, .single-product #pxl-content-area div.product .wooc-product-meta button, .single-product > div.product .wooc-product-meta button, .woosw-popup .woosw-item--actions a.button, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward, .archive section.related .woocommerce-product-content .price, .archive .woocommerce-product-content .price, .woocommerce.archive .products.shop-view-list li .add_to_cart_button, .woocommerce.archive .products.shop-view-list li .added_to_cart, .ft-gt p, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label p, .woocommerce #pxl-sidebar-area .widget_products ul a p, .single-product .woocommerce-social-share label p, .single-product section.related .woocommerce-product-content .price p, .single-product #pxl-content-area div.product .wooc-product-meta button p, .single-product > div.product .wooc-product-meta button p, .woosw-popup .woosw-item--actions a.button p, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button p, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward p, .archive section.related .woocommerce-product-content .price p, .archive .woocommerce-product-content .price p, .woocommerce.archive .products.shop-view-list li .add_to_cart_button p, .woocommerce.archive .products.shop-view-list li .added_to_cart p, .ft-gt h1, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h1, .woocommerce #pxl-sidebar-area .widget_products ul a h1, .single-product .woocommerce-social-share label h1, .single-product section.related .woocommerce-product-content .price h1, .single-product #pxl-content-area div.product .wooc-product-meta button h1, .single-product > div.product .wooc-product-meta button h1, .woosw-popup .woosw-item--actions a.button h1, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h1, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h1, .archive section.related .woocommerce-product-content .price h1, .archive .woocommerce-product-content .price h1, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h1, .woocommerce.archive .products.shop-view-list li .added_to_cart h1, .ft-gt h2, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h2, .woocommerce #pxl-sidebar-area .widget_products ul a h2, .single-product .woocommerce-social-share label h2, .single-product section.related .woocommerce-product-content .price h2, .single-product #pxl-content-area div.product .wooc-product-meta button h2, .single-product > div.product .wooc-product-meta button h2, .woosw-popup .woosw-item--actions a.button h2, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h2, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h2, .archive section.related .woocommerce-product-content .price h2, .archive .woocommerce-product-content .price h2, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h2, .woocommerce.archive .products.shop-view-list li .added_to_cart h2, .ft-gt h3, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h3, .woocommerce #pxl-sidebar-area .widget_products ul a h3, .single-product .woocommerce-social-share label h3, .single-product section.related .woocommerce-product-content .price h3, .single-product #pxl-content-area div.product .wooc-product-meta button h3, .single-product > div.product .wooc-product-meta button h3, .woosw-popup .woosw-item--actions a.button h3, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h3, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h3, .archive section.related .woocommerce-product-content .price h3, .archive .woocommerce-product-content .price h3, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h3, .woocommerce.archive .products.shop-view-list li .added_to_cart h3, .ft-gt h4, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h4, .woocommerce #pxl-sidebar-area .widget_products ul a h4, .single-product .woocommerce-social-share label h4, .single-product section.related .woocommerce-product-content .price h4, .single-product #pxl-content-area div.product .wooc-product-meta button h4, .single-product > div.product .wooc-product-meta button h4, .woosw-popup .woosw-item--actions a.button h4, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h4, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h4, .archive section.related .woocommerce-product-content .price h4, .archive .woocommerce-product-content .price h4, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h4, .woocommerce.archive .products.shop-view-list li .added_to_cart h4, .ft-gt h5, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h5, .woocommerce #pxl-sidebar-area .widget_products ul a h5, .single-product .woocommerce-social-share label h5, .single-product section.related .woocommerce-product-content .price h5, .single-product #pxl-content-area div.product .wooc-product-meta button h5, .single-product > div.product .wooc-product-meta button h5, .woosw-popup .woosw-item--actions a.button h5, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h5, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h5, .archive section.related .woocommerce-product-content .price h5, .archive .woocommerce-product-content .price h5, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h5, .woocommerce.archive .products.shop-view-list li .added_to_cart h5, .ft-gt h6, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label h6, .woocommerce #pxl-sidebar-area .widget_products ul a h6, .single-product .woocommerce-social-share label h6, .single-product section.related .woocommerce-product-content .price h6, .single-product #pxl-content-area div.product .wooc-product-meta button h6, .single-product > div.product .wooc-product-meta button h6, .woosw-popup .woosw-item--actions a.button h6, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button h6, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward h6, .archive section.related .woocommerce-product-content .price h6, .archive .woocommerce-product-content .price h6, .woocommerce.archive .products.shop-view-list li .add_to_cart_button h6, .woocommerce.archive .products.shop-view-list li .added_to_cart h6, .ft-gt div, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label div, .woocommerce #pxl-sidebar-area .widget_products ul a div, .single-product .woocommerce-social-share label div, .single-product section.related .woocommerce-product-content .price div, .single-product #pxl-content-area div.product .wooc-product-meta button div, .single-product > div.product .wooc-product-meta button div, .woosw-popup .woosw-item--actions a.button div, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button div, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward div, .archive section.related .woocommerce-product-content .price div, .archive .woocommerce-product-content .price div, .woocommerce.archive .products.shop-view-list li .add_to_cart_button div, .woocommerce.archive .products.shop-view-list li .added_to_cart div, .ft-gt span, .woocommerce #pxl-sidebar-area .widget_price_filter .price_label span, .woocommerce #pxl-sidebar-area .widget_products ul a span, .single-product .woocommerce-social-share label span, .single-product section.related .woocommerce-product-content .price span, .single-product #pxl-content-area div.product .wooc-product-meta button span, .single-product > div.product .wooc-product-meta button span, .woosw-popup .woosw-item--actions a.button span, .woosw-list table.woosw-items .woosw-item .woosw-item--actions a.button span, .woosw-list table.woosw-items .woosw-item .woosw-item--actions .added_to_cart.wc-forward span, .archive section.related .woocommerce-product-content .price span, .archive .woocommerce-product-content .price span, .woocommerce.archive .products.shop-view-list li .add_to_cart_button span, .woocommerce.archive .products.shop-view-list li .added_to_cart span, input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="tel"], input[type="number"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea, select, .pxl-select-higthlight, .nice-select, .comment-form-cookies-consent, .nice-select ul.list, .wrap-ctf-bill button, .wrap-ctf3 button, .wrap-ctf-page.single-sv button, .form-contact-qrcode .first p, .form-contact-qrcode button, .form-contact-qrcode.online-appointment label, .widget_shopping_cart .total strong, #pxl-cart-sidebar .pxl-widget-cart-sidebar .widget_shopping_title, .woocommerce .woocommerce-error, .woocommerce .woocommerce-info, .woocommerce .woocommerce-message, .woocommerce .button.add_to_cart_button, .woocommerce-page .button.add_to_cart_button, .woocommerce button.single_add_to_cart_button, .woocommerce-page button.single_add_to_cart_button, .woocommerce #respond input#submit, .woocommerce-page #respond input#submit, .woocommerce a.added_to_cart.wc-forward, .woocommerce-page a.added_to_cart.wc-forward, .woocommerce .button:not(.add_to_cart_button):not(.single_add_to_cart_button):not(.added_to_cart), .woocommerce-page .button:not(.add_to_cart_button):not(.single_add_to_cart_button):not(.added_to_cart), .single-product .meta .woocommerce-review__author, .single-product #pxl-content-area div.product form.cart label, .single-product > div.product form.cart label, .single-product #pxl-content-area div.product .woocommerce-tabs .woocommerce-tabs-panel--reviews .comment-reply-title, .single-product > div.product .woocommerce-tabs .woocommerce-tabs-panel--reviews .comment-reply-title, body.woocommerce-cart .woocommerce-cart-form .shop_table thead th, .pxl-shop-topbar-wrap .woocommerce-result-count, .woocommerce.archive .products.shop-view-list li .woocommerce-wishlist button, .btn-readmore-1, .pxl-related-post .pxl-swiper-slide .pxl-post--inner .pxl-post--title, .pxl-related-post .pxl-swiper-slide .pxl-post--inner .btn--readmore, input[type="submit"], .tt_navigation_cell .tt_tabs_navigation li a, .tt_timetable thead tr th, .tt_timetable .tt_hours_column, body .tt_timetable .event .event_header {
   font-family: , sans-serif;
 }
 .pxl-wobble span {
@@ -24764,13 +24764,15 @@ body .woosw-popup-content-mid .added_to_cart {
 .pxl-grid .pxl-pagination-wrap .page-numbers, .pxl-post-carousel .pxl-pagination-wrap .page-numbers {
   text-transform: uppercase;
   font-weight: 500;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  border-radius: 50%;
-  height: 48px;
+  width: 52px;
+  height: 52px;
+  border-radius: 52px;
+  background-color: var(--body_bg-color);
+  border: 1px solid rgba(102, 111, 120, 0.5);
   font-size: 16px;
 }
 @media (max-width: 575px) {
@@ -24781,19 +24783,20 @@ body .woosw-popup-content-mid .added_to_cart {
 .pxl-grid .pxl-pagination-wrap .page-numbers svg, .pxl-post-carousel .pxl-pagination-wrap .page-numbers svg {
   width: 19px;
 }
-.pxl-grid .pxl-pagination-wrap .page-numbers:hover, .pxl-post-carousel .pxl-pagination-wrap .page-numbers:hover, .pxl-grid .pxl-pagination-wrap .page-numbers.current, .pxl-post-carousel .pxl-pagination-wrap .page-numbers.current {
-  color: #fff;
-  background-color: var(--primary-color);
+.pxl-grid .pxl-pagination-wrap .page-numbers i, .pxl-post-carousel .pxl-pagination-wrap .page-numbers i {
+  font-size: 22px;
 }
-.pxl-grid .pxl-pagination-wrap .page-numbers:hover svg path, .pxl-post-carousel .pxl-pagination-wrap .page-numbers:hover svg path, .pxl-grid .pxl-pagination-wrap .page-numbers.current svg path, .pxl-post-carousel .pxl-pagination-wrap .page-numbers.current svg path {
-  fill: #fff;
+.pxl-grid .pxl-pagination-wrap .page-numbers:hover, .pxl-post-carousel .pxl-pagination-wrap .page-numbers:hover, .pxl-grid .pxl-pagination-wrap .page-numbers.current, .pxl-post-carousel .pxl-pagination-wrap .page-numbers.current, .pxl-grid .pxl-pagination-wrap .page-numbers.next, .pxl-post-carousel .pxl-pagination-wrap .page-numbers.next, .pxl-grid .pxl-pagination-wrap .page-numbers.prev, .pxl-post-carousel .pxl-pagination-wrap .page-numbers.prev {
+  color: var(--body_bg-color);
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
 .pxl-grid .pxl-pagination-wrap .pxl-pagination-links, .pxl-post-carousel .pxl-pagination-wrap .pxl-pagination-links {
-  margin-top: 16px;
+  margin-top: 68px;
   width: 100%;
   display: inline-flex;
   justify-content: center;
-  column-gap: 15px;
+  column-gap: 10px;
 }
 .pxl-load-more .pxl-load-icon {
   width: 20px;
@@ -24875,65 +24878,111 @@ body .woosw-popup-content-mid .added_to_cart {
   transform: translatey(-2px);
   box-shadow: 0 0 5px 0px var(--secondary-color);
 }
-.pxl-grid-filter {
-  margin-bottom: 50px;
-  text-align: center;
+.pxl-grid-filter .pxl--filter-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  gap: 12px;
+  padding: 0 30px;
+  flex-wrap: wrap;
 }
-@media (max-width: 1024px) {
-  .pxl-grid-filter {
-    margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .pxl-grid-filter .pxl--filter-inner {
+    padding: 0;
+    justify-content: center;
   }
 }
-.pxl-grid-filter .filter-marker {
-  position: absolute;
-  display: none;
-  border-bottom: 2px solid var(--primary-color);
-  height: 2px;
-  pointer-events: none;
-  -webkit-transform: translatey(-2px);
-  -khtml-transform: translatey(-2px);
-  -moz-transform: translatey(-2px);
-  -ms-transform: translatey(-2px);
-  -o-transform: translatey(-2px);
-  transform: translatey(-2px);
-}
-.pxl-grid-filter .filter-item {
-  cursor: pointer;
-  -webkit-transition: all 300ms linear 0ms;
-  -khtml-transition: all 300ms linear 0ms;
-  -moz-transition: all 300ms linear 0ms;
-  -ms-transition: all 300ms linear 0ms;
-  -o-transition: all 300ms linear 0ms;
-  transition: all 300ms linear 0ms;
-  position: relative;
-}
-.pxl-grid-filter .pxl--filter-inner {
-  display: inline-flex;
+.pxl-grid-filter .pxl--filter-list {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   flex-wrap: wrap;
-  border-bottom: 1px solid #ebebeb;
 }
-.pxl-grid-filter .pxl--filter-inner {
-  column-gap: 15px;
-  z-index: 2;
+@media screen and (max-width: 767px) {
+  .pxl-grid-filter .pxl--filter-list {
+    justify-content: center;
+  }
+}
+.pxl-grid-filter .pxl--filter-result {
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--body_bg-color);
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -khtml-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 0 30px;
+  border: 1px solid rgba(102, 111, 120, 0.5);
+  color: var(--secondary-color);
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
 }
 .pxl-grid-filter .filter-item {
-  z-index: 2;
+  height: 52px;
+  padding: 0 30px;
+  border-radius: 10px;
+  border: 1px solid rgba(102, 111, 120, 0.5);
+  background: var(--body_bg-color);
+  color: var(--secondary-color);
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
   position: relative;
-  text-transform: uppercase;
-  line-height: 53px;
-  padding: 0 16px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -khtml-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
-@media (max-width: 767px) {
-  .pxl-grid-filter .filter-item {
-    padding: 0 15px;
-  }
+.pxl-grid-filter .filter-item p {
+  color: inherit;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 0;
+}
+.pxl-grid-filter .filter-item:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #041427 0%, #0e488d 182.69%);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -khtml-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .pxl-grid-filter .filter-item.active, .pxl-grid-filter .filter-item:hover {
-  color: var(--primary-color);
+  color: var(--body_bg-color);
 }
-.pxl-grid-filter.style-1 {
-  text-align: center;
+.pxl-grid-filter .filter-item.active:before, .pxl-grid-filter .filter-item:hover:before {
+  opacity: 1;
 }
 .btn-readmore-1 {
   color: #444;
@@ -25747,190 +25796,7 @@ body .woosw-popup-content-mid .added_to_cart {
   -o-transform: translateX(5px);
   transform: translateX(5px);
 }
-.pxl-portfolio-carousel1 .pxl-filter-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-}
-@media screen and (max-width: 1200px) {
-  .pxl-portfolio-carousel1 .pxl-filter-container {
-    padding: 0 15px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .pxl-portfolio-carousel1 .pxl-filter-container {
-    max-width: calc(100vw - 30px);
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-}
-@media screen and (max-width: 575px) {
-  .pxl-portfolio-carousel1 .pxl-filter-container {
-    padding: 0;
-  }
-}
-.pxl-portfolio-carousel1 .carousel-nav-appended .pxl-post--featured img {
-  height: 524px;
-  width: 100%;
-}
-@media (max-width: 767px) {
-  .pxl-portfolio-carousel1 .carousel-nav-appended .pxl-post--featured img {
-    height: 450px;
-  }
-}
-.pxl-portfolio-carousel1 .carousel-no-appended .pxl-swiper-container {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-.pxl-portfolio-carousel1 .row {
-  flex-wrap: nowrap;
-}
-@media (max-width: 767px) {
-  .pxl-portfolio-carousel1 .row {
-    flex-wrap: wrap;
-  }
-}
-.pxl-portfolio-carousel1 .perspective {
-  padding: 0;
-  perspective: 1200px;
-  max-width: 238px;
-}
-@media (max-width: 767px) {
-  .pxl-portfolio-carousel1 .perspective {
-    max-width: 100%;
-  }
-}
-.pxl-portfolio-carousel1 .perspective .container {
-  margin: 0;
-  max-width: fit-content !important;
-}
-.pxl-portfolio-carousel1 .pxl-swiper-dots {
-  margin-bottom: 10px;
-  margin-top: 40px;
-}
-.pxl-portfolio-carousel1 .pxl-swiper-container {
-  margin: 0;
-}
-.pxl-portfolio-carousel1 .pxl--filter-inner {
-  justify-content: center;
-  border: none;
-  gap: 15px;
-}
-.pxl-portfolio-carousel1 .swiper-filter .pxl-grid-filter {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 0;
-}
-@media screen and (max-width: 1024px) {
-  .pxl-portfolio-carousel1 .swiper-filter .pxl-grid-filter {
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-}
-.pxl-portfolio-carousel1 .swiper-filter .filter-item {
-  font-weight: 500;
-  color: var(--secondary-color) !important;
-  text-transform: capitalize;
-  background-color: transparent;
-  border-radius: 30px;
-  line-height: 50px;
-  padding: 0 30px;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-  -webkit-border-radius: 8px;
-  -khtml-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -khtml-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-.pxl-portfolio-carousel1 .swiper-filter .filter-item.active, .pxl-portfolio-carousel1 .swiper-filter .filter-item:hover {
-  color: #fff !important;
-  background-color: var(--secondary-color);
-  border-color: var(--secondary-color);
-}
-@media screen and (max-width: 575px) {
-  .pxl-portfolio-carousel1 .swiper-filter .filter-item {
-    padding: 0 15px;
-    line-height: 40px;
-  }
-}
-@media (max-width: 1200px) {
-  .pxl-portfolio-carousel1 .wrap-arrow .pxl-swiper-pagination-bullet:first-child {
-    margin-left: 0;
-  }
-}
-@media (max-width: 767px) {
-  .pxl-portfolio-carousel1 .wrap-arrow .pxl-swiper-dots {
-    justify-content: center;
-    display: flex;
-  }
-  .pxl-portfolio-carousel1 .wrap-arrow .pxl-swiper-pagination-bullet {
-    margin: 0 10px !important;
-  }
-}
-.pxl-portfolio-carousel1 .pxl-swiper-slide {
-  display: flex;
-  align-items: center;
-}
-.pxl-portfolio-carousel1 .pxl-swiper-slide.swiper-slide-active .pxl-post--wrapper {
-  margin-top: 0;
-  margin-bottom: 8px;
-  min-height: 520px;
-}
-.pxl-portfolio-carousel1 .pxl-swiper-slide.swiper-slide-active .pxl-post--featured:after {
-  opacity: 0;
-}
-.pxl-portfolio-carousel1 .pxl-swiper-slide.swiper-slide-active .pxl-post--featured img {
-  filter: grayscale(0%);
-}
-.pxl-portfolio-carousel1 .pxl-swiper-slide.swiper-slide-active .pxl-post--inner {
-  padding-bottom: 30px;
-}
-.pxl-portfolio-carousel1 .pxl-swiper-slide.swiper-slide-active .pxl-post--content, .pxl-portfolio-carousel1 .pxl-swiper-slide.swiper-slide-active .pxl-post--button, .pxl-portfolio-carousel1 .pxl-swiper-slide.swiper-slide-active .pxl-post--divider {
-  opacity: 1;
-  transform: none;
-}
-.pxl-portfolio-carousel1 .pxl-swiper-slide.swiper-slide-active .pxl-post--content {
-  max-height: 500px;
-  margin-bottom: 50px;
-}
-.pxl-portfolio-carousel1 .pxl-post--wrapper {
-  position: relative;
-  z-index: 5;
-  display: flex;
-  align-items: center;
-}
-.pxl-portfolio-carousel1 .pxl-post--wrapper:after {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 0;
-  background-color: var(--body_bg-color);
-  border: 1px solid rgba(102, 111, 120, 0.5);
-  width: 100%;
-  height: 100%;
-  -webkit-border-radius: 20px;
-  -khtml-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  border-radius: 20px;
-  z-index: -1;
-}
-.pxl-portfolio-carousel1 .pxl-post--inner {
+.pxl-portfolio-grid-layout1 .pxl-post--inner {
   -webkit-border-radius: 20px;
   -khtml-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -25940,10 +25806,34 @@ body .woosw-popup-content-mid .added_to_cart {
   border: 1px solid rgba(102, 111, 120, 0.5);
   background: var(--body_bg-color);
   padding: 30px;
+  position: relative;
 }
-.pxl-portfolio-carousel1 .pxl-post--featured {
+.pxl-portfolio-grid-layout1 .pxl-post--inner:after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
   width: 100%;
-  height: 317px;
+  height: 100%;
+  border: 1px solid rgba(102, 111, 120, 0.5);
+  -webkit-border-radius: 19px;
+  -khtml-border-radius: 19px;
+  -moz-border-radius: 19px;
+  -ms-border-radius: 19px;
+  -o-border-radius: 19px;
+  border-radius: 19px;
+  background: var(--body_bg-color);
+  z-index: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+@media screen and (max-width: 575px) {
+  .pxl-portfolio-grid-layout1 .pxl-post--inner {
+    padding: 15px;
+  }
+}
+.pxl-portfolio-grid-layout1 .pxl-post--featured {
+  height: 316px;
   -webkit-border-radius: 10px;
   -khtml-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -25951,87 +25841,74 @@ body .woosw-popup-content-mid .added_to_cart {
   -o-border-radius: 10px;
   border-radius: 10px;
   overflow: hidden;
-  position: relative;
-  -webkit-transition: all 0.3s ease-in-out;
-  -khtml-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
 }
-.pxl-portfolio-carousel1 .pxl-post--featured:after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(9, 44, 86, 0.2);
-  opacity: 1;
-  -webkit-transition: all 0.3s ease-in-out;
-  -khtml-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-.pxl-portfolio-carousel1 .pxl-post--featured img {
+.pxl-portfolio-grid-layout1 .pxl-post--featured img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: grayscale(100%);
-  -webkit-transition: all 0.3s ease-in-out;
-  -khtml-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
 }
-.pxl-portfolio-carousel1 .pxl-post--meta {
+.pxl-portfolio-grid-layout1 .pxl-post--meta {
+  border-bottom: 1px solid rgba(102, 111, 120, 0.5);
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #dfdfdf;
-  color: var(--four-color);
-  font-family: "DM Sans";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
   position: relative;
 }
-.pxl-portfolio-carousel1 .pxl-post--meta-item {
-  padding: 16px 0;
+@media screen and (max-width: 575px) {
+  .pxl-portfolio-grid-layout1 .pxl-post--meta {
+    flex-direction: column;
+  }
 }
-.pxl-portfolio-carousel1 .pxl-post--meta-star {
+.pxl-portfolio-grid-layout1 .pxl-post--meta-star {
   position: absolute;
-  left: calc(58% - 6.5px);
-  bottom: -5.5px;
-  color: #afb4b5;
+  bottom: -11.5px;
+  left: calc(53% - 9.5px);
+  color: var(--four-color);
 }
-.pxl-portfolio-carousel1 .pxl-post--category {
-  flex: 0 0 58%;
-  max-width: 58%;
-  display: flex;
+.pxl-portfolio-grid-layout1 .pxl-post--category, .pxl-portfolio-grid-layout1 .pxl-post--client {
+  display: inline-flex;
   align-items: center;
-  gap: 8px;
-}
-.pxl-portfolio-carousel1 .pxl-post--category i {
+  gap: 10px;
+  color: var(--four-color);
   font-size: 14px;
-  color: var(--secondary-color);
-}
-.pxl-portfolio-carousel1 .pxl-post--category + .pxl-post--client {
-  border-left: 1px solid #dfdfdf;
-}
-.pxl-portfolio-carousel1 .pxl-post--client {
-  flex: 0 0 42%;
-  max-width: 42%;
-  display: flex;
-  align-items: center;
+  font-family: "DM Sans";
+  font-weight: 400;
+  line-height: 1.71;
   justify-content: center;
-  gap: 8px;
+  padding: 10px 0;
 }
-.pxl-portfolio-carousel1 .pxl-post--client i {
-  font-size: 14px;
+.pxl-portfolio-grid-layout1 .pxl-post--category i, .pxl-portfolio-grid-layout1 .pxl-post--client i {
   color: var(--secondary-color);
 }
-.pxl-portfolio-carousel1 .pxl-post--title {
-  margin-top: 27px;
+.pxl-portfolio-grid-layout1 .pxl-post--category {
+  flex: 0 0 53%;
+  justify-content: start;
+}
+.pxl-portfolio-grid-layout1 .pxl-post--category + .pxl-post--client {
+  border-left: 1px solid rgba(102, 111, 120, 0.5);
+}
+@media screen and (max-width: 575px) {
+  .pxl-portfolio-grid-layout1 .pxl-post--category + .pxl-post--client {
+    border-left: none;
+    border-top: 1px solid rgba(102, 111, 120, 0.5);
+  }
+}
+@media screen and (max-width: 575px) {
+  .pxl-portfolio-grid-layout1 .pxl-post--category {
+    flex: 0 0 100%;
+  }
+}
+.pxl-portfolio-grid-layout1 .pxl-post--client {
+  flex: 0 0 47%;
+}
+@media screen and (max-width: 575px) {
+  .pxl-portfolio-grid-layout1 .pxl-post--client {
+    flex: 0 0 100%;
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+.pxl-portfolio-grid-layout1 .pxl-post--title {
+  margin-top: 25px;
   color: var(--secondary-color);
   font-family: "DM Sans";
   font-size: 23px;
@@ -26039,606 +25916,29 @@ body .woosw-popup-content-mid .added_to_cart {
   line-height: 1.43;
   margin-bottom: 15px;
 }
-.pxl-portfolio-carousel1 .pxl-post--title a {
-  background-repeat: no-repeat;
-  background-position-y: -1px;
-  background-image: linear-gradient(transparent calc(100% - 1px), var(--secondary-color) 1px);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  animation: 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) pxl-wide-menu-underline forwards;
-}
-.pxl-portfolio-carousel1 .pxl-post--title a:hover {
-  animation: 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) pxl-wide-menu-underline-hover forwards;
-}
-.pxl-portfolio-carousel1 .pxl-post--content {
-  color: rgba(4, 20, 39, 0.7);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.625;
-  margin-bottom: 50px;
-  -webkit-transition: max-height 0.35s ease, opacity 0.35s ease, transform 0.35s ease, margin 0.35s ease;
-  -khtml-transition: max-height 0.35s ease, opacity 0.35s ease, transform 0.35s ease, margin 0.35s ease;
-  -moz-transition: max-height 0.35s ease, opacity 0.35s ease, transform 0.35s ease, margin 0.35s ease;
-  -ms-transition: max-height 0.35s ease, opacity 0.35s ease, transform 0.35s ease, margin 0.35s ease;
-  -o-transition: max-height 0.35s ease, opacity 0.35s ease, transform 0.35s ease, margin 0.35s ease;
-  transition: max-height 0.35s ease, opacity 0.35s ease, transform 0.35s ease, margin 0.35s ease;
-}
-.pxl-portfolio-carousel1 .pxl-post--button {
+.pxl-portfolio-grid-layout1 .pxl-post--readmore {
+  margin-top: 50px;
   display: flex;
   align-items: center;
   gap: 15px;
-  -webkit-transition: max-height 0.35s ease, opacity 0.35s ease, transform 0.35s ease, margin 0.35s ease;
-  -khtml-transition: max-height 0.35s ease, opacity 0.35s ease, transform 0.35s ease, margin 0.35s ease;
-  -moz-transition: max-height 0.35s ease, opacity 0.35s ease, transform 0.35s ease, margin 0.35s ease;
-  -ms-transition: max-height 0.35s ease, opacity 0.35s ease, transform 0.35s ease, margin 0.35s ease;
-  -o-transition: max-height 0.35s ease, opacity 0.35s ease, transform 0.35s ease, margin 0.35s ease;
-  transition: max-height 0.35s ease, opacity 0.35s ease, transform 0.35s ease, margin 0.35s ease;
 }
-.pxl-portfolio-carousel1 .pxl-post--button .btn.pxl-button-style-2-default.pxl-icon--right span, .pxl-portfolio-carousel1 .pxl-post--button button.pxl-button-style-2-default.pxl-icon--right span, .pxl-portfolio-carousel1 .pxl-post--button .button.pxl-button-style-2-default.pxl-icon--right span {
-  line-height: 46px;
-  height: 46px;
-  margin-right: 46px;
-  margin-left: 0;
-  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-.pxl-portfolio-carousel1 .pxl-post--button .btn.pxl-button-style-2-default.pxl-icon--right .pxl-button--icon-right, .pxl-portfolio-carousel1 .pxl-post--button button.pxl-button-style-2-default.pxl-icon--right .pxl-button--icon-right, .pxl-portfolio-carousel1 .pxl-post--button .button.pxl-button-style-2-default.pxl-icon--right .pxl-button--icon-right {
-  scale: 0;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 46px;
-  height: 46px;
-  -webkit-border-radius: 10px;
-  -khtml-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
-  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-.pxl-portfolio-carousel1 .pxl-post--button .btn.pxl-button-style-2-default.pxl-icon--right .pxl-button--icon-left, .pxl-portfolio-carousel1 .pxl-post--button button.pxl-button-style-2-default.pxl-icon--right .pxl-button--icon-left, .pxl-portfolio-carousel1 .pxl-post--button .button.pxl-button-style-2-default.pxl-icon--right .pxl-button--icon-left {
-  scale: 1;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 46px;
-  height: 46px;
-  -webkit-border-radius: 10px;
-  -khtml-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
-  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-.pxl-portfolio-carousel1 .pxl-post--button .btn.pxl-button-style-2-default.pxl-icon--right:hover span, .pxl-portfolio-carousel1 .pxl-post--button button.pxl-button-style-2-default.pxl-icon--right:hover span, .pxl-portfolio-carousel1 .pxl-post--button .button.pxl-button-style-2-default.pxl-icon--right:hover span {
-  margin-right: 0;
-  margin-left: 46px;
-}
-.pxl-portfolio-carousel1 .pxl-post--button .btn.pxl-button-style-2-default.pxl-icon--right:hover .pxl-button--icon-right, .pxl-portfolio-carousel1 .pxl-post--button button.pxl-button-style-2-default.pxl-icon--right:hover .pxl-button--icon-right, .pxl-portfolio-carousel1 .pxl-post--button .button.pxl-button-style-2-default.pxl-icon--right:hover .pxl-button--icon-right {
-  scale: 1;
-}
-.pxl-portfolio-carousel1 .pxl-post--button .btn.pxl-button-style-2-default.pxl-icon--right:hover .pxl-button--icon-left, .pxl-portfolio-carousel1 .pxl-post--button button.pxl-button-style-2-default.pxl-icon--right:hover .pxl-button--icon-left, .pxl-portfolio-carousel1 .pxl-post--button .button.pxl-button-style-2-default.pxl-icon--right:hover .pxl-button--icon-left {
-  scale: 0;
-}
-.pxl-portfolio-carousel1 .pxl-post--divider {
+.pxl-portfolio-grid-layout1 .pxl-post--readmore-divider {
+  background-color: #dfdfdf;
   width: 100%;
   height: 1px;
   flex: 1;
-  background-color: #dfdfdf;
-  -webkit-transition: opacity 0.35s ease, transform 0.35s ease;
-  -khtml-transition: opacity 0.35s ease, transform 0.35s ease;
-  -moz-transition: opacity 0.35s ease, transform 0.35s ease;
-  -ms-transition: opacity 0.35s ease, transform 0.35s ease;
-  -o-transition: opacity 0.35s ease, transform 0.35s ease;
-  transition: opacity 0.35s ease, transform 0.35s ease;
 }
-.pxl-portfolio-carousel1 .pxl-swiper-slide {
-  margin-bottom: 0;
+.pxl-portfolio-grid-layout1 .pxl-post--readmore-button.btn:hover span, .pxl-portfolio-grid-layout1 -button.pxl-post:hover span, .pxl-portfolio-grid-layout1 -button.button.pxl-post:hover span {
+  margin-left: 46px !important;
 }
-.pxl-portfolio-carousel1 .pxl-swiper-arrow-wrap {
-  width: auto;
-  left: 320px;
-  top: -131px;
-  position: absolute;
-  transform: none;
+.pxl-portfolio-grid-layout1 .pxl-post--readmore-button.btn span, .pxl-portfolio-grid-layout1 -button.pxl-post span, .pxl-portfolio-grid-layout1 -button.button.pxl-post span {
+  height: 46px;
+  line-height: 46px;
+  margin-right: 46px !important;
 }
-.pxl-portfolio-carousel2 .pxl-filter-container, .pxl-portfolio-grid-layout1 .pxl-filter-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-bottom: 50px;
-}
-@media screen and (max-width: 1200px) {
-  .pxl-portfolio-carousel2 .pxl-filter-container, .pxl-portfolio-grid-layout1 .pxl-filter-container {
-    padding: 0 15px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .pxl-portfolio-carousel2 .pxl-filter-container, .pxl-portfolio-grid-layout1 .pxl-filter-container {
-    max-width: calc(100vw - 30px);
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-}
-@media screen and (max-width: 575px) {
-  .pxl-portfolio-carousel2 .pxl-filter-container, .pxl-portfolio-grid-layout1 .pxl-filter-container {
-    padding: 0;
-  }
-}
-.pxl-portfolio-carousel2 .carousel-nav-appended .pxl-post--featured img, .pxl-portfolio-grid-layout1 .carousel-nav-appended .pxl-post--featured img {
-  height: 524px;
-  width: 100%;
-}
-@media (max-width: 767px) {
-  .pxl-portfolio-carousel2 .carousel-nav-appended .pxl-post--featured img, .pxl-portfolio-grid-layout1 .carousel-nav-appended .pxl-post--featured img {
-    height: 450px;
-  }
-}
-.pxl-portfolio-carousel2 .carousel-no-appended .pxl-swiper-container, .pxl-portfolio-grid-layout1 .carousel-no-appended .pxl-swiper-container {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-.pxl-portfolio-carousel2 .row, .pxl-portfolio-grid-layout1 .row {
-  flex-wrap: nowrap;
-}
-@media (max-width: 767px) {
-  .pxl-portfolio-carousel2 .row, .pxl-portfolio-grid-layout1 .row {
-    flex-wrap: wrap;
-  }
-}
-.pxl-portfolio-carousel2 .perspective, .pxl-portfolio-grid-layout1 .perspective {
-  padding: 0;
-  perspective: 1200px;
-  max-width: 238px;
-}
-@media (max-width: 767px) {
-  .pxl-portfolio-carousel2 .perspective, .pxl-portfolio-grid-layout1 .perspective {
-    max-width: 100%;
-  }
-}
-.pxl-portfolio-carousel2 .perspective .container, .pxl-portfolio-grid-layout1 .perspective .container {
-  margin: 0;
-  max-width: fit-content !important;
-}
-.pxl-portfolio-carousel2 .pxl-post--title-s, .pxl-portfolio-grid-layout1 .pxl-post--title-s {
-  position: absolute;
-  left: 32px;
-  bottom: 32px;
-  color: #fff;
-  font-family: Inter;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 32px;
-  margin-bottom: 0;
-}
-.pxl-portfolio-carousel2 .pxl-post--title-s a, .pxl-portfolio-grid-layout1 .pxl-post--title-s a {
-  color: inherit;
-}
-.pxl-portfolio-carousel2 .pxl-swiper-dots, .pxl-portfolio-grid-layout1 .pxl-swiper-dots {
-  margin-bottom: 10px;
-  margin-top: 40px;
-}
-.pxl-portfolio-carousel2 .pxl-swiper-dots.pxl-swiper-pagination-bullets span, .pxl-portfolio-grid-layout1 .pxl-swiper-dots.pxl-swiper-pagination-bullets span {
-  background-color: var(--primary-color);
-  opacity: 0.5;
-}
-.pxl-portfolio-carousel2 .pxl-swiper-dots.pxl-swiper-pagination-bullets span.swiper-pagination-bullet-active, .pxl-portfolio-grid-layout1 .pxl-swiper-dots.pxl-swiper-pagination-bullets span.swiper-pagination-bullet-active, .pxl-portfolio-carousel2 .pxl-swiper-dots.pxl-swiper-pagination-bullets span:hover, .pxl-portfolio-grid-layout1 .pxl-swiper-dots.pxl-swiper-pagination-bullets span:hover {
-  background-color: var(--primary-color);
-  opacity: 1;
-}
-.pxl-portfolio-carousel2 .pxl-swiper-dots.pxl-swiper-pagination-bullets span.swiper-pagination-bullet-active:before, .pxl-portfolio-grid-layout1 .pxl-swiper-dots.pxl-swiper-pagination-bullets span.swiper-pagination-bullet-active:before, .pxl-portfolio-carousel2 .pxl-swiper-dots.pxl-swiper-pagination-bullets span:hover:before, .pxl-portfolio-grid-layout1 .pxl-swiper-dots.pxl-swiper-pagination-bullets span:hover:before {
-  border-color: var(--primary-color);
-}
-.pxl-portfolio-carousel2 .pxl-swiper-container, .pxl-portfolio-grid-layout1 .pxl-swiper-container {
-  margin: 0;
-}
-.pxl-portfolio-carousel2 .pxl--filter-inner, .pxl-portfolio-grid-layout1 .pxl--filter-inner {
-  justify-content: center;
-  border: none;
-  gap: 15px;
-}
-.pxl-portfolio-carousel2 .swiper-filter .pxl-grid-filter, .pxl-portfolio-grid-layout1 .swiper-filter .pxl-grid-filter {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 0;
-}
-@media screen and (max-width: 1024px) {
-  .pxl-portfolio-carousel2 .swiper-filter .pxl-grid-filter, .pxl-portfolio-grid-layout1 .swiper-filter .pxl-grid-filter {
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-}
-.pxl-portfolio-carousel2 .swiper-filter .filter-item, .pxl-portfolio-grid-layout1 .swiper-filter .filter-item {
-  font-weight: 500;
-  color: var(--secondary-color) !important;
-  text-transform: capitalize;
-  background-color: transparent;
-  border-radius: 30px;
-  line-height: 50px;
-  padding: 0 30px;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-  -webkit-border-radius: 8px;
-  -khtml-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -khtml-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-.pxl-portfolio-carousel2 .swiper-filter .filter-item.active, .pxl-portfolio-grid-layout1 .swiper-filter .filter-item.active, .pxl-portfolio-carousel2 .swiper-filter .filter-item:hover, .pxl-portfolio-grid-layout1 .swiper-filter .filter-item:hover {
-  color: #fff !important;
-  background-color: var(--secondary-color);
-  border-color: var(--secondary-color);
-}
-@media screen and (max-width: 575px) {
-  .pxl-portfolio-carousel2 .swiper-filter .filter-item, .pxl-portfolio-grid-layout1 .swiper-filter .filter-item {
-    padding: 0 15px;
-    line-height: 40px;
-  }
-}
-@media (max-width: 1200px) {
-  .pxl-portfolio-carousel2 .wrap-arrow .pxl-swiper-pagination-bullet:first-child, .pxl-portfolio-grid-layout1 .wrap-arrow .pxl-swiper-pagination-bullet:first-child {
-    margin-left: 0;
-  }
-}
-@media (max-width: 767px) {
-  .pxl-portfolio-carousel2 .wrap-arrow .pxl-swiper-dots, .pxl-portfolio-grid-layout1 .wrap-arrow .pxl-swiper-dots {
-    justify-content: center;
-    display: flex;
-  }
-  .pxl-portfolio-carousel2 .wrap-arrow .pxl-swiper-pagination-bullet, .pxl-portfolio-grid-layout1 .wrap-arrow .pxl-swiper-pagination-bullet {
-    margin: 0 10px !important;
-  }
-}
-.pxl-portfolio-carousel2 .pxl-grid-item, .pxl-portfolio-grid-layout1 .pxl-grid-item, .pxl-portfolio-carousel2 .pxl-swiper-slide, .pxl-portfolio-grid-layout1 .pxl-swiper-slide {
-  --height-before: 439px;
-  --height-after: 316px;
-}
-.pxl-portfolio-carousel2 .pxl-grid-item .pxl-post--inner, .pxl-portfolio-grid-layout1 .pxl-grid-item .pxl-post--inner, .pxl-portfolio-carousel2 .pxl-swiper-slide .pxl-post--inner, .pxl-portfolio-grid-layout1 .pxl-swiper-slide .pxl-post--inner {
-  padding: 30px;
-  border-radius: 25px;
-  background: #fff;
-  -webkit-transition: all 0.3s linear;
-  -khtml-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -ms-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-@media screen and (max-width: 767px) {
-  .pxl-portfolio-carousel2 .pxl-grid-item .pxl-post--inner, .pxl-portfolio-grid-layout1 .pxl-grid-item .pxl-post--inner, .pxl-portfolio-carousel2 .pxl-swiper-slide .pxl-post--inner, .pxl-portfolio-grid-layout1 .pxl-swiper-slide .pxl-post--inner {
-    padding: 15px;
-  }
-}
-.pxl-portfolio-carousel2 .pxl-grid-item .pxl-post--inner:hover .pxl-post--featured img, .pxl-portfolio-grid-layout1 .pxl-grid-item .pxl-post--inner:hover .pxl-post--featured img, .pxl-portfolio-carousel2 .pxl-swiper-slide .pxl-post--inner:hover .pxl-post--featured img, .pxl-portfolio-grid-layout1 .pxl-swiper-slide .pxl-post--inner:hover .pxl-post--featured img {
-  height: var(--height-after);
-  mask-image: url("../img/mask-port-2.png");
-  -webkit-mask-image: url("../img/mask-port-2.png");
-  mask-size: cover;
-  -webkit-mask-size: cover;
-  mask-repeat: no-repeat;
-  -webkit-mask-repeat: no-repeat;
-  mask-position: center;
-  -webkit-mask-position: center;
-}
-.pxl-portfolio-carousel2 .pxl-grid-item .pxl-post--inner:hover .pxl-post--featured .pxl-post--category, .pxl-portfolio-grid-layout1 .pxl-grid-item .pxl-post--inner:hover .pxl-post--featured .pxl-post--category, .pxl-portfolio-carousel2 .pxl-swiper-slide .pxl-post--inner:hover .pxl-post--featured .pxl-post--category, .pxl-portfolio-grid-layout1 .pxl-swiper-slide .pxl-post--inner:hover .pxl-post--featured .pxl-post--category {
-  bottom: calc(var(--height-before) - var(--height-after));
-}
-.pxl-portfolio-carousel2 .pxl-grid-item .pxl-post--inner:hover .pxl-post--button, .pxl-portfolio-grid-layout1 .pxl-grid-item .pxl-post--inner:hover .pxl-post--button, .pxl-portfolio-carousel2 .pxl-swiper-slide .pxl-post--inner:hover .pxl-post--button, .pxl-portfolio-grid-layout1 .pxl-swiper-slide .pxl-post--inner:hover .pxl-post--button {
-  top: 0;
-  right: 0;
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 15px;
-}
-.pxl-portfolio-carousel2 .pxl-grid-item .pxl-post--inner:hover .pxl-post--title, .pxl-portfolio-grid-layout1 .pxl-grid-item .pxl-post--inner:hover .pxl-post--title, .pxl-portfolio-carousel2 .pxl-swiper-slide .pxl-post--inner:hover .pxl-post--title, .pxl-portfolio-grid-layout1 .pxl-swiper-slide .pxl-post--inner:hover .pxl-post--title {
-  transform: translateY(calc((var(--height-before) - var(--height-after)) * -1));
-}
-.pxl-portfolio-carousel2 .pxl-grid-item .pxl-post--inner:hover .pxl-post--body, .pxl-portfolio-grid-layout1 .pxl-grid-item .pxl-post--inner:hover .pxl-post--body, .pxl-portfolio-carousel2 .pxl-swiper-slide .pxl-post--inner:hover .pxl-post--body, .pxl-portfolio-grid-layout1 .pxl-swiper-slide .pxl-post--inner:hover .pxl-post--body {
-  opacity: 1;
-  transform: translateY(0px);
-}
-.pxl-portfolio-carousel2 .pxl-grid-item .pxl-post--inner .pxl-post--featured, .pxl-portfolio-grid-layout1 .pxl-grid-item .pxl-post--inner .pxl-post--featured, .pxl-portfolio-carousel2 .pxl-swiper-slide .pxl-post--inner .pxl-post--featured, .pxl-portfolio-grid-layout1 .pxl-swiper-slide .pxl-post--inner .pxl-post--featured {
-  position: relative;
-  height: var(--height-before);
-  -webkit-border-radius: 18px;
-  -khtml-border-radius: 18px;
-  -moz-border-radius: 18px;
-  -ms-border-radius: 18px;
-  -o-border-radius: 18px;
-  border-radius: 18px;
-  -webkit-transition: all 0.3s linear;
-  -khtml-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -ms-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.pxl-portfolio-carousel2 .pxl-grid-item .pxl-post--inner .pxl-post--featured img, .pxl-portfolio-grid-layout1 .pxl-grid-item .pxl-post--inner .pxl-post--featured img, .pxl-portfolio-carousel2 .pxl-swiper-slide .pxl-post--inner .pxl-post--featured img, .pxl-portfolio-grid-layout1 .pxl-swiper-slide .pxl-post--inner .pxl-post--featured img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  -webkit-transition: all 0.3s linear;
-  -khtml-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -ms-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-  top: 0;
-  left: 0;
-  -webkit-border-radius: 18px;
-  -khtml-border-radius: 18px;
-  -moz-border-radius: 18px;
-  -ms-border-radius: 18px;
-  -o-border-radius: 18px;
-  border-radius: 18px;
-}
-.pxl-portfolio-carousel2 .pxl-grid-item .pxl-post--inner .pxl-post--category, .pxl-portfolio-grid-layout1 .pxl-grid-item .pxl-post--inner .pxl-post--category, .pxl-portfolio-carousel2 .pxl-swiper-slide .pxl-post--inner .pxl-post--category, .pxl-portfolio-grid-layout1 .pxl-swiper-slide .pxl-post--inner .pxl-post--category {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 35px;
-  background-color: var(--primary-color);
-  border-radius: 0px 18px;
-  padding: 0 20px;
-  color: #fff;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  -webkit-transition: all 0.3s linear;
-  -khtml-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -ms-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.pxl-portfolio-carousel2 .pxl-grid-item .pxl-post--inner .pxl-post--category a, .pxl-portfolio-grid-layout1 .pxl-grid-item .pxl-post--inner .pxl-post--category a, .pxl-portfolio-carousel2 .pxl-swiper-slide .pxl-post--inner .pxl-post--category a, .pxl-portfolio-grid-layout1 .pxl-swiper-slide .pxl-post--inner .pxl-post--category a {
-  color: #fff;
-  font-size: 12px;
-  font-weight: 400;
-}
-.pxl-portfolio-carousel2 .pxl-grid-item .pxl-post--inner .pxl-post--button, .pxl-portfolio-grid-layout1 .pxl-grid-item .pxl-post--inner .pxl-post--button, .pxl-portfolio-carousel2 .pxl-swiper-slide .pxl-post--inner .pxl-post--button, .pxl-portfolio-grid-layout1 .pxl-swiper-slide .pxl-post--inner .pxl-post--button {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  transform-style: preserve-3d;
-  overflow: hidden;
-  margin-left: auto;
-  width: 59px;
-  height: 59px;
-  border-radius: 50%;
-  display: flex;
-  background-color: #fff;
-  color: var(--secondary-color);
-  justify-content: center;
-  text-transform: capitalize;
-  align-items: center;
-  column-gap: 12px;
-  -webkit-transition: all 0.3s linear;
-  -khtml-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -ms-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.pxl-portfolio-carousel2 .pxl-grid-item .pxl-post--inner .pxl-post--button .button-arrow-hover, .pxl-portfolio-grid-layout1 .pxl-grid-item .pxl-post--inner .pxl-post--button .button-arrow-hover, .pxl-portfolio-carousel2 .pxl-swiper-slide .pxl-post--inner .pxl-post--button .button-arrow-hover, .pxl-portfolio-grid-layout1 .pxl-swiper-slide .pxl-post--inner .pxl-post--button .button-arrow-hover {
-  position: relative;
-  overflow: hidden;
-  font-size: 0;
-  line-height: 0;
-  display: block;
-}
-.pxl-portfolio-carousel2 .pxl-grid-item .pxl-post--inner .pxl-post--button .button-arrow-hover svg, .pxl-portfolio-grid-layout1 .pxl-grid-item .pxl-post--inner .pxl-post--button .button-arrow-hover svg, .pxl-portfolio-carousel2 .pxl-swiper-slide .pxl-post--inner .pxl-post--button .button-arrow-hover svg, .pxl-portfolio-grid-layout1 .pxl-swiper-slide .pxl-post--inner .pxl-post--button .button-arrow-hover svg {
-  display: inline-block;
-  transition: transform 0.3s ease-out;
-}
-.pxl-portfolio-carousel2 .pxl-grid-item .pxl-post--inner .pxl-post--button .button-arrow-hover svg:first-child, .pxl-portfolio-grid-layout1 .pxl-grid-item .pxl-post--inner .pxl-post--button .button-arrow-hover svg:first-child, .pxl-portfolio-carousel2 .pxl-swiper-slide .pxl-post--inner .pxl-post--button .button-arrow-hover svg:first-child, .pxl-portfolio-grid-layout1 .pxl-swiper-slide .pxl-post--inner .pxl-post--button .button-arrow-hover svg:first-child {
-  transform: translatex(0) translatey(0) translatez(0);
-}
-.pxl-portfolio-carousel2 .pxl-grid-item .pxl-post--inner .pxl-post--button .button-arrow-hover svg:last-child, .pxl-portfolio-grid-layout1 .pxl-grid-item .pxl-post--inner .pxl-post--button .button-arrow-hover svg:last-child, .pxl-portfolio-carousel2 .pxl-swiper-slide .pxl-post--inner .pxl-post--button .button-arrow-hover svg:last-child, .pxl-portfolio-grid-layout1 .pxl-swiper-slide .pxl-post--inner .pxl-post--button .button-arrow-hover svg:last-child {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translatex(-200%) translatey(200%) translatez(0);
-}
-.pxl-portfolio-carousel2 .pxl-grid-item .pxl-post--inner .pxl-post--button:hover svg:first-child, .pxl-portfolio-grid-layout1 .pxl-grid-item .pxl-post--inner .pxl-post--button:hover svg:first-child, .pxl-portfolio-carousel2 .pxl-swiper-slide .pxl-post--inner .pxl-post--button:hover svg:first-child, .pxl-portfolio-grid-layout1 .pxl-swiper-slide .pxl-post--inner .pxl-post--button:hover svg:first-child {
-  transform: translatex(200%) translatey(-200%) translatez(0);
-}
-.pxl-portfolio-carousel2 .pxl-grid-item .pxl-post--inner .pxl-post--button:hover svg:last-child, .pxl-portfolio-grid-layout1 .pxl-grid-item .pxl-post--inner .pxl-post--button:hover svg:last-child, .pxl-portfolio-carousel2 .pxl-swiper-slide .pxl-post--inner .pxl-post--button:hover svg:last-child, .pxl-portfolio-grid-layout1 .pxl-swiper-slide .pxl-post--inner .pxl-post--button:hover svg:last-child {
-  transform: translatex(0) translatey(0) translatez(0);
-}
-.pxl-portfolio-carousel2 .pxl-grid-item .pxl-post--inner .pxl-post--holder, .pxl-portfolio-grid-layout1 .pxl-grid-item .pxl-post--inner .pxl-post--holder, .pxl-portfolio-carousel2 .pxl-swiper-slide .pxl-post--inner .pxl-post--holder, .pxl-portfolio-grid-layout1 .pxl-swiper-slide .pxl-post--inner .pxl-post--holder {
-  position: relative;
-}
-.pxl-portfolio-carousel2 .pxl-grid-item .pxl-post--inner .pxl-post--title, .pxl-portfolio-grid-layout1 .pxl-grid-item .pxl-post--inner .pxl-post--title, .pxl-portfolio-carousel2 .pxl-swiper-slide .pxl-post--inner .pxl-post--title, .pxl-portfolio-grid-layout1 .pxl-swiper-slide .pxl-post--inner .pxl-post--title {
-  position: relative;
-  margin-top: 16px;
-  margin-bottom: 0;
-  font-weight: 600;
-  font-size: 20px;
-  text-transform: capitalize;
-  transform: translateY(0);
-  color: var(--secondary-color);
-  -webkit-transition: all 0.3s linear;
-  -khtml-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -ms-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.pxl-portfolio-carousel2 .pxl-grid-item .pxl-post--inner .pxl-post--body, .pxl-portfolio-grid-layout1 .pxl-grid-item .pxl-post--inner .pxl-post--body, .pxl-portfolio-carousel2 .pxl-swiper-slide .pxl-post--inner .pxl-post--body, .pxl-portfolio-grid-layout1 .pxl-swiper-slide .pxl-post--inner .pxl-post--body {
-  opacity: 0;
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  transform: translateY(calc((var(--height-before) - var(--height-after)) * -1));
-  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-.pxl-portfolio-carousel2 .pxl-grid-item .pxl-post--inner .pxl-post--content, .pxl-portfolio-grid-layout1 .pxl-grid-item .pxl-post--inner .pxl-post--content, .pxl-portfolio-carousel2 .pxl-swiper-slide .pxl-post--inner .pxl-post--content, .pxl-portfolio-grid-layout1 .pxl-swiper-slide .pxl-post--inner .pxl-post--content {
-  font-weight: 400;
-  line-height: 25.6px;
-  letter-spacing: -0.16px;
-  margin-bottom: 20px;
-  color: rgba(4, 20, 39, 0.8);
-  font-size: 15px;
-  line-height: 1.61;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-}
-.pxl-portfolio-carousel2 .pxl-grid-item .pxl-post--inner .pxl-post--meta, .pxl-portfolio-grid-layout1 .pxl-grid-item .pxl-post--inner .pxl-post--meta, .pxl-portfolio-carousel2 .pxl-swiper-slide .pxl-post--inner .pxl-post--meta, .pxl-portfolio-grid-layout1 .pxl-swiper-slide .pxl-post--inner .pxl-post--meta {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.pxl-portfolio-carousel2 .pxl-grid-item .pxl-post--inner .pxl-post--meta .pxl-post--client, .pxl-portfolio-grid-layout1 .pxl-grid-item .pxl-post--inner .pxl-post--meta .pxl-post--client, .pxl-portfolio-carousel2 .pxl-swiper-slide .pxl-post--inner .pxl-post--meta .pxl-post--client, .pxl-portfolio-grid-layout1 .pxl-swiper-slide .pxl-post--inner .pxl-post--meta .pxl-post--client, .pxl-portfolio-carousel2 .pxl-grid-item .pxl-post--inner .pxl-post--meta .pxl-post--address, .pxl-portfolio-grid-layout1 .pxl-grid-item .pxl-post--inner .pxl-post--meta .pxl-post--address, .pxl-portfolio-carousel2 .pxl-swiper-slide .pxl-post--inner .pxl-post--meta .pxl-post--address, .pxl-portfolio-grid-layout1 .pxl-swiper-slide .pxl-post--inner .pxl-post--meta .pxl-post--address {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  color: var(--secondary-color);
-  font-family: Satoshi;
-  font-size: 12px;
-  font-weight: 500;
-}
-.pxl-portfolio-carousel2 .pxl-swiper-slide, .pxl-portfolio-grid-layout1 .pxl-swiper-slide {
-  margin-bottom: 0;
-}
-.pxl-portfolio-grid-layout1 .pxl-grid-filter .filter-item {
-  display: inline-flex;
-  height: 50px;
-  line-height: 50px;
-  padding: 0 30px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  font-weight: 500;
-  font-size: 15px;
-  border: 1px solid var(--primary-color);
-  text-transform: none;
-  background: #fff;
-  -webkit-transition: all 0.3s ease-in-out;
-  -khtml-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-.pxl-portfolio-grid-layout1 .pxl-grid-filter .filter-item.active, .pxl-portfolio-grid-layout1 .pxl-grid-filter .filter-item:hover {
-  color: #fff;
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
-}
-.pxl-portfolio-grid-layout1 .pxl-grid-pagination {
-  margin-top: 50px;
-}
-.pxl-portfolio-grid-layout1 .pxl-pagination-wrap {
-  margin-top: 50px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.pxl-portfolio-grid-layout1 .pxl-pagination-wrap .page-numbers {
-  width: 50px;
-  height: 50px;
-  -webkit-border-radius: 8px;
-  -khtml-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;
-  background-color: var(--primary-color);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -khtml-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -ms-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-.pxl-portfolio-grid-layout1 .pxl-pagination-wrap .page-numbers svg {
-  color: #fff;
-}
-.pxl-portfolio-grid-layout1 .pxl-pagination-wrap .page-numbers:hover {
-  background-color: var(--secondary-color);
-}
-.pxl-portfolio-grid-layout1 .pxl-pagination-wrap .page-numbers:hover.next svg {
-  animation: pxl_right_from_left 0.3s ease-in-out;
-  animation-fill-mode: forwards;
-}
-.pxl-portfolio-grid-layout1 .pxl-pagination-wrap .page-numbers:hover.prev svg {
-  animation: pxl_left_from_right 0.3s ease-in-out;
-  animation-fill-mode: forwards;
-}
-.pxl-portfolio-grid-layout1 .pxl-pagination-wrap .pxl-page-number-wrap {
-  border-radius: 8px;
-  border: 1px solid rgba(151, 181, 69, 0.3);
-  background-color: #fff;
-  height: 52px;
-  display: inline-flex;
-  align-items: center;
-  gap: 20px;
-  padding: 0 8px;
-}
-.pxl-portfolio-grid-layout1 .pxl-pagination-wrap .pxl-page-number-wrap .page-numbers {
-  width: 35px;
-  height: 35px;
-  border-radius: 5px;
-  background: transparent;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: #0f3714;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 600;
-  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -khtml-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -ms-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-.pxl-portfolio-grid-layout1 .pxl-pagination-wrap .pxl-page-number-wrap .page-numbers.current, .pxl-portfolio-grid-layout1 .pxl-pagination-wrap .pxl-page-number-wrap .page-numbers:hover {
-  background-color: #eaf0da;
+.pxl-portfolio-grid-layout1 .pxl-post--readmore-button.btn .pxl-button--icon, .pxl-portfolio-grid-layout1 -button.pxl-post .pxl-button--icon, .pxl-portfolio-grid-layout1 -button.button.pxl-post .pxl-button--icon {
+  width: 46px;
+  height: 46px;
 }
 .pxl-service-grid-layout1 {
   --gradient-color-1: #45349a;

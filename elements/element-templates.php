@@ -326,7 +326,7 @@ function northway_get_portfolio_grid_layout1($posts = [], $settings = [])
 {
     extract($settings);
 
-    $images_size = !empty($img_size) ? $img_size : '464x545';
+    $images_size = !empty($img_size) ? $img_size : '570x316';
 
     if (is_array($posts)):
         foreach ($posts as $key => $post):
@@ -362,7 +362,7 @@ function northway_get_portfolio_grid_layout1($posts = [], $settings = [])
 
             $img_id = get_post_thumbnail_id($post->ID);
             $client = get_post_meta($post->ID, 'portfolio_client', true);
-            $address = get_post_meta($post->ID, 'portfolio_address', true);
+
             if (has_post_thumbnail($post->ID) && wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), false)):
                 if ($img_id) {
                     $img = pxl_get_image_by_size(array(
@@ -378,49 +378,27 @@ function northway_get_portfolio_grid_layout1($posts = [], $settings = [])
                     <div class="pxl-post--inner <?php echo esc_attr($pxl_animate); ?>" data-wow-duration="1.2s">
                         <div class="pxl-post--featured">
                             <?php echo wp_kses_post($thumbnail); ?>
-                            <?php if ($show_button == 'true'): ?>
-                                <a class="pxl-post--button" href="<?php echo esc_url(get_permalink($post->ID)); ?>">
-                                    <span class="button-arrow-hover">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                            viewBox="0 0 12 12" fill="none">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M2.17427 1.61558C2.1395 1.10784 2.52294 0.668017 3.03065 0.633256L10.4921 0.122165C10.7577 0.104007 11.0183 0.20166 11.2066 0.389926C11.3949 0.57828 11.4925 0.838829 11.4743 1.10442L10.9632 8.56584C10.9285 9.07356 10.4887 9.45705 9.98099 9.4223C9.47318 9.38746 9.08987 8.94768 9.12462 8.43996L9.46762 3.43208L1.6499 11.2498C1.29004 11.6097 0.706571 11.6096 0.346719 11.2498C-0.0131339 10.8899 -0.0131425 10.3065 0.346719 9.94661L8.16443 2.1289L3.15659 2.47193C2.64888 2.50669 2.20904 2.12332 2.17427 1.61558Z"
-                                                fill="currentColor" />
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                            viewBox="0 0 12 12" fill="none">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M2.17427 1.61558C2.1395 1.10784 2.52294 0.668017 3.03065 0.633256L10.4921 0.122165C10.7577 0.104007 11.0183 0.20166 11.2066 0.389926C11.3949 0.57828 11.4925 0.838829 11.4743 1.10442L10.9632 8.56584C10.9285 9.07356 10.4887 9.45705 9.98099 9.4223C9.47318 9.38746 9.08987 8.94768 9.12462 8.43996L9.46762 3.43208L1.6499 11.2498C1.29004 11.6097 0.706571 11.6096 0.346719 11.2498C-0.0131339 10.8899 -0.0131425 10.3065 0.346719 9.94661L8.16443 2.1289L3.15659 2.47193C2.64888 2.50669 2.20904 2.12332 2.17427 1.61558Z"
-                                                fill="currentColor" />
-                                        </svg>
-                                    </span>
-                                </a>
-                            <?php endif; ?>
-                            <?php if ($show_category == 'true'): ?>
-                                <div class="pxl-post--category">
-                                    <?php
-                                    $terms = get_the_terms($post->ID, 'portfolio-category');
-                                    if ($terms && !is_wp_error($terms)) {
-                                        $term_links = array();
-                                        foreach ($terms as $term) {
-                                            $term_links[] = '<a href="' . esc_url(get_term_link($term)) . '">' . esc_html($term->name) . '</a>';
-                                        }
-                                        $separator = '<svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
-                                  <path d="M1.98476 9.5164L0.103296 11.3978C-0.034432 11.5356 -0.034432 11.7589 0.103296 11.8967C0.172195 11.9656 0.262446 12 0.352721 12C0.442972 12 0.53327 11.9656 0.602122 11.8967L2.4806 10.0182C2.39938 9.94732 2.32007 9.87357 2.2431 9.79661C2.15276 9.70624 2.06676 9.61265 1.98476 9.5164Z" fill="currentColor"/>
-                                  <path d="M11.2709 0C10.5568 0 9.14401 0.0577531 7.53638 0.433501V3.96486L11.4991 0.00218691C11.4364 0.000940605 11.3602 0 11.2709 0Z" fill="currentColor"/>
-                                  <path d="M12.0359 0.46306L8.03523 4.46366H11.6152C11.6693 4.22933 11.7189 3.9912 11.7632 3.74911C12.0567 2.14439 12.0475 0.855692 12.0359 0.46306Z" fill="currentColor"/>
-                                  <path d="M5.20862 7.29025H10.6296C10.7043 7.1386 10.7763 6.98406 10.8454 6.82613C11.0726 6.30614 11.2695 5.75208 11.4346 5.16912H7.32975L5.20862 7.29025Z" fill="currentColor"/>
-                                  <path d="M6.8309 0.616566C6.06631 0.835092 5.3585 1.10606 4.70981 1.42826L4.70974 6.79145L6.8309 4.67031V0.616566Z" fill="currentColor"/>
-                                  <path d="M2.4806 10.0182C3.33298 10.762 4.41254 11.1683 5.55466 11.1683C6.8056 11.1683 7.98166 10.6812 8.8662 9.79661C9.38629 9.2765 9.84855 8.67334 10.2487 7.9957H4.50314L2.4806 10.0182Z" fill="currentColor"/>
-                                  <path d="M4.00436 1.81222C3.34446 2.20602 2.75634 2.66034 2.24315 3.17355C1.3586 4.05807 0.871441 5.23414 0.871441 6.48507C0.871441 7.60817 1.26433 8.6708 1.98476 9.5164L4.00429 7.4969L4.00436 1.81222Z" fill="currentColor"/>
-                                </svg>';
-                                        echo implode($separator, $term_links);
-                                    }
-                                    ?>
-                                </div>
-                            <?php endif; ?>
                         </div>
                         <div class="pxl-post--holder">
+                            <?php if ($show_client == 'true' || $show_category == 'true'): ?>
+                                <div class="pxl-post--meta">
+                                    <?php if ($show_category == 'true'): ?>
+                                        <div class="pxl-post--category">
+                                            <i class="flaticon-tag"></i>
+                                            <span>
+                                                <?php the_terms($post->ID, 'portfolio-category', '', ' '); ?>
+                                            </span>
+                                        </div>
+                                    <?php endif; ?>
+                                    <?php if ($show_client == 'true'): ?>
+                                        <div class="pxl-post--client">
+                                            <i class="flaticon-user"></i>
+                                            <span><?php echo esc_html__('Client', 'northway'); ?>: <?php echo esc_html($client); ?></span>
+                                        </div>
+                                    <?php endif; ?>
+                                    <i class="flaticon-star pxl-post--meta-star"></i>
+                                </div>
+                            <?php endif; ?>
                             <h5 class="pxl-post--title">
                                 <a href="<?php echo esc_url(get_permalink($post->ID)); ?>"><?php echo esc_html(get_the_title($post->ID)); ?></a>
                             </h5>
@@ -434,31 +412,20 @@ function northway_get_portfolio_grid_layout1($posts = [], $settings = [])
                                         <?php endif; ?>
                                     </div>
                                 <?php endif; ?>
-                                <?php if ($show_client == 'true' || $show_address == 'true'): ?>
-                                    <div class="pxl-post--meta">
-                                        <?php if ($show_client == 'true'): ?>
-                                            <div class="pxl-post--client">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12"
-                                                    viewBox="0 0 11 12" fill="none">
-                                                    <path d="M2.04083 3C2.04083 2.40666 2.21678 1.82664 2.54642 1.33329C2.87606 0.839943 3.3446 0.455425 3.89278 0.228363C4.44096 0.00129985 5.04416 -0.0581101 5.6261 0.0576455C6.20804 0.173401 6.74259 0.459123 7.16215 0.878681C7.5817 1.29824 7.86743 1.83279 7.98318 2.41473C8.09894 2.99667 8.03953 3.59987 7.81247 4.14805C7.5854 4.69623 7.20088 5.16476 6.70754 5.49441C6.21419 5.82405 5.63417 6 5.04083 6C4.24546 5.99909 3.48292 5.68273 2.92051 5.12032C2.3581 4.5579 2.04174 3.79537 2.04083 3ZM10.0551 10.4421C9.99395 10.1827 9.90931 9.92938 9.80225 9.68528C9.03811 7.941 7.21411 6.85714 5.04083 6.85714C2.57354 6.85714 0.563115 8.28171 0.0376868 10.4014C-0.00923371 10.5912 -0.0123843 10.7891 0.0284734 10.9803C0.0693312 11.1715 0.153127 11.3508 0.273523 11.5048C0.393918 11.6588 0.54776 11.7834 0.723411 11.8692C0.899062 11.955 1.09192 11.9997 1.2874 12H8.79597C8.99232 12.0004 9.1862 11.9561 9.36286 11.8704C9.53953 11.7847 9.69434 11.6599 9.81554 11.5054C9.93349 11.358 10.0164 11.1856 10.0579 11.0014C10.0994 10.8172 10.0984 10.6259 10.0551 10.4421Z"
-                                                        fill="currentColor" />
-                                                </svg>
-                                                <span><?php echo esc_html($client); ?></span>
+                                <div class="pxl-post--readmore">
+                                    <div class="pxl-post--readmore-divider"></div>
+                                    <?php if ($show_button == 'true'): ?>
+                                        <a class="btn pxl-button-style-2-default btn-default inline pxl-icon--right pxl-post--readmore-button" href="<?php echo esc_url(get_permalink($post->ID)); ?>">
+                                            <div class="pxl-button--icon pxl-button--icon-left">
+                                                <i class="flaticon-arrow"></i>
                                             </div>
-                                        <?php endif; ?>
-                                        <?php if ($show_address == 'true'): ?>
-                                            <div class="pxl-post--address">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="12"
-                                                    viewBox="0 0 10 12" fill="none">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                                        d="M4.83871 0C7.50939 0 9.67742 2.17629 9.67742 4.85714C9.67742 6.25314 8.98349 7.69 8.11224 8.89657C6.89573 10.5817 5.37438 11.8103 5.37438 11.8103V11.8106C5.06157 12.0631 4.61585 12.0631 4.30304 11.8106V11.8103C4.30304 11.8103 2.78169 10.5817 1.56518 8.89657C0.693926 7.69 0 6.25314 0 4.85714C0 2.17629 2.16803 0 4.83871 0ZM4.83871 2.85714C5.93824 2.85714 6.83112 3.75343 6.83112 4.85714C6.83112 5.96086 5.93824 6.85714 4.83871 6.85714C3.73918 6.85714 2.8463 5.96086 2.8463 4.85714C2.8463 3.75343 3.73918 2.85714 4.83871 2.85714Z"
-                                                        fill="currentColor" />
-                                                </svg>
-                                                <span><?php echo esc_html($address); ?></span>
+                                            <span class="pxl--btn-text"><?php echo esc_html__('Read More', 'northway'); ?></span>
+                                            <div class="pxl-button--icon pxl-button--icon-right">
+                                                <i class="flaticon-arrow"></i>
                                             </div>
-                                        <?php endif; ?>
-                                    </div>
-                                <?php endif; ?>
+                                        </a>
+                                    <?php endif; ?>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -809,6 +776,7 @@ function northway_load_more_post_grid()
                     'paged' => $settings['paged'],
                     'posts' => $posts,
                     'max' => $max,
+                    'total' => $total,
                     'result_count' => $result_count,
                 ),
             )

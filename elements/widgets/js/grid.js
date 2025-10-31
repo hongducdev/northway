@@ -87,6 +87,25 @@
                                     }, 300);
                                 }
                             }
+
+                            // Update filter result count for non-AJAX filtering
+                            var $resultCount = $grid_scope.find(
+                                ".pxl--filter-result .pxl--result-count"
+                            );
+                            if ($resultCount.length) {
+                                var count = 0;
+                                if (term_slug === "*") {
+                                    count =
+                                        $grid_masonry.find(
+                                            ".pxl-grid-item"
+                                        ).length;
+                                } else {
+                                    count = $grid_masonry.find(
+                                        ".pxl-grid-item" + term_slug
+                                    ).length;
+                                }
+                                $resultCount.text(count);
+                            }
                         }
                     }
                 );
@@ -250,6 +269,21 @@
                             $grid_scope
                                 .find(".pxl-grid-pagination")
                                 .html(res.data.pagin_html);
+                        }
+
+                        // Update filter result count if present
+                        var $resultCount = $grid_scope.find(
+                            ".pxl--filter-result .pxl--result-count"
+                        );
+                        if ($resultCount.length) {
+                            if (typeof res.data.total !== "undefined") {
+                                $resultCount.text(res.data.total);
+                            } else if (
+                                res.data.posts &&
+                                typeof res.data.posts.length !== "undefined"
+                            ) {
+                                $resultCount.text(res.data.posts.length);
+                            }
                         }
                     }
                 },
