@@ -162,6 +162,10 @@ function northway_get_grid_layout_options($post_type_name){
                 'label' => esc_html__( 'Layout 1', 'northway' ),
                 'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_post_grid/portfolio-layout1.jpg'
             ],
+            'portfolio-2' => [
+                'label' => esc_html__( 'Layout 2', 'northway' ),
+                'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_post_grid/portfolio-layout2.jpg'
+            ],
         ];
         break;
 
