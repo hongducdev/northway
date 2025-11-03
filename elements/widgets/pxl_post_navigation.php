@@ -22,10 +22,16 @@
                                 ]
                             ),
                             array(
-                                'name' => 'link_grid_page',
-                                'label' => esc_html__('Link Gird Page', 'northway' ),
+                                'name' => 'text_prev',
+                                'label' => esc_html__('Text Prev', 'northway'),
                                 'type' => \Elementor\Controls_Manager::TEXT,
-                                'default' => esc_html__('#', 'northway'),
+                                'default' => esc_html__('Previous Case', 'northway'),
+                            ),
+                            array(
+                                'name' => 'text_next',
+                                'label' => esc_html__('Text Next', 'northway'),
+                                'type' => \Elementor\Controls_Manager::TEXT,
+                                'default' => esc_html__('Next Case', 'northway'),
                             ),
                         ),
                     ),

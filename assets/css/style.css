@@ -26811,69 +26811,50 @@ body .woosw-popup-content-mid .added_to_cart {
   align-items: center;
   justify-content: space-between;
 }
-.pxl-post-navigation .pxl--item.item--next .pxl-navigation-text {
-  justify-content: flex-end;
+.pxl-post-navigation .pxl-item--navigation.pxl-item--prev:hover .pxl-item--icon i {
+  animation: pxl_left_from_right 0.3s ease-in-out;
+  animation-fill-mode: forwards;
 }
-.pxl-post-navigation .pxl--item.item--next .pxl-navigation-title {
-  text-align: right;
+.pxl-post-navigation .pxl-item--navigation.pxl-item--next:hover .pxl-item--icon i {
+  animation: pxl_right_from_left 0.3s ease-in-out;
+  animation-fill-mode: forwards;
 }
-.pxl-post-navigation .pxl-navigation-link {
-  display: flex;
+.pxl-post-navigation .pxl-item--link {
+  display: inline-flex;
   align-items: center;
-  gap: 20px;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  color: inherit;
+  gap: 30px;
+  -webkit-transition: all 0.3s linear;
+  -khtml-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
-.pxl-post-navigation .pxl-navigation-link:hover .pxl-navigation-title {
-  color: var(--primary-color);
-}
-.pxl-post-navigation .pxl-navigation-image {
-  width: 152px;
-  height: 100px;
-  border-radius: 8px;
-  position: relative;
-  overflow: hidden;
-}
-.pxl-post-navigation .pxl-navigation-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-@media screen and (max-width: 575px) {
-  .pxl-post-navigation .pxl-navigation-image {
-    display: none;
-  }
-}
-.pxl-post-navigation .pxl-navigation-content {
-  flex: 1;
-}
-.pxl-post-navigation .pxl-navigation-text {
-  display: flex;
+.pxl-post-navigation .pxl-item--icon {
+  width: 70px;
+  height: 70px;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  display: inline-flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
+  justify-content: center;
 }
-.pxl-post-navigation .pxl-navigation-label {
-  color: rgba(4, 20, 39, 0.7);
-  font-style: normal;
-  font-weight: 400;
+.pxl-post-navigation .pxl-item--icon i {
+  font-size: 28px;
+  color: var(--body_bg-color);
 }
-.pxl-post-navigation .pxl-navigation-label svg {
+.pxl-post-navigation .pxl-item--text {
   color: var(--secondary-color);
-  transform: translateX(0);
-  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  will-change: transform;
-}
-.pxl-post-navigation .pxl-navigation-title {
-  max-width: 160px;
-  color: var(--secondary-color);
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 1.3;
-  margin-bottom: 0;
-  transition: color 0.3s ease;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.625;
+  text-transform: uppercase;
 }
 .pxl-image-carousel1 .pxl-item--image {
   -webkit-border-radius: 30px;
@@ -30359,6 +30340,11 @@ input[type="submit"]:hover {
   border: 1px solid rgba(102, 111, 120, 0.5);
   position: relative;
 }
+@media screen and (max-width: 575px) {
+  .pxl-tabs2 .pxl-tabs--inner {
+    padding: 20px;
+  }
+}
 .pxl-tabs2 .pxl-tabs--inner:after {
   content: "";
   position: absolute;
@@ -30431,6 +30417,11 @@ input[type="submit"]:hover {
   -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+@media screen and (max-width: 575px) {
+  .pxl-tabs2 .pxl-item--title:after, .pxl-tabs2 .pxl-text-carousel1 -title.pxl-item:after, .pxl-text-carousel1 .pxl-tabs2 -title.pxl-item:after {
+    display: none;
+  }
+}
 .pxl-tabs2 .pxl-item--title.active, .pxl-tabs2 .pxl-text-carousel1 -title.pxl-item.active, .pxl-text-carousel1 .pxl-tabs2 -title.pxl-item.active, .pxl-tabs2 .pxl-item--title:hover, .pxl-tabs2 .pxl-text-carousel1 -title.pxl-item:hover, .pxl-text-carousel1 .pxl-tabs2 -title.pxl-item:hover {
   color: var(--secondary-color);
 }
@@ -30441,6 +30432,12 @@ input[type="submit"]:hover {
 }
 .pxl-tabs2 .pxl-item--title + .pxl-item--title, .pxl-tabs2 .pxl-text-carousel1 -title.pxl-item + .pxl-item--title, .pxl-tabs2 .pxl-text-carousel1 -title.pxl-item + .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-tabs2 .pxl-text-carousel1 -title.pxl-item + -title.pxl-item, .pxl-text-carousel1 .pxl-tabs2 -title.pxl-item + .pxl-item--title, .pxl-tabs2 .pxl-item--title + .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-tabs2 .pxl-item--title + -title.pxl-item {
   margin-left: 30px;
+}
+@media screen and (max-width: 575px) {
+  .pxl-tabs2 .pxl-item--title + .pxl-item--title, .pxl-tabs2 .pxl-text-carousel1 -title.pxl-item + .pxl-item--title, .pxl-tabs2 .pxl-text-carousel1 -title.pxl-item + .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-tabs2 .pxl-text-carousel1 -title.pxl-item + -title.pxl-item, .pxl-text-carousel1 .pxl-tabs2 -title.pxl-item + .pxl-item--title, .pxl-tabs2 .pxl-item--title + .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-tabs2 .pxl-item--title + -title.pxl-item {
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }
 .over-hd {
   overflow: hidden;
