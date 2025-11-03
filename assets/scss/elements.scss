@@ -5367,6 +5367,52 @@ body.rtl {
     }
 }
 
+.pxl-text-box4 {
+    --gradient-color-1: $third_color;
+    --gradient-color-2: $primary_color;
+    --gradient-color-3: #585092;
+    .pxl-text-box {
+        &--inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 52px;
+            padding: 0 30px;
+            @include border-radius(100px);
+            background-color: $secondary_color;
+            color: $body_bg_color;
+            font-family: "DM Sans";
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+            position: relative;
+            &:before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                @include border-radius(100px);
+                background: linear-gradient(
+                    94deg,
+                    var(--gradient-color-1) -17.13%,
+                    var(--gradient-color-2) 20.9%,
+                    var(--gradient-color-3) 144.12%
+                );
+            }
+        }
+        &--title {
+            color: inherit;
+            font-size: 14px;
+            margin-bottom: 0;
+            font-weight: 500;
+            text-transform: uppercase;
+            z-index: 3;
+        }
+        &--size {
+            z-index: 3;
+        }
+    }
+}
+
 // Case Circle
 .pxl-circle {
     --color: #212f3f;

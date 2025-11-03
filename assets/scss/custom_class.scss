@@ -834,6 +834,23 @@
     }
 }
 
+.pxl-widget-shadow {
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: -1px;
+        width: calc(100% + 2px);
+        height: 100%;
+        background-color: $body_bg_color;
+        border: 1px solid rgba($four_color_hex, 0.5);
+        @include border-radius(10px);
+        z-index: -1;
+    }
+}
+
+
 @keyframes pxl-draws-svg {
     0% {
         stroke-dashoffset: 100%;

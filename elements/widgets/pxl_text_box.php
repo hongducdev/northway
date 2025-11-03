@@ -30,6 +30,10 @@ pxl_add_custom_widget(
                                     'label' => esc_html__('Layout 3', 'northway' ),
                                     'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_text_box/layout3.jpg'
                                 ],
+                                '4' => [
+                                    'label' => esc_html__('Layout 4', 'northway' ),
+                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_text_box/layout4.jpg'
+                                ],
                             ],
                         ),
                     ),
@@ -38,6 +42,9 @@ pxl_add_custom_widget(
                     'name' => 'section_content',
                     'label' => esc_html__('Content', 'northway' ),
                     'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+                    'condition' => [
+                        'layout' => ['1', '2', '3'],
+                    ],
                     'controls' => array(
                         array(
                             'name' => 'title',
@@ -57,6 +64,34 @@ pxl_add_custom_widget(
                     ),
                 ),
                 array(
+                    'name' => 'section_content_4',
+                    'label' => esc_html__('Content', 'northway' ),
+                    'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+                    'condition' => [
+                        'layout' => ['4'],
+                    ],
+                    'controls' => array(
+                        array(
+                            'name' => 'title_4',
+                            'label' => esc_html__('Title', 'northway' ),
+                            'type' => \Elementor\Controls_Manager::TEXT,
+                            'label_block' => true,
+                        ),
+                        array(
+                            'name' => 'size',
+                            'label' => esc_html__('Size', 'northway' ),
+                            'type' => \Elementor\Controls_Manager::TEXT,
+                            'label_block' => true,
+                        ),
+                        array(
+                            'name' => 'link',
+                            'label' => esc_html__('Link', 'northway' ),
+                            'type' => \Elementor\Controls_Manager::URL,
+                            'label_block' => true,
+                        )
+                    ),
+                ),
+                array(
                     'name' => 'section_style_general',
                     'label' => esc_html__('General', 'northway' ),
                     'tab' => \Elementor\Controls_Manager::TAB_STYLE,
@@ -67,7 +102,7 @@ pxl_add_custom_widget(
                             'type' => \Elementor\Controls_Manager::DIMENSIONS,
                             'size_units' => [ 'px' ],
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-info-box' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                                '{{WRAPPER}} .pxl-text-box .pxl-text-box--inner' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                             ],
                             'control_type' => 'responsive',
                         ),
@@ -77,24 +112,46 @@ pxl_add_custom_widget(
                             'type' => \Elementor\Controls_Manager::DIMENSIONS,
                             'size_units' => [ 'px' ],
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-info-box' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                                '{{WRAPPER}} .pxl-text-box .pxl-text-box--inner' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                             ],
                             'control_type' => 'responsive',
                         ),
                         array(
-                            'name' => 'box_background_gradient_color_from',
-                            'label' => esc_html__('Background Gradient Color From', 'northway' ),
+                            'name' => 'box_background_color',
+                            'label' => esc_html__('Background Color', 'northway' ),
                             'type' => \Elementor\Controls_Manager::COLOR,
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-info-box' => '--gradient-color-from: {{VALUE}};',
+                                '{{WRAPPER}} .pxl-text-box .pxl-text-box--inner' => 'background-color: {{VALUE}};',
                             ],
                         ),
                         array(
-                            'name' => 'box_background_gradient_color_to',
-                            'label' => esc_html__('Background Gradient Color To', 'northway' ),
+                            'name' => 'box_background_gradient_color_1',
+                            'label' => esc_html__('Background Gradient Color 1', 'northway' ),
                             'type' => \Elementor\Controls_Manager::COLOR,
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-info-box' => '--gradient-color-to: {{VALUE}};',
+                                '{{WRAPPER}} .pxl-text-box .pxl-text-box--inner' => '--gradient-color-1: {{VALUE}};',
+                            ],
+                            'condition' => [
+                                'layout' => ['4'],
+                            ],
+                        ),
+                        array(
+                            'name' => 'box_background_gradient_color_2',
+                            'label' => esc_html__('Background Gradient Color 2', 'northway' ),
+                            'type' => \Elementor\Controls_Manager::COLOR,
+                            'selectors' => [
+                                '{{WRAPPER}} .pxl-text-box .pxl-text-box--inner' => '--gradient-color-2: {{VALUE}};',
+                            ],
+                            'condition' => [
+                                'layout' => ['4'],
+                            ],
+                        ),
+                        array(
+                            'name' => 'box_background_gradient_color_3',
+                            'label' => esc_html__('Background Gradient Color 3', 'northway' ),
+                            'type' => \Elementor\Controls_Manager::COLOR,
+                            'selectors' => [
+                                '{{WRAPPER}} .pxl-text-box .pxl-text-box--inner' => '--gradient-color-3: {{VALUE}};',
                             ],
                         ),
                     ),
@@ -161,6 +218,17 @@ pxl_add_custom_widget(
                             'type' => \Elementor\Controls_Manager::COLOR,
                             'selectors' => [
                                 '{{WRAPPER}} .pxl-info-box .pxl-info-box-description' => 'color: {{VALUE}};',
+                            ],
+                        ),
+                        array(
+                            'name' => 'size_color',
+                            'label' => esc_html__('Color', 'northway' ),
+                            'type' => \Elementor\Controls_Manager::COLOR,
+                            'selectors' => [
+                                '{{WRAPPER}} .pxl-text-box .pxl-text-box--size' => 'color: {{VALUE}};',
+                            ],
+                            'condition' => [
+                                'layout' => ['4'],
                             ],
                         ),
                         array(

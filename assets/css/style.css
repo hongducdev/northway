@@ -10506,6 +10506,54 @@ body.rtl .pxl-post-list1 li:before {
   -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+.pxl-text-box4 {
+  --gradient-color-1: var(--third-color);
+  --gradient-color-2: var(--primary-color);
+  --gradient-color-3: #585092;
+}
+.pxl-text-box4 .pxl-text-box--inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 52px;
+  padding: 0 30px;
+  -webkit-border-radius: 100px;
+  -khtml-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+  background-color: var(--secondary-color);
+  color: var(--body_bg-color);
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+}
+.pxl-text-box4 .pxl-text-box--inner:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  -webkit-border-radius: 100px;
+  -khtml-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+  background: linear-gradient(94deg, var(--gradient-color-1) -17.13%, var(--gradient-color-2) 20.9%, var(--gradient-color-3) 144.12%);
+}
+.pxl-text-box4 .pxl-text-box--title {
+  color: inherit;
+  font-size: 14px;
+  margin-bottom: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+  z-index: 3;
+}
+.pxl-text-box4 .pxl-text-box--size {
+  z-index: 3;
+}
 .pxl-circle {
   --color: #212f3f;
   position: relative;
@@ -15171,6 +15219,26 @@ body.rtl .widget .widget-title:before {
     border-bottom: 100px solid transparent;
     border-right: 100px solid var(--secondary-color);
   }
+}
+.pxl-widget-shadow {
+  position: relative;
+}
+.pxl-widget-shadow:after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -1px;
+  width: calc(100% + 2px);
+  height: 100%;
+  background-color: var(--body_bg-color);
+  border: 1px solid rgba(102, 111, 120, 0.5);
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  z-index: -1;
 }
 @keyframes pxl-draws-svg {
   0% {
