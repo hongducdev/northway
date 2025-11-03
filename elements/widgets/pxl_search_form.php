@@ -8,6 +8,29 @@ pxl_add_custom_widget(
         'params' => array(
             'sections' => array(
                 array(
+                    'name' => 'section_layout',
+                    'label' => esc_html__('Layout', 'northway'),
+                    'tab' => \Elementor\Controls_Manager::TAB_LAYOUT,
+                    'controls' => array(
+                        array(
+                            'name' => 'layout',
+                            'label' => esc_html__('Templates', 'northway'),
+                            'type' => 'layoutcontrol',
+                            'default' => '1',
+                            'options' => [
+                                '1' => [
+                                    'label' => esc_html__('Layout 1', 'northway'),
+                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_search_form/layout1.jpg'
+                                ],
+                                '2' => [
+                                    'label' => esc_html__('Layout 2', 'northway'),
+                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_search_form/layout2.jpg'
+                                ],
+                            ],
+                        ),
+                    ),
+                ),
+                array(
                     'name' => 'section_content',
                     'label' => esc_html__('Content', 'northway' ),
                     'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
