@@ -1489,6 +1489,12 @@ posts
             border: 1px solid rgba($four_color_hex, 0.5);
             position: relative;
             padding: 50px;
+            @media #{$max-xs} {
+                padding: 30px;
+            }
+            @media #{$max-xsx} {
+                padding: 15px;
+            }
         }
         &--title {
             color: $secondary_color;
@@ -1501,6 +1507,9 @@ posts
         &--divider {
             margin-top: 8px;
             margin-bottom: 4px;
+            @media #{$max-xs} {
+                width: 100%;
+            }
         }
         &--content {
             color: $secondary-color;
@@ -1522,6 +1531,11 @@ posts
             display: flex;
             align-items: center;
             justify-content: space-between;
+            @media #{$max-xs} {
+                flex-direction: column;
+                align-items: start;
+                gap: 20px;
+            }
             &-button {
                 height: 45px;
                 padding: 0 30px;
@@ -1542,6 +1556,9 @@ posts
                 i {
                     font-size: 22px;
                 }
+                @media #{$max-xs} {
+                    width: 100%;
+                }
                 &:before {
                     content: "";
                     position: absolute;
@@ -1554,6 +1571,9 @@ posts
                     right: 15px;
                     transform: translateX(0);
                     @include transition(all 0.3s ease);
+                    @media #{$max-xs} {
+                        display: none;
+                    }
                 }
                 &:hover {
                     &:before {

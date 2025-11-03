@@ -198,7 +198,7 @@ pxl_add_custom_widget(
                                     [
                                         'terms' => [
                                             ['name' => 'post_type', 'operator' => '==', 'value' => 'portfolio'],
-                                            ['name' => 'layout_portfolio', 'operator' => 'in', 'value' => ['portfolio-1']]
+                                            ['name' => 'layout_portfolio', 'operator' => 'in', 'value' => ['portfolio-1', 'portfolio-2']]
                                         ]
                                     ],
                                     [
@@ -234,7 +234,7 @@ pxl_add_custom_widget(
                                     [
                                         'terms' => [
                                             ['name' => 'post_type', 'operator' => '==', 'value' => 'portfolio'],
-                                            ['name' => 'layout_portfolio', 'operator' => 'in', 'value' => ['portfolio-1']]
+                                            ['name' => 'layout_portfolio', 'operator' => 'in', 'value' => ['portfolio-1', 'portfolio-2']]
                                         ]
                                     ],
                                     [
@@ -270,7 +270,7 @@ pxl_add_custom_widget(
                                     [
                                         'terms' => [
                                             ['name' => 'post_type', 'operator' => '==', 'value' => 'portfolio'],
-                                            ['name' => 'layout_portfolio', 'operator' => 'in', 'value' => ['portfolio-1']]
+                                            ['name' => 'layout_portfolio', 'operator' => 'in', 'value' => ['portfolio-1', 'portfolio-2']]
                                         ]
                                     ],
                                     [
@@ -306,7 +306,7 @@ pxl_add_custom_widget(
                                     [
                                         'terms' => [
                                             ['name' => 'post_type', 'operator' => '==', 'value' => 'portfolio'],
-                                            ['name' => 'layout_portfolio', 'operator' => 'in', 'value' => ['portfolio-1','portfolio-2','portfolio-3']]
+                                            ['name' => 'layout_portfolio', 'operator' => 'in', 'value' => ['portfolio-1','portfolio-2']]
                                         ]
                                     ],
                                     [
@@ -381,7 +381,7 @@ pxl_add_custom_widget(
                                     [
                                         'terms' => [
                                             ['name' => 'post_type', 'operator' => '==', 'value' => 'portfolio'],
-                                            ['name' => 'layout_service', 'operator' => 'in', 'value' => ['portfolio-1']]
+                                            ['name' => 'layout_service', 'operator' => 'in', 'value' => ['portfolio-1', 'portfolio-2']]
                                         ]
                                     ],
                                     [

@@ -1059,7 +1059,6 @@ testimonials grid
 }
 .pxl-grid .pxl-load-more {
   text-align: center;
-  padding: 0 15px;
 }
 @media screen and (min-width: 1201px) {
   .pxl-grid .col-xl-pxl5 {
@@ -6517,7 +6516,7 @@ body.rtl .pxl-box-hover1 .pxl-item--inner:hover:before {
 .pxl-search-form2 .pxl-search-btn {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 12px;
   transform: translateY(-50%);
   width: 52px;
   height: 52px;
@@ -26123,6 +26122,16 @@ body .woosw-popup-content-mid .added_to_cart {
   position: relative;
   padding: 50px;
 }
+@media screen and (max-width: 575px) {
+  .pxl-portfolio-grid-layout2 .pxl-post--inner {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .pxl-portfolio-grid-layout2 .pxl-post--inner {
+    padding: 15px;
+  }
+}
 .pxl-portfolio-grid-layout2 .pxl-post--title {
   color: var(--secondary-color);
   font-size: 23px;
@@ -26134,6 +26143,11 @@ body .woosw-popup-content-mid .added_to_cart {
 .pxl-portfolio-grid-layout2 .pxl-post--divider {
   margin-top: 8px;
   margin-bottom: 4px;
+}
+@media screen and (max-width: 575px) {
+  .pxl-portfolio-grid-layout2 .pxl-post--divider {
+    width: 100%;
+  }
 }
 .pxl-portfolio-grid-layout2 .pxl-post--content {
   color: var(--secondary-color);
@@ -26166,6 +26180,13 @@ body .woosw-popup-content-mid .added_to_cart {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 575px) {
+  .pxl-portfolio-grid-layout2 .pxl-post--readmore {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+}
 .pxl-portfolio-grid-layout2 .pxl-post--readmore-button {
   height: 45px;
   padding: 0 30px;
@@ -26197,6 +26218,11 @@ body .woosw-popup-content-mid .added_to_cart {
 .pxl-portfolio-grid-layout2 .pxl-post--readmore-button i {
   font-size: 22px;
 }
+@media screen and (max-width: 575px) {
+  .pxl-portfolio-grid-layout2 .pxl-post--readmore-button {
+    width: 100%;
+  }
+}
 .pxl-portfolio-grid-layout2 .pxl-post--readmore-button:before {
   content: "";
   position: absolute;
@@ -26219,6 +26245,11 @@ body .woosw-popup-content-mid .added_to_cart {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+@media screen and (max-width: 575px) {
+  .pxl-portfolio-grid-layout2 .pxl-post--readmore-button:before {
+    display: none;
+  }
 }
 .pxl-portfolio-grid-layout2 .pxl-post--readmore-button:hover:before {
   transform: translateX(15px);
