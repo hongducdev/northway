@@ -5345,6 +5345,21 @@ body.rtl {
 }
 
 .pxl-text-box3 {
+    &.style-2 {
+        width: 100%;
+        height: 100%;
+        @include border-radius(20px);
+        padding: 35px;
+        .pxl-text-box {
+            &--inner {
+                gap: 30px;
+            }
+            &--title {
+                font-size: 20px;
+                line-height: 1.5;
+            }
+        }
+    }
     --space-box: 145px;
     background-color: $body_bg_color;
     width: var(--space-box);

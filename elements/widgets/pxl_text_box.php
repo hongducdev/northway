@@ -47,6 +47,19 @@ pxl_add_custom_widget(
                     ],
                     'controls' => array(
                         array(
+                            'name' => 'style_layout_3',
+                            'label' => esc_html__('Style Layout 3', 'northway' ),
+                            'type' => \Elementor\Controls_Manager::SELECT,
+                            'options' => [
+                                'style-1' => esc_html__('Style 1', 'northway' ),
+                                'style-2' => esc_html__('Style 2', 'northway' ),
+                            ],
+                            'default' => 'style-1',
+                            'condition' => [
+                                'layout' => ['3'],
+                            ],
+                        ),
+                        array(
                             'name' => 'title',
                             'label' => esc_html__('Title', 'northway' ),
                             'type' => \Elementor\Controls_Manager::TEXT,

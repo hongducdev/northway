@@ -1,4 +1,4 @@
-<div class="pxl-text-box pxl-text-box3 <?php echo esc_attr($settings['pxl_animate']); ?>" data-wow-delay="<?php echo esc_attr($settings['pxl_animate_delay']); ?>ms">
+<div class="pxl-text-box pxl-text-box3 <?php echo esc_attr($settings['pxl_animate']); ?> <?php echo esc_attr($settings['style_layout_3']); ?>" data-wow-delay="<?php echo esc_attr($settings['pxl_animate_delay']); ?>ms">
     <div class="pxl-text-box--inner">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="12" viewBox="0 0 24 12" fill="none" class="pxl-text-box--icon">
             <path d="M16.4935 0.356309C16.0279 -0.113556 15.2693 -0.119483 14.7965 0.343103L5.92644 9.09268L2.07056 5.10862C1.61067 4.63023 0.849314 4.61453 0.370045 5.07353C-0.109277 5.53253 -0.125009 6.29241 0.334881 6.77075C0.336965 6.77288 0.338996 6.77501 0.34108 6.77715L5.0425 11.6399C5.2675 11.869 5.57501 11.9987 5.89643 12H5.90967C6.22499 11.999 6.52735 11.8744 6.75157 11.6531L16.4827 2.05005C16.9528 1.58471 16.9576 0.827631 16.4935 0.356309Z" fill="currentColor"/>
