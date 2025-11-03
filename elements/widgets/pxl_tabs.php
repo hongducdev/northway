@@ -88,47 +88,10 @@ pxl_add_custom_widget(
                         ),
                         array(
                             'name' => 'tabs_2',
-                            'label' => esc_html__('Tab for Price Table', 'northway'),
-                            'type' => \Elementor\Controls_Manager::REPEATER,
-                            'condition' => [
-                                'layout' => '2'
-                            ],
-                            'controls' => array(
-                                array(
-                                    'name' => 'icon_2',
-                                    'label' => esc_html__('Icon', 'northway'),
-                                    'type' => \Elementor\Controls_Manager::ICONS,
-                                    'fa4compatibility' => 'icon',
-                                ),
-                                array(
-                                    'name' => 'title_2',
-                                    'label' => esc_html__('Title', 'northway'),
-                                    'type' => \Elementor\Controls_Manager::TEXT,
-                                    'label_block' => true,
-                                ),
-                                array(
-                                    'name' => 'price_2',
-                                    'label' => esc_html__('Price', 'northway'),
-                                    'type' => \Elementor\Controls_Manager::TEXT,
-                                    'label_block' => true,
-                                ),
-                                array(
-                                    'name' => 'content_template_2',
-                                    'label' => esc_html__('Select Templates', 'northway'),
-                                    'type' => 'select',
-                                    'options' => $templates,
-                                    'default' => 'df',
-                                    'description' => 'Add new tab template: "<a href="' . esc_url(admin_url('edit.php?post_type=pxl-template')) . '" target="_blank">Click Here</a>"',
-                                ),
-                            ),
-                            'title_field' => '{{{ title_2 }}}',
-                        ),
-                        array(
-                            'name' => 'tabs_3',
                             'label' => esc_html__('Content', 'northway'),
                             'type' => \Elementor\Controls_Manager::REPEATER,
                             'condition' => [
-                                'layout' => '3'
+                                'layout' => '2'
                             ],
                             'controls' => array(
                                 array(
@@ -157,12 +120,6 @@ pxl_add_custom_widget(
                                     'name' => 'desc',
                                     'label' => esc_html__('Content', 'northway'),
                                     'type' => \Elementor\Controls_Manager::WYSIWYG,
-                                    'condition' => ['content_type' => 'df']
-                                ),
-                                array(
-                                    'name' => 'image',
-                                    'label' => esc_html__('Image', 'northway'),
-                                    'type' => \Elementor\Controls_Manager::MEDIA,
                                     'condition' => ['content_type' => 'df']
                                 ),
                                 array(

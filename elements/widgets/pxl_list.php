@@ -97,15 +97,27 @@ pxl_add_custom_widget(
                             'selector' => '{{WRAPPER}} .pxl-list .pxl-item--content, {{WRAPPER}} .pxl-list p',
                         ),
                         array(
+                            'name' => 'content_strong_color',
+                            'label' => esc_html__('Content Color', 'northway'),
+                            'type' => \Elementor\Controls_Manager::COLOR,
+                            'selectors' => [
+                                '{{WRAPPER}} .pxl-list .pxl-item--content strong' => 'color: {{VALUE}};',
+                            ],
+                        ),
+                        array(
+                            'name' => 'content_strong_typography',
+                            'label' => esc_html__('Content Strong Typography', 'northway'),
+                            'type' => \Elementor\Group_Control_Typography::get_type(),
+                            'control_type' => 'group',
+                            'selector' => '{{WRAPPER}} .pxl-list .pxl-item--content strong, {{WRAPPER}} .pxl-list p strong',
+                        ),
+                        array(
                             'name' => 'icon_color',
                             'label' => esc_html__('Icon Color', 'northway'),
                             'type' => \Elementor\Controls_Manager::COLOR,
                             'selectors' => [
                                 '{{WRAPPER}} .pxl-list .pxl-item--icon' => 'color: {{VALUE}};',
                                 '{{WRAPPER}} .pxl-list .pxl-item--icon svg' => 'fill: {{VALUE}};',
-                            ],
-                            'condition' => [
-                                'style' => 'default',
                             ],
                         ),
                         array(
@@ -117,9 +129,6 @@ pxl_add_custom_widget(
                                 '{{WRAPPER}} .pxl-list .pxl-item--icon' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                             ],
                             'control_type' => 'responsive',
-                            'condition' => [
-                                'style' => 'default',
-                            ],
                         ),
                         array(
                             'name' => 'icon_font_size',
@@ -136,9 +145,6 @@ pxl_add_custom_widget(
                             'selectors' => [
                                 '{{WRAPPER}} .pxl-list .pxl-item--icon' => 'font-size: {{SIZE}}{{UNIT}};',
                                 '{{WRAPPER}} .pxl-list .pxl-item--icon svg ' => 'width: {{SIZE}}{{UNIT}} !important;',
-                            ],
-                            'condition' => [
-                                'style' => 'default',
                             ],
                         ),
                         array(
@@ -232,7 +238,45 @@ pxl_add_custom_widget(
                             'selectors' => [
                                 '{{WRAPPER}} .pxl-list .pxl-item--icon' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                             ],
-                        )
+                        ),
+                        array(
+                            'name' => 'width_icon_box',
+                            'label' => esc_html__('Width Icon Box', 'northway'),
+                            'type' => \Elementor\Controls_Manager::SLIDER,
+                            'control_type' => 'responsive',
+                            'size_units' => ['px'],
+                            'range' => [
+                                'px' => [
+                                    'min' => 0,
+                                    'max' => 3000,
+                                ],
+                            ],
+                            'selectors' => [
+                                '{{WRAPPER}} .pxl-list .pxl-item--icon' => 'width: {{SIZE}}{{UNIT}};',
+                            ],
+                            'condition' => [
+                                'style' => ['default'],
+                            ],
+                        ),
+                        array(
+                            'name' => 'height_icon_box',
+                            'label' => esc_html__('Height Icon Box', 'northway'),
+                            'type' => \Elementor\Controls_Manager::SLIDER,
+                            'control_type' => 'responsive',
+                            'size_units' => ['px'],
+                            'range' => [
+                                'px' => [
+                                    'min' => 0,
+                                    'max' => 3000,
+                                ],
+                            ],
+                            'selectors' => [
+                                '{{WRAPPER}} .pxl-list .pxl-item--icon' => 'height: {{SIZE}}{{UNIT}};',
+                            ],
+                            'condition' => [
+                                'style' => ['default'],
+                            ],
+                        ),
                     ),
                 ),
                 northway_widget_animation_settings(),

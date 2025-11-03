@@ -30347,47 +30347,83 @@ input[type="submit"]:hover {
 .pxl-tabs.tab-effect-fade .pxl-tabs--content {
   position: relative;
 }
-.pxl-tabs2 .pxl-tabs--title {
-  padding: 70px 75px;
-  -webkit-border-radius: 20px 0 0 20px;
-  -khtml-border-radius: 20px 0 0 20px;
-  -moz-border-radius: 20px 0 0 20px;
-  -ms-border-radius: 20px 0 0 20px;
-  -o-border-radius: 20px 0 0 20px;
-  border-radius: 20px 0 0 20px;
+.pxl-tabs2 .pxl-tabs--inner {
+  background-color: var(--body_bg-color);
+  -webkit-border-radius: 15px;
+  -khtml-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  padding: 35px;
   border: 1px solid rgba(102, 111, 120, 0.5);
   position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
 }
-.pxl-tabs2 .pxl-tab--title {
-  color: rgba(102, 111, 120, 0.5);
-  font-family: "DM Sans";
-  font-size: 23px;
-  font-weight: 600;
-  line-height: 1.43;
-  z-index: 5;
-  position: relative;
-  cursor: pointer;
-  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -khtml-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -ms-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-.pxl-tabs2 .pxl-tab--title:before {
-  content: "\F113";
-  font-family: "Flaticon";
-  font-size: 10px;
+.pxl-tabs2 .pxl-tabs--inner:after {
+  content: "";
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%) scale(0);
-  left: -25px;
-  opacity: 0;
-  color: var(--secondary-color);
+  top: -1px;
+  right: -1px;
+  width: 0;
+  height: 0;
+  border-bottom: 62px solid transparent;
+  border-right: 62px solid var(--body_bg-color);
+}
+.pxl-tabs2 .pxl-tabs--fold {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+}
+.pxl-tabs2 .pxl-tabs--title {
+  padding-bottom: 16px;
+  position: relative;
+}
+.pxl-tabs2 .pxl-tabs--title:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(102, 111, 120, 0.5) 0%, rgba(248, 248, 242, 0.5) 100%);
+}
+.pxl-tabs2 .pxl-tabs--content {
+  margin-top: 28px;
+}
+.pxl-tabs2 .pxl-tabs--content p {
+  margin-bottom: 0;
+}
+.pxl-tabs2 .pxl-item--title, .pxl-tabs2 .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-tabs2 -title.pxl-item {
+  color: rgba(4, 20, 39, 0.5);
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 500;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  display: inline-block;
+  position: relative;
+}
+.pxl-tabs2 .pxl-item--title:after, .pxl-tabs2 .pxl-text-carousel1 -title.pxl-item:after, .pxl-text-carousel1 .pxl-tabs2 -title.pxl-item:after {
+  content: "";
+  position: absolute;
+  bottom: -16px;
+  right: 0;
+  left: auto;
+  width: 0%;
+  height: 2px;
+  -webkit-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  background: var(--secondary-color);
+  z-index: 2;
   -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   -khtml-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -30395,12 +30431,16 @@ input[type="submit"]:hover {
   -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-.pxl-tabs2 .pxl-tab--title.active, .pxl-tabs2 .pxl-tab--title:hover {
+.pxl-tabs2 .pxl-item--title.active, .pxl-tabs2 .pxl-text-carousel1 -title.pxl-item.active, .pxl-text-carousel1 .pxl-tabs2 -title.pxl-item.active, .pxl-tabs2 .pxl-item--title:hover, .pxl-tabs2 .pxl-text-carousel1 -title.pxl-item:hover, .pxl-text-carousel1 .pxl-tabs2 -title.pxl-item:hover {
   color: var(--secondary-color);
 }
-.pxl-tabs2 .pxl-tab--title.active:before, .pxl-tabs2 .pxl-tab--title:hover:before {
-  opacity: 1;
-  transform: translateY(-50%) scale(1);
+.pxl-tabs2 .pxl-item--title.active:after, .pxl-tabs2 .pxl-text-carousel1 -title.pxl-item.active:after, .pxl-text-carousel1 .pxl-tabs2 -title.pxl-item.active:after, .pxl-tabs2 .pxl-item--title:hover:after, .pxl-tabs2 .pxl-text-carousel1 -title.pxl-item:hover:after, .pxl-text-carousel1 .pxl-tabs2 -title.pxl-item:hover:after {
+  width: 100%;
+  right: auto;
+  left: 0;
+}
+.pxl-tabs2 .pxl-item--title + .pxl-item--title, .pxl-tabs2 .pxl-text-carousel1 -title.pxl-item + .pxl-item--title, .pxl-tabs2 .pxl-text-carousel1 -title.pxl-item + .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-tabs2 .pxl-text-carousel1 -title.pxl-item + -title.pxl-item, .pxl-text-carousel1 .pxl-tabs2 -title.pxl-item + .pxl-item--title, .pxl-tabs2 .pxl-item--title + .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-tabs2 .pxl-item--title + -title.pxl-item {
+  margin-left: 30px;
 }
 .over-hd {
   overflow: hidden;
