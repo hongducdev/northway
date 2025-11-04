@@ -11034,6 +11034,198 @@ body.rtl .pxl-post-list1 li:before {
 .pxl-categories1 .pxl-category-item:hover a {
   color: var(--body_bg-color);
 }
+.pxl-position {
+  padding: 35px;
+  border-radius: 30px;
+  border: 1px solid #afb4b5;
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .pxl-position {
+    flex-direction: column;
+    padding: 35px 15px;
+    gap: 15px;
+  }
+}
+.pxl-position--col-1 {
+  flex: 0 0 42%;
+  max-width: 42%;
+  max-height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 767px) {
+  .pxl-position--col-1 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+.pxl-position--col-2 {
+  flex: 0 0 36%;
+  max-width: 36%;
+}
+@media screen and (max-width: 767px) {
+  .pxl-position--col-2 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.pxl-position--col-3 {
+  flex: 0 0 22%;
+  max-width: 22%;
+  max-height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 767px) {
+  .pxl-position--col-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+.pxl-position--title {
+  color: var(--body_bg-color);
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 1.43;
+  margin-bottom: 30px;
+}
+.pxl-position--description {
+  color: rgba(248, 248, 242, 0.7);
+  max-width: 380px;
+}
+@media screen and (max-width: 767px) {
+  .pxl-position--description {
+    max-width: 100%;
+  }
+}
+.pxl-position--meta {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .pxl-position--meta {
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.pxl-position--meta-item {
+  display: inline-flex;
+  height: 46px;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-shrink: 0;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(102, 111, 120, 0.5);
+  color: rgba(248, 248, 242, 0.8);
+  font-family: "DM Sans";
+  font-size: 14px;
+}
+.pxl-position--meta-item i {
+  color: var(--body_bg-color);
+}
+.pxl-position--col-title {
+  color: var(--body_bg-color);
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 1.43;
+  margin-bottom: 30px;
+}
+.pxl-position--requirements {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.pxl-position--requirement {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: rgba(248, 248, 242, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 315px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-word;
+  text-align: left;
+}
+.pxl-position--requirement i {
+  color: #bbb2ff;
+  font-size: 10px;
+}
+.pxl-position--requirement p {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 767px) {
+  .pxl-position--requirement {
+    max-width: 100%;
+  }
+}
+.pxl-position--salary {
+  color: var(--body_bg-color);
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.pxl-position--salary-inner {
+  display: flex;
+  align-items: center;
+}
+.pxl-position--salary-period {
+  text-transform: capitalize;
+}
+.pxl-position--salary-desc {
+  color: rgba(248, 248, 242, 0.7);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.625;
+  max-width: 260px;
+  margin-bottom: 0;
+  text-align: left;
+}
+@media screen and (max-width: 767px) {
+  .pxl-position--salary-desc {
+    max-width: 100%;
+  }
+}
+.pxl-position--apply {
+  margin-top: auto;
+}
+@media screen and (max-width: 767px) {
+  .pxl-position--apply {
+    margin-top: 30px;
+  }
+}
+.pxl-position--apply .btn.pxl-button-style-2-default.pxl-icon--right span, .pxl-position--apply button.pxl-button-style-2-default.pxl-icon--right span, .pxl-position--apply .button.pxl-button-style-2-default.pxl-icon--right span {
+  height: 46px;
+  line-height: 46px;
+  margin-right: 46px !important;
+  background: linear-gradient(180deg, #bbb2ff 0%, #45349a 167.39%) !important;
+}
+.pxl-position--apply .btn:hover span, .pxl-position--apply button:hover span, .pxl-position--apply .button:hover span {
+  margin-right: 0 !important;
+  margin-left: 46px !important;
+}
+.pxl-position--apply .btn .pxl-button--icon, .pxl-position--apply button .pxl-button--icon, .pxl-position--apply .button .pxl-button--icon {
+  width: 46px !important;
+  height: 46px !important;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #bbb2ff 0%, #45349a 167.39%) !important;
+}
 #pxl-header-default {
   position: relative;
   z-index: 999;
@@ -15090,7 +15282,7 @@ body.rtl .widget .widget-title:before {
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 80px;
+  width: 150px;
   height: 80px;
   background-image: linear-gradient(to right, var(--body_bg-color), transparent);
   z-index: 1;
@@ -15100,7 +15292,7 @@ body.rtl .widget .widget-title:before {
   position: absolute;
   top: 0px;
   right: 0px;
-  width: 80px;
+  width: 150px;
   height: 80px;
   background-image: linear-gradient(to left, var(--body_bg-color), transparent);
 }

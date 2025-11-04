@@ -23,6 +23,7 @@
         "mail-1",
         "calendar",
         "shield",
-        "gear"
+        "gear",
+        "suitcase"
     ]
 }

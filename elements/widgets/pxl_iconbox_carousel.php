@@ -230,6 +230,26 @@ pxl_add_custom_widget(
                             'selector' => '{{WRAPPER}} .pxl-iconbox-carousel .pxl-item--title,{{WRAPPER}} .pxl-iconbox-carousel .pxl-item--title a',
                         ),
                         array(
+                            'name' => 'title_max_width',
+                            'label' => esc_html__('Max Width', 'northway' ),
+                            'type' => \Elementor\Controls_Manager::SLIDER,
+                            'control_type' => 'responsive',
+                            'size_units' => [ 'px', '%' ],
+                            'range' => [
+                                'px' => [
+                                    'min' => 0,
+                                    'max' => 3000,
+                                ],
+                                '%' => [
+                                    'min' => 0,
+                                    'max' => 100,
+                                ],
+                            ],
+                            'selectors' => [
+                                '{{WRAPPER}} .pxl-iconbox-carousel .pxl-item--title' => 'max-width: {{SIZE}}{{UNIT}} !important;',
+                            ],
+                        ),
+                        array(
                             'name' => 'title_top_spacer',
                             'label' => esc_html__('Top Spacer', 'northway' ),
                             'type' => \Elementor\Controls_Manager::SLIDER,
