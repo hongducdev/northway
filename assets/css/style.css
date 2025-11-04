@@ -26485,6 +26485,224 @@ body .woosw-popup-content-mid .added_to_cart {
 .pxl-portfolio-grid-layout2 .pxl-post--category i {
   color: var(--secondary-color);
 }
+.pxl-post-slip1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+.pxl-post-slip1 .pxl-post-content {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+.pxl-post-slip1 .pxl-post-content + .pxl-post-slip-wrap {
+  width: 50%;
+}
+@media screen and (max-width: 767px) {
+  .pxl-post-slip1 .pxl-post-content + .pxl-post-slip-wrap {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pxl-post-slip1 .pxl-post-content {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 100px 0 60px;
+  }
+}
+.pxl-post-slip1 .pxl-post-slip-wrap {
+  position: relative;
+}
+.pxl-post-slip1 .pxl-post-slip-wrap .pxl-post--track {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+}
+.pxl-post-slip1 .pxl-post-slip-wrap .pxl-post-block--min {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pxl-post-slip1 .pxl-post-slip-wrap .pxl-post-block--min .pxl-post-min--inner {
+  text-align: center;
+}
+.pxl-post-slip1 .pxl-post-slip-wrap .pxl-post-block--min .pxl-post--header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 11px;
+}
+.pxl-post-slip1 .pxl-post-slip-wrap .pxl-post-block--min .pxl-post--title {
+  color: var(--body_bg-color);
+  font-family: "DM Sans";
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.43;
+  margin-bottom: 0;
+  max-width: 460px;
+  width: 100%;
+  text-align: left;
+}
+.pxl-post-slip1 .pxl-post-slip-wrap .pxl-post-block--min .pxl-post--title a {
+  color: inherit;
+}
+.pxl-post-slip1 .pxl-post-slip-wrap .pxl-post-block--min .pxl-post--title a:hover {
+  color: inherit;
+}
+.pxl-post-slip1 .pxl-post-slip-wrap .pxl-post-block--min .pxl-post--button {
+  width: 70px;
+  height: 70px;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(102, 111, 120, 0.7);
+}
+.pxl-post-slip1 .pxl-post-slip-wrap .pxl-post-block--min .pxl-post--button svg {
+  color: var(--body_bg-color);
+  transform: rotate(-45deg);
+  -webkit-transition: all 0.3s ease;
+  -khtml-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.pxl-post-slip1 .pxl-post-slip-wrap .pxl-post-block--min .pxl-post--button:hover svg {
+  transform: rotate(0);
+}
+.pxl-post-slip1 .pxl-post-slip-wrap .pxl-post-block--min .pxl-post--content {
+  color: rgba(248, 248, 242, 0.7);
+  max-width: 500px;
+  width: 100%;
+  text-align: left;
+  margin-top: 9px;
+  margin-bottom: 60px;
+}
+.pxl-post-slip1 .pxl-post-slip-wrap .pxl-post-block--min .pxl-post--meta {
+  display: flex;
+  align-items: center;
+}
+.pxl-post-slip1 .pxl-post-slip-wrap .pxl-post-block--min .pxl-post--meta-item {
+  display: inline-flex;
+  height: 46px;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--four-color);
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(248, 248, 242, 0.7);
+}
+.pxl-post-slip1 .pxl-post-slip-wrap .pxl-post-block--min .pxl-post--meta-item i {
+  color: var(--body_bg-color);
+}
+.pxl-post-slip1 .pxl-post-slip-wrap .pxl-post-block--min .pxl-post--meta-item a {
+  color: inherit;
+}
+.pxl-post-slip1 .pxl-post-slip-wrap .pxl-post-block--min .pxl-post--meta-item a:hover {
+  color: inherit;
+}
+.pxl-post-slip1 .pxl-post-slip-wrap .pxl-post--block {
+  display: flex;
+  gap: 60px;
+  -webkit-border-radius: 30px;
+  -khtml-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+  border: 1px solid rgba(102, 111, 120, 0.5);
+  background-color: var(--secondary-color);
+  padding: 50px;
+  width: 100%;
+  position: sticky;
+  transition: 1.2s ease-out;
+  top: 110px;
+  opacity: 0;
+  filter: blur(5px);
+}
+.pxl-post-slip1 .pxl-post-slip-wrap .pxl-post--block img {
+  -webkit-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  width: 440px;
+  height: 332px;
+  object-fit: cover;
+}
+.pxl-post-slip1 .pxl-post-slip-wrap .pxl-post--block + .pxl-post--block {
+  margin-top: 30px;
+}
+.pxl-post-slip1 .pxl-post-slip-wrap .pxl-post--block.slip-active {
+  opacity: 1;
+  filter: blur(0);
+}
+.pxl-post-slip1 .pxl-post-slip-wrap .pxl-post--block.active .pxl-post-block--min {
+  opacity: 1;
+  visibility: visible;
+}
+.pxl-post-slip1 .pxl-post-slip-wrap .pxl-post--block.active .pxl-post--image:before {
+  opacity: 0;
+}
+.pxl-post-slip1 .pxl-post-slip-wrap .pxl-post--block.end .pxl-post-block--min {
+  opacity: 0;
+  visibility: hidden;
+}
+.pxl-post-slip1 .pxl-post-slip-wrap .pxl-post--block.end .pxl-post--image:before {
+  opacity: 1;
+}
+.pxl-post-slip1 .pxl-post--image {
+  position: relative;
+  overflow: hidden;
+  flex: 0 0 440px;
+}
+.pxl-post-slip1 .pxl-post--image:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(45, 86, 134, 0.49);
+  opacity: 1;
+  -webkit-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-transition: all 0.3s ease;
+  -khtml-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
 .pxl-service-grid-layout1 {
   --gradient-color-1: #45349a;
   --gradient-color-2: var(--primary-color);

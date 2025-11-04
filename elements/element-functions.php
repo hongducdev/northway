@@ -129,7 +129,6 @@ function northway_get_post_type_options($pt_supports=[]){
         return $result_any;
 }
 
-
 /**
  * Start Post Grid Functions
 */

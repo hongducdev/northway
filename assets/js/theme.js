@@ -32,7 +32,6 @@
         northway_el_parallax();
         northway_col_offset();
         northway_col_offset_1750();
-        northway_text_carousel_flip();
         northway_divider_width_1600();
     });
 
@@ -51,6 +50,7 @@
         northway_footer_fixed();
         // northway_check_scroll();
         northway_ptitle_scroll_opacity();
+        northway_post_slip();
         if (pxl_scroll_top < 100) {
             $(".elementor > .pin-spacer").removeClass("scroll-top-active");
         }
@@ -73,7 +73,7 @@
         northway_backtotop_progess_bar();
         northway_type_file_upload();
         northway_zoom_point();
-        northway_text_carousel_flip();
+        northway_post_slip();
         if (pxl_window_width > 767) {
             northway_button_parallax();
         }
@@ -1569,87 +1569,6 @@
         }
     }
 
-    // Text Carousel Card Flip Effect with GSAP
-    function northway_text_carousel_flip() {
-        if (typeof gsap === "undefined") {
-            console.log("GSAP not loaded, using CSS fallback");
-            return;
-        }
-
-        const $cards = $(".pxl-text-carousel1 .pxl-item--inner");
-
-        if ($cards.length === 0) {
-            return;
-        }
-
-        $cards.each(function () {
-            const $card = $(this);
-            const $front = $card.find(".pxl-item--front");
-            const $back = $card.find(".pxl-item--back");
-
-            if ($card.data("gsap-initialized")) {
-                return;
-            }
-
-            gsap.set($card, {
-                transformStyle: "preserve-3d",
-                transformOrigin: "center center",
-            });
-
-            gsap.set($front, {
-                backfaceVisibility: "hidden",
-                rotationY: 0,
-            });
-
-            gsap.set($back, {
-                backfaceVisibility: "hidden",
-                rotationY: 180,
-            });
-
-            let hoverTimeout;
-            let isHovered = false;
-
-            $card
-                .off("mouseenter mouseleave")
-                .on("mouseenter", function () {
-                    isHovered = true;
-                    clearTimeout(hoverTimeout);
-
-                    gsap.to($card, {
-                        duration: 0.6,
-                        rotationY: 180,
-                        y: -24,
-                        boxShadow: "0px 0px 20px 0px rgba(255, 255, 255, 0.55)",
-                        ease: "power2.out",
-                        borderRadius: "0 80px",
-                        transformOrigin: "center center",
-                        overwrite: true,
-                    });
-                })
-                .on("mouseleave", function () {
-                    isHovered = false;
-                    clearTimeout(hoverTimeout);
-
-                    hoverTimeout = setTimeout(function () {
-                        if (!isHovered) {
-                            gsap.to($card, {
-                                duration: 0.6,
-                                rotationY: 0,
-                                y: 0,
-                                boxShadow: "none",
-                                borderRadius: "0 80px",
-                                ease: "power2.out",
-                                transformOrigin: "center center",
-                                overwrite: true,
-                            });
-                        }
-                    }, 50);
-                });
-
-            $card.data("gsap-initialized", true);
-        });
-    }
-
     function northway_site_loader() {
         var $flower = $(".pxl-loader .flower");
         if ($flower.length === 0) return;
@@ -1766,5 +1685,113 @@
         tl.timeScale(1.35);
 
         // No need to kill timeline on load; we end after one cycle
+    }
+
+    /* Post Slip */
+    function northway_post_slip() {
+        var windowHeight = window.innerHeight;
+        var windowWidth = window.innerWidth;
+        var scrollTop = $(window).scrollTop();
+
+        jQuery(".pxl-post--track").each(function () {
+            var topLimit = parseFloat(
+                jQuery(".pxl-post--block").first().css("top")
+            );
+            var bottomLimit =
+                parseFloat(jQuery(".pxl-post--block").first().outerHeight()) +
+                parseFloat(jQuery(".pxl-post-block_2").css("margin-top"));
+
+            jQuery(".pxl-post--block")
+                .removeClass("end")
+                .each(function (is) {
+                    var currentTop =
+                        jQuery(this).offset().top - scrollTop - topLimit;
+
+                    var c = parseFloat(currentTop / bottomLimit);
+                    if (c < 0) c = 0;
+                    else if (c > 1) c = 1;
+
+                    if (c == 0 || is == 0) {
+                        jQuery(this).addClass("active");
+
+                    } else jQuery(this).removeClass("active");
+
+                    if (c < 0.5 || is == 0) jQuery(this).addClass("preactive");
+                    else jQuery(this).removeClass("preactive");
+                });
+
+            jQuery(".pxl-post--block.preactive")
+                .slice(0, -1)
+                .removeClass("active")
+                .addClass("end");
+        });
+        if ($(".pxl-post-slip").length) {
+            var offsetTop =
+                $(".pxl-post-slip").offset().top +
+                (windowWidth >= 1200 ? 500 : 100) -
+                windowHeight;
+            if (scrollTop >= offsetTop && !pxl_post_slip) {
+                $(".pxl-post-block_1").addClass("slip-active");
+                setTimeout(function () {
+                    $(".pxl-post-block_2").addClass("slip-active");
+                }, 500);
+                setTimeout(function () {
+                    $(".pxl-post-block_3").addClass("slip-active");
+                }, 600);
+                setTimeout(function () {
+                    $(".pxl-post-block_4").addClass("slip-active");
+                }, 700);
+                setTimeout(function () {
+                    $(".pxl-post-block_5").addClass("slip-active");
+                }, 800);
+                setTimeout(function () {
+                    $(".pxl-post-block_6").addClass("slip-active");
+                }, 900);
+                setTimeout(function () {
+                    $(".pxl-post-block_7").addClass("slip-active");
+                }, 1000);
+                setTimeout(function () {
+                    $(".pxl-post-block_8").addClass("slip-active");
+                }, 1100);
+                setTimeout(function () {
+                    $(".pxl-post-block_9").addClass("slip-active");
+                }, 1200);
+                setTimeout(function () {
+                    $(".pxl-post-block_10").addClass("slip-active");
+                }, 1300);
+                setTimeout(function () {
+                    $(".pxl-post-block_11").addClass("slip-active");
+                }, 1400);
+                setTimeout(function () {
+                    $(".pxl-post-block_12").addClass("slip-active");
+                }, 1500);
+                setTimeout(function () {
+                    $(".pxl-post-block_13").addClass("slip-active");
+                }, 1600);
+                setTimeout(function () {
+                    $(".pxl-post-block_14").addClass("slip-active");
+                }, 1700);
+                setTimeout(function () {
+                    $(".pxl-post-block_15").addClass("slip-active");
+                }, 1800);
+                setTimeout(function () {
+                    $(".pxl-post-block_16").addClass("slip-active");
+                }, 1900);
+                setTimeout(function () {
+                    $(".pxl-post-block_17").addClass("slip-active");
+                }, 2000);
+                setTimeout(function () {
+                    $(".pxl-post-block_18").addClass("slip-active");
+                }, 2100);
+                setTimeout(function () {
+                    $(".pxl-post-block_19").addClass("slip-active");
+                }, 2200);
+                setTimeout(function () {
+                    $(".pxl-post-block_20").addClass("slip-active");
+                }, 2300);
+
+                pxl_post_slip = true;
+            }
+        }
     }
 })(jQuery);
