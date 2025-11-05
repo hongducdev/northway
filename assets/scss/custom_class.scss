@@ -849,6 +849,21 @@
         z-index: -1;
     }
 }
+.pxl-widget-shadow-2 {
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: $body_bg_color;
+        border: 1px solid rgba($four_color_hex, 0.5);
+        @include border-radius(10px);
+        z-index: -1;
+    }
+}
 
 
 @keyframes pxl-draws-svg {

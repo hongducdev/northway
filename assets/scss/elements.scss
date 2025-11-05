@@ -120,16 +120,17 @@
             }
         }
         li {
-            border: 1px solid rgba($primary_color_hex, 0.3);
-            background-color: transparent;
+            border: 1px solid rgba($four_color_hex, 0.5);
+            background-color: $body_bg_color;
             @include transition(all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1));
             a {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
                 color: $secondary_color;
-                font-size: 15px;
-                font-weight: 600;
-                line-height: 2;
-                padding: 15px 30px;
-                background-color: transparent;
+                font-size: 16px;
+                padding: 15px 35px;
                 @include transition(
                     all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)
                 );
@@ -140,14 +141,18 @@
             }
             &:hover,
             &.active {
-                background-color: $primary_color;
+                background-color: $secondary_color;
                 a {
-                    color: #fff;
+                    color: $body_bg_color;
                 }
             }
+            &:first-child {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
             &:last-child {
-                border-bottom-left-radius: 20px;
-                border-bottom-right-radius: 20px;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
             }
         }
     }

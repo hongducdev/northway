@@ -52,14 +52,19 @@
         }
     }
     &.style-blur {
-        width: 88px;
-        height: 88px;
+        width: 80px;
+        height: 80px;
+        border-radius: 80px;
         @extend .pxl-flex-center;
-        background-color: rgba(255, 255, 255, 0.3);
-        -webkit-backdrop-filter: blur(2px);
-        backdrop-filter: blur(2px);
+        background-color: rgba($body_bg_color_hex, 0.4);
+        -webkit-backdrop-filter: blur(3.5px);
+        backdrop-filter: blur(3.5px);
         .pxl-btn-video {
-            border-radius: 88px;
+            border-radius: 80px;
+        }
+        i {
+            color: #fff;
+            font-size: 24px;
         }
     }
     &.style-outline {
