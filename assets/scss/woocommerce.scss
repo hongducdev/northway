@@ -1561,11 +1561,13 @@
 					scale: 0;
 					top: 0;
 					left: 0;
+					transform-origin: left center;
 				}
 				&-right {
 					top: 0;
 					right: 0;
 					scale: 1;
+					transform-origin: right center;
 				}
 			}
 			&-text {
@@ -5218,10 +5220,10 @@ body .woosw-popup-content-mid {
 					position: absolute;
 					top:50%;
 					left:50%;
-					font-size: 12px;
+					font-size: 22px !important;
 					transform:translate(-50%,-50%);
-					content: "\f136";
-					font-family: "caseicon";
+					content: "\F12C";
+					font-family: bootstrap-icons;
 					transition: 0s;
 				}
 				svg {

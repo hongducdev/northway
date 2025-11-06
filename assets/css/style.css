@@ -21033,11 +21033,13 @@ body.rtl .widget_search .search-submit {
   scale: 0;
   top: 0;
   left: 0;
+  transform-origin: left center;
 }
 .woocommerce .woocommerce-add-to-cart-button-icon-right {
   top: 0;
   right: 0;
   scale: 1;
+  transform-origin: right center;
 }
 .woocommerce .woocommerce-add-to-cart-button-text {
   flex: 0 0 calc(100% - 46px);
@@ -24731,10 +24733,10 @@ body .woosw-popup-content-mid .added_to_cart {
   position: absolute;
   top: 50%;
   left: 50%;
-  font-size: 12px;
+  font-size: 22px !important;
   transform: translate(-50%, -50%);
-  content: "\f136";
-  font-family: "caseicon";
+  content: "\F12C";
+  font-family: bootstrap-icons;
   transition: 0s;
 }
 .woocommerce-pagination ul .page-numbers.prev svg {
