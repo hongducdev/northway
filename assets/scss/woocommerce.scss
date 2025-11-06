@@ -1017,7 +1017,7 @@
 }
 .woocommerce, .woocommerce-page {
 	#pxl-wapper .container {
-		max-width: 1310px;
+		max-width: 1320px;
 	}
 	.comment-form {
 		max-width: 100%;
@@ -2141,21 +2141,30 @@
 				height: auto !important;
 				min-height: 598px;
 				border-radius: 25px;
-				border: 1px solid rgba($primary_color_hex, 0.5);
+				border: 1px solid rgba($secondary_color_hex, 0.5);
 				display: flex;
 				align-items: center;
-				background-color: #fff;
+				background-color: $body_bg_color;
 				@media (max-width: 575px) {
 					min-height: 300px;
+				}
+				.woocommerce-product-gallery__wrapper {
+					height: 100%;
+				}
+				.woocommerce-product-gallery__image {
+					height: 100%;
+					a {
+						height: 100%;
+					}
 				}
 			}
 		}
 		.woocommerce-product-gallery__wrapper {
-			background-color: #fff;
+			background-color: $body_bg_color;
 			display: flex;
 			align-items: center;
 			.zoomImg {
-				background-color: #fff;
+				background-color: $body_bg_color;
 			}
 		}
 		.woocommerce-product-gallery {
@@ -2196,13 +2205,13 @@
 			.flex-control-nav {
 				display: flex;
 				flex-direction: column;
-				gap: 30px;
-				width: 125px;
-				flex: 0 0 125px;
+				gap: 20px;
+				width: 190px;
+				flex: 0 0 190px;
 				@media (max-width: 1300px) {
 					flex-direction: row;
 					width: 100%;
-					height: 125px;
+					height: 190px;
 				}
 				li {
 					overflow: hidden;
@@ -2210,25 +2219,25 @@
 					align-items: center;
 					justify-content: center;
 					flex-grow: 1;
-					width: 125px;
-					height: 125px;
-					max-height: 125px;
-					border: 1px solid rgba($primary_color_hex, 0.5);
-					border-radius: 20px;
+					width: 190px;
+					height: 190px;
+					max-height: 190px;
+					border: 1px solid #AFB4B5;
+					@include border-radius(15px);
 					&:has(.flex-active) {
-						border-color: $primary_color;
+						border-color: $secondary_color;
 					}
 					@media (max-width: 767px) {
 						height: 100px;
 					}
 					img {
-						border: 1px solid transparent;
 						transition: .3s linear;
 						opacity: 1;
-						height: 80%;
-						width: auto;
-						object-fit: container;
-						max-height: 125px;
+						width: 100%;
+						height: 100%;
+						min-width: 190px;
+						min-height: 190px;
+						object-fit: cover;
 					}
 					&:nth-child(1) {
 						@media (min-width: 1301px) {
@@ -2289,8 +2298,8 @@
 				position: relative;
 				display: block;
 				img {
-					width: 70%;
-					height: auto;
+					width: 100%;
+					height: 100%;
 					object-fit: cover;
 				}
 				&:hover {

@@ -128,6 +128,28 @@
 }
 .woocommerce-shop #pxl-main {
     padding: 120px 0;
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+
+        background-image: repeating-linear-gradient(
+                to right,
+                rgba(#dfdfdf, 0.4) 0 1px,
+                transparent 1px 300px
+            ),
+            repeating-linear-gradient(
+                to bottom,
+                rgba(#dfdfdf, 0.4) 0 1px,
+                transparent 1px 300px
+            );
+        background-position: center center;
+        background-size: 300px 300px;
+        background-repeat: repeat;
+        transform: translateZ(0);
+    }
     @media #{$max-lg} {
         overflow-x: hidden;
     }
