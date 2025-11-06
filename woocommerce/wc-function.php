@@ -14,55 +14,6 @@ function northway_loop_shop_per_page( $limit ) {
 	return $limit;
 }
 
-// Custom pagination for shop page
-// Remove default WooCommerce pagination
-remove_action( 'woocommerce_after_shop_loop', 'woocommerce_pagination', 10 );
-
-// Add custom pagination
-add_action( 'woocommerce_after_shop_loop', 'northway_custom_pagination', 10 );
-function northway_custom_pagination() {
-	global $wp_query;
-	
-	if ( $wp_query->max_num_pages <= 1 ) {
-		return;
-	}
-	
-	$current = max( 1, get_query_var( 'paged' ) );
-	$total = $wp_query->max_num_pages;
-	
-	$output = '<nav class="woocommerce-pagination" aria-label="Product Pagination">';
-	$output .= '<ul class="page-numbers">';
-	
-	// Previous page
-	if ( $current > 1 ) {
-		$prev_link = get_pagenum_link( $current - 1 );
-		$output .= '<li><a class="prev page-numbers" href="' . esc_url( $prev_link ) . '"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 13 10" fill="none"><g transform="translate(13,0) scale(-1,1)"><path d="M6.50358 4.42541L1.65571 0.153365C1.54358 0.0544776 1.3939 0 1.23431 0C1.07471 0 0.925031 0.0544776 0.812906 0.153365L0.455894 0.467899C0.223584 0.672853 0.223584 1.00596 0.455894 1.21061L4.52677 4.79801L0.451377 8.3894C0.339252 8.48828 0.277344 8.62011 0.277344 8.76067C0.277344 8.90139 0.339252 9.03322 0.451377 9.13218L0.808389 9.44664C0.920603 9.54552 1.07019 9.6 1.22979 9.6C1.38939 9.6 1.53906 9.54552 1.65119 9.44664L6.50358 5.17069C6.61597 5.07149 6.6777 4.93904 6.67734 4.79824C6.6777 4.6569 6.61597 4.52453 6.50358 4.42541Z" fill="currentColor"/><path d="M12.7047 4.42541L7.85688 0.153365C7.74475 0.0544776 7.59507 0 7.43548 0C7.27588 0 7.1262 0.0544776 7.01408 0.153365L6.65707 0.467899C6.42476 0.672853 6.42476 1.00596 6.65707 1.21061L10.7279 4.79801L6.65255 8.3894C6.54042 8.48828 6.47852 8.62011 6.47852 8.76067C6.47852 8.90139 6.54042 9.03322 6.65255 9.13218L7.00956 9.44664C7.12178 9.54552 7.27136 9.6 7.43096 9.6C7.59056 9.6 7.74024 9.54552 7.85236 9.44664L12.7047 5.17069C12.8171 5.07149 12.8789 4.93904 12.8785 4.79824C12.8789 4.6569 12.8171 4.52453 12.7047 4.42541Z" fill="currentColor"/></g></svg></a></li>';
-	}
-	
-	$output .= '<div class="woocommerce-pagination-wrapper">';
-	for ( $i = 1; $i <= $total; $i++ ) {
-		if ( $i == $current ) {
-			$output .= '<li><span aria-label="Page ' . $i . '" aria-current="page" class="page-numbers current">' . $i . '</span></li>';
-		} else {
-			$page_link = get_pagenum_link( $i );
-			$output .= '<li><a aria-label="Page ' . $i . '" class="page-numbers" href="' . esc_url( $page_link ) . '">' . $i . '</a></li>';
-		}
-	}
-	$output .= '</div>';
-	
-	// Next page
-	if ( $current < $total ) {
-		$next_link = get_pagenum_link( $current + 1 );
-		$output .= '<li><a class="next page-numbers" href="' . esc_url( $next_link ) . '"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 13 10" fill="none"><path d="M6.50358 4.42541L1.65571 0.153365C1.54358 0.0544776 1.3939 0 1.23431 0C1.07471 0 0.925031 0.0544776 0.812906 0.153365L0.455894 0.467899C0.223584 0.672853 0.223584 1.00596 0.455894 1.21061L4.52677 4.79801L0.451377 8.3894C0.339252 8.48828 0.277344 8.62011 0.277344 8.76067C0.277344 8.90139 0.339252 9.03322 0.451377 9.13218L0.808389 9.44664C0.920603 9.54552 1.07019 9.6 1.22979 9.6C1.38939 9.6 1.53906 9.54552 1.65119 9.44664L6.50358 5.17069C6.61597 5.07149 6.6777 4.93904 6.67734 4.79824C6.6777 4.6569 6.61597 4.52453 6.50358 4.42541Z" fill="currentColor"/><path d="M12.7047 4.42541L7.85688 0.153365C7.74475 0.0544776 7.59507 0 7.43548 0C7.27588 0 7.1262 0.0544776 7.01408 0.153365L6.65707 0.467899C6.42476 0.672853 6.42476 1.00596 6.65707 1.21061L10.7279 4.79801L6.65255 8.3894C6.54042 8.48828 6.47852 8.62011 6.47852 8.76067C6.47852 8.90139 6.54042 9.03322 6.65255 9.13218L7.00956 9.44664C7.12178 9.54552 7.27136 9.6 7.43096 9.6C7.59056 9.6 7.74024 9.54552 7.85236 9.44664L12.7047 5.17069C12.8171 5.07149 12.8789 4.93904 12.8785 4.79824C12.8789 4.6569 12.8171 4.52453 12.7047 4.42541Z" fill="currentColor"/></svg></a></li>';
-	}
-	
-	$output .= '</ul>';
-	$output .= '</nav>';
-	
-	echo wp_kses_post( $output );
-}
-
-
 if(!function_exists('northway_woocommerce_catalog_result')){
     // remove
 	
@@ -259,49 +210,48 @@ function northway_woocommerce_product() {
 			) );
 			$thumbnail    = $img['thumbnail'];
 			$thumbnail_url    = $img['url']; ?>
-			<div class="woocommerce-product-header">
-				<a class="woocommerce-product-details" href="<?php the_permalink(); ?>">
-					<?php if(!empty($shop_featured_img_size)) { echo wp_kses_post($thumbnail); } else { woocommerce_template_loop_product_thumbnail(); } ?>
-				</a>
-				<div class="woocommerce-product-info">
-					<?php woocommerce_template_loop_price(); ?>
-					<?php if ( ! $product->managing_stock() && ! $product->is_in_stock() ) { ?>
-					<?php } else { ?>
-						<div class="woocommerce-product-meta">
-							<?php if ( ! $product->managing_stock() && ! $product->is_in_stock() ) { ?>
-							<?php } else { ?>
-								<div class="woocommerce-add-to-cart">
-									<?php woocommerce_template_loop_add_to_cart(); ?>
-								</div>
-							<?php } ?>
-							<?php if (class_exists('WPCleverWoosw')) { ?>
-								<div class="woocommerce-wishlist">
-									<?php echo do_shortcode('[woosw id="'.esc_attr( $product->get_id() ).'"]'); ?>
-								</div>
-							<?php } ?>
-						</div>
-					<?php } ?>
-				</div>
+			<div class="woocommerce-product-image">
+				<?php if(!empty($shop_featured_img_size)) { echo wp_kses_post($thumbnail); } else { woocommerce_template_loop_product_thumbnail(); } ?>
 			</div>
-			<div class="woocommerce-product-content">
-				<h4 class="woocommerce-product--title">
+			<div class="woocommerce-product-info">
+				<h4 class="woocommerce-product-title">
 					<a href="<?php the_permalink(); ?>" ><?php the_title(); ?></a>
 				</h4>
-				<div class="woocommerce-product--rating">
-					<?php woocommerce_template_loop_rating(); ?> <span class="review-count">
-						(<?php echo esc_html( $product->get_rating_count() ); ?>)
-					</span>
+				<?php woocommerce_template_loop_price(); ?>
+				<div class="woocommerce-product-meta">
+					<div class="woocommerce-product--rating">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+							<path d="M7.44918 0.835791C7.67529 0.38807 8.32861 0.388069 8.55472 0.835791L10.3948 4.4793C10.4846 4.65709 10.6582 4.78032 10.8589 4.80883L14.9735 5.39309C15.4791 5.46489 15.681 6.07208 15.3151 6.42058L12.3378 9.25665C12.1925 9.39504 12.1262 9.59443 12.1605 9.78984L12.8634 13.7944C12.9497 14.2865 12.4212 14.6618 11.969 14.4295L8.2888 12.5388C8.10922 12.4465 7.89468 12.4465 7.7151 12.5388L4.03493 14.4295C3.58271 14.6618 3.05416 14.2865 3.14053 13.7944L3.84338 9.78984C3.87768 9.59443 3.81138 9.39504 3.6661 9.25665L0.68878 6.42058C0.322921 6.07208 0.524806 5.46489 1.03041 5.39309L5.14497 4.80883C5.34574 4.78032 5.51931 4.65709 5.6091 4.4793L7.44918 0.835791Z" stroke="#666F78"/>
+						</svg>
+						<span class="review-rating">
+							<?php echo esc_html( $product->get_average_rating() ); ?>
+						</span>
+					</div>
+					<div class="woocommerce-add-to-cart">
+						<a href="<?php echo esc_url( $product->add_to_cart_url() ); ?>" class="woocommerce-add-to-cart-button">
+							<div class="woocommerce-add-to-cart-button-icon woocommerce-add-to-cart-button-icon-left">
+								<i class="flaticon-cart"></i>
+							</div>
+							<span class="woocommerce-add-to-cart-button-text">
+								<?php echo esc_html__('Add to Cart', 'northway'); ?>
+							</span>
+							<div class="woocommerce-add-to-cart-button-icon woocommerce-add-to-cart-button-icon-right">
+								<i class="flaticon-cart"></i>
+							</div>
+						</a>
+					</div>
 				</div>
 			</div>
 		<?php } ?>
 	</div>
 <?php }
 
+
 /* Replace text Onsale */
 add_filter('woocommerce_sale_flash', 'northway_custom_sale_text', 10, 3);
 function northway_custom_sale_text($text, $post, $_product)
 {
-	return '<span class="onsale">' . esc_html__( 'Sale!', 'northway' ) . '</span>';
+	return '<span class="onsale">' . esc_html__( 'Sale', 'northway' ) . '</span>';
 }
 /* Removes the "shop" title on the main shop page */
 function northway_hide_page_title()
@@ -359,47 +309,41 @@ function northway_woocommerce_sg_product_title() {
 		</div>
 	<?php endif; }
 
-	add_action( 'woocommerce_single_product_summary', 'northway_woocommerce_sg_product_rating', 10 );
+	add_action( 'woocommerce_single_product_summary', 'northway_woocommerce_sg_product_rating', 1 );
 	function northway_woocommerce_sg_product_rating() { global $product; ?>
 		<div class="woocommerce-sg-product-rating">
 			<?php woocommerce_template_single_rating();
-			$rating_count = $product->get_rating_count();
-			$average_rating = $product->get_average_rating();
-			if ( $average_rating > 0 ) {
-				echo ' <span class="average-rating">' . number_format($average_rating, 1) . '</span>';
-			}
-			if ( $rating_count ) {
-				$rating_count = $rating_count > 1 ? $rating_count . ' reviews' : $rating_count . ' review';
+			if ( $rating_count = $product->get_rating_count() ) {
 				echo ' <span class="review-count">(' . $rating_count . ')</span>';
 			} ?>
 		</div>
 	<?php }
 
-	add_action( 'woocommerce_single_product_summary', 'northway_woocommerce_sg_product_price', 1 );
+	add_action( 'woocommerce_single_product_summary', 'northway_woocommerce_sg_product_price', 10 );
 	function northway_woocommerce_sg_product_price() { ?>
 		<div class="woocommerce-sg-product-price">
 			<?php woocommerce_template_single_price(); ?>
 		</div>
 	<?php }
 
-	// add_filter('woocommerce_get_price_html', 'custom_dynamic_discount_label', 20, 2);
-	// function custom_dynamic_discount_label($price, $product) {
-	// 	if ($product->is_on_sale()) {
-	// 		$regular_price = (float) $product->get_regular_price();
-	// 		$sale_price    = (float) $product->get_sale_price();
+	add_filter('woocommerce_get_price_html', 'custom_dynamic_discount_label', 20, 2);
+	function custom_dynamic_discount_label($price, $product) {
+		if ($product->is_on_sale()) {
+			$regular_price = (float) $product->get_regular_price();
+			$sale_price    = (float) $product->get_sale_price();
 
-	// 		if ($regular_price > 0 && $regular_price > $sale_price) {
-	// 			$discount = round((($regular_price - $sale_price) / $regular_price) * 100);
+			if ($regular_price > 0 && $regular_price > $sale_price) {
+				$discount = round((($regular_price - $sale_price) / $regular_price) * 100);
 
-	// 			$price .= '<span class="custom-discount-label">' . $discount . '% Off</span>';
-	// 		}
-	// 	}
+				$price .= '<span class="custom-discount-label">' . $discount . '% Off</span>';
+			}
+		}
 
-	// 	return $price;
-	// }
+		return $price;
+	}
 
 
-	add_action( 'woocommerce_single_product_summary', 'northway_woocommerce_sg_product_meta', 25 );
+	add_action( 'woocommerce_single_product_summary', 'northway_woocommerce_sg_product_meta', 30 );
 	function northway_woocommerce_sg_product_meta() { ?>
 		<div class="woocommerce-sg-product-meta">
 			<?php woocommerce_template_single_meta(); ?>
@@ -447,15 +391,63 @@ function northway_woocommerce_sg_product_title() {
 			}
 		}
 
+		add_action('woocommerce_before_single_product_summary', 'custom_single_product_testimonial', 20);
+		function custom_single_product_testimonial() {
+			$single_testi_text = northway()->get_theme_opt('single_testi_text', '');
+			$single_testi_title = northway()->get_theme_opt('single_testi_title', '');
+			$single_testi_position = northway()->get_theme_opt('single_testi_position', '');
+			$logoT = northway()->get_theme_opt('single_testi_logo', []);
+			$flag = northway()->get_theme_opt('single_testi_flag', []);
+			?>
+			<div class="custom-testimonial-section">
+				<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+					<path d="M0 29.9904H12.2016L8.2056 38.1777V42.0384L22.5504 29.9904V7.43994H0L0 29.9904Z" fill="white"/>
+					<path d="M29.5898 11.6936V29.9902H39.4894L36.2465 36.6335V39.7645L47.8851 29.9902V11.6936H29.5898Z" fill="white"/>
+				</svg>
+				<p>
+					<?php
+					if ( !empty($single_testi_text) ) {
+						echo wp_kses_post($single_testi_text);
+					} 
+					?>
+				</p>
+				<div class="product-testi--image">
+					<?php if ( !empty($logoT['url']) || !empty($flag['url']) ) {
+						echo '<div class="testi-image--flag">';
+						if ( !empty($logoT['url']) ) {
+							echo '<img src="'.esc_url($logoT['url']).'" alt="Testi Method"/>';
+						}
+						if ( !empty($flag['url']) ) {
+							echo '<img class="flag" src="'.esc_url($flag['url']).'" alt="Testi flag"/>';
+						}
+						echo '</div>';
+					} ?>
+					<div class="product-testi--avatar">
+						<strong><?php
+						if ( !empty($single_testi_title) ) {
+							echo wp_kses_post($single_testi_title);
+						} 
+					?></strong><br>
+					<span><?php
+					if ( !empty($single_testi_position) ) {
+						echo wp_kses_post($single_testi_position);
+					} 
+				?></span>
+			</div>
+		</div>
+	</div>
+	<?php
+}
+
 
 /* Product Single: Gallery */
 add_action( 'woocommerce_before_single_product_summary', 'northway_woocommerce_single_gallery_start', 0 );
 function northway_woocommerce_single_gallery_start() { ?>
-	<?php echo '<div class="woocommerce-gallery col-xl-7 col-lg-6 col-md-6"><div class="woocommerce-gallery-inner">'; ?>
+	<?php echo '<div class="woocommerce-gallery col-xl-6 col-lg-6 col-md-6"><div class="woocommerce-gallery-inner">'; ?>
 <?php }
 add_action( 'woocommerce_before_single_product_summary', 'northway_woocommerce_single_gallery_end', 30 );
 function northway_woocommerce_single_gallery_end() { ?>
-	<?php echo '</div></div><div class="woocommerce-summary-inner col-xl-5 col-lg-6 col-md-6">'; ?>
+	<?php echo '</div></div><div class="woocommerce-summary-inner col-xl-6 col-lg-6 col-md-6">'; ?>
 <?php }
 
 /* Ajax update cart item */
@@ -625,11 +617,6 @@ function northway_related_sub() {
 	echo '<div class="heading-related">';
 
 	echo '<h3 class="title-related">';
-	echo '<svg xmlns="http://www.w3.org/2000/svg" width="21" height="24" viewBox="0 0 21 24" fill="none">
-	<path d="M5.68428 12.5332C5.88091 12.4236 6.12569 12.5037 6.22601 12.7059C7.76292 15.7643 10.1786 18.9364 11.8801 20.9964C16.2621 5.81822 4.06711 4.44068 1.40661 4.31851C1.11368 4.30166 0.852842 4.50808 0.780611 4.80718C-3.1038 20.8026 8.63772 21.5314 11.238 21.5019C9.5085 19.404 7.07673 16.2024 5.51574 13.1019C5.41542 12.8955 5.48765 12.6385 5.68428 12.5332Z" fill="currentColor"/>
-	<path d="M11.8801 20.9964C11.8801 20.9964 11.872 21.0259 11.868 21.0385C11.7918 21.3081 11.555 21.4977 11.2862 21.5019H11.238C12.4178 22.9342 13.2645 23.8526 13.2846 23.8736C13.3648 23.9579 13.4692 24 13.5735 24C13.6778 24 13.7741 23.9621 13.8544 23.882C14.0109 23.7178 14.0149 23.4524 13.8624 23.2838C13.8423 23.2628 13.0237 22.3823 11.8801 20.9964Z" fill="currentColor"/>
-	<path d="M20.2187 0.489217C20.1465 0.194332 19.8857 -0.0120879 19.5927 0.00055001C17.7869 0.084803 11.5992 0.750402 9.17142 5.90247C10.1546 6.58071 11.0735 7.4443 11.8199 8.54801C12.2693 9.21361 12.6305 9.93818 12.9114 10.7133C13.5053 9.63487 14.051 8.52695 14.4563 7.49064C14.5406 7.27579 14.7733 7.17469 14.978 7.25894C15.1826 7.34741 15.2829 7.59174 15.1987 7.80659C14.6931 9.10408 13.9868 10.4816 13.2444 11.7833C13.6136 13.2578 13.7139 14.9049 13.5414 16.7121C17.7027 15.6126 23.0197 12.015 20.2187 0.485004V0.489217Z" fill="currentColor"/>
-	</svg>';
 	echo esc_html__('Related Products','northway');
 	echo '</h3>';
 
@@ -688,5 +675,5 @@ add_filter('woocommerce_get_image_size_thumbnail', function ($size) {
 /* Custom Text Add to cart - Single product */
 add_filter( 'woocommerce_product_single_add_to_cart_text', 'northway_add_to_cart_button_text_single' ); 
 function northway_add_to_cart_button_text_single() {
-	echo esc_html__('Add to Cart', 'northway').'<i class="flaticon-cart"></i>';
+	echo '<i class="bootstrap-icons bi-cart3 pxl-mr-12"></i>'.esc_html__('Add to Cart', 'northway');
 }

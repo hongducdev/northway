@@ -24,6 +24,7 @@
         "calendar",
         "shield",
         "gear",
-        "suitcase"
+        "suitcase",
+        "cart"
     ]
 }
