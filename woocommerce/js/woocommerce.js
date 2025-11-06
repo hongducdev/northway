@@ -74,7 +74,7 @@
         });
 
         // Change text button in Filter Price Widget from Filter to Apply Filter
-        $(".widget_price_filter .widget-content button").text("Apply Filter");
+        $(".widget_price_filter .widget-content button").text("Apply");
 
     });
 

@@ -228,7 +228,9 @@
             }
             a {
                 padding: 15px 30px;
-                display: block;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
                 color: $secondary_color;
                 font-size: 16px;
                 position: relative;
@@ -239,7 +241,7 @@
                 );
                 position: relative;
                 &:hover {
-                    background-color: $primary_color;
+                    background-color: $secondary_color;
                     color: $body_bg_color;
                 }
             }

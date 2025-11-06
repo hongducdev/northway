@@ -677,3 +677,9 @@ add_filter( 'woocommerce_product_single_add_to_cart_text', 'northway_add_to_cart
 function northway_add_to_cart_button_text_single() {
 	echo '<i class="bootstrap-icons bi-cart3 pxl-mr-12"></i>'.esc_html__('Add to Cart', 'northway');
 }
+
+// Custom Text in Button Filter by Price Widget
+add_filter( 'woocommerce_price_filter_widget_label', 'northway_price_filter_widget_label' );
+function northway_price_filter_widget_label() {
+	return esc_html__('Apply', 'northway');
+}
