@@ -13297,9 +13297,7 @@ body.rtl .pxl-post-list1 li:before {
 }
 .error404 #pxl-main {
   padding: 0;
-}
-.error404 .container {
-  max-width: 100% !important;
+  background: linear-gradient(180deg, #041427 24.22%, #0e488d 252.49%);
 }
 .error404 .wrap-content-404 {
   position: relative;
@@ -13321,43 +13319,8 @@ body.rtl .pxl-post-list1 li:before {
     gap: 15px;
   }
 }
-.error404 .pxl-error-bough {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.error404 .pxl-error-leaf {
-  position: absolute;
-}
-.error404 .pxl-error-leaf-1 {
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.error404 .pxl-error-leaf-2 {
-  right: 33px;
-  bottom: 175px;
-}
-.error404 .pxl-error-leaf-3 {
-  bottom: 0;
-  right: 400px;
-}
-.error404 .pxl-error-image {
-  max-width: 795px;
-  width: 100%;
-  height: 100%;
-  min-height: 100vh;
-}
-@media screen and (max-width: 767px) {
-  .error404 .pxl-error-image {
-    display: none;
-  }
-}
-.error404 .pxl-error-image img {
-  width: 100%;
-  height: 100%;
-  min-height: 100vh;
-  object-fit: cover;
+.error404 .pxl-error-content {
+  text-align: center;
 }
 @media screen and (max-width: 1280px) {
   .error404 .pxl-error-content {
@@ -13375,18 +13338,40 @@ body.rtl .pxl-post-list1 li:before {
     text-align: center;
   }
 }
+.error404 .pxl-error-subtitle {
+  color: #fff;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.08;
+  margin-bottom: 15px;
+}
+.error404 .pxl-error-title {
+  color: #fff;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.43;
+  margin-bottom: 100px;
+}
 .error404 .pxl-error-number {
   display: flex;
   align-items: center;
-  margin-bottom: 62px;
+  justify-content: center;
+  margin-bottom: 44px;
 }
 .error404 .pxl-error-number span {
-  font-family: "Dancing Script";
-  font-size: 300px;
+  margin-top: -150px;
+  font-family: "Cormorant Garamond";
+  font-size: 350px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  background: linear-gradient(180deg, var(--secondary-color) 58.33%, #fff 80.14%);
+  background: linear-gradient(180deg, #f8f8f2 77.2%, rgba(248, 248, 242, 0.00) 110.36%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -13406,76 +13391,36 @@ body.rtl .pxl-post-list1 li:before {
     width: 80px;
   }
 }
-@media screen and (max-width: 1280px) {
-  .error404 .pxl-error-number img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-  }
-}
-@media screen and (max-width: 575px) {
-  .error404 .pxl-error-number img {
-    width: 200px;
-    height: 200px;
-  }
-}
-@media screen and (max-width: 360px) {
-  .error404 .pxl-error-number img {
-    width: 150px;
-    height: 150px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .error404 .pxl-error-number {
-    justify-content: center;
-  }
-}
-.error404 .pxl-error-title {
-  color: var(--secondary-color);
-  font-family: "Dancing Script";
-  font-size: 35px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.28;
-  margin-bottom: 24px;
-}
-.error404 .pxl-error-divider {
-  width: 100%;
-  height: 1px;
-  border-top: 1px dashed var(--primary-color);
-}
-.error404 .pxl-error-divider-wrapper {
-  position: relative;
-}
-.error404 .pxl-error-divider-wrapper:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 0;
-  width: 40%;
-  height: 10px;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, #fff 100%);
-  transform: translateY(-50%);
-}
-.error404 .pxl-error-description {
-  margin-top: 24px;
-  color: rgba(4, 20, 39, 0.7);
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.66;
-  margin-bottom: 35px;
-}
 .error404 .pxl-error-btn {
-  border-radius: 6px;
-  background: linear-gradient(156deg, var(--four-color) 31.89%, var(--secondary-color) 114.1%);
-  padding: 0 25px;
+  margin-top: 30px;
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  height: 52px;
+  padding: 0 30px;
+  background-color: transparent;
+  border: 1px solid #666f78;
+  color: var(--body_bg-color);
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 500;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease;
+  -khtml-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
-.error404 .pxl-error-btn i {
-  font-size: 20px;
+.error404 .pxl-error-btn:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--body_bg-color);
 }
 .btn--readmore {
   font-size: 14px;

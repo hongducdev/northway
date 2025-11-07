@@ -841,12 +841,6 @@ function casethemes_setup_option()
                         'default' => 'Sub Title',
                     ),
                     array(
-                        'id'      => 'sg_product_ptitle_desc',
-                        'type'    => 'textarea',
-                        'title'   => esc_html__('Page Title Description', 'northway'),
-                        'default' => 'Description Details',
-                    ),
-                    array(
                         'id'       => 'product_title',
                         'type'     => 'switch',
                         'title'    => esc_html__('Product Title', 'northway'),
@@ -1194,22 +1188,6 @@ function casethemes_setup_option()
         'title'      => esc_html__('404 Page', 'northway'),
         'icon'       => 'el el-error',
         'fields'     => array(
-            array(
-                'id'       => 'img_404',
-                'type'     => 'media',
-                'title'    => esc_html__('Image 404', 'northway'),
-                'default' => array(
-                    'url' => get_template_directory_uri() . '/assets/img/404-image.webp'
-                ),
-            ),
-            array(
-                'id'       => 'img_404_0',
-                'type'     => 'media',
-                'title'    => esc_html__('Image For 0', 'northway'),
-                'default' => array(
-                    'url' => get_template_directory_uri() . '/assets/img/404-image.webp'
-                ),
-            ),
             array(
                 'id'      => 'title_404',
                 'type'    => 'text',
