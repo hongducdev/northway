@@ -267,14 +267,14 @@ function northway_woocommerce_single_summer_start() { ?>
 
 add_action( 'woocommerce_before_add_to_cart_quantity', 'custom_before_quantity_input_field', 25 );
 function custom_before_quantity_input_field() { ?>
-	<?php echo '<div class="quantity-label">' . esc_html__( 'Quantity', 'northway' ) . '</div>'; ?>
+	<?php echo '<div class="quantity-label">' . esc_html__( 'Quantity:', 'northway' ) . '</div>'; ?>
 <?php } 
 
-add_action( 'woocommerce_single_product_summary', 'custom_after_quantity_input_field', 30 );
+add_action( 'woocommerce_single_product_summary', 'custom_after_quantity_input_field', 12 );
 function custom_after_quantity_input_field() {
 	global $product;
 	?>
-	<div class="wooc-product-meta">
+	<div class="wooc-product-wishlist">
 		<?php if (class_exists('WPCleverWoosw')) { ?>
 			<?php echo do_shortcode('[woosw id="'.esc_attr( $product->get_id() ).'"]'); ?>
 		<?php } ?>
@@ -283,6 +283,51 @@ function custom_after_quantity_input_field() {
 }
 
 add_action( 'woocommerce_after_single_product_summary', 'northway_woocommerce_single_summer_end', 5 );
+
+// Remove button mặc định
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30);
+
+// Thêm custom button
+add_action('woocommerce_single_product_summary', 'custom_add_to_cart_button', 30);
+
+function custom_add_to_cart_button() {
+    global $product;
+
+    if ( ! $product->is_purchasable() ) {
+        return;
+    }
+
+    echo '<form class="cart" action="' . esc_url( apply_filters( 'woocommerce_add_to_cart_form_action', $product->get_permalink() ) ) . '" method="post" enctype="multipart/form-data">';
+
+    if ( ! $product->is_sold_individually() ) {
+        do_action( 'woocommerce_before_add_to_cart_quantity' );
+
+        woocommerce_quantity_input( array(
+            'min_value'   => apply_filters( 'woocommerce_quantity_input_min', $product->get_min_purchase_quantity(), $product ),
+            'max_value'   => apply_filters( 'woocommerce_quantity_input_max', $product->get_max_purchase_quantity(), $product ),
+            'input_value' => isset( $_POST['quantity'] ) ? wc_stock_amount( wp_unslash( $_POST['quantity'] ) ) : $product->get_min_purchase_quantity(),
+        ) );
+
+        do_action( 'woocommerce_after_add_to_cart_quantity' );
+    }
+    
+    ?>
+    <button type="submit" name="add-to-cart" value="<?php echo esc_attr( $product->get_id() ); ?>" class="single_add_to_cart_button">
+        <div class="woocommerce-add-to-cart-button-icon woocommerce-add-to-cart-button-icon-left">
+            <i class="flaticon-cart"></i>
+        </div>
+        <span class="woocommerce-add-to-cart-button-text">
+            <?php echo esc_html__('Add to Cart', 'northway'); ?>
+        </span>
+        <div class="woocommerce-add-to-cart-button-icon woocommerce-add-to-cart-button-icon-right">
+            <i class="flaticon-cart"></i>
+        </div>
+    </button>
+    <?php
+    
+    echo '</form>';
+}
+
 function northway_woocommerce_single_summer_end() { ?>
 	<?php echo '</div></div>'; ?>
 <?php }
@@ -299,7 +344,7 @@ function northway_checkout_after_order_review_end() { ?>
 <?php }
 
 
-add_action( 'woocommerce_single_product_summary', 'northway_woocommerce_sg_product_title', 9 );
+add_action( 'woocommerce_single_product_summary', 'northway_woocommerce_sg_product_title', 5 );
 function northway_woocommerce_sg_product_title() { 
 	global $product; 
 	$product_title = northway()->get_theme_opt( 'product_title', false ); 
@@ -309,17 +354,22 @@ function northway_woocommerce_sg_product_title() {
 		</div>
 	<?php endif; }
 
-	add_action( 'woocommerce_single_product_summary', 'northway_woocommerce_sg_product_rating', 1 );
+	add_action( 'woocommerce_single_product_summary', 'northway_woocommerce_sg_product_rating', 10 );
 	function northway_woocommerce_sg_product_rating() { global $product; ?>
 		<div class="woocommerce-sg-product-rating">
-			<?php woocommerce_template_single_rating();
-			if ( $rating_count = $product->get_rating_count() ) {
-				echo ' <span class="review-count">(' . $rating_count . ')</span>';
-			} ?>
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+				<path d="M7.44723 0.835791C7.67334 0.38807 8.32666 0.388069 8.55277 0.835791L10.3929 4.4793C10.4826 4.65709 10.6562 4.78032 10.857 4.80883L14.9715 5.39309C15.4771 5.46489 15.679 6.07208 15.3132 6.42058L12.3359 9.25665C12.1906 9.39504 12.1243 9.59443 12.1586 9.78984L12.8614 13.7944C12.9478 14.2865 12.4192 14.6618 11.967 14.4295L8.28685 12.5388C8.10727 12.4465 7.89273 12.4465 7.71315 12.5388L4.03298 14.4295C3.58076 14.6618 3.05221 14.2865 3.13858 13.7944L3.84143 9.78984C3.87573 9.59443 3.80943 9.39504 3.66415 9.25665L0.686827 6.42058C0.320968 6.07208 0.522853 5.46489 1.02846 5.39309L5.14301 4.80883C5.34379 4.78032 5.51735 4.65709 5.60714 4.4793L7.44723 0.835791Z" stroke="#666F78"/>
+			</svg>
+			<span class="woocommerce-sg-product-rating-text">
+				<?php echo esc_html( $product->get_average_rating() ); ?>
+				<?php if ( $rating_count = $product->get_rating_count() ) { ?>
+					<span class="woocommerce-sg-product-rating-count">(<?php echo esc_html( $rating_count ); ?> reviews)</span>
+				<?php } ?>
+			</span>
 		</div>
 	<?php }
 
-	add_action( 'woocommerce_single_product_summary', 'northway_woocommerce_sg_product_price', 10 );
+	add_action( 'woocommerce_single_product_summary', 'northway_woocommerce_sg_product_price', 0 );
 	function northway_woocommerce_sg_product_price() { ?>
 		<div class="woocommerce-sg-product-price">
 			<?php woocommerce_template_single_price(); ?>
@@ -331,16 +381,15 @@ function northway_woocommerce_sg_product_title() {
 		if ($product->is_on_sale()) {
 			$regular_price = (float) $product->get_regular_price();
 			$sale_price    = (float) $product->get_sale_price();
-
-			if ($regular_price > 0 && $regular_price > $sale_price) {
-				$discount = round((($regular_price - $sale_price) / $regular_price) * 100);
-
-				$price .= '<span class="custom-discount-label">' . $discount . '% Off</span>';
-			}
 		}
-
 		return $price;
 	}
+
+	// custom before sg_product_meta
+	add_action( 'woocommerce_single_product_summary', 'custom_before_sg_product_meta', 30 );
+	function custom_before_sg_product_meta() { ?>
+		<?php echo '<div class="woocommerce-sg-product-meta-label">' . esc_html__( 'Info Product:', 'northway' ) . '</div>'; ?>
+	<?php } 
 
 
 	add_action( 'woocommerce_single_product_summary', 'northway_woocommerce_sg_product_meta', 30 );
@@ -362,11 +411,11 @@ function northway_woocommerce_sg_product_title() {
 		$product_social_share = northway()->get_theme_opt( 'product_social_share', false );
 		if($product_social_share) : ?>
 			<div class="woocommerce-social-share">
-				<label class="pxl-mr-20"><?php echo esc_html__('Share:', 'northway'); ?></label>
-				<a class="fb-social pxl-mr-10" target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>"><i class="fab fa-facebook-f"></i></a>
-				<a class="tw-social pxl-mr-10" target="_blank" href="https://twitter.com/intent/tweet?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>%20"><i class="fab fa-x-twitter"></i></a>
-				<a class="pin-social pxl-mr-10" target="_blank" href="http://pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>&description=<?php the_title(); ?>%20"><i class="fab fa-pinterest-p"></i></a>
-				<a class="lin-social pxl-mr-10" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&title=<?php the_title(); ?>%20"><i class="fab fa-linkedin"></i></a>
+				<label class="pxl-mr-10"><?php echo esc_html__('Share:', 'northway'); ?></label>
+				<a class="fb-social pxl-mr-5" target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>"><i class="flaticon-facebook"></i></a>
+				<a class="tw-social pxl-mr-5" target="_blank" href="https://x.com/intent/tweet?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>%20"><i class="flaticon-search"></i></a>
+				<a class="lin-social pxl-mr-5" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&title=<?php the_title(); ?>%20"><i class="flaticon-linkedin"></i></a>
+				<a class="insta-social pxl-mr-5" target="_blank" href="http://instagram.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>%20"><i class="flaticon-instagram"></i></a>
 			</div>
 		<?php endif; }
 
@@ -391,63 +440,16 @@ function northway_woocommerce_sg_product_title() {
 			}
 		}
 
-		add_action('woocommerce_before_single_product_summary', 'custom_single_product_testimonial', 20);
-		function custom_single_product_testimonial() {
-			$single_testi_text = northway()->get_theme_opt('single_testi_text', '');
-			$single_testi_title = northway()->get_theme_opt('single_testi_title', '');
-			$single_testi_position = northway()->get_theme_opt('single_testi_position', '');
-			$logoT = northway()->get_theme_opt('single_testi_logo', []);
-			$flag = northway()->get_theme_opt('single_testi_flag', []);
-			?>
-			<div class="custom-testimonial-section">
-				<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-					<path d="M0 29.9904H12.2016L8.2056 38.1777V42.0384L22.5504 29.9904V7.43994H0L0 29.9904Z" fill="white"/>
-					<path d="M29.5898 11.6936V29.9902H39.4894L36.2465 36.6335V39.7645L47.8851 29.9902V11.6936H29.5898Z" fill="white"/>
-				</svg>
-				<p>
-					<?php
-					if ( !empty($single_testi_text) ) {
-						echo wp_kses_post($single_testi_text);
-					} 
-					?>
-				</p>
-				<div class="product-testi--image">
-					<?php if ( !empty($logoT['url']) || !empty($flag['url']) ) {
-						echo '<div class="testi-image--flag">';
-						if ( !empty($logoT['url']) ) {
-							echo '<img src="'.esc_url($logoT['url']).'" alt="Testi Method"/>';
-						}
-						if ( !empty($flag['url']) ) {
-							echo '<img class="flag" src="'.esc_url($flag['url']).'" alt="Testi flag"/>';
-						}
-						echo '</div>';
-					} ?>
-					<div class="product-testi--avatar">
-						<strong><?php
-						if ( !empty($single_testi_title) ) {
-							echo wp_kses_post($single_testi_title);
-						} 
-					?></strong><br>
-					<span><?php
-					if ( !empty($single_testi_position) ) {
-						echo wp_kses_post($single_testi_position);
-					} 
-				?></span>
-			</div>
-		</div>
-	</div>
-	<?php
-}
-
+	
 
 /* Product Single: Gallery */
 add_action( 'woocommerce_before_single_product_summary', 'northway_woocommerce_single_gallery_start', 0 );
 function northway_woocommerce_single_gallery_start() { ?>
-	<?php echo '<div class="woocommerce-gallery col-xl-6 col-lg-6 col-md-6"><div class="woocommerce-gallery-inner">'; ?>
+	<?php echo '<div class="woocommerce-gallery col-xl-7 col-lg-6 col-md-6"><div class="woocommerce-gallery-inner">'; ?>
 <?php }
 add_action( 'woocommerce_before_single_product_summary', 'northway_woocommerce_single_gallery_end', 30 );
 function northway_woocommerce_single_gallery_end() { ?>
-	<?php echo '</div></div><div class="woocommerce-summary-inner col-xl-6 col-lg-6 col-md-6">'; ?>
+	<?php echo '</div></div><div class="woocommerce-summary-inner col-xl-5 col-lg-6 col-md-6">'; ?>
 <?php }
 
 /* Ajax update cart item */
@@ -672,14 +674,15 @@ add_filter('woocommerce_get_image_size_thumbnail', function ($size) {
 	return $size;
 });
 
-/* Custom Text Add to cart - Single product */
-add_filter( 'woocommerce_product_single_add_to_cart_text', 'northway_add_to_cart_button_text_single' ); 
-function northway_add_to_cart_button_text_single() {
-	echo '<i class="bootstrap-icons bi-cart3 pxl-mr-12"></i>'.esc_html__('Add to Cart', 'northway');
-}
-
 // Custom Text in Button Filter by Price Widget
 add_filter( 'woocommerce_price_filter_widget_label', 'northway_price_filter_widget_label' );
 function northway_price_filter_widget_label() {
 	return esc_html__('Apply', 'northway');
+}
+
+add_filter('woocommerce_output_related_products_args', 'custom_related_products_args', 20);
+function custom_related_products_args($args) {
+    $args['posts_per_page'] = 3;
+    $args['columns'] = 3;
+    return $args;
 }
