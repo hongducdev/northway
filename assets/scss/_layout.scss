@@ -62,7 +62,7 @@
     }
 }
 
-.blog #pxl-main {
+.blog #pxl-main, .woocommerce-checkout #pxl-main, .woocommerce-cart #pxl-main {
     position: relative;
     &:before {
         content: "";
