@@ -7,9 +7,13 @@ $header_display = northway()->get_page_opt('header_display', 'show');
 $sticky_scroll = northway()->get_opt('sticky_scroll');
 $pm_menu = northway()->get_theme_opt('pm_menu');
 $header_layout = northway()->get_opt('header_layout');
-$post_header = get_post($header_layout);
-$header_type = get_post_meta($post_header->ID, 'header_type', true);
-$header_sidebar_style = get_post_meta($post_header->ID, 'header_sidebar_style', true);
+$post_header = $header_layout ? get_post($header_layout) : null;
+$header_type = '';
+$header_sidebar_style = '';
+if ($post_header instanceof WP_Post) {
+    $header_type = get_post_meta($post_header->ID, 'header_type', true);
+    $header_sidebar_style = get_post_meta($post_header->ID, 'header_sidebar_style', true);
+}
 $page_mobile_style = northway()->get_page_opt('page_mobile_style');
 $opt_mobile_style = northway()->get_opt('opt_mobile_style');
 if (isset($page_mobile_style) && !empty($page_mobile_style) && $page_mobile_style != 'inherit') {
@@ -18,8 +22,11 @@ if (isset($page_mobile_style) && !empty($page_mobile_style) && $page_mobile_styl
 $mobile_display = northway()->get_opt('mobile_display');
 $header_mobile_layout = northway()->get_opt('header_mobile_layout');
 $header_mobile_layout_count = (int)northway()->get_opt('header_mobile_layout');
-$post_header_mobile = get_post($header_mobile_layout);
-$header_mobile_type = get_post_meta($post_header_mobile->ID, 'header_mobile_type', true);
+$post_header_mobile = $header_mobile_layout ? get_post($header_mobile_layout) : null;
+$header_mobile_type = '';
+if ($post_header_mobile instanceof WP_Post) {
+    $header_mobile_type = get_post_meta($post_header_mobile->ID, 'header_mobile_type', true);
+}
 ?>
 <?php if ($header_display == 'show' || is_search()): ?>
 

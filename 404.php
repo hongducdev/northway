@@ -9,7 +9,37 @@ $button_404 = northway()->get_theme_opt('button_404');
 get_header(); ?>
 <div class="wrap-content-404">
     <div class="pxl-error-wrapper">
+        <div class="pxl-error-divider pxl-error-divider-1"></div>
+        <div class="pxl-error-divider pxl-error-divider-2"></div>
+        <div class="pxl-error-divider pxl-error-divider-short-1"></div>
+        <div class="pxl-error-divider pxl-error-divider-short-2"></div>
+        <div class="pxl-error-divider pxl-error-divider-short-3"></div>
+        <div class="pxl-error-divider pxl-error-divider-short-4"></div>
         <div class="pxl-error-content container">
+            <!-- Stars -->
+            <i class="flaticon-star pxl-error-star-1"></i>
+            <i class="flaticon-star pxl-error-star-2"></i>
+            <i class="flaticon-star pxl-error-star-3"></i>
+            <i class="flaticon-star pxl-error-star-4"></i>
+
+            <!-- Texts -->
+            <span class="pxl-error-text pxl-error-text-1 wow fadeInUp" data-wow-delay="0.1s">
+                <?php echo esc_html__('Invalid url', 'northway'); ?>
+            </span>
+            <span class="pxl-error-text pxl-error-text-2 wow fadeInUp" data-wow-delay="0.2s">
+                <?php echo esc_html__('Error', 'northway'); ?>
+            </span>
+            <span class="pxl-error-text pxl-error-text-3 wow fadeInUp" data-wow-delay="0.3s">
+                <?php echo esc_html__('Broken link', 'northway'); ?>
+            </span>
+            <span class="pxl-error-text pxl-error-text-4 wow fadeInUp" data-wow-delay="0.4s">
+                <?php echo esc_html__('Missing page', 'northway'); ?>
+            </span>
+            <span class="pxl-error-text pxl-error-text-5 wow fadeInUp" data-wow-delay="0.5s">
+                <?php echo esc_html__('Error', 'northway'); ?>
+            </span>
+
+            
             <div class="pxl-error-subtitle wow fadeInUp">
                 <?php if (!empty($subtitle_404)) {
                     echo pxl_print_html($subtitle_404);
@@ -23,7 +53,6 @@ get_header(); ?>
                 } else {
                     echo esc_html__('We couldn’t find the page you’re looking for.', 'northway');
                 } ?>
-    
             </h3>
             <div class="pxl-error-number">
                 <span class="wow fadeInUp" data-wow-delay="0.3s">4</span>

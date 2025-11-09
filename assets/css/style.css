@@ -13292,6 +13292,9 @@ body.rtl .pxl-post-list1 li:before {
     padding: 50px 30px;
   }
 }
+.error404 {
+  --width-divider: calc((100% - 1290px) / 2);
+}
 .error404 header, .error404 footer {
   display: none;
 }
@@ -13302,41 +13305,114 @@ body.rtl .pxl-post-list1 li:before {
 .error404 .wrap-content-404 {
   position: relative;
 }
+.error404 .container {
+  max-width: 1290px !important;
+}
 .error404 .pxl-error-wrapper {
   position: relative;
-  display: flex;
   min-height: 100vh;
-  gap: 70px;
-  align-items: center;
-}
-@media screen and (max-width: 1280px) {
-  .error404 .pxl-error-wrapper {
-    gap: 30px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .error404 .pxl-error-wrapper {
-    gap: 15px;
-  }
 }
 .error404 .pxl-error-content {
+  position: relative;
+}
+.error404 .pxl-error-text {
+  color: rgba(255, 255, 255, 0.50);
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  position: absolute;
+}
+.error404 .pxl-error-text-1 {
+  top: 339px;
+  left: 146px;
+}
+.error404 .pxl-error-text-2 {
+  top: 446px;
+  left: 90px;
+}
+.error404 .pxl-error-text-3 {
+  bottom: 228px;
+  left: 233px;
+}
+.error404 .pxl-error-text-4 {
+  top: 292px;
+  right: 219px;
+}
+.error404 .pxl-error-text-5 {
+  bottom: 290px;
+  right: 109px;
+}
+.error404 .pxl-error-divider {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(102, 111, 120, 0.5);
+}
+.error404 .pxl-error-divider-1 {
+  top: 60px;
+}
+.error404 .pxl-error-divider-2 {
+  bottom: 60px;
+}
+.error404 .pxl-error-divider-short-1 {
+  width: var(--width-divider);
+  top: 95px;
+  right: 0;
+  left: auto;
+}
+.error404 .pxl-error-divider-short-2 {
+  width: var(--width-divider);
+  top: 135px;
+  right: 0;
+  left: auto;
+}
+.error404 .pxl-error-divider-short-3 {
+  width: var(--width-divider);
+  bottom: 95px;
+  right: 0;
+}
+.error404 .pxl-error-divider-short-4 {
+  width: var(--width-divider);
+  bottom: 135px;
+  right: 0;
+}
+.error404 .pxl-error-content {
+  height: 100%;
+  min-height: 100vh;
   text-align: center;
+  position: relative;
+  border-right: 1px solid rgba(102, 111, 120, 0.5);
+  border-left: 1px solid rgba(102, 111, 120, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
-@media screen and (max-width: 1280px) {
-  .error404 .pxl-error-content {
-    padding-right: 30px;
-  }
+.error404 .pxl-error-content i {
+  color: var(--four-color);
+  position: absolute;
 }
-@media screen and (max-width: 1024px) {
-  .error404 .pxl-error-content {
-    padding-right: 15px;
-  }
+.error404 .pxl-error-content i.pxl-error-star-1 {
+  top: 48px;
+  left: -10px;
 }
-@media screen and (max-width: 767px) {
-  .error404 .pxl-error-content {
-    padding: 0 15px;
-    text-align: center;
-  }
+.error404 .pxl-error-content i.pxl-error-star-2 {
+  top: 48px;
+  right: -10px;
+}
+.error404 .pxl-error-content i.pxl-error-star-3 {
+  bottom: 48px;
+  left: -10px;
+}
+.error404 .pxl-error-content i.pxl-error-star-4 {
+  bottom: 48px;
+  right: -10px;
 }
 .error404 .pxl-error-subtitle {
   color: #fff;
