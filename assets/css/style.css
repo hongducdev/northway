@@ -13312,8 +13312,15 @@ body.rtl .pxl-post-list1 li:before {
   position: relative;
   min-height: 100vh;
 }
-.error404 .pxl-error-content {
-  position: relative;
+@media screen and (max-width: 1280px) {
+  .error404 .pxl-error-wrapper {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .error404 .pxl-error-wrapper {
+    padding: 0 15px;
+  }
 }
 .error404 .pxl-error-text {
   color: rgba(255, 255, 255, 0.50);
@@ -13330,21 +13337,81 @@ body.rtl .pxl-post-list1 li:before {
   top: 339px;
   left: 146px;
 }
+@media screen and (max-width: 767px) {
+  .error404 .pxl-error-text-1 {
+    top: 250px;
+    left: 100px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .error404 .pxl-error-text-1 {
+    top: 340px;
+    left: 40px;
+  }
+}
 .error404 .pxl-error-text-2 {
   top: 446px;
   left: 90px;
+}
+@media screen and (max-width: 767px) {
+  .error404 .pxl-error-text-2 {
+    top: 400px;
+    left: 40px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .error404 .pxl-error-text-2 {
+    top: 400px;
+    left: 20px;
+  }
 }
 .error404 .pxl-error-text-3 {
   bottom: 228px;
   left: 233px;
 }
+@media screen and (max-width: 767px) {
+  .error404 .pxl-error-text-3 {
+    bottom: 250px;
+    left: 150px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .error404 .pxl-error-text-3 {
+    bottom: 290px;
+    left: 50px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .error404 .pxl-error-text-3 {
+    bottom: 340px;
+    left: 50px;
+  }
+}
 .error404 .pxl-error-text-4 {
   top: 292px;
   right: 219px;
 }
+@media screen and (max-width: 767px) {
+  .error404 .pxl-error-text-4 {
+    top: 270px;
+    right: 80px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .error404 .pxl-error-text-4 {
+    top: 340px;
+    right: 20px;
+  }
+}
 .error404 .pxl-error-text-5 {
   bottom: 290px;
   right: 109px;
+}
+@media screen and (max-width: 479px) {
+  .error404 .pxl-error-text-5 {
+    bottom: 340px;
+    right: 50px;
+  }
 }
 .error404 .pxl-error-divider {
   position: absolute;
@@ -13393,6 +13460,11 @@ body.rtl .pxl-post-list1 li:before {
   justify-content: center;
   align-items: center;
   padding: 0;
+}
+@media screen and (max-width: 1900px) {
+  .error404 .pxl-error-content {
+    height: calc(100vh + 120px);
+  }
 }
 .error404 .pxl-error-content i {
   color: var(--four-color);
@@ -13452,19 +13524,27 @@ body.rtl .pxl-post-list1 li:before {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 575px) {
   .error404 .pxl-error-number span {
+    margin-top: -100px;
     font-size: 250px;
   }
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 479px) {
   .error404 .pxl-error-number span {
-    width: 200px;
+    margin-top: -80px;
+    font-size: 150px;
   }
 }
-@media screen and (max-width: 360px) {
-  .error404 .pxl-error-number span {
-    width: 80px;
+@media screen and (max-width: 575px) {
+  .error404 .pxl-error-number-svg svg {
+    height: 180px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .error404 .pxl-error-number-svg svg {
+    width: 100px;
+    height: 100px;
   }
 }
 .error404 .pxl-error-btn {
