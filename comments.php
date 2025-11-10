@@ -53,6 +53,7 @@ if ( post_password_required() ) {
             'title_reply'       => esc_attr__( 'Post a Comment', 'northway'),
             'title_reply_to'    => esc_attr__( 'Post a Comment To ', 'northway') . '%s',
             'cancel_reply_link' => esc_attr__( 'Cancel Comment', 'northway'),
+            'label_submit'      => esc_attr__( 'Post Comment', 'northway'),
             'submit_button'     => '<button name="%1$s" id="%2$s" type="submit" class="btn pxl-button-style-2-default btn-default inline pxl-icon--right %3$s">
         <div class="pxl-button--icon pxl-button--icon-left">
             <i class="flaticon-arrow"></i>

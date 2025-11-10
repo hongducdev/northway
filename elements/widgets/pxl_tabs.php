@@ -30,6 +30,10 @@ pxl_add_custom_widget(
                                     'label' => esc_html__('Layout 2', 'northway'),
                                     'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_tabs/layout2.jpg'
                                 ],
+                                '3' => [
+                                    'label' => esc_html__('Layout 3', 'northway'),
+                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_tabs/layout3.jpg'
+                                ],
                             ],
                         ),
                     ),
@@ -133,6 +137,57 @@ pxl_add_custom_widget(
                                 ),
                             ),
                             'title_field' => '{{{ title }}}',
+                        ),
+                        array(
+                            'name' => 'tabs_3',
+                            'label' => esc_html__('Content', 'northway'),
+                            'type' => \Elementor\Controls_Manager::REPEATER,
+                            'condition' => [
+                                'layout' => '3'
+                            ],
+                            'controls' => array(
+                                array(
+                                    'name' => 'pxl_icon_tab_3',
+                                    'label' => esc_html__('Icon', 'northway'),
+                                    'type' => \Elementor\Controls_Manager::ICONS,
+                                    'fa4compatibility' => 'icon',
+                                ),
+                                array(
+                                    'name' => 'title_3',
+                                    'label' => esc_html__('Title', 'northway'),
+                                    'type' => \Elementor\Controls_Manager::TEXT,
+                                    'label_block' => true,
+                                ),
+                                array(
+                                    'name' => 'desc_3',
+                                    'label' => esc_html__('Content', 'northway'),
+                                    'type' => \Elementor\Controls_Manager::WYSIWYG,
+                                ),
+                                array(
+                                    'name' => 'show_author_3',
+                                    'label' => esc_html__('Show Author', 'northway'),
+                                    'type' => \Elementor\Controls_Manager::SWITCHER,
+                                ),
+                                array(
+                                    'name' => 'author_name_3',
+                                    'label' => esc_html__('Author Name', 'northway'),
+                                    'type' => \Elementor\Controls_Manager::TEXT,
+                                    'condition' => ['show_author_3' => 'true'],
+                                ),
+                                array(
+                                    'name' => 'author_image_3',
+                                    'label' => esc_html__('Author Image', 'northway'),
+                                    'type' => \Elementor\Controls_Manager::MEDIA,
+                                    'condition' => ['show_author_3' => 'true'],
+                                ),
+                                array(
+                                    'name' => 'author_position_3',
+                                    'label' => esc_html__('Author Position', 'northway'),
+                                    'type' => \Elementor\Controls_Manager::TEXT,
+                                    'condition' => ['show_author_3' => 'true'],
+                                ),
+                            ),
+                            'title_field' => '{{{ title_3 }}}',
                         ),
                     ),
                 ),
