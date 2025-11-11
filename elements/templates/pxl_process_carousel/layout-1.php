@@ -9,15 +9,15 @@ if($col_xxl == 'inherit') {
     $col_xxl = $col_xl;
 }
 $slides_to_scroll = $widget->get_setting('slides_to_scroll');
-$arrows = $widget->get_setting('arrows', false);  
-$pagination = $widget->get_setting('pagination', false);
+$arrows = filter_var($widget->get_setting('arrows', 'false'), FILTER_VALIDATE_BOOLEAN);
+$pagination = filter_var($widget->get_setting('pagination', 'false'), FILTER_VALIDATE_BOOLEAN);
 $pagination_type = $widget->get_setting('pagination_type', 'bullets');
-$pause_on_hover = $widget->get_setting('pause_on_hover', false);
-$autoplay = $widget->get_setting('autoplay', false);
+$pause_on_hover = filter_var($widget->get_setting('pause_on_hover', 'false'), FILTER_VALIDATE_BOOLEAN);
+$autoplay = filter_var($widget->get_setting('autoplay', 'false'), FILTER_VALIDATE_BOOLEAN);
 $autoplay_speed = $widget->get_setting('autoplay_speed', '5000');
-$infinite = $widget->get_setting('infinite', false);  
+$infinite = filter_var($widget->get_setting('infinite', 'false'), FILTER_VALIDATE_BOOLEAN);
 $speed = $widget->get_setting('speed', '500');
-$drap = $widget->get_setting('drap', false);  
+$drap = filter_var($widget->get_setting('drap', 'false'), FILTER_VALIDATE_BOOLEAN);
 $opts = [
     'slide_direction'               => 'horizontal',
     'slide_percolumn'               => 1, 
@@ -29,14 +29,14 @@ $opts = [
     'slides_to_show_sm'             => (int)$col_sm, 
     'slides_to_show_xs'             => (int)$col_xs, 
     'slides_to_scroll'              => (int)$slides_to_scroll,
-    'arrow'                         => (bool)$arrows,
-    'pagination'                    => (bool)$pagination,
+    'arrow'                         => $arrows,
+    'pagination'                    => $pagination,
     'pagination_type'               => $pagination_type,
-    'autoplay'                      => (bool)$autoplay,
-    'pause_on_hover'                => (bool)$pause_on_hover,
+    'autoplay'                      => $autoplay,
+    'pause_on_hover'                => $pause_on_hover,
     'pause_on_interaction'          => true,
     'delay'                         => (int)$autoplay_speed,
-    'loop'                          => (bool)$infinite,
+    'loop'                          => $infinite,
     'speed'                         => (int)$speed
 ];
 $widget->add_render_attribute( 'carousel', [
@@ -50,29 +50,14 @@ if(isset($settings['lists']) && !empty($settings['lists']) && count($settings['l
             <div <?php pxl_print_html($widget->get_render_attribute_string( 'carousel' )); ?>>
                 <div class="pxl-swiper-wrapper">
                     <?php foreach ($settings['lists'] as $key => $value):
-                        $title = isset($value['title']) ? $value['title'] : '';
                         $year = isset($value['year']) ? $value['year'] : '';
-                        $image = isset($value['image']) ? $value['image'] : '';
                         ?>
                         <div class="pxl-swiper-slide">
                             <div class="pxl-item--inner <?php echo esc_attr($settings['pxl_animate']); ?>" data-wow-delay="<?php echo esc_attr($settings['pxl_animate_delay']); ?>ms">
-                                <div class="pxl-item--top">
-                                    <?php if(!empty($image)): ?>
-                                        <div class="pxl-item--image">
-                                            <?php echo wp_get_attachment_image($image['id'], 'full'); ?>
-                                        </div>
-                                    <?php endif; ?>
-                                </div>
-                                <div class="pxl-item--bottom">
-                                    <div class="pxl-item--bottom-inner">
-                                        <?php if(!empty($year)): ?>
-                                            <div class="pxl-item--year"><?php echo pxl_print_html($year); ?></div>
-                                        <?php endif; ?>
-                                        <?php if(!empty($title)): ?>
-                                            <div class="pxl-item--title"><?php echo pxl_print_html($title); ?></div>
-                                        <?php endif; ?>
-                                    </div>
-                                </div>
+                                <div class="pxl-item--dot"></div>
+                                <?php if(!empty($year)): ?>
+                                    <div class="pxl-item--year"><?php echo pxl_print_html($year); ?></div>
+                                <?php endif; ?>
                             </div>
                         </div>
                     <?php endforeach; ?>

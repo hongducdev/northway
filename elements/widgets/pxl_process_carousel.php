@@ -29,10 +29,6 @@ pxl_add_custom_widget(
                                     'label' => esc_html__('Layout 1', 'northway'),
                                     'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_text_carousel/layout1.jpg'
                                 ],
-                                '2' => [
-                                    'label' => esc_html__('Layout 2', 'northway'),
-                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_text_carousel/layout2.jpg'
-                                ],
                             ],
                         ),
                     ),
@@ -65,41 +61,14 @@ pxl_add_custom_widget(
                                     'label' => esc_html__('Year', 'northway'),
                                     'type' => \Elementor\Controls_Manager::TEXT,
                                 ),
-                            ),
-                        )
-                    ),
-                ),
-                array(
-                    'name' => 'section_content_2',
-                    'label' => esc_html__('General', 'northway'),
-                    'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
-                    'condition' => [
-                        'layout' => '2',
-                    ],
-                    'controls' => array(
-                        array(
-                            'name' => 'lists_2',
-                            'label' => esc_html__('List Process', 'northway'),
-                            'type' => \Elementor\Controls_Manager::REPEATER,
-                            'controls' => array(
                                 array(
-                                    'name' => 'year_2',
-                                    'label' => esc_html__('Year', 'northway'),
-                                    'type' => \Elementor\Controls_Manager::TEXT,
-                                ),
-                                array(
-                                    'name' => 'title_2',
-                                    'label' => esc_html__('Title', 'northway'),
-                                    'type' => \Elementor\Controls_Manager::TEXT,
-                                ),
-                                array(
-                                    'name' => 'desc_2',
+                                    'name' => 'desc',
                                     'label' => esc_html__('Description', 'northway'),
                                     'type' => \Elementor\Controls_Manager::TEXTAREA,
                                 ),
                             ),
-                            'title_field' => '{{{ year_2 }}}',
-                        ),
+                            'title_field' => '{{{ year }}}',
+                        )
                     ),
                 ),
                 array(

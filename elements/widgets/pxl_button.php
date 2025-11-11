@@ -24,6 +24,7 @@ pxl_add_custom_widget(
                                 'btn-no-icon' => esc_html__('No Icon', 'northway'),
                                 'btn-outline' => esc_html__('Outline', 'northway'),
                                 'btn-gradient' => esc_html__('Gradient', 'northway'),
+                                'btn-shadow' => esc_html__('Shadow', 'northway'),
                             ],
                         ),
                         array(

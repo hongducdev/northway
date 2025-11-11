@@ -520,6 +520,21 @@
     }
 }
 
+.pxl-container-service-fold-2 {
+    position: relative;
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        width: 0;
+        height: 0;
+        border-bottom: 117px solid transparent;
+        border-right: 117px solid $body_bg_color;
+    }
+}
+
 .pxl-container-gradient-logo-1 {
     position: relative;
     &:before {
