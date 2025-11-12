@@ -87,27 +87,16 @@ $widget->add_render_attribute('carousel', [
             <div <?php pxl_print_html($widget->get_render_attribute_string('carousel')); ?>>
                 <div class="pxl-swiper-wrapper">
                     <?php
-                    $image_size = !empty($img_size) ? $img_size : '364x308';
                     foreach ($posts as $post):
                         $service_excerpt = get_post_meta($post->ID, 'service_excerpt', true);
                         $service_external_link = get_post_meta($post->ID, 'service_external_link', true);
                         $service_icon_type = get_post_meta($post->ID, 'service_icon_type', true);
                         $service_icon_font = get_post_meta($post->ID, 'service_icon_font', true);
                         $service_icon_img = get_post_meta($post->ID, 'service_icon_img', true);
-                        $service_feature = get_post_meta($post->ID, 'service_feature', true);
-                        if (has_post_thumbnail($post->ID) && wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), false)) {
-                            $img_id       = get_post_thumbnail_id($post->ID);
-                            $img          = pxl_get_image_by_size(array(
-                                'attach_id'  => $img_id,
-                                'thumb_size' => $image_size
-                            ));
-                            $thumbnail    = $img['thumbnail'];
-                        }
                     ?>
                         <div class="pxl-swiper-slide">
                             <div class="pxl-post--inner <?php echo esc_attr($pxl_animate); ?>" data-wow-duration="1.2s">
-                                <div class="pxl-post--thumbnail">
-                                    <?php echo wp_kses_post($thumbnail); ?>
+                                <div class="pxl-post--icon-wrap">
                                     <?php if ($service_icon_type == 'icon' && !empty($service_icon_font)) : ?>
                                         <div class="pxl-post--icon">
                                             <i class="<?php echo esc_attr($service_icon_font); ?>"></i>
@@ -120,10 +109,8 @@ $widget->add_render_attribute('carousel', [
                                         ));
                                         $icon_thumbnail = $icon_img['thumbnail'];
                                     ?>
-                                        <div class="pxl-post-icon-wrap">
-                                            <div class="pxl-post--icon">
-                                                <?php echo wp_kses_post($icon_thumbnail); ?>
-                                            </div>
+                                        <div class="pxl-post--icon">
+                                            <?php echo wp_kses_post($icon_thumbnail); ?>
                                         </div>
                                     <?php endif; ?>
                                 </div>
@@ -135,6 +122,26 @@ $widget->add_render_attribute('carousel', [
                                             echo esc_url(get_permalink($post->ID));
                                         } ?>"><?php echo pxl_print_html(get_the_title($post->ID)); ?></a>
                                     </h4>
+                                    <div class="pxl-post--divider">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="545" height="16" viewBox="0 0 545 16" fill="none" class="pxl-post--divider-svg-1">
+                                            <path d="M0 15.0291H10.1714C11.9672 15.0291 13.6797 15.0441 15.3101 15.0594C17.933 15.0347 20.3619 15.0127 22.593 15.0605C23.1271 15.049 23.6492 15.0335 24.1594 15.0127C25.6911 14.9504 27.1159 14.8418 28.4368 14.6619C33.1319 14.0223 36.3905 12.4858 38.404 8.95752C39.3376 7.32097 39.5586 5.3219 39.5587 3.29744V2.86102e-06C39.9822 -3.8147e-06 40.4066 2.86102e-06 40.411 2.86102e-06V3.29744C40.4111 5.32189 40.6321 7.32098 41.5657 8.95752C43.5793 12.4858 46.8379 14.0223 51.5329 14.6619C51.7531 14.6919 51.9763 14.7197 52.2023 14.7458C53.7838 14.9287 55.5073 15.0203 57.3778 15.0605C59.6086 15.0127 62.0372 15.0347 64.6597 15.0594C66.29 15.0441 68.0025 15.0291 69.7983 15.0291H545V15.9942L67.1665 15.9942C66.3103 15.9885 65.4747 15.9808 64.6597 15.9732C62.16 15.9967 59.8364 16.0172 57.6924 15.9778C57.5917 15.976 57.4912 15.9763 57.3912 15.9743C53.6253 15.8958 50.1956 15.8046 46.6185 14.388C46.3122 14.2667 46.0139 14.1362 45.7238 13.9963C43.6942 13.0182 42.0593 11.5716 40.8394 9.43425C40.4528 8.75656 40.1781 8.03135 39.9849 7.28374C39.7917 8.03136 39.5169 8.75655 39.1303 9.43425C38.7267 10.1415 38.2774 10.7735 37.7837 11.3376C37.6192 11.5256 37.4494 11.7064 37.2749 11.8796C37.0135 12.1394 36.7408 12.3833 36.4572 12.6116C36.268 12.7639 36.0737 12.9096 35.8748 13.0487C35.5764 13.2574 35.2669 13.4521 34.9466 13.6327C34.7188 13.7611 34.4847 13.8813 34.246 13.9963C33.9561 14.136 33.6582 14.2668 33.3523 14.388C29.7528 15.8137 26.0762 15.9079 22.2773 15.9778C20.1333 16.0172 17.8098 15.9967 15.3101 15.9732C14.4951 15.9808 13.6595 15.9885 12.8032 15.9942H0V15.0291Z" fill="url(#paint0_linear_1752_1373)" fill-opacity="0.5"/>
+                                            <defs>
+                                                <linearGradient id="paint0_linear_1752_1373" x1="328" y1="8" x2="545" y2="8" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#666F78"/>
+                                                <stop offset="1" stop-color="#041427"/>
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="545" height="16" viewBox="0 0 545 16" fill="none" class="pxl-post--divider-svg-2">
+                                            <path d="M0 15.0291H10.1714C11.9672 15.0291 13.6797 15.0441 15.3101 15.0594C17.933 15.0347 20.3619 15.0127 22.593 15.0605C23.1271 15.049 23.6492 15.0335 24.1594 15.0127C25.6911 14.9504 27.1159 14.8418 28.4368 14.6619C33.1319 14.0223 36.3905 12.4858 38.404 8.95752C39.3376 7.32097 39.5586 5.3219 39.5587 3.29744V2.86102e-06C39.9822 -3.8147e-06 40.4066 2.86102e-06 40.411 2.86102e-06V3.29744C40.4111 5.32189 40.6321 7.32098 41.5657 8.95752C43.5793 12.4858 46.8379 14.0223 51.5329 14.6619C51.7531 14.6919 51.9763 14.7197 52.2023 14.7458C53.7838 14.9287 55.5073 15.0203 57.3778 15.0605C59.6086 15.0127 62.0372 15.0347 64.6597 15.0594C66.29 15.0441 68.0025 15.0291 69.7983 15.0291H545V15.9942L67.1665 15.9942C66.3103 15.9885 65.4747 15.9808 64.6597 15.9732C62.16 15.9967 59.8364 16.0172 57.6924 15.9778C57.5917 15.976 57.4912 15.9763 57.3912 15.9743C53.6253 15.8958 50.1956 15.8046 46.6185 14.388C46.3122 14.2667 46.0139 14.1362 45.7238 13.9963C43.6942 13.0182 42.0593 11.5716 40.8394 9.43425C40.4528 8.75656 40.1781 8.03135 39.9849 7.28374C39.7917 8.03136 39.5169 8.75655 39.1303 9.43425C38.7267 10.1415 38.2774 10.7735 37.7837 11.3376C37.6192 11.5256 37.4494 11.7064 37.2749 11.8796C37.0135 12.1394 36.7408 12.3833 36.4572 12.6116C36.268 12.7639 36.0737 12.9096 35.8748 13.0487C35.5764 13.2574 35.2669 13.4521 34.9466 13.6327C34.7188 13.7611 34.4847 13.8813 34.246 13.9963C33.9561 14.136 33.6582 14.2668 33.3523 14.388C29.7528 15.8137 26.0762 15.9079 22.2773 15.9778C20.1333 16.0172 17.8098 15.9967 15.3101 15.9732C14.4951 15.9808 13.6595 15.9885 12.8032 15.9942H0V15.0291Z" fill="url(#paint0_linear_1752_1348)" fill-opacity="0.5"/>
+                                            <defs>
+                                                <linearGradient id="paint0_linear_1752_1348" x1="328" y1="8" x2="545" y2="8" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#666F78" stop-opacity="0.5"/>
+                                                <stop offset="1" stop-color="#F8F8F2" stop-opacity="0"/>
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
                                     <?php if ($show_excerpt == 'true'): ?>
                                         <div class="pxl-post--content">
                                             <?php if ($show_excerpt == 'true'): ?>
@@ -142,54 +149,25 @@ $widget->add_render_attribute('carousel', [
                                             <?php endif; ?>
                                         </div>
                                     <?php endif; ?>
-                                    <div class="pxl-post--feature">
-                                        <?php foreach ($service_feature as $feature): ?>
-                                            <div class="pxl-post--feature-item">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
-                                                    <path d="M5.75406 4.56527C6.21903 4.29681 6.21903 3.62569 5.75406 3.35723L1.04619 0.63916C0.581218 0.370708 -2.34689e-08 0.706273 0 1.24318V6.67932C2.34689e-08 7.21623 0.581218 7.55179 1.04619 7.28334L5.75406 4.56527Z" fill="currentColor"/>
-                                                </svg>
-                                                <div class="pxl-post--feature-text">
-                                                    <?php echo wp_kses_post($feature); ?>
-                                                </div>
-                                            </div>
-                                        <?php endforeach; ?>
-                                    </div>
-                                </div>
-                                <?php if ($show_button == 'true') : ?>
-                                    <div class="pxl-post--readmore">
-                                        <div class="pxl-post--readmore-divider"></div>
+                                    <?php if ($show_button == 'true') : ?>
                                         <a href="<?php if (!empty($service_external_link)) {
-                                                    echo esc_url($service_external_link);
-                                                } else {
-                                                    echo esc_url(get_permalink($post->ID));
-                                                } ?>" class="pxl-post--readmore-button">
+                                                echo esc_url($service_external_link);
+                                            } else {
+                                                echo esc_url(get_permalink($post->ID));
+                                            } ?>" class="pxl-post--readmore">
                                             <span class="pxl-post--readmore-text">
                                                 <?php if (!empty($button_text)) : ?>
                                                     <?php echo pxl_print_html($button_text); ?>
                                                 <?php else : ?>
-                                                    <?php echo esc_html__('Read more', 'northway'); ?>
+                                                    <?php echo esc_html__('Explore Now', 'northway'); ?>
                                                 <?php endif; ?>
                                             </span>
                                             <div class="pxl-post--readmore-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14" fill="none">
-                                                    <path d="M10.2 0.199951L9.01 1.38995L13.77 6.14995H0V7.84995H13.77L9.01 12.61L10.2 13.8L17 6.99995L10.2 0.199951Z" fill="currentColor"></path>
-                                                </svg>
+                                                <i class="bi-arrow-right-short"></i>
                                             </div>
                                         </a>
-                                    </div>
-                                <?php endif; ?>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="404" height="360" viewBox="0 0 404 360" fill="none" class="pxl-post--shape">
-                                    <g filter="url(#filter0_f_249_133)">
-                                        <path d="M451.888 450.607C494.134 435.546 516.28 367.891 433.222 227.964C419.708 189.999 337.185 189.164 310.442 240.751C258.223 341.482 185.982 204.5 202.969 398.5C271.218 545.256 409.642 465.669 451.888 450.607Z" fill="#EAF0DA"/>
-                                    </g>
-                                    <defs>
-                                        <filter id="filter0_f_249_133" x="0.439758" y="0.625244" width="689.114" height="685.028" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                                        <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_249_133"/>
-                                        </filter>
-                                    </defs>
-                                </svg>
+                                    <?php endif; ?>
+                                </div>
                             </div>
                         </div>
                     <?php endforeach; ?>
@@ -201,12 +179,12 @@ $widget->add_render_attribute('carousel', [
 
             <?php if ($arrows !== false): ?>
                 <div class="pxl-swiper-arrow-wrap style-1">
-                    <div class="pxl-swiper-arrow pxl-swiper-arrow-prev"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16" fill="none">
-                            <path d="M0.292788 8.71929L7.29286 15.7193C7.48146 15.9014 7.73407 16.0022 7.99626 16C8.25846 15.9977 8.50928 15.8925 8.69469 15.7071C8.8801 15.5217 8.98527 15.2709 8.98755 15.0087C8.98983 14.7465 8.88903 14.4939 8.70687 14.3053L3.41382 9.01229L21 9.01229C21.2652 9.01229 21.5196 8.90693 21.7071 8.7194C21.8946 8.53186 22 8.27751 22 8.01229C22 7.74707 21.8946 7.49272 21.7071 7.30518C21.5196 7.11765 21.2652 7.01229 21 7.01229L3.41382 7.01229L8.70687 1.71929C8.80238 1.62704 8.87857 1.5167 8.93098 1.39469C8.98338 1.27269 9.01097 1.14147 9.01213 1.00869C9.01328 0.875911 8.98798 0.744232 8.93769 0.621336C8.88741 0.49844 8.81316 0.386787 8.71927 0.292894C8.62537 0.199001 8.51372 0.124747 8.39082 0.0744665C8.26792 0.0241859 8.13624 -0.0011151 8.00346 3.7877e-05C7.87068 0.00119181 7.73946 0.0287787 7.61746 0.0811879C7.49545 0.133597 7.38511 0.209778 7.29286 0.305288L0.292788 7.30529C0.105315 7.49282 -1.18586e-06 7.74712 -1.20904e-06 8.01229C-1.23222e-06 8.27745 0.105315 8.53176 0.292788 8.71929Z" fill="white" />
-                        </svg></div>
-                    <div class="pxl-swiper-arrow pxl-swiper-arrow-next"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16" fill="none">
-                            <path d="M21.7072 8.71929L14.7071 15.7193C14.5185 15.9014 14.2659 16.0022 14.0037 16C13.7415 15.9977 13.4907 15.8925 13.3053 15.7071C13.1199 15.5217 13.0147 15.2709 13.0125 15.0087C13.0102 14.7465 13.111 14.4939 13.2931 14.3053L18.5862 9.01229L1.00001 9.01229C0.73479 9.01229 0.480434 8.90693 0.292895 8.7194C0.105357 8.53186 -6.75122e-07 8.27751 -6.98308e-07 8.01229C-7.21494e-07 7.74707 0.105357 7.49272 0.292895 7.30518C0.480433 7.11765 0.73479 7.01229 1.00001 7.01229L18.5862 7.01229L13.2931 1.71929C13.1976 1.62704 13.1214 1.5167 13.069 1.39469C13.0166 1.27269 12.989 1.14147 12.9879 1.00869C12.9867 0.875911 13.012 0.744232 13.0623 0.621336C13.1126 0.49844 13.1868 0.386787 13.2807 0.292894C13.3746 0.199001 13.4863 0.124747 13.6092 0.0744665C13.7321 0.0241859 13.8638 -0.0011151 13.9965 3.7877e-05C14.1293 0.00119181 14.2605 0.0287787 14.3825 0.0811879C14.5045 0.133597 14.6149 0.209778 14.7071 0.305288L21.7072 7.30529C21.8947 7.49282 22 7.74712 22 8.01229C22 8.27745 21.8947 8.53176 21.7072 8.71929Z" fill="white" />
-                        </svg></div>
+                    <div class="pxl-swiper-arrow pxl-swiper-arrow-prev">
+                        <i class="bi-arrow-left-short"></i>
+                    </div>
+                    <div class="pxl-swiper-arrow pxl-swiper-arrow-next">
+                        <i class="bi-arrow-right-short"></i>
+                    </div>
                 </div>
             <?php endif; ?>
         </div>

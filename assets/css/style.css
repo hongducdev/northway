@@ -27054,6 +27054,280 @@ body .woosw-popup-content-mid .added_to_cart {
   line-height: 1.625;
   margin-bottom: 50px;
 }
+.pxl-service-carousel1 {
+  --width-icon: 80px;
+  --margin-icon: 30px;
+}
+.pxl-service-carousel1 .pxl-swiper-slide {
+  padding: 0;
+}
+.pxl-service-carousel1 .pxl-swiper-slide + .pxl-swiper-slide .pxl-post--inner {
+  border-left: none;
+}
+.pxl-service-carousel1 .pxl-swiper-arrow-wrap {
+  max-width: 1290px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+  top: -210px;
+}
+.pxl-service-carousel1 .pxl-swiper-arrow {
+  width: 62px;
+  height: 62px;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+.pxl-service-carousel1 .pxl-post--inner {
+  padding: 50px;
+  background-color: var(--body_bg-color);
+  border: 1px solid rgba(102, 111, 120, 0.5);
+  position: relative;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.pxl-service-carousel1 .pxl-post--inner:hover {
+  border-color: var(--secondary-color);
+  background-color: var(--secondary-color);
+}
+.pxl-service-carousel1 .pxl-post--inner:hover .pxl-post--icon {
+  background-color: var(--body_bg-color);
+  transform: translateX(-12px);
+}
+.pxl-service-carousel1 .pxl-post--inner:hover .pxl-post--icon i {
+  color: var(--secondary-color);
+}
+.pxl-service-carousel1 .pxl-post--inner:hover .pxl-post--icon svg path {
+  fill: var(--secondary-color);
+}
+.pxl-service-carousel1 .pxl-post--inner:hover .pxl-post--icon:before {
+  transform: translateX(24px);
+}
+.pxl-service-carousel1 .pxl-post--inner:hover .pxl-post--body {
+  transform: translateY(calc(-1 * (var(--width-icon) + var(--margin-icon) -
+                                            2px)));
+}
+.pxl-service-carousel1 .pxl-post--inner:hover .pxl-post--title {
+  color: var(--body_bg-color);
+}
+.pxl-service-carousel1 .pxl-post--inner:hover .pxl-post--divider-svg-1 {
+  opacity: 1;
+}
+.pxl-service-carousel1 .pxl-post--inner:hover .pxl-post--divider-svg-2 {
+  opacity: 0;
+}
+.pxl-service-carousel1 .pxl-post--inner:hover .pxl-post--content {
+  color: rgba(248, 248, 242, 0.7);
+}
+.pxl-service-carousel1 .pxl-post--inner:hover .pxl-post--readmore {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(106px) scale(1);
+  transition-delay: 0.1s, 0.1s, 0s;
+  pointer-events: auto;
+}
+.pxl-service-carousel1 .pxl-post--icon {
+  width: var(--width-icon);
+  height: var(--width-icon);
+  -webkit-border-radius: var(--width-icon);
+  -khtml-border-radius: var(--width-icon);
+  -moz-border-radius: var(--width-icon);
+  -ms-border-radius: var(--width-icon);
+  -o-border-radius: var(--width-icon);
+  border-radius: var(--width-icon);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  position: relative;
+  transform: translateX(0);
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.pxl-service-carousel1 .pxl-post--icon-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.pxl-service-carousel1 .pxl-post--icon i {
+  color: var(--body_bg-color);
+  font-size: 36px;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.pxl-service-carousel1 .pxl-post--icon svg {
+  height: 36px;
+}
+.pxl-service-carousel1 .pxl-post--icon svg path {
+  fill: var(--body_bg-color);
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.pxl-service-carousel1 .pxl-post--icon:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 80px;
+  -khtml-border-radius: 80px;
+  -moz-border-radius: 80px;
+  -ms-border-radius: 80px;
+  -o-border-radius: 80px;
+  border-radius: 80px;
+  background-color: transparent;
+  border: 1px solid rgba(102, 111, 120, 0.5);
+  top: 0;
+  right: 12px;
+  transform: translateX(0);
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.pxl-service-carousel1 .pxl-post--body {
+  transform: translateY(0);
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  height: 100%;
+}
+.pxl-service-carousel1 .pxl-post--title {
+  margin-top: var(--margin-icon);
+  color: var(--secondary-color);
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.52;
+  text-transform: uppercase;
+  transform: translateY(0);
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  max-width: 185px;
+  margin-bottom: 20px;
+}
+.pxl-service-carousel1 .pxl-post--divider {
+  position: relative;
+  width: 100%;
+  height: 16px;
+}
+.pxl-service-carousel1 .pxl-post--divider-svg-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.pxl-service-carousel1 .pxl-post--divider-svg-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.pxl-service-carousel1 .pxl-post--content {
+  margin-top: 25px;
+  color: rgba(4, 20, 39, 0.5);
+  transform: translateY(0);
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.pxl-service-carousel1 .pxl-post--readmore {
+  width: 100%;
+  height: 46px;
+  -webkit-border-radius: 46px;
+  -khtml-border-radius: 46px;
+  -moz-border-radius: 46px;
+  -ms-border-radius: 46px;
+  -o-border-radius: 46px;
+  border-radius: 46px;
+  border: 1px solid rgba(102, 111, 120, 0.5);
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 16px;
+  font-family: "DM Sans";
+  color: var(--body_bg-color);
+  font-weight: 500;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(20px) scale(0.95);
+  transition-property: opacity, transform, visibility;
+  transition-duration: 0.5s, 0.5s, 0s;
+  transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1), cubic-bezier(0.34, 1.56, 0.64, 1), linear;
+  transition-delay: 0s, 0s, 0.3s;
+  pointer-events: none;
+}
+.pxl-service-carousel1 .pxl-post--readmore i {
+  font-size: 22px;
+  transform: translateX(0);
+  -webkit-transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  -khtml-transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  -moz-transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  -ms-transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  -o-transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.pxl-service-carousel1 .pxl-post--readmore:hover i {
+  transform: translateX(5px);
+}
 .pxl-industries-grid-layout1 .pxl-grid-item .pxl-post--inner {
   position: relative;
   padding: 32px;
