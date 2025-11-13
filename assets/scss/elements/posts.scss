@@ -2493,6 +2493,9 @@ posts
         + .pxl-swiper-slide {
             .pxl-post--inner {
                 border-left: none;
+                @media #{$max-md2} {
+                    border-left: 1px solid rgba($four_color_hex, 0.5);
+                }
             }
         }
     }
@@ -2508,6 +2511,28 @@ posts
         justify-content: end;
         gap: 10px;
         top: -210px;
+        @media (max-width: 1600px) {
+            max-width: 1290px;
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 50%;
+            width: 100%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: 10px;
+            top: -210px;
+        }
+        @media #{$max-sm} {
+            position: unset;
+            max-width: 100%;
+            width: 100%;
+            transform: none;
+            justify-content: center;
+            margin-top: 0;
+        }
     }
     .pxl-swiper-arrow {
         width: 62px;
@@ -2521,6 +2546,9 @@ posts
             border: 1px solid rgba($four_color_hex, 0.5);
             position: relative;
             @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+            @media #{$max-xs} {
+                padding: 15px;
+            }
             &:hover {
                 border-color: $secondary-color;
                 background-color: $secondary_color;

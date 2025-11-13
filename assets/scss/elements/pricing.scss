@@ -240,12 +240,21 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            @media #{$max-xs} {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
             &-right {
                 flex: 0 0 59%;
                 max-width: 59%;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                @media #{$max-xs} {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
             }
         }
         &--price {
@@ -285,6 +294,9 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            @media #{$max-xs} {
+                display: none;
+            }
             i {
                 color: $primary_color;
             }
@@ -304,6 +316,10 @@
         }
         &--body {
             display: flex;
+            @media #{$max-xs} {
+                flex-direction: column;
+                align-items: flex-start;
+            }
         }
         &--description {
             flex: 0 0 41%;
@@ -321,6 +337,13 @@
                 right: -10px;
                 color: rgba(#dfdfdf, 0.6);
             }
+            @media #{$max-xs} {
+                flex: 0 0 100%;
+                max-width: 100%;
+                padding: 15px;
+                border-right: none;
+                border-bottom: 1px solid rgba(#dfdfdf, 0.4);
+            }
         }
         &--feature {
             flex: 0 0 59%;
@@ -329,6 +352,11 @@
             display: flex;
             flex-direction: column;
             gap: 7px;
+            @media #{$max-xs} {
+                flex: 0 0 100%;
+                max-width: 100%;
+                padding: 15px;
+            }
             &-content {
                 display: flex;
                 align-items: center;

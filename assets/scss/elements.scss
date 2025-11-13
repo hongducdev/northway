@@ -2036,6 +2036,11 @@ body.rtl {
     .pxl-process-wrapper {
         display: flex;
         align-items: center;
+        @media #{$max-xl} {
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
     }
     @for $i from 1 through 10 {
         .pxl-item:nth-child(#{$i}) {
@@ -2045,6 +2050,9 @@ body.rtl {
     .pxl-item {
         + .pxl-item {
             margin-left: -32px;
+            @media #{$max-xl} {
+                margin-left: 0;
+            }
         }
         &--inner {
             position: relative;
@@ -2054,6 +2062,11 @@ body.rtl {
             @include border-radius(346px);
             @include transition(all 0.3s linear 0ms);
             cursor: pointer;
+            @media #{$max-xs} {
+                width: 320px;
+                height: 320px;
+                @include border-radius(320px);
+            }
             &:hover {
                 .pxl-item--front {
                     border-color: $secondary_color;
@@ -2081,6 +2094,9 @@ body.rtl {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+            }
+            @media #{$max-xs} {
+                padding: 50px 40px 50px 40px;
             }
         }
         &--step {
@@ -2153,6 +2169,9 @@ body.rtl {
             opacity: 0;
             visibility: hidden;
             @include transition(all 0.3s linear 0ms);
+            @media #{$max-xs} {
+                padding: 0 40px;
+            }
         }
     }
 }
@@ -4463,7 +4482,6 @@ body.rtl {
 }
 
 // Case Process Carousel
-
 
 // Case Banner Box
 .pxl-banner-box-layout1 {
