@@ -41,6 +41,19 @@ pxl_add_custom_widget(
                             ],
                         ),
                         array(
+                            'name' => 'btn_style_for_gradient',
+                            'label' => esc_html__('Button Style for Gradient', 'northway'),
+                            'type' => \Elementor\Controls_Manager::SELECT,
+                            'condition' => [
+                                'btn_style' => ['btn-gradient'],
+                            ],
+                            'default' => 'style-1-gradient',
+                            'options' => [
+                                'style-1-gradient' => esc_html__('Style 1', 'northway'),
+                                'style-2-gradient' => esc_html__('Style 2', 'northway'),
+                            ],
+                        ),
+                        array(
                             'name'         => 'title_gradient',
                             'label' => esc_html__('Background Type', 'northway'),
                             'type'         => \Elementor\Group_Control_Background::get_type(),
@@ -127,7 +140,8 @@ pxl_add_custom_widget(
                             'label_block' => true,
                             'fa4compatibility' => 'icon',
                             'condition' => [
-                                'btn_style!' => ['btn-no-icon'],
+                                'btn_style!' => ['btn-no-icon',],
+                                'btn_style_for_gradient!' => ['style-2-gradient'],
                             ],
                         ),
                         array(
@@ -141,6 +155,7 @@ pxl_add_custom_widget(
                             ],
                             'condition' => [
                                 'btn_style!' => ['btn-no-icon'],
+                                'btn_style_for_gradient!' => ['style-2-gradient'],
                             ],
                         ),
                     ),
@@ -213,27 +228,48 @@ pxl_add_custom_widget(
                                 ],
                             ),
                             array(
-                                'name' => 'btn_bg_color_gradient_from',
-                                'label' => esc_html__('Background Color Gradient From', 'northway'),
+                                'name' => 'btn_bg_color_gradient_1',
+                                'label' => esc_html__('Background Color Gradient 1', 'northway'),
                                 'type' => \Elementor\Controls_Manager::COLOR,
                                 'selectors' => [
-                                    '{{WRAPPER}} .pxl-button .btn.btn-gradient' => '--gradient-from: {{VALUE}};',
-                                    '{{WRAPPER}} .pxl-button .btn.btn-gradient:before' => '--gradient-to: {{VALUE}};',
+                                    '{{WRAPPER}} .pxl-button .btn.btn-gradient' => '--gradient-1: {{VALUE}};',
                                 ],
                                 'condition' => [
                                     'btn_style' => ['btn-gradient'],
                                 ],
                             ),
                             array(
-                                'name' => 'btn_bg_color_gradient_to',
-                                'label' => esc_html__('Background Color Gradient To', 'northway'),
+                                'name' => 'btn_bg_color_gradient_2',
+                                'label' => esc_html__('Background Color Gradient 2', 'northway'),
                                 'type' => \Elementor\Controls_Manager::COLOR,
                                 'selectors' => [
-                                    '{{WRAPPER}} .pxl-button .btn.btn-gradient' => '--gradient-to: {{VALUE}};',
-                                    '{{WRAPPER}} .pxl-button .btn.btn-gradient:before' => '--gradient-from: {{VALUE}};',
+                                    '{{WRAPPER}} .pxl-button .btn.btn-gradient' => '--gradient-2: {{VALUE}};',
                                 ],
                                 'condition' => [
                                     'btn_style' => ['btn-gradient'],
+                                ],
+                            ),
+                            array(
+                                'name' => 'btn_bg_color_gradient_3',
+                                'label' => esc_html__('Background Color Gradient 3', 'northway'),
+                                'type' => \Elementor\Controls_Manager::COLOR,
+                                'selectors' => [
+                                    '{{WRAPPER}} .pxl-button .btn.btn-gradient' => '--gradient-3: {{VALUE}};',
+                                ],
+                                'condition' => [
+                                    'btn_style' => ['btn-gradient'],
+                                ],
+                            ),
+                            array(
+                                'name' => 'btn_bg_color_gradient_4',
+                                'label' => esc_html__('Background Color Gradient 4', 'northway'),
+                                'type' => \Elementor\Controls_Manager::COLOR,
+                                'selectors' => [
+                                    '{{WRAPPER}} .pxl-button .btn.btn-gradient' => '--gradient-4: {{VALUE}};',
+                                ],
+                                'condition' => [
+                                    'btn_style' => ['btn-gradient'],
+                                    'btn_style_for_gradient' => ['style-2-gradient'],
                                 ],
                             ),
                             array(

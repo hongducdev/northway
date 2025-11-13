@@ -28073,6 +28073,19 @@ input[type="submit"]:hover {
 .btn:not(.btn-stroke).btn-gradient:hover .pxl-button--icon, button:not(.btn-stroke).btn-gradient:hover .pxl-button--icon, .button:not(.btn-stroke).btn-gradient:hover .pxl-button--icon {
   transform: translateX(5px);
 }
+.btn:not(.btn-stroke).btn-gradient.btn-gradient-2, button:not(.btn-stroke).btn-gradient.btn-gradient-2, .button:not(.btn-stroke).btn-gradient.btn-gradient-2 {
+  --gradient-1: var(--secondary-color);
+  --gradient-2: #4d3e98;
+  --gradient-3: #8a6daa;
+  --gradient-4: var(--third-color);
+  border-radius: 8px;
+  background: linear-gradient(107deg, var(--gradient-1) -12.59%, var(--gradient-2) 50.81%, var(--gradient-3) 89.05%, var(--gradient-4) 116.68%);
+  position: relative;
+  overflow: hidden;
+}
+.btn:not(.btn-stroke).btn-gradient.btn-gradient-2:before, button:not(.btn-stroke).btn-gradient.btn-gradient-2:before, .button:not(.btn-stroke).btn-gradient.btn-gradient-2:before {
+  z-index: 1;
+}
 .btn:not(.btn-stroke).btn-shadow, button:not(.btn-stroke).btn-shadow, .button:not(.btn-stroke).btn-shadow {
   background-color: var(--body_bg-color);
   border: 1px solid var(--four-color);

@@ -351,6 +351,25 @@ input[type="submit"] {
                 transform: translateX(5px);
             }
         }
+        &.btn-gradient-2 {
+            --gradient-1: $secondary_color;
+            --gradient-2: #4d3e98;
+            --gradient-3: #8a6daa;
+            --gradient-4: $third_color;
+            border-radius: 8px;
+            background: linear-gradient(
+                107deg,
+                var(--gradient-1) -12.59%,
+                var(--gradient-2) 50.81%,
+                var(--gradient-3) 89.05%,
+                var(--gradient-4) 116.68%
+            );
+            position: relative;
+            overflow: hidden;
+            &:before {
+                z-index: 1;
+            }
+        }
     }
     &.btn-shadow {
         background-color: $body_bg_color;
