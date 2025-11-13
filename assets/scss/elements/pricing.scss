@@ -227,5 +227,123 @@
     }
 }
 
+.pxl-pricing2 {
+    .pxl-item {
+        &--inner {
+            background-color: $body_bg_color;
+            @include border-radius(20px);
+            border: 1px solid rgba($four_color_hex, 0.5);
+        }
+        &--header {
+            border-bottom: 1px solid rgba(#dfdfdf, 0.4);
+            padding: 28px 35px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &-right {
+                flex: 0 0 59%;
+                max-width: 59%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+        &--price {
+            display: flex;
+            align-items: center;
+            &-currency {
+                color: $secondary_color;
+                font-family: "DM Sans";
+                font-size: 23px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+            &-inner {
+                display: flex;
+                align-items: baseline;
+            }
+            &-value {
+                color: $secondary_color;
+                font-family: "DM Sans";
+                font-size: 55px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 1.18;
+                margin-bottom: 0;
+            }
+            &-time {
+                color: rgba($four_color_hex, 0.50);
+                font-family: "DM Sans";
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+        &--icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i {
+                color: $primary_color;
+            }
+            svg {
+                height: 38px;
+                path {
+                    fill: $primary_color;
+                }
+            }
+        }
+        &--button {
+            span {
+                display: inline-flex;
+                align-items: center;
+                gap: 15px;
+            }
+        }
+        &--body {
+            display: flex;
+        }
+        &--description {
+            flex: 0 0 41%;
+            max-width: 41%;
+            padding: 30px 35px;
+            border-right: 1px solid rgba(#dfdfdf, 0.4);
+            position: relative;
+            &-text {
+                margin-bottom: 0;
+                word-break: break-word;
+            }
+            i {
+                position: absolute;
+                top: -12px;
+                right: -10px;
+                color: rgba(#dfdfdf, 0.6);
+            }
+        }
+        &--feature {
+            flex: 0 0 59%;
+            max-width: 59%;
+            padding: 30px 30px 35px 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            &-content {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: $secondary_color;
+                i {
+                    font-size: 8px;
+                }
+                &.active {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
 body.rtl {
 }

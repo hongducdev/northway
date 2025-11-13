@@ -56,6 +56,9 @@ pxl_add_custom_widget(
                             'label' => esc_html__('Box Title ', 'northway'),
                             'type' => \Elementor\Controls_Manager::TEXT,
                             'label_block' => true,
+                            'condition' => [
+                                'layout' => '1',
+                            ],
                         ),
                         array(
                             'name' => 'currency',
