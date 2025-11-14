@@ -499,24 +499,12 @@
 }
 
 .pxl-container-fold-1-2 {
-    position: relative;
-    &:after {
-        content: "";
-        position: absolute;
-        top: -1px;
-        right: -1px;
-        width: 0;
-        height: 0;
-        border-bottom: 165px solid transparent;
-        border-right: 165px solid $body_bg_color;
-        @media #{$max-sm} {
-            border-bottom: 120px solid transparent;
-            border-right: 120px solid $body_bg_color;
-        }
-        @media #{$max-xs} {
-            border-bottom: 100px solid transparent;
-            border-right: 100px solid $body_bg_color;
-        }
+    clip-path: polygon(0 0, calc(100% - 165px) 0, 100% 165px, 100% 100%, 0 100%);
+    @media #{$max-sm} {
+        clip-path: polygon(0 0, calc(100% - 120px) 0, 100% 120px, 100% 100%, 0 100%);
+    }
+    @media #{$max-xs} {
+        clip-path: polygon(0 0, calc(100% - 100px) 0, 100% 100px, 100% 100%, 0 100%);
     }
 }
 
@@ -745,42 +733,21 @@
         width: 100%;
         height: 100%;
         pointer-events: none;
+        clip-path: polygon(0 0, calc(100% - 53px) 0, 100% 53px, 100% 100%, 0 100%);
     }
 }
 
 .pxl-container-fold-faq-2 {
-    position: relative;
-    &:after {
-        content: "";
-        position: absolute;
-        top: -2px;
-        right: -2px;
-        width: 0;
-        height: 0;
-        border-bottom: 55px solid transparent;
-        border-right: 55px solid $secondary_color;
-    }
+    clip-path: polygon(0 0, calc(100% - 53px) 0, 100% 53px, 100% 100%, 0 100%);
 }
 
 .pxl-container-fold-testimonial {
-    position: relative;
-    &:after {
-        content: "";
-        position: absolute;
-        top: -1px;
-        right: -1px;
-        width: 0;
-        height: 0;
-        border-bottom: 130px solid transparent;
-        border-right: 130px solid $body_bg_color;
-        @media #{$max-sm} {
-            border-bottom: 120px solid transparent;
-            border-right: 120px solid $body_bg_color;
-        }
-        @media #{$max-xs} {
-            border-bottom: 100px solid transparent;
-            border-right: 100px solid $body_bg_color;
-        }
+    clip-path: polygon(0 0, calc(100% - 130px) 0, 100% 130px, 100% 100%, 0 100%);
+    @media #{$max-sm} {
+        clip-path: polygon(0 0, calc(100% - 120px) 0, 100% 120px, 100% 100%, 0 100%);
+    }
+    @media #{$max-xs} {
+        clip-path: polygon(0 0, calc(100% - 100px) 0, 100% 100px, 100% 100%, 0 100%);
     }
 }
 
@@ -828,24 +795,12 @@
 }
 
 .pxl-container-fold-pricing {
-    position: relative;
-    &:after {
-        content: "";
-        position: absolute;
-        top: -1px;
-        right: -1px;
-        width: 0;
-        height: 0;
-        border-bottom: 165px solid transparent;
-        border-right: 165px solid $secondary_color;
-        @media #{$max-sm} {
-            border-bottom: 120px solid transparent;
-            border-right: 120px solid $secondary_color;
-        }
-        @media #{$max-xs} {
-            border-bottom: 100px solid transparent;
-            border-right: 100px solid $secondary_color;
-        }
+    clip-path: polygon(0 0, calc(100% - 165px) 0, 100% 165px, 100% 100%, 0 100%);
+    @media #{$max-sm} {
+        clip-path: polygon(0 0, calc(100% - 120px) 0, 100% 120px, 100% 100%, 0 100%);
+    }
+    @media #{$max-xs} {
+        clip-path: polygon(0 0, calc(100% - 100px) 0, 100% 100px, 100% 100%, 0 100%);
     }
 }
 
