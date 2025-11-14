@@ -6475,6 +6475,43 @@ body.rtl .pxl-box-hover1 .pxl-item--inner:hover:before {
 .pxl-list1.style-3 .pxl-item--content p {
   margin-bottom: 0;
 }
+.pxl-list1.style-4 .pxl-item {
+  display: inline-flex;
+  align-items: center;
+  -webkit-border-radius: 46px;
+  -khtml-border-radius: 46px;
+  -moz-border-radius: 46px;
+  -ms-border-radius: 46px;
+  -o-border-radius: 46px;
+  border-radius: 46px;
+  border: 1px solid rgba(102, 111, 120, 0.5);
+  gap: 10px;
+  min-height: 46px;
+  padding: 0 15px;
+}
+.pxl-list1.style-4 .pxl-item--icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.pxl-list1.style-4 .pxl-item--icon svg {
+  width: 16px;
+  height: 8px;
+}
+.pxl-list1.style-4 .pxl-item--icon svg path {
+  fill: var(--primary-color);
+}
+.pxl-list1.style-4 .pxl-item--icon i {
+  font-size: 10px;
+  color: var(--primary-color);
+}
+.pxl-list1.style-4 .pxl-item--content p {
+  color: var(--secondary-color);
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
 .pxl-list1.numbered .pxl-item--numbered {
   font-size: 15px;
   font-weight: 500;

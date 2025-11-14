@@ -1498,6 +1498,42 @@
             }
         }
     }
+    &.style-4 {
+        .pxl-item {
+            display: inline-flex;
+            align-items: center;
+            @include border-radius(46px);
+            border: 1px solid rgba($four_color_hex, 0.5);
+            gap: 10px;
+            min-height: 46px;
+            padding: 0 15px;
+            &--icon {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                svg {
+                    width: 16px;
+                    height: 8px;
+                    path {
+                        fill: $primary_color;
+                    }
+                }
+                i {
+                    font-size: 10px;
+                    color: $primary_color;
+                }
+            }
+            &--content {
+                p {
+                    color: $secondary_color;
+                    font-family: "DM Sans";
+                    font-size: 14px;
+                    font-weight: 500;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
     &.numbered {
         .pxl-item--numbered {
             font-size: 15px;
