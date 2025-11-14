@@ -26279,6 +26279,146 @@ body .woosw-popup-content-mid .added_to_cart {
   position: absolute;
   transform: none;
 }
+.pxl-portfolio-carousel2 .pxl-swiper-arrow-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transform: none;
+  top: auto;
+  left: -174px;
+  bottom: 133px;
+  max-width: 114px;
+  width: 100%;
+}
+.pxl-portfolio-carousel2 .pxl-swiper-arrow-wrap .pxl-swiper-arrow {
+  width: 52px;
+  height: 52px;
+}
+.pxl-portfolio-carousel2 .pxl-post--inner {
+  position: relative;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.pxl-portfolio-carousel2 .pxl-post--inner:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(102, 111, 120, 0.5);
+}
+.pxl-portfolio-carousel2 .pxl-post--inner:hover .pxl-post--content {
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 78px;
+  margin-top: 15px;
+}
+.pxl-portfolio-carousel2 .pxl-post--inner:hover .pxl-post--featured {
+  height: 321px;
+}
+.pxl-portfolio-carousel2 .pxl-post--title {
+  padding: 80px 30px 0px 30px;
+  color: var(--secondary-color);
+  font-family: "DM Sans";
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 1.43;
+  margin-bottom: 0;
+}
+.pxl-portfolio-carousel2 .pxl-post--content {
+  margin-top: 0;
+  padding: 0 30px;
+  opacity: 0;
+  max-height: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: var(--secondary-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.625;
+  transform: translateY(-15px);
+  -webkit-transition: all 0.3s ease-in-out;
+  -khtml-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.pxl-portfolio-carousel2 .pxl-post--client {
+  margin-top: 30px;
+}
+.pxl-portfolio-carousel2 .pxl-post--meta-item {
+  position: relative;
+  padding: 18px 30px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: var(--four-color);
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-weight: 400;
+}
+.pxl-portfolio-carousel2 .pxl-post--meta-item i {
+  font-size: 14px;
+  color: var(--secondary-color);
+}
+.pxl-portfolio-carousel2 .pxl-post--meta-item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(102, 111, 120, 0.5) 0%, rgba(102, 111, 120, 0) 100%);
+}
+.pxl-portfolio-carousel2 .pxl-post--featured {
+  position: relative;
+  -webkit-border-radius: 0 10px 0px 0;
+  -khtml-border-radius: 0 10px 0px 0;
+  -moz-border-radius: 0 10px 0px 0;
+  -ms-border-radius: 0 10px 0px 0;
+  -o-border-radius: 0 10px 0px 0;
+  border-radius: 0 10px 0px 0;
+  overflow: hidden;
+  height: 414px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -khtml-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.pxl-portfolio-carousel2 .pxl-post--featured img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+}
+.pxl-portfolio-carousel2 .pxl-post--button {
+  padding-left: 30px;
+  color: var(--secondary-color);
+  height: 15px;
+}
+.pxl-portfolio-carousel2 .pxl-post--button i {
+  font-size: 22px;
+}
+.pxl-portfolio-carousel2 .pxl-post--button-wrap {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: var(--body_bg-color);
+  height: 38px;
+  border-top-left-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
 .pxl-portfolio-grid-layout1 .pxl-post--inner {
   -webkit-border-radius: 20px;
   -khtml-border-radius: 20px;
@@ -27465,7 +27605,7 @@ body .woosw-popup-content-mid .added_to_cart {
   position: absolute;
   inset: 0;
   border-radius: 20px;
-  background: rgba(161, 196, 215, 0.50);
+  background: rgba(161, 196, 215, 0.5);
   backdrop-filter: blur(5px);
   opacity: 0;
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
