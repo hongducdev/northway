@@ -391,6 +391,10 @@ function northway_get_carousel_layout_options($post_type_name){
                 'label' => esc_html__( 'Layout 1', 'northway' ),
                 'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_post_carousel/service-layout1.jpg'
             ],
+            'service-2' => [
+                'label' => esc_html__( 'Layout 2', 'northway' ),
+                'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_post_carousel/service-layout2.jpg'
+            ],
         ];
         break;
 

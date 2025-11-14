@@ -744,7 +744,7 @@ pxl_add_custom_widget(
                                     [
                                         'terms' => [
                                             ['name' => 'post_type', 'operator' => '==', 'value' => 'service'],
-                                            ['name' => 'layout_service', 'operator' => 'in', 'value' => ['service-1', 'service-2', 'service-3', 'service-4']]
+                                            ['name' => 'layout_service', 'operator' => 'in', 'value' => ['service-1', 'service-2']]
                                         ]
                                     ],
                                     [
@@ -780,7 +780,7 @@ pxl_add_custom_widget(
                                     [
                                         'terms' => [
                                             ['name' => 'post_type', 'operator' => '==', 'value' => 'service'],
-                                            ['name' => 'layout_service', 'operator' => 'in', 'value' => ['service-1', 'service-2', 'service-3', 'service-4']],
+                                            ['name' => 'layout_service', 'operator' => 'in', 'value' => ['service-1', 'service-2']],
                                             ['name' => 'show_excerpt', 'operator' => '==', 'value' => 'true'],
                                         ]
                                     ]
@@ -804,7 +804,7 @@ pxl_add_custom_widget(
                                     [
                                         'terms' => [
                                             ['name' => 'post_type', 'operator' => '==', 'value' => 'service'],
-                                            ['name' => 'layout_service', 'operator' => 'in', 'value' => ['service-1']]
+                                            ['name' => 'layout_service', 'operator' => 'in', 'value' => ['service-1', 'service-2']]
                                         ]
                                     ],
                                     [
@@ -833,6 +833,12 @@ pxl_add_custom_widget(
                                         'terms' => [
                                             ['name' => 'post_type', 'operator' => '==', 'value' => 'portfolio'],
                                             ['name' => 'layout_portfolio', 'operator' => 'in', 'value' => ['portfolio-1', 'portfolio-2', 'portfolio-3']]
+                                        ]
+                                    ],
+                                    [
+                                        'terms' => [
+                                            ['name' => 'post_type', 'operator' => '==', 'value' => 'service'],
+                                            ['name' => 'layout_service', 'operator' => 'in', 'value' => ['service-1', 'service-2']]
                                         ]
                                     ]
                                 ],

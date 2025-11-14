@@ -140,7 +140,7 @@ pxl_add_custom_widget(
                             'label_block' => true,
                             'fa4compatibility' => 'icon',
                             'condition' => [
-                                'btn_style!' => ['btn-no-icon',],
+                                'btn_style!' => ['btn-no-icon', 'btn-outline'],
                                 'btn_style_for_gradient!' => ['style-2-gradient'],
                             ],
                         ),
@@ -154,7 +154,7 @@ pxl_add_custom_widget(
                                 'right' => esc_html__('After', 'northway'),
                             ],
                             'condition' => [
-                                'btn_style!' => ['btn-no-icon'],
+                                'btn_style!' => ['btn-no-icon', 'btn-outline'],
                                 'btn_style_for_gradient!' => ['style-2-gradient'],
                             ],
                         ),
@@ -202,7 +202,7 @@ pxl_add_custom_widget(
                                 'label' => esc_html__('Color', 'northway'),
                                 'type' => \Elementor\Controls_Manager::COLOR,
                                 'selectors' => [
-                                    '{{WRAPPER}} .pxl-button .btn' => 'color: {{VALUE}};',
+                                    '{{WRAPPER}} .pxl-button .btn span' => 'color: {{VALUE}};',
                                 ],
                             ),
                             array(
@@ -438,8 +438,7 @@ pxl_add_custom_widget(
                             'label' => esc_html__('Color Hover', 'northway'),
                             'type' => \Elementor\Controls_Manager::COLOR,
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-button .btn:hover' => 'color: {{VALUE}};',
-                                '{{WRAPPER}} .pxl-button .btn-hide-icon .pxl--btn-text:before' => 'background-color: {{VALUE}} !important;',
+                                '{{WRAPPER}} .pxl-button .btn:hover span' => 'color: {{VALUE}};',
                             ],
                         ),
                         array(
@@ -455,7 +454,7 @@ pxl_add_custom_widget(
                             'label' => esc_html__('Background Color', 'northway'),
                             'type' => \Elementor\Controls_Manager::COLOR,
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-button .btn:hover span' => 'background-color: {{VALUE}};',
+                                '{{WRAPPER}} .pxl-button .btn:hover' => 'background-color: {{VALUE}};',
                             ],
                             'condition' => [
                                 'btn_style!' => [''],
