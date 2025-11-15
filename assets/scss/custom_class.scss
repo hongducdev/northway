@@ -862,6 +862,30 @@
     }
 }
 
+.pxl-container-gradient-marquee-3 {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 300px;
+        background: linear-gradient(to right, $body_bg_color, transparent);
+        z-index: 1;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 300px;
+        background: linear-gradient(to left, $body_bg_color, transparent);
+        z-index: 1;
+    }
+}
+
 @keyframes pxl-draws-svg {
     0% {
         stroke-dashoffset: 100%;

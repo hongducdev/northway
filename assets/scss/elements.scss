@@ -3942,6 +3942,41 @@ body.rtl {
     }
 }
 
+.pxl-text-marquee {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+    .pxl-text-marquee-wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        will-change: transform;
+        gap: 30px;
+    }
+
+    .pxl-text--marquee {
+        flex-shrink: 0;
+        display: inline-flex;
+        height: 52px;
+        align-items: center;
+        justify-content: center;
+        padding: 0 30px;
+        background-color: $body_bg_color;
+        color: $secondary_color;
+        font-size: 18px;
+        font-weight: 500;
+        @include border-radius(100px);
+        border: 1px solid rgba($four_color_hex, 0.5);
+        @include transition(all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1));
+        &:hover {
+            border-color: $secondary_color;
+            background-color: $secondary_color;
+            color: $body_bg_color;
+        }
+    }
+}
+
 .elementor-lightbox .swiper .elementor-swiper-button {
     position: absolute;
     opacity: 1;
