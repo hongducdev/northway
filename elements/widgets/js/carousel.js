@@ -78,21 +78,6 @@
                             northway_svg_color();
                         }
                         setBoxHeight();
-
-                        // GSAP slide state animation for portfolio carousel 2
-                        if (
-                            $this.hasClass("pxl-portfolio-carousel2") &&
-                            typeof gsap !== "undefined"
-                        ) {
-                            animateSlidesState(swiper, $this);
-                        }
-
-                        if (
-                            $this.hasClass("pxl-testimonial-carousel2") ||
-                            $this.hasClass("pxl-testimonial-carousel3")
-                        ) {
-                            initTestimonialAvatars(swiper, $this);
-                        }
                     },
 
                     slideChange: function (swiper) {
@@ -104,15 +89,6 @@
                             $scope.find(".pxl-portfolio-carousel1").length > 0
                         ) {
                             animateFilterWhileDragging(progress);
-                        }
-
-
-
-                        if (
-                            $this.hasClass("pxl-portfolio-carousel2") &&
-                            typeof gsap !== "undefined"
-                        ) {
-                            animateSlidesState(swiper, $this);
                         }
                     },
                 },
