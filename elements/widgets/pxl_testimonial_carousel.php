@@ -29,6 +29,10 @@ pxl_add_custom_widget(
                                     'label' => esc_html__('Layout 1', 'northway'),
                                     'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_testimonial_carousel/layout1.jpg'
                                 ],
+                                '2' => [
+                                    'label' => esc_html__('Layout 2', 'northway'),
+                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_testimonial_carousel/layout2.jpg'
+                                ],
                             ],
                         ),
                     ),
@@ -81,39 +85,6 @@ pxl_add_custom_widget(
 
                             ),
                             'title_field' => '{{{ title }}}',
-                        ),
-                        array(
-                            'name' => 'client_title',
-                            'label' => esc_html__('Client Title', 'northway'),
-                            'type' => \Elementor\Controls_Manager::TEXT,
-                            'label_block' => true,
-                            'condition' => [
-                                'layout' => ['2']
-                            ],
-                        ),
-                        array(
-                            'name' => 'link',
-                            'label' => esc_html__('Link', 'northway'),
-                            'type' => \Elementor\Controls_Manager::URL,
-                            'label_block' => true,
-                            'condition' => [
-                                'layout' => ['2']
-                            ],
-                        ),
-                        array(
-                            'name' => 'client',
-                            'type' => \Elementor\Controls_Manager::REPEATER,
-                            'condition' => [
-                                'layout' => ['2']
-                            ],
-                            'controls' => array(
-                                array(
-                                    'name' => 'avatar_c',
-                                    'label' => esc_html__('Avatar', 'northway'),
-                                    'type' => \Elementor\Controls_Manager::MEDIA,
-                                ),
-                            ),
-                            'title_field' => '{{{ avatar_c }}}',
                         ),
                     ),
                 ),
@@ -402,6 +373,12 @@ pxl_add_custom_widget(
                         array(
                             'name' => 'drap',
                             'label' => esc_html__('Show Scroll Drap', 'northway'),
+                            'type' => \Elementor\Controls_Manager::SWITCHER,
+                            'default' => false,
+                        ),
+                        array(
+                            'name' => 'center',
+                            'label' => esc_html__('Center', 'northway'),
                             'type' => \Elementor\Controls_Manager::SWITCHER,
                             'default' => false,
                         ),

@@ -15260,6 +15260,21 @@ body.rtl .widget .widget-title:before {
   border-radius: 10px;
   z-index: -1;
 }
+.pxl-container-testimonial-caro {
+  position: relative;
+  overflow: hidden;
+}
+.pxl-container-testimonial-caro:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: repeating-linear-gradient(to right, rgba(4, 20, 39, 0.04) 0 1px, transparent 1px 50px), repeating-linear-gradient(to bottom, rgba(4, 20, 39, 0.04) 0 1px, transparent 1px 50px);
+  background-position: center center;
+  background-size: 50px 50px;
+  background-repeat: repeat;
+  transform: translateZ(0);
+}
 @keyframes pxl-draws-svg {
   0% {
     stroke-dashoffset: 100%;
@@ -31191,7 +31206,7 @@ input[type="submit"]:hover {
   position: relative;
 }
 .pxl-testimonial-carousel1 .pxl-item--body:before {
-  content: '';
+  content: "";
   position: absolute;
   width: calc(100% - 40px);
   height: 1px;
@@ -31228,6 +31243,110 @@ input[type="submit"]:hover {
   position: absolute;
   bottom: 40px;
   left: -164px;
+}
+.pxl-testimonial-carousel2 .pxl-swiper-slide.swiper-slide-active .pxl-item--inner {
+  background-color: var(--secondary-color);
+  flex-direction: row;
+  gap: 45px;
+}
+.pxl-testimonial-carousel2 .pxl-swiper-slide.swiper-slide-active .pxl-item--avatar {
+  width: 223px;
+  height: 319px;
+}
+.pxl-testimonial-carousel2 .pxl-swiper-slide.swiper-slide-active .pxl-item--qoute {
+  opacity: 0;
+  visibility: hidden;
+  max-width: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+.pxl-testimonial-carousel2 .pxl-item--inner {
+  -webkit-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid rgba(102, 111, 120, 0.5);
+  background: var(--body_bg-color);
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  -webkit-transition: background-color 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), flex-direction 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), gap 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -khtml-transition: background-color 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), flex-direction 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), gap 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition: background-color 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), flex-direction 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), gap 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -ms-transition: background-color 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), flex-direction 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), gap 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: background-color 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), flex-direction 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), gap 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: background-color 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), flex-direction 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), gap 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.pxl-testimonial-carousel2 .pxl-item--header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.pxl-testimonial-carousel2 .pxl-item--avatar {
+  width: 70px;
+  height: 70px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-transition: width 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), height 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -khtml-transition: width 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), height 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition: width 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), height 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -ms-transition: width 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), height 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: width 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), height 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: width 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), height 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.pxl-testimonial-carousel2 .pxl-item--avatar img {
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.pxl-testimonial-carousel2 .pxl-item--qoute {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), visibility 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), max-width 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), max-height 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -khtml-transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), visibility 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), max-width 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), max-height 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), visibility 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), max-width 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), max-height 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -ms-transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), visibility 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), max-width 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), max-height 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), visibility 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), max-width 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), max-height 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), visibility 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), max-width 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), max-height 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.pxl-testimonial-carousel2 .pxl-item--qoute svg {
+  color: rgba(149, 136, 248, 0.4);
+  -webkit-transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -khtml-transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -ms-transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.pxl-testimonial-carousel2 .pxl-item--title {
+  color: var(--secondary-color);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.667;
+  margin-bottom: 0;
+}
+.pxl-testimonial-carousel2 .pxl-item--position {
+  color: rgba(var, 1, 0, 0);
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.714;
 }
 .pxl-accordion .pxl-accordion--title {
   margin-bottom: 0;
