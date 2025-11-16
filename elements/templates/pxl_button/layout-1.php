@@ -61,6 +61,10 @@ if ($btn_style == 'btn-gradient' && $btn_style_for_gradient == 'style-2-gradient
     $btn_classes[] = 'btn-gradient-2 btn-glossy';
 }
 
+if ($btn_style == 'btn-gradient' && $btn_style_for_gradient == 'style-3-gradient') {
+    $btn_classes[] = 'btn-gradient-3 btn-glossy';
+}
+
 if (!empty($btn_text_effect)) {
     $btn_classes[] = esc_attr($btn_text_effect);
 }

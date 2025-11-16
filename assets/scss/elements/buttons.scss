@@ -370,6 +370,31 @@ input[type="submit"] {
                 z-index: 1;
             }
         }
+        &.btn-gradient-3 {
+            --width: 182px;
+            --gradient-1: #45349A;
+            --gradient-2: $primary_color;
+            --gradient-3: $third_color;
+            background: radial-gradient(112.91% 112.91% at 50% 100%, #45349A 0%, #9588F8 80%, #DFB0C4 99.04%);
+            box-shadow: 0 7px 27.9px rgba(4, 20, 39, 0.73);
+            width: var(--width);
+            height: var(--width);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            @include border-radius(50%);
+            position: relative;
+            overflow: hidden;
+            font-size: 20px;
+            color: $body_bg_color;
+            font-weight: 600;
+            line-height: 1.5;
+            position: relative;
+            overflow: hidden;
+            &:before {
+                z-index: 1;
+            }
+        }
     }
     &.btn-shadow {
         background-color: $body_bg_color;

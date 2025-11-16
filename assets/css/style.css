@@ -15340,6 +15340,12 @@ body.rtl .widget .widget-title:before {
   background: linear-gradient(to left, var(--body_bg-color), transparent);
   z-index: 1;
 }
+.pxl-heading-footer-home-3 .pxl-item--title, .pxl-heading-footer-home-3 .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-heading-footer-home-3 -title.pxl-item {
+  color: rgba(248, 248, 242, 0.2);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(248, 248, 242, 0.4);
+  backdrop-filter: blur(7px);
+}
 @keyframes pxl-draws-svg {
   0% {
     stroke-dashoffset: 100%;
@@ -28747,6 +28753,36 @@ input[type="submit"]:hover {
   overflow: hidden;
 }
 .btn:not(.btn-stroke).btn-gradient.btn-gradient-2:before, button:not(.btn-stroke).btn-gradient.btn-gradient-2:before, .button:not(.btn-stroke).btn-gradient.btn-gradient-2:before {
+  z-index: 1;
+}
+.btn:not(.btn-stroke).btn-gradient.btn-gradient-3, button:not(.btn-stroke).btn-gradient.btn-gradient-3, .button:not(.btn-stroke).btn-gradient.btn-gradient-3 {
+  --width: 182px;
+  --gradient-1: #45349a;
+  --gradient-2: var(--primary-color);
+  --gradient-3: var(--third-color);
+  background: radial-gradient(112.91% 112.91% at 50% 100%, #45349a 0%, #9588f8 80%, #dfb0c4 99.04%);
+  box-shadow: 0 7px 27.9px rgba(4, 20, 39, 0.73);
+  width: var(--width);
+  height: var(--width);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  font-size: 20px;
+  color: var(--body_bg-color);
+  font-weight: 600;
+  line-height: 1.5;
+  position: relative;
+  overflow: hidden;
+}
+.btn:not(.btn-stroke).btn-gradient.btn-gradient-3:before, button:not(.btn-stroke).btn-gradient.btn-gradient-3:before, .button:not(.btn-stroke).btn-gradient.btn-gradient-3:before {
   z-index: 1;
 }
 .btn:not(.btn-stroke).btn-shadow, button:not(.btn-stroke).btn-shadow, .button:not(.btn-stroke).btn-shadow {

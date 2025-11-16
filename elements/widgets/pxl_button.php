@@ -51,6 +51,7 @@ pxl_add_custom_widget(
                             'options' => [
                                 'style-1-gradient' => esc_html__('Style 1', 'northway'),
                                 'style-2-gradient' => esc_html__('Style 2', 'northway'),
+                                'style-3-gradient' => esc_html__('Style 3', 'northway'),
                             ],
                         ),
                         array(
@@ -141,7 +142,7 @@ pxl_add_custom_widget(
                             'fa4compatibility' => 'icon',
                             'condition' => [
                                 'btn_style!' => ['btn-no-icon', 'btn-outline'],
-                                'btn_style_for_gradient!' => ['style-2-gradient'],
+                                'btn_style_for_gradient!' => ['style-2-gradient', 'style-3-gradient'],
                             ],
                         ),
                         array(
@@ -269,7 +270,7 @@ pxl_add_custom_widget(
                                 ],
                                 'condition' => [
                                     'btn_style' => ['btn-gradient'],
-                                    'btn_style_for_gradient' => ['style-2-gradient'],
+                                    'btn_style_for_gradient' => ['style-2-gradient', 'style-3-gradient'],
                                 ],
                             ),
                             array(
@@ -412,6 +413,9 @@ pxl_add_custom_widget(
                                 'btn-glossy' => esc_html__('Glossy', 'northway'),
                                 'btn-underline' => esc_html__('Underline', 'northway'),
                                 'btn-text-applied' => esc_html__('Applied', 'northway'),
+                            ],
+                            'condition' => [
+                                'btn_style!' => ['btn-default'],
                             ],
                         ),
                         array(

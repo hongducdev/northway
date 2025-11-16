@@ -132,7 +132,7 @@ pxl_add_custom_widget(
                             'label' => esc_html__('Color', 'northway'),
                             'type' => \Elementor\Controls_Manager::COLOR,
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-link a:not(:hover)' => 'color: {{VALUE}};',
+                                '{{WRAPPER}} .pxl-link a:not(:hover), {{WRAPPER}} .pxl-link a:not(:hover) span' => 'color: {{VALUE}};',
                             ],
                         ),
                         array(
@@ -140,7 +140,7 @@ pxl_add_custom_widget(
                             'label' => esc_html__('Color Hover', 'northway'),
                             'type' => \Elementor\Controls_Manager::COLOR,
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-link a:hover' => 'color: {{VALUE}};',
+                                '{{WRAPPER}} .pxl-link a:hover, {{WRAPPER}} .pxl-link a:hover span' => 'color: {{VALUE}};',
                             ],
                         ),
                         array(
