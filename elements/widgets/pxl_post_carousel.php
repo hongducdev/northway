@@ -967,6 +967,33 @@ pxl_add_custom_widget(
                                 ],
                             ]
                         ),
+                        array(
+                            'name' => 'arrow_size',
+                            'label' => esc_html__('Arrow Size', 'northway'),
+                            'type' => \Elementor\Controls_Manager::SLIDER,
+                            'size_units' => ['px'],
+                            'selectors' => [
+                                '{{WRAPPER}} .pxl-swiper-arrow-wrap .pxl-swiper-arrow' => 'width: {{SIZE}}{{UNIT}}; height: {{SIZE}}{{UNIT}};',
+                            ],
+                            'control_type' => 'responsive',
+                            'condition' => [
+                                'arrows' => 'true',
+                            ],
+                        ),
+                        array(
+                            'name' => 'arrow_top',
+                            'label' => esc_html__('Arrow Top', 'northway'),
+                            'type' => \Elementor\Controls_Manager::SLIDER,
+                            'size_units' => ['px'],
+                            'selectors' => [
+                                '{{WRAPPER}} .pxl-swiper-arrow-wrap' => 'top: {{SIZE}}{{UNIT}};',
+                            ],
+                            'control_type' => 'responsive',
+                            'condition' => [
+                                'arrows' => 'true',
+                            ],
+                        ),
+
                     ),
                 ),
                 array(

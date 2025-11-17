@@ -6535,6 +6535,36 @@ body.rtl .pxl-box-hover1 .pxl-item--inner:hover:before {
   font-weight: 500;
   margin-bottom: 0;
 }
+.pxl-list1.style-5 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.pxl-list1.style-5 .pxl-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--body_bg-color);
+  height: 76px;
+  max-width: 300px;
+  min-width: 300px;
+  width: 100%;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(102, 111, 120, 0.5);
+}
+.pxl-list1.style-5 .pxl-item--content {
+  color: var(--secondary-color);
+  font-size: 18px;
+  font-weight: 500;
+}
+.pxl-list1.style-5 .pxl-item--content p {
+  margin-bottom: 0;
+}
 .pxl-list1.numbered .pxl-item--numbered {
   font-size: 15px;
   font-weight: 500;

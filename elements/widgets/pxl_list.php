@@ -64,6 +64,7 @@ pxl_add_custom_widget(
                                 'style-2' => esc_html__('Style 2', 'northway'),
                                 'style-3' => esc_html__('Style 3', 'northway'),
                                 'style-4' => esc_html__('Style 4', 'northway'),
+                                'style-5' => esc_html__('Style 5', 'northway'),
                                 'numbered' => esc_html__('Numbered', 'northway'),
                             ],
                         ),

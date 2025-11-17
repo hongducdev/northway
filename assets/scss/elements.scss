@@ -1528,6 +1528,31 @@
             }
         }
     }
+    &.style-5 {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .pxl-item {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $body_bg_color;
+            height: 76px;
+            max-width: 300px;
+            min-width: 300px;
+            width: 100%;
+            @include border-radius(10px);
+            border: 1px solid rgba($four_color_hex, 0.5);
+            &--content {
+                color: $secondary_color;
+                font-size: 18px;
+                font-weight: 500;
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
     &.numbered {
         .pxl-item--numbered {
             font-size: 15px;
