@@ -312,6 +312,13 @@ input[type="submit"] {
             }
         }
     }
+    &.btn-no-icon {
+        position: relative;
+        overflow: hidden;
+        &:before {
+            z-index: 1 !important;
+        }
+    }
     &.btn-gradient {
         --gradient-1: $third_color;
         --gradient-2: $primary_color;

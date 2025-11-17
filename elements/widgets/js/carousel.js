@@ -142,6 +142,10 @@
                 carousel_settings["fadeEffect"] = {
                     crossFade: true,
                 };
+                carousel_settings["slidesPerView"] = 1;
+                if (parseInt(settings["speed"]) < 800) {
+                    carousel_settings["speed"] = 1000;
+                }
             }
 
             if (settings["reverse"] === "true") {
@@ -203,6 +207,49 @@
                 $this.find(".pxl-swiper-container")[0],
                 carousel_settings
             );
+
+            // Fade effect cho pxl-slider1
+            // Chỉ xử lý khi không dùng fade effect của Swiper
+            // Vì Swiper fade effect tự động xử lý opacity của toàn bộ slide
+            if (
+                $this.hasClass("pxl-slider1") &&
+                settings["slide_mode"] !== "fade"
+            ) {
+                function initSliderImages() {
+                    $this
+                        .find(".pxl-swiper-slide .pxl-slider--image")
+                        .css("opacity", "0");
+
+                    var $activeSlide = $this.find(".pxl-swiper-slide-active");
+                    if ($activeSlide.length === 0) {
+                        $this
+                            .find(".pxl-swiper-slide")
+                            .first()
+                            .find(".pxl-slider--image")
+                            .css("opacity", "1");
+                    } else {
+                        $activeSlide
+                            .find(".pxl-slider--image")
+                            .css("opacity", "1");
+                    }
+                }
+
+                setTimeout(function () {
+                    initSliderImages();
+                }, 100);
+
+                swiper.on("slideChangeTransitionStart", function () {
+                    $this
+                        .find(".pxl-swiper-slide .pxl-slider--image")
+                        .css("opacity", "0");
+                });
+
+                swiper.on("slideChangeTransitionEnd", function () {
+                    $this
+                        .find(".pxl-swiper-slide-active .pxl-slider--image")
+                        .css("opacity", "1");
+                });
+            }
 
             if (
                 settings["autoplay"] === "true" &&
@@ -370,7 +417,7 @@
                     );
                 });
         });
-        
+
         function northway_svg_color() {
             $(".pxl-service-carousel .pxl-post--icon img").each(function () {
                 var $img = jQuery(this);

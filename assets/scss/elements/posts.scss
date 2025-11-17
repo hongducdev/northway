@@ -332,59 +332,19 @@ posts
     }
 
     &.style-2 {
-        &.pxl-swiper-pagination-bullets {
-            span {
-                width: 10px;
-                height: 10px;
-                border-radius: 10px;
-                background-color: #fff;
-                margin: 19px;
-                position: relative;
-
-                &:before {
-                    content: "";
-                    width: 56px;
-                    height: 56px;
-                    border-radius: 56px;
-                    border: 2px solid $primary_color;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%) scale(0.5);
-                    @include transition(all 300ms linear 0ms);
-                    opacity: 0;
-                    @media #{$max-lg} {
-                        width: 30px;
-                        height: 30px;
-                    }
-                }
-
-                &.swiper-pagination-bullet-active {
-                    &:before {
-                        opacity: 1;
-                        transform: translate(-50%, -50%) scale(1);
-                    }
-                }
-            }
-        }
-    }
-
-    &.style-3 {
-        margin-top: 15px;
-
-        &.pxl-swiper-pagination-bullets {
-            span {
-                width: 14px;
-                height: 14px;
-                border-radius: 14px;
-                background-color: #737373;
-                margin: 0 8px;
-
-                &.swiper-pagination-bullet-active,
-                &:hover {
-                    background-color: $primary_color;
-                    transform: scale(1.5);
-                }
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        .pxl-swiper-pagination-bullet {
+            height: 7px;
+            width: 7px;
+            @include border-radius(10px);
+            background-color: rgba($secondary_color_hex, 0.3);
+            @include transition(all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1));
+            &.swiper-pagination-bullet-active {
+                background-color: $secondary_color;
+                width: 70px;
+                height: 9px;
             }
         }
     }

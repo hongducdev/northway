@@ -948,10 +948,30 @@
 
 .pxl-heading-footer-home-3 {
     .pxl-item--title {
-        color: rgba(248, 248, 242, 0.2);
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: rgba(248, 248, 242, 0.4);
-        backdrop-filter: blur(7px);
+        background: linear-gradient(180deg, rgba($body_bg_color_hex, 0.3) 32.19%, rgba(115, 115, 115, 0.00) 77.13%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+}
+
+.pxl-header-3 {
+    &:has(.pxl-header-star-3) {
+        position: relative !important;
+    }
+}
+.pxl-header-star-3 {
+    position: absolute !important;
+}
+
+.pxl-follow-home-3 {
+    writing-mode: sideways-lr;
+}
+
+.pxl-social-home-3 {
+    .pxl-icon1 {
+        flex-direction: column;
     }
 }
 

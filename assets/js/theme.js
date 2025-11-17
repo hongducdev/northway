@@ -32,7 +32,10 @@
         northway_el_parallax();
         northway_col_offset();
         northway_col_offset_1750();
+        northway_col_offset_1760();
         northway_divider_width_1600();
+        $(".pxl-slider").css("opacity", "1");
+        $(".pxl-slider").css("transition-delay", "300ms");
     });
 
     $(window).on("scroll", function () {
@@ -64,6 +67,7 @@
         northway_header_mobile();
         northway_col_offset();
         northway_col_offset_1750();
+        northway_col_offset_1760();
         northway_divider_width_1600();
     });
 
@@ -1549,6 +1553,21 @@
                 w_pxl_row_lg + "px"
             );
             $(".pxl-col-offset-left-1750").css(
+                "padding-left",
+                w_pxl_row_lg + "px"
+            );
+        }
+    }
+
+    // Column Offset 1760px
+    function northway_col_offset_1760() {
+        var w_pxl_row_lg = ($("#pxl-main").width() - 1760) / 2;
+        if (pxl_window_width > 1760) {
+            $(".pxl-col-offset-right-1760").css(
+                "padding-right",
+                w_pxl_row_lg + "px"
+            );
+            $(".pxl-col-offset-left-1760").css(
                 "padding-left",
                 w_pxl_row_lg + "px"
             );
