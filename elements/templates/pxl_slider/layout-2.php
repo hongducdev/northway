@@ -49,7 +49,7 @@
     $settings = $widget->get_settings();
     $image_size = !empty($settings['img_size']) ? $settings['img_size'] : 'full';
     if (isset($settings['slides']) && !empty($settings['slides']) && count($settings['slides'])): ?>
-    <div id="pxl-gallery-<?php echo esc_attr($pxl_g_id); ?>" class="pxl-swiper-slider pxl-slider pxl-slider1 <?php echo esc_attr($settings['pxl_animate'] ?? ''); ?>" <?php if ($drap !== false) : ?>data-cursor-drap="<?php echo esc_html('DRAG', 'northway'); ?>" <?php endif; ?> data-wow-delay="<?php echo esc_attr($settings['pxl_animate_delay'] ?? ''); ?>ms">
+    <div id="pxl-gallery-<?php echo esc_attr($pxl_g_id); ?>" class="pxl-swiper-slider pxl-slider pxl-slider2 <?php echo esc_attr($settings['pxl_animate'] ?? ''); ?>" <?php if ($drap !== false) : ?>data-cursor-drap="<?php echo esc_html('DRAG', 'northway'); ?>" <?php endif; ?> data-wow-delay="<?php echo esc_attr($settings['pxl_animate_delay'] ?? ''); ?>ms">
         <div class="pxl-carousel-inner">
             <div <?php pxl_print_html($widget->get_render_attribute_string('carousel')); ?>>
                 <div class="pxl-swiper-wrapper">
@@ -66,7 +66,9 @@
                                     ) );
                                     $thumbnail    = $img['thumbnail'];
                                     $thumbnail_url = $img['url']; ?>
-                                    <div class="pxl-slider--image bg-image" style="background-image: url(<?php echo esc_url($thumbnail_url); ?>);"></div>
+                                    <div class="pxl-slider--image">
+                                        <img src="<?php echo esc_url($thumbnail_url); ?>">
+                                    </div>
                                 <?php endif; ?>
                                 <div class="pxl-slider--content">
                                     <?php $slide_content = Elementor\Plugin::$instance->frontend->get_builder_content_for_display( (int)$value['slide_template']);

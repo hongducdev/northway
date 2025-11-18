@@ -80,6 +80,22 @@
                         setBoxHeight();
                     },
 
+                    slideChangeTransitionStart: function (swiper) {
+                        var activeIndex = this.activeIndex;
+                        $(this.slides).each(function (index) {
+                            if (index == activeIndex)
+                                $(this)
+                                    .find(".wow")
+                                    .removeClass("pxl-invisible")
+                                    .addClass("animated");
+                            else
+                                $(this)
+                                    .find(".wow")
+                                    .removeClass("animated")
+                                    .addClass("pxl-invisible");
+                        });
+                    },
+
                     slideChange: function (swiper) {
                         const currentIndex = swiper.activeIndex;
                         const totalSlides = swiper.slides.length;
@@ -90,6 +106,35 @@
                         ) {
                             animateFilterWhileDragging(progress);
                         }
+
+                        $(this.slides).each(function (index) {
+                            if (index == currentIndex)
+                                $(this)
+                                    .find(".wow")
+                                    .removeClass("pxl-invisible")
+                                    .addClass("animated");
+                            else
+                                $(this)
+                                    .find(".wow")
+                                    .removeClass("animated")
+                                    .addClass("pxl-invisible");
+                        });
+                    },
+
+                    sliderMove: function (swiper) {
+                        var activeIndex = this.activeIndex;
+                        $(this.slides).each(function (index) {
+                            if (index == activeIndex)
+                                $(this)
+                                    .find(".wow")
+                                    .removeClass("pxl-invisible")
+                                    .addClass("animated");
+                            else
+                                $(this)
+                                    .find(".wow")
+                                    .removeClass("animated")
+                                    .addClass("pxl-invisible");
+                        });
                     },
                 },
             };
@@ -209,8 +254,6 @@
             );
 
             // Fade effect cho pxl-slider1
-            // Chỉ xử lý khi không dùng fade effect của Swiper
-            // Vì Swiper fade effect tự động xử lý opacity của toàn bộ slide
             if (
                 $this.hasClass("pxl-slider1") &&
                 settings["slide_mode"] !== "fade"
