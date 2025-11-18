@@ -159,6 +159,74 @@ testimonials grid
         bottom: 40px;
         left: -164px;
     }
+    &.style-2 {
+        --gradient-color-1: #041427;
+        --gradient-color-2: #0e488d;
+        .pxl-swiper-slide {
+            &:nth-child(even) {
+                .pxl-item {
+                    &--body {
+                        background: linear-gradient(
+                            0deg,
+                            var(--gradient-color-1) 32.2%,
+                            var(--gradient-color-2) 185.42%
+                        );
+                    }
+                }
+            }
+        }
+        .pxl-swiper-arrow-wrap {
+            margin-top: 0;
+            position: absolute;
+            bottom: 21px;
+            left: -164px;
+            .pxl-swiper-arrow {
+                background-color: $body_bg_color;
+                border: 1px solid rgba($four_color_hex, 0.5);
+                color: $secondary_color;
+                i {
+                    font-size: 24px;
+                }
+                &:hover {
+                    background-color: $secondary_color;
+                    border-color: $secondary_color;
+                    color: $body_bg_color;
+                    i {
+                        color: $body_bg_color;
+                    }
+                }
+            }
+        }
+        .pxl-item {
+            &--header {
+                background-color: $secondary_color;
+            }
+            &--title {
+                color: $body_bg_color;
+            }
+            &--position {
+                color: rgba($body_bg_color_hex, 0.7);
+            }
+            &--body {
+                background-color: none;
+                border-radius: 20px;
+                background: linear-gradient(
+                    180deg,
+                    var(--gradient-color-1) 26.44%,
+                    var(--gradient-color-2) 197.12%
+                );
+                &:before {
+                    background-color: rgba($four_color_hex, 0.3);
+                }
+                &-meta {
+                    margin-bottom: 85px;
+                }
+            }
+            &--desc {
+                color: $body_bg_color;
+            }
+        }
+    }
 }
 
 .pxl-testimonial-carousel2 {

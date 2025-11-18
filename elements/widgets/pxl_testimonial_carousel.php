@@ -95,11 +95,49 @@ pxl_add_custom_widget(
                     'tab' => \Elementor\Controls_Manager::TAB_STYLE,
                     'controls' => array(
                         array(
+                            'name' => 'style_1',
+                            'label' => esc_html__('Style', 'northway'),
+                            'type' => \Elementor\Controls_Manager::SELECT,
+                            'options' => [
+                                'style-1' => esc_html__('Style 1', 'northway'),
+                                'style-2' => esc_html__('Style 2', 'northway'),
+                            ],
+                            'default' => 'style-1',
+                            'condition' => [
+                                'layout' => '1',
+                            ],
+                        ),
+                        array(
                             'name' => 'box_color',
                             'label' => esc_html__('Box Color', 'northway'),
                             'type' => \Elementor\Controls_Manager::COLOR,
                             'selectors' => [
                                 '{{WRAPPER}} .pxl-testimonial-carousel .pxl-item--inner' => 'background-color: {{VALUE}};',
+                            ],
+                            'condition' => [
+                                'style_1!' => 'style-1',
+                            ]
+                        ),
+                        array(
+                            'name' => 'box_gradient_color_from',
+                            'label' => esc_html__('Box Gradient Color From', 'northway'),
+                            'type' => \Elementor\Controls_Manager::COLOR,
+                            'selectors' => [
+                                '{{WRAPPER}} .pxl-testimonial-carousel.style-2' => '--gradient-color-1: {{VALUE}};',
+                            ],
+                            'condition' => [
+                                'style_1' => 'style-2',
+                            ],
+                        ),
+                        array(
+                            'name' => 'box_gradient_color_to',
+                            'label' => esc_html__('Box Gradient Color To', 'northway'),
+                            'type' => \Elementor\Controls_Manager::COLOR,
+                            'selectors' => [
+                                '{{WRAPPER}} .pxl-testimonial-carousel.style-2' => '--gradient-color-2: {{VALUE}};',
+                            ],
+                            'condition' => [
+                                'style_1' => 'style-2',
                             ],
                         ),
                         array(

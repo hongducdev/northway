@@ -31573,6 +31573,58 @@ input[type="submit"]:hover {
   bottom: 40px;
   left: -164px;
 }
+.pxl-testimonial-carousel1.style-2 {
+  --gradient-color-1: #041427;
+  --gradient-color-2: #0e488d;
+}
+.pxl-testimonial-carousel1.style-2 .pxl-swiper-slide:nth-child(even) .pxl-item--body {
+  background: linear-gradient(0deg, var(--gradient-color-1) 32.2%, var(--gradient-color-2) 185.42%);
+}
+.pxl-testimonial-carousel1.style-2 .pxl-swiper-arrow-wrap {
+  margin-top: 0;
+  position: absolute;
+  bottom: 21px;
+  left: -164px;
+}
+.pxl-testimonial-carousel1.style-2 .pxl-swiper-arrow-wrap .pxl-swiper-arrow {
+  background-color: var(--body_bg-color);
+  border: 1px solid rgba(102, 111, 120, 0.5);
+  color: var(--secondary-color);
+}
+.pxl-testimonial-carousel1.style-2 .pxl-swiper-arrow-wrap .pxl-swiper-arrow i {
+  font-size: 24px;
+}
+.pxl-testimonial-carousel1.style-2 .pxl-swiper-arrow-wrap .pxl-swiper-arrow:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: var(--body_bg-color);
+}
+.pxl-testimonial-carousel1.style-2 .pxl-swiper-arrow-wrap .pxl-swiper-arrow:hover i {
+  color: var(--body_bg-color);
+}
+.pxl-testimonial-carousel1.style-2 .pxl-item--header {
+  background-color: var(--secondary-color);
+}
+.pxl-testimonial-carousel1.style-2 .pxl-item--title {
+  color: var(--body_bg-color);
+}
+.pxl-testimonial-carousel1.style-2 .pxl-item--position {
+  color: rgba(248, 248, 242, 0.7);
+}
+.pxl-testimonial-carousel1.style-2 .pxl-item--body {
+  background-color: none;
+  border-radius: 20px;
+  background: linear-gradient(180deg, var(--gradient-color-1) 26.44%, var(--gradient-color-2) 197.12%);
+}
+.pxl-testimonial-carousel1.style-2 .pxl-item--body:before {
+  background-color: rgba(102, 111, 120, 0.3);
+}
+.pxl-testimonial-carousel1.style-2 .pxl-item--body-meta {
+  margin-bottom: 85px;
+}
+.pxl-testimonial-carousel1.style-2 .pxl-item--desc {
+  color: var(--body_bg-color);
+}
 .pxl-testimonial-carousel2 .pxl-swiper-slide.swiper-slide-active .pxl-item--inner {
   background-color: var(--secondary-color);
   flex-direction: row;
