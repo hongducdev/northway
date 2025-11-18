@@ -141,7 +141,7 @@ pxl_add_custom_widget(
                             'label_block' => true,
                             'fa4compatibility' => 'icon',
                             'condition' => [
-                                'btn_style!' => ['btn-no-icon', 'btn-outline'],
+                                'btn_style!' => ['btn-no-icon', 'btn-outline', 'btn-shadow'],
                                 'btn_style_for_gradient!' => ['style-2-gradient', 'style-3-gradient'],
                             ],
                         ),

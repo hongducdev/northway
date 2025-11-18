@@ -1260,7 +1260,8 @@ posts
 }
 
 ///grid post
-.pxl-blog-grid-layout1 {
+.pxl-blog-grid-layout1,
+.pxl-post-carousel3 {
     .pxl-post {
         &--inner {
             background-color: $body_bg_color;
@@ -1270,22 +1271,19 @@ posts
             display: flex;
             gap: 27px;
             position: relative;
+            clip-path: polygon(
+                0 0,
+                calc(100% - 66px) 0,
+                100% 66px,
+                100% 100%,
+                0 100%
+            );
             @include transition(all 0.3s linear 0ms);
             @media #{$max-md2} {
                 flex-direction: column-reverse;
             }
             @media #{$max-xsx} {
                 padding: 15px;
-            }
-            &:after {
-                content: "";
-                position: absolute;
-                top: -1px;
-                right: -1px;
-                width: 0;
-                height: 0;
-                border-bottom: 68px solid transparent;
-                border-right: 68px solid $body_bg_color;
             }
             &:hover {
                 background-color: $secondary_color;
@@ -1383,8 +1381,8 @@ posts
         }
         &--fold {
             position: absolute;
-            top: 0px;
-            right: 0px;
+            top: -1px;
+            right: -1px;
             z-index: 5;
             path {
                 &:first-child {
