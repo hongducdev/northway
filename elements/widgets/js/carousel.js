@@ -82,17 +82,21 @@
 
                     slideChangeTransitionStart: function (swiper) {
                         var activeIndex = this.activeIndex;
+
                         $(this.slides).each(function (index) {
-                            if (index == activeIndex)
-                                $(this)
-                                    .find(".wow")
-                                    .removeClass("pxl-invisible")
-                                    .addClass("animated");
-                            else
-                                $(this)
-                                    .find(".wow")
-                                    .removeClass("animated")
-                                    .addClass("pxl-invisible");
+                            var $wowElements = $(this).find(".wow");
+
+                            $wowElements.removeClass("animated pxl-invisible");
+
+                            $wowElements.each(function () {
+                                void this.offsetWidth;
+                            });
+
+                            if (index == activeIndex) {
+                                $wowElements.addClass("animated");
+                            } else {
+                                $wowElements.addClass("pxl-invisible");
+                            }
                         });
                     },
 
@@ -108,32 +112,22 @@
                         }
 
                         $(this.slides).each(function (index) {
-                            if (index == currentIndex)
-                                $(this)
-                                    .find(".wow")
-                                    .removeClass("pxl-invisible")
-                                    .addClass("animated");
-                            else
-                                $(this)
-                                    .find(".wow")
-                                    .removeClass("animated")
-                                    .addClass("pxl-invisible");
-                        });
-                    },
+                            var $wowElements = $(this).find(".wow");
 
-                    sliderMove: function (swiper) {
-                        var activeIndex = this.activeIndex;
-                        $(this.slides).each(function (index) {
-                            if (index == activeIndex)
-                                $(this)
-                                    .find(".wow")
-                                    .removeClass("pxl-invisible")
-                                    .addClass("animated");
-                            else
-                                $(this)
-                                    .find(".wow")
-                                    .removeClass("animated")
-                                    .addClass("pxl-invisible");
+                            $wowElements.removeClass("animated pxl-invisible");
+                            $wowElements.css("animation", "none");
+
+                            $wowElements.each(function () {
+                                void this.offsetWidth;
+                            });
+
+                            $wowElements.css("animation", "");
+
+                            if (index == currentIndex) {
+                                $wowElements.addClass("animated");
+                            } else {
+                                $wowElements.addClass("pxl-invisible");
+                            }
                         });
                     },
                 },

@@ -2,30 +2,6 @@
     //animation
     function northway_animation_handler($scope) {
         elementorFrontend.waypoint(
-            $(document).find(".pxl-animate"),
-            function () {
-                var $animate_el = $(this),
-                    data = $animate_el.data("settings");
-                if (
-                    typeof data != "undefined" &&
-                    typeof data["animation"] != "undefined"
-                ) {
-                    setTimeout(function () {
-                        $animate_el
-                            .removeClass("pxl-invisible")
-                            .addClass("animated " + data["animation"]);
-                    }, data["animation_delay"]);
-                } else {
-                    setTimeout(function () {
-                        $animate_el
-                            .removeClass("pxl-invisible")
-                            .addClass("animated fadeInUp");
-                    }, 300);
-                }
-            }
-        );
-
-        elementorFrontend.waypoint(
             $scope.find(".pxl-border-animated"),
             function () {
                 $(this).addClass("pxl-animated");
