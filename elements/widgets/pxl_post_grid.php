@@ -210,7 +210,7 @@ pxl_add_custom_widget(
                                     [
                                         'terms' => [
                                             ['name' => 'post_type', 'operator' => '==', 'value' => 'service'],
-                                            ['name' => 'layout_service', 'operator' => 'in', 'value' => ['service-1']]
+                                            ['name' => 'layout_service', 'operator' => 'in', 'value' => ['service-1', 'service-2']]
                                         ]
                                     ]
                                 ],
@@ -246,7 +246,7 @@ pxl_add_custom_widget(
                                     [
                                         'terms' => [
                                             ['name' => 'post_type', 'operator' => '==', 'value' => 'service'],
-                                            ['name' => 'layout_service', 'operator' => 'in', 'value' => ['service-1']]
+                                            ['name' => 'layout_service', 'operator' => 'in', 'value' => ['service-1', 'service-2']]
                                         ]
                                     ]
                                 ],
@@ -282,7 +282,7 @@ pxl_add_custom_widget(
                                     [
                                         'terms' => [
                                             ['name' => 'post_type', 'operator' => '==', 'value' => 'service'],
-                                            ['name' => 'layout_service', 'operator' => 'in', 'value' => ['service-1']]
+                                            ['name' => 'layout_service', 'operator' => 'in', 'value' => ['service-1', 'service-2']]
                                         ]
                                     ]
                                 ],
@@ -318,7 +318,7 @@ pxl_add_custom_widget(
                                     [
                                         'terms' => [
                                             ['name' => 'post_type', 'operator' => '==', 'value' => 'service'],
-                                            ['name' => 'layout_service', 'operator' => 'in', 'value' => ['service-1']]
+                                            ['name' => 'layout_service', 'operator' => 'in', 'value' => ['service-1', 'service-2']]
                                         ]
                                     ]
                                 ],
@@ -355,7 +355,7 @@ pxl_add_custom_widget(
                                     [
                                         'terms' => [
                                             ['name' => 'post_type', 'operator' => '==', 'value' => 'service'],
-                                            ['name' => 'layout_service', 'operator' => 'in', 'value' => ['service-1']]
+                                            ['name' => 'layout_service', 'operator' => 'in', 'value' => ['service-1', 'service-2']]
                                         ]
                                     ]
                                 ],
@@ -393,7 +393,7 @@ pxl_add_custom_widget(
                                     [
                                         'terms' => [
                                             ['name' => 'post_type', 'operator' => '==', 'value' => 'service'],
-                                            ['name' => 'layout_service', 'operator' => 'in', 'value' => ['service-1']]
+                                            ['name' => 'layout_service', 'operator' => 'in', 'value' => ['service-1', 'service-2']]
                                         ]
                                     ]
                                 ],

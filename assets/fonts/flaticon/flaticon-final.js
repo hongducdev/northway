@@ -25,6 +25,7 @@
         "shield",
         "gear",
         "suitcase",
-        "cart"
+        "cart",
+        "machine-learning"
     ]
 }
