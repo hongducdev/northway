@@ -948,7 +948,11 @@
 
 .pxl-heading-footer-home-3 {
     .pxl-item--title {
-        background: linear-gradient(180deg, rgba($body_bg_color_hex, 0.3) 32.19%, rgba(115, 115, 115, 0.00) 77.13%);
+        background: linear-gradient(
+            180deg,
+            rgba($body_bg_color_hex, 0.3) 32.19%,
+            rgba(115, 115, 115, 0) 77.13%
+        );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -972,6 +976,40 @@
 .pxl-social-home-3 {
     .pxl-icon1 {
         flex-direction: column;
+    }
+}
+
+.pxl-container-shadow-home-2 {
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: -1px;
+        width: calc(100% + 2px);
+        height: 100%;
+        background-color: $body_bg_color;
+        border: 1px solid rgba($four_color_hex, 0.5);
+        border-radius: 30px;
+        z-index: -1;
+    }
+}
+
+.pxl-divider-gradient-home-2 {
+    --container-width: 1290px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(var(--container-width) + 65px + 65px);
+    max-width: calc(var(--container-width) + 65px + 65px);
+    .pxl-el-divider {
+        width: calc(var(--container-width) + 65px + 65px);
+        background-color: none !important;
+        background: linear-gradient(
+            to right,
+            rgba($secondary_color_hex, 0) 0%,
+            rgba($secondary_color_hex, 0.6) 51.4423%,
+            rgba($secondary_color_hex, 0) 100%
+        );
     }
 }
 

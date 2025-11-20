@@ -47,6 +47,10 @@ pxl_add_custom_widget(
                                     'label' => esc_html__('Layout 7', 'northway' ),
                                     'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_icon_box/layout7.jpg'
                                 ],
+                                '8' => [
+                                    'label' => esc_html__('Layout 8', 'northway' ),
+                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_icon_box/layout8.jpg'
+                                ],
                             ],
                         ),
                     ),
@@ -222,6 +226,19 @@ pxl_add_custom_widget(
                             'default' => 'style-1',
                             'condition' => [
                                 'layout' => ['2', '5'],
+                            ],
+                        ),
+                        array(
+                            'name' => 'align_8',
+                            'label' => esc_html__('Align', 'northway' ),
+                            'type' => \Elementor\Controls_Manager::SELECT,
+                            'options' => [
+                                'left' => esc_html__('Left', 'northway' ),
+                                'right' => esc_html__('Right', 'northway' ),
+                            ],
+                            'default' => 'left',
+                            'condition' => [
+                                'layout' => ['8'],
                             ],
                         ),
                         array(

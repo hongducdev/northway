@@ -238,7 +238,6 @@ pxl_add_custom_widget(
                     'label' => esc_html__('General', 'northway' ),
                     'tab' => \Elementor\Controls_Manager::TAB_STYLE,
                     'controls' => array(
-                        
                         array(
                             'name' => 'button_size',
                             'label' => esc_html__('Button Size', 'northway' ),
@@ -256,7 +255,6 @@ pxl_add_custom_widget(
                             ],
                         ),
 
-                        
                         array(
                             'name' => 'ic_border_radius',
                             'label' => esc_html__('Icon Border Radius', 'northway' ),
@@ -332,6 +330,13 @@ pxl_add_custom_widget(
                             'selectors' => [
                                 '{{WRAPPER}} .pxl-video-player .pxl-video--inner' => 'max-width: {{SIZE}}{{UNIT}};',
                             ],
+                        ),
+                        array(
+                            'name'         => 'image_box_shadow',
+                            'label' => esc_html__('Box Shadow', 'northway'),
+                            'type'         => \Elementor\Group_Control_Box_Shadow::get_type(),
+                            'control_type' => 'group',
+                            'selector'     => '{{WRAPPER}} .pxl-video-player .pxl-video--holder img'
                         ),
                     ),
                 ),
