@@ -152,7 +152,6 @@ function northway_get_post_grid_layout($pt_supports = []){
     }
     return $result;   
 }
-
 function northway_get_grid_layout_options($post_type_name){
     $option_layouts = [];
     switch ($post_type_name) {
@@ -315,7 +314,6 @@ function northway_get_ids_unselected_by_post_type($pt_supports = [], $args = [])
 
     return $result;
 }
-
 function northway_get_grid_ids_by_post_type($pt_supports = [], $args = []){
     $args = wp_parse_args($args, ['condition' => 'post_type', 'custom_condition' => []]);
     $post_types = northway_get_post_type_options($pt_supports);
@@ -435,9 +433,9 @@ function northway_get_post_list_layout($pt_supports = []){
             'name'     => 'layout_'.$name,
             'label'    => sprintf(esc_html__( 'Select Template of %s', 'northway' ), $label),
             'type'     => 'layoutcontrol',
-            'default' => 'post-1',
+            'default' => 'portfolio-1',
             'options'  => northway_get_list_layout_options($name),
-            'prefix_class' => 'post-layout-',
+            'prefix_class' => 'portfolio-layout-',
             'condition' => [
                 'post_type' => [$name]
             ]
@@ -449,11 +447,11 @@ function northway_get_post_list_layout($pt_supports = []){
 function northway_get_list_layout_options($post_type_name){
     $option_layouts = [];
     switch ($post_type_name) {
-        case 'post':
+        case 'portfolio':
         $option_layouts = [
-            'post-list-1' => [
+            'portfolio-1' => [
                 'label' => esc_html__( 'Layout 1', 'northway' ),
-                'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_post_list/post-layout1.jpg'
+                'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_post_list/portfolio-layout1.jpg'
             ],
         ];
         break;

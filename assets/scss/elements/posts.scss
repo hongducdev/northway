@@ -2260,6 +2260,197 @@ posts
     }
 }
 
+.pxl-portfolio-list-layout1 {
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $body_bg_color;
+        clip-path: polygon(
+            0 0,
+            calc(100% - 83px) 0,
+            100% 83px,
+            100% 100%,
+            0 100%
+        );
+        border: 1px solid rgba($four_color_hex, 0.5);
+        @include border-radius(20px);
+        z-index: -1;
+    }
+    .pxl-tabs {
+        &--inner {
+            display: flex;
+            position: relative;
+            clip-path: polygon(
+                0 0,
+                calc(100% - 83px) 0,
+                100% 83px,
+                100% 100%,
+                0 100%
+            );
+            background-color: $body_bg_color;
+            border: 1px solid rgba($four_color_hex, 0.5);
+            @include border-radius(20px);
+        }
+        &--fold {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        &--title {
+            flex: 0 0 40%;
+            max-width: 40%;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid rgba($four_color_hex, 0.5);
+        }
+        &--content {
+            flex: 0 0 60%;
+            max-width: 60%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .pxl-item--title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px;
+        background-color: transparent;
+        @include transition(all 0.3s linear 0ms);
+        &.active,
+        &:hover {
+            background-color: $secondary_color;
+            h5 {
+                color: $body_bg_color;
+            }
+            .pxl-item--title-link {
+                background-color: $primary_color;
+                border-color: $primary_color;
+                i {
+                    color: $body_bg_color;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+        &:first-child {
+            border-top-left-radius: 20px;
+        }
+        &:last-child {
+            border-bottom-left-radius: 20px;
+        }
+        + .pxl-item--title {
+            border-top: 1px solid rgba($four_color_hex, 0.5);
+        }
+        h5 {
+            color: $secondary_color;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.5;
+            margin-bottom: 0;
+            max-width: 350px;
+            @include transition(all 0.3s linear 0ms);
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        &-link {
+            --width: 46px;
+            width: var(--width);
+            height: var(--width);
+            @include border-radius(10px);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $body_bg_color;
+            border: 1px solid rgba($four_color_hex, 0.5);
+            @include transition(all 0.3s linear 0ms);
+            i {
+                font-size: 10px;
+                color: $secondary_color;
+                transform: rotate(0);
+                @include transition(all 0.3s linear 0ms);
+            }
+        }
+    }
+    .pxl-item--content {
+        padding: 50px;
+    }
+    .pxl-portfolio {
+        &--title {
+            color: $secondary_color;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        &--excerpt {
+            color: $secondary_color;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.625;
+            margin-bottom: 50px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        &--featured {
+            position: relative;
+            height: 348px;
+            width: 100%;
+            @include border-radius(15px);
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                @include border-radius(15px);
+            }
+        }
+        &--meta {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            &-item {
+                display: inline-flex;
+                height: 46px;
+                padding: 0 20px;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                @include border-radius(10px);
+                border: 1px solid rgba($four_color_hex, 0.5);
+                background-color: $body_bg_color;
+                font-family: "DM Sans";
+                font-size: 14px;
+                font-weight: 400;
+                color: $four_color;
+                i {
+                    color: $secondary_color;
+                }
+                a {
+                    color: inherit;
+                    @include transition(all 0.3s linear 0ms);
+                    &:hover {
+                        color: $secondary_color;
+                    }
+                }
+            }
+        }
+    }
+}
+
 // Portfolio Slip
 .pxl-post-slip1 {
     .pxl-post-content {

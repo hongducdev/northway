@@ -27071,6 +27071,234 @@ body .woosw-popup-content-mid .added_to_cart {
 .pxl-portfolio-grid-layout2 .pxl-post--category i {
   color: var(--secondary-color);
 }
+.pxl-portfolio-list-layout1 {
+  position: relative;
+}
+.pxl-portfolio-list-layout1:after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--body_bg-color);
+  clip-path: polygon(0 0, calc(100% - 83px) 0, 100% 83px, 100% 100%, 0 100%);
+  border: 1px solid rgba(102, 111, 120, 0.5);
+  -webkit-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  z-index: -1;
+}
+.pxl-portfolio-list-layout1 .pxl-tabs--inner {
+  display: flex;
+  position: relative;
+  clip-path: polygon(0 0, calc(100% - 83px) 0, 100% 83px, 100% 100%, 0 100%);
+  background-color: var(--body_bg-color);
+  border: 1px solid rgba(102, 111, 120, 0.5);
+  -webkit-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+}
+.pxl-portfolio-list-layout1 .pxl-tabs--fold {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.pxl-portfolio-list-layout1 .pxl-tabs--title {
+  flex: 0 0 40%;
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgba(102, 111, 120, 0.5);
+}
+.pxl-portfolio-list-layout1 .pxl-tabs--content {
+  flex: 0 0 60%;
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.pxl-portfolio-list-layout1 .pxl-item--title, .pxl-portfolio-list-layout1 .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-portfolio-list-layout1 -title.pxl-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: transparent;
+  -webkit-transition: all 0.3s linear 0ms;
+  -khtml-transition: all 0.3s linear 0ms;
+  -moz-transition: all 0.3s linear 0ms;
+  -ms-transition: all 0.3s linear 0ms;
+  -o-transition: all 0.3s linear 0ms;
+  transition: all 0.3s linear 0ms;
+}
+.pxl-portfolio-list-layout1 .pxl-item--title.active, .pxl-portfolio-list-layout1 .pxl-text-carousel1 -title.pxl-item.active, .pxl-text-carousel1 .pxl-portfolio-list-layout1 -title.pxl-item.active, .pxl-portfolio-list-layout1 .pxl-item--title:hover, .pxl-portfolio-list-layout1 .pxl-text-carousel1 -title.pxl-item:hover, .pxl-text-carousel1 .pxl-portfolio-list-layout1 -title.pxl-item:hover {
+  background-color: var(--secondary-color);
+}
+.pxl-portfolio-list-layout1 .pxl-item--title.active h5, .pxl-portfolio-list-layout1 .pxl-text-carousel1 -title.pxl-item.active h5, .pxl-text-carousel1 .pxl-portfolio-list-layout1 -title.pxl-item.active h5, .pxl-portfolio-list-layout1 .pxl-item--title:hover h5, .pxl-portfolio-list-layout1 .pxl-text-carousel1 -title.pxl-item:hover h5, .pxl-text-carousel1 .pxl-portfolio-list-layout1 -title.pxl-item:hover h5 {
+  color: var(--body_bg-color);
+}
+.pxl-portfolio-list-layout1 .pxl-item--title.active .pxl-item--title-link, .pxl-portfolio-list-layout1 .pxl-text-carousel1 -title.pxl-item.active .pxl-item--title-link, .pxl-text-carousel1 .pxl-portfolio-list-layout1 -title.pxl-item.active .pxl-item--title-link, .pxl-portfolio-list-layout1 .pxl-item--title:hover .pxl-item--title-link, .pxl-portfolio-list-layout1 .pxl-text-carousel1 -title.pxl-item:hover .pxl-item--title-link, .pxl-text-carousel1 .pxl-portfolio-list-layout1 -title.pxl-item:hover .pxl-item--title-link {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.pxl-portfolio-list-layout1 .pxl-item--title.active .pxl-item--title-link i, .pxl-portfolio-list-layout1 .pxl-text-carousel1 -title.pxl-item.active .pxl-item--title-link i, .pxl-text-carousel1 .pxl-portfolio-list-layout1 -title.pxl-item.active .pxl-item--title-link i, .pxl-portfolio-list-layout1 .pxl-item--title:hover .pxl-item--title-link i, .pxl-portfolio-list-layout1 .pxl-text-carousel1 -title.pxl-item:hover .pxl-item--title-link i, .pxl-text-carousel1 .pxl-portfolio-list-layout1 -title.pxl-item:hover .pxl-item--title-link i {
+  color: var(--body_bg-color);
+  transform: rotate(45deg);
+}
+.pxl-portfolio-list-layout1 .pxl-item--title:first-child, .pxl-portfolio-list-layout1 .pxl-text-carousel1 -title.pxl-item:first-child, .pxl-text-carousel1 .pxl-portfolio-list-layout1 -title.pxl-item:first-child {
+  border-top-left-radius: 20px;
+}
+.pxl-portfolio-list-layout1 .pxl-item--title:last-child, .pxl-portfolio-list-layout1 .pxl-text-carousel1 -title.pxl-item:last-child, .pxl-text-carousel1 .pxl-portfolio-list-layout1 -title.pxl-item:last-child {
+  border-bottom-left-radius: 20px;
+}
+.pxl-portfolio-list-layout1 .pxl-item--title + .pxl-item--title, .pxl-portfolio-list-layout1 .pxl-text-carousel1 -title.pxl-item + .pxl-item--title, .pxl-portfolio-list-layout1 .pxl-text-carousel1 -title.pxl-item + .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-portfolio-list-layout1 .pxl-text-carousel1 -title.pxl-item + -title.pxl-item, .pxl-text-carousel1 .pxl-portfolio-list-layout1 -title.pxl-item + .pxl-item--title, .pxl-portfolio-list-layout1 .pxl-item--title + .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-portfolio-list-layout1 .pxl-item--title + -title.pxl-item {
+  border-top: 1px solid rgba(102, 111, 120, 0.5);
+}
+.pxl-portfolio-list-layout1 .pxl-item--title h5, .pxl-portfolio-list-layout1 .pxl-text-carousel1 -title.pxl-item h5, .pxl-text-carousel1 .pxl-portfolio-list-layout1 -title.pxl-item h5 {
+  color: var(--secondary-color);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 0;
+  max-width: 350px;
+  -webkit-transition: all 0.3s linear 0ms;
+  -khtml-transition: all 0.3s linear 0ms;
+  -moz-transition: all 0.3s linear 0ms;
+  -ms-transition: all 0.3s linear 0ms;
+  -o-transition: all 0.3s linear 0ms;
+  transition: all 0.3s linear 0ms;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.pxl-portfolio-list-layout1 .pxl-item--title-link, .pxl-portfolio-list-layout1 .pxl-text-carousel1 -link.pxl-item, .pxl-text-carousel1 .pxl-portfolio-list-layout1 -link.pxl-item {
+  --width: 46px;
+  width: var(--width);
+  height: var(--width);
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--body_bg-color);
+  border: 1px solid rgba(102, 111, 120, 0.5);
+  -webkit-transition: all 0.3s linear 0ms;
+  -khtml-transition: all 0.3s linear 0ms;
+  -moz-transition: all 0.3s linear 0ms;
+  -ms-transition: all 0.3s linear 0ms;
+  -o-transition: all 0.3s linear 0ms;
+  transition: all 0.3s linear 0ms;
+}
+.pxl-portfolio-list-layout1 .pxl-item--title-link i, .pxl-portfolio-list-layout1 .pxl-text-carousel1 -link.pxl-item i, .pxl-text-carousel1 .pxl-portfolio-list-layout1 -link.pxl-item i {
+  font-size: 10px;
+  color: var(--secondary-color);
+  transform: rotate(0);
+  -webkit-transition: all 0.3s linear 0ms;
+  -khtml-transition: all 0.3s linear 0ms;
+  -moz-transition: all 0.3s linear 0ms;
+  -ms-transition: all 0.3s linear 0ms;
+  -o-transition: all 0.3s linear 0ms;
+  transition: all 0.3s linear 0ms;
+}
+.pxl-portfolio-list-layout1 .pxl-item--content {
+  padding: 50px;
+}
+.pxl-portfolio-list-layout1 .pxl-portfolio--title {
+  color: var(--secondary-color);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.pxl-portfolio-list-layout1 .pxl-portfolio--excerpt {
+  color: var(--secondary-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.625;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.pxl-portfolio-list-layout1 .pxl-portfolio--featured {
+  position: relative;
+  height: 348px;
+  width: 100%;
+  -webkit-border-radius: 15px;
+  -khtml-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+}
+.pxl-portfolio-list-layout1 .pxl-portfolio--featured img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-border-radius: 15px;
+  -khtml-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+}
+.pxl-portfolio-list-layout1 .pxl-portfolio--meta {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+.pxl-portfolio-list-layout1 .pxl-portfolio--meta-item {
+  display: inline-flex;
+  height: 46px;
+  padding: 0 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(102, 111, 120, 0.5);
+  background-color: var(--body_bg-color);
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--four-color);
+}
+.pxl-portfolio-list-layout1 .pxl-portfolio--meta-item i {
+  color: var(--secondary-color);
+}
+.pxl-portfolio-list-layout1 .pxl-portfolio--meta-item a {
+  color: inherit;
+  -webkit-transition: all 0.3s linear 0ms;
+  -khtml-transition: all 0.3s linear 0ms;
+  -moz-transition: all 0.3s linear 0ms;
+  -ms-transition: all 0.3s linear 0ms;
+  -o-transition: all 0.3s linear 0ms;
+  transition: all 0.3s linear 0ms;
+}
+.pxl-portfolio-list-layout1 .pxl-portfolio--meta-item a:hover {
+  color: var(--secondary-color);
+}
 .pxl-post-slip1 .pxl-post-content {
   width: 50%;
   height: 100vh;

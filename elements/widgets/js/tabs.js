@@ -25,18 +25,27 @@
 
                 if (!$newActiveContent.length) return;
 
+                // Get animation duration from data attribute or use default
+                var duration = $tabContainer.data("duration") || 400;
+
                 if ($tabContainer.hasClass("tab-effect-slide")) {
                     $contents
                         .removeClass("active")
                         .stop(true, true)
-                        .slideUp(300);
+                        .slideUp(duration, "easeInOutCubic");
                     $newActiveContent
                         .addClass("active")
                         .stop(true, true)
-                        .slideDown(300);
+                        .slideDown(duration, "easeInOutCubic");
                 } else if ($tabContainer.hasClass("tab-effect-fade")) {
-                    $contents.removeClass("active").fadeOut(200);
-                    $newActiveContent.addClass("active").fadeIn(200);
+                    $contents
+                        .removeClass("active")
+                        .stop(true, true)
+                        .fadeOut(duration);
+                    $newActiveContent
+                        .addClass("active")
+                        .stop(true, true)
+                        .fadeIn(duration);
                 } else {
                     $contents.removeClass("active").hide();
                     $newActiveContent.addClass("active").show();
@@ -62,18 +71,27 @@
 
                     if (!$targetContent.length) return;
 
+                    // Get animation duration from data attribute or use default
+                    var duration = $tabContainer.data("duration") || 400;
+
                     if ($tabContainer.hasClass("tab-effect-slide")) {
                         $contents
                             .removeClass("active")
                             .stop(true, true)
-                            .slideUp(300);
+                            .slideUp(duration, "easeInOutCubic");
                         $targetContent
                             .addClass("active")
                             .stop(true, true)
-                            .slideDown(300);
+                            .slideDown(duration, "easeInOutCubic");
                     } else if ($tabContainer.hasClass("tab-effect-fade")) {
-                        $contents.removeClass("active").fadeOut(200);
-                        $targetContent.addClass("active").fadeIn(200);
+                        $contents
+                            .removeClass("active")
+                            .stop(true, true)
+                            .fadeOut(duration);
+                        $targetContent
+                            .addClass("active")
+                            .stop(true, true)
+                            .fadeIn(duration);
                     } else {
                         $contents.removeClass("active").hide();
                         $targetContent.addClass("active").show();
@@ -127,6 +145,10 @@
     $(window).on("elementor/frontend/init", function () {
         elementorFrontend.hooks.addAction(
             "frontend/element_ready/pxl_tabs.default",
+            pxl_widget_tabs_handler
+        );
+        elementorFrontend.hooks.addAction(
+            "frontend/element_ready/pxl_post_list.default",
             pxl_widget_tabs_handler
         );
     });
