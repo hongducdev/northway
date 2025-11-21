@@ -54,7 +54,7 @@ pxl_add_custom_widget(
                             ],
                             'default' => 'style1',
                             'condition' => [
-                                'layout' => '2',
+                                'layout' => ['2', '3'],
                             ],
                         ),
                         array(
@@ -149,6 +149,25 @@ pxl_add_custom_widget(
                     'label' => esc_html__('General', 'northway'),
                     'tab' => \Elementor\Controls_Manager::TAB_STYLE,
                     'controls' => array(
+                        array(
+                            'name' => 'spacing_body',
+                            'label' => esc_html__('Spacing', 'northway'),
+                            'type' => \Elementor\Controls_Manager::SLIDER,
+                            'control_type' => 'responsive',
+                            'size_units' => ['px'],
+                            'range' => [
+                                'px' => [
+                                    'min' => 0,
+                                    'max' => 1000,
+                                ],
+                            ],
+                            'selectors' => [
+                                '{{WRAPPER}} .pxl-accordion3 .pxl-accordion--items' => 'padding: {{SIZE}}{{UNIT}} 0 !important;',
+                            ],
+                            'condition' => [
+                                'layout' => '3',
+                            ],
+                        ),
                         array(
                             'name' => 'item_padding',
                             'label' => esc_html__('Item Padding ', 'northway'),

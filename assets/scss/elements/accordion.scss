@@ -381,6 +381,15 @@
         flex-direction: column;
         gap: 30px;
     }
+    &.style2 {
+        .pxl-accordion {
+            &--process {
+                &:before {
+                    background: rgba($four_color_hex, 0.5);
+                }
+            }
+        }
+    }
     .pxl-accordion {
         &--process {
             flex: 0 0 192px;

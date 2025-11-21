@@ -15042,6 +15042,9 @@ body.rtl .widget .widget-title:before {
     clip-path: polygon(0 0, calc(100% - 100px) 0, 100% 100px, 100% 100%, 0 100%);
   }
 }
+.pxl-container-fold-home-2 {
+  clip-path: polygon(0 0, calc(100% - 97px) 0, 100% 97px, 100% 100%, 0 100%);
+}
 .pxl-container-service-fold-2 {
   position: relative;
   position: relative;
@@ -15446,6 +15449,21 @@ body.rtl .widget .widget-title:before {
   100% {
     stroke-dashoffset: 0;
   }
+}
+.pxl-container-caro-white-home-2 {
+  position: relative;
+  overflow: hidden;
+}
+.pxl-container-caro-white-home-2:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: repeating-linear-gradient(to right, rgba(248, 248, 248, 0.1) 0 1px, transparent 1px 50px), repeating-linear-gradient(to bottom, rgba(248, 248, 248, 0.1) 0 1px, transparent 1px 50px);
+  background-position: center center;
+  background-size: 50px 50px;
+  background-repeat: repeat;
+  transform: translateZ(0);
 }
 .pxl-contact-form p {
   margin-bottom: 0;
@@ -32518,6 +32536,9 @@ input[type="submit"]:hover {
     flex-direction: column;
     gap: 30px;
   }
+}
+.pxl-accordion3.style2 .pxl-accordion--process:before {
+  background: rgba(102, 111, 120, 0.5);
 }
 .pxl-accordion3 .pxl-accordion--process {
   flex: 0 0 192px;
