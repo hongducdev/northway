@@ -32394,6 +32394,93 @@ input[type="submit"]:hover {
   font-weight: 400;
   line-height: 1.714;
 }
+.pxl-testimonial-carousel3 .pxl-item--inner {
+  padding: 50px;
+  background-color: var(--body_bg-color);
+}
+.pxl-testimonial-carousel3 .pxl-item--desc {
+  color: var(--secondary-color);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.65;
+  margin-bottom: 54px;
+  padding-right: 46px;
+}
+.pxl-testimonial-carousel3 .pxl-item--divider {
+  color: rgba(102, 111, 120, 0.3);
+  margin-bottom: 13px;
+}
+.pxl-testimonial-carousel3 .pxl-item--meta {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.pxl-testimonial-carousel3 .pxl-item--avatar {
+  width: 70px;
+  height: 70px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.pxl-testimonial-carousel3 .pxl-item--avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pxl-testimonial-carousel3 .pxl-item--title {
+  color: var(--secondary-color);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 3px;
+}
+.pxl-testimonial-carousel3 .pxl-item--position {
+  color: rgba(var, 1, 0, 0);
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.625;
+}
+.pxl-testimonial-carousel3 .pxl-item--star {
+  height: 13px;
+  display: flex;
+  align-items: center;
+}
+.pxl-testimonial-carousel3 .pxl-item--star svg {
+  height: 13px;
+  color: #e9bf4a;
+}
+.pxl-testimonial-carousel3 .pxl-item--info-meta {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.pxl-testimonial-carousel3 .pxl-swiper-arrow-wrap {
+  margin-top: 0;
+  position: absolute;
+  bottom: 62px;
+  right: 50px;
+  z-index: 5;
+}
+.pxl-testimonial-carousel3 .pxl-swiper-arrow-wrap .pxl-swiper-arrow {
+  width: 46px;
+  height: 46px;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: var(--body_bg-color);
+}
+.pxl-testimonial-carousel3 .pxl-swiper-arrow-wrap .pxl-swiper-arrow.swiper-button-disabled {
+  background-color: rgba(187, 178, 255, 0.50);
+}
 .pxl-accordion .pxl-accordion--title {
   margin-bottom: 0;
   cursor: pointer;
