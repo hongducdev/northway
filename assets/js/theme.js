@@ -34,6 +34,7 @@
         northway_col_offset_1750();
         northway_col_offset_1760();
         northway_divider_width_1600();
+        northway_circle_text();
         $(".pxl-slider").css("opacity", "1");
         $(".pxl-slider").css("transition-delay", "300ms");
     });
@@ -1588,6 +1589,41 @@
         }
     }
 
+    // Circle Text
+    function northway_circle_text() {
+        const circleTexts = document.querySelectorAll(
+            ".pxl-text-box5 .pxl-circle-text"
+        );
+
+        circleTexts.forEach(function (element) {
+            const text =
+                element.getAttribute("data-text") || element.textContent;
+            element.textContent = "";
+
+            const characters = text.split("");
+            const spaceWidth = 0.3;
+            let totalUnits = 0;
+
+            characters.forEach(function (char) {
+                totalUnits += char === " " ? spaceWidth : 1;
+            });
+
+            const anglePerUnit = 360 / totalUnits;
+            let currentAngle = 0;
+
+            characters.forEach(function (char) {
+                const span = document.createElement("span");
+                span.textContent = char;
+                span.className = "pxl-circle-char";
+                span.style.transform = "rotate(" + currentAngle + "deg)";
+                element.appendChild(span);
+
+                currentAngle +=
+                    char === " " ? anglePerUnit * spaceWidth : anglePerUnit;
+            });
+        });
+    }
+
     function northway_site_loader() {
         var $flower = $(".pxl-loader .flower");
         if ($flower.length === 0) return;
@@ -1732,7 +1768,6 @@
 
                     if (c == 0 || is == 0) {
                         jQuery(this).addClass("active");
-
                     } else jQuery(this).removeClass("active");
 
                     if (c < 0.5 || is == 0) jQuery(this).addClass("preactive");

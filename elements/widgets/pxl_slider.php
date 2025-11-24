@@ -35,6 +35,10 @@ pxl_add_custom_widget(
                                     'label' => esc_html__('Layout 2', 'northway' ),
                                     'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_slider/layout2.jpg'
                                 ],
+                                '3' => [
+                                    'label' => esc_html__('Layout 3', 'northway' ),
+                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_slider/layout3.jpg'
+                                ],
                             ],
                         ),
                     ),
@@ -71,18 +75,44 @@ pxl_add_custom_widget(
                                     'type' => \Elementor\Controls_Manager::MEDIA,
                                 ),
                             ),
+                            'condition' => [
+                                'layout' => ['1','2'],
+                            ]
                         ),
                         array(
-                            'name' => 'style',
-                            'label' => esc_html__('Style', 'northway' ),
-                            'type' => \Elementor\Controls_Manager::SELECT,
-                            'options' => [
-                                'style1' => 'Style1',
-                                'style2' => 'Style2',
-                                'style3' => 'Style3',
-                            ],
-                            'default' => 'style1',
-                        ),
+                            'name' => 'slides_3',
+                            'label' => esc_html__('Slides 3', 'northway'),
+                            'type' => \Elementor\Controls_Manager::REPEATER,
+                            'controls' => array(
+                                array(
+                                    'name' => 'slide_template_3',
+                                    'label' => esc_html__('Select Template', 'northway'),
+                                    'type' => 'select',
+                                    'options' => $templates,
+                                    'default' => 'df',
+                                    'description' => 'Add new tab template: "<a href="' . esc_url( admin_url( 'edit.php?post_type=pxl-template' ) ) . '" target="_blank">Click Here</a>"',
+                                ),
+                                array(
+                                    'name' => 'bg_gradient_from',
+                                    'label' => esc_html__('Background Gradient From', 'northway'),
+                                        'type' => \Elementor\Controls_Manager::COLOR,
+                                        'selectors' => [
+                                        '{{WRAPPER}} .pxl-element-slider.pxl-slider3 {{CURRENT_ITEM}}' => '--gradient-color-from: {{VALUE}};',
+                                    ],
+                                ),
+                                array(
+                                    'name' => 'bg_gradient_to',
+                                    'label' => esc_html__('Background Gradient To', 'northway'),
+                                    'type' => \Elementor\Controls_Manager::COLOR,
+                                    'selectors' => [
+                                        '{{WRAPPER}} .pxl-element-slider.pxl-slider3 {{CURRENT_ITEM}}' => '--gradient-color-to: {{VALUE}};',
+                                    ],
+                                ),
+                            ),
+                            'condition' => [
+                                'layout' => ['3'],
+                            ]
+                        )
                     ),
                 ),
                 array(

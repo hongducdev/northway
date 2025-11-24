@@ -121,6 +121,17 @@
     }
 }
 
+.pxl-slider3 {
+    --gradient-color-from: #041427;
+    --gradient-color-to: #0E488D;
+    .pxl-slider {
+        &--item {
+            @include border-radius(30px);
+            background: linear-gradient(180deg, var(--gradient-color-from) 28.28%, var(--gradient-color-to) 135.76%);
+        }
+    }
+}
+
 @keyframes slide-zoom-in {
     from {
         transform: scale(1);

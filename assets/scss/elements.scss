@@ -351,7 +351,9 @@
                 background-color: transparent;
                 border: 1px solid rgba($four_color_hex, 0.5);
                 @include border-radius(50%);
-                @include transition(all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1));
+                @include transition(
+                    all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)
+                );
             }
             svg {
                 width: 20px;
@@ -1336,6 +1338,26 @@
             left: 8px;
             transform: translateX(0);
             @include transition(all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1));
+        }
+        &.style-2 {
+            &:before {
+                left: 0;
+            }
+            &:hover {
+                background-color: $secondary_color;
+                i {
+                    color: $body_bg_color;
+                }
+                svg {
+                    path {
+                        fill: $body_bg_color;
+                    }
+                }
+                &:before {
+                    transform: translateX(0px);
+                    border-color: $secondary_color;
+                }
+            }
         }
     }
     .pxl_cart_counter {
@@ -5106,6 +5128,127 @@ body.rtl {
         &--size {
             z-index: 3;
         }
+    }
+}
+
+.pxl-text-box5 {
+    --width-circle: 155px;
+    --padding: 20px;
+    --width-dot: 8px;
+    --border-color: rgba(58, 100, 214, 1);
+
+    .pxl-circle-text-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        width: calc(var(--width-circle) + var(--padding) * 2);
+        height: calc(var(--width-circle) + var(--padding) * 2);
+        @include border-radius(50%);
+        background-color: transparent;
+        border: 1px solid rgba(58, 100, 214, 0.5);
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: calc(var(--width-dot) / -2);
+            left: 50%;
+            width: var(--width-dot);
+            height: var(--width-dot);
+            @include border-radius(50%);
+            background-color: var(--border-color);
+            transform: translateX(-50%);
+            transform-origin: 50%
+                calc(
+                    (var(--width-circle) + var(--padding) * 2) / 2 +
+                        var(--width-dot) / 2
+                );
+            z-index: 2;
+            animation: pxl-dot-spin 8s linear infinite;
+        }
+    }
+
+    .pxl-circle-text {
+        position: relative;
+        width: var(--width-circle);
+        height: var(--width-circle);
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $body_bg_color;
+        @include border-radius(50%);
+        animation: pxl-circle-spin 20s linear infinite;
+    }
+    
+    .pxl-circle-text-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 24px;
+        height: 30px;
+        color: $primary_color;
+    }
+
+    .pxl-circle-char {
+        position: absolute;
+        left: 50%;
+        top: 15px;
+        transform-origin: 0 calc(var(--width-circle) / 2 - 15px);
+        height: calc(var(--width-circle) / 2 - 15px);
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: 500;
+        color: $secondary_color;
+        text-transform: uppercase;
+        line-height: 1;
+    }
+
+    &.pxl-circle-small {
+        .pxl-circle-text {
+            width: 120px;
+            height: 120px;
+        }
+        .pxl-circle-char {
+            transform-origin: 0 45px; /* (120/2) - 15px = 45px */
+            height: 45px;
+            font-size: 12px;
+        }
+    }
+
+    &.pxl-circle-large {
+        .pxl-circle-text {
+            width: 240px;
+            height: 240px;
+        }
+        .pxl-circle-char {
+            transform-origin: 0 105px; /* (240/2) - 15px = 105px */
+            height: 105px;
+            font-size: 18px;
+        }
+    }
+}
+
+@keyframes pxl-dot-spin {
+    from {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    to {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+@keyframes pxl-circle-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }
 

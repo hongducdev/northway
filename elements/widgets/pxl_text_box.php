@@ -34,6 +34,10 @@ pxl_add_custom_widget(
                                     'label' => esc_html__('Layout 4', 'northway' ),
                                     'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_text_box/layout4.jpg'
                                 ],
+                                '5' => [
+                                    'label' => esc_html__('Layout 5', 'northway' ),
+                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_text_box/layout5.jpg'
+                                ],
                             ],
                         ),
                     ),
@@ -105,6 +109,30 @@ pxl_add_custom_widget(
                     ),
                 ),
                 array(
+                    'name' => 'section_content_5',
+                    'label' => esc_html__('Content', 'northway' ),
+                    'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+                    'controls' => array(
+                        array(
+                            'name' => 'title_list',
+                            'label' => esc_html__('Title', 'northway' ),
+                            'type' => \Elementor\Controls_Manager::REPEATER,
+                            'controls' => array(
+                                array(
+                                    'name' => 'title',
+                                    'label' => esc_html__('Title', 'northway' ),
+                                    'type' => \Elementor\Controls_Manager::TEXT,
+                                    'label_block' => true,
+                                ),
+                            ),
+                            'title_field' => '{{{ title }}}',
+                        ),
+                    ),
+                    'condition' => [
+                        'layout' => ['5'],
+                    ],
+                ),
+                array(
                     'name' => 'section_style_general',
                     'label' => esc_html__('General', 'northway' ),
                     'tab' => \Elementor\Controls_Manager::TAB_STYLE,
@@ -118,6 +146,64 @@ pxl_add_custom_widget(
                                 '{{WRAPPER}} .pxl-text-box .pxl-text-box--inner' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                             ],
                             'control_type' => 'responsive',
+                        ),
+                        array(
+                            'name' => 'box_width',
+                            'label' => esc_html__('Width', 'northway' ),
+                            'type' => \Elementor\Controls_Manager::SLIDER,
+                            'size_units' => [ 'px' ],
+                            'range' => [
+                                'px' => [
+                                    'min' => 0,
+                                    'max' => 300,
+                                ],
+                            ],
+                            'selectors' => [
+                                '{{WRAPPER}} .pxl-text-box5 .pxl-circle-text' => '--width-circle: {{SIZE}}{{UNIT}};',
+                            ],
+                            'control_type' => 'responsive',
+                            'condition' => [
+                                'layout' => ['5'],
+                            ],
+                        ),
+                        array(
+                            'name' => 'box_padding',
+                            'label' => esc_html__('Padding', 'northway' ),
+                            'type' => \Elementor\Controls_Manager::DIMENSIONS,
+                            'size_units' => [ 'px' ],
+                            'selectors' => [
+                                '{{WRAPPER}} .pxl-text-box5 .pxl-circle-text' => '--padding: {{SIZE}}{{UNIT}};',
+                            ],
+                        ),
+                        array(
+                            'name' => 'box_width_dot',
+                            'label' => esc_html__('Width Dot', 'northway' ),
+                            'type' => \Elementor\Controls_Manager::SLIDER,
+                            'size_units' => [ 'px' ],
+                            'range' => [
+                                'px' => [
+                                    'min' => 0,
+                                    'max' => 10,
+                                ],
+                            ],
+                            'selectors' => [
+                                '{{WRAPPER}} .pxl-text-box5 .pxl-circle-text' => '--width-dot: {{SIZE}}{{UNIT}};',
+                            ],
+                            'control_type' => 'responsive',
+                            'condition' => [
+                                'layout' => ['5'],
+                            ],
+                        ),
+                        array(
+                            'name' => 'box_border_color',
+                            'label' => esc_html__('Border Color', 'northway' ),
+                            'type' => \Elementor\Controls_Manager::COLOR,
+                            'selectors' => [
+                                '{{WRAPPER}} .pxl-text-box5 .pxl-circle-text' => '--border-color: {{VALUE}};',
+                            ],
+                            'condition' => [
+                                'layout' => ['5'],
+                            ],
                         ),
                         array(
                             'name' => 'box_border_radius',
@@ -134,7 +220,7 @@ pxl_add_custom_widget(
                             'label' => esc_html__('Background Color', 'northway' ),
                             'type' => \Elementor\Controls_Manager::COLOR,
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-text-box .pxl-text-box--inner' => 'background-color: {{VALUE}};',
+                                '{{WRAPPER}} .pxl-text-box .pxl-text-box--inner, {{WRAPPER}} .pxl-text-box5 .pxl-circle-text' => 'background-color: {{VALUE}};',
                             ],
                         ),
                         array(
@@ -180,6 +266,7 @@ pxl_add_custom_widget(
                             'type' => \Elementor\Controls_Manager::COLOR,
                             'selectors' => [
                                 '{{WRAPPER}} .pxl-text-box .pxl-text-box--title' => 'color: {{VALUE}};',
+                                '{{WRAPPER}} .pxl-text-box5 .pxl-circle-char' => 'color: {{VALUE}};',
                             ],
                         ),
                         array(
@@ -187,7 +274,7 @@ pxl_add_custom_widget(
                             'label' => esc_html__('Typography', 'northway' ),
                             'type' => \Elementor\Group_Control_Typography::get_type(),
                             'control_type' => 'group',
-                            'selector' => '{{WRAPPER}} .pxl-text-box .pxl-text-box--title',
+                            'selector' => '{{WRAPPER}} .pxl-text-box .pxl-text-box--title, {{WRAPPER}} .pxl-text-box5 .pxl-circle-char',
                         ),
                         array(
                             'name' => 'title_margin',

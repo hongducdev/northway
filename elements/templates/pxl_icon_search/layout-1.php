@@ -1,5 +1,5 @@
 <?php if($settings['search_type'] == 'popup') : ?>
-	<div class="pxl-search-popup-button pxl-cursor--cta <?php echo esc_attr($settings['style']); ?>">
+	<div class="pxl-search-popup-button pxl-cursor--cta <?php echo esc_attr($settings['style']); ?> <?php echo esc_attr($settings['style_box']); ?>">
 		<?php if(!empty($settings['pxl_icon']['value'])) {
 			\Elementor\Icons_Manager::render_icon( $settings['pxl_icon'], [ 'aria-hidden' => 'true', 'class' => '' ], 'i' );
 		} else  if ( !empty($settings['image']['id']) ) { 

@@ -39,54 +39,91 @@ pxl_add_custom_widget(
                             ),
                             'title_field' => '{{{ name }}}',
                         ),
+                    ),
+                ),
+                array(
+                    'name' => 'section_style',
+                    'label' => esc_html__('Style', 'northway'),
+                    'tab' => \Elementor\Controls_Manager::TAB_STYLE,
+                    'controls' => array(
                         array(
-                            'name' => 'position_top',
-                            'label' => esc_html__('Top', 'northway'),
+                            'name' => 'background_current',
+                            'label' => esc_html__('Current Background', 'northway'),
+                            'type' => \Elementor\Controls_Manager::COLOR,
+                            'selectors' => [
+                                '{{WRAPPER}} .pxl-language-switch-current' => 'background-color: {{VALUE}};',
+                            ],
+                        ),
+                        array(
+                            'name' => 'border_current',
+                            'label' => esc_html__('Current Border', 'northway'),
+                            'type' => \Elementor\Controls_Manager::COLOR,
+                            'selectors' => [
+                                '{{WRAPPER}} .pxl-language-switch-current' => 'border-color: {{VALUE}};',
+                            ],
+                        ),
+                        array(
+                            'name' => 'color_current',
+                            'label' => esc_html__('Current Color', 'northway'),
+                            'type' => \Elementor\Controls_Manager::COLOR,
+                            'selectors' => [
+                                '{{WRAPPER}} .pxl-language-switch-current-meta h6' => 'color: {{VALUE}};',
+                            ],
+                        ),
+                        array(
+                            'name' => 'typography_current',
+                            'label' => esc_html__('Current Typography', 'northway'),
+                            'type' => \Elementor\Group_Control_Typography::get_type(),
+                            'control_type' => 'group',
+                            'selector' => '{{WRAPPER}} .pxl-language-switch-current-meta h6',
+                        ),
+                        array(
+                            'name' => 'color_toggle',
+                            'label' => esc_html__('Toggle Color', 'northway'),
+                            'type' => \Elementor\Controls_Manager::COLOR,
+                            'selectors' => [
+                                '{{WRAPPER}} .pxl-language-switch-toggle i' => 'color: {{VALUE}};',
+                            ],
+                        ),
+                        array(
+                            'name' => 'font_size_toggle',
+                            'label' => esc_html__('Font Size Toggle', 'northway'),
                             'type' => \Elementor\Controls_Manager::SLIDER,
                             'control_type' => 'responsive',
                             'size_units' => ['px'],
                             'range' => [
                                 'px' => [
                                     'min' => 0,
-                                    'max' => 100,
+                                    'max' => 300,
                                 ],
                             ],
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-language-switch:hover .list-language' => 'top: calc(103% + {{SIZE}}{{UNIT}});',
+                                '{{WRAPPER}} .pxl-language-switch-toggle i' => 'font-size: {{SIZE}}{{UNIT}};',
                             ],
-                        ),
+                        ), 
                         array(
-                            'name' => 'color',
-                            'label' => esc_html__('Color Text', 'northway'),
+                            'name' => 'background_list',
+                            'label' => esc_html__('List Background', 'northway'),
                             'type' => \Elementor\Controls_Manager::COLOR,
                             'selectors' => [
-                                '{{WRAPPER}} .language-first' => 'color: {{VALUE}};',
+                                '{{WRAPPER}} .pxl-language-switch-list' => 'background-color: {{VALUE}};',
                             ],
                         ),
                         array(
-                            'name' => 'box_color',
-                            'label' => esc_html__('Box Color', 'northway'),
+                            'name' => 'color_item',
+                            'label' => esc_html__('Item Color', 'northway'),
                             'type' => \Elementor\Controls_Manager::COLOR,
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-language-switch .language-first' => 'background-color: {{VALUE}};',
+                                '{{WRAPPER}} .pxl-language-switch-item a' => 'color: {{VALUE}};',
                             ],
                         ),
                         array(
-                            'name' => 'tt_typography',
-                            'label' => esc_html__('Typography', 'northway'),
+                            'name' => 'typography_item',
+                            'label' => esc_html__('Item Typography', 'northway'),
                             'type' => \Elementor\Group_Control_Typography::get_type(),
                             'control_type' => 'group',
-                            'selector' => '{{WRAPPER}} .language-first',
-                        ),
-                        array(
-                            'name' => 'btn_border_radius',
-                            'label' => esc_html__('Border Radius', 'northway'),
-                            'type' => \Elementor\Controls_Manager::DIMENSIONS,
-                            'size_units' => ['px'],
-                            'selectors' => [
-                                '{{WRAPPER}} .pxl-language-switch .language-first' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-                            ],
-                        ),
+                            'selector' => '{{WRAPPER}} .pxl-language-switch-item a',
+                        )
                     ),
                 ),
                 northway_widget_animation_settings(),

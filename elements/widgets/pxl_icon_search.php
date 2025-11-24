@@ -131,12 +131,24 @@ pxl_add_custom_widget(
                             ],
                         ),
                         array(
+                            'name' => 'style_box',
+                            'label' => esc_html__('Style Box', 'northway' ),
+                            'type' => \Elementor\Controls_Manager::SELECT,
+                            'options' => [
+                                'style-1' => 'Style 1',
+                                'style-2' => 'Style 2',
+                            ],
+                            'default' => 'style-1',
+                            'condition' => [
+                                'style' => ['style-box'],
+                            ],
+                        ),
+                        array(
                             'name' => 'box_color',
                             'label' => esc_html__('Box Color', 'northway' ),
                             'type' => \Elementor\Controls_Manager::COLOR,
                             'selectors' => [
                                 '{{WRAPPER}} .pxl-search-popup-button.style-box' => 'background-color: {{VALUE}};',
-                                '{{WRAPPER}} .pxl-search-popup-button.style-box-bd' => 'background-color: {{VALUE}};',
                             ],
                             'condition' => [
                                 'style' => ['style-box'],
@@ -168,11 +180,11 @@ pxl_add_custom_widget(
                                 ],
                             ],
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-search-popup-button.style-box' => 'height: {{SIZE}}{{UNIT}};',
-                                '{{WRAPPER}} .pxl-search-popup-button.style-box-bd' => 'height: {{SIZE}}{{UNIT}};',
+                                '{{WRAPPER}} .pxl-search-popup-button.style-box, {{WRAPPER}} .pxl-search-popup-button.style-box:before' => 'height: {{SIZE}}{{UNIT}};',
+                                
                             ],
                             'condition' => [
-                                'style' => ['style-box','style-box-bd'],
+                                'style' => ['style-box'],
                                 'search_type' => ['popup'],
                             ],
                         ),
@@ -189,11 +201,10 @@ pxl_add_custom_widget(
                                 ],
                             ],
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-search-popup-button.style-box' => 'width: {{SIZE}}{{UNIT}};',
-                                '{{WRAPPER}} .pxl-search-popup-button.style-box-bd' => 'width: {{SIZE}}{{UNIT}};',
+                                '{{WRAPPER}} .pxl-search-popup-button.style-box, {{WRAPPER}} .pxl-search-popup-button.style-box:before' => 'width: {{SIZE}}{{UNIT}};',
                             ],
                             'condition' => [
-                                'style' => ['style-box','style-box-bd'],
+                                'style' => ['style-box'],
                                 'search_type' => ['popup'],
                             ],
                         ),
@@ -203,11 +214,10 @@ pxl_add_custom_widget(
                             'type' => \Elementor\Controls_Manager::DIMENSIONS,
                             'size_units' => [ 'px' ],
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-search-popup-button.style-box' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-                                '{{WRAPPER}} .pxl-search-popup-button.style-box-bd' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                                '{{WRAPPER}} .pxl-search-popup-button.style-box:before, {{WRAPPER}} .pxl-search-popup-button.style-box' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                             ],
                             'condition' => [
-                                'style' => ['style-box','style-box-bd'],
+                                'style' => ['style-box'],
                                 'search_type' => ['popup'],
                             ],
                         ),
