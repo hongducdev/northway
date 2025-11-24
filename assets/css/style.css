@@ -15549,6 +15549,52 @@ body.rtl .widget .widget-title:before {
 .ctf7-contact-home-1 .btn i, .ctf7-contact-home-1 button i, .ctf7-contact-home-1 .button i {
   font-size: 10px;
 }
+.pxl-ctf7-footer-home-2 {
+  display: flex;
+  align-items: center;
+}
+.pxl-ctf7-footer-home-2 .wpcf7-form-control-wrap {
+  margin-bottom: 0;
+}
+.pxl-ctf7-footer-home-2 input {
+  max-width: 254px;
+  width: 100%;
+  height: 46px !important;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  padding: 0 25px;
+}
+.pxl-ctf7-footer-home-2 input:placeholder {
+  color: rgba(102, 111, 120, 0.5) !important;
+  font-size: 16px !important;
+  font-style: italic !important;
+  font-weight: 400 !important;
+}
+.pxl-ctf7-footer-home-2 button {
+  width: 46px;
+  height: 46px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  position: relative;
+  overflow: hidden;
+}
+.pxl-ctf7-footer-home-2 button:hover svg {
+  animation: pxl_right_from_left 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+}
 @keyframes spin {
   0% {
     transform: rotate(0deg);

@@ -527,13 +527,7 @@
 }
 
 .pxl-container-fold-home-2 {
-    clip-path: polygon(
-        0 0,
-        calc(100% - 97px) 0,
-        100% 97px,
-        100% 100%,
-        0 100%
-    );
+    clip-path: polygon(0 0, calc(100% - 97px) 0, 100% 97px, 100% 100%, 0 100%);
 }
 
 .pxl-container-service-fold-2 {
@@ -1149,6 +1143,46 @@
         padding: 0;
         i {
             font-size: 10px;
+        }
+    }
+}
+
+// Contact Home 2
+.pxl-ctf7-footer-home-2 {
+    display: flex;
+    align-items: center;
+    .wpcf7-form-control-wrap {
+        margin-bottom: 0;
+    }
+    input {
+        max-width: 254px;
+        width: 100%;
+        height: 46px !important;
+        @include border-radius(10px);
+        padding: 0 25px;
+        &:placeholder {
+            color: rgba(102, 111, 120, 0.5) !important;
+            font-size: 16px !important;
+            font-style: italic !important;
+            font-weight: 400 !important;
+        }
+    }
+    button {
+        width: 46px;
+        height: 46px;
+        @include border-radius(10px);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: $primary_color;
+        position: relative;
+        overflow: hidden;
+        &:hover {
+            svg {
+                animation: pxl_right_from_left 0.3s ease-in-out;
+                animation-fill-mode: forwards;
+            }
         }
     }
 }

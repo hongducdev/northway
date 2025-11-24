@@ -79,7 +79,7 @@ pxl_add_custom_widget(
                         ),
                         array(
                             'name' => 'suffix_end',
-                            'label' => esc_html__('Suffix End', 'sailon'),
+                            'label' => esc_html__('Suffix End', 'northway'),
                             'type' => \Elementor\Controls_Manager::TEXT,
                             'default' => '',
                         ),
