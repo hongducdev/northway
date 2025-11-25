@@ -130,6 +130,30 @@
             background: linear-gradient(180deg, var(--gradient-color-from) 28.28%, var(--gradient-color-to) 135.76%);
         }
     }
+    .pxl-swiper-arrow-wrap {
+        position: absolute;
+        width: 1290px;
+        z-index: 5;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        top: auto;
+        bottom: 116px;
+        left: 50%;
+        transform: translateX(-50%);
+        .pxl-swiper-arrow {
+            width: 52px;
+            height: 52px;
+            background-color: rgba($primary_color_hex, 0.3);
+            color: $body_bg_color;
+            border: none;
+            &:hover {
+                background-color: rgba($primary_color_hex, 0.8);
+                color: $body_bg_color;
+            }
+        }
+    }
 }
 
 @keyframes slide-zoom-in {

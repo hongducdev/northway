@@ -66,15 +66,16 @@
                     <?php endforeach; ?>
                 </div>
             </div>
-
         </div>
-        <?php if ($pagination !== false): ?>
-            <div class="pxl-swiper-bottom pxl-flex-middle">
-                <?php if ($pagination !== false): ?>
-                    <div class="pxl-swiper-dots style-2"></div>
-                <?php endif; ?>
+        <?php if ($arrows !== false): ?>
+            <div class="pxl-swiper-arrow-wrap style-1">
+                <div class="pxl-swiper-arrow pxl-swiper-arrow-prev" tabindex="0" role="button" aria-label="previous slide">
+                    <i class="bi-arrow-left-short"></i>
+                </div>
+                <div class="pxl-swiper-arrow pxl-swiper-arrow-next" tabindex="0" role="button" aria-label="next slide">
+                    <i class="bi-arrow-right-short"></i>
+                </div>
             </div>
         <?php endif; ?>
-
     </div>
 <?php endif; ?>

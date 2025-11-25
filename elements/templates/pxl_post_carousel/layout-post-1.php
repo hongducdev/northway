@@ -187,16 +187,5 @@ $widget->add_render_attribute('carousel', [
         <?php if ($pagination !== false): ?>
             <div class="pxl-swiper-dots style-1"></div>
         <?php endif; ?>
-
-        <?php if ($arrows !== false): ?>
-            <div class="pxl-swiper-arrow-wrap style-1">
-                <div class="pxl-swiper-arrow pxl-swiper-arrow-prev" tabindex="0" role="button" aria-label="previous slide" aria-controls="swiper-wrapper-5f10c24cfcd53105d">
-                    <i class="bi-arrow-left-short"></i>
-                </div>
-                <div class="pxl-swiper-arrow pxl-swiper-arrow-next" tabindex="0" role="button" aria-label="next slide" aria-controls="swiper-wrapper-5f10c24cfcd53105d">
-                    <i class="bi-arrow-right-short"></i>
-                </div>
-            </div>
-        <?php endif; ?>
     </div>
 <?php endif; ?>
