@@ -746,12 +746,18 @@
     .pxl-item {
         &--inner {
             padding: 25px 50px 50px 0;
+            @media #{$max-sm} {
+                padding: 25px 30px 30px 30px;
+            }
         }
         &--header {
             display: flex;
             align-items: center;
             gap: 20px;
             margin-bottom: 22px;
+            @media #{$max-sm} {
+                justify-content: center;
+            }
         }
         &--icon {
             background: linear-gradient(
@@ -786,6 +792,9 @@
             text-transform: capitalize;
             word-break: break-word;
             overflow-wrap: break-word;
+            @media #{$max-sm} {
+                text-align: center;
+            }
         }
     }
     &.right {
@@ -795,12 +804,21 @@
             }
             &--header {
                 flex-direction: row-reverse;
+                @media #{$max-sm} {
+                    flex-direction: row;
+                }
             }
             &--title {
                 text-align: right;
+                @media #{$max-sm} {
+                    text-align: center;
+                }
             }
             &--description {
                 text-align: right;
+                @media #{$max-sm} {
+                    text-align: center;
+                }
             }
         }
     }

@@ -32,11 +32,11 @@
                     $contents
                         .removeClass("active")
                         .stop(true, true)
-                        .slideUp(duration, "easeInOutCubic");
+                        .slideUp(duration);
                     $newActiveContent
                         .addClass("active")
                         .stop(true, true)
-                        .slideDown(duration, "easeInOutCubic");
+                        .slideDown(duration);
                 } else if ($tabContainer.hasClass("tab-effect-fade")) {
                     $contents
                         .removeClass("active")
@@ -55,13 +55,14 @@
                 $newActiveTitle.addClass("active");
             }
 
-            $titles.on("click", function (e) {
-                e.preventDefault();
-                var index = $titles.index(this);
-                activateTab(index);
-            });
+            if ($titles.length > 0) {
+                $titles.on("click", function (e) {
+                    e.preventDefault();
+                    var index = $titles.index(this);
+                    activateTab(index);
+                });
+            }
 
-            // Handle switch toggle for layout 1 only
             if (
                 $tabContainer.hasClass("pxl-tabs1") &&
                 $switchInput.length > 0
@@ -71,18 +72,17 @@
 
                     if (!$targetContent.length) return;
 
-                    // Get animation duration from data attribute or use default
                     var duration = $tabContainer.data("duration") || 400;
 
                     if ($tabContainer.hasClass("tab-effect-slide")) {
                         $contents
                             .removeClass("active")
                             .stop(true, true)
-                            .slideUp(duration, "easeInOutCubic");
+                            .slideUp(duration);
                         $targetContent
                             .addClass("active")
                             .stop(true, true)
-                            .slideDown(duration, "easeInOutCubic");
+                            .slideDown(duration);
                     } else if ($tabContainer.hasClass("tab-effect-fade")) {
                         $contents
                             .removeClass("active")
@@ -122,23 +122,25 @@
                 });
             }
 
-            $tabContainer.find(".pxl-tabs-next").on("click", function () {
-                var index = $titles.index(
-                    $tabContainer.find(
-                        ".pxl-tabs--title .pxl-item--title.active, .pxl-tabs--title .pxl-tab--title.active"
-                    )
-                );
-                activateTab(index + 1);
-            });
+            if ($titles.length > 0) {
+                $tabContainer.find(".pxl-tabs-next").on("click", function () {
+                    var index = $titles.index(
+                        $tabContainer.find(
+                            ".pxl-tabs--title .pxl-item--title.active, .pxl-tabs--title .pxl-tab--title.active"
+                        )
+                    );
+                    activateTab(index + 1);
+                });
 
-            $tabContainer.find(".pxl-tabs-prev").on("click", function () {
-                var index = $titles.index(
-                    $tabContainer.find(
-                        ".pxl-tabs--title .pxl-item--title.active, .pxl-tabs--title .pxl-tab--title.active"
-                    )
-                );
-                activateTab(index - 1);
-            });
+                $tabContainer.find(".pxl-tabs-prev").on("click", function () {
+                    var index = $titles.index(
+                        $tabContainer.find(
+                            ".pxl-tabs--title .pxl-item--title.active, .pxl-tabs--title .pxl-tab--title.active"
+                        )
+                    );
+                    activateTab(index - 1);
+                });
+            }
         });
     };
 

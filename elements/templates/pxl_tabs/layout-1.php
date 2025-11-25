@@ -8,7 +8,7 @@ if(!empty($settings['tabs_1_layout_1']) && !empty($settings['tabs_2_layout_1']))
     <div class="pxl-tabs--inner">
         <div class="pxl-tabs--title pxl-tabs--switch">
             <div class="pxl-switch-container">
-                <span class="pxl-switch-label pxl-switch-left <?php if($settings['tab_active'] == 1) { echo 'active'; } ?>">
+                <span class="pxl-switch-label pxl-switch-left <?php if($settings['tab_active'] == 1) { echo 'active'; } ?>" data-target="#<?php echo esc_attr($html_id.'-tab-1'); ?>">
                     <?php echo pxl_print_html($settings['tabs_1_layout_1']); ?>
                 </span>
                 
@@ -23,7 +23,7 @@ if(!empty($settings['tabs_1_layout_1']) && !empty($settings['tabs_2_layout_1']))
                     </label>
                 </div>
                 
-                <span class="pxl-switch-label pxl-switch-right <?php if($settings['tab_active'] == 2) { echo 'active'; } ?>">
+                <span class="pxl-switch-label pxl-switch-right <?php if($settings['tab_active'] == 2) { echo 'active'; } ?>" data-target="#<?php echo esc_attr($html_id.'-tab-2'); ?>">
                     <?php echo pxl_print_html($settings['tabs_2_layout_1']); ?>
                 </span>
             </div>

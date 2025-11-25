@@ -2295,6 +2295,9 @@ posts
             background-color: $body_bg_color;
             border: 1px solid rgba($four_color_hex, 0.5);
             @include border-radius(20px);
+            @media #{$max-sm} {
+                flex-direction: column-reverse;
+            }
         }
         &--fold {
             position: absolute;
@@ -2307,18 +2310,29 @@ posts
             display: flex;
             flex-direction: column;
             border-right: 1px solid rgba($four_color_hex, 0.5);
+            @media #{$max-sm} {
+                flex: 0 0 100%;
+                max-width: 100%;
+                border-right: none;
+                border-top: 1px solid rgba($four_color_hex, 0.5);
+            }
         }
         &--content {
             flex: 0 0 60%;
             max-width: 60%;
             display: flex;
             flex-direction: column;
+            @media #{$max-sm} {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
         }
     }
     .pxl-item--title {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 15px;
         padding: 30px;
         background-color: transparent;
         @include transition(all 0.3s linear 0ms);
@@ -2339,9 +2353,15 @@ posts
         }
         &:first-child {
             border-top-left-radius: 20px;
+            @media #{$max-sm} {
+                border-top-left-radius: 0px;
+            }
         }
         &:last-child {
             border-bottom-left-radius: 20px;
+            @media #{$max-sm} {
+                border-bottom-right-radius: 20px;
+            }
         }
         + .pxl-item--title {
             border-top: 1px solid rgba($four_color_hex, 0.5);
@@ -2361,6 +2381,8 @@ posts
         }
         &-link {
             --width: 46px;
+            flex: 0 0 var(--width);
+            max-width: var(--width);
             width: var(--width);
             height: var(--width);
             @include border-radius(10px);
@@ -2380,6 +2402,9 @@ posts
     }
     .pxl-item--content {
         padding: 50px;
+        @media #{$max-xs} {
+            padding: 50px 15px 15px 15px;
+        }
     }
     .pxl-portfolio {
         &--title {
@@ -2422,6 +2447,11 @@ posts
             position: absolute;
             bottom: 30px;
             left: 30px;
+            flex-wrap: wrap;
+            @media #{$max-xsx} {
+                bottom: 15px;
+                left: 15px;
+            }
             &-item {
                 display: inline-flex;
                 height: 46px;
@@ -2831,12 +2861,23 @@ posts
             .pxl-post {
                 &--inner {
                     flex-direction: row-reverse;
+                    @media #{$max-sm} {
+                        flex-direction: column;
+                    }
                 }
                 &--image {
                     flex: 0 0 42%;
+                    @media #{$max-sm} {
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                    }
                 }
                 &--body {
                     flex: 0 0 58%;
+                    @media #{$max-sm} {
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                    }
                 }
             }
         }
@@ -2851,6 +2892,11 @@ posts
             padding: 50px;
             position: relative;
             overflow: hidden;
+            @media #{$max-sm} {
+                flex-direction: column;
+                padding: 30px;
+                gap: 30px;
+            }
             &:after {
                 content: "";
                 position: absolute;
@@ -2882,12 +2928,24 @@ posts
                 height: 230px;
                 object-fit: contain;
             }
+            @media #{$max-sm} {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
         }
         &--body {
             flex: 0 0 56%;
             display: flex;
             gap: 70px;
             z-index: 5;
+            @media #{$max-sm} {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+            @media #{$max-xs} {
+                gap: 15px;
+                flex-direction: column;
+            }
         }
         &--icon {
             width: 100px;

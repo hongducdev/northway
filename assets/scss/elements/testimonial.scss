@@ -328,6 +328,9 @@ testimonials grid
         &--inner {
             padding: 50px;
             background-color: $body_bg_color;
+            @media #{$max-xs} {
+                padding: 30px 15px 80px 15px;
+            }
         }
         &--desc {
             color: $secondary-color;
@@ -394,6 +397,14 @@ testimonials grid
         bottom: 62px;
         right: 50px;
         z-index: 5;
+        @media #{$max-xs} {
+            bottom: 15px;
+            right: 50%;
+            transform: translateX(50%);
+        }
+        @media #{$max-xsx} {
+            bottom: 25px;
+        }
         .pxl-swiper-arrow {
             width: 46px;
             height: 46px;

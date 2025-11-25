@@ -322,12 +322,6 @@ pxl_add_custom_widget(
                             'description' => 'Enter number, unit is ms.',
                         ),
                         array(
-                            'name' => 'img_display',
-                            'label' => esc_html__('Hide on Screen <= 1400px', 'northway'),
-                            'type' => \Elementor\Controls_Manager::SWITCHER,
-                            'default' => false,
-                        ),
-                        array(
                             'name' => 'hide_parallax_sm',
                             'label' => esc_html__('Disable Parallax on Mobile <= 767px', 'northway'),
                             'type' => \Elementor\Controls_Manager::SWITCHER,
