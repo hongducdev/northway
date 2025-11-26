@@ -30638,6 +30638,61 @@ input[type="submit"]:hover {
   word-break: break-word;
   overflow-wrap: break-word;
 }
+.pxl-icon-box3.style-2 .pxl-item--inner {
+  background: transparent;
+  border: 1px solid #666f78;
+  -webkit-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  padding: 40px 35px 35px 35px;
+  min-height: 290px;
+}
+.pxl-icon-box3.style-2 .pxl-item--inner:hover .pxl-item--icon svg path {
+  fill: #bbb2ff;
+  fill-opacity: 1;
+}
+.pxl-icon-box3.style-2 .pxl-item--inner:hover .pxl-item--icon i {
+  color: #bbb2ff;
+  opacity: 1;
+}
+.pxl-icon-box3.style-2 .pxl-item--title {
+  color: var(--body_bg-color);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  max-width: 130px;
+}
+.pxl-icon-box3.style-2 .pxl-item--icon svg path {
+  fill: rgba(187, 178, 255, 0.3);
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.pxl-icon-box3.style-2 .pxl-item--icon i {
+  color: rgba(187, 178, 255, 0.3);
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -khtml-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.pxl-icon-box3.style-2 .pxl-item--divider {
+  margin-top: 15px;
+  margin-bottom: 9px;
+  color: rgba(102, 111, 120, 0.5);
+}
+.pxl-icon-box3.style-2 .pxl-item--description {
+  color: rgba(248, 248, 242, 0.7);
+  max-width: 90%;
+}
 .pxl-icon-box4 .pxl-item--inner {
   -webkit-border-radius: 30px;
   -khtml-border-radius: 30px;

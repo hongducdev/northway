@@ -229,7 +229,7 @@ pxl_add_custom_widget(
                             ],
                             'default' => 'style-1',
                             'condition' => [
-                                'layout' => ['2', '5'],
+                                'layout' => ['2', '5', '3'],
                             ],
                         ),
                         array(
@@ -405,21 +405,6 @@ pxl_add_custom_widget(
                             ],
                             'condition' => [
                                 'border_type!' => '',
-                            ],
-                        ),
-                        array(
-                            'name' => 'style',
-                            'label' => esc_html__('Style', 'northway' ),
-                            'type' => \Elementor\Controls_Manager::SELECT,
-                            'options' => [
-                                'style-1' => 'Style 1',
-                                'style-2' => 'Style 2',
-                                'style-3' => 'Style 3',
-                                'style-4' => 'Style 4',
-                            ],
-                            'default' => 'style-1',
-                            'condition' => [
-                                'layout' => ['1','2'],
                             ],
                         ),
                         array(

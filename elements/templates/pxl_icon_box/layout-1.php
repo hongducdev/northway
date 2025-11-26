@@ -1,4 +1,4 @@
-<div class="pxl-icon-box pxl-icon-box1 <?php echo esc_attr($settings['style'].' '.$settings['animate_hover'].' '.$settings['pxl_animate']); ?>" data-wow-delay="<?php echo esc_attr($settings['pxl_animate_delay']); ?>ms">
+<div class="pxl-icon-box pxl-icon-box1 <?php echo esc_attr($settings['animate_hover'].' '.$settings['pxl_animate']); ?>" data-wow-delay="<?php echo esc_attr($settings['pxl_animate_delay']); ?>ms">
     <div class="pxl-item--inner">
         <div class="pxl-item--header">
             <?php if ( $settings['icon_type'] == 'icon' && !empty($settings['pxl_icon']['value']) ) : ?>

@@ -321,6 +321,66 @@
             overflow-wrap: break-word;
         }
     }
+
+    // Style 2
+    &.style-2 {
+        .pxl-item {
+            &--inner {
+                background: transparent;
+                border: 1px solid $four_color_hex;
+                @include border-radius(20px);
+                padding: 40px 35px 35px 35px;
+                min-height: 290px;
+                &:hover {
+                    .pxl-item--icon {
+                        svg {
+                            path {
+                                fill: rgba(187, 178, 255, 1);
+                                fill-opacity: 1;
+                            }
+                        }
+                        i {
+                            color: rgba(187, 178, 255, 1);
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            &--title {
+                color: $body_bg_color;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 1.5;
+                text-transform: uppercase;
+                max-width: 130px;
+            }
+            &--icon {
+                svg {
+                    path {
+                        fill: rgba(187, 178, 255, 0.3);
+                        @include transition(
+                            all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1)
+                        );
+                    }
+                }
+                i {
+                    color: rgba(187, 178, 255, 0.3);
+                    @include transition(
+                        all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1)
+                    );
+                }
+            }
+            &--divider {
+                margin-top: 15px;
+                margin-bottom: 9px;
+                color: rgba($four_color_hex, 0.5);
+            }
+            &--description {
+                color: rgba($body_bg_color_hex, 0.7);
+                max-width: 90%;
+            }
+        }
+    }
 }
 
 .pxl-icon-box4 {
@@ -872,7 +932,7 @@
                         color: $secondary_color;
                     }
                     &--divider {
-                        color: #D9D9D9;
+                        color: #d9d9d9;
                     }
                     &--description {
                         color: rgba($secondary_color_hex, 0.7);
