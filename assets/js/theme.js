@@ -74,7 +74,6 @@
 
     $(document).ready(function () {
         pxl_window_width = $(window).width();
-        northway_site_loader();
         northway_backtotop_progess_bar();
         northway_type_file_upload();
         northway_zoom_point();
@@ -1622,124 +1621,6 @@
                     char === " " ? anglePerUnit * spaceWidth : anglePerUnit;
             });
         });
-    }
-
-    function northway_site_loader() {
-        var $flower = $(".pxl-loader .flower");
-        if ($flower.length === 0) return;
-        if (typeof gsap === "undefined") return;
-
-        var prefersReducedMotion =
-            window.matchMedia &&
-            window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-        if (prefersReducedMotion) return;
-
-        var $leavesWrap = $flower.find(".flower__leaves");
-        var $center = $flower.find(".flower__center");
-        if ($leavesWrap.length === 0 || $center.length === 0) return;
-
-        window.pxlLoaderWaiting = true;
-
-        var NUMBER_OF_LEAVES = 7;
-        var ROTATION_STEP = 360 / NUMBER_OF_LEAVES;
-        var RADIUS = 28;
-
-        if ($leavesWrap.find(".flower__leaf").length === 0) {
-            for (var i = 0; i < NUMBER_OF_LEAVES; i++) {
-                var $leaf = $(
-                    '<div class="flower__leaf"><div class="flower__leaf-inner"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23.7 51.8" style="enable-background:new 0 0 23.7 51.8;" xml:space="preserve"><path d="M11.8,0c0,0-26.6,24.1,0,51.8C38.5,24.1,11.8,0,11.8,0z"/></svg></div></div>'
-                );
-
-                var angle = ROTATION_STEP * i - 90;
-                gsap.set($leaf[0], {
-                    position: "absolute",
-                    left: "50%",
-                    top: "50%",
-                    xPercent: -50,
-                    yPercent: -50,
-                    rotate: angle,
-                    x: 0,
-                    y: -RADIUS,
-                    force3D: true,
-                });
-                $leavesWrap.append($leaf);
-            }
-        }
-
-        var leavesInner = $leavesWrap.find(".flower__leaf-inner").toArray();
-
-        gsap.set($center[0], {
-            scale: 0,
-            transformOrigin: "50% 50%",
-            force3D: true,
-        });
-        gsap.set(leavesInner, {
-            scale: 0,
-            transformOrigin: "50% 100%",
-            force3D: true,
-        });
-
-        var tl = gsap.timeline({
-            repeat: 0,
-            defaults: { ease: "none" },
-            onComplete: function () {
-                $(".pxl-loader").addClass("is-loaded");
-                window.pxlLoaderWaiting = false;
-            },
-        });
-
-        tl.add(
-            gsap.to($center[0], {
-                duration: 0.5,
-                scale: 1,
-                ease: "power2.out",
-            }),
-            0
-        )
-            .add(
-                gsap.to(leavesInner, {
-                    duration: 0.5,
-                    scale: 1,
-                    ease: "power2.out",
-                    stagger: 0.08,
-                }),
-                0.3
-            )
-            .add(
-                gsap.to(leavesInner, {
-                    duration: 0.18,
-                    scale: 1.1,
-                    ease: "power1.out",
-                })
-            )
-            .add(
-                gsap.to($leavesWrap[0], {
-                    duration: 0.8,
-                    rotation: "+=360",
-                    ease: "power2.inOut",
-                }),
-                "+=0.2"
-            )
-            .add(
-                gsap.to(leavesInner, {
-                    duration: 0.3,
-                    scale: 0,
-                    ease: "power2.inOut",
-                })
-            )
-            .add(
-                gsap.to($center[0], {
-                    duration: 0.3,
-                    scale: 0,
-                    ease: "power2.inOut",
-                }),
-                "<0.13"
-            );
-
-        // Speed up the whole sequence slightly
-        tl.timeScale(1.35);
-
-        // No need to kill timeline on load; we end after one cycle
     }
 
     /* Post Slip */

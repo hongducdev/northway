@@ -254,19 +254,10 @@ function casethemes_setup_option()
                 'default'  => false
             ),
             array(
-                'id'       => 'loader_logo',
-                'type'     => 'media',
-                'title'    => esc_html__('Logo', 'northway'),
-                'url'      => false,
-                'required' => array(0 => 'site_loader', 1 => 'equals', 2 => true),
-            ),
-            array(
-                'id'       => 'loader_logo_height',
-                'type'     => 'dimensions',
-                'title'    => esc_html__('Logo Height', 'northway'),
-                'width'    => false,
-                'unit'     => 'px',
-                'output'    => array('.pxl-loader .loader-logo img'),
+                'id'       => 'loader_text',
+                'type'     => 'text',
+                'title'    => esc_html__('Loader Text', 'northway'),
+                'default'  => '',
                 'required' => array(0 => 'site_loader', 1 => 'equals', 2 => true),
             ),
         )

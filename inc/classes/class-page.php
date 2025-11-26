@@ -8,12 +8,21 @@ if (!class_exists('Northway_Page')) {
         {
 
             $site_loader = northway()->get_theme_opt('site_loader', false);
+            $loader_text = northway()->get_theme_opt('loader_text', '');
+            $site_title = !empty($loader_text) ? $loader_text : get_bloginfo('name');
             if ($site_loader) { ?>
                 <div id="pxl-loadding" class="pxl-loader">
                     <div class="pxl-loader-container">
-                        <div class="flower">
-                            <div class="flower__center"></div>
-                            <div class="flower__leaves"></div>
+                        <div class="loader-wrapper">
+                            <?php 
+                            $chars = str_split($site_title);
+                            $index = 1;
+                            foreach ($chars as $char) { ?>
+                                <span class="loader-letter" style="animation-delay: <?php echo ($index - 1) * 0.1; ?>s;"><?php echo esc_html($char); ?></span>
+                            <?php 
+                                $index++;
+                            } ?>
+                            <div class="loader"></div>
                         </div>
                     </div>
                 </div>

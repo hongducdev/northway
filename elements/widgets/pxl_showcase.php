@@ -13,15 +13,6 @@ pxl_add_custom_widget(
                     'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
                     'controls' => array(
                         array(
-                            'name' => 'layout',
-                            'label' => esc_html__('Layout', 'northway' ),
-                            'type' => \Elementor\Controls_Manager::SELECT,
-                            'options' => [
-                                '1' => 'Layout 1',
-                            ],
-                            'default' => '1',
-                        ),
-                        array(
                             'name' => 'box_padding',
                             'label' => esc_html__('Box Padding', 'northway' ),
                             'type' => \Elementor\Controls_Manager::DIMENSIONS,
@@ -40,9 +31,6 @@ pxl_add_custom_widget(
                             'name' => 'title',
                             'label' => esc_html__('Title', 'northway'),
                             'type' => \Elementor\Controls_Manager::TEXT,
-                            'condition' => [
-                                'layout' => '1',
-                            ],
                         ),
                         array(
                             'name' => 'title_typography',
@@ -60,16 +48,6 @@ pxl_add_custom_widget(
                             'type' => \Elementor\Group_Control_Typography::get_type(),
                             'control_type' => 'group',
                             'selector' => '{{WRAPPER}} .pxl-showcase .pxl-item--readmore a',
-                        ),
-                        array(
-                            'name' => 'btn_padding',
-                            'label' => esc_html__('Padding Input', 'northway' ),
-                            'type' => \Elementor\Controls_Manager::DIMENSIONS,
-                            'size_units' => [ 'px' ],
-                            'selectors' => [
-                                '{{WRAPPER}} .pxl-showcase .pxl-item--readmore a' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};width:auto !important;height:auto !important;',
-                            ],
-                            'control_type' => 'responsive',
                         ),
                         array(
                             'name' => 'btn_text',
