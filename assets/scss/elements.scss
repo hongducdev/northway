@@ -1428,6 +1428,13 @@
         }
     }
     &.default {
+        &.pxl-list-hozirontal {
+            .pxl-item {
+                + .pxl-item {
+                    margin-top: 0;
+                }
+            }
+        }
         .pxl-item {
             display: flex;
             align-items: center;

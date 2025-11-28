@@ -1070,6 +1070,39 @@
     }
 }
 
+.pxl-container-caro-fold-landing {
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon(
+        0 0,
+        calc(100% - 133px) 0,
+        100% 133px,
+        100% 100%,
+        0 100%
+    );
+    &:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+
+        background-image: repeating-linear-gradient(
+                to right,
+                #f1f1ec 0 1px,
+                transparent 1px 50px
+            ),
+            repeating-linear-gradient(
+                to bottom,
+                #f1f1ec 0 1px,
+                transparent 1px 50px
+            );
+        background-position: center center;
+        background-size: 50px 50px;
+        background-repeat: repeat;
+        transform: translateZ(0);
+    }
+}
+
 // Slider Revolution
 
 // Contact Form 7
