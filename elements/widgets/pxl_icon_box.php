@@ -229,7 +229,7 @@ pxl_add_custom_widget(
                             ],
                             'default' => 'style-1',
                             'condition' => [
-                                'layout' => ['2', '5', '3'],
+                                'layout' => ['2', '5', '3', '6'],
                             ],
                         ),
                         array(

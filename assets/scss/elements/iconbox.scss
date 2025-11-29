@@ -562,6 +562,32 @@
 }
 
 .pxl-icon-box6 {
+    &.style-2 {
+        .pxl-item {
+            &--inner {
+            padding: 35px 30px 35px 30px;
+                &:after {
+                    display: none;
+                }
+            }
+            &--icon {
+                background-color: transparent;
+                background: radial-gradient(102.94% 102.94% at 50% 91.76%, #45349A 0%, #9588F8 65%, #DFB0C4 100%);
+                &:before {
+                    border-color: rgba(#AFB4B5, 0.7);
+                }
+            }
+            &--title {
+                font-size: 20px;
+            }
+            &--divider {
+                margin-bottom: 14px;
+            }
+            &--description {
+                color: rgba($secondary_color_hex, 0.85);
+            }
+        }
+    }
     .pxl-item {
         &--inner {
             padding: 35px 30px 30px 30px;

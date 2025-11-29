@@ -30862,6 +30862,28 @@ input[type="submit"]:hover {
 .pxl-icon-box5 .pxl-item--feature-item strong {
   font-weight: 500;
 }
+.pxl-icon-box6.style-2 .pxl-item--inner {
+  padding: 35px 30px 35px 30px;
+}
+.pxl-icon-box6.style-2 .pxl-item--inner:after {
+  display: none;
+}
+.pxl-icon-box6.style-2 .pxl-item--icon {
+  background-color: transparent;
+  background: radial-gradient(102.94% 102.94% at 50% 91.76%, #45349a 0%, #9588f8 65%, #dfb0c4 100%);
+}
+.pxl-icon-box6.style-2 .pxl-item--icon:before {
+  border-color: rgba(175, 180, 181, 0.7);
+}
+.pxl-icon-box6.style-2 .pxl-item--title {
+  font-size: 20px;
+}
+.pxl-icon-box6.style-2 .pxl-item--divider {
+  margin-bottom: 14px;
+}
+.pxl-icon-box6.style-2 .pxl-item--description {
+  color: rgba(4, 20, 39, 0.85);
+}
 .pxl-icon-box6 .pxl-item--inner {
   padding: 35px 30px 30px 30px;
   background-color: var(--body_bg-color);
