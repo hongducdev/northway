@@ -230,24 +230,31 @@ testimonials grid
 }
 
 .pxl-testimonial-carousel2 {
+    .pxl-swiper-bottom {
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .pxl-swiper-slide {
         &.swiper-slide-active {
             .pxl-item {
                 &--inner {
+                    transform: translateY(-15px);
                     background-color: $secondary_color;
-                    flex-direction: row;
-                    gap: 45px;
+                    border-color: $secondary_color;
                 }
-                &--avatar {
-                    width: 223px;
-                    height: 319px;
+                &--desc {
+                    color: rgba($body_bg_color_hex, 0.7);
                 }
-                &--qoute {
-                    opacity: 0;
-                    visibility: hidden;
-                    max-width: 0;
-                    max-height: 0;
-                    overflow: hidden;
+                &--divider {
+                    color: #afb4b5;
+                }
+                &--title {
+                    color: $body_bg_color;
+                }
+                &--position {
+                    color: rgba($body_bg_color_hex, 0.7);
                 }
             }
         }
@@ -255,70 +262,95 @@ testimonials grid
     .pxl-item {
         &--inner {
             @include border-radius(20px);
-            padding: 30px;
+            padding: 20px;
+            background-color: $body_bg_color;
             border: 1px solid rgba($four_color_hex, 0.5);
-            background: $body_bg_color;
             display: flex;
-            flex-direction: column;
-            gap: 35px;
-            @include transition(
-                background-color 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-                flex-direction 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-                gap 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-            );
-        }
-        &--header {
-            display: flex;
-            align-items: start;
-            justify-content: space-between;
+            gap: 45px;
+            align-items: stretch;
+            min-height: 317px;
+            transform: translateY(0px);
+            @include transition(all 0.3s linear 0ms);
+            margin-top: 15px;
+            &:hover {
+                transform: translateY(-15px);
+                background-color: $secondary_color;
+                border-color: $secondary_color;
+                .pxl-item {
+                    &--desc {
+                        color: rgba($body_bg_color_hex, 0.7);
+                    }
+                    &--divider {
+                        color: #afb4b5;
+                    }
+                    &--title {
+                        color: $body_bg_color;
+                    }
+                    &--position {
+                        color: rgba($body_bg_color_hex, 0.7);
+                    }
+                }
+            }
         }
         &--avatar {
-            width: 70px;
-            height: 70px;
+            flex: 0 0 223px;
+            height: 317px;
             @include border-radius(10px);
-            @include transition(
-                width 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-                height 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-            );
+            overflow: hidden;
             img {
                 width: 100%;
                 height: 100%;
-                @include border-radius(10px);
                 object-fit: cover;
             }
         }
-        &--qoute {
-            display: block;
-            opacity: 1;
-            visibility: visible;
-            max-width: 100%;
-            max-height: 100%;
-            @include transition(
-                opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-                visibility 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-                max-width 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-                max-height 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-            );
-            svg {
-                color: rgba($primary_color_hex, 0.4);
-                @include transition(
-                    transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-                );
+        &--body {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &-footer {
+                margin-top: auto;
+                padding-right: 25px;
+            }
+            &-meta {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 40px;
+                margin-bottom: 10px;
             }
         }
+        &--desc {
+            color: $secondary-color;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.556;
+            @include transition(all 0.3s linear 0ms);
+        }
+        &--divider {
+            color: #afb4b5;
+            @include transition(all 0.3s linear 0ms);
+        }
         &--title {
-            color: $secondary_color;
+            color: $secondary-color;
             font-size: 18px;
             font-weight: 600;
             line-height: 1.667;
             margin-bottom: 0;
         }
         &--position {
-            color: rgba($secondary_color, 0.7);
+            color: rgba($secondary-color, 0.7);
             font-size: 14px;
             font-style: italic;
             font-weight: 400;
-            line-height: 1.714;
+            line-height: 1.71;
+        }
+        &--star {
+            display: flex;
+            align-content: center;
+            svg {
+                color: #e9bf4a;
+            }
         }
     }
 }
@@ -380,7 +412,7 @@ testimonials grid
             align-items: center;
             svg {
                 height: 13px;
-                color: #E9BF4A;
+                color: #e9bf4a;
             }
         }
         &--info {
@@ -391,7 +423,7 @@ testimonials grid
             }
         }
     }
-    .pxl-swiper-arrow-wrap {  
+    .pxl-swiper-arrow-wrap {
         margin-top: 0;
         position: absolute;
         bottom: 62px;
@@ -412,7 +444,7 @@ testimonials grid
             background-color: $primary-color;
             color: $body_bg_color;
             &.swiper-button-disabled {
-                background-color: rgba(187, 178, 255, 0.50);
+                background-color: rgba(187, 178, 255, 0.5);
             }
         }
     }
