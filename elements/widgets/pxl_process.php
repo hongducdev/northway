@@ -6,6 +6,9 @@ pxl_add_custom_widget(
         'title' => esc_html__('Case Process', 'northway' ),
         'icon' => 'eicon-ellipsis-h',
         'categories' => array('pxltheme-core'),
+        'scripts' => array(
+            'pxl-process-timeline',
+        ),
         'params' => array(
             'sections' => array(
                 array(
@@ -26,6 +29,10 @@ pxl_add_custom_widget(
                                 '2' => [
                                     'label' => esc_html__('Layout 2', 'northway' ),
                                     'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_process/layout2.jpg'
+                                ],
+                                '3' => [
+                                    'label' => esc_html__('Layout 3', 'northway' ),
+                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_process/layout3.jpg'
                                 ],
                             ],
                         ),
@@ -78,9 +85,8 @@ pxl_add_custom_widget(
                             'name' => 'process_2',
                             'label' => esc_html__('List', 'northway'),
                             'type' => \Elementor\Controls_Manager::REPEATER,
-                            'default' => [],
                             'condition' => [
-                                'layout' => '2',
+                                'layout' => ['2', '3'],
                             ],
                             'controls' => array(
                                 array(

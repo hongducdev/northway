@@ -1,0 +1,351 @@
+(function ($) {
+    "use strict";
+
+    function pxl_process_timeline_handler($scope) {
+        var $timeline = $scope.find(".pxl-process-timeline");
+
+        if ($timeline.length === 0) {
+            return;
+        }
+
+        $timeline.each(function () {
+            if ($(this).data("timeline-initialized")) {
+                return;
+            }
+            $(this).data("timeline-initialized", true);
+            var $this = $(this);
+            var $processContainer = $this.closest(".pxl-process3");
+            var $wrapper = $this.find(".pxl-timeline-wrapper");
+            var $container = $this.find(".pxl-timeline-container");
+            var $items = $this.find(".pxl-timeline-item");
+            var $prevBtn = $processContainer.find(".pxl-timeline-arrow-prev");
+            var $nextBtn = $processContainer.find(".pxl-timeline-arrow-next");
+            var $progress = $this.find(".pxl-timeline-progress");
+
+            var totalItems = $items.length;
+            var maxVisible =
+                parseInt(
+                    $this.find(".pxl-timeline-items").data("max-visible")
+                ) || 5;
+            var currentStartIndex = 0;
+            var activeIndex = 0;
+
+            function init() {
+                var $activeItem = $items.filter(".active");
+                if ($activeItem.length > 0) {
+                    activeIndex = parseInt($activeItem.data("index")) || 0;
+                } else {
+                    activeIndex = 0;
+                    $items.eq(0).addClass("active");
+                }
+
+                updateActiveState(activeIndex);
+                updateNavigationButtons();
+            }
+
+            function updateTimelineVisibility() {
+                $items.removeClass("hidden");
+
+                if (totalItems <= maxVisible) {
+                    return;
+                }
+
+                $items.each(function (index) {
+                    if (
+                        index < currentStartIndex ||
+                        index >= currentStartIndex + maxVisible
+                    ) {
+                        $(this).addClass("hidden");
+                    } else {
+                        $(this).removeClass("hidden");
+                    }
+                });
+            }
+
+            function updateProgress(index) {
+                var $activeItem = $items.eq(index);
+                var $activeDot = $activeItem.find(".pxl-timeline-dot");
+                var $line = $this.find(".pxl-timeline-line");
+                var $itemsContainer = $this.find(".pxl-timeline-items");
+
+                if (
+                    $activeDot.length > 0 &&
+                    $line.length > 0 &&
+                    $itemsContainer.length > 0
+                ) {
+                    setTimeout(function () {
+                        var lineOffset = $line.offset();
+                        var lineLeft = lineOffset ? lineOffset.left : 0;
+                        var lineWidth = $line.outerWidth();
+
+                        var dotOffset = $activeDot.offset();
+                        var dotLeft = dotOffset ? dotOffset.left : 0;
+                        var dotWidth = $activeDot.outerWidth();
+                        var dotCenter = dotLeft + dotWidth / 2;
+
+                        var progressWidth = dotCenter - lineLeft;
+
+                        if (progressWidth > 0 && progressWidth <= lineWidth) {
+                            $progress.css("width", progressWidth + "px");
+                        } else if (progressWidth > lineWidth) {
+                            $progress.css("width", "100%");
+                        } else {
+                            $progress.css("width", "0px");
+                        }
+                    }, 100);
+                } else {
+                    var progress =
+                        totalItems > 1 ? (index / (totalItems - 1)) * 100 : 0;
+                    $progress.css("width", progress + "%");
+                }
+            }
+
+            function updateActiveState(index) {
+                activeIndex = index;
+
+                $items.removeClass("active");
+                $items.eq(index).addClass("active");
+
+                updateProgress(index);
+
+                if (totalItems > maxVisible) {
+                    if (index < 2) {
+                        currentStartIndex = 0;
+                    } else if (index + maxVisible > totalItems) {
+                        currentStartIndex = totalItems - maxVisible;
+                    } else {
+                        currentStartIndex = index;
+                    }
+                    updateTimelineVisibility();
+                    setTimeout(function () {
+                        updateProgress(index);
+                    }, 100);
+                } else {
+                    setTimeout(function () {
+                        updateProgress(index);
+                    }, 100);
+                }
+
+                updateActiveItemContent(index);
+                syncWithProcessItems(index);
+            }
+
+            function updateNavigationButtons() {
+                $prevBtn.show();
+                $nextBtn.show();
+
+                if (activeIndex <= 0) {
+                    $prevBtn.addClass("disabled").prop("disabled", true);
+                } else {
+                    $prevBtn.removeClass("disabled").prop("disabled", false);
+                }
+
+                if (activeIndex >= totalItems - 1) {
+                    $nextBtn.addClass("disabled").prop("disabled", true);
+                } else {
+                    $nextBtn.removeClass("disabled").prop("disabled", false);
+                }
+            }
+
+            function updateActiveItemContent(index) {
+                var $processItems = $this
+                    .closest(".pxl-process3")
+                    .find(".pxl-process-items");
+
+                if ($processItems.length > 0) {
+                    var itemsDataAttr = $processItems.attr("data-items");
+                    var itemsData = null;
+
+                    try {
+                        itemsData = itemsDataAttr
+                            ? JSON.parse(itemsDataAttr)
+                            : null;
+                    } catch (e) {
+                        return;
+                    }
+
+                    if (itemsData && itemsData[index]) {
+                        var item = itemsData[index];
+                        var $content = $processItems.find(
+                            ".pxl-process-item--content"
+                        );
+                        var $imageContainer = $processItems.find(
+                            ".pxl-process-item--image"
+                        );
+
+                        var $title = $content.find(".pxl-process-item--title");
+                        var $desc = $content.find(".pxl-process-item--desc");
+                        var fadeTime = 350;
+
+                        $content.css("opacity", "0");
+                        $imageContainer.css("opacity", "0");
+
+                        setTimeout(function () {
+                            if (item.title) {
+                                var titleHtml = "";
+                                if (item.step && item.step.trim() !== "") {
+                                    titleHtml =
+                                        "<span>" +
+                                        item.step +
+                                        "</span>: " +
+                                        item.title;
+                                } else {
+                                    titleHtml = item.title;
+                                }
+
+                                if ($title.length > 0) {
+                                    $title.html(titleHtml);
+                                } else {
+                                    $content.prepend(
+                                        '<h3 class="pxl-process-item--title">' +
+                                            titleHtml +
+                                            "</h3>"
+                                    );
+                                }
+                            } else {
+                                $title.remove();
+                            }
+
+                            if (item.desc) {
+                                if ($desc.length > 0) {
+                                    $desc.html(item.desc);
+                                } else {
+                                    $content.append(
+                                        '<div class="pxl-process-item--desc">' +
+                                            item.desc +
+                                            "</div>"
+                                    );
+                                }
+                            } else {
+                                $desc.remove();
+                            }
+
+                            if (item.image) {
+                                if ($imageContainer.length > 0) {
+                                    $imageContainer.html(item.image);
+                                } else {
+                                    $processItems.append(
+                                        '<div class="pxl-process-item--image">' +
+                                            item.image +
+                                            "</div>"
+                                    );
+                                }
+                            } else {
+                                $imageContainer.remove();
+                            }
+
+                            setTimeout(function () {
+                                $content.css("opacity", "1");
+                                $imageContainer.css("opacity", "1");
+                            }, 10);
+                        }, fadeTime);
+                    }
+                }
+            }
+
+            function syncWithProcessItems(index) {
+                var $processWrapper = $this
+                    .closest(".pxl-process3")
+                    .find(".pxl-process-wrapper");
+                var $processItems = $processWrapper.find(".pxl-item");
+
+                if ($processItems.length > 0) {
+                    var $targetItem = $processItems.eq(index);
+                    if ($targetItem.length) {
+                        var offsetTop = $targetItem.offset().top - 100;
+                        $("html, body").animate(
+                            {
+                                scrollTop: offsetTop,
+                            },
+                            600
+                        );
+                    }
+                }
+            }
+
+            $prevBtn.on("click", function (e) {
+                e.preventDefault();
+                if ($(this).hasClass("disabled") || activeIndex <= 0) {
+                    return;
+                }
+
+                var newActiveIndex = activeIndex - 1;
+                updateActiveState(newActiveIndex);
+                updateNavigationButtons();
+            });
+
+            $nextBtn.on("click", function (e) {
+                e.preventDefault();
+                if (
+                    $(this).hasClass("disabled") ||
+                    activeIndex >= totalItems - 1
+                ) {
+                    return;
+                }
+
+                var newActiveIndex = activeIndex + 1;
+                updateActiveState(newActiveIndex);
+                updateNavigationButtons();
+            });
+
+            $items.on("click", function () {
+                var index = $(this).data("index");
+                updateActiveState(index);
+                updateNavigationButtons();
+            });
+
+            $items.on("keydown", function (e) {
+                if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    $(this).trigger("click");
+                }
+            });
+
+            init();
+
+            $(window).on("resize", function () {
+                updateTimelineVisibility();
+                updateNavigationButtons();
+                setTimeout(function () {
+                    updateProgress(activeIndex);
+                }, 100);
+            });
+        });
+    }
+
+    $(window).on("elementor/frontend/init", function () {
+        if (window.elementor && elementorFrontend && elementorFrontend.hooks) {
+            elementorFrontend.hooks.addAction(
+                "frontend/element_ready/pxl_process.default",
+                pxl_process_timeline_handler
+            );
+        }
+    });
+
+    function initializeTimelines() {
+        $(".pxl-process-timeline").each(function () {
+            var $timeline = $(this);
+            if ($timeline.data("timeline-initialized")) {
+                return;
+            }
+
+            var $scope = $timeline.closest(".elementor-element, .pxl-process3");
+            if ($scope.length === 0) {
+                $scope = $timeline;
+            }
+            pxl_process_timeline_handler($scope);
+        });
+    }
+
+    $(document).ready(function () {
+        if (typeof elementorFrontend === "undefined") {
+            setTimeout(initializeTimelines, 300);
+        }
+
+        setTimeout(initializeTimelines, 1000);
+    });
+
+    $(window).on("load", function () {
+        setTimeout(initializeTimelines, 500);
+    });
+})(jQuery);

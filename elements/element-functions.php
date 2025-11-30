@@ -30,6 +30,7 @@ if(!function_exists('northway_elements_scripts')){
         wp_register_script('northway-pie-chart', get_template_directory_uri() . '/elements/widgets/js/pie-chart.js', [ 'jquery' ], $theme->get( 'Version' ), true);
         wp_enqueue_script('northway-elementor', get_template_directory_uri() . '/elements/widgets/js/elementor.js', [ 'jquery' ], $theme->get( 'Version' ), true);
         wp_register_script('pxl-image-comparison', get_template_directory_uri() . '/elements/widgets/js/image_comparison.js', [ 'jquery' ], $theme->get( 'Version' ), true);
+        wp_register_script('pxl-process-timeline', get_template_directory_uri() . '/elements/widgets/js/process_timeline.js', [ 'jquery', 'elementor-frontend' ], $theme->get( 'Version' ), true);
     }
 }
 

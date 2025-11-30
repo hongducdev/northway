@@ -1103,6 +1103,32 @@
     }
 }
 
+.pxl-bg-pattern-caro-3 {
+    position: relative;
+    overflow: hidden;
+    &:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+
+        background-image: repeating-linear-gradient(
+                to right,
+                $body_bg_color 0 1px,
+                transparent 1px 50px
+            ),
+            repeating-linear-gradient(
+                to bottom,
+                $body_bg_color 0 1px,
+                transparent 1px 50px
+            );
+        background-position: center center;
+        background-size: 50px 50px;
+        background-repeat: repeat;
+        transform: translateZ(0);
+    }
+}
+
 // Slider Revolution
 
 // Contact Form 7
