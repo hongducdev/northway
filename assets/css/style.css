@@ -34483,72 +34483,53 @@ table.tt_timetable {
   transition: height 1.4s ease;
   height: 0;
 }
-.pxl-progressbar-1 .pxl-progressbar--wrap {
-  height: 15px;
-  -webkit-border-radius: 15px;
-  -khtml-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
-  border-radius: 15px;
-  background: linear-gradient(270deg, #eaf0da 0%, #d7e4b5 100%);
-  position: relative;
+.pxl-progressbar-1 {
+  --gradient-color-1: #bbb2ff;
+  --gradient-color-2: #9588f8;
 }
-.pxl-progressbar-1 .pxl-progressbar--wrap .pxl--progressbar {
-  height: 5px;
-  background-color: var(--primary-color);
-  position: absolute;
-  top: 50%;
-  left: 5px;
-  width: 0;
-  transform: translateY(-50%);
-  -webkit-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
+.pxl-progressbar-1 .pxl-progressbar--item + .pxl-progressbar--item {
+  margin-top: 24px;
 }
-.pxl-progressbar-1 .pxl--meta {
+.pxl-progressbar-1 .pxl-progressbar--item-meta {
   display: flex;
   align-items: center;
-  width: 100%;
-  gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
-.pxl-progressbar-1 .pxl--title {
-  color: var(--secondary-color);
-  font-family: "General Sans";
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.53;
+.pxl-progressbar-1 .pxl-progressbar--item-title, .pxl-progressbar-1 .pxl-progressbar--item-percentage {
+  color: var(--body_bg-color);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.556;
   margin-bottom: 0;
-  margin-right: 0px;
-  text-wrap: nowrap;
 }
-.pxl-progressbar-1 .pxl--percentage-divider {
-  width: 100%;
+.pxl-progressbar-1 .pxl-progressbar--wrap {
   height: 1px;
-  border-top: 1px dashed rgba(149, 136, 248, 0.35);
+  background-color: rgba(102, 111, 120, 0.5);
+  -webkit-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
 }
-.pxl-progressbar-1 .pxl--percentage {
-  color: var(--secondary-color);
-  font-family: "General Sans";
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1;
-  display: flex;
-  align-items: start;
+.pxl-progressbar-1 .pxl--progressbar {
+  height: 2px;
+  background: linear-gradient(90deg, var(--gradient-color-1) 0%, var(--gradient-color-2) 100%);
+  -webkit-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
 }
-.pxl-progressbar-1 .pxl--percentage span {
-  margin-top: 2px;
-  font-size: 6px;
+.pxl-team-grid1 .pxl-swiper-arrow-wrap .pxl-swiper-arrow, .pxl-team-carousel1 .pxl-swiper-arrow-wrap .pxl-swiper-arrow {
+  background-color: transparent;
 }
-.pxl-progressbar-1 .pxl--item + .pxl--item {
-  margin-top: 12px;
+.pxl-team-grid1 .pxl-swiper-arrow-wrap .pxl-swiper-arrow i, .pxl-team-carousel1 .pxl-swiper-arrow-wrap .pxl-swiper-arrow i {
+  color: var(--body_bg-color);
 }
-.pxl-team-grid1 .pxl-item--inner {
+.pxl-team-grid1 .pxl-item--inner, .pxl-team-carousel1 .pxl-item--inner {
   -webkit-border-radius: 15px;
   -khtml-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -34557,11 +34538,11 @@ table.tt_timetable {
   border-radius: 15px;
   background-color: var(--body_bg-color);
 }
-.pxl-team-grid1 .pxl-item--inner:hover .pxl-item--overlay {
+.pxl-team-grid1 .pxl-item--inner:hover .pxl-item--overlay, .pxl-team-carousel1 .pxl-item--inner:hover .pxl-item--overlay {
   opacity: 1;
   visibility: visible;
 }
-.pxl-team-grid1 .pxl-item--inner:hover .pxl-item--overlay-button {
+.pxl-team-grid1 .pxl-item--inner:hover .pxl-item--overlay-button, .pxl-team-carousel1 .pxl-item--inner:hover .pxl-item--overlay-button {
   opacity: 1;
   -webkit-transform: scale(1);
   -khtml-transform: scale(1);
@@ -34570,7 +34551,7 @@ table.tt_timetable {
   -o-transform: scale(1);
   transform: scale(1);
 }
-.pxl-team-grid1 .pxl-item--image {
+.pxl-team-grid1 .pxl-item--image, .pxl-team-carousel1 .pxl-item--image {
   height: 375px;
   position: relative;
   -webkit-border-radius: 15px 15px 0 0;
@@ -34580,7 +34561,7 @@ table.tt_timetable {
   -o-border-radius: 15px 15px 0 0;
   border-radius: 15px 15px 0 0;
 }
-.pxl-team-grid1 .pxl-item--image img {
+.pxl-team-grid1 .pxl-item--image img, .pxl-team-carousel1 .pxl-item--image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -34591,7 +34572,7 @@ table.tt_timetable {
   -o-border-radius: 15px 15px 0 0;
   border-radius: 15px 15px 0 0;
 }
-.pxl-team-grid1 .pxl-item--overlay {
+.pxl-team-grid1 .pxl-item--overlay, .pxl-team-carousel1 .pxl-item--overlay {
   background: rgba(14, 72, 141, 0.3);
   backdrop-filter: blur(2.5px);
   width: 100%;
@@ -34617,7 +34598,7 @@ table.tt_timetable {
   visibility: hidden;
   cursor: pointer;
 }
-.pxl-team-grid1 .pxl-item--overlay-button {
+.pxl-team-grid1 .pxl-item--overlay-button, .pxl-team-carousel1 .pxl-item--overlay-button {
   width: 76px;
   height: 76px;
   -webkit-border-radius: 50%;
@@ -34640,28 +34621,28 @@ table.tt_timetable {
   -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-.pxl-team-grid1 .pxl-item--overlay-button span {
+.pxl-team-grid1 .pxl-item--overlay-button span, .pxl-team-carousel1 .pxl-item--overlay-button span {
   width: 12px;
   height: 12px;
   position: relative;
 }
-.pxl-team-grid1 .pxl-item--overlay-button span::before, .pxl-team-grid1 .pxl-item--overlay-button span::after {
+.pxl-team-grid1 .pxl-item--overlay-button span::before, .pxl-team-carousel1 .pxl-item--overlay-button span::before, .pxl-team-grid1 .pxl-item--overlay-button span::after, .pxl-team-carousel1 .pxl-item--overlay-button span::after {
   content: "";
   position: absolute;
   width: 12px;
   height: 2px;
   background-color: var(--body_bg-color);
 }
-.pxl-team-grid1 .pxl-item--overlay-button span::before {
+.pxl-team-grid1 .pxl-item--overlay-button span::before, .pxl-team-carousel1 .pxl-item--overlay-button span::before {
   transform: rotate(90deg);
   top: 50%;
   left: 0;
 }
-.pxl-team-grid1 .pxl-item--overlay-button span::after {
+.pxl-team-grid1 .pxl-item--overlay-button span::after, .pxl-team-carousel1 .pxl-item--overlay-button span::after {
   transform: rotate(0deg);
   top: 50%;
 }
-.pxl-team-grid1 .pxl-item--holder {
+.pxl-team-grid1 .pxl-item--holder, .pxl-team-carousel1 .pxl-item--holder {
   border: 1px solid #afb4b5;
   -webkit-border-radius: 0 0 15px 15px;
   -khtml-border-radius: 0 0 15px 15px;
@@ -34674,7 +34655,7 @@ table.tt_timetable {
   padding-top: 45px;
   padding-bottom: 30px;
 }
-.pxl-team-grid1 .pxl-item--title {
+.pxl-team-grid1 .pxl-item--title, .pxl-team-carousel1 .pxl-item--title {
   border-radius: 1000px;
   border: 1px solid #afb4b5;
   background: var(--body_bg-color);
@@ -34690,12 +34671,12 @@ table.tt_timetable {
   transform: translateX(-50%);
   top: -30px;
 }
-.pxl-team-grid1 .pxl-item--title h3 {
+.pxl-team-grid1 .pxl-item--title h3, .pxl-team-carousel1 .pxl-item--title h3 {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 0;
 }
-.pxl-team-grid1 .pxl-item--position {
+.pxl-team-grid1 .pxl-item--position, .pxl-team-carousel1 .pxl-item--position {
   color: rgba(4, 20, 39, 0.6);
   font-size: 14px;
   font-weight: 400;
@@ -34704,12 +34685,12 @@ table.tt_timetable {
   text-transform: uppercase;
   margin-bottom: 35px;
 }
-.pxl-team-grid1 .pxl-item--social {
+.pxl-team-grid1 .pxl-item--social, .pxl-team-carousel1 .pxl-item--social {
   display: inline-flex;
   align-items: center;
   gap: 10px;
 }
-.pxl-team-grid1 .pxl-item--social a {
+.pxl-team-grid1 .pxl-item--social a, .pxl-team-carousel1 .pxl-item--social a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -34732,7 +34713,7 @@ table.tt_timetable {
   -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-.pxl-team-grid1 .pxl-item--social a:hover {
+.pxl-team-grid1 .pxl-item--social a:hover, .pxl-team-carousel1 .pxl-item--social a:hover {
   border-color: rgba(102, 111, 120, 0.3);
 }
 .pxl-pricing1.is-popular .pxl-item--inner {

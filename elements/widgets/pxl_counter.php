@@ -326,7 +326,7 @@ pxl_add_custom_widget(
                                 ],
                             ],
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-counter .pxl-counter--title' => 'margin-top: {{SIZE}}{{UNIT}};',
+                                '{{WRAPPER}} .pxl-counter .pxl-counter--title' => 'padding-top: {{SIZE}}{{UNIT}};',
                             ],
                             'condition' => [
                                 'layout' => ['1'],

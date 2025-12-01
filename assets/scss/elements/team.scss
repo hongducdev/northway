@@ -1,6 +1,14 @@
 // Case Team Grid
 
-.pxl-team-grid1 {
+.pxl-team-grid1, .pxl-team-carousel1 {
+    .pxl-swiper-arrow-wrap {
+        .pxl-swiper-arrow {
+            background-color: transparent;
+            i {
+                color: $body_bg_color;
+            }
+        }
+    }
     .pxl-item {
         &--inner {
             @include border-radius(15px);
