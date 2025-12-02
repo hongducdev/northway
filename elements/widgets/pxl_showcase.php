@@ -148,6 +148,15 @@ pxl_add_custom_widget(
                                     'border_type!' => '',
                                 ],
                             ),
+                            array(
+                                'name' => 'image_height',
+                                'label' => esc_html__('Image Height', 'northway'),
+                                'type' => \Elementor\Controls_Manager::NUMBER,
+                                'selectors' => [
+                                    '{{WRAPPER}} .pxl-showcase1 .pxl-item--image-inner' => 'height: {{VALUE}}px;',
+                                ],
+                                'responsive' => true,
+                            )
                         ),
                     ),
                 ),

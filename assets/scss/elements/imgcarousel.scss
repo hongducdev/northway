@@ -28,3 +28,25 @@
         }
     }
 }
+
+.pxl-image-carousel2 {
+    .pxl-item {
+        &--inner {
+            @include border-radius(10px);
+            border: 1px solid #AFB4B5;
+            background: rgba($body_bg_color_hex, 0.36);
+            backdrop-filter: blur(6px);
+            padding: 20px;
+        }
+        &--image {
+            @include border-radius(5px);
+            overflow: hidden;
+            border: 1px solid #D9D9D9;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

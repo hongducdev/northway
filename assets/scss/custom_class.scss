@@ -1114,16 +1114,16 @@
 
         background-image: repeating-linear-gradient(
                 to right,
-                $body_bg_color 0 1px,
-                transparent 1px 50px
+                rgba($body_bg_color_hex, 0.2) 0 1px,
+                transparent 1px 65px
             ),
             repeating-linear-gradient(
                 to bottom,
-                $body_bg_color 0 1px,
-                transparent 1px 50px
+                rgba($body_bg_color_hex, 0.2) 0 1px,
+                transparent 1px 65px
             );
-        background-position: center center;
-        background-size: 50px 50px;
+        background-position: left center;
+        background-size: 65px 65px;
         background-repeat: repeat;
         transform: translateZ(0);
     }

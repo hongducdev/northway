@@ -32,6 +32,10 @@ pxl_add_custom_widget(
                                     'label' => esc_html__('Layout 1', 'northway'),
                                     'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_image_carousel/layout1.jpg'
                                 ],
+                                '2' => [
+                                    'label' => esc_html__('Layout 2', 'northway'),
+                                    'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_image_carousel/layout2.jpg'
+                                ],
                             ],
                         ),
                     ),
@@ -178,6 +182,17 @@ pxl_add_custom_widget(
                     'label' => esc_html__('Settings', 'northway'),
                     'tab' => \Elementor\Controls_Manager::TAB_SETTINGS,
                     'controls' => array(
+                        array(
+                            'name' => 'direction',
+                            'label' => esc_html__('Direction', 'northway'),
+                            'type' => \Elementor\Controls_Manager::SELECT,
+                            'default' => 'default',
+                            'options' => [
+                                'default' => esc_html__('Auto (based on site language)', 'northway'),
+                                'ltr' => esc_html__('Left to Right', 'northway'),
+                                'rtl' => esc_html__('Right to Left', 'northway'),
+                            ],
+                        ),
                         array(
                             'name' => 'effect',
                             'label' => esc_html__('Effect', 'northway'),
