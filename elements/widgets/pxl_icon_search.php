@@ -91,7 +91,7 @@ pxl_add_custom_widget(
                             'label' => esc_html__('Border Color', 'northway' ),
                             'type' => \Elementor\Controls_Manager::COLOR,
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-search-popup-button ' => 'border-color: {{VALUE}} !important;',
+                                '{{WRAPPER}} .pxl-search-popup-button, {{WRAPPER}} .pxl-search-popup-button.style-box:before' => 'border-color: {{VALUE}} !important;',
                             ],
                             'condition' => [
                                 'search_type' => ['popup'],

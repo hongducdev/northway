@@ -80,6 +80,19 @@ pxl_add_custom_widget(
                             ]
                         ),
                         array(
+                            'name' => 'style_slider_3',
+                            'label' => esc_html__('Style Slider 3', 'northway'),
+                            'type' => \Elementor\Controls_Manager::SELECT,
+                            'options' => [
+                                'style-1' => esc_html__('Style 1', 'northway'),
+                                'style-2' => esc_html__('Style 2', 'northway'),
+                            ],
+                            'default' => 'style-1',
+                            'condition' => [
+                                'layout' => ['3'],
+                            ]
+                        ),
+                        array(
                             'name' => 'slides_3',
                             'label' => esc_html__('Slides 3', 'northway'),
                             'type' => \Elementor\Controls_Manager::REPEATER,

@@ -167,12 +167,12 @@ pxl_add_custom_widget(
                             ],
                         ),
                         array(
-                            'name' => 'box_padding',
+                            'name' => 'box_padding_circle',
                             'label' => esc_html__('Padding', 'northway' ),
                             'type' => \Elementor\Controls_Manager::DIMENSIONS,
                             'size_units' => [ 'px' ],
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-text-box5 .pxl-circle-text' => '--padding: {{SIZE}}{{UNIT}};',
+                                '{{WRAPPER}} .pxl-text-box5 .pxl-circle-text' => '--padding-circle: {{SIZE}}{{UNIT}};',
                             ],
                         ),
                         array(

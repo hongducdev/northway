@@ -19,6 +19,7 @@ pxl_add_custom_widget(
                             'options' => [
                                 'style-1' => esc_html__('Style 1', 'northway' ),
                                 'style-2' => esc_html__('Style 2', 'northway' ),
+                                'style-3' => esc_html__('Style 3', 'northway' ),
                             ],
                             'default' => 'style-1',
                         ),

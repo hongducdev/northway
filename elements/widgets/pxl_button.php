@@ -575,7 +575,7 @@ pxl_add_custom_widget(
                             'label' => esc_html__('Box Color', 'northway'),
                             'type' => \Elementor\Controls_Manager::COLOR,
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-button .btn i' => 'background-color: {{VALUE}};',
+                                '{{WRAPPER}} .pxl-button .btn .pxl-button--icon' => 'background-color: {{VALUE}};',
                             ],
                         ),
                         array(
@@ -583,7 +583,7 @@ pxl_add_custom_widget(
                             'label' => esc_html__('Box Color Hover', 'northway'),
                             'type' => \Elementor\Controls_Manager::COLOR,
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-button .btn:hover i' => 'background-color: {{VALUE}};',
+                                '{{WRAPPER}} .pxl-button .btn:hover .pxl-button--icon' => 'background-color: {{VALUE}};',
                             ],
                         ),
                         array(

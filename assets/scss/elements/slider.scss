@@ -123,11 +123,57 @@
 
 .pxl-slider3 {
     --gradient-color-from: #041427;
-    --gradient-color-to: #0E488D;
+    --gradient-color-to: #0e488d;
+    &.style-2 {
+        .pxl-slider {
+            &--item {
+                background: transparent;
+                @include border-radius(0);
+            }
+        }
+        .pxl-swiper-arrow-wrap {
+            position: absolute;
+            max-width: calc(1600px + 86px);
+            width: calc(1600px + 86px);
+            z-index: 5;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -43px;
+            right: -43px;
+            @media #{$max-lg3} {
+                padding: 0 15px;
+            }
+            @media #{$max-xsx} {
+                display: none;
+            }
+            .pxl-swiper-arrow {
+                width: 86px;
+                height: 86px;
+                background-color: #2F3766;
+                color: $body_bg_color;
+                border: none;
+                i {
+                    font-size: 36px;
+                }
+                &:hover {
+                    background-color: $primary_color;
+                    color: $body_bg_color;
+                }
+            }
+        }
+    }
     .pxl-slider {
         &--item {
             @include border-radius(30px);
-            background: linear-gradient(180deg, var(--gradient-color-from) 28.28%, var(--gradient-color-to) 135.76%);
+            background: linear-gradient(
+                180deg,
+                var(--gradient-color-from) 28.28%,
+                var(--gradient-color-to) 135.76%
+            );
         }
     }
     .pxl-swiper-arrow-wrap {
