@@ -175,6 +175,9 @@
                 border-radius: 20px;
                 z-index: -1;
             }
+            @media #{$max-lg3} {
+                padding: 60px 50px 50px 50px;
+            }
         }
         &--number {
             color: $secondary_color;

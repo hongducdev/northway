@@ -646,6 +646,9 @@
     @media #{$max-xxl} {
         max-width: calc(100% - 120px);
     }
+    @media #{$max-lg} {
+        max-width: 100%;
+    }
 }
 
 .pxl-img-multiple {

@@ -164,10 +164,18 @@
         &--title {
             padding: 45px 50px;
             padding-bottom: 55px;
+            @media #{$max-sm} {
+                padding: 25px;
+                padding-bottom: 35px;
+            }
         }
         &--content {
             padding: 0 50px;
             padding-bottom: 45px;
+            @media #{$max-sm} {
+                padding: 0 25px;
+                padding-bottom: 25px;
+            }
             &:not(:has(.pxl-accordion--info)) {
                 .pxl-accordion--content-inner {
                     padding-bottom: 0;
@@ -188,11 +196,17 @@
             --width_right: 42%;
             border-top: 1px solid rgba($primary_color_hex, 0.4);
             position: relative;
+            @media #{$max-sm} {
+                flex-direction: column;
+            }
             &-star {
                 position: absolute;
                 top: -5px;
                 left: calc(var(--width_left) - 7px);
                 color: $primary_color;
+                @media #{$max-sm} {
+                    display: none;
+                }
             }
             &-left {
                 display: flex;
@@ -202,6 +216,15 @@
                 max-width: var(--width_left);
                 padding-top: 25px;
                 border-right: 1px solid rgba($primary_color_hex, 0.4);
+                @media #{$max-sm} {
+                    border-right: none;
+                    border-bottom: 1px solid rgba($primary_color_hex, 0.4);
+                    padding-bottom: 25px;
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    width: 100%;
+                    justify-content: center;
+                }
             }
             &-avatar {
                 max-height: 70px;
@@ -238,6 +261,12 @@
                 justify-content: end;
                 padding-bottom: 6px;
                 padding-top: 40px;
+                @media #{$max-sm} {
+                    padding-bottom: 0;
+                    padding-top: 25px;
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
             }
             &-signature {
                 color: $body_bg_color;

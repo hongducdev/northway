@@ -1680,6 +1680,9 @@ posts
             border: 1px solid rgba($four_color_hex, 0.5);
             background: $body_bg_color;
             padding: 30px;
+            @media #{$max-xs} {
+                padding: 15px;
+            }
         }
         &--featured {
             width: 100%;
@@ -1714,6 +1717,9 @@ posts
             font-weight: 400;
             line-height: 1.71;
             position: relative;
+            @media #{$max-xs} {
+                flex-direction: column;
+            }
             &-item {
                 padding: 16px 0;
             }
@@ -1722,6 +1728,12 @@ posts
                 left: calc(58% - 6.5px);
                 bottom: -5.5px;
                 color: #afb4b5;
+                @media #{$max-xl} {
+                    left: calc(50% - 6.5px);
+                }
+                @media #{$max-xs} {
+                    display: none;
+                }
             }
         }
         &--category {
@@ -1736,6 +1748,18 @@ posts
             }
             + .pxl-post--client {
                 border-left: 1px solid #dfdfdf;
+                @media #{$max-xs} {
+                    border-left: none;
+                    border-top: 1px solid #dfdfdf;
+                }
+            }
+            @media #{$max-xl} {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+            @media #{$max-xs} {
+                flex: 0 0 100%;
+                max-width: 100%;
             }
         }
         &--client {
@@ -1749,6 +1773,18 @@ posts
                 font-size: 14px;
                 color: $secondary_color;
             }
+            @media #{$max-xl} {
+                flex: 0 0 50%;
+                max-width: 50%;
+                justify-content: end;
+            }
+            @media #{$max-xs} {
+                flex: 0 0 100%;
+                max-width: 100%;
+                width: 100%;
+                padding: 10px 0;
+                justify-content: center;
+            }
         }
         &--title {
             margin-top: 27px;
@@ -1758,6 +1794,10 @@ posts
             font-weight: 600;
             line-height: 1.43;
             margin-bottom: 15px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
             a {
                 background-repeat: no-repeat;
                 background-position-y: -1px;
@@ -1782,6 +1822,10 @@ posts
             font-weight: 400;
             line-height: 1.625;
             margin-bottom: 50px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
             @include transition(
                 max-height 0.35s ease,
                 opacity 0.35s ease,
@@ -1870,6 +1914,10 @@ posts
         top: -131px;
         position: absolute;
         transform: none;
+        @media #{$max-lg} {
+            position: static;
+            margin-top: 30px;
+        }
     }
 }
 
@@ -2723,7 +2771,9 @@ posts
             align-items: center;
             transition: all 0.3s ease;
             cursor: pointer;
-
+            @media #{$max-xs} {
+                flex-direction: column;
+            }
             &:hover {
                 .pxl-post--icon {
                     box-shadow: 0 0px 30px rgba($primary_color_hex, 0.4);
@@ -2750,6 +2800,9 @@ posts
                 var(--gradient-color-2) 71.84%,
                 var(--gradient-color-3) 100%
             );
+            @media #{$max-xs} {
+                margin-right: 0;
+            }
             &:before {
                 content: "";
                 position: absolute;
@@ -2767,6 +2820,10 @@ posts
         &--body {
             flex: 1;
             margin-right: 38px;
+            @media #{$max-xs} {
+                margin-top: 30px;
+                margin-right: 0;
+            }
         }
         &--title {
             color: $body_bg_color;
@@ -2776,6 +2833,10 @@ posts
             line-height: 1.43;
             margin-bottom: 25px;
             transition: all 0.3s ease;
+            @media #{$max-xs} {
+                margin-bottom: 15px;
+                text-align: center;
+            }
         }
         &--content {
             color: rgba($body_bg_color_hex, 0.7);
@@ -2788,14 +2849,27 @@ posts
             -webkit-box-orient: vertical;
             overflow: hidden;
             transition: all 0.3s ease;
+            @media #{$max-xs} {
+                text-align: center;
+                margin-bottom: 30px;
+            }
         }
         &--readmore {
             display: flex;
             align-items: center;
             gap: 41px;
             padding-right: 50px;
+            @media #{$max-lg} {
+                padding-right: 0;
+            }
+            @media #{$max-xs} {
+                width: 100%;
+            }
             &-star {
                 color: $body_bg_color;
+                @media #{$max-xs} {
+                    display: none;
+                }
             }
             &-button {
                 transform-style: preserve-3d;
@@ -2812,7 +2886,9 @@ posts
                 align-items: center;
                 @include transition(all 0.3s ease);
                 column-gap: 12px;
-
+                @media #{$max-xs} {
+                    width: 100%;
+                }
                 .button-arrow-hover {
                     position: relative;
                     overflow: hidden;

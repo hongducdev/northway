@@ -144,6 +144,17 @@
             transform: translateY(-50%);
             left: -43px;
             right: -43px;
+            @media #{$max-xxl} {
+                max-width: 1290px;
+                top: auto;
+                bottom: 116px;
+                transform: none;
+                left: 50%;
+                transform: translateX(-50%);
+                right: auto;
+                justify-content: start;
+                gap: 10px;
+            }
             @media #{$max-lg3} {
                 padding: 0 15px;
             }
