@@ -5520,7 +5520,7 @@ body.rtl {
 
 // Case Circle
 .pxl-circle {
-    --color: #212f3f;
+    --color-border: #212f3f;
     position: relative;
     --width-1: 293px;
     width: var(--width-1);
@@ -5531,7 +5531,7 @@ body.rtl {
         height: var(--width-1);
         @include border-radius(var(--width-1));
         background-color: transparent;
-        border: 1px solid var(--color);
+        border: 1px solid var(--color-border);
         position: relative;
         &:before {
             content: "";
@@ -5541,7 +5541,7 @@ body.rtl {
             width: 9px;
             height: 9px;
             border-radius: 50%;
-            background-color: var(--color);
+            background-color: var(--color-border);
             z-index: 1;
             animation: rotateCircle 5s linear infinite;
             transform-origin: 50% calc(var(--width-1) / 2 + 4.5px);
@@ -5559,7 +5559,7 @@ body.rtl {
             height: var(--width-2);
             @include border-radius(var(--width-2));
             background-color: transparent;
-            border: 1px solid var(--color);
+            border: 1px solid var(--color-border);
             position: relative;
             &:before {
                 content: "";
@@ -5569,7 +5569,7 @@ body.rtl {
                 width: 9px;
                 height: 9px;
                 border-radius: 50%;
-                background-color: var(--color);
+                background-color: var(--color-border);
                 z-index: 1;
                 animation: rotateCircle 8s linear infinite;
                 transform-origin: 50% calc(var(--width-2) / 2 + 4.5px);
@@ -5587,7 +5587,7 @@ body.rtl {
             height: var(--width-3);
             @include border-radius(var(--width-3));
             background-color: transparent;
-            border: 1px solid var(--color);
+            border: 1px solid var(--color-border);
             position: relative;
             &:before {
                 content: "";
@@ -5597,7 +5597,7 @@ body.rtl {
                 width: 9px;
                 height: 9px;
                 border-radius: 50%;
-                background-color: var(--color);
+                background-color: var(--color-border);
                 z-index: 1;
                 animation: rotateCircle 4s linear infinite;
                 transform-origin: 50% calc(var(--width-3) / 2 + 4.5px);

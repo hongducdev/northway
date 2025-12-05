@@ -132,8 +132,6 @@ pxl_add_custom_widget(
                             'type' => \Elementor\Controls_Manager::SELECT,
                             'options' => [
                                 'fr-style-default' => 'Default',
-                                'fr-style-1' => 'Style 1',
-                                'fr-style-2' => 'Style 2',
                             ],
                             'default' => 'fr-style-default',
                             'condition' => [
@@ -162,18 +160,6 @@ pxl_add_custom_widget(
                             'type' => \Elementor\Controls_Manager::COLOR,
                             'selectors' => [
                                 '{{WRAPPER}} .pxl-nav-menu .pxl-menu-primary > li.current-menu-parent > a:not(.is-one-page), {{WRAPPER}} .pxl-nav-menu .pxl-menu-primary > li.current_page_item > a:not(.is-one-page), {{WRAPPER}} .pxl-nav-menu .pxl-menu-primary > li > a.pxl-onepage-active' => 'color: {{VALUE}};',
-                            ],
-                        ),
-                        array(
-                            'name' => 'transform_active',
-                            'label' => esc_html__('Transform Active', 'northway'),
-                            'type' => \Elementor\Controls_Manager::NUMBER,
-                            'selectors' => [
-                                '{{WRAPPER}} .pxl-nav-menu.fr-style-1 .pxl-menu-primary > li > a:hover span, .pxl-nav-menu.fr-style-1 .pxl-menu-primary > li.current_page_item > a span, .pxl-nav-menu.fr-style-1 .pxl-menu-primary > li.current-menu-item > a span, .pxl-nav-menu.fr-style-1 .pxl-menu-primary > li.current_page_ancestor > a span, .pxl-nav-menu.fr-style-1 .pxl-menu-primary > li.current-menu-ancestor > a span' => 'transform: translateY({{VALUE}}px);',
-                            ],
-                            'default' => -20,
-                            'condition' => [
-                                'hover_active_style' => 'fr-style-1',
                             ],
                         ),
                         array(

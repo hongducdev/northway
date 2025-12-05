@@ -205,6 +205,11 @@
             &.current_page_ancestor > a,
             &.current-menu-ancestor > a {
                 color: $primary_color;
+                svg {
+                    path {
+                        fill: $primary_color;
+                    }
+                }
             }
         }
         > li {
@@ -244,14 +249,8 @@
                         border-top: none;
                     }
                 }
-                + li {
-                    a {
-                        border-top: 1px dashed $primary_color;
-                    }
-                }
                 a {
-                    padding: 15px 0;
-                    margin: 0 30px;
+                    padding: 10px 30px;
                     display: block;
                 }
                 > a:hover,
@@ -505,6 +504,9 @@
         img {
             height: 45px;
         }
+        .pxl-logo--light {
+			display: none;
+		}
     }
     .pxl-header-mobile-search {
         margin-bottom: 20px;
@@ -555,6 +557,14 @@
             box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 50px;
             &.style-dark {
                 background-color: #151a25;
+                .pxl-logo-mobile {
+					.pxl-logo--dark {
+						display: none;
+					}
+					.pxl-logo--light {
+						display: block;
+					}
+				}
                 &.pxl-header-mobile-fixed {
                     background-color: #151a25;
                 }

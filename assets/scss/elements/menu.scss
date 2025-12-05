@@ -44,7 +44,7 @@
         content: "\f107";
         position: absolute;
         top: 50%;
-        right: 0px;
+        right: 30px;
         @include transform(translate(0, -50%));
         font-size: 10px;
         font-family: "Font Awesome 5 Free";
@@ -230,122 +230,6 @@
             max-width: 1440px;
             padding: 0;
             border: none;
-        }
-    }
-
-    &.fr-style-1 {
-        // position: relative;
-        .pxl-menu-polygon {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            color: $third_color;
-            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            z-index: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 37px;
-        }
-        .pxl-menu-primary > li {
-            > a {
-                border: none;
-                position: relative;
-                z-index: 2;
-                span {
-                    transform: translateY(0);
-                    @include transition(all 250ms ease-in-out 0ms);
-					position: relative;
-					svg {
-						display: none;
-					}
-					&:before {
-						content: "";
-						position: absolute;
-						bottom: 5px;
-						left: 50%;
-						transform: translateX(-50%);
-						width: 0;
-						height: 0;
-						opacity: 0;
-						border-left: 5px solid transparent;
-						border-right: 5px solid transparent;
-						border-top: 9px solid $third_color;
-						@include transition(all 250ms ease-in-out 0ms);
-					}
-                }
-            }
-            > a:hover,
-            > a.is-one-page.pxl-onepage-active,
-            &.current_page_item > a,
-            &.current-menu-item > a,
-            &.current_page_ancestor > a,
-            &.current-menu-ancestor > a {
-				color: $third_color;
-                span {
-                    transform: translateY(-20px);
-					&:before {
-						opacity: 1;
-					}
-                }
-            }
-        }
-    }
-    &.fr-style-2 {
-        // position: relative;
-        .pxl-menu-polygon {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            color: $third_color;
-            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            z-index: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 37px;
-        }
-        .pxl-menu-primary > li {
-            > a {
-                border: none;
-                position: relative;
-                z-index: 2;
-                span {
-                    transform: translateY(0);
-                    @include transition(all 250ms ease-in-out 0ms);
-					position: relative;
-					svg {
-						display: none;
-					}
-					&:before {
-						content: "\F111";
-						position: absolute;
-                        font-size: 20px;
-                        line-height: 1;
-                        font-family: "Flaticon";
-                        color: $primary_color;
-                        top: 0;
-                        left: 50%;
-                        transform: translateX(-50%) translateY(0px);
-                        opacity: 0;
-						@include transition(all 250ms ease-in-out 0ms);
-					}
-                }
-            }
-            > a:hover,
-            &.current_page_item > a,
-            &.current-menu-item > a,
-            &.current_page_ancestor > a,
-            &.current-menu-ancestor > a {
-				color: $primary_color;
-                span {
-                    transform: translateY(12px);
-					&:before {
-						opacity: 1;
-                        transform: translateX(-50%) translateY(-15px);
-					}
-                }
-            }
         }
     }
 }

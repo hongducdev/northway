@@ -28,7 +28,7 @@ pxl_add_custom_widget(
                             'label' => esc_html__('Color Circle', 'northway' ),
                             'type' => \Elementor\Controls_Manager::COLOR,
                             'selectors' => [
-                                '{{WRAPPER}} .pxl-circle' => '--color: {{VALUE}};',
+                                '{{WRAPPER}} .pxl-circle' => '--color-border: {{VALUE}};',
                             ],
                         )
                     ),
