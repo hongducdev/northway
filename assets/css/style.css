@@ -1990,20 +1990,37 @@ blockquote:not(.pxl-blockquote).wp-block-quote.has-text-align-right cite {
   margin: 0 -15px;
 }
 @media screen and (min-width: 1201px) {
-  body:not(.elementor-editor-active) .pxl-row-scroll-fixed > .e-con-inner {
+  body:not(.elementor-editor-active) .e-con:has(.pxl-row-scroll-fixed), body:not(.elementor-editor-active) .e-con:has(.pxl-column-sticky) {
+    overflow: visible !important;
+  }
+  body:not(.elementor-editor-active) .e-con:has(.pxl-row-scroll-fixed) > .e-con-inner, body:not(.elementor-editor-active) .e-con:has(.pxl-column-sticky) > .e-con-inner {
+    overflow: visible !important;
+  }
+  body:not(.elementor-editor-active) .pxl-row-scroll-fixed {
+    overflow: visible !important;
+  }
+  body:not(.elementor-editor-active) .pxl-row-scroll-fixed > .e-con-inner, body:not(.elementor-editor-active) .pxl-row-scroll-fixed .e-con-inner {
     align-items: flex-start;
     justify-content: space-between;
+    overflow: visible !important;
   }
   body:not(.elementor-editor-active) .pxl-column-sticky {
     position: sticky;
+    top: 120px;
+    align-self: flex-start;
+  }
+  body:not(.elementor-editor-active) .pxl-column-sticky.e-con {
+    overflow: visible !important;
   }
 }
 @media screen and (max-width: 1200px) {
   body:not(.elementor-editor-active) .pxl-column-sticky {
+    position: relative !important;
     top: 0 !important;
   }
 }
 body.elementor-editor-active .pxl-column-sticky {
+  position: relative !important;
   top: 0 !important;
 }
 .elementor-page:not(.single-post):not(.single-product) #pxl-content-area.col-12, .elementor-page:not(.single-post):not(.single-product) #pxl-footer-elementor .row > .col-12 {
@@ -2248,7 +2265,7 @@ body.elementor-editor-active .pxl-column-sticky {
   flex-wrap: wrap;
   align-items: center;
   display: inline-flex;
-  height: 40px;
+  min-height: 40px;
   padding: 0px 25px;
   border-radius: 100px;
   border: 1px solid rgba(248, 248, 242, 0.7);
@@ -10310,6 +10327,11 @@ body.rtl .pxl-post-list1 li:before {
   font-weight: 600;
   line-height: 1.5;
 }
+@media screen and (max-width: 767px) {
+  .pxl-testimonial-grid1 .pxl-item--title {
+    text-align: center;
+  }
+}
 .pxl-testimonial-grid1 .pxl-item--position {
   font-size: 16px;
   font-style: italic;
@@ -13419,6 +13441,7 @@ body.rtl .pxl-post-list1 li:before {
   -ms-transition: inherit;
   -o-transition: inherit;
   transition: inherit;
+  z-index: -1;
 }
 .blog .pxl-pagination-wrap .page-numbers.next, .search .pxl-pagination-wrap .page-numbers.next, .tag .pxl-pagination-wrap .page-numbers.next, .categorie .pxl-pagination-wrap .page-numbers.next, .blog .pxl-pagination-wrap .page-numbers.prev, .search .pxl-pagination-wrap .page-numbers.prev, .tag .pxl-pagination-wrap .page-numbers.prev, .categorie .pxl-pagination-wrap .page-numbers.prev {
   background-color: var(--secondary-color);
@@ -13427,6 +13450,10 @@ body.rtl .pxl-post-list1 li:before {
 }
 .blog .pxl-pagination-wrap .page-numbers.next i, .search .pxl-pagination-wrap .page-numbers.next i, .tag .pxl-pagination-wrap .page-numbers.next i, .categorie .pxl-pagination-wrap .page-numbers.next i, .blog .pxl-pagination-wrap .page-numbers.prev i, .search .pxl-pagination-wrap .page-numbers.prev i, .tag .pxl-pagination-wrap .page-numbers.prev i, .categorie .pxl-pagination-wrap .page-numbers.prev i {
   font-size: 22px;
+}
+.blog .pxl-pagination-wrap .page-numbers.next:before, .search .pxl-pagination-wrap .page-numbers.next:before, .tag .pxl-pagination-wrap .page-numbers.next:before, .categorie .pxl-pagination-wrap .page-numbers.next:before, .blog .pxl-pagination-wrap .page-numbers.prev:before, .search .pxl-pagination-wrap .page-numbers.prev:before, .tag .pxl-pagination-wrap .page-numbers.prev:before, .categorie .pxl-pagination-wrap .page-numbers.prev:before {
+  opacity: 1;
+  transform: scale(1);
 }
 .blog .pxl-pagination-wrap .page-numbers:hover, .search .pxl-pagination-wrap .page-numbers:hover, .tag .pxl-pagination-wrap .page-numbers:hover, .categorie .pxl-pagination-wrap .page-numbers:hover, .blog .pxl-pagination-wrap .page-numbers.current, .search .pxl-pagination-wrap .page-numbers.current, .tag .pxl-pagination-wrap .page-numbers.current, .categorie .pxl-pagination-wrap .page-numbers.current {
   background-color: transparent;
@@ -34109,6 +34136,15 @@ input[type="submit"]:hover {
 .pxl-tabs2 .pxl-tabs--title {
   padding-bottom: 16px;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+@media screen and (max-width: 767px) {
+  .pxl-tabs2 .pxl-tabs--title {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 .pxl-tabs2 .pxl-tabs--title:after {
   content: "";
@@ -34118,6 +34154,11 @@ input[type="submit"]:hover {
   width: 100%;
   height: 1px;
   background: linear-gradient(90deg, rgba(102, 111, 120, 0.5) 0%, rgba(248, 248, 242, 0.5) 100%);
+}
+@media screen and (max-width: 767px) {
+  .pxl-tabs2 .pxl-tabs--title:after {
+    display: none;
+  }
 }
 .pxl-tabs2 .pxl-tabs--content {
   margin-top: 28px;
@@ -34174,15 +34215,6 @@ input[type="submit"]:hover {
   width: 100%;
   right: auto;
   left: 0;
-}
-.pxl-tabs2 .pxl-item--title + .pxl-item--title, .pxl-tabs2 .pxl-text-carousel1 -title.pxl-item + .pxl-item--title, .pxl-tabs2 .pxl-text-carousel1 -title.pxl-item + .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-tabs2 .pxl-text-carousel1 -title.pxl-item + -title.pxl-item, .pxl-text-carousel1 .pxl-tabs2 -title.pxl-item + .pxl-item--title, .pxl-tabs2 .pxl-item--title + .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-tabs2 .pxl-item--title + -title.pxl-item {
-  margin-left: 30px;
-}
-@media screen and (max-width: 575px) {
-  .pxl-tabs2 .pxl-item--title + .pxl-item--title, .pxl-tabs2 .pxl-text-carousel1 -title.pxl-item + .pxl-item--title, .pxl-tabs2 .pxl-text-carousel1 -title.pxl-item + .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-tabs2 .pxl-text-carousel1 -title.pxl-item + -title.pxl-item, .pxl-text-carousel1 .pxl-tabs2 -title.pxl-item + .pxl-item--title, .pxl-tabs2 .pxl-item--title + .pxl-text-carousel1 -title.pxl-item, .pxl-text-carousel1 .pxl-tabs2 .pxl-item--title + -title.pxl-item {
-    margin-left: 0;
-    margin-top: 10px;
-  }
 }
 .pxl-tabs3 .pxl-tabs--inner {
   display: flex;

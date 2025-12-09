@@ -5116,6 +5116,9 @@ body.rtl {
             font-size: 20px;
             font-weight: 600;
             line-height: 1.5;
+            @media #{$max-sm} {
+                text-align: center;
+            }
         }
         &--position {
             font-size: 16px;

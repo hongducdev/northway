@@ -193,25 +193,47 @@
 
 @media #{$min-xl} {
     body:not(.elementor-editor-active) {
-        .pxl-row-scroll-fixed {
+        .e-con:has(.pxl-row-scroll-fixed),
+        .e-con:has(.pxl-column-sticky) {
+            overflow: visible !important;
+
             > .e-con-inner {
-                align-items: flex-start;
-                justify-content: space-between;
+                overflow: visible !important;
             }
         }
+
+        .pxl-row-scroll-fixed {
+            overflow: visible !important;
+
+            > .e-con-inner,
+            .e-con-inner {
+                align-items: flex-start;
+                justify-content: space-between;
+                overflow: visible !important;
+            }
+        }
+
         .pxl-column-sticky {
             position: sticky;
+            top: 120px; 
+            align-self: flex-start;
+
+            &.e-con {
+                overflow: visible !important;
+            }
         }
     }
 }
 
 @media #{$max-lg} {
     body:not(.elementor-editor-active) .pxl-column-sticky {
+        position: relative !important;
         top: 0 !important;
     }
 }
 
 body.elementor-editor-active .pxl-column-sticky {
+    position: relative !important;
     top: 0 !important;
 }
 
@@ -455,7 +477,7 @@ body.elementor-editor-active .pxl-column-sticky {
         flex-wrap: wrap;
         align-items: center;
         display: inline-flex;
-        height: 40px;
+        min-height: 40px;
         padding: 0px 25px;
         border-radius: 100px;
         border: 1px solid rgba($body_bg_color_hex, 0.7);
@@ -1992,18 +2014,18 @@ body:not(.elementor-editor-active) .pxl-section-parallax-overflow {
 @keyframes loader-rotate {
     0% {
         transform: rotate(90deg);
-        box-shadow: 0 10px 20px 0 $body_bg_color inset, 0 20px 30px 0 $primary_color inset,
-            0 60px 60px 0 #45349A inset;
+        box-shadow: 0 10px 20px 0 $body_bg_color inset,
+            0 20px 30px 0 $primary_color inset, 0 60px 60px 0 #45349a inset;
     }
     50% {
         transform: rotate(270deg);
-        box-shadow: 0 10px 20px 0 $body_bg_color inset, 0 20px 10px 0 $third_color inset,
-            0 40px 60px 0 #45349A inset;
+        box-shadow: 0 10px 20px 0 $body_bg_color inset,
+            0 20px 10px 0 $third_color inset, 0 40px 60px 0 #45349a inset;
     }
     100% {
         transform: rotate(450deg);
-        box-shadow: 0 10px 20px 0 $body_bg_color inset, 0 20px 30px 0 $primary_color inset,
-            0 60px 60px 0 #45349A inset;
+        box-shadow: 0 10px 20px 0 $body_bg_color inset,
+            0 20px 30px 0 $primary_color inset, 0 60px 60px 0 #45349a inset;
     }
 }
 

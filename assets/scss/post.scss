@@ -746,6 +746,7 @@
                 opacity: 0;
                 transform: scale(0.5);
                 @include transition(inherit);
+                z-index: -1;
             }
             &.next,
             &.prev {
@@ -754,6 +755,10 @@
                 border-color: $secondary_color;
                 i {
                     font-size: 22px;
+                }
+                &:before {
+                    opacity: 1;
+                    transform: scale(1);
                 }
             }
             &:hover,
