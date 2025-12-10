@@ -170,6 +170,7 @@
                 padding: 30px;
                 gap: 30px;
                 text-align: center;
+                width: 100%;
             }
             &:before {
                 content: "";
@@ -199,12 +200,19 @@
                 line-height: 1.43;
                 position: relative;
                 @include transition(all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1));
+                width: 100%;
+                @media #{$max-sm} {
+                    text-align: center;
+                }
                 &.active,
                 &:hover {
                     color: $secondary_color;
                     &:before {
                         opacity: 1;
                         transform: translate(-25px, -50%);
+                        @media #{$max-sm} {
+                            display: none;
+                        }
                     }
                 }
                 &:before {

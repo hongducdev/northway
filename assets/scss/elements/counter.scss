@@ -239,6 +239,10 @@
                 transform: translate(-50%, -50%);
                 z-index: 1;
             }
+            @media #{$max-xs} {
+                width: 300px;
+                height: 300px;
+            }
         }
         &--number {
             color: $body_bg_color;
@@ -251,6 +255,11 @@
             justify-content: center;
             margin-bottom: 25px;
             z-index: 3;
+            @media #{$max-xs} {
+                font-size: 60px;
+                line-height: 40px;
+                margin-bottom: 15px;
+            }
         }
         &--suffix {
             color: $body_bg_color;
@@ -259,6 +268,10 @@
             font-weight: 400;
             line-height: 1;
             z-index: 3;
+            @media #{$max-xs} {
+                font-size: 25px;
+                line-height: 1;
+            }
         }
         &--title {
             color: $body_bg_color;
@@ -268,6 +281,10 @@
             line-height: 1.875;
             max-width: 230px;
             z-index: 3;
+            @media #{$max-xs} {
+                font-size: 14px;
+                line-height: 1.5;
+            }
         }
     }
 }
