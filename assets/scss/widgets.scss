@@ -363,6 +363,9 @@
 .widget_product_tag_cloud {
     .widget-content {
         padding: 30px;
+        @media #{$max-xs} {
+            padding: 15px;
+        }
     }
     .tagcloud {
         display: flex;
@@ -491,6 +494,9 @@
 .widget_mc4wp_form_widget {
     .widget-content {
         padding: 30px;
+        @media #{$max-xs} {
+            padding: 15px;
+        }
     }
     .mc4wp-form-fields {
         .mc4wp-noti {

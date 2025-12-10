@@ -14455,6 +14455,11 @@ body.rtl .pxl-post-list1 li:before {
 .widget_tag_cloud .widget-content, .widget_product_tag_cloud .widget-content {
   padding: 30px;
 }
+@media screen and (max-width: 575px) {
+  .widget_tag_cloud .widget-content, .widget_product_tag_cloud .widget-content {
+    padding: 15px;
+  }
+}
 .widget_tag_cloud .tagcloud, .widget_product_tag_cloud .tagcloud {
   display: flex;
   flex-wrap: wrap;
@@ -14588,6 +14593,11 @@ body.rtl .pxl-post-list1 li:before {
 }
 .widget_mc4wp_form_widget .widget-content {
   padding: 30px;
+}
+@media screen and (max-width: 575px) {
+  .widget_mc4wp_form_widget .widget-content {
+    padding: 15px;
+  }
 }
 .widget_mc4wp_form_widget .mc4wp-form-fields .mc4wp-noti {
   color: rgba(4, 20, 39, 0.7);
