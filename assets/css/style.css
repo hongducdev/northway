@@ -11722,10 +11722,10 @@ body.rtl .pxl-post-list1 li:before {
     font-family: "DM Sans", sans-serif;
     position: relative;
   }
-  .pxl-menu-primary li > a:hover, .pxl-menu-primary li.current_page_item > a, .pxl-menu-primary li.current-menu-item > a, .pxl-menu-primary li.current_page_ancestor > a, .pxl-menu-primary li.current-menu-ancestor > a {
+  .pxl-menu-primary li > a:hover, .pxl-menu-primary li > a.pxl-onepage-active, .pxl-menu-primary li.current_page_item > a, .pxl-menu-primary li.current-menu-item > a, .pxl-menu-primary li.current_page_ancestor > a, .pxl-menu-primary li.current-menu-ancestor > a {
     color: var(--primary-color);
   }
-  .pxl-menu-primary li > a:hover svg path, .pxl-menu-primary li.current_page_item > a svg path, .pxl-menu-primary li.current-menu-item > a svg path, .pxl-menu-primary li.current_page_ancestor > a svg path, .pxl-menu-primary li.current-menu-ancestor > a svg path {
+  .pxl-menu-primary li > a:hover svg path, .pxl-menu-primary li > a.pxl-onepage-active svg path, .pxl-menu-primary li.current_page_item > a svg path, .pxl-menu-primary li.current-menu-item > a svg path, .pxl-menu-primary li.current_page_ancestor > a svg path, .pxl-menu-primary li.current-menu-ancestor > a svg path {
     fill: var(--primary-color);
   }
   .pxl-menu-primary > li {
@@ -30682,7 +30682,7 @@ input[type="submit"]:hover {
     -o-transition: all 300ms ease-out 0ms;
     transition: all 300ms ease-out 0ms;
   }
-  .pxl-nav-menu.sub-style-default .sub-menu > li:hover > a .pxl-menu-item-text, .pxl-nav-menu.sub-style-default .sub-menu > li.current_page_item > a .pxl-menu-item-text, .pxl-nav-menu.sub-style-default .sub-menu > li.current-menu-item > a .pxl-menu-item-text, .pxl-nav-menu.sub-style-default .sub-menu > li.current_page_ancestor > a .pxl-menu-item-text, .pxl-nav-menu.sub-style-default .sub-menu > li.current-menu-ancestor > a .pxl-menu-item-text {
+  .pxl-nav-menu.sub-style-default .sub-menu > li:hover > a .pxl-menu-item-text, .pxl-nav-menu.sub-style-default .sub-menu > li > a.pxl-onepage-active .pxl-menu-item-text, .pxl-nav-menu.sub-style-default .sub-menu > li.current_page_item > a .pxl-menu-item-text, .pxl-nav-menu.sub-style-default .sub-menu > li.current-menu-item > a .pxl-menu-item-text, .pxl-nav-menu.sub-style-default .sub-menu > li.current_page_ancestor > a .pxl-menu-item-text, .pxl-nav-menu.sub-style-default .sub-menu > li.current-menu-ancestor > a .pxl-menu-item-text {
     color: var(--primary-color);
   }
 }

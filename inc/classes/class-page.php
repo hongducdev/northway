@@ -18,7 +18,7 @@ if (!class_exists('Northway_Page')) {
                             $chars = str_split($site_title);
                             $index = 1;
                             foreach ($chars as $char) { ?>
-                                <span class="loader-letter" style="animation-delay: <?php echo ($index - 1) * 0.1; ?>s;"><?php echo esc_html($char); ?></span>
+                                <span class="loader-letter" style="animation-delay: <?php echo esc_attr(($index - 1) * 0.1); ?>s;"><?php echo esc_html($char); ?></span>
                             <?php 
                                 $index++;
                             } ?>

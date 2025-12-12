@@ -130,7 +130,7 @@ if (count($post_types) > 1) {
             ?>
             <li class="pxl-category-item pxl-category-all">
                 <a href="<?php echo esc_url($all_categories_link); ?>">
-                    <?php echo esc_html($settings['all_categories_text']); ?><?php echo $all_count_display; ?>
+                    <?php echo esc_html($settings['all_categories_text']); ?><?php echo wp_kses_post($all_count_display); ?>
                 </a>
             </li>
             <?php foreach ($categories as $category): 
@@ -141,7 +141,7 @@ if (count($post_types) > 1) {
             ?>
                 <li class="pxl-category-item pxl-category-<?php echo esc_attr($category['type']); ?>">
                     <a href="<?php echo esc_url($category['link']); ?>">
-                        <?php echo esc_html($category['name']); ?><?php echo $count_display; ?>
+                        <?php echo esc_html($category['name']); ?><?php echo wp_kses_post($count_display); ?>
                     </a>
                 </li>
             <?php endforeach; ?>

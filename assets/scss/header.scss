@@ -200,6 +200,7 @@
                 position: relative;
             }
             > a:hover,
+            > a.pxl-onepage-active,
             &.current_page_item > a,
             &.current-menu-item > a,
             &.current_page_ancestor > a,
