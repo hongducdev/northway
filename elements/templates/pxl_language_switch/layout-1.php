@@ -6,7 +6,7 @@
                 <?php if (!empty($first_language['flag']['url'])): ?>
                     <img src="<?php echo esc_url($first_language['flag']['url']); ?>" alt="flag">
                 <?php endif ?>
-                <h6><?php echo esc_attr($first_language['name']); ?></h6>
+                <h6><?php echo esc_html($first_language['name']); ?></h6>
             </div>
             <div class="pxl-language-switch-toggle">
                 <i class="fas fa-chevron-down"></i>

@@ -1132,6 +1132,17 @@
     }
 }
 
+#pxl-header-inner {
+    .pxl-mega-menu {
+        &:has(#pxl-mega-menu-border) {
+            border-radius: 20px;
+        }
+    }
+    #pxl-mega-menu-border {
+        border-radius: 20px;
+    }
+}
+
 // Slider Revolution
 
 // Contact Form 7

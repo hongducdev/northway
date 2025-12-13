@@ -132,7 +132,15 @@ if ($post_header_mobile instanceof WP_Post) {
                                             if (isset($p_menu) && !empty($p_menu)) {
                                                 $attr_menu['menu'] = $p_menu;
                                             }
-                                            wp_nav_menu($attr_menu);
+                                            wp_nav_menu(array(
+                                                'theme_location' => 'primary-mobile',
+                                                'container'  => '',
+                                                'menu_id'    => '',
+                                                'menu_class' => 'pxl-menu-primary clearfix',
+                                                'link_before'     => '<span>',
+                                                'link_after'      => '</span>',
+                                                'walker'         => class_exists('PXL_Mega_Menu_Walker') ? new PXL_Mega_Menu_Walker : '',
+                                            ));
                                         } elseif (has_nav_menu('primary')) {
                                             $attr_menu = array(
                                                 'theme_location' => 'primary',

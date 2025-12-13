@@ -160,19 +160,6 @@
             }
         });
 
-        $("li.pxl-megamenu").hover(
-            function () {
-                $(this)
-                    .parents(".elementor-element")
-                    .addClass("section-mega-active");
-            },
-            function () {
-                $(this)
-                    .parents(".elementor-element")
-                    .removeClass("section-mega-active");
-            }
-        );
-
         $("#pxl-nav-mobile, .pxl-anchor-mobile-menu").on("click", function () {
             $(this).toggleClass("active");
             $("body").toggleClass("body-overflow");
@@ -239,18 +226,18 @@
             );
         }
         // Active Mega Menu Hover
-        $("li.pxl-megamenu").hover(
-            function () {
-                $(this)
-                    .parents(".elementor-element")
-                    .addClass("section-mega-active");
-            },
-            function () {
-                $(this)
-                    .parents(".elementor-element")
-                    .removeClass("section-mega-active");
-            }
-        );
+        // $("li.pxl-megamenu").hover(
+        //     function () {
+        //         $(this)
+        //             .parents(".elementor-element")
+        //             .addClass("section-mega-active");
+        //     },
+        //     function () {
+        //         $(this)
+        //             .parents(".elementor-element")
+        //             .removeClass("section-mega-active");
+        //     }
+        // );
         /* End Mega Menu Max Height */
         /* Search Popup */
         var $search_wrap_init = $("#pxl-search-popup");

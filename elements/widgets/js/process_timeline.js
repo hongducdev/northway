@@ -23,12 +23,40 @@
             var $progress = $this.find(".pxl-timeline-progress");
 
             var totalItems = $items.length;
-            var maxVisible =
-                parseInt(
-                    $this.find(".pxl-timeline-items").data("max-visible")
-                ) || 5;
+            var $itemsContainer = $this.find(".pxl-timeline-items");
+
+            // Get responsive values from data attributes
+            var responsiveConfig = {
+                desktop: parseInt($itemsContainer.data("max-visible")) || 5,
+                lg: parseInt($itemsContainer.data("max-visible-lg")) || 4,
+                md: parseInt($itemsContainer.data("max-visible-md")) || 3,
+                sm: parseInt($itemsContainer.data("max-visible-sm")) || 2,
+            };
+
             var currentStartIndex = 0;
             var activeIndex = 0;
+
+            // Get responsive maxVisible based on screen width
+            function getResponsiveMaxVisible() {
+                var windowWidth = $(window).width();
+                var maxVal;
+
+                if (windowWidth <= 575) {
+                    maxVal = responsiveConfig.sm; // Mobile
+                } else if (windowWidth <= 767) {
+                    maxVal = responsiveConfig.md; // Small tablet
+                } else if (windowWidth <= 991) {
+                    maxVal = responsiveConfig.md; // Tablet
+                } else if (windowWidth <= 1199) {
+                    maxVal = responsiveConfig.lg; // Small desktop
+                } else {
+                    maxVal = responsiveConfig.desktop; // Desktop
+                }
+
+                return Math.min(maxVal, totalItems);
+            }
+
+            var maxVisible = getResponsiveMaxVisible();
 
             function init() {
                 var $activeItem = $items.filter(".active");
@@ -103,24 +131,35 @@
             function updateActiveState(index) {
                 activeIndex = index;
 
+                // Recalculate maxVisible for current screen size
+                maxVisible = getResponsiveMaxVisible();
+
                 $items.removeClass("active");
                 $items.eq(index).addClass("active");
 
                 updateProgress(index);
 
                 if (totalItems > maxVisible) {
-                    if (index < 2) {
+                    // Calculate center position for active item
+                    var halfVisible = Math.floor(maxVisible / 2);
+
+                    if (index <= halfVisible) {
                         currentStartIndex = 0;
-                    } else if (index + maxVisible > totalItems) {
-                        currentStartIndex = totalItems - maxVisible;
+                    } else if (index >= totalItems - halfVisible - 1) {
+                        currentStartIndex = Math.max(
+                            0,
+                            totalItems - maxVisible
+                        );
                     } else {
-                        currentStartIndex = index;
+                        currentStartIndex = Math.max(0, index - halfVisible);
                     }
                     updateTimelineVisibility();
                     setTimeout(function () {
                         updateProgress(index);
                     }, 100);
                 } else {
+                    currentStartIndex = 0;
+                    updateTimelineVisibility();
                     setTimeout(function () {
                         updateProgress(index);
                     }, 100);
@@ -301,14 +340,72 @@
                 }
             });
 
+            // Touch/Swipe support for mobile
+            var touchStartX = 0;
+            var touchEndX = 0;
+            var minSwipeDistance = 50;
+
+            $this.on("touchstart", function (e) {
+                touchStartX = e.originalEvent.touches[0].clientX;
+            });
+
+            $this.on("touchend", function (e) {
+                touchEndX = e.originalEvent.changedTouches[0].clientX;
+                handleSwipe();
+            });
+
+            function handleSwipe() {
+                var swipeDistance = touchEndX - touchStartX;
+
+                if (Math.abs(swipeDistance) < minSwipeDistance) {
+                    return; // Not a valid swipe
+                }
+
+                if (swipeDistance > 0) {
+                    // Swipe right - go to previous
+                    if (activeIndex > 0) {
+                        updateActiveState(activeIndex - 1);
+                        updateNavigationButtons();
+                    }
+                } else {
+                    // Swipe left - go to next
+                    if (activeIndex < totalItems - 1) {
+                        updateActiveState(activeIndex + 1);
+                        updateNavigationButtons();
+                    }
+                }
+            }
+
             init();
 
+            // Debounce function for resize
+            var resizeTimeout;
             $(window).on("resize", function () {
-                updateTimelineVisibility();
-                updateNavigationButtons();
-                setTimeout(function () {
-                    updateProgress(activeIndex);
-                }, 100);
+                clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(function () {
+                    // Recalculate maxVisible on resize
+                    var newMaxVisible = getResponsiveMaxVisible();
+                    if (newMaxVisible !== maxVisible) {
+                        maxVisible = newMaxVisible;
+                        // Recalculate start index based on active item
+                        if (totalItems > maxVisible) {
+                            if (activeIndex < 2) {
+                                currentStartIndex = 0;
+                            } else if (activeIndex + maxVisible > totalItems) {
+                                currentStartIndex = totalItems - maxVisible;
+                            } else {
+                                currentStartIndex = activeIndex;
+                            }
+                        } else {
+                            currentStartIndex = 0;
+                        }
+                    }
+                    updateTimelineVisibility();
+                    updateNavigationButtons();
+                    setTimeout(function () {
+                        updateProgress(activeIndex);
+                    }, 100);
+                }, 150);
             });
         });
     }

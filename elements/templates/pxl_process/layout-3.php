@@ -83,7 +83,7 @@
                     <div class="pxl-timeline-progress"></div>
                 </div>
                 
-                <div class="pxl-timeline-items" data-max-visible="5">
+                <div class="pxl-timeline-items" data-max-visible="5" data-max-visible-lg="4" data-max-visible-md="3" data-max-visible-sm="2">
                     <?php foreach ($settings['process_2'] as $key => $value): 
                         $step = isset($value['step_2']) ? $value['step_2'] : '';
                         $title = isset($value['title_2']) ? $value['title_2'] : '';

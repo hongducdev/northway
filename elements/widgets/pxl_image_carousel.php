@@ -12,7 +12,6 @@ pxl_add_custom_widget(
             'swiper',
             'pxl-swiper',
             'pxl-effect-gl',
-            'pxl-image-comparison',
             'gsap',
         ),
         'params' => array(

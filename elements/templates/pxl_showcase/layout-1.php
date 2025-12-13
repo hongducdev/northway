@@ -50,7 +50,7 @@ if ( ! empty( $settings['btn_link2']['url'] ) ) {
                     </div>
                     <div class="pxl-item--overlay"></div>
                     <?php if($settings['coming_soon'] == 'yes') : ?>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/coming-soon.png" alt="coming soon" class="pxl-item--coming-soon">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/coming-soon.png'); ?>" alt="coming soon" class="pxl-item--coming-soon">
                     <?php endif; ?>
                 </div>
             </div>
