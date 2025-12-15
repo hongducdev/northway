@@ -668,6 +668,10 @@
     width: calc((100% - 1600px) / 2);
 }
 
+.pxl-divider-1600-container {
+    width: calc((1600px - 1290px) / 2);
+}
+
 .pxl-gradient-page-title-1 {
     position: relative;
     &:before {
@@ -1140,6 +1144,13 @@
     }
     #pxl-mega-menu-border {
         border-radius: 20px;
+    }
+}
+
+.pxl-text-box-custom {
+    @include transition(all 0.3s linear 0ms);
+    &:hover {
+        z-index: 99 !important;
     }
 }
 

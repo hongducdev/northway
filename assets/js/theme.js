@@ -7,6 +7,7 @@
     var pxl_scroll_status = "";
     var pxl_last_scroll_top = 0;
     var pxl_post_slip = false;
+    var pxl_testimonial_slip = false;
 
     $(window).on("load", function () {
         if (!window.pxlLoaderWaiting) {
@@ -55,6 +56,7 @@
         // northway_check_scroll();
         northway_ptitle_scroll_opacity();
         northway_post_slip();
+        northway_testimonial_slip();
         if (pxl_scroll_top < 100) {
             $(".elementor > .pin-spacer").removeClass("scroll-top-active");
         }
@@ -78,6 +80,7 @@
         northway_type_file_upload();
         northway_zoom_point();
         northway_post_slip();
+        northway_testimonial_slip();
         if (pxl_window_width > 767) {
             northway_button_parallax();
         }
@@ -1713,6 +1716,112 @@
                 }, 2300);
 
                 pxl_post_slip = true;
+            }
+        }
+    }
+
+    function northway_testimonial_slip() {
+        var windowHeight = window.innerHeight;
+        var windowWidth = window.innerWidth;
+        var scrollTop = $(window).scrollTop();
+
+        jQuery(".pxl-testimonial--track").each(function () {
+            var topLimit = parseFloat(
+                jQuery(".pxl-testimonial--block").first().css("top")
+            );
+            var bottomLimit =
+                parseFloat(jQuery(".pxl-testimonial--block").first().outerHeight()) +
+                parseFloat(jQuery(".pxl-testimonial-block_2").css("margin-top"));
+
+            jQuery(".pxl-testimonial--block")
+                .removeClass("end")
+                .each(function (is) {
+                    var currentTop =
+                        jQuery(this).offset().top - scrollTop - topLimit;
+
+                    var c = parseFloat(currentTop / bottomLimit);
+                    if (c < 0) c = 0;
+                    else if (c > 1) c = 1;
+
+                    if (c == 0 || is == 0) {
+                        jQuery(this).addClass("active");
+                    } else jQuery(this).removeClass("active");
+
+                    if (c < 0.5 || is == 0) jQuery(this).addClass("preactive");
+                    else jQuery(this).removeClass("preactive");
+                });
+
+            jQuery(".pxl-testimonial--block.preactive")
+                .slice(0, -1)
+                .removeClass("active")
+                .addClass("end");
+        });
+        if ($(".pxl-testimonial-slip").length) {
+            var offsetTop =
+                $(".pxl-testimonial-slip").offset().top +
+                (windowWidth >= 1200 ? 500 : 100) -
+                windowHeight;
+            if (scrollTop >= offsetTop && !pxl_testimonial_slip) {
+                $(".pxl-testimonial-block_1").addClass("slip-active");
+                setTimeout(function () {
+                    $(".pxl-testimonial-block_2").addClass("slip-active");
+                }, 500);
+                setTimeout(function () {
+                    $(".pxl-testimonial-block_3").addClass("slip-active");
+                }, 600);
+                setTimeout(function () {
+                    $(".pxl-testimonial-block_4").addClass("slip-active");
+                }, 700);
+                setTimeout(function () {
+                    $(".pxl-testimonial-block_5").addClass("slip-active");
+                }, 800);
+                setTimeout(function () {
+                    $(".pxl-testimonial-block_6").addClass("slip-active");
+                }, 900);
+                setTimeout(function () {
+                    $(".pxl-testimonial-block_7").addClass("slip-active");
+                }, 1000);
+                setTimeout(function () {
+                    $(".pxl-testimonial-block_8").addClass("slip-active");
+                }, 1100);
+                setTimeout(function () {
+                    $(".pxl-testimonial-block_9").addClass("slip-active");
+                }, 1200);
+                setTimeout(function () {
+                    $(".pxl-testimonial-block_10").addClass("slip-active");
+                }, 1300);
+                setTimeout(function () {
+                    $(".pxl-testimonial-block_11").addClass("slip-active");
+                }, 1400);
+                setTimeout(function () {
+                    $(".pxl-testimonial-block_12").addClass("slip-active");
+                }, 1500);
+                setTimeout(function () {
+                    $(".pxl-testimonial-block_13").addClass("slip-active");
+                }, 1600);
+                setTimeout(function () {
+                    $(".pxl-testimonial-block_14").addClass("slip-active");
+                }, 1700);
+                setTimeout(function () {
+                    $(".pxl-testimonial-block_15").addClass("slip-active");
+                }, 1800);
+                setTimeout(function () {
+                    $(".pxl-testimonial-block_16").addClass("slip-active");
+                }, 1900);
+                setTimeout(function () {
+                    $(".pxl-testimonial-block_17").addClass("slip-active");
+                }, 2000);
+                setTimeout(function () {
+                    $(".pxl-testimonial-block_18").addClass("slip-active");
+                }, 2100);
+                setTimeout(function () {
+                    $(".pxl-testimonial-block_19").addClass("slip-active");
+                }, 2200);
+                setTimeout(function () {
+                    $(".pxl-testimonial-block_20").addClass("slip-active");
+                }, 2300);
+
+                pxl_testimonial_slip = true;
             }
         }
     }

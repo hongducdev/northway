@@ -34,24 +34,149 @@ testimonials grid
     display: none !important;
 }
 // testimonial grid
+.pxl-testimonial-grid1,
+.pxl-testimonial-slip1 {
+    .pxl-item {
+        &--inner {
+            border: 1px solid #afb4b5;
+            background: $body_bg_color;
+            padding: 49px 50px;
+            position: relative;
+            @media #{$max-sm} {
+                padding: 20px;
+            }
+            &:before {
+                content: "\F112";
+                font-family: "Flaticon";
+                color: #354150;
+                font-size: 15px;
+                position: absolute;
+                top: -11px;
+                left: -10px;
+            }
+            &:after {
+                content: "\F112";
+                font-family: "Flaticon";
+                color: #354150;
+                font-size: 15px;
+                position: absolute;
+                top: -11px;
+                right: -10px;
+            }
+        }
+        &--description {
+            color: $secondary-color;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 1.65;
+            padding-right: 46px;
+            word-wrap: break-word;
+            white-space: pre-wrap;
+            word-break: break-word;
+            @media #{$max-sm} {
+                padding-right: 0;
+            }
+            @media #{$max-xs} {
+                font-size: 16px;
+            }
+        }
+        &--divider {
+            margin-top: 39px;
+            margin-bottom: 13px;
+            color: rgba($four_color_hex, 0.3);
+            @media #{$max-sm} {
+                width: 100%;
+            }
+        }
+        &--footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @media #{$max-sm} {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+        &--info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            @media #{$max-sm} {
+                width: 100%;
+                flex-direction: column;
+            }
+        }
+        &--avatar {
+            width: 70px;
+            height: 70px;
+            @include border-radius(10px);
+            img {
+                width: 100%;
+                height: 100%;
+                @include border-radius(10px);
+                object-fit: cover;
+            }
+        }
+        &--title {
+            margin-bottom: 0;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.5;
+            @media #{$max-sm} {
+                text-align: center;
+            }
+        }
+        &--position {
+            font-size: 16px;
+            font-style: italic;
+            line-height: 1.625;
+        }
+        &--star {
+            display: inline-flex;
+            align-items: center;
+            svg {
+                height: 12px;
+                color: #e9bf4a;
+            }
+        }
+    }
+}
 
 // testimonial carousel
 
 // testimonial slip
-.pxl-sticky {
-    position: sticky;
-    height: 100vh;
-    top: 0;
-    overflow: hidden;
-    @media #{$max-sm} {
-        position: static;
-        height: auto;
-    }
-}
-.pxl-testimonial-slip-wrapper {
-    min-height: 250vh;
-    @media #{$max-sm} {
-        min-height: auto;
+.pxl-testimonial-slip1 {
+    .pxl-testimonial-slip-wrap {
+        position: relative;
+        .pxl-testimonial--track {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            top: 0;
+        }
+        .pxl-testimonial--block {
+            position: sticky;
+            transition: 1.2s ease-out;
+            top: 130px;
+            &.slip-active {
+                opacity: 1;
+            }
+            &.active {
+                .pxl-testimonial--image {
+                    &:before {
+                        opacity: 1;
+                    }
+                }
+            }
+            &.end {
+                .pxl-testimonial--image {
+                    &:before {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
     }
 }
 

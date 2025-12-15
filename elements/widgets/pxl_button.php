@@ -461,10 +461,20 @@ pxl_add_custom_widget(
                                 '{{WRAPPER}} .pxl-button .btn:hover' => 'background-color: {{VALUE}};',
                             ],
                             'condition' => [
-                                'btn_style!' => [''],
+                                'btn_style!' => ['btn-no-icon'],
                             ],
                         ),
-
+                        array(
+                            'name' => 'btn_bg_color_hover_no_icon',
+                            'label' => esc_html__('Background Color', 'northway'),
+                            'type' => \Elementor\Controls_Manager::COLOR,
+                            'selectors' => [
+                                '{{WRAPPER}} .pxl-button .btn:hover span' => 'background-color: {{VALUE}};',
+                            ],
+                            'condition' => [
+                                'btn_style' => ['btn-no-icon'],
+                            ],
+                        ),
                         array(
                             'name'         => 'btn_box_shadow_hover',
                             'label' => esc_html__('Box Shadow', 'northway'),
@@ -479,6 +489,9 @@ pxl_add_custom_widget(
                     'name' => 'section_style_icon',
                     'label' => esc_html__('Icon', 'northway'),
                     'tab' => \Elementor\Controls_Manager::TAB_STYLE,
+                    'condition' => [
+                        'btn_style!' => ['btn-no-icon'],
+                    ],
                     'controls' => array(
                         array(
                             'name' => 'icon_color',

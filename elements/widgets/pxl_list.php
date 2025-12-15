@@ -255,6 +255,7 @@ pxl_add_custom_widget(
                             ],
                             'selectors' => [
                                 '{{WRAPPER}} .pxl-list .pxl-item--icon' => 'width: {{SIZE}}{{UNIT}};',
+                                '{{WRAPPER}} .pxl-list .pxl-item--icon' => 'flex: 0 0 {{SIZE}}{{UNIT}} !important;',
                             ],
                             'condition' => [
                                 'style' => ['default'],

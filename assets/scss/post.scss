@@ -734,20 +734,6 @@
                 position: relative;
                 z-index: 3;
             }
-            &:before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                @include border-radius(52px);
-                background-color: $secondary_color;
-                opacity: 0;
-                transform: scale(0.5);
-                @include transition(inherit);
-                z-index: -1;
-            }
             &.next,
             &.prev {
                 background-color: $secondary_color;
@@ -756,20 +742,12 @@
                 i {
                     font-size: 22px;
                 }
-                &:before {
-                    opacity: 1;
-                    transform: scale(1);
-                }
             }
             &:hover,
             &.current {
-                background-color: transparent;
+                background-color: $secondary_color;
                 color: $body_bg_color;
                 border-color: $secondary_color;
-                &:before {
-                    opacity: 1;
-                    transform: scale(1);
-                }
             }
         }
     }
