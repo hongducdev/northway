@@ -28,6 +28,26 @@ pxl_add_custom_widget(
                                 'style-2' => 'Style 2',
                             ],
                             'default' => 'style-1',
+                        ),
+                        array(
+                            'name' => 'animation_speed',
+                            'label' => esc_html__('Animation Speed (seconds)', 'northway'),
+                            'type' => \Elementor\Controls_Manager::SLIDER,
+                            'size_units' => ['s'],
+                            'range' => [
+                                's' => [
+                                    'min' => 0.5,
+                                    'max' => 10,
+                                    'step' => 0.1,
+                                ],
+                            ],
+                            'default' => [
+                                'unit' => 's',
+                                'size' => 3,
+                            ],
+                            'selectors' => [
+                                '{{WRAPPER}} .pxl-bolide-item' => '--animation-speed: {{SIZE}}s;',
+                            ],
                         )
                     )
                 ),

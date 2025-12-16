@@ -1576,6 +1576,7 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
+            text-align: center;
             background-color: $body_bg_color;
             height: 76px;
             max-width: 300px;
@@ -1583,6 +1584,11 @@
             width: 100%;
             @include border-radius(10px);
             border: 1px solid rgba($four_color_hex, 0.5);
+            @media #{$max-lg3} {
+                max-width: 250px;
+                min-width: 250px;
+                height: 66px;
+            }
             @media #{$max-md2} {
                 max-width: auto;
                 min-width: auto;
@@ -1597,7 +1603,7 @@
                 p {
                     margin-bottom: 0;
                 }
-                @media #{$max-md2} {
+                @media #{$max-lg3} {
                     font-size: 16px;
                 }
             }
@@ -5633,6 +5639,7 @@ body.rtl {
 
 .pxl-bolide-item {
     --color-bolide: #bbb2ff;
+    --animation-speed: 3s;
     position: relative;
     height: 100%;
     min-height: 400px;
@@ -5651,12 +5658,14 @@ body.rtl {
             rgba(255, 255, 255, 0) 0%,
             var(--color-bolide) 100%
         );
-        animation: pxl-bolide 3s linear infinite;
+        animation: pxl-bolide var(--animation-speed) linear infinite;
     }
     @for $i from 1 through 10 {
         &:nth-child(#{$i}) {
             &:before {
-                animation-duration: #{2 + ($i * 0.1)}s;
+                animation-duration: calc(
+                    var(--animation-speed) * #{0.67 + ($i * 0.033)}
+                );
                 animation-delay: #{($i * 0.2) + random(10) * 0.1}s;
             }
         }

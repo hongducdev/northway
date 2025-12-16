@@ -175,7 +175,6 @@
             position: absolute;
             max-width: calc(1600px + 86px);
             width: calc(1600px + 86px);
-            z-index: 5;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -198,7 +197,7 @@
             @media #{$max-lg3} {
                 padding: 0 15px;
             }
-            @media #{$max-xsx} {
+            @media #{$max-lg} {
                 display: none;
             }
             .pxl-swiper-arrow {
@@ -227,11 +226,13 @@
             );
         }
     }
+    .pxl-carousel-inner {
+        z-index: 5;
+    }
     .pxl-swiper-arrow-wrap {
         position: absolute;
         max-width: 1290px;
         width: 100%;
-        z-index: 5;
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -252,6 +253,8 @@
             background-color: rgba($primary_color_hex, 0.3);
             color: $body_bg_color;
             border: none;
+            z-index: 20;
+            position: relative;
             &:hover {
                 background-color: rgba($primary_color_hex, 0.8);
                 color: $body_bg_color;

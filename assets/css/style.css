@@ -6629,6 +6629,7 @@ body.rtl .pxl-box-hover1 .pxl-item--inner:hover:before {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   background-color: var(--body_bg-color);
   height: 76px;
   max-width: 300px;
@@ -6641,6 +6642,13 @@ body.rtl .pxl-box-hover1 .pxl-item--inner:hover:before {
   -o-border-radius: 10px;
   border-radius: 10px;
   border: 1px solid rgba(102, 111, 120, 0.5);
+}
+@media screen and (max-width: 1280px) {
+  .pxl-list1.style-5 .pxl-item {
+    max-width: 250px;
+    min-width: 250px;
+    height: 66px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .pxl-list1.style-5 .pxl-item {
@@ -6659,7 +6667,7 @@ body.rtl .pxl-box-hover1 .pxl-item--inner:hover:before {
 .pxl-list1.style-5 .pxl-item--content p {
   margin-bottom: 0;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
   .pxl-list1.style-5 .pxl-item--content {
     font-size: 16px;
   }
@@ -11053,6 +11061,7 @@ body.rtl .pxl-post-list1 li:before {
 }
 .pxl-bolide-item {
   --color-bolide: #bbb2ff;
+  --animation-speed: 3s;
   position: relative;
   height: 100%;
   min-height: 400px;
@@ -11068,46 +11077,46 @@ body.rtl .pxl-post-list1 li:before {
   height: 80px;
   border-radius: 1px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, var(--color-bolide) 100%);
-  animation: pxl-bolide 3s linear infinite;
+  animation: pxl-bolide var(--animation-speed) linear infinite;
 }
 .pxl-bolide-item:nth-child(1):before {
-  animation-duration: 2.1s;
+  animation-duration: calc(var(--animation-speed) * 0.703);
   animation-delay: 0.2random(10) * 0.1s;
 }
 .pxl-bolide-item:nth-child(2):before {
-  animation-duration: 2.2s;
+  animation-duration: calc(var(--animation-speed) * 0.736);
   animation-delay: 0.4random(10) * 0.1s;
 }
 .pxl-bolide-item:nth-child(3):before {
-  animation-duration: 2.3s;
+  animation-duration: calc(var(--animation-speed) * 0.769);
   animation-delay: 0.6random(10) * 0.1s;
 }
 .pxl-bolide-item:nth-child(4):before {
-  animation-duration: 2.4s;
+  animation-duration: calc(var(--animation-speed) * 0.802);
   animation-delay: 0.8random(10) * 0.1s;
 }
 .pxl-bolide-item:nth-child(5):before {
-  animation-duration: 2.5s;
+  animation-duration: calc(var(--animation-speed) * 0.835);
   animation-delay: 1random(10) * 0.1s;
 }
 .pxl-bolide-item:nth-child(6):before {
-  animation-duration: 2.6s;
+  animation-duration: calc(var(--animation-speed) * 0.868);
   animation-delay: 1.2random(10) * 0.1s;
 }
 .pxl-bolide-item:nth-child(7):before {
-  animation-duration: 2.7s;
+  animation-duration: calc(var(--animation-speed) * 0.901);
   animation-delay: 1.4random(10) * 0.1s;
 }
 .pxl-bolide-item:nth-child(8):before {
-  animation-duration: 2.8s;
+  animation-duration: calc(var(--animation-speed) * 0.934);
   animation-delay: 1.6random(10) * 0.1s;
 }
 .pxl-bolide-item:nth-child(9):before {
-  animation-duration: 2.9s;
+  animation-duration: calc(var(--animation-speed) * 0.967);
   animation-delay: 1.8random(10) * 0.1s;
 }
 .pxl-bolide-item:nth-child(10):before {
-  animation-duration: 3s;
+  animation-duration: calc(var(--animation-speed) * 1);
   animation-delay: 2random(10) * 0.1s;
 }
 @keyframes pxl-bolide {
@@ -28863,6 +28872,11 @@ body .woosw-popup-content-mid .added_to_cart {
     top: -210px;
   }
 }
+@media screen and (max-width: 1280px) {
+  .pxl-service-carousel1 .pxl-swiper-arrow-wrap {
+    position: relative;
+  }
+}
 @media screen and (max-width: 767px) {
   .pxl-service-carousel1 .pxl-swiper-arrow-wrap {
     position: unset;
@@ -35797,7 +35811,6 @@ table.tt_timetable {
   position: absolute;
   max-width: calc(1600px + 86px);
   width: calc(1600px + 86px);
-  z-index: 5;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -35825,7 +35838,7 @@ table.tt_timetable {
     padding: 0 15px;
   }
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 1200px) {
   .pxl-slider3.style-2 .pxl-swiper-arrow-wrap {
     display: none;
   }
@@ -35853,11 +35866,13 @@ table.tt_timetable {
   border-radius: 30px;
   background: linear-gradient(180deg, var(--gradient-color-from) 28.28%, var(--gradient-color-to) 135.76%);
 }
+.pxl-slider3 .pxl-carousel-inner {
+  z-index: 5;
+}
 .pxl-slider3 .pxl-swiper-arrow-wrap {
   position: absolute;
   max-width: 1290px;
   width: 100%;
-  z-index: 5;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -35883,6 +35898,8 @@ table.tt_timetable {
   background-color: rgba(149, 136, 248, 0.3);
   color: var(--body_bg-color);
   border: none;
+  z-index: 20;
+  position: relative;
 }
 .pxl-slider3 .pxl-swiper-arrow-wrap .pxl-swiper-arrow:hover {
   background-color: rgba(149, 136, 248, 0.8);

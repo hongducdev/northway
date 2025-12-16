@@ -3285,6 +3285,9 @@ posts
             gap: 10px;
             top: -210px;
         }
+        @media #{$max-lg3} {
+            position: relative;
+        }
         @media #{$max-sm} {
             position: unset;
             max-width: 100%;
