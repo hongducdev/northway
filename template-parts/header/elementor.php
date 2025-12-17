@@ -1,6 +1,6 @@
 <?php
 $logo_m = northway()->get_opt('logo_m', ['url' => get_template_directory_uri() . '/assets/img/logo.png', 'id' => '']);
-$logo_light_m = northway()->get_opt('logo_light_m', ['url' => get_template_directory_uri() . '/assets/img/logo-light.png', 'id' => '']);
+$logo_light_m = northway()->get_opt('logo_light_m', ['url' => get_template_directory_uri() . '/assets/img/logo-light.svg', 'id' => '']);
 $p_menu = northway()->get_page_opt('p_menu');
 $header_mobile = northway()->get_page_opt('header_mobile', 'show');
 $header_display = northway()->get_page_opt('header_display', 'show');

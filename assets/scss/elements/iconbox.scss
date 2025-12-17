@@ -1225,6 +1225,21 @@
             overflow-wrap: break-word;
         }
     }
+    .pxl-swiper-arrow-wrap {
+        @media #{$max-xxl} {
+            padding-right: 15px;
+        }
+        @media #{$max-xl} {
+            position: static;
+            flex-direction: row;
+            margin-top: 30px;
+            transform: none;
+        }
+        @media #{$max-xs} {
+            width: 100%;
+            justify-content: center;
+        }
+    }
 }
 
 .pxl-iconbox-carousel2 {

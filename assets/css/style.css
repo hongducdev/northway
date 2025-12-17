@@ -32258,6 +32258,25 @@ input[type="submit"]:hover {
   word-break: break-word;
   overflow-wrap: break-word;
 }
+@media screen and (max-width: 1600px) {
+  .pxl-iconbox-carousel1 .pxl-swiper-arrow-wrap {
+    padding-right: 15px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .pxl-iconbox-carousel1 .pxl-swiper-arrow-wrap {
+    position: static;
+    flex-direction: row;
+    margin-top: 30px;
+    transform: none;
+  }
+}
+@media screen and (max-width: 575px) {
+  .pxl-iconbox-carousel1 .pxl-swiper-arrow-wrap {
+    width: 100%;
+    justify-content: center;
+  }
+}
 .pxl-iconbox-carousel2 .pxl-item--inner {
   background-color: var(--body_bg-color);
   -webkit-border-radius: 20px;
