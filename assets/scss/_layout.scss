@@ -215,7 +215,7 @@
 
         .pxl-column-sticky {
             position: sticky;
-            top: 120px; 
+            top: 120px;
             align-self: flex-start;
 
             &.e-con {
@@ -304,86 +304,7 @@ body.elementor-editor-active .pxl-column-sticky {
     position: relative;
     text-align: center;
     padding: 157px 0 197px 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    .pxl-page-leaf-1 {
-        position: absolute;
-        left: 136px;
-        bottom: 140px;
-        z-index: 2;
-        transform: rotate(-20deg);
-    }
-    .pxl-page-leaf-2 {
-        position: absolute;
-        right: 144px;
-        top: 50%;
-        transform: translateY(-50%) rotateY(180deg);
-        z-index: 2;
-    }
-    .pxl-page-leaf-3 {
-        position: absolute;
-        left: 400px;
-        top: 88px;
-        transform: rotateY(180deg);
-        z-index: 2;
-    }
-    &:before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 200%;
-        height: 24px;
-        background-image: url(../img/grass4.svg);
-        background-position: 0 100%;
-        background-size: contain;
-        background-repeat: repeat-x;
-        z-index: 5;
-    }
-    &:after {
-        content: "";
-        position: absolute;
-        bottom: -10px;
-        left: 0;
-        width: 200%;
-        height: 114px;
-        background-image: url(../img/flo-grass.svg);
-        background-position: 0 100%;
-        background-size: contain;
-        background-repeat: repeat-x;
-        z-index: 5;
-    }
-    .pxl-page-overlay {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(67, 114, 26, 0.5);
-        backdrop-filter: blur(5px);
-        &:before,
-        &:after {
-            content: "";
-            position: absolute;
-            height: 100%;
-            width: 430px;
-            opacity: 0.5;
-            background: linear-gradient(
-                90deg,
-                $secondary_color 0%,
-                rgba(24, 85, 32, 0) 87.53%
-            );
-            filter: blur(50px);
-        }
-        &:before {
-            top: 0;
-            left: 0;
-        }
-        &:after {
-            top: 0;
-            right: 0;
-        }
-    }
+    background-color: $secondary_color;
     @media #{$max-md2} {
         padding: 100px 0;
     }
@@ -398,38 +319,14 @@ body.elementor-editor-active .pxl-column-sticky {
     .row {
         align-items: center;
     }
-    .pxl-page-icon {
-        margin-bottom: 36px;
-        svg {
-            color: #bbdf56;
-        }
-    }
-    .pxl-page-sub-title {
-        color: #fff;
-        text-align: center;
-        font-family: "Dancing Script";
-        font-size: 23px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        margin-bottom: 17px;
-        z-index: 5;
-        position: relative;
-    }
     .pxl-page-title {
-        color: #fff;
-        text-align: center;
-        text-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
-        font-size: 65px;
+        color: $body_bg_color;
+        font-size: 55px;
         font-style: normal;
         font-weight: 600;
-        line-height: 1.15;
-        text-transform: capitalize;
+        line-height: 1.27;
         -ms-word-wrap: break-word;
         word-wrap: break-word;
-        margin-bottom: 20px;
-        z-index: 5;
-        position: relative;
         @media #{$max-sm} {
             text-align: center;
             margin-bottom: 15px;
@@ -448,17 +345,14 @@ body.elementor-editor-active .pxl-column-sticky {
         }
     }
     .pxl-page-desc {
-        color: #fff;
-        text-align: center;
-        text-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
-        font-size: 17px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 1.58;
+        color: rgba($body_bg_color_hex, 0.8);
+        font-family: "Inter";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
         margin: 0 auto;
         max-width: 674px;
-        z-index: 5;
-        position: relative;
+        margin-bottom: 70px;
     }
     .ptitle-col-right {
         justify-content: center;
@@ -528,6 +422,69 @@ body.elementor-editor-active .pxl-column-sticky {
                     &:before {
                         display: none;
                     }
+                }
+            }
+        }
+    }
+}
+
+.pxl-breadcrumb {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    align-items: center;
+    display: inline-flex;
+    min-height: 40px;
+    padding: 0px 25px;
+    border-radius: 100px;
+    border: 1px solid rgba($body_bg_color_hex, 0.7);
+    @media #{$max-xsx} {
+        height: auto;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+    }
+    > li {
+        &:has(> a.breadcrumb-hidden) {
+            display: none;
+        }
+        &:first-child:has(> a.breadcrumb-hidden) {
+            display: block !important;
+        }
+        > a,
+        > span {
+            color: rgba($body_bg_color_hex, 0.7);
+            font-family: "DM Sans";
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.71;
+            @include transition(all 0.3s ease);
+        }
+        > a {
+            &:hover {
+                color: $body_bg_color;
+            }
+        }
+        + li {
+            padding-left: 14px;
+            position: relative;
+            &:before {
+                content: "/";
+                position: absolute;
+                left: 5px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: rgba($body_bg_color_hex, 0.7);
+                font-family: "DM Sans";
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.71;
+            }
+            @media #{$max-xsx} {
+                padding-left: 0;
+                &:before {
+                    display: none;
                 }
             }
         }

@@ -67,26 +67,16 @@ if (!class_exists('Northway_Page')) {
             if ($pt_mode == 'bd' && $ptitle_layout > 0 && class_exists('Pxltheme_Core') && is_callable('Elementor\Plugin::instance')) {
             ?>
                 <div id="pxl-page-title-elementor" class="<?php if ($ptitle_scroll_opacity == true) {
-                                                                echo 'pxl-scroll-opacity';
-                                                            } ?>">
+                    echo 'pxl-scroll-opacity';
+                } ?>">
                     <?php echo Elementor\Plugin::$instance->frontend->get_builder_content_for_display($ptitle_layout); ?>
                 </div>
             <?php
             } else {
                 wp_enqueue_script('stellar-parallax'); ?>
                 <div id="pxl-page-title-default" class="<?php echo esc_attr($page_type_class); ?>">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/404/leaf1.webp" alt="leaf_1" class="pxl-page-leaf-1">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/404/leaf1.webp" alt="leaf_2" class="pxl-page-leaf-2">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/404/leaf3.webp" alt="leaf_3" class="pxl-page-leaf-3">
-                    <div class="pxl-page-overlay"></div>
                     <div class="container">
                         <div class="row">
-                            <div class="pxl-page-icon col-12">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="20" viewBox="0 0 28 20" fill="none">
-                                    <path d="M12.8971 13.538C12.8971 13.538 12.1708 9.41552 14.8356 4.96151C17.5005 0.507513 24.7223 -0.299002 27.9445 0.0842744C27.9445 0.0842744 28.4415 8.223 25.2796 11.9186C22.1178 15.6142 17.1921 15.0248 15.7561 14.9894C15.0599 15.6655 14.4442 16.4166 13.9207 17.2282C13.4051 18.0253 12.938 18.8514 12.5219 19.7022C12.3584 20.0038 12.0946 20.0483 11.8308 19.9593C11.567 19.8702 11.6134 19.4443 11.7769 19.0002C11.9404 18.556 13.2854 15.3191 16.3385 11.0077C19.3917 6.69625 22.5414 4.8943 23.8009 3.97063C23.8009 3.96608 18.3495 4.79531 12.8971 13.538Z" fill="currentColor" />
-                                    <path d="M12.1215 14.4027C12.1215 14.4027 11.867 10.7243 8.88726 8.62807C5.9075 6.53186 1.21773 7.40195 0 7.90148C0 7.90148 0.563815 12.4327 3.38102 14.9739C6.19823 17.5152 10.7654 15.9512 11.6478 15.4181C11.6478 15.4181 7.86088 11.2402 3.25749 9.77336C3.25377 9.77063 7.324 9.58172 12.1215 14.4027Z" fill="currentColor" />
-                                </svg>
-                            </div>
                             <?php
                             if (function_exists('is_product') && is_product()) {
                                 if (!empty($sg_product_ptitle_sub)) { ?>
@@ -129,12 +119,7 @@ if (!class_exists('Northway_Page')) {
                                 <?php }
                                 } ?>
 
-                                <?php if (function_exists('is_product') && is_product()) { ?>
-                                    <div class="pxl-product-meta">
-                                    </div>
-                                <?php } elseif (is_single()) { ?>
-                                    <?php northway()->blog->get_archive_meta_3(); ?>
-                                <?php } ?>
+                                <?php $this->get_breadcrumb(); ?>
                             </div>
                         </div>
                     </div>

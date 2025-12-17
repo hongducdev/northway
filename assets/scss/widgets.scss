@@ -266,7 +266,7 @@
             }
             > .sub-menu,
             > .children {
-                border-top: 1px solid rgba($primary_color_hex, 0.3);
+                border-top: 1px solid rgba($four_color_hex, 0.3);
                 > li {
                     > a {
                         padding-left: 39px;
@@ -356,6 +356,12 @@
                 }
             }
         }
+    }
+}
+
+.widget_categories {
+    .widget-content {
+        border: none;
     }
 }
 
@@ -718,9 +724,9 @@
     ol {
         list-style: none;
         color: $secondary_color;
-        font-family: "General Sans";
-        font-size: 15px;
-        font-weight: 600;
+        font-family: "Inter";
+        font-size: 16px;
+        font-weight: 400;
         padding-top: 0;
         margin-bottom: 0;
         li {
@@ -788,12 +794,15 @@
     .wp-block-latest-comments {
         li {
             padding: 17px 30px;
-            border: 1px solid rgba($primary_color_hex, 0.3);
+            border: 1px solid rgba($four_color_hex, 0.3);
             color: $secondary_color;
-            font-size: 15px;
-            font-weight: 600;
+            font-size: 16px;
+            font-weight: 400;
+            &:first-child {
+                border-radius: 10px 10px 0 0;
+            }
             &:last-child {
-                border-radius: 0 0 20px 20px;
+                border-radius: 0 0 10px 10px;
             }
             + li {
                 border-top: none;
@@ -898,20 +907,18 @@
     }
     &.widget_search {
         .wp-block-search__inside-wrapper {
-            padding: 30px;
-            border: 1px solid rgba($primary_color_hex, 0.3);
             border-top: 0;
-            border-radius: 0 0 20px 20px;
+            border-radius: 10px;
             position: relative;
             .wp-block-search__button {
                 height: 42px;
                 width: 42px;
-                background: transparent;
+                background: $body_bg_color;
                 @include border-radius(0px);
                 padding: 0;
                 position: absolute;
                 top: 50%;
-                left: 30px;
+                right: 15px;
                 @include transform(translateY(-50%));
                 line-height: 42px;
                 z-index: 1;
@@ -935,10 +942,10 @@
             .wp-block-search__input {
                 background-color: transparent;
                 border-radius: 8px !important;
-                border: 1px solid rgba($primary_color_hex, 0.3);
-                height: 50px;
+                border: 1px solid rgba($four_color_hex, 0.3);
+                height: 56px;
                 box-shadow: none;
-                padding-left: 42px;
+                z-index: 3;
             }
         }
     }
@@ -958,7 +965,8 @@
 // 	}
 // }
 .wp-calendar-table {
-    background-color: #fff;
+    background-color: $body_bg_color;
+    border: 1px solid rgba($four_color_hex, 0.5);
 }
 
 .pxl-wg-categories {

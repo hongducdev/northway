@@ -25,7 +25,7 @@
             ],
 
             'link' => [
-                'color' => northway()->get_opt('link_color', ['regular' => '#000000'])['regular'],
+                'color' => northway()->get_opt('link_color', ['regular' => '#041427'])['regular'],
                 'color-hover'   => northway()->get_opt('link_color', ['hover' => '#97B545'])['hover'],
                 'color-active'  => northway()->get_opt('link_color', ['active' => '#97B545'])['active'],
             ],

@@ -44,14 +44,6 @@ function northway_register_required_plugins() {
             'description' => esc_html__( 'Contact Form 7 can manage multiple contact forms, you can customize the form and the mail contents flexibly with simple markup', 'northway' ),
         ),
         array(
-            'name'               => esc_html__('Revolution Slider', 'northway'),
-            'slug'               => 'revslider',
-            'source'             => 'revslider.zip',
-            'required'           => true,
-            'logo'        => $images . '/rev-slider.png',
-            'description' => esc_html__( 'Revolution Slider helps beginner-and mid-level designers WOW their clients with pro-level visuals.', 'northway' )
-        ),
-        array(
             'name'               => esc_html__('Plugin WooCommerce', 'northway'),
             'slug'               => "woocommerce",
             'required'           => true,

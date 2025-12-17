@@ -273,7 +273,7 @@ function northway_hook_anchor_templates_popup(){
 /* Search Popup */
 if(!function_exists('northway_hook_anchor_search')){
     function northway_hook_anchor_search(){
-        $logo_s_p = northway()->get_theme_opt( 'logo_s_p', ['url' => get_template_directory_uri().'/assets/img/logo.svg', 'id' => '' ] ); 
+        $logo_s_p = northway()->get_theme_opt( 'logo_s_p', ['url' => get_template_directory_uri().'/assets/img/logo.png', 'id' => '' ] ); 
         $placeholder_search_pu = northway()->get_theme_opt( 'placeholder_search_pu', 'Search...'); 
         ?>
         <div id="pxl-search-popup">
