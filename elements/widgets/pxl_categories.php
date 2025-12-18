@@ -50,6 +50,11 @@ pxl_add_custom_widget(
                             'default' => esc_html__('All Categories', 'northway'),
                         ),
                         array(
+                            'name' => 'all_categories_link',
+                            'label' => esc_html__('All Categories Link', 'northway'),
+                            'type' => \Elementor\Controls_Manager::URL,
+                        ),
+                        array(
                             'name' => 'show_count',
                             'label' => esc_html__('Show Count', 'northway'),
                             'type' => \Elementor\Controls_Manager::SWITCHER,

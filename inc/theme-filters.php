@@ -207,8 +207,8 @@ add_action('template_redirect', 'northway_custom_archive_industries_link');
 add_filter('pxl_extra_taxonomies', 'northway_add_tax');
 function northway_add_tax($taxonomies)
 {
-	$portfolio_categorie_slug = northway()->get_theme_opt('portfolio_categorie_slug', 'portfolio');
-	$portfolio_categorie_name = northway()->get_theme_opt('portfolio_categorie_name', 'Portfolio');
+	$portfolio_categorie_slug = northway()->get_theme_opt('portfolio_categorie_slug', 'portfolio-category');
+	$portfolio_categorie_name = northway()->get_theme_opt('portfolio_categorie_name', 'Portfolio Category');
 
 	$industries_categorie_slug = northway()->get_theme_opt('industries_categorie_slug', 'industries');
 	$industries_categorie_name = northway()->get_theme_opt('industries_categorie_name', 'Industries');

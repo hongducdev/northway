@@ -903,6 +903,9 @@
                     top: 340px;
                     left: 40px;
                 }
+                @media #{$max-3xs} {
+                    display: none;
+                }
             }
             &-2 {
                 top: 446px;
@@ -914,6 +917,9 @@
                 @media #{$max-xs} {
                     top: 400px;
                     left: 20px;
+                }
+                @media #{$max-3xs} {
+                    display: none;
                 }
             }
             &-3 {
@@ -931,6 +937,9 @@
                     bottom: 340px;
                     left: 50px;
                 }
+                @media #{$max-3xs} {
+                    display: none;
+                }
             }
             &-4 {
                 top: 292px;
@@ -943,6 +952,9 @@
                     top: 340px;
                     right: 20px;
                 }
+                @media #{$max-3xs} {
+                    display: none;
+                }
             }
             &-5 {
                 bottom: 290px;
@@ -950,6 +962,9 @@
                 @media #{$max-xsx} {
                     bottom: 340px;
                     right: 50px;
+                }
+                @media #{$max-3xs} {
+                    display: none;
                 }
             }
         }
@@ -961,9 +976,15 @@
             background-color: rgba($four_color_hex, 0.5);
             &-1 {
                 top: 60px;
+                @media #{$max-xs} {
+                    top: 15px;
+                }
             }
             &-2 {
                 bottom: 60px;
+                @media #{$max-xs} {
+                    bottom: 15px;
+                }
             }
             &-short {
                 &-1 {
@@ -1011,18 +1032,34 @@
                 &.pxl-error-star-1 {
                     top: 48px;
                     left: -10px;
+                    @media #{$max-xs} {
+                        top: 3px;
+                        left: -10px;
+                    }
                 }
                 &.pxl-error-star-2 {
                     top: 48px;
                     right: -10px;
+                    @media #{$max-xs} {
+                        top: 3px;
+                        right: -10px;
+                    }
                 }
                 &.pxl-error-star-3 {
                     bottom: 48px;
                     left: -10px;
+                    @media #{$max-xs} {
+                        bottom: 3px;
+                        left: -10px;
+                    }
                 }
                 &.pxl-error-star-4 {
                     bottom: 48px;
                     right: -10px;
+                    @media #{$max-xs} {
+                        bottom: 3px;
+                        right: -10px;
+                    }
                 }
             }
         }
@@ -1045,12 +1082,18 @@
             font-weight: 400;
             line-height: 1.43;
             margin-bottom: 100px;
+            @media #{$max-3xs} {
+                margin-bottom: 50px;
+            }
         }
         &-number {
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: 44px;
+            @media #{$max-3xs} {
+                margin-bottom: 20px;
+            }
             span {
                 margin-top: -150px;
                 font-family: "Cormorant Garamond";

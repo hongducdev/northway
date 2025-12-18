@@ -572,6 +572,15 @@ function northway_get_slip_layout_options($post_type_name){
             ],
         ];
         break;
+
+        case 'service':
+        $option_layouts = [
+            'service-1' => [
+                'label' => esc_html__( 'Layout 1', 'northway' ),
+                'image' => get_template_directory_uri() . '/elements/widgets/img-layout/pxl_post_slip/service-layout1.jpg'
+            ],
+        ];
+        break;
     }
     return $option_layouts;
 }

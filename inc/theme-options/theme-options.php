@@ -253,12 +253,66 @@ function casethemes_setup_option()
                 'title'    => esc_html__('Loader', 'northway'),
                 'default'  => false
             ),
+            // option select display loader logo or text
+            array(
+                'id'       => 'loader_logo_display',
+                'type'     => 'button_set',
+                'title'    => esc_html__('Display Loader Logo or Text', 'northway'),
+                'options'  => array(
+                    'logo' => esc_html__('Logo', 'northway'),
+                    'text' => esc_html__('Text', 'northway'),
+                ),
+                'default'  => 'logo',
+                'required' => array(0 => 'site_loader', 1 => 'equals', 2 => true),
+            ),
             array(
                 'id'       => 'loader_text',
                 'type'     => 'text',
                 'title'    => esc_html__('Loader Text', 'northway'),
                 'default'  => '',
-                'required' => array(0 => 'site_loader', 1 => 'equals', 2 => true),
+                'required' => array(0 => 'loader_logo_display', 1 => 'equals', 2 => 'text'),
+            ),
+            array(
+                'id'       => 'loader_logo',
+                'type'     => 'media',
+                'title'    => esc_html__('Loader Logo', 'northway'),
+                'default'  => array(
+                    'url' => get_template_directory_uri() . '/assets/img/logo-white-2.svg'
+                ),
+                'required' => array(0 => 'loader_logo_display', 1 => 'equals', 2 => 'logo'),
+            ),
+            array(
+                'id'       => 'loader_logo_height',
+                'type'     => 'dimensions',
+                'title'    => esc_html__('Logo Height', 'northway'),
+                'width'    => false,
+                'unit'     => 'px',
+                'output'    => array('.pxl-loader-logo'),
+                'required' => array( 0 => 'loader_logo_display', 1 => 'equals', 2 => 'logo' ),
+            ),
+            array(
+                'id'       => 'loader_color_1',
+                'type'     => 'color',
+                'title'    => esc_html__('Loader Color 1', 'northway'),
+                'default'  => '#45349a',
+                'output'   => array('.pxl-loader-shape'),
+                'required' => array(0 => 'loader_logo_display', 1 => 'equals', 2 => 'logo'),
+            ),
+            array(
+                'id'       => 'loader_color_2',
+                'type'     => 'color',
+                'title'    => esc_html__('Loader Color 2', 'northway'),
+                'default'  => '#9588F8',
+                'output'   => array('.pxl-loader-shape'),
+                'required' => array(0 => 'loader_logo_display', 1 => 'equals', 2 => 'logo'),
+            ),
+            array(
+                'id'       => 'loader_color_3',
+                'type'     => 'color',
+                'title'    => esc_html__('Loader Color 3', 'northway'),
+                'default'  => '#DFB0C4',
+                'output'   => array('.pxl-loader-shape'),
+                'required' => array(0 => 'loader_logo_display', 1 => 'equals', 2 => 'logo'),
             ),
         )
     ));

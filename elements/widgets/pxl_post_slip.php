@@ -1,5 +1,5 @@
 <?php
-$pt_supports = ['portfolio'];
+$pt_supports = ['portfolio', 'service'];
 pxl_add_custom_widget(
     array(
         'name' => 'pxl_post_slip',
@@ -192,6 +192,42 @@ pxl_add_custom_widget(
                                             ['name' => 'post_type', 'operator' => '==', 'value' => 'portfolio'],
                                             ['name' => 'layout_portfolio', 'operator' => 'in', 'value' => ['portfolio-1']],
                                             ['name' => 'show_button', 'operator' => '==', 'value' => 'true']
+                                        ]
+                                    ]
+                                ],
+                            ]
+                        ),
+                        array(
+                            'name' => 'show_excerpt',
+                            'label' => esc_html__('Show Excerpt', 'northway'),
+                            'type' => \Elementor\Controls_Manager::SWITCHER,
+                            'default' => 'true',
+                            'conditions' => [
+                                'relation' => 'or',
+                                'terms' => [
+                                    [
+                                        'terms' => [
+                                            ['name' => 'post_type', 'operator' => '==', 'value' => 'service'],
+                                            ['name' => 'layout_service', 'operator' => 'in', 'value' => ['service-1']]
+                                        ]
+                                    ],
+                                ],
+                            ]
+                        ),
+                        array(
+                            'name' => 'num_words',
+                            'label' => esc_html__('Number of Words', 'northway'),
+                            'type' => \Elementor\Controls_Manager::NUMBER,
+                            'default' => 25,
+                            'separator' => 'after',
+                            'conditions' => [
+                                'relation' => 'or',
+                                'terms' => [
+                                    [
+                                        'terms' => [
+                                            ['name' => 'post_type', 'operator' => '==', 'value' => 'service'],
+                                            ['name' => 'layout_service', 'operator' => 'in', 'value' => ['service-1']],
+                                            ['name' => 'show_excerpt', 'operator' => '==', 'value' => 'true'],
                                         ]
                                     ]
                                 ],

@@ -37,6 +37,11 @@
                 'color-from_two' => northway()->get_opt('gradient_color_two', ['from' => '#fff48d'])['from'],
                 'color-to_two' => northway()->get_opt('gradient_color_two', ['to' => '#f4be29'])['to'],
             ],
+            'loader' => [
+                'loader-color-1' => northway()->get_opt('loader_color_1', '#45349a'),
+                'loader-color-2' => northway()->get_opt('loader_color_2', '#9588F8'),
+                'loader-color-3' => northway()->get_opt('loader_color_3', '#DFB0C4'),
+            ],
         ];
         return $configs[$value];
     }
@@ -48,6 +53,7 @@ if(!function_exists('northway_inline_styles')) {
         $link_color        = northway_configs('link');
         $gradient_color        = northway_configs('gradient');
         $gradient_color_two        = northway_configs('gradient_two');
+        $loader_color      = northway_configs('loader');
         ob_start();
         echo ':root{';
 
@@ -65,6 +71,9 @@ if(!function_exists('northway_inline_styles')) {
         } 
         foreach ($gradient_color_two as $color => $value) {
             printf('--gradient-two-%1$s: %2$s;', $color, $value);
+        } 
+        foreach ($loader_color as $color => $value) {
+            printf('--%1$s: %2$s;', $color, $value);
         } 
         echo '}';
 

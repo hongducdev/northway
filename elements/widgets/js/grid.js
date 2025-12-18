@@ -157,7 +157,7 @@
                             loadmore: loadmore,
                             iso_options: isoOptions,
                             handler_click: "loadmore",
-                            scrolltop: 0,
+                            scrolltop: 1,
                             wpnonce: main_data.wpnonce,
                         }
                     );

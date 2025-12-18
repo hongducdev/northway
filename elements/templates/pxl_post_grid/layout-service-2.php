@@ -11,11 +11,13 @@ if($select_post_by === 'post_selected'){
 $orderby = $widget->get_setting('orderby', 'date');
 $order = $widget->get_setting('order', 'desc');
 $limit = $widget->get_setting('limit', 6);
-extract(pxl_get_posts_of_grid(
-    'service', 
-    ['source' => $source, 'orderby' => $orderby, 'order' => $order, 'limit' => $limit, 'post_ids' => $post_ids],
-    $tax
-));
+extract(pxl_get_posts_of_grid('service', [
+    'source' => $source,
+    'orderby' => $orderby,
+    'order' => $order,
+    'limit' => $limit,
+    'post_ids' => $post_ids,
+]));
 $filter_default_title = $widget->get_setting('filter_default_title', 'All');
 if($settings['col_xl'] == '5') {
     $col_xl = 'pxl5';

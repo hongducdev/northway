@@ -31,7 +31,7 @@ if ( ! empty( $settings['wg_btn_link']['url'] ) ) {
 } ?>
 
 <?php if (is_array($posts)): ?>
-    <div class="pxl-post-slip pxl-post-slip1">
+    <div class="pxl-post-slip pxl-post-slip1 pxl-portfolio-slip1">
         <div class="pxl-post-slip-wrap">
             <div class="pxl-post--track">
                 <?php $image_size = !empty($img_size) ? $img_size : '880x664';

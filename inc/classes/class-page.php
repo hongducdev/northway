@@ -10,19 +10,27 @@ if (!class_exists('Northway_Page')) {
             $site_loader = northway()->get_theme_opt('site_loader', false);
             $loader_text = northway()->get_theme_opt('loader_text', '');
             $site_title = !empty($loader_text) ? $loader_text : get_bloginfo('name');
+            $loader_logo_display = northway()->get_theme_opt('loader_logo_display', 'logo');
+            $loader_logo = northway()->get_theme_opt('loader_logo', array(
+                'url' => get_template_directory_uri() . '/assets/img/logo-white-2.svg'
+            ));
             if ($site_loader) { ?>
                 <div id="pxl-loadding" class="pxl-loader">
                     <div class="pxl-loader-container">
-                        <div class="loader-wrapper">
-                            <?php 
-                            $chars = str_split($site_title);
-                            $index = 1;
-                            foreach ($chars as $char) { ?>
-                                <span class="loader-letter" style="animation-delay: <?php echo esc_attr(($index - 1) * 0.1); ?>s;"><?php echo esc_html($char); ?></span>
-                            <?php 
-                                $index++;
-                            } ?>
-                            <div class="loader"></div>
+                        <div class="pxl-loader-wrapper">
+                            <?php if ($loader_logo_display == 'logo') { ?>
+                                <img src="<?php echo esc_url($loader_logo['url']); ?>" alt="<?php echo esc_attr($site_title); ?>" class="pxl-loader-logo">
+                            <?php } else { ?>
+                                <?php 
+                                $chars = str_split($site_title);
+                                $index = 1;
+                                foreach ($chars as $char) { ?>
+                                    <span class="pxl-loader-letter" style="animation-delay: <?php echo esc_attr(($index - 1) * 0.1); ?>s;"><?php echo esc_html($char); ?></span>
+                                <?php 
+                                    $index++;
+                                } ?>
+                            <?php } ?>
+                            <div class="pxl-loader-shape"></div>
                         </div>
                     </div>
                 </div>

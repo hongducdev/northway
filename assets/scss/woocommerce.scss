@@ -1479,16 +1479,17 @@
 	.woocommerce-add-to-cart {
 		flex: 1 1 auto;
 		&-button {
+			display: flex;
 			position: relative;
 			&:hover {
-				background-color: transparent;
 				.woocommerce-add-to-cart-button {
+					background-color: transparent;
 					&-icon {
 						&-left {
-							scale: 1;
+							transform: scale(1) !important;
 						}
 						&-right {
-							scale: 0;
+							transform: scale(0) !important;
 						}
 					}
 					&-text {
@@ -1520,28 +1521,28 @@
 					font-size: 16px;
 				}
 				&-left {
-					scale: 0;
-					top: 0;
-					left: 0;
-					transform-origin: left center;
+					transform: scale(0) !important;
+					top: 0 !important;
+					left: 0 !important;
+					transform-origin: left center !important;
 					@media screen and (max-width: 1199px) and (min-width: 992px) {
-						scale: 1;
+						transform: scale(1) !important;
 					}
 					@media #{$max-xsx} {
-						scale: 1;
+						transform: scale(1) !important;
 					}
 				}
 				&-right {
-					top: 0;
-					right: 0;
-					scale: 1;
-					transform-origin: right center;
+					top: 0 !important;
+					right: 0 !important;
+					transform: scale(1) !important;
+					transform-origin: right center !important;
 					@media screen and (max-width: 1199px) and (min-width: 992px) {
-						display: none;
+						display: none !important;
 					}
 					@media #{$max-xsx} {
-						scale: 0;
-						display: none;
+						transform: scale(0) !important;
+						display: none !important;
 					}
 				}
 			}
@@ -4472,12 +4473,6 @@ body .woosw-popup-content-mid {
 					width: 100%;
 				}
 			}
-		}
-	}
-	.woocommerce-add-to-cart {
-		a:hover {
-			background-color: $primary_color;
-			color: $secondary_color;
 		}
 	}
 	.custom-discount-label {

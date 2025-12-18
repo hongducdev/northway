@@ -1,8 +1,4 @@
 <?php
-/**
- * Template for Categories Widget - Layout 1
- */
-
 $post_types = !empty($settings['post_types']) ? (array) $settings['post_types'] : ['blog'];
 $show_count = isset($settings['show_count']) && $settings['show_count'] === 'yes';
 $hide_empty = isset($settings['hide_empty']) && $settings['hide_empty'] === 'yes';
@@ -70,59 +66,86 @@ if (in_array('portfolio', $post_types)) {
 }
 
 if ($orderby === 'name') {
-    usort($categories, function($a, $b) use ($order) {
+    usort($categories, function ($a, $b) use ($order) {
         $result = strcmp($a['name'], $b['name']);
         return $order === 'DESC' ? -$result : $result;
     });
 } elseif ($orderby === 'count') {
-    usort($categories, function($a, $b) use ($order) {
+    usort($categories, function ($a, $b) use ($order) {
         $result = $a['count'] - $b['count'];
         return $order === 'DESC' ? -$result : $result;
     });
 }
 
 $total_count = 0;
-$all_categories_link = '#';
 
-if (in_array('blog', $post_types)) {
-    $blog_total = wp_count_posts('post')->publish;
-    $total_count += $blog_total;
-    if ($all_categories_link === '#') {
-        $all_categories_link = get_permalink(get_option('page_for_posts')) ?: home_url();
-    }
+$custom_link = '';
+if (!empty($settings['all_categories_link']['url'])) {
+    $custom_link = $settings['all_categories_link']['url'];
 }
 
-if (in_array('service', $post_types)) {
-    $service_total = wp_count_posts('service')->publish;
-    $total_count += $service_total;
-    if ($all_categories_link === '#') {
-        $archive_link = get_post_type_archive_link('service');
-        if ($archive_link) {
-            $all_categories_link = $archive_link;
+if (!empty($custom_link)) {
+    $all_categories_link = $custom_link;
+} else {
+    $all_categories_link = '#';
+
+    if (in_array('blog', $post_types)) {
+        $blog_total = wp_count_posts('post')->publish;
+        $total_count += $blog_total;
+        if ($all_categories_link === '#') {
+            $all_categories_link = get_permalink(get_option('page_for_posts')) ?: home_url();
         }
     }
-}
 
-if (in_array('portfolio', $post_types)) {
-    $portfolio_total = wp_count_posts('portfolio')->publish;
-    $total_count += $portfolio_total;
-    if ($all_categories_link === '#') {
-        $archive_link = get_post_type_archive_link('portfolio');
-        if ($archive_link) {
-            $all_categories_link = $archive_link;
+    if (in_array('service', $post_types)) {
+        $service_total = wp_count_posts('service')->publish;
+        $total_count += $service_total;
+        if ($all_categories_link === '#') {
+            $archive_link = get_post_type_archive_link('service');
+            if ($archive_link) {
+                $all_categories_link = $archive_link;
+            }
         }
+    }
+
+    if (in_array('portfolio', $post_types)) {
+        $portfolio_total = wp_count_posts('portfolio')->publish;
+        $total_count += $portfolio_total;
+        if ($all_categories_link === '#') {
+            $archive_link = get_post_type_archive_link('portfolio');
+            if ($archive_link) {
+                $all_categories_link = $archive_link;
+            }
+        }
+    }
+
+    if (count($post_types) > 1) {
+        $all_categories_link = home_url();
     }
 }
 
-if (count($post_types) > 1) {
-    $all_categories_link = home_url();
+if (empty($custom_link)) {
+    // Already calculated above
+} else {
+    if (in_array('blog', $post_types)) {
+        $blog_total = wp_count_posts('post')->publish;
+        $total_count += $blog_total;
+    }
+    if (in_array('service', $post_types)) {
+        $service_total = wp_count_posts('service')->publish;
+        $total_count += $service_total;
+    }
+    if (in_array('portfolio', $post_types)) {
+        $portfolio_total = wp_count_posts('portfolio')->publish;
+        $total_count += $portfolio_total;
+    }
 }
 
 ?>
-<div class="pxl-categories pxl-categories1">    
+<div class="pxl-categories pxl-categories1">
     <?php if (!empty($categories)): ?>
         <ul class="pxl-categories-list">
-            <?php 
+            <?php
             $all_count_display = '';
             if ($show_count) {
                 $all_count_display = ' <span class="count">(' . esc_html($total_count) . ')</span>';
@@ -133,7 +156,7 @@ if (count($post_types) > 1) {
                     <?php echo esc_html($settings['all_categories_text']); ?><?php echo wp_kses_post($all_count_display); ?>
                 </a>
             </li>
-            <?php foreach ($categories as $category): 
+            <?php foreach ($categories as $category):
                 $count_display = '';
                 if ($show_count) {
                     $count_display = ' <span class="count">(' . esc_html($category['count']) . ')</span>';
@@ -150,4 +173,3 @@ if (count($post_types) > 1) {
         <p class="pxl-no-categories"><?php echo esc_html__('No categories found.', 'northway'); ?></p>
     <?php endif; ?>
 </div>
-

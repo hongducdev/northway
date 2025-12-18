@@ -2586,12 +2586,13 @@ body.rtl {
         position: relative;
         min-width: 0;
         overflow: hidden;
+        padding: 15px 0;
     }
 
     .pxl-timeline-line {
         position: absolute;
         width: 100%;
-        top: 5px;
+        top: 20px;
         left: 0;
         height: 1px;
         background: linear-gradient(

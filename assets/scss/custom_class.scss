@@ -1154,6 +1154,19 @@
     }
 }
 
+.pxl-shape-header-3 {
+    position: relative !important;
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 1px;
+        left: 0;
+        height: 100%;
+        width: calc((100% - 1760px) / 2);
+        background-color: $body_bg_color;
+    }
+}
+
 // Slider Revolution
 
 // Contact Form 7

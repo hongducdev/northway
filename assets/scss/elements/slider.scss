@@ -183,6 +183,7 @@
             transform: translateY(-50%);
             left: -43px;
             right: -43px;
+            z-index: 5;
             @media #{$max-xxl} {
                 max-width: 1290px;
                 top: auto;
@@ -241,6 +242,7 @@
         bottom: 116px;
         left: 50%;
         transform: translateX(-50%);
+        z-index: 5;
         @media #{$max-lg3} {
             padding: 0 15px;
         }
