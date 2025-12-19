@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Merlin WP
  * Better WordPress Theme Onboarding
@@ -16,15 +15,14 @@
  */
 
 // Exit if accessed directly.
-if (! defined('ABSPATH')) {
+if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
 /**
  * Merlin.
  */
-class Merlin
-{
+class Merlin {
 	/**
 	 * Current theme.
 	 *
@@ -218,11 +216,10 @@ class Merlin
 	 * @since 1.0
 	 * @return void
 	 */
-	private function version()
-	{
+	private function version() {
 
-		if (! defined('MERLIN_VERSION')) {
-			define('MERLIN_VERSION', '1.0.0');
+		if ( ! defined( 'MERLIN_VERSION' ) ) {
+			define( 'MERLIN_VERSION', '1.0.0' );
 		}
 	}
 
@@ -232,14 +229,12 @@ class Merlin
 	 * @param array $config Package-specific configuration args.
 	 * @param array $strings Text for the different elements.
 	 */
-	function __construct($config = array(), $strings = array())
-	{
+	function __construct( $config = array(), $strings = array() ) {
 
 		$this->version();
 
 		$config = wp_parse_args(
-			$config,
-			array(
+			$config, array(
 				'base_path'            => get_parent_theme_file_path() . '/inc/admin/libs/',
 				'base_url'             => get_parent_theme_file_uri() . '/inc/admin/libs/',
 				'directory'            => 'merlin',
@@ -248,7 +243,7 @@ class Merlin
 				'capability'           => 'manage_options',
 				'child_action_btn_url' => '',
 				'dev_mode'             => '',
-				'ready_big_button_url' => home_url('/'),
+				'ready_big_button_url' => home_url( '/' ),
 			)
 		);
 
@@ -274,100 +269,95 @@ class Merlin
 
 		// Retrieve a WP_Theme object.
 		$this->theme = wp_get_theme();
-		$this->slug  = strtolower(preg_replace('#[^a-zA-Z]#', '', $this->theme->template));
+		$this->slug  = strtolower( preg_replace( '#[^a-zA-Z]#', '', $this->theme->template ) );
 
 		// Set the ignore option.
 		$this->ignore = $this->slug . '_ignore';
 
 		// Is Dev Mode turned on?
-		if (true !== $this->dev_mode) {
+		if ( true !== $this->dev_mode ) {
 
 			// Has this theme been setup yet?
-			$already_setup = get_option('merlin_' . $this->slug . '_completed');
+			$already_setup = get_option( 'merlin_' . $this->slug . '_completed' );
 			// Return if Merlin has already completed it's setup.
-			if ($already_setup) {
+			if ( $already_setup ) {
 				return;
 			}
 		}
 
-		$pxl_import_demo_id = get_option('pxl_import_demo_id', false);
-		if (!empty($pxl_import_demo_id)) {
+		$pxl_import_demo_id = get_option('pxl_import_demo_id',false);
+		if( !empty($pxl_import_demo_id) ){
 			return;
 		}
 
 		// Get TGMPA.
-		if (class_exists('TGM_Plugin_Activation')) {
-			$this->tgmpa = isset($GLOBALS['tgmpa']) ? $GLOBALS['tgmpa'] : TGM_Plugin_Activation::get_instance();
+		if ( class_exists( 'TGM_Plugin_Activation' ) ) {
+			$this->tgmpa = isset( $GLOBALS['tgmpa'] ) ? $GLOBALS['tgmpa'] : TGM_Plugin_Activation::get_instance();
 		}
 
-		add_action('admin_init', array($this, 'admin_handler'));
-		add_action('admin_init', array($this, 'maybe_redirect_transient'), 30); //knight
-		add_action('admin_init', array($this, 'redirect'), 30);
-		add_action('after_switch_theme', array($this, 'switch_theme'));
-		add_action('admin_init', array($this, 'steps'), 30, 0);
-		add_action('admin_menu', array($this, 'add_admin_menu'));
-		add_action('admin_init', array($this, 'admin_page'), 30, 0);
-		add_action('admin_init', array($this, 'ignore'), 5);
-		add_filter('tgmpa_load', array($this, 'load_tgmpa'), 10, 1);
-		add_action('wp_ajax_merlin_plugins', array($this, '_ajax_plugins'), 10, 0);
+		add_action( 'admin_init', array( $this, 'admin_handler' ) );
+		add_action( 'admin_init', array( $this, 'maybe_redirect_transient' ), 30 ); //knight
+		add_action( 'admin_init', array( $this, 'redirect' ), 30 );
+		add_action( 'after_switch_theme', array( $this, 'switch_theme' ) );
+		add_action( 'admin_init', array( $this, 'steps' ), 30, 0 );
+		add_action( 'admin_menu', array( $this, 'add_admin_menu' ) );
+		add_action( 'admin_init', array( $this, 'admin_page' ), 30, 0 );
+		add_action( 'admin_init', array( $this, 'ignore' ), 5 );
+		add_filter( 'tgmpa_load', array( $this, 'load_tgmpa' ), 10, 1 );
+		add_action( 'wp_ajax_merlin_plugins', array( $this, '_ajax_plugins' ), 10, 0 );
 	}
 
 	/**
 	 * Require necessary classes.
 	 */
-	function admin_handler()
-	{
+	function admin_handler() {
 		error_reporting(0); // Hide errors
 	}
 
 	/**
 	 * Set redirection transient on theme switch.
 	 */
-	public function switch_theme()
-	{
-		if (! is_child_theme()) {
-			set_transient($this->theme->template . '_merlin_redirect', 1);
+	public function switch_theme() {
+		if ( ! is_child_theme() ) {
+			set_transient( $this->theme->template . '_merlin_redirect', 1 );
 		}
 	}
 
-	public function maybe_redirect_transient()
-	{
-		delete_transient('elementor_activation_redirect');
-		delete_transient('_wc_activation_redirect');
+	public function maybe_redirect_transient() {
+		delete_transient( 'elementor_activation_redirect' );
+		delete_transient( '_wc_activation_redirect' );
 	}
 
 	/**
 	 * Redirection transient.
 	 */
-	public function redirect()
-	{
+	public function redirect() {
 
-		if (! get_transient($this->theme->template . '_merlin_redirect')) {
+		if ( ! get_transient( $this->theme->template . '_merlin_redirect' ) ) {
 			return;
 		}
 
-		delete_transient($this->theme->template . '_merlin_redirect');
+		delete_transient( $this->theme->template . '_merlin_redirect' );
 
 		//wp_safe_redirect( menu_page_url( $this->merlin_url ) );
-		wp_safe_redirect(admin_url('admin.php?page=' . $this->merlin_url));
+		wp_safe_redirect( admin_url( 'admin.php?page='.$this->merlin_url )); 
 
 		exit;
 	}
 
-
+	
 
 	/**
 	 * Give the user the ability to ignore Merlin WP.
 	 */
-	public function ignore()
-	{
+	public function ignore() {
 
 		// Bail out if not on correct page.
-		if (! isset($_GET['_wpnonce']) || (! wp_verify_nonce($_GET['_wpnonce'], 'merlinwp-ignore-nounce') || ! is_admin() || ! isset($_GET[$this->ignore]) || ! current_user_can('manage_options'))) {
+		if ( ! isset( $_GET['_wpnonce'] ) || ( ! wp_verify_nonce( $_GET['_wpnonce'], 'merlinwp-ignore-nounce' ) || ! is_admin() || ! isset( $_GET[ $this->ignore ] ) || ! current_user_can( 'manage_options' ) ) ) {
 			return;
 		}
 
-		update_option('merlin_' . $this->slug . '_completed', 'ignored');
+		update_option( 'merlin_' . $this->slug . '_completed', 'ignored' );
 	}
 
 	/**
@@ -375,80 +365,70 @@ class Merlin
 	 *
 	 * @param string $status User's manage capabilities.
 	 */
-	public function load_tgmpa($status)
-	{
-		return is_admin() || current_user_can('install_themes');
+	public function load_tgmpa( $status ) {
+		return is_admin() || current_user_can( 'install_themes' );
 	}
 
 
 	/**
 	 * Add the admin menu item, under Appearance.
 	 */
-	public function add_admin_menu()
-	{
+	public function add_admin_menu() {
 
 		// Strings passed in from the config file.
 		$strings = $this->strings;
 		$this->hook_suffix = add_submenu_page(
-			esc_html($this->parent_slug),
-			esc_html($strings['admin-menu']),
-			esc_html($strings['admin-menu']),
-			sanitize_key($this->capability),
-			sanitize_key($this->merlin_url),
-			array($this, 'admin_page')
+			esc_html( $this->parent_slug ), esc_html( $strings['admin-menu'] ), esc_html( $strings['admin-menu'] ), sanitize_key( $this->capability ), sanitize_key( $this->merlin_url ), array( $this, 'admin_page' )
 		);
 	}
 
 	/**
 	 * Add the admin page.
 	 */
-	public function admin_page()
-	{
+	public function admin_page() {
 
 		// Strings passed in from the config file.
 		$strings = $this->strings;
-		$pxl_server_info = apply_filters('pxl_server_info', ['api_url' => '']);
-		$theme_slug = apply_filters('pxl_demo_item_download', get_option('template'));
+		$pxl_server_info = apply_filters( 'pxl_server_info', ['api_url' => ''] ) ;
+		$theme_slug = apply_filters( 'pxl_demo_item_download', get_option( 'template' ) );
 		// Do not proceed, if we're not on the right page.
-		if (empty($_GET['page']) || $this->merlin_url !== $_GET['page']) {
+		if ( empty( $_GET['page'] ) || $this->merlin_url !== $_GET['page'] ) {
 			return;
 		}
 
-		if (ob_get_length()) {
+		if ( ob_get_length() ) {
 			ob_end_clean();
 		}
 
-		$this->step = isset($_GET['step']) ? sanitize_key($_GET['step']) : current(array_keys($this->steps));
+		$this->step = isset( $_GET['step'] ) ? sanitize_key( $_GET['step'] ) : current( array_keys( $this->steps ) );
 
 		// Use minified libraries if dev mode is turned on.
-		$suffix = ((true === $this->dev_mode)) ? '' : '.min';
+		$suffix = ( ( true === $this->dev_mode ) ) ? '' : '.min';
 
 		// Enqueue styles.
-		wp_enqueue_style('merlin', trailingslashit($this->base_url) . $this->directory . '/assets/css/merlin' . $suffix . '.css', array('wp-admin'), MERLIN_VERSION);
-		wp_enqueue_style('pxlart-dashboard', get_template_directory_uri() . '/inc/admin/assets/css/dashboard.css');
+		wp_enqueue_style( 'merlin', trailingslashit( $this->base_url ) . $this->directory . '/assets/css/merlin' . $suffix . '.css', array( 'wp-admin' ), MERLIN_VERSION );
+		wp_enqueue_style( 'pxlart-dashboard', get_template_directory_uri() . '/inc/admin/assets/css/dashboard.css' );
 		// Enqueue javascript.
-		wp_enqueue_script('merlin', trailingslashit($this->base_url) . $this->directory . '/assets/js/merlin' . $suffix . '.js', array('jquery-core'), MERLIN_VERSION);
-
-		wp_enqueue_script('pxlart-admin', get_template_directory_uri() . '/inc/admin/assets/js/admin.js', array('jquery'), false, true);
+		wp_enqueue_script( 'merlin', trailingslashit( $this->base_url ) . $this->directory . '/assets/js/merlin' . $suffix . '.js', array( 'jquery-core' ), MERLIN_VERSION );
+		 
+		wp_enqueue_script( 'pxlart-admin', get_template_directory_uri() . '/inc/admin/assets/js/admin.js', array( 'jquery'), false, true );
 
 		$texts = array(
-			'something_went_wrong' => esc_html__('Something went wrong. Please refresh the page and try again!', 'northway'),
+			'something_went_wrong' => esc_html__( 'Something went wrong. Please refresh the page and try again!', 'northway' ),
 		);
 
 		// Localize the javascript.
-		if (class_exists('TGM_Plugin_Activation')) {
+		if ( class_exists( 'TGM_Plugin_Activation' ) ) {
 			// Check first if TMGPA is included.
 			wp_localize_script(
-				'merlin',
-				'merlin_params',
-				array(
+				'merlin', 'merlin_params', array(
 					'tgm_plugin_nonce' => array(
-						'update'  => wp_create_nonce('tgmpa-update'),
-						'install' => wp_create_nonce('tgmpa-install'),
+						'update'  => wp_create_nonce( 'tgmpa-update' ),
+						'install' => wp_create_nonce( 'tgmpa-install' ),
 					),
 					'tgm_bulk_url'     => $this->tgmpa->get_tgmpa_url(),
-					'ajaxurl'          => admin_url('admin-ajax.php'),
-					'wpnonce'          => wp_create_nonce('merlin_nonce'),
+					'ajaxurl'          => admin_url( 'admin-ajax.php' ),
+					'wpnonce'          => wp_create_nonce( 'merlin_nonce' ),
 					'api_url' 		 => $pxl_server_info['api_url'],
 					'theme_slug'     => $theme_slug,
 					'texts'            => $texts,
@@ -457,11 +437,9 @@ class Merlin
 		} else {
 			// If TMGPA is not included.
 			wp_localize_script(
-				'merlin',
-				'merlin_params',
-				array(
-					'ajaxurl' => admin_url('admin-ajax.php'),
-					'wpnonce' => wp_create_nonce('merlin_nonce'),
+				'merlin', 'merlin_params', array(
+					'ajaxurl' => admin_url( 'admin-ajax.php' ),
+					'wpnonce' => wp_create_nonce( 'merlin_nonce' ),
 					'api_url' 		 => $pxl_server_info['api_url'],
 					'theme_slug'     => $theme_slug,
 					'texts'   => $texts,
@@ -478,7 +456,7 @@ class Merlin
 
 		<div class="merlin__wrapper">
 
-			<div class="merlin__content merlin__content--<?php echo esc_attr(strtolower($this->steps[$this->step]['name'])); ?>">
+			<div class="merlin__content merlin__content--<?php echo esc_attr( strtolower( $this->steps[ $this->step ]['name'] ) ); ?>">
 
 				<?php $this->step_output(); ?>
 
@@ -486,171 +464,161 @@ class Merlin
 				// Content Handlers.
 				$show_content = true;
 
-				if (! empty($_REQUEST['save_step']) && isset($this->steps[$this->step]['handler'])) {
-					$show_content = call_user_func($this->steps[$this->step]['handler']);
+				if ( ! empty( $_REQUEST['save_step'] ) && isset( $this->steps[ $this->step ]['handler'] ) ) {
+					$show_content = call_user_func( $this->steps[ $this->step ]['handler'] );
 				}
 
-				if ($show_content) {
+				if ( $show_content ) {
 					$this->body();
 				}
 				?>
-
+ 
 
 			</div>
 
-			<?php echo sprintf('<a class="return-to-dashboard" href="%s">%s</a>', esc_url(admin_url('/')), esc_html($strings['return-to-dashboard'])); ?>
+			<?php echo sprintf( '<a class="return-to-dashboard" href="%s">%s</a>', esc_url( admin_url( '/' ) ), esc_html( $strings['return-to-dashboard'] ) ); ?>
 
-			<?php $ignore_url = wp_nonce_url(admin_url('?' . $this->ignore . '=true'), 'merlinwp-ignore-nounce'); ?>
+			<?php $ignore_url = wp_nonce_url( admin_url( '?' . $this->ignore . '=true' ), 'merlinwp-ignore-nounce' ); ?>
 
-			<?php echo sprintf('<a class="return-to-dashboard ignore" href="%s">%s</a>', esc_url($ignore_url), esc_html($strings['ignore'])); ?>
+			<?php echo sprintf( '<a class="return-to-dashboard ignore" href="%s">%s</a>', esc_url( $ignore_url ), esc_html( $strings['ignore'] ) ); ?>
 
 		</div>
 
 		<?php $this->footer(); ?>
 
-	<?php
+		<?php
 		exit;
 	}
 
 	/**
 	 * Output the header.
 	 */
-	protected function header()
-	{
+	protected function header() {
 
 		// Strings passed in from the config file.
 		$strings = $this->strings;
 
 		// Get the current step.
-		$current_step = strtolower($this->steps[$this->step]['name']);
-	?>
+		$current_step = strtolower( $this->steps[ $this->step ]['name'] );
+		?>
 
 		<!DOCTYPE html>
 		<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
-
 		<head>
-			<meta name="viewport" content="width=device-width" />
-			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-			<?php printf(esc_html($strings['title%s%s%s%s']), '<ti', 'tle>', esc_html($this->theme->name), '</title>'); ?>
-			<?php do_action('admin_print_styles'); ?>
-			<?php do_action('admin_print_scripts'); ?>
-			<?php //do_action( 'admin_head' ); 
-			?>
+			<meta name="viewport" content="width=device-width"/>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+			<?php printf( esc_html( $strings['title%s%s%s%s'] ), '<ti', 'tle>', esc_html( $this->theme->name ), '</title>' ); ?>
+			<?php do_action( 'admin_print_styles' ); ?>
+			<?php do_action( 'admin_print_scripts' ); ?>
+			<?php //do_action( 'admin_head' ); ?>
 		</head>
-
-		<body class="merlin__body merlin__body--<?php echo esc_attr($current_step); ?>">
+		<body class="merlin__body merlin__body--<?php echo esc_attr( $current_step ); ?>">
 		<?php
 	}
 
 	/**
 	 * Output the content for the current step.
 	 */
-	protected function body()
-	{
-		isset($this->steps[$this->step]) ? call_user_func($this->steps[$this->step]['view']) : false;
+	protected function body() {
+		isset( $this->steps[ $this->step ] ) ? call_user_func( $this->steps[ $this->step ]['view'] ) : false;
 	}
 
 	/**
 	 * Output the footer.
 	 */
-	protected function footer()
-	{
+	protected function footer() {
 		?>
 		</body>
-		<?php do_action('admin_footer'); ?>
-		<?php do_action('admin_print_footer_scripts'); ?>
-
+		<?php do_action( 'admin_footer' ); ?>
+		<?php do_action( 'admin_print_footer_scripts' ); ?>
 		</html>
-	<?php
+		<?php
 	}
-
+ 
 	/**
 	 * Setup steps.
 	 */
-	public function steps()
-	{
+	public function steps() {
 
 		$this->steps = array(
 			'welcome' => array(
-				'name'    => esc_html__('Welcome', 'northway'),
-				'view'    => array($this, 'welcome'),
-				'handler' => array($this, 'welcome_handler'),
+				'name'    => esc_html__( 'Welcome', 'northway' ),
+				'view'    => array( $this, 'welcome' ),
+				'handler' => array( $this, 'welcome_handler' ),
 			),
 		);
 
-		if ($this->license_step_enabled) {
+		if ( $this->license_step_enabled ) {
 			$this->steps['license'] = array(
-				'name' => esc_html__('License', 'northway'),
-				'view' => array($this, 'license'),
+				'name' => esc_html__( 'License', 'northway' ),
+				'view' => array( $this, 'license' ),
 			);
 		}
 
 		// Show the plugin importer, only if TGMPA is included.
-		if (class_exists('TGM_Plugin_Activation')) {
+		if ( class_exists( 'TGM_Plugin_Activation' ) ) {
 			$this->steps['plugins'] = array(
-				'name' => esc_html__('Plugins', 'northway'),
-				'view' => array($this, 'plugins'),
+				'name' => esc_html__( 'Plugins', 'northway' ),
+				'view' => array( $this, 'plugins' ),
 			);
 		}
 
 		// Show the content importer, only if there's demo content added.
-
+		 
 		$this->steps['content'] = array(
-			'name' => esc_html__('Content', 'northway'),
-			'view' => array($this, 'content'),
+			'name' => esc_html__( 'Content', 'northway' ),
+			'view' => array( $this, 'content' ),
 		);
 
 		$this->steps['ready'] = array(
-			'name' => esc_html__('Ready', 'northway'),
-			'view' => array($this, 'ready'),
+			'name' => esc_html__( 'Ready', 'northway' ),
+			'view' => array( $this, 'ready' ),
 		);
 
-		$this->steps = apply_filters($this->theme->template . '_merlin_steps', $this->steps);
+		$this->steps = apply_filters( $this->theme->template . '_merlin_steps', $this->steps );
 	}
 
 	/**
 	 * Output the steps
 	 */
-	protected function step_output()
-	{
+	protected function step_output() {
 		$ouput_steps  = $this->steps;
-		$array_keys   = array_keys($this->steps);
-		$current_step = array_search($this->step, $array_keys, true);
+		$array_keys   = array_keys( $this->steps );
+		$current_step = array_search( $this->step, $array_keys, true );
 
-		array_shift($ouput_steps);
+		array_shift( $ouput_steps );
 
 		$strings = $this->strings;
-	?>
+		?>
 
 		<ul class="merlin-content-steps">
 
 			<?php
 			$i = 1;
-			foreach ($ouput_steps as $step_key => $step) :
+			foreach ( $ouput_steps as $step_key => $step ) :
 
 				$class_attr = '';
 				$show_link  = false;
 
-				if ($step_key === $this->step) {
+				if ( $step_key === $this->step ) {
 					$class_attr = 'active';
-				} elseif ($current_step > array_search($step_key, $array_keys, true)) {
+				} elseif ( $current_step > array_search( $step_key, $array_keys, true ) ) {
 					$class_attr = 'done';
 					$show_link  = true;
 				}
-			?>
+				?>
 
-				<li class="<?php echo esc_attr($class_attr); ?>">
+				<li class="<?php echo esc_attr( $class_attr ); ?>">
 					<div class="step-num"><?php echo esc_html($i); ?></div>
-					<div class="step-title"><?php echo esc_attr($step_key) === "content" ? $strings['import-header'] : $strings[$step_key . '-header'] ?></div>
-					<a href="<?php echo esc_url($this->step_link($step_key)); ?>" title="<?php echo esc_attr($step['name']); ?>"></a>
+					<div class="step-title"><?php echo esc_attr($step_key) === "content" ? $strings['import-header'] : $strings[$step_key.'-header'] ?></div>
+					<a href="<?php echo esc_url( $this->step_link( $step_key ) ); ?>" title="<?php echo esc_attr( $step['name'] ); ?>"></a>
 				</li>
 
-			<?php $i++;
-			endforeach; ?>
+			<?php $i++; endforeach; ?>
 
 		</ul>
 
-	<?php
+		<?php
 	}
 
 	/**
@@ -658,44 +626,40 @@ class Merlin
 	 *
 	 * @param string $step Name of the step, appended to the URL.
 	 */
-	protected function step_link($step)
-	{
-		return add_query_arg('step', $step);
+	protected function step_link( $step ) {
+		return add_query_arg( 'step', $step );
 	}
 
 	/**
 	 * Get the next step link.
 	 */
-	protected function step_next_link()
-	{
-		$keys = array_keys($this->steps);
-		$step = array_search($this->step, $keys, true) + 1;
+	protected function step_next_link() {
+		$keys = array_keys( $this->steps );
+		$step = array_search( $this->step, $keys, true ) + 1;
 
-		return add_query_arg('step', $keys[$step]);
+		return add_query_arg( 'step', $keys[ $step ] );
 	}
 
-	protected function step_previous_link()
-	{
-		$keys = array_keys($this->steps);
-		$step = array_search($this->step, $keys, true) - 1;
+	protected function step_previous_link() {
+		$keys = array_keys( $this->steps );
+		$step = array_search( $this->step, $keys, true ) - 1;
 
-		return add_query_arg('step', $keys[$step]);
+		return add_query_arg( 'step', $keys[ $step ] );
 	}
 
 	/**
 	 * Introduction step
 	 */
-	protected function welcome()
-	{
+	protected function welcome() {
 
 		// Has this theme been setup yet? Compare this to the option set when you get to the last panel.
-		$already_setup = get_option('merlin_' . $this->slug . '_completed');
+		$already_setup = get_option( 'merlin_' . $this->slug . '_completed' );
 
 		// Theme Name.
-		$theme = ucfirst($this->theme);
+		$theme = ucfirst( $this->theme );
 
 		// Remove "Child" from the current theme name, if it's installed.
-		$theme = str_replace(' Child', '', $theme);
+		$theme = str_replace( ' Child', '', $theme );
 
 		// Strings passed in from the config file.
 		$strings = $this->strings;
@@ -705,22 +669,22 @@ class Merlin
 		$paragraph = ! $already_setup ? $strings['welcome%s'] : $strings['welcome-success%s'];
 		$start     = $strings['btn-start'];
 		$no        = $strings['btn-no'];
-	?>
+		?>
 
 		<div class="merlin__content--transition">
 
-			<h1><?php echo esc_html(sprintf($header, $theme)); ?></h1>
+			<h1><?php echo esc_html( sprintf( $header, $theme ) ); ?></h1>
 
-			<p><?php echo esc_html(sprintf($paragraph, $theme)); ?></p>
+			<p><?php echo esc_html( sprintf( $paragraph, $theme ) ); ?></p>
 
-			<img src="<?php echo (esc_url(get_template_directory_uri() . '/inc/admin/assets/img/import-start.png')) ?>" width="380" />
+			<img src="<?php echo(esc_url( get_template_directory_uri(). '/inc/admin/assets/img/import-start.png' )) ?>" width="380" />
 
 		</div>
 
 		<footer class="merlin__content__footer">
-			<a href="<?php echo esc_url(wp_get_referer() && ! strpos(wp_get_referer(), 'update.php') ? wp_get_referer() : admin_url('/')); ?>" class="merlin__button merlin__button--skip"><?php echo esc_html($no); ?></a>
-			<a href="<?php echo esc_url($this->step_next_link()); ?>" class="merlin__button merlin__button--next merlin__button--proceed merlin__button--colorchange"><?php echo esc_html($start); ?></a>
-			<?php wp_nonce_field('merlin'); ?>
+			<a href="<?php echo esc_url( wp_get_referer() && ! strpos( wp_get_referer(), 'update.php' ) ? wp_get_referer() : admin_url( '/' ) ); ?>" class="merlin__button merlin__button--skip"><?php echo esc_html( $no ); ?></a>
+			<a href="<?php echo esc_url( $this->step_next_link() ); ?>" class="merlin__button merlin__button--next merlin__button--proceed merlin__button--colorchange"><?php echo esc_html( $start ); ?></a>
+			<?php wp_nonce_field( 'merlin' ); ?>
 		</footer>
 	<?php
 	}
@@ -729,10 +693,9 @@ class Merlin
 	 * Handles save button from welcome page.
 	 * This is to perform tasks when the setup wizard has already been run.
 	 */
-	protected function welcome_handler()
-	{
+	protected function welcome_handler() {
 
-		check_admin_referer('merlin');
+		check_admin_referer( 'merlin' );
 
 		return false;
 	}
@@ -740,79 +703,77 @@ class Merlin
 	/**
 	 * Theme EDD license step.
 	 */
-	protected function license()
-	{
+	protected function license() {
 		$is_theme_registered = $this->is_theme_registered();
 		$action_url          = $this->theme_license_help_url;
 		$required            = $this->license_required;
 
-		$is_theme_registered_class = ($is_theme_registered) ? ' is-registered' : null;
+		$is_theme_registered_class = ( $is_theme_registered ) ? ' is-registered' : null;
 
 		// Theme Name.
-		$theme = ucfirst($this->theme);
+		$theme = ucfirst( $this->theme );
 
 		// Remove "Child" from the current theme name, if it's installed.
-		$theme = str_replace(' Child', '', $theme);
+		$theme = str_replace( ' Child', '', $theme );
 
 		// Strings passed in from the config file.
 		$strings = $this->strings;
 
 		// Text strings.
 		$header    = ! $is_theme_registered ? $strings['license-header'] : $strings['license-header-success%s'];
-		$header2    = ! $is_theme_registered ? $strings['license-header2'] : $strings['license-header-success%s'];
+		$header2    = ! $is_theme_registered ? $strings['license-header2'] : $strings['license-header-success%s']; 
 		$action    = $strings['license-tooltip'];
 		$label     = $strings['license-label'];
 		$skip      = $strings['btn-license-skip'];
-		$next      = $strings['btn-next'];
+		$next      = $strings['btn-next']; 
 		$paragraph = ! $is_theme_registered ? $strings['license%s'] : $strings['license-success%s'];
-		$install   = $strings['btn-license-activate'];
+		$install   = $strings['btn-license-activate']; 
 		$register = new Northway_Register;
-	?>
+		?>
 
-		<?php
-		$theme_slug = get_template();
-		if ('valid' == get_option($theme_slug . '_purchase_code_status', false)) {
-			wp_redirect(admin_url('admin.php?page=pxlart-setup&step=plugins'));
-		}
+		<?php 
+			$theme_slug = get_template(); 
+			if ( 'valid' == get_option( $theme_slug.'_purchase_code_status', false ) ) {
+				wp_redirect(admin_url('admin.php?page=pxlart-setup&step=plugins'));
+			}
 		?>
 		<div class="merlin__content--transition">
 
 			<svg class="icon icon--checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-				<circle class="icon--checkmark__circle" cx="26" cy="26" r="25" fill="none" />
-				<path class="icon--checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+				<circle class="icon--checkmark__circle" cx="26" cy="26" r="25" fill="none"/><path class="icon--checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
 			</svg>
 
-			<h1><?php echo esc_html(sprintf($header2, $theme)); ?></h1>
+			<h1><?php echo esc_html( sprintf( $header2, $theme ) ); ?></h1>
 
-			<p id="license-text"><?php echo esc_html(sprintf($paragraph)); ?></p>
+			<p id="license-text"><?php echo esc_html( sprintf( $paragraph ) ); ?></p>
 
-			<?php if (! $is_theme_registered) : ?>
+			<?php  if ( ! $is_theme_registered ) : ?>
 				<div class="merlin__content--license-key">
 					<div class="pxl-regis-box pxl-regis-box-solid pxl-regis-register-box">
 						<div class="pxl-regis-box-head">
 							<?php $register->messages(true); ?>
-						</div>
-					</div>
+						</div> 
+					</div> 
 				</div>
 
 			<?php endif; ?>
 
 		</div>
 
-		<footer class="merlin__content__footer <?php echo esc_attr($is_theme_registered_class); ?>">
+		<footer class="merlin__content__footer <?php echo esc_attr( $is_theme_registered_class ); ?>">
 
-			<?php if (! $is_theme_registered) : ?>
+			<?php if ( ! $is_theme_registered ) : ?>
 
-				<?php if (! $required) : ?>
-					<a href="<?php echo esc_url($this->step_next_link()); ?>" class="merlin__button merlin__button--skip merlin__button--proceed"><?php echo esc_html($skip); ?></a>
+				<?php if ( ! $required ) : ?>
+					<a href="<?php echo esc_url( $this->step_next_link() ); ?>" class="merlin__button merlin__button--skip merlin__button--proceed"><?php echo esc_html( $skip ); ?></a>
 				<?php endif ?>
-
+ 
 			<?php else : ?>
-				<a href="<?php echo esc_url($this->step_next_link()); ?>" class="merlin__button merlin__button--next merlin__button--proceed merlin__button--colorchange"><?php echo esc_html($next); ?></a>
+				<a href="<?php echo esc_url( $this->step_next_link() ); ?>" class="merlin__button merlin__button--next merlin__button--proceed merlin__button--colorchange"><?php echo esc_html( $next ); ?></a>
 			<?php endif; ?>
-			<?php wp_nonce_field('merlin'); ?>
+			<?php wp_nonce_field( 'merlin' ); ?>
 		</footer>
-	<?php
+		<?php
 	}
 
 
@@ -821,49 +782,47 @@ class Merlin
 	 *
 	 * @return boolean
 	 */
-	private function is_theme_registered()
-	{
-		$dev_mode = apply_filters('pxl_set_dev_mode', (defined('DEV_MODE') && DEV_MODE));
-		if ($dev_mode === true) return true;
-		$is_registered = get_option($this->edd_theme_slug . '_license_key_status', false) === 'valid';
-		return apply_filters('merlin_is_theme_registered', $is_registered);
+	private function is_theme_registered() {
+		$dev_mode = apply_filters( 'pxl_set_dev_mode', (defined('DEV_MODE') && DEV_MODE)) ;
+		if( $dev_mode === true) return true;
+		$is_registered = get_option( $this->edd_theme_slug . '_license_key_status', false ) === 'valid';
+		return apply_filters( 'merlin_is_theme_registered', $is_registered );
 	}
-
+ 
 	/**
 	 * Theme plugins
 	 */
-	protected function plugins()
-	{
+	protected function plugins() {
 
 		// Variables.
-		$url    = wp_nonce_url(add_query_arg(array('plugins' => 'go')), 'merlin');
+		$url    = wp_nonce_url( add_query_arg( array( 'plugins' => 'go' ) ), 'merlin' );
 		$method = '';
-		$fields = array_keys($_POST);
-		$creds  = request_filesystem_credentials(esc_url_raw($url), $method, false, false, $fields);
+		$fields = array_keys( $_POST );
+		$creds  = request_filesystem_credentials( esc_url_raw( $url ), $method, false, false, $fields );
 
 		tgmpa_load_bulk_installer();
 
-		if (false === $creds) {
+		if ( false === $creds ) {
 			return true;
 		}
 
-		if (! WP_Filesystem($creds)) {
-			request_filesystem_credentials(esc_url_raw($url), $method, true, false, $fields);
+		if ( ! WP_Filesystem( $creds ) ) {
+			request_filesystem_credentials( esc_url_raw( $url ), $method, true, false, $fields );
 			return true;
 		}
 
 		// Are there plugins that need installing/activating?
 		$plugins          = $this->get_tgmpa_plugins();
 		$required_plugins = $recommended_plugins = array();
-		$count            = count($plugins['all']);
+		$count            = count( $plugins['all'] );
 		$class            = $count ? null : 'no-plugins';
 
 		// Split the plugins into required and recommended.
-		foreach ($plugins['all'] as $slug => $plugin) {
-			if (! empty($plugin['required'])) {
-				$required_plugins[$slug] = $plugin;
+		foreach ( $plugins['all'] as $slug => $plugin ) {
+			if ( ! empty( $plugin['required'] ) ) {
+				$required_plugins[ $slug ] = $plugin;
 			} else {
-				$recommended_plugins[$slug] = $plugin;
+				$recommended_plugins[ $slug ] = $plugin;
 			}
 		}
 
@@ -877,78 +836,77 @@ class Merlin
 		$skip      = $strings['btn-skip'];
 		$next      = $strings['btn-next'];
 		$install   = $strings['btn-plugins-install'];
-	?>
+		?>
 
 		<div class="merlin__content--transition">
 
 			<svg class="icon icon--checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-				<circle class="icon--checkmark__circle" cx="26" cy="26" r="25" fill="none" />
-				<path class="icon--checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+				<circle class="icon--checkmark__circle" cx="26" cy="26" r="25" fill="none"/><path class="icon--checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
 			</svg>
 
-			<h1><?php echo esc_html($header); ?></h1>
+			<h1><?php echo esc_html( $header ); ?></h1>
 
-			<p><?php echo esc_html($paragraph); ?></p>
+			<p><?php echo esc_html( $paragraph ); ?></p>
 
-			<?php if ($count) { ?>
-				<a id="merlin__drawer-trigger" class="merlin__button merlin__button--knockout"><span><?php echo esc_html($action); ?></span><span class="chevron"></span></a>
+			<?php if ( $count ) { ?>
+				<a id="merlin__drawer-trigger" class="merlin__button merlin__button--knockout"><span><?php echo esc_html( $action ); ?></span><span class="chevron"></span></a>
 			<?php } ?>
 
 		</div>
 
 		<form action="" method="post">
 
-			<?php if ($count) : ?>
+			<?php if ( $count ) : ?>
 
 				<ul class="merlin__drawer merlin__drawer--install-plugins">
 
-					<?php if (! empty($required_plugins)) : ?>
-						<?php foreach ($required_plugins as $slug => $plugin) : ?>
-							<li data-slug="<?php echo esc_attr($slug); ?>">
-								<input type="checkbox" name="default_plugins[<?php echo esc_attr($slug); ?>]" class="checkbox" id="default_plugins_<?php echo esc_attr($slug); ?>" value="1" checked>
+				<?php if ( ! empty( $required_plugins ) ) : ?>
+					<?php foreach ( $required_plugins as $slug => $plugin ) : ?>
+						<li data-slug="<?php echo esc_attr( $slug ); ?>">
+							<input type="checkbox" name="default_plugins[<?php echo esc_attr( $slug ); ?>]" class="checkbox" id="default_plugins_<?php echo esc_attr( $slug ); ?>" value="1" checked>
 
-								<label for="default_plugins_<?php echo esc_attr($slug); ?>">
-									<i></i>
+							<label for="default_plugins_<?php echo esc_attr( $slug ); ?>">
+								<i></i>
 
-									<span><?php echo esc_html($plugin['name']); ?></span>
+								<span><?php echo esc_html( $plugin['name'] ); ?></span>
 
-									<span class="badge">
-										<span class="hint--top" aria-label="<?php esc_html_e('Required', 'northway'); ?>">
-											<?php esc_html_e('Required', 'northway'); ?>
-										</span>
+								<span class="badge">
+									<span class="hint--top" aria-label="<?php esc_html_e( 'Required', 'northway' ); ?>">
+										<?php esc_html_e( 'Required', 'northway' ); ?>
 									</span>
-								</label>
-							</li>
-						<?php endforeach; ?>
-					<?php endif; ?>
+								</span>
+							</label>
+						</li>
+					<?php endforeach; ?>
+				<?php endif; ?>
 
-					<?php if (! empty($recommended_plugins)) : ?>
-						<?php foreach ($recommended_plugins as $slug => $plugin) : ?>
-							<li data-slug="<?php echo esc_attr($slug); ?>">
-								<input type="checkbox" name="default_plugins[<?php echo esc_attr($slug); ?>]" class="checkbox" id="default_plugins_<?php echo esc_attr($slug); ?>" value="1" checked>
+				<?php if ( ! empty( $recommended_plugins ) ) : ?>
+					<?php foreach ( $recommended_plugins as $slug => $plugin ) : ?>
+						<li data-slug="<?php echo esc_attr( $slug ); ?>">
+							<input type="checkbox" name="default_plugins[<?php echo esc_attr( $slug ); ?>]" class="checkbox" id="default_plugins_<?php echo esc_attr( $slug ); ?>" value="1" checked>
 
-								<label for="default_plugins_<?php echo esc_attr($slug); ?>">
-									<i></i><span><?php echo esc_html($plugin['name']); ?></span>
-								</label>
-							</li>
-						<?php endforeach; ?>
-					<?php endif; ?>
+							<label for="default_plugins_<?php echo esc_attr( $slug ); ?>">
+								<i></i><span><?php echo esc_html( $plugin['name'] ); ?></span>
+							</label>
+						</li>
+					<?php endforeach; ?>
+				<?php endif; ?>
 
 				</ul>
 
 			<?php endif; ?>
 
-			<footer class="merlin__content__footer <?php echo esc_attr($class); ?>">
-				<?php if ($count) : ?>
-					<a id="close" href="<?php echo esc_url($this->step_next_link()); ?>" class="merlin__button merlin__button--skip merlin__button--closer merlin__button--proceed"><?php echo esc_html($skip); ?></a>
-					<a id="skip" href="<?php echo esc_url($this->step_next_link()); ?>" class="merlin__button merlin__button--skip merlin__button--proceed"><?php echo esc_html($skip); ?></a>
-					<a href="<?php echo esc_url($this->step_next_link()); ?>" class="merlin__button merlin__button--next button-next" data-callback="install_plugins">
-						<span class="merlin__button--loading__text"><?php echo esc_html($install); ?></span>
+			<footer class="merlin__content__footer <?php echo esc_attr( $class ); ?>">
+				<?php if ( $count ) : ?>
+					<a id="close" href="<?php echo esc_url( $this->step_next_link() ); ?>" class="merlin__button merlin__button--skip merlin__button--closer merlin__button--proceed"><?php echo esc_html( $skip ); ?></a>
+					<a id="skip" href="<?php echo esc_url( $this->step_next_link() ); ?>" class="merlin__button merlin__button--skip merlin__button--proceed"><?php echo esc_html( $skip ); ?></a>
+					<a href="<?php echo esc_url( $this->step_next_link() ); ?>" class="merlin__button merlin__button--next button-next" data-callback="install_plugins">
+						<span class="merlin__button--loading__text"><?php echo esc_html( $install ); ?></span>
 					</a>
 				<?php else : ?>
-					<a href="<?php echo esc_url($this->step_next_link()); ?>" class="merlin__button merlin__button--next merlin__button--proceed merlin__button--colorchange"><?php echo esc_html($next); ?></a>
+					<a href="<?php echo esc_url( $this->step_next_link() ); ?>" class="merlin__button merlin__button--next merlin__button--proceed merlin__button--colorchange"><?php echo esc_html( $next ); ?></a>
 				<?php endif; ?>
-				<?php wp_nonce_field('merlin'); ?>
+				<?php wp_nonce_field( 'merlin' ); ?>
 			</footer>
 		</form>
 
@@ -958,9 +916,8 @@ class Merlin
 	/**
 	 * Page setup
 	 */
-	protected function content()
-	{
-
+	protected function content() { 
+		 
 		// Strings passed in from the config file.
 		$strings = $this->strings;
 
@@ -971,24 +928,24 @@ class Merlin
 		$skip      = $strings['btn-skip'];
 		$next      = $strings['btn-next'];
 		$import    = $strings['btn-import'];
-	?>
+		?>
 
-		<h1><?php echo esc_html($header); ?></h1>
+		<h1><?php echo esc_html( $header ); ?></h1>
 
-		<p><?php echo esc_html($paragraph); ?></p>
+		<p><?php echo esc_html( $paragraph ); ?></p>
 
-		<?php include_once(get_template_directory() . '/inc/admin/views/admin-demos.php'); ?>
-
+		<?php include_once( get_template_directory() . '/inc/admin/views/admin-demos.php' ); ?>
+ 
 		<footer class="merlin__content__footer" style="margin-top: 1em">
 
-			<a href="<?php echo esc_url($this->step_previous_link()); ?>" class="merlin__button merlin__button--skip merlin__button--proceed"><?php echo esc_html('Back to Install Plugins'); ?></a>
+				<a href="<?php echo esc_url( $this->step_previous_link() ); ?>" class="merlin__button merlin__button--skip merlin__button--proceed"><?php echo esc_html( 'Back to Install Plugins' ); ?></a>
 
-			<a href="<?php echo esc_url($this->step_next_link()); ?>" class="merlin__button merlin__button--skip">
-				<?php echo esc_html($skip); ?>
-			</a>
+				<a href="<?php echo esc_url( $this->step_next_link() ); ?>" class="merlin__button merlin__button--skip" >
+					<?php echo esc_html( $skip ); ?>
+				</a>
 
 		</footer>
-
+		  
 	<?php
 	}
 
@@ -996,17 +953,16 @@ class Merlin
 	/**
 	 * Final step
 	 */
-	protected function ready()
-	{
+	protected function ready() {
 
 		// Author name.
 		$author = $this->theme->author;
 
 		// Theme Name.
-		$theme = ucfirst($this->theme);
+		$theme = ucfirst( $this->theme );
 
 		// Remove "Child" from the current theme name, if it's installed.
-		$theme = str_replace(' Child', '', $theme);
+		$theme = str_replace( ' Child', '', $theme );
 
 		// Strings passed in from the config file.
 		$strings = $this->strings;
@@ -1022,13 +978,13 @@ class Merlin
 		// Links.
 		$links = array();
 
-		for ($i = 1; $i < 4; $i++) {
-			if (! empty($strings["ready-link-$i"])) {
-				$links[] = $strings["ready-link-$i"];
+		for ( $i = 1; $i < 4; $i++ ) {
+			if ( ! empty( $strings[ "ready-link-$i" ] ) ) {
+				$links[] = $strings[ "ready-link-$i" ];
 			}
 		}
 
-		$links_class = empty($links) ? 'merlin__content__footer--nolinks' : null;
+		$links_class = empty( $links ) ? 'merlin__content__footer--nolinks' : null;
 
 		$allowed_html_array = array(
 			'a' => array(
@@ -1038,28 +994,28 @@ class Merlin
 			),
 		);
 
-		update_option('merlin_' . $this->slug . '_completed', time());
-	?>
+		update_option( 'merlin_' . $this->slug . '_completed', time() );
+		?>
 
 		<div class="merlin__content--transition">
 
-			<h1><?php echo esc_html(sprintf($header, $theme)); ?></h1>
+			<h1><?php echo esc_html( sprintf( $header, $theme ) ); ?></h1>
 
-			<p><?php wp_kses(printf($paragraph, $author), $allowed_html_array); ?></p>
+			<p><?php wp_kses( printf( $paragraph, $author ), $allowed_html_array ); ?></p>
 
 		</div>
 
-		<footer class="merlin__content__footer merlin__content__footer--fullwidth <?php echo esc_attr($links_class); ?>">
+		<footer class="merlin__content__footer merlin__content__footer--fullwidth <?php echo esc_attr( $links_class ); ?>">
 
-			<a href="<?php echo esc_url($this->ready_big_button_url); ?>" class="merlin__button merlin__button--blue merlin__button--fullwidth merlin__button--popin"><?php echo esc_html($big_btn); ?></a>
+			<a href="<?php echo esc_url( $this->ready_big_button_url ); ?>" class="merlin__button merlin__button--blue merlin__button--fullwidth merlin__button--popin"><?php echo esc_html( $big_btn ); ?></a>
 
-			<?php if (! empty($links)) : ?>
-				<a id="merlin__drawer-trigger" class="merlin__button merlin__button--knockout"><span><?php echo esc_html($action); ?></span><span class="chevron"></span></a>
+			<?php if ( ! empty( $links ) ) : ?>
+				<a id="merlin__drawer-trigger" class="merlin__button merlin__button--knockout"><span><?php echo esc_html( $action ); ?></span><span class="chevron"></span></a>
 
 				<ul class="merlin__drawer merlin__drawer--extras">
 
-					<?php foreach ($links as $link) : ?>
-						<li><?php echo wp_kses($link, $allowed_html_array); ?></li>
+					<?php foreach ( $links as $link ) : ?>
+						<li><?php echo wp_kses( $link, $allowed_html_array ); ?></li>
 					<?php endforeach; ?>
 
 				</ul>
@@ -1067,7 +1023,7 @@ class Merlin
 
 		</footer>
 
-<?php
+	<?php
 	}
 
 	/**
@@ -1075,8 +1031,7 @@ class Merlin
 	 *
 	 * @return    array
 	 */
-	protected function get_tgmpa_plugins()
-	{
+	protected function get_tgmpa_plugins() {
 		$plugins = array(
 			'all'      => array(), // Meaning: all plugins which still have open actions.
 			'install'  => array(),
@@ -1084,104 +1039,104 @@ class Merlin
 			'activate' => array(),
 		);
 
-		foreach ($this->tgmpa->plugins as $slug => $plugin) {
-			if ($this->tgmpa->is_plugin_active($slug) && false === $this->tgmpa->does_plugin_have_update($slug)) {
+		foreach ( $this->tgmpa->plugins as $slug => $plugin ) { 
+			if ( $this->tgmpa->is_plugin_active( $slug ) && false === $this->tgmpa->does_plugin_have_update( $slug ) ) {
 				continue;
-			} else {
-				$plugins['all'][$slug] = $plugin;
-				if (! $this->tgmpa->is_plugin_installed($slug)) {
-					$plugins['install'][$slug] = $plugin;
+			} else { 
+				$plugins['all'][ $slug ] = $plugin;
+				if ( ! $this->tgmpa->is_plugin_installed( $slug ) ) {
+					$plugins['install'][ $slug ] = $plugin;
 				} else {
-					if (false !== $this->tgmpa->does_plugin_have_update($slug)) {
-						$plugins['update'][$slug] = $plugin;
+					if ( false !== $this->tgmpa->does_plugin_have_update( $slug ) ) {
+						$plugins['update'][ $slug ] = $plugin;
 					}
-					if ($this->tgmpa->can_plugin_activate($slug)) {
-						$plugins['activate'][$slug] = $plugin;
+					if ( $this->tgmpa->can_plugin_activate( $slug ) ) {
+						$plugins['activate'][ $slug ] = $plugin;
 					}
 				}
 			}
-		}
+		} 
 
 		return $plugins;
 	}
-
+   
 	/**
 	 * Do plugins' AJAX
 	 *
 	 * @internal    Used as a calback.
 	 */
-	function _ajax_plugins()
-	{
-
-		if (! check_ajax_referer('merlin_nonce', 'wpnonce') || empty($_POST['slug'])) {
-			exit(0);
+	function _ajax_plugins() {
+		
+		if ( ! check_ajax_referer( 'merlin_nonce', 'wpnonce' ) || empty( $_POST['slug'] ) ) {
+			exit( 0 );
 		}
 
 		$json      = array();
 		$tgmpa_url = $this->tgmpa->get_tgmpa_url();
 		$plugins   = $this->get_tgmpa_plugins();
-
-		foreach ($plugins['activate'] as $slug => $plugin) {
-			if (sanitize_title($_POST['slug']) === $slug) {
+		 
+		foreach ( $plugins['activate'] as $slug => $plugin ) {
+			if ( sanitize_title($_POST['slug']) === $slug ) {
 				$json = array(
 					'url'           => $tgmpa_url,
-					'plugin'        => array($slug),
+					'plugin'        => array( $slug ),
 					'tgmpa-page'    => $this->tgmpa->menu,
 					'plugin_status' => 'all',
-					'_wpnonce'      => wp_create_nonce('bulk-plugins'),
+					'_wpnonce'      => wp_create_nonce( 'bulk-plugins' ),
 					'action'        => 'tgmpa-bulk-activate',
-					'action2'       => -1,
-					'message'       => esc_html__('Activating', 'northway'),
+					'action2'       => - 1,
+					'message'       => esc_html__( 'Activating', 'northway' ),
 				);
 				break;
 			}
 		}
 
-		foreach ($plugins['update'] as $slug => $plugin) {
-			if (sanitize_title($_POST['slug']) === $slug) {
+		foreach ( $plugins['update'] as $slug => $plugin ) {
+			if ( sanitize_title($_POST['slug']) === $slug ) {
 				$json = array(
 					'url'           => $tgmpa_url,
-					'plugin'        => array($slug),
+					'plugin'        => array( $slug ),
 					'tgmpa-page'    => $this->tgmpa->menu,
 					'plugin_status' => 'all',
-					'_wpnonce'      => wp_create_nonce('bulk-plugins'),
+					'_wpnonce'      => wp_create_nonce( 'bulk-plugins' ),
 					'action'        => 'tgmpa-bulk-update',
-					'action2'       => -1,
-					'message'       => esc_html__('Updating', 'northway'),
+					'action2'       => - 1,
+					'message'       => esc_html__( 'Updating', 'northway' ),
 				);
 				break;
 			}
 		}
 
-		foreach ($plugins['install'] as $slug => $plugin) {
-			if (sanitize_title($_POST['slug']) === $slug) {
+		foreach ( $plugins['install'] as $slug => $plugin ) {
+			if ( sanitize_title($_POST['slug']) === $slug ) {
 				$json = array(
 					'url'           => $tgmpa_url,
-					'plugin'        => array($slug),
+					'plugin'        => array( $slug ),
 					'tgmpa-page'    => $this->tgmpa->menu,
 					'plugin_status' => 'all',
-					'_wpnonce'      => wp_create_nonce('bulk-plugins'),
+					'_wpnonce'      => wp_create_nonce( 'bulk-plugins' ),
 					'action'        => 'tgmpa-bulk-install',
-					'action2'       => -1,
-					'message'       => esc_html__('Installing', 'northway'),
+					'action2'       => - 1,
+					'message'       => esc_html__( 'Installing', 'northway' ),
 				);
 				break;
 			}
 		}
-
-		if ($json) {
-			$json['hash']    = md5(serialize($json));
-			$json['message'] = esc_html__('Installing', 'northway');
-			wp_send_json($json);
+ 
+		if ( $json ) {
+			$json['hash']    = md5( serialize( $json ) );
+			$json['message'] = esc_html__( 'Installing', 'northway' );
+			wp_send_json( $json );
 		} else {
 			wp_send_json(
 				array(
 					'done'    => 1,
-					'message' => esc_html__('Success', 'northway'),
+					'message' => esc_html__( 'Success', 'northway' ),
 				)
 			);
 		}
 
 		exit;
 	}
+     
 }

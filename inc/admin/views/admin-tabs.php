@@ -9,9 +9,9 @@
 	$pxl_server_info = apply_filters( 'pxl_server_info', 
 		[
 			'video_url' => 'https://doc.casethemes.net/video-guide/',
-			'demo_url' => 'https://northway.casethemes.net/',
+			'demo_url' => 'https://demo.casethemes.net/',
 			'docs_url' => 'https://doc.casethemes.net/', 
-			'support_url' => 'https://bravisthemes.ticksy.com/'] 
+			'support_url' => 'https://casethemes.ticksy.com/'] 
 		) ; 
 ?>
 <nav class="pxl-dsb-menubar">

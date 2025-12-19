@@ -175,6 +175,7 @@
             position: absolute;
             max-width: calc(1600px + 86px);
             width: calc(1600px + 86px);
+            height: 86px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -184,6 +185,7 @@
             left: -43px;
             right: -43px;
             z-index: 5;
+            pointer-events: none;
             @media #{$max-xxl} {
                 max-width: 1290px;
                 top: auto;
@@ -204,9 +206,10 @@
             .pxl-swiper-arrow {
                 width: 86px;
                 height: 86px;
-                background-color: #2F3766;
+                background-color: #2f3766;
                 color: $body_bg_color;
                 border: none;
+                pointer-events: auto;
                 i {
                     font-size: 36px;
                 }

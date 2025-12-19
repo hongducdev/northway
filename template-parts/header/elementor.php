@@ -132,15 +132,10 @@ if ($post_header_mobile instanceof WP_Post) {
                                             if (isset($p_menu) && !empty($p_menu)) {
                                                 $attr_menu['menu'] = $p_menu;
                                             }
-                                            wp_nav_menu(array(
-                                                'theme_location' => 'primary-mobile',
-                                                'container'  => '',
-                                                'menu_id'    => '',
-                                                'menu_class' => 'pxl-menu-primary clearfix',
-                                                'link_before'     => '<span>',
-                                                'link_after'      => '</span>',
-                                                'walker'         => class_exists('PXL_Mega_Menu_Walker') ? new PXL_Mega_Menu_Walker : '',
-                                            ));
+                                            if (!isset($attr_menu['theme_location'])) {
+                                                $attr_menu['theme_location'] = 'primary-mobile';
+                                            }
+                                            wp_nav_menu($attr_menu);
                                         } elseif (has_nav_menu('primary')) {
                                             $attr_menu = array(
                                                 'theme_location' => 'primary',
@@ -157,15 +152,11 @@ if ($post_header_mobile instanceof WP_Post) {
                                                     $attr_menu['menu'] = $pm_menu;
                                                 }
                                             }
-                                            wp_nav_menu(array(
-                                                'theme_location' => 'primary',
-                                                'container'  => '',
-                                                'menu_id'    => '',
-                                                'menu_class' => 'pxl-menu-primary clearfix',
-                                                'link_before'     => '<span>',
-                                                'link_after'      => '</span>',
-                                                'walker'         => class_exists('PXL_Mega_Menu_Walker') ? new PXL_Mega_Menu_Walker : '',
-                                            ));
+                                            // Ensure theme_location is always set (WordPress will ignore it if 'menu' is set)
+                                            if (!isset($attr_menu['theme_location'])) {
+                                                $attr_menu['theme_location'] = 'primary';
+                                            }
+                                            wp_nav_menu($attr_menu);
                                         } else { ?>
                                             <ul class="pxl-menu-primary">
                                                 <?php wp_list_pages(array(

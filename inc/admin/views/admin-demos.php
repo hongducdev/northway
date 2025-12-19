@@ -4,8 +4,8 @@
 		<?php 
 		$installed_plugins = get_plugins();
 		$plugins = TGM_Plugin_Activation::$instance->plugins;
- 		 
 		$plugin_requires = array();
+
 		foreach( $plugins as $plugin ){
 			$file_path = $plugin['file_path'];
 			
@@ -17,7 +17,6 @@
 		}  
 		?>
 		<?php 
-		 
 		$dev_mode = (defined('DEV_MODE') && DEV_MODE);
 		if ( 'valid' != get_option( northway()->get_slug().'_purchase_code_status', false ) && !$dev_mode ) :
 			
@@ -89,7 +88,6 @@
 
 					<?php $i++; ?>
 					<?php endforeach; ?>
-
 				</div>
 			</div>
 		</div>

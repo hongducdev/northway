@@ -1,6 +1,6 @@
 <div class="pxl-iconbox">
 	<span class="pxl-icon-container">
-		<img src="<?php echo esc_url(get_template_directory_uri() . '/inc/admin/assets/img/check.png'  )?>" alt="<?php esc_attr_e( 'Check', 'northway' ); ?>">
+		<img src="<?php echo esc_url(get_template_directory_uri() . '/inc/admin/assets/img/check.png'); ?>" alt="<?php esc_attr_e( 'Check', 'northway' ); ?>">
 	</span>
 	<div class="pxl-iconbox-contents">
 		<h6><?php esc_html_e( 'Enable Auto Updates', 'northway' ); ?></h6>
@@ -10,7 +10,7 @@
 
 <div class="pxl-iconbox">
 	<span class="pxl-icon-container">
-		<img src="<?php echo esc_url(get_template_directory_uri() . '/inc/admin/assets/img/check.png'  )?>" alt="<?php esc_attr_e( 'Check', 'northway' ); ?>">
+		<img src="<?php echo esc_url(get_template_directory_uri() . '/inc/admin/assets/img/check.png'); ?>" alt="<?php esc_attr_e( 'Check', 'northway' ); ?>">
 	</span>
 	<div class="pxl-iconbox-contents">
 		<h6><?php esc_html_e( 'Exclusive and Premium Plugins', 'northway' ); ?></h6>
@@ -20,7 +20,7 @@
 
 <div class="pxl-iconbox">
 	<span class="pxl-icon-container">
-		<img src="<?php echo esc_url(get_template_directory_uri() . '/inc/admin/assets/img/check.png' )?>" alt="<?php esc_attr_e( 'Check', 'northway' ); ?>">
+		<img src="<?php echo esc_url(get_template_directory_uri() . '/inc/admin/assets/img/check.png'); ?>" alt="<?php esc_attr_e( 'Check', 'northway' ); ?>">
 	</span>
 	<div class="pxl-iconbox-contents">
 		<h6><?php esc_html_e( 'Premium Support', 'northway' ); ?></h6>

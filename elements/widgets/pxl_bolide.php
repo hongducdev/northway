@@ -41,10 +41,6 @@ pxl_add_custom_widget(
                                     'step' => 0.1,
                                 ],
                             ],
-                            'default' => [
-                                'unit' => 's',
-                                'size' => 3,
-                            ],
                             'selectors' => [
                                 '{{WRAPPER}} .pxl-bolide-item' => '--animation-speed: {{SIZE}}s;',
                             ],

@@ -22144,7 +22144,9 @@ body.rtl .widget_search .search-submit {
   position: relative;
 }
 .single-product #pxl-content-area div.product .woocommerce-gallery-inner .flex-viewport, .single-product > div.product .woocommerce-gallery-inner .flex-viewport {
-  min-height: 610px;
+  min-height: 610px !important;
+  max-height: 610px !important;
+  height: 610px !important;
   border-radius: 25px;
   border: 1px solid rgba(4, 20, 39, 0.5);
   display: flex;
@@ -22211,6 +22213,7 @@ body.rtl .widget_search .search-submit {
   overflow: hidden;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .single-product #pxl-content-area div.product .woocommerce-product-gallery .flex-viewport, .single-product > div.product .woocommerce-product-gallery .flex-viewport {
   overflow: hidden;
@@ -22349,6 +22352,7 @@ body.rtl .widget_search .search-submit {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
 .single-product #pxl-content-area div.product .woocommerce-product-gallery .woocommerce-product-gallery__image a:hover:before, .single-product > div.product .woocommerce-product-gallery .woocommerce-product-gallery__image a:hover:before {
   opacity: 0.8;
@@ -35995,6 +35999,7 @@ table.tt_timetable {
   position: absolute;
   max-width: calc(1600px + 86px);
   width: calc(1600px + 86px);
+  height: 86px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36004,6 +36009,7 @@ table.tt_timetable {
   left: -43px;
   right: -43px;
   z-index: 5;
+  pointer-events: none;
 }
 @media screen and (max-width: 1600px) {
   .pxl-slider3.style-2 .pxl-swiper-arrow-wrap {
@@ -36034,6 +36040,7 @@ table.tt_timetable {
   background-color: #2f3766;
   color: var(--body_bg-color);
   border: none;
+  pointer-events: auto;
 }
 .pxl-slider3.style-2 .pxl-swiper-arrow-wrap .pxl-swiper-arrow i {
   font-size: 36px;

@@ -1,66 +1,66 @@
 <?php
-
 /**
- * The Northway_Admin_Page base class
- */
+* The Northway_Admin_Page base class
+*/
 
-if (!defined('ABSPATH'))
-	exit;
+if( !defined( 'ABSPATH' ) )
+	exit; 
 
-class Northway_Admin_Page extends Northway_Base
-{
+class Northway_Admin_Page extends Northway_Base {
 
-	public $parent = null;
+    public $parent = null;
 
-	public $capability = 'manage_options';
+    public $capability = 'manage_options';
 
 	public $icon = 'dashicons-art';
-
-	public $position;
-
-	public function __construct()
-	{
-
+	
+    public $position;
+  
+	public function __construct() {
+ 
 		$priority = -1;
-		if (isset($this->parent) && $this->parent) {
-			$priority = intval($this->position);
+		if ( isset( $this->parent ) && $this->parent ) {
+			$priority = intval( $this->position );
 		}
 		$this->position = 2;
-
-		$this->add_action('admin_menu', 'register_page', $priority);
-
-		if (!isset($_GET['page']) || empty($_GET['page']) || ! $this->id === sanitize_text_field($_GET['page'])) {
+  
+		$this->add_action( 'admin_menu', 'register_page', $priority );
+		 
+		if( !isset( $_GET['page'] ) || empty( $_GET['page'] ) || ! $this->id === sanitize_text_field($_GET['page']) ) {
 			return;
 		}
+ 
 	}
 
-	public function register_page()
-	{
-
-		if (! $this->parent) {
+	public function register_page() {
+ 
+		if( ! $this->parent ) {
 			add_menu_page(
 				$this->page_title,
 				$this->menu_title,
 				$this->capability,
 				$this->id,
-				array($this, 'display'),
+				array( $this, 'display' ),
 				get_template_directory_uri() . '/inc/admin/assets/img/icon.png',
 				$this->position
 			);
-		} else {
+		}
+		else {
 			add_submenu_page(
 				$this->parent,
 				$this->page_title,
 				$this->menu_title,
 				$this->capability,
 				$this->id,
-				array($this, 'display')
+				array( $this, 'display' )
 			);
 		}
+ 
 	}
-	public function save() {}
-	public function display()
-	{
+ 	public function save() {
+
+	} 
+	public function display() {
 		echo '';
 	}
 }

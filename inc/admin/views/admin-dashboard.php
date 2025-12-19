@@ -1,9 +1,6 @@
 <main>
-
 	<div class="pxl-dashboard-wrap">
-
 		<?php include_once( get_template_directory() . '/inc/admin/views/admin-tabs.php' ); ?>
-	 
 		<div class="pxl-row">
 			<div class="pxl-col pxl-col-4">
 				<div class="pxl-dsb-box-wrap pxl-dsb-box featured-box">
@@ -23,9 +20,6 @@
 					<?php include_once( get_template_directory() . '/inc/admin/views/admin-system-info.php' ); ?>
 				</div>
 			</div> 
-	 		 
 		</div> 
- 
 	</div> 
-
 </main>
