@@ -43,9 +43,11 @@ function northway_body_classes($classes)
 		$header_layout = northway()->get_opt('header_layout');
 		if (isset($header_layout) && $header_layout) {
 			$post_header = get_post($header_layout);
-			$header_type = get_post_meta($post_header->ID, 'header_type', true);
-			if (isset($header_type)) {
-				$classes[] = ' bd-' . $header_type . '';
+			if ($post_header) {
+				$header_type = get_post_meta($post_header->ID, 'header_type', true);
+				if (isset($header_type)) {
+					$classes[] = ' bd-' . $header_type . '';
+				}
 			}
 		}
 

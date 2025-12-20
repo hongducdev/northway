@@ -603,29 +603,9 @@ class Hub_Elementor_Custom_Controls
                                 'max' => 100,
                             ]
                         ],
-                        'default'    => [
-                            'unit' => '%',
+                        'default' => [
                             'size' => 100,
-                        ],
-                        'laptop_default' => [
                             'unit' => '%',
-                            'size' => 100,
-                        ],
-                        'tablet_extra_default' => [
-                            'unit' => '%',
-                            'size' => 100,
-                        ],
-                        'tablet_default' => [
-                            'unit' => '%',
-                            'size' => 100,
-                        ],
-                        'mobile_extra_default' => [
-                            'unit' => '%',
-                            'size' => 100,
-                        ],
-                        'mobile_default' => [
-                            'unit' => '%',
-                            'size' => 100,
                         ],
                         'selectors' => [
                             '{{WRAPPER}} .pxl-section-bg-parallax' => 'opacity: {{SIZE}}{{UNIT}};',

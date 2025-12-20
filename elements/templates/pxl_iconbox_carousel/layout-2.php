@@ -59,7 +59,7 @@ if (isset($settings['iconbox_list']) && !empty($settings['iconbox_list']) && cou
                         $item_link = isset($item['item_link']) ? $item['item_link'] : '';
                         $icon_type = isset($item['icon_type']) ? $item['icon_type'] : 'icon';
                         $pxl_icon = isset($item['pxl_icon']) ? $item['pxl_icon'] : '';
-                        $icon_image = isset($item['icon_image']) ? $item['icon_image'] : '';
+                        $icon_image = isset($item['icon_image']) && is_array($item['icon_image']) ? $item['icon_image'] : [];
                     ?>
                         <div class="pxl-swiper-slide">
                             <div class="pxl-item--inner">
@@ -70,11 +70,11 @@ if (isset($settings['iconbox_list']) && !empty($settings['iconbox_list']) && cou
                                                 $item_link_key = $widget->get_repeater_setting_key('item_link', 'iconbox_list', $key);
                                                 $widget->add_render_attribute($item_link_key, 'href', $item_link['url']);
 
-                                                if ($item_link['is_external']) {
+                                                if (!empty($item_link['is_external'])) {
                                                     $widget->add_render_attribute($item_link_key, 'target', '_blank');
                                                 }
 
-                                                if ($item_link['nofollow']) {
+                                                if (!empty($item_link['nofollow'])) {
                                                     $widget->add_render_attribute($item_link_key, 'rel', 'nofollow');
                                                 } ?>
                                                 <a <?php pxl_print_html($widget->get_render_attribute_string($item_link_key)); ?>>
@@ -87,11 +87,11 @@ if (isset($settings['iconbox_list']) && !empty($settings['iconbox_list']) && cou
                                     <?php endif; ?>
                                     <?php if ($icon_type == 'image' && !empty($icon_image['id'])) : ?>
                                         <div class="pxl-item--icon pxl-flex-center pxl-mr-25">
-                                            <?php $img_icon  = pxl_get_image_by_size(array(
+                                            <?php $img_icon = pxl_get_image_by_size(array(
                                                 'attach_id'  => $icon_image['id'],
                                                 'thumb_size' => 'full',
                                             ));
-                                            $thumbnail_icon    = $img_icon['thumbnail'];
+                                            $thumbnail_icon = isset($img_icon['thumbnail']) ? $img_icon['thumbnail'] : '';
                                             echo pxl_print_html($thumbnail_icon); ?>
                                         </div>
                                     <?php endif; ?>
@@ -126,6 +126,5 @@ if (isset($settings['iconbox_list']) && !empty($settings['iconbox_list']) && cou
                 <?php endif; ?>
             </div>
         <?php endif; ?>
-
     </div>
 <?php endif; ?>

@@ -64,9 +64,9 @@
                 <?php echo pxl_print_html($settings['salary_desc']); ?>
             </p>
         <?php endif; ?>
-        <?php if (!empty($settings['apply_link'])) : ?>
+        <?php if (!empty($settings['apply_link']) && is_array($settings['apply_link']) && !empty($settings['apply_link']['url'])) : ?>
             <div class="pxl-position--apply">
-                <a href="<?php echo esc_url($settings['apply_link']['url']); ?>" class="btn pxl-button-style-2-default btn-default inline pxl-icon--right">
+                <a href="<?php echo esc_url($settings['apply_link']['url']); ?>" class="btn pxl-button-style-2-default btn-default inline pxl-icon--right"<?php if (!empty($settings['apply_link']['is_external'])) echo ' target="_blank"'; ?><?php if (!empty($settings['apply_link']['nofollow'])) echo ' rel="nofollow"'; ?>>
                     <div class="pxl-button--icon pxl-button--icon-left">
                         <i class="flaticon-arrow"></i>
                     </div>

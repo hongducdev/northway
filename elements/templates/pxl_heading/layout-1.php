@@ -14,25 +14,20 @@ if (!function_exists('highlight_last_words')) {
 			return $text;
 		}
 		
-		// Strip HTML tags for word counting
 		$plain_text = wp_strip_all_tags($text);
 		$words = explode(' ', trim($plain_text));
 		
-		// Remove empty elements from array
 		$words = array_filter($words, function($word) {
 			return !empty(trim($word));
 		});
 		
-		// If we have less words than requested, return original text
 		if (count($words) <= $words_count) {
 			return $text;
 		}
 		
-		// Get last N words
 		$last_words = array_slice($words, -$words_count);
 		$remaining_words = array_slice($words, 0, -$words_count);
 		
-		// Reconstruct the text with highlighting
 		$highlighted_text = implode(' ', $remaining_words) . ' <span class="' . esc_attr($highlight_class) . '">' . implode(' ', $last_words) . '</span>';
 		
 		return $highlighted_text;

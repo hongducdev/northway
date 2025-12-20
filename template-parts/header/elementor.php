@@ -29,7 +29,6 @@ if ($post_header_mobile instanceof WP_Post) {
 }
 ?>
 <?php if ($header_display == 'show' || is_search()): ?>
-
     <header id="pxl-header-elementor" class="is-sticky pxl-header-<?php echo esc_attr($header_mobile); ?>">
         <?php if (isset($args['header_layout']) && $args['header_layout'] > 0) : ?>
             <div class="pxl-header-elementor-main <?php echo esc_attr($header_type); ?> <?php echo esc_attr($header_sidebar_style); ?>">
@@ -152,7 +151,6 @@ if ($post_header_mobile instanceof WP_Post) {
                                                     $attr_menu['menu'] = $pm_menu;
                                                 }
                                             }
-                                            // Ensure theme_location is always set (WordPress will ignore it if 'menu' is set)
                                             if (!isset($attr_menu['theme_location'])) {
                                                 $attr_menu['theme_location'] = 'primary';
                                             }

@@ -104,6 +104,8 @@ $widget->add_render_attribute('carousel', [
                                 <?php
                                 foreach ($posts as $post):
                                     $image_size = !empty($img_size) ? $img_size : 'full';
+                                    $thumbnail = '';
+                                    $thumbnail_url = '';
                                     if (has_post_thumbnail($post->ID) && wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), false)) {
                                         $img_id = get_post_thumbnail_id($post->ID);
                                         $img = pxl_get_image_by_size(array(
